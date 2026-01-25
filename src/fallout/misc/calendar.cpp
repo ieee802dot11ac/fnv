@@ -11,6 +11,10 @@ void Calendar::ClearPointers() {
 
 float Calendar::GetTimeScale() { return pTimeScale->GetValue(); }
 
+uint Calendar::GetYear() {
+    return int(pGameYear != nullptr ? pGameYear->GetValue() : 77);
+}
+
 CALENDAR_MONTH Calendar::GetMonth() {
     if (pGameMonth != nullptr) {
         return CALENDAR_MONTH(char(pGameMonth->GetValue()));
@@ -18,25 +22,12 @@ CALENDAR_MONTH Calendar::GetMonth() {
     return MONTH_AUGUST;
 }
 
-char Calendar::GetDay() {
-    if (pGameDay != nullptr) {
-        return pGameDay->GetValue();
-    }
-    return 17.0f;
-}
+char Calendar::GetDay() { return pGameDay != nullptr ? pGameDay->GetValue() : 17.0f; }
 
-float Calendar::GetHour() {
-    if (pGameHour != nullptr) {
-        return pGameHour->GetValue();
-    }
-    return 12;
-}
+float Calendar::GetHour() { return pGameHour != nullptr ? pGameHour->GetValue() : 12.0f; }
 
 uint Calendar::GetDaysPassed() {
-    if (pGameDaysPassed != nullptr) {
-        return pGameDaysPassed->GetValue();
-    }
-    return 1.0f;
+    return pGameDaysPassed != nullptr ? pGameDaysPassed->GetValue() : 1.0f;
 }
 
 float Calendar::GetMinutesPassed() {
@@ -44,6 +35,10 @@ float Calendar::GetMinutesPassed() {
 }
 
 uint Calendar::GetMidnightsPassed() { return iMidnightsPassed; }
+
+DAYS_OF_THE_WEEK Calendar::GetDayOfTheWeek() {
+    return DAYS_OF_THE_WEEK(GetDaysPassed() % 7);
+}
 
 SEASON Calendar::GetSeason() {
     CALENDAR_MONTH month = GetMonth();

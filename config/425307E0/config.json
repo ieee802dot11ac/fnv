@@ -1,0 +1,29 @@
+{
+    "progress_categories": {
+        "sdk": "XDK Code",
+        "gamebryo": "NetImmerse/Gamebryo Code",
+        "newvegas": "Bethesda/Obsidian Code",
+        "lib": "Third-party Libraries"
+    },
+    "asflags": [],
+    "ldflags": [],
+    "cflags": {
+        "base": {
+            "flags": [
+                "/nologo",
+                "/c",
+                "/GR",
+                "/O2",
+                "/Oi"
+            ]
+        },
+        "gamebryo": {
+            "base": "base",
+            "flags": []
+        },
+        "newvegas": {
+            "base": "base",
+            "flags": []
+        }
+    }
+}

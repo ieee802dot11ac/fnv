@@ -1,0 +1,20 @@
+Sections:
+	.rdata      type:rodata align:65536
+	.pdata      type:rodata align:65536
+	BINKCONS    type:rodata align:65536
+	.text       type:code align:65536
+	BINK        type:code align:65536
+	BINKBSS     type:bss align:65536
+	.data       type:data align:65536
+	.tls        type:data align:65536
+	.XBMOVIE    type:data align:65536
+	BINKDATA    type:data align:65536
+	.idata      type:data align:65536
+
+fallout/misc/calendar.cpp:
+	.pdata      start:0x821BB2D0 end:0x821BB2F0
+	.text       start:0x826F3BC8 end:0x826F41C8
+
+fallout/misc/main.cpp:
+	.pdata      start:0x821BB5C8 end:0x821BB668
+	.text       start:0x826FB4D8 end:0x826FF8B0

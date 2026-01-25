@@ -1,0 +1,11 @@
+{
+	"newvegas": {
+		"progress_category": "newvegas",
+		"mw_version": "X360/16.00.11886.00",
+		"cflags": "base",
+		"objects": {
+			"fallout/misc/calendar.cpp": "NonMatching",
+			"fallout/misc/main.cpp": "NonMatching"
+		}
+	}
+}

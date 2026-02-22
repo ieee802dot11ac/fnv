@@ -1483,6 +1483,7 @@ def generate_objdiff_config(
             "*.yml",
             "*.txt",
             "*.json",
+            "src/*",
         ],
         "units": [],
         "progress_categories": [],

@@ -26,6 +26,10 @@
         "newvegas": {
             "base": "base",
             "flags": []
+        },
+        "speedtree": {
+            "base": "base",
+            "flags": []
         }
     }
 }

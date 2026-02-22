@@ -7,5 +7,13 @@
 			"fallout/misc/calendar.cpp": "NonMatching",
 			"fallout/misc/main.cpp": "NonMatching"
 		}
+	},
+	"speedtree": {
+		"progress_category": "lib",
+		"mw_version": "X360/16.00.11886.00",
+		"cflags": "speedtree",
+		"objects": {
+			"lib/speedtree/indexedgeometry.cpp": "NonMatching"
+		}
 	}
 }

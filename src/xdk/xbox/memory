@@ -1,0 +1,8 @@
+#pragma once
+
+namespace std {
+    template <typename T>
+    class allocator {
+        // a buncha bullshit that, frankly, i don't care about
+    };
+}

@@ -18,3 +18,7 @@ fallout/misc/calendar.cpp:
 fallout/misc/main.cpp:
 	.pdata      start:0x821F8DC0 end:0x821F9068
 	.text       start:0x826930B0 end:0x826A0A90
+
+lib/speedtree/indexedgeometry.cpp:
+	.pdata      start:0x82205F08 end:0x82205FA0
+	.text       start:0x82992550 end:0x82994780

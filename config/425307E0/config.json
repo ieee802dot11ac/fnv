@@ -11,6 +11,8 @@
         "base": {
             "flags": [
                 "/nologo",
+                "/I src/xdk/xbox/",
+                "/I src/xdk/",
                 "/c",
                 "/GR",
                 "/O2",

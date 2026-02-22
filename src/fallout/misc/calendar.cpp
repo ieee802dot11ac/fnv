@@ -1,4 +1,5 @@
 #include "calendar.h"
+#include <math.h>
 
 void Calendar::ClearPointers() {
     pGameYear = nullptr;
@@ -30,6 +31,12 @@ uint Calendar::GetDaysPassed() {
     return pGameDaysPassed != nullptr ? pGameDaysPassed->GetValue() : 1.0f;
 }
 
+uint Calendar::GetHoursPassed() {
+    return floorf(
+        (pGameDaysPassed != nullptr ? pGameDaysPassed->GetValue() : 1.0f) * 24.f
+    );
+}
+
 float Calendar::GetMinutesPassed() {
     return 1440 * (pGameDaysPassed != nullptr ? pGameDaysPassed->GetValue() : 1.0f);
 }
@@ -37,7 +44,7 @@ float Calendar::GetMinutesPassed() {
 uint Calendar::GetMidnightsPassed() { return iMidnightsPassed; }
 
 DAYS_OF_THE_WEEK Calendar::GetDayOfTheWeek() {
-    return DAYS_OF_THE_WEEK(GetDaysPassed() % 7);
+    return DAYS_OF_THE_WEEK(iMidnightsPassed % 7);
 }
 
 SEASON Calendar::GetSeason() {

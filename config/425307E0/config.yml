@@ -1,5 +1,7 @@
 # See config.example.yml for documentation.
-object: orig/425307E0/Fallout_Release_Beta.xex
+object: orig/425307E0/Fallout_Release_MemDebug.xex
 symbols: config/425307E0/symbols.txt
 splits: config/425307E0/splits.txt
+# pdb: orig/425307E0/Fallout_Release_MemDebug.pdb
 quick_analysis: true
+# detect_strings: false

@@ -12,9 +12,9 @@ Sections:
 	.idata      type:data align:65536
 
 fallout/misc/calendar.cpp:
-	.pdata      start:0x821BB2D0 end:0x821BB2F0
-	.text       start:0x826F3BC8 end:0x826F41C8
+	.pdata      start:0x821F8C80 end:0x821F8CA0
+	.text       start:0x82690448 end:0x826909F0
 
 fallout/misc/main.cpp:
-	.pdata      start:0x821BB5C8 end:0x821BB668
-	.text       start:0x826FB4D8 end:0x826FF8B0
+	.pdata      start:0x821F8DC0 end:0x821F9068
+	.text       start:0x826930B0 end:0x826A0A90

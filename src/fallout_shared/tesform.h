@@ -1,5 +1,6 @@
 #pragma once
 
+#include "bscore/bsstring.h"
 #include <types.h>
 #include "fallout_shared/baseformcomponent.h"
 
@@ -9,8 +10,7 @@ private:
     /* 0x0004 */ u8 cFormType;
     /* 0x0008 */ uint iFormFlags;
     /* 0x000c */ uint iFormID;
-    //   /* 0x0010 */ BSStringT<char> cFormEditorID;
-    /* 0x0010 */ u8 pad_cFormEditorID[8];
+    /* 0x0010 */ BSStringT<char> cFormEditorID;
     /* 0x0018 */ uint iVersionControl;
     /* 0x001c */ u8 cVCVersion;
     /* 0x0020 */ u8 pad_pSourceFiles[8];

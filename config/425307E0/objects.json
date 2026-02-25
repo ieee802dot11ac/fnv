@@ -8,6 +8,14 @@
 			"fallout/misc/main.cpp": "NonMatching"
 		}
 	},
+	"creation": {
+		"progress_category": "newvegas",
+		"mw_version": "X360/16.00.11886.00",
+		"cflags": "base",
+		"objects": {
+			"fallout_shared/tesform.cpp": "NonMatching"
+		}
+	},
 	"speedtree": {
 		"progress_category": "lib",
 		"mw_version": "X360/16.00.11886.00",

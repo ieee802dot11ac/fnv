@@ -1,6 +1,6 @@
 #pragma once
 
-#include "fallout shared/TESForm.h"
+#include "fallout_shared/tesform.h"
 
 class TESGlobal : public TESForm { /* Size=0x30 */
     /* 0x0000: fields for TESForm */

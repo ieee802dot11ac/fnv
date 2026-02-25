@@ -1,6 +1,6 @@
 #pragma once
 
-#include "fallout shared/TESGlobal.h"
+#include "fallout_shared/tesglobal.h"
 #include <types.h>
 
 enum DAYS_OF_THE_WEEK {

@@ -1,0 +1,13 @@
+---
+Language: Cpp
+IndentWidth: 4
+Standard: c++03
+TabWidth: 4
+UseCRLF: false
+UseTab: Always
+ColumnLimit: 80
+PointerAlignment: Left
+NamespaceIndentation: All
+RequiresClausePosition: OwnLine
+IndentRequiresClause: true
+IndentAccessModifiers: false

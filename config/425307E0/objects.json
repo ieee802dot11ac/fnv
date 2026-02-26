@@ -1,4 +1,14 @@
 {
+	"gamebryo": {
+		"progress_category": "gamebryo",
+		"mw_version": "X360/16.00.11886.00",
+		"cflags": "gamebryo",
+		"objects": {
+			"gamebryo2.2/corelibs/nimain/niavobject.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nipoint3.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nirefobject.cpp": "NonMatching"
+		}
+	},
 	"newvegas": {
 		"progress_category": "newvegas",
 		"mw_version": "X360/16.00.11886.00",

@@ -21,7 +21,10 @@
         },
         "gamebryo": {
             "base": "base",
-            "flags": []
+            "flags": [
+                "/Od",
+                "/Ob1"
+            ]
         },
         "newvegas": {
             "base": "base",
@@ -29,7 +32,10 @@
         },
         "speedtree": {
             "base": "base",
-            "flags": []
+            "flags": [
+                "/Od",
+                "/Ob1"
+            ]
         }
     }
 }

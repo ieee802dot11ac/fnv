@@ -13,22 +13,47 @@ namespace std {
         Alloc _Alval;
     };
 
-    template <typename T, typename Alloc = allocator<T> >
-    class vector : public _Vector_val<T, Alloc> {
+    template <typename T, typename Allocator = allocator<T> >
+    class vector : public _Vector_val<T, Allocator> {
     public:
-        typedef T &reference;
-        typedef const T &const_reference;
+        typedef T value_type;
+        typedef uint size_type;
+        typedef value_type &reference;
+        typedef const value_type &const_reference;
 
-        uint size(void) const { return (this->_Mylast - this->_Myfirst) / sizeof(T); }
-
-        const_reference operator[](uint idx) const { return this->_Myfirst[idx]; }
-        reference operator[](uint idx) { return this->_Myfirst[idx]; }
-
-        void push_back(const_reference ref) {}
-
+        vector(void);
+        vector(
+            size_type count, const T &value = T(), const Allocator &alloc = Allocator()
+        ) {
+            if (count == 0) {
+            }
+        }
         ~vector() { _Tidy(); }
+
+        size_type size(void) const {
+            return (this->_Mylast - this->_Myfirst) / sizeof(T);
+        }
+
+        const_reference operator[](size_type idx) const { return this->_Myfirst[idx]; }
+        reference operator[](size_type idx) { return this->_Myfirst[idx]; }
+
+        T *data(void) { return this->_Myfirst; }
+        const T *data(void) const { return this->_Myfirst; }
+
+        void resize(size_type);
+
+        void push_back(const_reference ref); /*{
+            bool within = (&ref >= this->_Myfirst && &ref <= this->_Mylast);
+            if (within) {
+                if (this->_Mylast == this->_Myend) {
+                }
+            }
+        }*/
+
+        void clear(void);
 
     protected:
         void _Tidy(void);
+        void _Reserve(size_type);
     };
 }

@@ -7,8 +7,8 @@ double floor(double);
 inline float floorf(float f) { return floor(f); }
 
 // pdb-decompiler
-float fabs(float _X); // 0xB17A80
-float sqrt(float _X); // 0x251C20
+double fabs(double _X); // 0xB17A80
+double sqrt(double _X); // 0x251C20
 
 #ifdef __cplusplus
 }

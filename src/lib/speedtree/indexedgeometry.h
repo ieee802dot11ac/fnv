@@ -1,12 +1,13 @@
 #pragma once
 
+#include "lib/speedtree/windengine.h"
 #include <types.h>
 #include <vector>
 #include "speedtreert.h"
 
 class CIndexedGeometry {
 public:
-    // CIndexedGeometry(CWindEngine *, bool);
+    CIndexedGeometry(CWindEngine *, bool);
     ~CIndexedGeometry();
     void EnableManualLighting(bool);
     void EnableVertexWeighting(bool);
@@ -20,19 +21,19 @@ public:
     void SetTrunkWidth(const float);
     float GetTrunkLength() const;
     void SetTrunkLength(const float);
-    void AddStrip(u16 nLodLevel, u16 *pStrip, u16 nStripLength); // 0x9934D8
-    void AddVertexColor(const float *pColor); // 0x9935E8
-    void AddVertexCoord(const float *pCoord); // 0x993848
-    void AddVertexNormal(const float *pNormal); // 0x993928
-    void AddVertexTexCoord0(const float *pTexCoord, short sIndex); // 0x993988
-    void AddVertexTexCoord1(const float *pTexCoord); // 0x993BA8
-    void AddVertexWind(float fWindWeight, u8 ucWindMatrixIndex); // 0x993C28
-    void AddVertexTangent(const float *pTangent); // 0x993CE0
-    void AddVertexBinormal(const float *pBinormal); // 0x993D68
-    void ResetStripCounter(u16 nLodLevel); // 0x993DF0
-    u16 **GetStripsPointer(u16 nLodLevel) const; // 0x993E30
-    bool ComputeWindEffect(u16 nLodLevel); // 0x993EA8
-    void DeleteLodStrip(u16 usLodLevel); // 0x9942F0
+    void AddStrip(u16 nLodLevel, u16 *pStrip, u16 nStripLength);
+    void AddVertexColor(const float *pColor);
+    void AddVertexCoord(const float *pCoord);
+    void AddVertexNormal(const float *pNormal);
+    void AddVertexTexCoord0(const float *pTexCoord, short sIndex);
+    void AddVertexTexCoord1(const float *pTexCoord);
+    void AddVertexWind(float fWindWeight, u8 ucWindMatrixIndex);
+    void AddVertexTangent(const float *pTangent);
+    void AddVertexBinormal(const float *pBinormal);
+    void ResetStripCounter(u16 nLodLevel);
+    u16 **GetStripsPointer(u16 nLodLevel) const;
+    bool ComputeWindEffect(u16 nLodLevel);
+    void DeleteLodStrip(u16 usLodLevel);
     void AdvanceStripCounter();
     u16 GetStripCounter();
     void SetVertexCounter(u16);
@@ -71,7 +72,7 @@ private:
     void DeleteIndexData();
     const float *GetOrigVertexCoord(uint) const;
     bool m_bRetainTexCoords; // 0x0
-    // CWindEngine *m_pWindEngine; // 0x4
+    CWindEngine *m_pWindEngine; // 0x4
     bool m_bVertexWeighting; // 0x8
     bool m_bManualLighting; // 0x9
     bool *m_pVertexWindComputed; // 0xC

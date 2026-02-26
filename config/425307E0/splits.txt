@@ -11,6 +11,10 @@ Sections:
 	BINKDATA    type:data align:65536
 	.idata      type:data align:65536
 
+fallout_shared/tesform.cpp:
+	.pdata      start:0x821E5CB0 end:0x821E5E98
+	.text       start:0x822D3640 end:0x822D7498
+
 fallout/misc/calendar.cpp:
 	.pdata      start:0x821F8C80 end:0x821F8CA0
 	.text       start:0x82690448 end:0x826909F0
@@ -19,10 +23,20 @@ fallout/misc/main.cpp:
 	.pdata      start:0x821F8DC0 end:0x821F9068
 	.text       start:0x826930B0 end:0x826A0A90
 
-fallout_shared/tesform.cpp:
-	.pdata      start:0x821E5CB0 end:0x821E5E98
-	.text       start:0x822D3640 end:0x822D7498
-
 lib/speedtree/indexedgeometry.cpp:
 	.pdata      start:0x82205F08 end:0x82205FA0
 	.text       start:0x82992550 end:0x82994780
+
+gamebryo2.2/corelibs/nimain/nipoint3.cpp:
+	.pdata      start:0x8221C850 end:0x8221C868
+	.text       start:0x82E28670 end:0x82E28850
+	.data       start:0x83327240 end:0x83327288
+
+gamebryo2.2/corelibs/nimain/niavobject.cpp:
+	.pdata      start:0x8221C868 end:0x8221C990
+	.text       start:0x82E28850 end:0x82E2B708
+
+gamebryo2.2/corelibs/nimain/nirefobject.cpp:
+	.pdata      start:0x8221CA60 end:0x8221CA68
+	.text       start:0x82E2DE68 end:0x82E2DEE8
+	.data       start:0x83327400 end:0x83327404

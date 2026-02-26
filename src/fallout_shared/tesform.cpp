@@ -75,7 +75,12 @@ void TESForm::SetInitialized(bool abInit) {}
 
 void TESForm::SetDisabled(bool abDisabled) {}
 
-bool TESForm::IsDefaultForm(uint aiID) { return 0; }
+bool TESForm::IsDefaultForm(uint aiID) {
+    if (aiID != 0 && aiID <= 0x7FF) {
+        return true;
+    }
+    return 0;
+}
 
 void TESForm::AddChange(int aiChangeFlags) {}
 
@@ -114,7 +119,12 @@ void TESForm::LoadGameDataOLD(int *apData, int aiSize) {}
 
 // void TESForm::LoadGame(BGSLoadFormBuffer *apLoadGameBuffer) {}
 
-bool TESForm::IsDefaultForm() const { return 0; }
+bool TESForm::IsDefaultForm() const {
+    if (iFormID != 0 && iFormID <= 0x7FF) {
+        return true;
+    }
+    return 0;
+}
 
 // TESFile *TESForm::GetFile(int aiIndex) { return 0; }
 
@@ -176,7 +186,9 @@ void TESForm::FreeFormBuffer() {}
 
 uint TESForm::GetFormIDAsSaved() { return 0; }
 
-bool TESForm::FormIDMatchesWithoutIndex(uint aiID) const { return 0; }
+bool TESForm::FormIDMatchesWithoutIndex(uint aiID) const {
+    return ((aiID ^ iFormID) & 0xFFFFFF) == 0;
+}
 
 void TESForm::SetFormID(uint aiID, bool abUpdateFile) {}
 

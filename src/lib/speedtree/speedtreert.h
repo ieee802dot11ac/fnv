@@ -1,6 +1,19 @@
 #pragma once
 
 #include <types.h>
+#include <bscore/newoverloads.h>
+
+// new vegas hack
+#define SPEEDTREE_MALLOC(x, line) ourMalloc(x, __FILE__, line, __FUNCTION__)
+#define SPEEDTREE_FREE(x) ourFree(x)
+
+#ifndef SPEEDTREE_MALLOC
+#define SPEEDTREE_MALLOC malloc
+#endif
+
+#ifndef SPEEDTREE_FREE
+#define SPEEDTREE_FREE free
+#endif
 
 class CSpeedTreeRT {
 public:

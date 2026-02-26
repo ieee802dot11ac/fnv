@@ -8,6 +8,7 @@
 #define SEH_TRY __try
 #define SEH_EXCEPT __except
 #define SEH_FINALLY __finally
+#define FORCEINLINE __forceinline
 #else
 #define CDECL
 #define STDCALL
@@ -16,6 +17,7 @@
 #define SEH_TRY try
 #define SEH_EXCEPT catch
 #define SEH_FINALLY ;
+#define FORCEINLINE
 #endif
 
 #define ROTATE_LEFT(x, i) (((x) << (i)) | ((x) >> ((sizeof((x)) * 8) - (i))))
@@ -29,3 +31,8 @@
 
 #define RELEASE(x) (delete x, x = null)
 #define RELEASEARRAY(x) (delete[] (ubyte *)x, x = null)
+
+#define ADDSTACK(x)                                                                      \
+    do {                                                                                 \
+        u8 _stackpad[x];                                                                 \
+    } while (0);

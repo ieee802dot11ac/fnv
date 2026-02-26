@@ -1,5 +1,6 @@
 #pragma once
 
+#include "winnt.h"
 #include <types.h>
 
 struct NiMemObject {
@@ -26,8 +27,10 @@ public:
 
 class NiRefObject : public NiMemObject {
 public:
-    NiRefObject();
-    virtual ~NiRefObject();
+    // it's either this, or some other thread-type primitive
+    // in any case: fuck you todd.
+    NiRefObject() { InterlockedIncrement((LONG *)&ms_uiObjects); }
+    virtual ~NiRefObject() { InterlockedDecrement((LONG *)&ms_uiObjects); }
     void IncRefCount();
     void DecRefCount();
     void BETAVERSION_TEST_ClearRefCount();

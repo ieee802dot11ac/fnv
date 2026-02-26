@@ -1,0 +1,47 @@
+#pragma once
+#include "stdlib.h"
+
+namespace std {
+
+    class exception {
+    public:
+        exception() : str(0), unk8(0) {}
+        exception(const exception &e) : str(0), unk8(0) { *this = e; }
+        exception(const char *str) : str(0), unk8(0) { _Copy_str(str); }
+        exception(const char *str, bool b) : str(str), unk8(b) {}
+        virtual ~exception() {
+            if (unk8)
+                free((void *)str);
+            str = nullptr;
+            unk8 = false;
+        }
+        virtual const char *what() const { return str ? str : "Unknown exception"; }
+
+        exception &operator=(const exception &e);
+
+    private:
+        void _Copy_str(const char *);
+
+    protected:
+        const char *str; // 0x4
+        bool unk8; // 0x8
+    };
+
+    class bad_exception : public exception {
+    public:
+        bad_exception() {}
+        virtual ~bad_exception() {}
+        virtual const char *what() const { return "bad_exception"; }
+    };
+
+    typedef void (*unexpected_handler)();
+    unexpected_handler set_unexpected(unexpected_handler f) throw();
+    void unexpected();
+
+    typedef void (*terminate_handler)();
+    terminate_handler set_terminate(terminate_handler f) throw();
+    void terminate();
+
+    bool uncaught_exception() throw();
+
+}

@@ -36,7 +36,18 @@ gamebryo2.2/corelibs/nimain/niavobject.cpp:
 	.pdata      start:0x8221C868 end:0x8221C990
 	.text       start:0x82E28850 end:0x82E2B708
 
+gamebryo2.2/corelibs/nimain/niobjectnet.cpp:
+	.pdata      start:0x8221C990 end:0x8221CA60
+	.text       start:0x82E2B708 end:0x82E2DE68
+
 gamebryo2.2/corelibs/nimain/nirefobject.cpp:
 	.pdata      start:0x8221CA60 end:0x8221CA68
 	.text       start:0x82E2DE68 end:0x82E2DEE8
 	.data       start:0x83327400 end:0x83327404
+
+gamebryo2.2/corelibs/nimain/niobject.cpp:
+	.pdata      start:0x8221CA68 end:0x8221CAD0
+	.text       start:0x82E2DEE8 end:0x82E2E6A0
+
+gamebryo2.2/corelibs/nimain/nirtti.cpp:
+	.text       start:0x82E66DA8 end:0x82E66DD8

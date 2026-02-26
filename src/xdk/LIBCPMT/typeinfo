@@ -1,0 +1,59 @@
+#pragma once
+#include "cstring"
+#include "cstddef"
+#include "exception"
+
+/* Size=0x8 */
+struct __type_info_node {
+    void *_MemPtr; // 0x0
+    __type_info_node *_Next; // 0x4
+};
+
+// needs to be defined in xdk/LIBCMT/typname.cpp
+extern __type_info_node __type_info_root_node;
+
+/* Size=0xc */
+class type_info {
+public:
+    virtual ~type_info();
+
+    unsigned int hash_code() const;
+    bool operator==(const type_info &rhs) const;
+    bool operator!=(const type_info &rhs) const;
+    int before(const type_info &rhs) const;
+    const char *name(__type_info_node *n) const; // { return _Name_base(this, n); }
+    const char *name() const { return name(&__type_info_root_node); }
+    const char *raw_name() const;
+
+private:
+    type_info(const type_info &);
+    type_info &operator=(const type_info &);
+
+    static const char *_Name_base(const type_info *, __type_info_node *);
+    static void _Type_info_dtor(type_info *);
+
+    void *_M_data; // 0x4
+    char _M_d_name[1]; // 0x8
+};
+
+namespace std {
+    using ::type_info;
+
+    class bad_cast : public exception {
+    public:
+        bad_cast(const char *);
+        virtual ~bad_cast() {}
+    };
+
+    class bad_typeid : public exception {
+    public:
+        bad_typeid(const char *);
+        virtual ~bad_typeid() {}
+    };
+
+    class __non_rtti_object : public bad_typeid {
+    public:
+        __non_rtti_object(const char *);
+        virtual ~__non_rtti_object() {}
+    };
+}

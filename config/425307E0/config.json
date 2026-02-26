@@ -11,12 +11,12 @@
         "base": {
             "flags": [
                 "/nologo",
-                "/I src/xdk/xbox/",
+                "/I src/xdk/LIBCMT/",
+                "/I src/xdk/LIBCPMT/",
                 "/I src/xdk/",
                 "/c",
                 "/GR",
-                "/O2",
-                "/Oi"
+                "/O2"
             ]
         },
         "gamebryo": {

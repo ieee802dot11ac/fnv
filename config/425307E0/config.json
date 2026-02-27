@@ -36,6 +36,12 @@
                 "/Od",
                 "/Ob1"
             ]
+        },
+        "havok": {
+            "base": "base",
+            "flags": [
+                "/I src/lib/havok/common/base/"
+            ]
         }
     }
 }

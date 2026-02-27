@@ -27,6 +27,10 @@ lib/speedtree/indexedgeometry.cpp:
 	.pdata      start:0x82205F08 end:0x82205FA0
 	.text       start:0x82992550 end:0x82994780
 
+lib/havok/common/base/reflection/hkclass.cpp:
+	.pdata      start:0x82213520 end:0x82213590
+	.text       start:0x82C167D8 end:0x82C176B0
+
 gamebryo2.2/corelibs/nimain/nipoint3.cpp:
 	.pdata      start:0x8221C850 end:0x8221C868
 	.text       start:0x82E28670 end:0x82E28850

@@ -35,5 +35,13 @@
 		"objects": {
 			"lib/speedtree/indexedgeometry.cpp": "NonMatching"
 		}
+	},
+	"havok": {
+		"progress_category": "lib",
+		"mw_version": "X360/16.00.11886.00",
+		"cflags": "havok",
+		"objects": {
+			"lib/havok/common/base/reflection/hkclass.cpp": "NonMatching"
+		}
 	}
 }

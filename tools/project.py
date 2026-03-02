@@ -704,7 +704,7 @@ def generate_build_ninja(
     msvc_cmd = f"{wrapper_cmd}{msvc} $cflags /showIncludes /Fo$out $in"
     if transform_dep is not None:
         msvc_cmd = (
-            "bash -lc 'set -o pipefail; "
+            "sh -lc 'set -o pipefail; "
             f"{msvc_cmd} | $python {transform_dep}'"
         )
 

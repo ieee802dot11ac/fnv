@@ -119,7 +119,7 @@ public:
     virtual void PrintDebugInfo();
 
     static void QCreate();
-    static BSAudio &QInstance();
+    static BSAudio &QInstance() { return *pAudioInstance; }
     static float GetMinDialogDist();
     static float GetMaxDialogDist();
 

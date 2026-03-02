@@ -1,5 +1,6 @@
 #pragma once
 
+#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
 #include <types.h>
 #include <win_types.h>
 
@@ -45,8 +46,9 @@ public:
     bool DrawWorld_VATSOcclusionQuery();
     void DrawWorld_UpdateOffscreenBuffers();
     // BSRenderedTexture *DrawWorld_InitRenderTexture(NiXenonRenderer *, BSRenderedTexture
-    // *, bool, bool); void DrawWorld_DrawScene(Sun *, bool, bool, bool); void
-    // DrawWorld_ScreenSplatter(NiXenonRenderer *);
+    // *, bool, bool);
+    // void DrawWorld_DrawScene(Sun *, bool, bool, bool);
+    // void DrawWorld_ScreenSplatter(NiXenonRenderer *);
     void UpdateOffscreenInterface();
     void OnIdle();
     void OnIdle_ScaleLOD();
@@ -64,7 +66,7 @@ public:
     void OnIdle_UpdateImageSpace(bool);
     void OnIdle_PostThreadsProcess();
     bool UpdateTextures(float);
-    // bool IsLocationHighDetail(NiPoint3 const &);
+    bool IsLocationHighDetail(const NiPoint3 &);
     void ForceUpdateTextures();
     void RestoreTextureRangeDefaults();
     void RunCameraPath();
@@ -189,8 +191,6 @@ protected:
     static bool bInConsole;
     static float fFrameAnimTime;
     // static NiPointer<NiScreenElements> spMenuBGGeometry;
-public:
-    Main &operator=(Main const &); /* compiler_generated() */
 };
 
 void Main_ShaderInit(void);

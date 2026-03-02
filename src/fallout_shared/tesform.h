@@ -1,11 +1,11 @@
 #pragma once
 
 #include "bscore/bsstring.h"
+#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
 #include <types.h>
 #include "fallout_shared/baseformcomponent.h"
 
 class TESForm : public BaseFormComponent { /* Size=0x28 */
-    /* 0x0000: fields for BaseFormComponent */
 private:
     /* 0x0004 */ u8 cFormType;
     /* 0x0008 */ uint iFormFlags;
@@ -16,24 +16,17 @@ private:
     /* 0x0020 */ u8 pad_pSourceFiles[8];
     //   /* 0x0020 */ BSSimpleList<TESFile *> pSourceFiles;
 
-public:
-    static bool bFormIDsBashed;
-    //   public: static NiTPointerMap<unsigned int,TESForm *>* pAllForms;
-    //   public: static NiTLargePrimitiveArray<TESForm *>* pAlteredForms;
-    //   public: static BSTCaseInsensitiveStringMap<TESForm *>* pAllFormsByEditorID;
-private:
     static uint iTotalFormCount;
-
-private:
     static void *pFormBuffer;
-
-private:
     static uint iBufferSize;
-
-private:
     static bool bEndianSwapOnSave;
 
 public:
+    static bool bFormIDsBashed;
+    // static NiTPointerMap<unsigned int,TESForm *>* pAllForms;
+    // static NiTLargePrimitiveArray<TESForm *>* pAlteredForms;
+    // static BSTCaseInsensitiveStringMap<TESForm *>* pAllFormsByEditorID;
+
     TESForm(const TESForm &);
     TESForm();
     virtual ~TESForm();
@@ -73,7 +66,7 @@ public:
     virtual void Revert(uint);
     virtual void LoadQueuedFormData(u16);
     void SaveGameDataOLD(double *, int);
-    //   public: void SaveGameDataOLD(NiPoint3*, int);
+    void SaveGameDataOLD(NiPoint3 *, int);
     void SaveGameDataOLD(float *, int);
     void SaveGameDataOLD(uint *, int);
     void SaveGameDataOLD(int *, int);
@@ -81,7 +74,7 @@ public:
     void SaveGameDataOLD(s16 *, int);
     void SaveGameDataOLD(void *, int);
     void LoadGameDataOLD(double *, int);
-    //   public: void LoadGameDataOLD(NiPoint3*, int);
+    void LoadGameDataOLD(NiPoint3 *, int);
     void LoadGameDataOLD(float *, int);
     void LoadGameDataOLD(uint *, int);
     void LoadGameDataOLD(int *, int);
@@ -105,7 +98,7 @@ public:
     //   public: ENUM_FORM_ID GetFormType() const;
     //   public: void SetFormType(ENUM_FORM_ID);
     //   public: virtual ENUM_FORM_ID GetSavedFormType();
-    //   public: virtual void GetFormDetailedString(BSStringT<char>&);
+    virtual void GetFormDetailedString(BSStringT<char> &);
     void RemoveFromDataStructures();
     bool GetMaster() const;
     bool GetDelete() const;
@@ -201,8 +194,8 @@ public:
     //   public: void LoadForm(TESFile*);
     virtual void Copy(TESForm *);
     virtual bool Compare(TESForm *);
-    //   public: virtual void CopyComponent(BaseFormComponent*);
-    //   public: virtual bool CompareComponent(BaseFormComponent*);
+    virtual void CopyComponent(BaseFormComponent *);
+    virtual bool CompareComponent(BaseFormComponent *);
     void CopyAllComponents(TESForm *);
     bool CompareAllComponents(TESForm *);
     //   public: virtual bool BelongsInGroup(FORM*, bool, bool);

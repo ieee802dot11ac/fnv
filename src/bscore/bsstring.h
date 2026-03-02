@@ -8,7 +8,7 @@ public:
     BSStringT(const BSStringT<T> &);
     BSStringT(const T *);
     BSStringT();
-    ~BSStringT();
+    ~BSStringT() { Set(nullptr, 0); }
     bool Set(const BSStringT<T> &);
     bool Set(const T *, uint);
     const T *String() const;

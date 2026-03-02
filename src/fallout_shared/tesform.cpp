@@ -57,17 +57,56 @@ void TESForm::SetVATSTargetOverride(bool abVal) {}
 
 void TESForm::SetAltered(bool abAltered) {}
 
-void TESForm::SetQuestObject(bool abQuest) {}
+void TESForm::SetQuestObject(bool abQuest) {
+    if (abQuest) {
+        iFormFlags |= 0x400;
+    } else {
+        iFormFlags &= ~0x400;
+    }
+    AddChange(1);
+}
 
-void TESForm::SetHasSpokenFlag(bool abSpoke) {}
+void TESForm::SetInPlaceableWater(bool abWater) {
+    if (abWater) {
+        iFormFlags |= 0x40;
+    } else {
+        iFormFlags &= ~0x40;
+    }
+    AddChange(1);
+}
 
-void TESForm::SetHavokDeath(bool abDeath) {}
+void TESForm::SetHavokDeath(bool abDeath) {
+    if (abDeath) {
+        iFormFlags |= 0x10000;
+    } else {
+        iFormFlags &= ~0x10000;
+    }
+    AddChange(1);
+}
 
-void TESForm::SetNeedToChangeProcess(bool abChange) {}
+void TESForm::SetNeedToChangeProcess(bool abChange) {
+    if (abChange) {
+        iFormFlags |= 0x20000;
+    } else {
+        iFormFlags &= ~0x20000;
+    }
+}
 
-void TESForm::SetIgnoreFriendlyHits(bool abIgnoreFriendlyHits) {}
+void TESForm::SetIgnoreFriendlyHits(bool abIgnoreFriendlyHits) {
+    if (abIgnoreFriendlyHits) {
+        iFormFlags |= 0x100000;
+    } else {
+        iFormFlags &= ~0x100000;
+    }
+}
 
-void TESForm::SetOnLocalMap(bool abVal) {}
+void TESForm::SetOnLocalMap(bool abVal) {
+    if (abVal) {
+        iFormFlags |= 0x200;
+    } else {
+        iFormFlags &= ~0x200;
+    }
+}
 
 void TESForm::SetFireOff(bool abVal) {}
 

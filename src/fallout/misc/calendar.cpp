@@ -1,4 +1,5 @@
 #include "calendar.h"
+#include "fallout_shared/tesform.h"
 #include <math.h>
 
 void Calendar::ClearPointers() {
@@ -8,6 +9,17 @@ void Calendar::ClearPointers() {
     pGameHour = nullptr;
     pGameDaysPassed = nullptr;
     pTimeScale = nullptr;
+}
+
+void Calendar::InitGlobals() {
+    pGameYear = static_cast<TESGlobal *>(TESForm::GetFormByNumericID(0x35));
+    pGameMonth = static_cast<TESGlobal *>(TESForm::GetFormByNumericID(0x36));
+    pGameDay = static_cast<TESGlobal *>(TESForm::GetFormByNumericID(0x37));
+    pGameHour = static_cast<TESGlobal *>(TESForm::GetFormByNumericID(0x38));
+    pGameDaysPassed = static_cast<TESGlobal *>(TESForm::GetFormByNumericID(0x39));
+    pTimeScale = static_cast<TESGlobal *>(TESForm::GetFormByNumericID(0x3a));
+    pGameDaysPassed->SetValue(pGameHour->GetValue() / 24.f + pGameDaysPassed->GetValue());
+    iMidnightsPassed = 0;
 }
 
 float Calendar::GetTimeScale() { return pTimeScale->GetValue(); }

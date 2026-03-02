@@ -18,7 +18,7 @@ public:
     virtual bool Compare(TESForm *);
     void SetType(char);
     char GetType();
-    void SetValue(float);
+    void SetValue(float value) { fValue = value; }
     float GetValue() { return fValue; }
     TESGlobal &operator=(const TESGlobal &);
 };

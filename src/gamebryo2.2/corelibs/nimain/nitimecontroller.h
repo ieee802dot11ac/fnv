@@ -51,7 +51,7 @@ public:
     NiObjectNET *GetTarget() const;
     uint32_t ItemsInList() const;
     void SetNext(NiTimeController *);
-    NiTimeController *GetNext() const;
+    NiTimeController *GetNext() const { return m_spNext; }
     virtual bool IsTransformController() const;
     virtual bool IsVertexController() const;
     float GetLastScaledTime() const;

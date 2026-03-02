@@ -6,6 +6,7 @@
 		"objects": {
 			"gamebryo2.2/corelibs/nimain/niavobject.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niobject.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/niobjectnet.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nipoint3.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nirefobject.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nirtti.cpp": "NonMatching"

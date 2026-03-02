@@ -1,10 +1,24 @@
 #include "niobject.h"
 #include <cstring>
 #include "nistream.h"
+#include "nicloningprocess.h"
 
 NiObject::NiObject() {}
 
 NiObject::~NiObject() {}
+
+NiObject *NiObject::Clone(void) {
+    NiCloningProcess ncp(0x101);
+    NiObject *o = CreateClone(ncp);
+    ProcessClone(ncp);
+    return o;
+}
+
+NiObject *NiObject::Clone(NiCloningProcess &kCloning) {
+    NiObject *o = CreateClone(kCloning);
+    ProcessClone(kCloning);
+    return o;
+}
 
 void NiObject::CreateDeepCopy(NiPointer<NiObject> &aspObject) {
     NiStream temp_stream;

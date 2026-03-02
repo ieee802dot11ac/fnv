@@ -23,7 +23,7 @@ public:
 
     T *operator->() const { return m_pObject; }
 
-    NiPointer<T> &operator=(T *pObject) {
+    NiPointer<T> &operator=(T *pObject); /* {
         if (m_pObject) {
             m_pObject->DecRefCount();
         }
@@ -31,7 +31,7 @@ public:
         if (pObject) {
             pObject->IncRefCount();
         }
-    }
+    }*/
 
     NiPointer<T> &operator=(NiPointer<T> const &rhs); /* {
          if (m_pObject) {

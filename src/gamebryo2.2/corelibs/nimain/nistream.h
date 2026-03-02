@@ -4,6 +4,8 @@
 #include "niobject.h"
 #include "nibinarystream.h"
 
+#define VERSION(hh, hl, lh, ll) ((u8(hh) << 24) | (u8(hl) << 16) | (u8(lh) << 8) | u8(ll))
+
 class NiStream {
 public:
     NiStream();
@@ -53,8 +55,10 @@ public:
     // NiThread::Priority const GetPriority() const;
     // void SetPriority(NiThread::Priority const);
     class BackgroundLoadProcedure;
-    static uint GetVersionFromString(char const *);
-    static uint GetVersion(uint, uint, uint, uint);
+    static uint GetVersionFromString(char const *pcVersionString);
+    static uint GetVersion(uint hihi, uint hilo, uint lohi, uint lolo) {
+        return VERSION(hihi, hilo, lohi, lolo);
+    }
     uint GetFileVersion() const { return m_uiNifFileVersion; }
     uint GetFileUserDefinedVersion() const { return m_uiNifFileUserDefinedVersion; }
     void SetLastError(uint);

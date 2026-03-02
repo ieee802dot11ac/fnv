@@ -1,0 +1,76 @@
+#pragma once
+
+#include "gamebryo2.2/corelibs/nimain/niavobject.h"
+#include <types.h>
+#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
+
+class BSSoundHandle {
+public:
+    enum ASSUMED_STATE {
+        ASSUMED_STATE_INITIALIZED = 0x0000,
+        ASSUMED_STATE_PLAYING = 0x0001,
+        ASSUMED_STATE_STOPPED = 0x0002,
+        ASSUMED_STATE_PAUSED = 0x0003,
+    };
+
+    BSSoundHandle(const BSSoundHandle &handle)
+        : iSoundID(handle.iSoundID), bAssumeSuccess(handle.bAssumeSuccess),
+          eState(handle.eState) {}
+    BSSoundHandle(uint32_t);
+    BSSoundHandle();
+    ~BSSoundHandle() {}
+    void Clear();
+    bool Play(bool);
+    bool PlayAfter(uint32_t, int32_t);
+    bool Pause();
+    bool Stop();
+    bool IsPlaying();
+    bool IsValid();
+    int32_t GetSoundType();
+    float GetVolume();
+    bool SetVolume(float);
+    bool SetFrequency(float);
+    bool SetModFrequency(float);
+    bool SetFrequencyVariance(unsigned char);
+    bool SetBalance(int32_t);
+    bool SetStaticAttenuation(uint16_t);
+    int32_t GetDuration();
+    bool SetPosition(const NiPoint3 &point);
+    bool SetPosition(float, float, float);
+    bool SetBeamEnd(const NiPoint3 &);
+    bool SetBeamEnd(float, float, float);
+    void SetMinMax(float, float);
+    void SetAttenuationCurve(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t);
+    void SetReverbAttenuation(uint16_t);
+    bool SetOrientation(float, float, float);
+    uint32_t GetID() const;
+    void SetObjectToFollow(NiAVObject *);
+    void Seek(uint32_t);
+    void SetFollowsListener(bool);
+    void SetCompletionCallback(void (*)(void *, bool), void *);
+    void SetPlayCallback(void (*)(void *, int32_t), void *);
+    bool Release();
+    bool FadeInPlay(uint32_t);
+    bool FadeOutAndRelease(uint32_t);
+    bool FadeOut(uint32_t);
+    void SetTimeConstraints(unsigned char, unsigned char);
+    void SetSynchStartTime(uint32_t);
+    void ClearSynchStartTime();
+    void SetPriority(uint32_t);
+    void SetAssumeSuccess(bool);
+    ASSUMED_STATE QState() const;
+    BSSoundHandle &operator=(const BSSoundHandle &);
+    bool operator==(uint32_t) const;
+    bool operator==(const BSSoundHandle &) const;
+    bool operator!=(uint32_t);
+    bool operator!=(const BSSoundHandle &) const;
+
+    static void SetAddMovingSoundCallback(void (*)(NiAVObject *));
+
+protected:
+    uint32_t iSoundID; // 0x0
+    bool bAssumeSuccess; // 0x4
+    ASSUMED_STATE eState; // 0x8
+
+    static void (*pfnAddMovingSoundCallback)(NiAVObject *);
+};

@@ -17,15 +17,16 @@
 		"cflags": "base",
 		"objects": {
 			"fallout/misc/calendar.cpp": "NonMatching",
-			"fallout/misc/main.cpp": "NonMatching"
+			"fallout/misc/main.cpp": "NonMatching",
+			"fallout_shared/tesform.cpp": "NonMatching"
 		}
 	},
 	"creation": {
 		"progress_category": "newvegas",
 		"mw_version": "X360/16.00.11886.00",
-		"cflags": "base",
+		"cflags": "gamebryo",
 		"objects": {
-			"fallout_shared/tesform.cpp": "NonMatching"
+			"bsaudio/bsaudio.cpp": "NonMatching"
 		}
 	},
 	"zlib": {

@@ -30,10 +30,10 @@ public:
     NiTimeController(const NiTimeController &);
     NiTimeController();
     virtual ~NiTimeController();
-    void SetAnimType(NiTimeController::AnimType);
-    NiTimeController::AnimType GetAnimType() const;
-    void SetCycleType(NiTimeController::CycleType);
-    NiTimeController::CycleType GetCycleType() const;
+    void SetAnimType(AnimType);
+    AnimType GetAnimType() const;
+    void SetCycleType(CycleType);
+    CycleType GetCycleType() const;
     void SetPlayBackwards(bool);
     bool GetPlayBackwards() const;
     void SetFrequency(float);

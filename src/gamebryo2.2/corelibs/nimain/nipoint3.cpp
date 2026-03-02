@@ -8,7 +8,11 @@ const NiPoint3 NiPoint3::UNIT_ALL(1, 1, 1);
 const NiPoint3 NiPoint3::INFINITY_POINT3;
 
 // MERGED!!! with NiColor::SaveBinary(NiStream&)
-// void NiPoint3::SaveBinary(NiStream &stream) {}
+void NiPoint3::SaveBinary(NiStream &stream) {
+    NiStreamSaveBinary(stream, x);
+    NiStreamSaveBinary(stream, y);
+    NiStreamSaveBinary(stream, z);
+}
 
 char *NiPoint3::GetViewerString(char const *pPrefix) const { return nullptr; }
 

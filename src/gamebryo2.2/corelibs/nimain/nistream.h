@@ -201,3 +201,6 @@ protected:
 
 template <typename T>
 void NiStreamLoadBinary(NiStream &, T &);
+
+template <typename T>
+void NiStreamSaveBinary(NiStream &, T &);

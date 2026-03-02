@@ -1,5 +1,6 @@
 #pragma once
 #include <types.h>
+#include "nistream.h"
 
 class NiPoint3 {
 public:
@@ -39,10 +40,10 @@ public:
     static NiPoint3 const UNIT_Z;
     static NiPoint3 const UNIT_ALL;
     static NiPoint3 const INFINITY_POINT3;
-    // static void LoadBinary(NiStream &, NiPoint3 *, uint);
-    // void LoadBinary(NiStream &);
-    // static void SaveBinary(NiStream &, NiPoint3 *, uint);
-    // void SaveBinary(NiStream &);
+    static void LoadBinary(NiStream &, NiPoint3 *, uint);
+    void LoadBinary(NiStream &);
+    static void SaveBinary(NiStream &, NiPoint3 *, uint);
+    void SaveBinary(NiStream &);
     char *GetViewerString(char const *) const;
     static void _SDMInit();
     static void _SDMShutdown();

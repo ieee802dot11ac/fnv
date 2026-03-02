@@ -23,7 +23,7 @@ public:
     virtual void Init(void *);
     virtual void Shutdown();
     void SetMultiThreaded(bool);
-    bool IsMultiThreaded();
+    bool IsMultiThreaded() { return bMultiThread; }
     BSSoundHandle GetSoundHandleByNumericID(uint, uint);
     BSSoundHandle GetSoundHandleByFilename(const char *, uint, void *);
     BSSoundHandle GetSoundHandleByName(const char *, uint);
@@ -123,8 +123,7 @@ public:
     static float GetMinDialogDist();
     static float GetMaxDialogDist();
 
-    // BSAudio itself is never `new`ed because purecall so. lol
-    BS_MEM_OVERLOADS("", 3, "")
+    BS_MEM_OVERLOADS
 
 protected:
     BSAudio();

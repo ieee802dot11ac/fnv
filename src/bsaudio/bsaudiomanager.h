@@ -1,5 +1,6 @@
 #pragma once
 
+#include "bscore/memorymanager.h"
 #include <types.h>
 #include "bsaudio/bssoundhandle.h"
 #include "gamebryo2.2/corelibs/nimain/niavobject.h"
@@ -99,6 +100,8 @@ public:
     void Set(SOUND_MSG, int, int, int, NiPointer<NiAVObject>, NiPoint3);
     void Set(SOUND_MSG, int, int, void *, NiPointer<NiAVObject>, NiPoint3);
     BSSoundMessage &operator=(const BSSoundMessage &);
+
+    BS_MEM_OVERLOADS
 
 private:
     SOUND_MSG msg; // 0x00
@@ -280,12 +283,12 @@ private:
     // void Precache(BSGameSound *);
     void Process();
     void ProcessMessages();
-    // bool ProcessMessage(BSSoundMessage *);
+    bool ProcessMessage(BSSoundMessage *);
     void ProcessSoundUpdates();
-    // BSSoundMessage *GetFreeMessage();
-    // void FreeMessage(BSSoundMessage *);
-    // BSSoundMessage *GetFreeQueueMessage();
-    // void FreeQueueMessage(BSSoundMessage *);
+    BSSoundMessage *GetFreeMessage();
+    void FreeMessage(BSSoundMessage *);
+    BSSoundMessage *GetFreeQueueMessage();
+    void FreeQueueMessage(BSSoundMessage *);
     // void AddToCache(BSGameSound *);
     // BSGameSound *GetFromCache(uint, uint, uint);
     bool IsPausedType(uint);

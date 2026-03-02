@@ -27,6 +27,7 @@
 		"cflags": "gamebryo",
 		"objects": {
 			"bsaudio/bsaudio.cpp": "NonMatching",
+			"bsaudio/bsaudiomanager.cpp": "NonMatching",
 			"bsaudio/bssoundhandle.cpp": "NonMatching"
 		}
 	},

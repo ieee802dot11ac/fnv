@@ -92,8 +92,8 @@ protected:
     bool bCaptureStack; // 0x348;
 };
 
-#define BS_MEM_OVERLOADS(file, line, func)                                               \
-    void *operator new(size_t s) {                                                       \
+#define BS_MEM_OVERLOADS                                                                 \
+    void *operator new(size_t s, const char *file, int line, const char *func) {         \
         return MemoryManager::Instance().Allocate(s, file, line, func);                  \
     }                                                                                    \
     void operator delete(void *v) { MemoryManager::Instance().Deallocate(v); }

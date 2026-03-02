@@ -31,6 +31,10 @@ bsaudio/bssoundhandle.cpp:
 	.pdata      start:0x82202C60 end:0x82202D70
 	.text       start:0x8290D3D0 end:0x8290E2D8
 
+bsaudio/bsaudiomanager.cpp:
+	.pdata      start:0x82202D70 end:0x82203110
+	.text       start:0x8290E2D8 end:0x82920398
+
 lib/zlib/deflate.c:
 	.rdata      start:0x820D29F0 end:0x820D2AA8
 	.pdata      start:0x82203350 end:0x822033B0

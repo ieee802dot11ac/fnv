@@ -8,14 +8,14 @@ jobs:
   build:
     # This is a *private* build container.
     # See docs/github_actions.md for more information.
-    container: ghcr.io/my/game-build:main
+    container: ghcr.io/ieee802dot11ac/fnv-build:main
 
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         # Add game versions here
-        version: [GAMEID]
+        version: [425307E0]
 
     steps:
     # Checkout the repository
@@ -56,13 +56,6 @@ jobs:
         python configure.py --map --version ${{ matrix.version }} \
             --binutils /binutils --compilers /compilers
         ninja all_source progress build/${{ matrix.version }}/report.json
-
-    # Upload map files
-    - name: Upload map
-      uses: actions/upload-artifact@v4
-      with:
-        name: ${{ matrix.version }}_maps
-        path: build/${{ matrix.version }}/**/*.MAP
 
     # Upload progress report
     - name: Upload report

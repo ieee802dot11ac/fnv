@@ -28,6 +28,16 @@
 			"fallout_shared/tesform.cpp": "NonMatching"
 		}
 	},
+	"zlib": {
+		"progress_category": "lib",
+		"mw_version": "X360/16.00.11886.00",
+		"cflags": "speedtree",
+		"objects": {
+			"lib/zlib/adler32.c": "NonMatching",
+			"lib/zlib/crc32.c": "NonMatching",
+			"lib/zlib/trees.c": "NonMatching"
+		}
+	},
 	"speedtree": {
 		"progress_category": "lib",
 		"mw_version": "X360/16.00.11886.00",

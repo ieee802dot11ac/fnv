@@ -5,3 +5,19 @@ splits: config/425307E0/splits.txt
 # pdb: orig/425307E0/Fallout_Release_MemDebug.pdb
 quick_analysis: true
 # detect_strings: false
+
+block_relocations:
+- source: .rdata:0x820D2C00
+  end: .rdata:0x820D4C00
+- target: .text:0x829315FC
+- target: .text:0x82931648
+- target: .text:0x829329D0
+- target: .text:0x82932A10
+
+add_relocations:
+- source: .data:0x832598B0
+  type: abs
+  target: static_dtree
+- source: .data:0x832598B4
+  type: abs
+  target: extra_dbits

@@ -23,6 +23,20 @@ fallout/misc/main.cpp:
 	.pdata      start:0x821F8DC0 end:0x821F9068
 	.text       start:0x826930B0 end:0x826A0A90
 
+lib/zlib/adler32.c:
+	.text       start:0x8292FF80 end:0x82930320
+
+lib/zlib/crc32.c:
+	.rdata      start:0x820D2C00 end:0x820D4C00
+	.pdata      start:0x822033C0 end:0x822033C8
+	.text       start:0x82930320 end:0x82931508
+
+lib/zlib/trees.c:
+	.rdata      start:0x820D4C00 end:0x820D5638
+	.pdata      start:0x822033C8 end:0x82203410
+	.text       start:0x82931508 end:0x82935368
+	.data       start:0x8325989C end:0x832598D8
+
 lib/speedtree/indexedgeometry.cpp:
 	.pdata      start:0x82205F08 end:0x82205FA0
 	.text       start:0x82992550 end:0x82994780

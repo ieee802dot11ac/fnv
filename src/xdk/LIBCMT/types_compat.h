@@ -2,6 +2,7 @@
 
 #ifndef _MSC_VER
 #define _SIZE_T_DEFINED
+typedef decltype(sizeof 0) size_t;
 #endif
 
 #ifndef _SIZE_T_DEFINED

@@ -78,33 +78,32 @@ class BSSoundMessage {
 public:
     BSSoundMessage(const BSSoundMessage &);
     BSSoundMessage(BSSoundMessage *);
-    BSSoundMessage(SOUND_MSG, int32_t, int32_t, int32_t, NiPointer<NiAVObject>, NiPoint3);
-    BSSoundMessage(SOUND_MSG, int32_t, int32_t, void *, NiPointer<NiAVObject>, NiPoint3);
+    BSSoundMessage(SOUND_MSG, int, int, int, NiPointer<NiAVObject>, NiPoint3);
+    BSSoundMessage(SOUND_MSG, int, int, void *, NiPointer<NiAVObject>, NiPoint3);
     BSSoundMessage();
     ~BSSoundMessage();
     SOUND_MSG Message();
-    int32_t SID();
-    int32_t Data();
-    void SetData(int32_t);
+    int SID();
+    int Data();
+    void SetData(int);
     void *PData();
-    int32_t Data2();
+    int Data2();
     void SetPData(void *);
     void SPData(NiPointer<NiAVObject> &);
     void SetSPData(NiPointer<NiAVObject>);
     void GetVector3(NiPoint3);
     NiPoint3 GetVector3();
-    uint16_t GetCurveValue(int32_t);
-    void SetCurveValue(int32_t, uint16_t);
+    uint16_t GetCurveValue(int);
+    void SetCurveValue(int, uint16_t);
     NiPointer<NiAVObject> GetSPData();
-    void Set(SOUND_MSG, int32_t, int32_t, int32_t, NiPointer<NiAVObject>, NiPoint3);
-    void Set(SOUND_MSG, int32_t, int32_t, void *, NiPointer<NiAVObject>, NiPoint3);
+    void Set(SOUND_MSG, int, int, int, NiPointer<NiAVObject>, NiPoint3);
+    void Set(SOUND_MSG, int, int, void *, NiPointer<NiAVObject>, NiPoint3);
     BSSoundMessage &operator=(const BSSoundMessage &);
-    void *__vecDelDtor(uint32_t);
 
 private:
     SOUND_MSG msg; // 0x00
-    int32_t iID; // 0x04
-    int32_t iData; // 0x08
+    int iID; // 0x04
+    int iData; // 0x08
     void *pData; // 0x0c
     NiPointer<NiAVObject> spData; // 0x10
     union { // 0x14
@@ -122,10 +121,10 @@ public:
     void SetBottomless(bool);
 
 protected:
-    uint32_t iCount; // 0x0
+    uint iCount; // 0x0
     bool bBottomless; // 0x4
     BSSoundMessage *pTop; // 0x8
-    uint32_t iTimeLastAllocated; // 0xc
+    uint iTimeLastAllocated; // 0xc
 };
 
 class BSAudioManager {
@@ -156,7 +155,7 @@ public:
     void PauseAllOfType(uint, bool);
     void UnPauseAllOfType(uint, bool);
     bool Play(uint, bool);
-    bool PlayAfter(uint, uint, int32_t);
+    bool PlayAfter(uint, uint, int);
     bool Pause(uint);
     bool Stop(uint);
     void FadeOut(uint, uint, uint);
@@ -170,8 +169,8 @@ public:
     bool SetFrequency(uint, float);
     bool SetModFrequency(uint, float);
     bool SetFrequencyVariance(uint, unsigned char);
-    bool SetBalance(uint, int32_t);
-    int32_t GetDuration(uint);
+    bool SetBalance(uint, int);
+    int GetDuration(uint);
     bool SetPosition(uint, float, float, float);
     bool SetBeamEnd(uint, float, float, float);
     void SetMinMax(uint, float, float);
@@ -181,7 +180,7 @@ public:
     bool IsValid(uint);
     bool Release(uint);
     bool SetCompletionCallback(uint, void (*)(void *, bool), void *);
-    bool SetPlayCallback(uint, void (*)(void *, int32_t), void *);
+    bool SetPlayCallback(uint, void (*)(void *, int), void *);
     void VolumeChanged();
     void SetObjectToFollow(uint, NiAVObject *);
     void Seek(uint, uint);
@@ -262,8 +261,7 @@ public:
     uint GetAudioCacheSizeInK();
     void SetCacheEnabled(bool);
     bool GetCacheEnabled();
-    void
-    ComposeMessage(SOUND_MSG, uint, int32_t, void *, NiPointer<NiAVObject>, NiPoint3);
+    void ComposeMessage(SOUND_MSG, uint, int, void *, NiPointer<NiAVObject>, NiPoint3);
     void Precache(const char *, uint, void *);
     void Precache(uint, uint);
     void Precache(char *, uint);
@@ -295,12 +293,12 @@ private:
     bool ClearPausedType(uint, bool);
     // void SetVoiceState(uint, BSGameSound *);
     void SynchVoiceStates();
-    int32_t iMessageListIndex; // 0x004
-    int32_t iMessageProcessingListIndex; // 0x008
+    int iMessageListIndex; // 0x004
+    int iMessageProcessingListIndex; // 0x008
     // NiTPointerList<BSSoundMessage *> Messages[2]; // 0x00c
-    // AudioMessageStack FreeMessages; // 0x024
-    // AudioMessageStack FreeQueueMessages; // 0x034
-    // AudioMessageStack GarbageMessages; // 0x044
+    AudioMessageStack FreeMessages; // 0x024
+    AudioMessageStack FreeQueueMessages; // 0x034
+    AudioMessageStack GarbageMessages; // 0x044
     // NiTPointerMap<int, BSGameSound *> SoundList; // 0x054
     // NiTPointerMap<int, BSSoundInfo *> SoundStateMap; // 0x064
     // NiTPointerMap<int, BSSoundInfo *> StateUpdateMap; // 0x074
@@ -339,5 +337,5 @@ private:
     uint iPauseListSize; // 0x1cc
     uint iNextID; // 0x1d0
     bool bIgnoreGlobalTimeMultiplier; // 0x1d4
-    // static int32_t AudioStringCompareFn(AudioDebugString *, AudioDebugString *);
+    // static int AudioStringCompareFn(AudioDebugString *, AudioDebugString *);
 };

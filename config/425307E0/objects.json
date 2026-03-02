@@ -26,7 +26,8 @@
 		"mw_version": "X360/16.00.11886.00",
 		"cflags": "gamebryo",
 		"objects": {
-			"bsaudio/bsaudio.cpp": "NonMatching"
+			"bsaudio/bsaudio.cpp": "NonMatching",
+			"bsaudio/bssoundhandle.cpp": "NonMatching"
 		}
 	},
 	"zlib": {

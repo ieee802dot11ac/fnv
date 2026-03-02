@@ -24,8 +24,12 @@ fallout/misc/main.cpp:
 	.text       start:0x826930B0 end:0x826A0A90
 
 bsaudio/bsaudio.cpp:
-	.pdata      start:0x82202A68 end:0x82202C58
-	.text       start:0x8290BC68 end:0x8290D348
+	.pdata      start:0x82202A68 end:0x82202C60
+	.text       start:0x8290BC68 end:0x8290D3D0
+
+bsaudio/bssoundhandle.cpp:
+	.pdata      start:0x82202C60 end:0x82202D70
+	.text       start:0x8290D3D0 end:0x8290E2D8
 
 lib/zlib/adler32.c:
 	.text       start:0x8292FF80 end:0x82930320

@@ -16,25 +16,25 @@ public:
     BSSoundHandle(const BSSoundHandle &handle)
         : iSoundID(handle.iSoundID), bAssumeSuccess(handle.bAssumeSuccess),
           eState(handle.eState) {}
-    BSSoundHandle(uint32_t);
+    BSSoundHandle(uint);
     BSSoundHandle();
     ~BSSoundHandle() {}
     void Clear();
     bool Play(bool);
-    bool PlayAfter(uint32_t, int32_t);
+    bool PlayAfter(uint, int);
     bool Pause();
     bool Stop();
     bool IsPlaying();
     bool IsValid();
-    int32_t GetSoundType();
+    int GetSoundType();
     float GetVolume();
     bool SetVolume(float);
     bool SetFrequency(float);
     bool SetModFrequency(float);
     bool SetFrequencyVariance(unsigned char);
-    bool SetBalance(int32_t);
+    bool SetBalance(int);
     bool SetStaticAttenuation(uint16_t);
-    int32_t GetDuration();
+    int GetDuration();
     bool SetPosition(const NiPoint3 &point);
     bool SetPosition(float, float, float);
     bool SetBeamEnd(const NiPoint3 &);
@@ -43,32 +43,32 @@ public:
     void SetAttenuationCurve(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t);
     void SetReverbAttenuation(uint16_t);
     bool SetOrientation(float, float, float);
-    uint32_t GetID() const;
+    uint GetID() const;
     void SetObjectToFollow(NiAVObject *);
-    void Seek(uint32_t);
+    void Seek(uint);
     void SetFollowsListener(bool);
     void SetCompletionCallback(void (*)(void *, bool), void *);
-    void SetPlayCallback(void (*)(void *, int32_t), void *);
+    void SetPlayCallback(void (*)(void *, int), void *);
     bool Release();
-    bool FadeInPlay(uint32_t);
-    bool FadeOutAndRelease(uint32_t);
-    bool FadeOut(uint32_t);
+    bool FadeInPlay(uint);
+    bool FadeOutAndRelease(uint);
+    bool FadeOut(uint);
     void SetTimeConstraints(unsigned char, unsigned char);
-    void SetSynchStartTime(uint32_t);
+    void SetSynchStartTime(uint);
     void ClearSynchStartTime();
-    void SetPriority(uint32_t);
+    void SetPriority(uint);
     void SetAssumeSuccess(bool);
     ASSUMED_STATE QState() const;
     BSSoundHandle &operator=(const BSSoundHandle &);
-    bool operator==(uint32_t) const;
+    bool operator==(uint) const;
     bool operator==(const BSSoundHandle &) const;
-    bool operator!=(uint32_t);
+    bool operator!=(uint);
     bool operator!=(const BSSoundHandle &) const;
 
     static void SetAddMovingSoundCallback(void (*)(NiAVObject *));
 
 protected:
-    uint32_t iSoundID; // 0x0
+    uint iSoundID; // 0x0
     bool bAssumeSuccess; // 0x4
     ASSUMED_STATE eState; // 0x8
 

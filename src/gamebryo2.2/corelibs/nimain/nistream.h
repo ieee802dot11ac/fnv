@@ -1,6 +1,8 @@
 #pragma once
+#include "gamebryo2.2/corelibs/nimain/nifixedstring.h"
 #include <types.h>
 #include "niobject.h"
+#include "nibinarystream.h"
 
 class NiStream {
 public:
@@ -11,10 +13,10 @@ public:
     void RemoveAllObjects();
     uint GetObjectCount() const;
     NiObject *GetObjectAt(uint) const;
-    // virtual bool Load(NiBinaryStream *);
+    virtual bool Load(NiBinaryStream *);
     virtual bool Load(char *, int);
     virtual bool Load(char const *);
-    // virtual bool Save(NiBinaryStream *);
+    virtual bool Save(NiBinaryStream *);
     virtual bool Save(char *&, int &);
     virtual bool Save(char const *);
     bool GetSaveAsLittleEndian();
@@ -36,7 +38,7 @@ protected:
     void BackgroundLoadBegin();
 
 public:
-    // void BackgroundLoadBegin(NiBinaryStream *);
+    void BackgroundLoadBegin(NiBinaryStream *);
     void BackgroundLoadBegin(char const *);
     NiStream::ThreadStatus BackgroundLoadPoll(NiStream::LoadState *);
     void BackgroundLoadPause();
@@ -53,19 +55,18 @@ public:
     class BackgroundLoadProcedure;
     static uint GetVersionFromString(char const *);
     static uint GetVersion(uint, uint, uint, uint);
-    uint GetFileVersion() const;
-    uint GetFileUserDefinedVersion() const;
+    uint GetFileVersion() const { return m_uiNifFileVersion; }
+    uint GetFileUserDefinedVersion() const { return m_uiNifFileUserDefinedVersion; }
     void SetLastError(uint);
     uint GetLastError() const;
     char const *GetLastErrorMessage() const;
     void ResetLastErrorInfo();
     void LoadCString(char *&);
     void SaveCString(char const *);
-    // void LoadFixedString(NiFixedString &);
-    // void SaveFixedString(NiFixedString const &);
-    // void LoadCStringAsFixedString(NiFixedString &);
-    static uint const NULL_LINKID;
-    // virtual bool RegisterFixedString(NiFixedString const &);
+    void LoadFixedString(NiFixedString &);
+    void SaveFixedString(NiFixedString const &);
+    void LoadCStringAsFixedString(NiFixedString &);
+    virtual bool RegisterFixedString(NiFixedString const &);
     virtual bool RegisterSaveObject(NiObject *);
     virtual void ChangeObject(NiObject *);
     virtual uint GetLinkIDFromObject(NiObject const *) const;
@@ -76,10 +77,10 @@ public:
     NiObject *GetObjectFromLinkID();
     uint GetNumberOfLinkIDs();
     void SetNumberOfLinkIDs(uint);
-    // NiObjectGroup *GetGroupFromID(uint) const;
-    // uint GetIDFromGroup(NiObjectGroup *) const;
-    // NiBinaryStream &Istr();
-    // NiBinaryStream &Ostr();
+    NiObjectGroup *GetGroupFromID(uint) const;
+    uint GetIDFromGroup(NiObjectGroup *) const;
+    NiBinaryStream &Istr();
+    NiBinaryStream &Ostr();
     // void SetTexture(NiTexture *);
     // void GetTexture(char const *, NiPointer<NiTexture> &) const;
     // NiSearchPath *GetSearchPath() const;
@@ -102,6 +103,7 @@ public:
     static void _SDMInit();
     static void _SDMShutdown();
     static NiObject *CreateObjectByRTTI(char const *);
+    static uint const NULL_LINKID;
     // BSStreamHeader m_BSStreamHeader; // 0x4
 protected:
     // NiTPrimitiveArray<NiObjectGroup *> m_kGroups; // 0xC8
@@ -115,8 +117,8 @@ protected:
     // NiTLargePrimitiveArray<unsigned int> m_kObjectSizes; // 0x204
     // NiTLargeObjectArray<NiPointer<NiObject> > m_kTopObjects; // 0x21C
     // NiTLargeObjectArray<NiFixedString> m_kFixedStrings; // 0x234
-    // NiBinaryStream *m_pkIstr; // 0x24C
-    // NiBinaryStream *m_pkOstr; // 0x250
+    NiBinaryStream *m_pkIstr; // 0x24C
+    NiBinaryStream *m_pkOstr; // 0x250
     // NiTPrimitiveSet<unsigned int> m_kLinkIDs; // 0x254
     uint m_uiLinkIndex; // 0x260
     // NiTPrimitiveSet<unsigned int> m_kLinkIDBlocks; // 0x264
@@ -164,7 +166,7 @@ protected:
     bool LoadRTTI();
     void SaveRTTI();
     void RTTIError(char const *);
-    // uint GetStringID(NiFixedString const &);
+    uint GetStringID(NiFixedString const &);
     void SaveFixedStringTable();
     bool LoadFixedStringTable();
     void LoadObjectGroups();
@@ -189,10 +191,13 @@ protected:
     static uint const ms_uiNifMaxVersion;
     static uint const ms_uiNifMinUserDefinedVersion;
     static uint const ms_uiNifMaxUserDefinedVersion;
-    // static NiTStringPointerMap<NiObject * (__cdecl*)(void)> *ms_pkLoaders;
-    // typedef NiTPrimitiveArray<void (__cdecl*)(NiStream &,NiObject *)>
-    // PostProcessFunctionArray; static NiTPrimitiveArray<void (__cdecl*)(NiStream
-    // &,NiObject *)> *ms_pkPostProcessFunctions; static NiCriticalSection
-    // ms_kCleanupCriticalSection;
+    // static NiTStringPointerMap<CreateFunction> *ms_pkLoaders;
+    // typedef NiTPrimitiveArray<void (*)(NiStream &, NiObject *)>
+    // PostProcessFunctionArray;
+    // static PostProcessFunctionArray * ms_pkPostProcessFunctions;
+    // static NiCriticalSection ms_kCleanupCriticalSection;
     static bool bUseDefaultPath;
 };
+
+template <typename T>
+void NiStreamLoadBinary(NiStream &, T &);

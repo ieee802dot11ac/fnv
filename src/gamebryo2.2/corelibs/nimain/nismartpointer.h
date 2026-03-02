@@ -33,15 +33,15 @@ public:
         }
     }
 
-    NiPointer<T> &operator=(NiPointer<T> const &rhs) {
-        if (m_pObject) {
-            m_pObject->DecRefCount();
-        }
-        m_pObject = rhs.m_pObject;
-        if (m_pObject) {
-            m_pObject->IncRefCount();
-        }
-    }
+    NiPointer<T> &operator=(NiPointer<T> const &rhs); /* {
+         if (m_pObject) {
+             m_pObject->DecRefCount();
+         }
+         m_pObject = rhs.m_pObject;
+         if (m_pObject) {
+             m_pObject->IncRefCount();
+         }
+     }*/
 
     bool operator==(NiPointer<T> const &rhs) const { return m_pObject == rhs.m_pObject; }
 

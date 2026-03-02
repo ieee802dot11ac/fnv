@@ -1,9 +1,35 @@
 #include "niobject.h"
 #include <cstring>
+#include "nistream.h"
 
 NiObject::NiObject() {}
 
 NiObject::~NiObject() {}
+
+void NiObject::CreateDeepCopy(NiPointer<NiObject> &aspObject) {
+    NiStream temp_stream;
+    temp_stream.InsertObject(this);
+    char *buf;
+    int i = 0;
+    temp_stream.Save(buf, i);
+    temp_stream.Load(buf, i);
+
+    NiPointer<NiObject> o = nullptr;
+    // some bullshit with temp_stream.m_kTopObjects
+    aspObject = o;
+}
+
+void NiObject::LoadBinary(NiStream &stream) {
+    if (stream.GetFileVersion() >= 0x5000006 && stream.GetFileVersion() < 0xA000072) {
+        uint id;
+        NiStreamLoadBinary(stream, id);
+        SetGroup(stream.GetGroupFromID(id));
+    }
+}
+
+bool NiObject::RegisterStreamables(NiStream &stream) {
+    return stream.RegisterSaveObject(this);
+}
 
 const NiRTTI *NiObject::GetStreamableRTTI() const { return GetRTTI(); }
 

@@ -2,8 +2,11 @@
 
 #include "nirefobject.h"
 #include "nirtti.h"
+#include "niobjectgroup.h"
+#include "nismartpointer.h"
 
 class NiStream;
+class NiCloningProcess;
 
 class NiObject : public NiRefObject {
 public:
@@ -30,10 +33,7 @@ public:
     // virtual bhkLimitedHingeConstraint *IsBhkLimitedHingeConstraint();
     NiObject *DynamicCast(const NiRTTI *__restrict) const;
     static NiObject *DynamicCast(const NiRTTI *__restrict, const NiObject *);
-    // virtual NiObject *CreateClone(NiCloningProcess &);
-protected:
-    // void CopyMembers(NiObject *, NiCloningProcess &);
-public:
+    virtual NiObject *CreateClone(NiCloningProcess &);
     virtual void LoadBinary(NiStream &);
     virtual void LinkObject(NiStream &);
     virtual bool RegisterStreamables(NiStream &);
@@ -43,25 +43,25 @@ public:
     // virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
     // virtual void AddViewerStrings(NiTPrimitiveArray<char *> *);
     virtual ~NiObject();
-    // NiObject *Clone(NiCloningProcess &);
+    NiObject *Clone(NiCloningProcess &);
     NiObject *Clone();
-    // NiObject *CreateSharedClone(NiCloningProcess &);
-    // virtual void ProcessClone(NiCloningProcess &);
-    // void CreateDeepCopy(NiPointer<NiObject> &);
+    NiObject *CreateSharedClone(NiCloningProcess &);
+    virtual void ProcessClone(NiCloningProcess &);
+    void CreateDeepCopy(NiPointer<NiObject> &);
     virtual void PostLinkObject(NiStream &);
     virtual bool StreamCanSkip();
     virtual const NiRTTI *GetStreamableRTTI() const;
     // virtual void SetBound(BSNiBound *);
     virtual uint GetBlockAllocationSize() const;
-    // virtual NiObjectGroup *GetGroup() const;
-    // virtual void SetGroup(NiObjectGroup *);
+    virtual NiObjectGroup *GetGroup() const;
+    virtual void SetGroup(NiObjectGroup *);
     // virtual NiControllerManager *IsNiControllerManager();
-private:
-    NiObject(const NiObject &);
 
 protected:
     NiObject();
+    void CopyMembers(NiObject *, NiCloningProcess &);
 
 private:
+    NiObject(const NiObject &);
     NiObject &operator=(const NiObject &);
 };

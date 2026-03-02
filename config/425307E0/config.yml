@@ -13,6 +13,9 @@ block_relocations:
 - target: .text:0x82931648
 - target: .text:0x829329D0
 - target: .text:0x82932A10
+- target: .text:0x8292F4B0
+- target: .text:0x8292F540
+- target: .text:0x8292F61C
 
 add_relocations:
 - source: .data:0x832598B0
@@ -21,3 +24,27 @@ add_relocations:
 - source: .data:0x832598B4
   type: abs
   target: extra_dbits
+- source: .text:0x8292F960
+  type: ha
+  target: ?lbase@?1??inflate_table@@9@9
+- source: .text:0x8292F964
+  type: l
+  target: ?lbase@?1??inflate_table@@9@9
+- source: .text:0x8292F978
+  type: ha
+  target: ?lext@?1??inflate_table@@9@9
+- source: .text:0x8292F97C
+  type: l
+  target: ?lext@?1??inflate_table@@9@9
+- source: .text:0x8292F99C
+  type: ha
+  target: ?dbase@?1??inflate_table@@9@9
+- source: .text:0x8292F9A0
+  type: l
+  target: ?dbase@?1??inflate_table@@9@9
+- source: .text:0x8292F9A8
+  type: ha
+  target: ?dext@?1??inflate_table@@9@9
+- source: .text:0x8292F9AC
+  type: l
+  target: ?dext@?1??inflate_table@@9@9

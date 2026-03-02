@@ -37,7 +37,11 @@
 		"objects": {
 			"lib/zlib/adler32.c": "NonMatching",
 			"lib/zlib/crc32.c": "NonMatching",
-			"lib/zlib/trees.c": "NonMatching"
+			"lib/zlib/deflate.c": "NonMatching",
+			"lib/zlib/trees.c": "NonMatching",
+			"lib/zlib/inffast.c": "NonMatching",
+			"lib/zlib/inftrees.c": "NonMatching",
+			"lib/zlib/zutil.c": "NonMatching"
 		}
 	},
 	"speedtree": {

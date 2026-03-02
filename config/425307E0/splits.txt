@@ -31,6 +31,23 @@ bsaudio/bssoundhandle.cpp:
 	.pdata      start:0x82202C60 end:0x82202D70
 	.text       start:0x8290D3D0 end:0x8290E2D8
 
+lib/zlib/deflate.c:
+	.rdata      start:0x820D29F0 end:0x820D2AA8
+	.pdata      start:0x82203350 end:0x822033B0
+	.text       start:0x8292B560 end:0x8292E9E0
+
+lib/zlib/zutil.c:
+	.rdata      start:0x820D2AA8 end:0x820D2AD0
+	.pdata      start:0x822033B0 end:0x822033C0
+	.text       start:0x8292E9E0 end:0x8292EA70
+
+lib/zlib/inffast.c:
+	.text       start:0x8292EA70 end:0x8292F5C8
+
+lib/zlib/inftrees.c:
+	.rdata      start:0x820D2AD0 end:0x820D2C00
+	.text       start:0x8292F5C8 end:0x8292FF80
+
 lib/zlib/adler32.c:
 	.text       start:0x8292FF80 end:0x82930320
 

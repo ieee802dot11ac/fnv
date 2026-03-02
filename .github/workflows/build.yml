@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         # Add game versions here
-        version: [425307E0]
+        version: ["425307E0"]
 
     steps:
     # Checkout the repository

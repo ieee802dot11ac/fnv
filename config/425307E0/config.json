@@ -13,6 +13,7 @@
                 "/nologo",
                 "/I src/xdk/LIBCMT/",
                 "/I src/xdk/LIBCPMT/",
+                "/I src/gamebryo2.2/corelibs",
                 "/I src/xdk/",
                 "/c",
                 "/GR",
@@ -23,7 +24,6 @@
         "gamebryo": {
             "base": "base",
             "flags": [
-                "/I src/gamebryo2.2/corelibs",
                 "/Od",
                 "/Ob1"
             ]

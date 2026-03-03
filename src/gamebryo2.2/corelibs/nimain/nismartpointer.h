@@ -47,9 +47,9 @@ public:
 
     bool operator==(T *pPointer) const { return m_pObject == pPointer; }
 
-    bool operator!=(NiPointer<T> const &rhs) const { return !(this == rhs); }
+    bool operator!=(NiPointer<T> const &rhs) const { return !(m_pObject == rhs); }
 
-    bool operator!=(T *pObject) const { return !(this == pObject); }
+    bool operator!=(T *pObject) const { return m_pObject != pObject; }
 
     T *m_pObject; // 0x0
 };

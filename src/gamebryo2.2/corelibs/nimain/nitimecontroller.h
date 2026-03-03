@@ -50,7 +50,7 @@ public:
     virtual void SetTarget(NiObjectNET *);
     NiObjectNET *GetTarget() const;
     uint32_t ItemsInList() const;
-    void SetNext(NiTimeController *);
+    void SetNext(NiTimeController *pkNext) { m_spNext = pkNext; }
     NiTimeController *GetNext() const { return m_spNext; }
     virtual bool IsTransformController() const;
     virtual bool IsVertexController() const;

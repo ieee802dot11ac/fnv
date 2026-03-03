@@ -1,4 +1,5 @@
 #include "niobjectnet.h"
+#include "macros.h"
 #include "niextradata.h"
 #include "niobject.h"
 #include "nitimecontroller.h"
@@ -50,10 +51,18 @@ bool NiObjectNET::RemoveExtraDataAt(unsigned short usExtraDataIndex) { return fa
 
 void NiObjectNET::RemoveAllExtraData() {}
 
-void NiObjectNET::PrependController(NiTimeController *pkControl) {}
+void NiObjectNET::PrependController(NiTimeController *pkControl) {
+    if (pkControl != nullptr) {
+        NiTimeController *saved = m_spControllers;
+        pkControl->SetNext(saved);
+        m_spControllers = pkControl;
+    }
+    ADDSTACK(0x10)
+}
 
 void NiObjectNET::SetControllers(NiTimeController *pkControl) {
     m_spControllers = pkControl;
+    ADDSTACK(0x10)
 }
 
 void NiObjectNET::RemoveController(NiTimeController *pkControl) {}
@@ -101,9 +110,17 @@ void NiObjectNET::LinkObject(NiStream &kStream) {}
 bool NiObjectNET::RegisterStreamables(NiStream &kStream) {
     if (!NiObject::RegisterStreamables(kStream)) {
         return false;
+    } else if (!kStream.RegisterFixedString(m_kName)) {
+        return false;
     } else {
-        ;
-        ;
+        for (u16 i = 0; i < m_usExtraDataSize; i++) {
+            NiExtraData *ptr = m_ppkExtra[i];
+            if (ptr && ptr->IsStreamable())
+                ptr->RegisterStreamables(kStream);
+        }
+        if (m_spControllers)
+            m_spControllers->RegisterStreamables(kStream);
+        return true;
     }
 }
 

@@ -68,7 +68,7 @@ public:
     DAYS_OF_THE_WEEK GetDayOfTheWeek();
     const char *GetDayOfWeekString();
     float GetTimeScale();
-    //   BSStringT<char> GetDateString();
+    BSStringT<char> GetDateString();
     int ComputeDaysbetween(int, int, int);
 
     static float StaticGetHour();

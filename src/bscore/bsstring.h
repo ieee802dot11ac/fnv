@@ -7,7 +7,7 @@ class BSStringT {
 public:
     BSStringT(const BSStringT<T> &);
     BSStringT(const T *);
-    BSStringT();
+    BSStringT() : pString(nullptr), sLen(0), sMaxLen(0) {}
     ~BSStringT() { Set(nullptr, 0); }
     bool Set(const BSStringT<T> &);
     bool Set(const T *, uint);

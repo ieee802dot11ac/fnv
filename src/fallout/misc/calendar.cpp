@@ -80,3 +80,13 @@ SEASON Calendar::GetSeason() {
         return SEASON_FALL;
     }
 }
+
+BSStringT<char> Calendar::GetDateString() {
+    BSStringT<char> str;
+    float year = pGameYear != nullptr ? pGameYear->GetValue() : 77;
+    float day = pGameDay != nullptr ? pGameDay->GetValue() : 17.0f;
+    CALENDAR_MONTH month = GetMonth();
+    // int year_mod_100 = ;
+    str.SPrintF("%02d.%02d.%02d", month, (int)day, (int)year % 100);
+    return str;
+}

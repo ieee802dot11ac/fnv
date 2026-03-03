@@ -10,8 +10,8 @@ public:
     void Restart();
     void Pause();
     void UnPause();
-    bool IsPaused();
-    uint32_t GetSynchTime();
+    bool IsPaused() { return iFlags & 1; }
+    int GetSynchTime();
 
 private:
     uint32_t iMilliseconds; // 0x0

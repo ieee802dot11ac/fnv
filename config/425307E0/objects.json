@@ -29,6 +29,7 @@
 		"objects": {
 			"bsaudio/bsaudio.cpp": "NonMatching",
 			"bsaudio/bsaudiomanager.cpp": "NonMatching",
+			"bsaudio/bsaudiosynchtimer.cpp": "NonMatching",
 			"bsaudio/bssoundhandle.cpp": "NonMatching"
 		}
 	},
@@ -42,6 +43,7 @@
 			"lib/zlib/deflate.c": "NonMatching",
 			"lib/zlib/trees.c": "NonMatching",
 			"lib/zlib/inffast.c": "NonMatching",
+			"lib/zlib/inflate.c": "NonMatching",
 			"lib/zlib/inftrees.c": "NonMatching",
 			"lib/zlib/zutil.c": "NonMatching"
 		}

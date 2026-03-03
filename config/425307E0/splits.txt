@@ -35,6 +35,15 @@ bsaudio/bsaudiomanager.cpp:
 	.pdata      start:0x82202D70 end:0x82203110
 	.text       start:0x8290E2D8 end:0x82920398
 
+bsaudio/bsaudiosynchtimer.cpp:
+	.pdata      start:0x822032B0 end:0x822032D0
+	.text       start:0x82927DA0 end:0x82927F20
+
+lib/zlib/inflate.c:
+	.rdata      start:0x820D2090 end:0x820D29F0
+	.pdata      start:0x82203328 end:0x82203350
+	.text       start:0x829288E0 end:0x8292B560
+
 lib/zlib/deflate.c:
 	.rdata      start:0x820D29F0 end:0x820D2AA8
 	.pdata      start:0x82203350 end:0x822033B0
@@ -73,6 +82,10 @@ lib/speedtree/indexedgeometry.cpp:
 lib/havok/common/base/reflection/hkclass.cpp:
 	.pdata      start:0x82213520 end:0x82213590
 	.text       start:0x82C167D8 end:0x82C176B0
+
+gamebryo2.2/corelibs/nimain/niglobalstringtable.cpp:
+	.pdata      start:0x8221C800 end:0x8221C850
+	.text       start:0x82E27A20 end:0x82E28670
 
 gamebryo2.2/corelibs/nimain/nipoint3.cpp:
 	.pdata      start:0x8221C850 end:0x8221C868

@@ -16,7 +16,8 @@
                 "/I src/xdk/",
                 "/c",
                 "/GR",
-                "/O2"
+                "/O2",
+                "/GF"
             ]
         },
         "gamebryo": {

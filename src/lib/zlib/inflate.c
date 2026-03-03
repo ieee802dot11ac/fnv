@@ -352,10 +352,13 @@ unsigned out;
 
 /* Macros for inflate(): */
 
+// #undef GUNZIP
+
 /* check function to use adler32() for zlib or crc32() for gzip */
 #ifdef GUNZIP
 #  define UPDATE(check, buf, len) \
-    (state->flags ? crc32(check, buf, len) : adler32(check, buf, len))
+(0) // FNV HACK
+    // (state->flags ? crc32(check, buf, len) : adler32(check, buf, len))
 #else
 #  define UPDATE(check, buf, len) adler32(check, buf, len)
 #endif
@@ -1013,15 +1016,15 @@ int flush;
                     strm->adler = state->check =
                         UPDATE(state->check, put - out, out);
                 out = left;
-                if ((
-#ifdef GUNZIP
-                     state->flags ? hold :
-#endif
-                     REVERSE(hold)) != state->check) {
-                    strm->msg = (char *)"incorrect data check";
-                    state->mode = BAD;
-                    break;
-                }
+//                 if ((
+// #ifdef GUNZIP
+//                      state->flags ? hold :
+// #endif
+//                      REVERSE(hold)) != state->check) {
+//                     strm->msg = (char *)"incorrect data check";
+//                     state->mode = BAD;
+//                     break;
+//                 }
                 INITBITS();
                 Tracev((stderr, "inflate:   check matches trailer\n"));
             }
@@ -1089,7 +1092,7 @@ z_streamp strm;
         return Z_STREAM_ERROR;
     state = (struct inflate_state FAR *)strm->state;
     if (state->window != Z_NULL) ZFREE(strm, state->window);
-    ZFREE(strm, strm->state);
+    if (strm->reserved != Z_NULL)ZFREE(strm, strm->state);
     strm->state = Z_NULL;
     Tracev((stderr, "inflate: end\n"));
     return Z_OK;

@@ -1,4 +1,7 @@
 #include "niobject.h"
+#include "gamebryo2.2/corelibs/nimain/nitarray.h"
+#include "gamebryo2.2/corelibs/nimain/niviewerstrings.h"
+#include "macros.h"
 #include <cstring>
 #include "nistream.h"
 #include "nicloningprocess.h"
@@ -58,4 +61,12 @@ bool NiObject::IsEqual(NiObject *other) {
         } else
             return true;
     }
+}
+
+void NiObject::GetViewerStrings(NiTPrimitiveArray<char *> *pStrings) {
+    ADDSTACK(0x10)
+    NiAddViewerString(&ms_RTTI, pStrings);
+    NiAddViewerString("this", (void *)this, pStrings);
+    uint temp = m_uiRefCount; // why...?
+    NiAddViewerString("m_uiRefCount", temp, pStrings);
 }

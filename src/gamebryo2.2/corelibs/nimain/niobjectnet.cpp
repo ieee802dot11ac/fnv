@@ -1,4 +1,5 @@
 #include "niobjectnet.h"
+#include "gamebryo2.2/corelibs/nimain/niviewerstrings.h"
 #include "macros.h"
 #include "niextradata.h"
 #include "niobject.h"
@@ -135,6 +136,12 @@ bool NiObjectNET::IsEqual(NiObject *pkObject) {
         ;
         ;
     }
+}
+
+void NiObjectNET::GetViewerStrings(NiTPrimitiveArray<char *> *pStrings) {
+    NiObject::GetViewerStrings(pStrings);
+    NiAddViewerString(&ms_RTTI, pStrings);
+    NiAddViewerString("m_kName", (const char *)m_kName, pStrings);
 }
 
 const NiRTTI *NiObjectNET::GetRTTI() const { return &ms_RTTI; }

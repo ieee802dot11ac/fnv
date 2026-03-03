@@ -1,5 +1,7 @@
 #pragma once
 #include "gamebryo2.2/corelibs/nimain/nifixedstring.h"
+#include "gamebryo2.2/corelibs/nimain/niobjectgroup.h"
+#include "gamebryo2.2/corelibs/nimain/nitarray.h"
 #include <types.h>
 #include "niobject.h"
 #include "nibinarystream.h"
@@ -110,7 +112,7 @@ public:
     static uint const NULL_LINKID;
     // BSStreamHeader m_BSStreamHeader; // 0x4
 protected:
-    // NiTPrimitiveArray<NiObjectGroup *> m_kGroups; // 0xC8
+    NiTPrimitiveArray<NiObjectGroup *> m_kGroups; // 0xC8
     uint m_uiNifFileVersion; // 0xD8
     uint m_uiNifFileUserDefinedVersion; // 0xDC
     char m_acFileName[260]; // 0xE0

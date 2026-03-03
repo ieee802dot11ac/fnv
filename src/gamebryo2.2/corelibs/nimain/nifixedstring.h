@@ -8,7 +8,7 @@ public: // TODO: most of these are defined in nifixedstring.inl
     NiFixedString(const char *);
     NiFixedString();
     ~NiFixedString();
-    operator const char *() const;
+    operator const char *() const { return m_kHandle; }
     bool Exists() const;
     NiFixedString &operator=(const char *);
     NiFixedString &operator=(const NiFixedString &);

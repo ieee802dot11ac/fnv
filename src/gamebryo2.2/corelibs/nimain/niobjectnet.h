@@ -22,7 +22,7 @@ public:
     virtual bool RegisterStreamables(NiStream &);
     virtual void SaveBinary(NiStream &);
     virtual bool IsEqual(NiObject *);
-    // virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
+    virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
     virtual ~NiObjectNET();
     void SetName(const NiFixedString &);
     const NiFixedString &GetName() const;

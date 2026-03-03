@@ -1,5 +1,6 @@
 #pragma once
 
+#include "nitarray.h"
 #include "nirefobject.h"
 #include "nirtti.h"
 #include "niobjectgroup.h"
@@ -40,8 +41,8 @@ public:
     virtual void SaveBinary(NiStream &);
     virtual bool IsEqual(NiObject *);
     static NiObject *CreateObject();
-    // virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
-    // virtual void AddViewerStrings(NiTPrimitiveArray<char *> *);
+    virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
+    virtual void AddViewerStrings(NiTPrimitiveArray<char *> *);
     virtual ~NiObject();
     NiObject *Clone(NiCloningProcess &);
     NiObject *Clone();
@@ -65,3 +66,5 @@ private:
     NiObject(const NiObject &);
     NiObject &operator=(const NiObject &);
 };
+
+#define VIEWER_STRING_ME(x) char *s_##x = NiGetViewerString(#x, x)

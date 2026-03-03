@@ -39,6 +39,18 @@ bsaudio/bsaudiosynchtimer.cpp:
 	.pdata      start:0x822032B0 end:0x822032D0
 	.text       start:0x82927DA0 end:0x82927F20
 
+bsaudio/xenon/bsxenonaudio.cpp:
+	.pdata      start:0x822032D0 end:0x82203308
+	.text       start:0x82927F20 end:0x829283D8
+
+bsaudio/xenon/bsxenonaudiolistener.cpp:
+	.pdata      start:0x82203308 end:0x82203320
+	.text       start:0x829283D8 end:0x82928800
+
+bsaudio/bsaudiolistener.cpp:
+	.pdata      start:0x82203320 end:0x82203328
+	.text       start:0x82928800 end:0x829288E0
+
 lib/zlib/inflate.c:
 	.rdata      start:0x820D2090 end:0x820D29F0
 	.pdata      start:0x82203328 end:0x82203350

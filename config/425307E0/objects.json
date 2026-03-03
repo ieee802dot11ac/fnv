@@ -29,8 +29,11 @@
 		"objects": {
 			"bsaudio/bsaudio.cpp": "NonMatching",
 			"bsaudio/bsaudiomanager.cpp": "NonMatching",
+			"bsaudio/bsaudiolistener.cpp": "NonMatching",
 			"bsaudio/bsaudiosynchtimer.cpp": "NonMatching",
-			"bsaudio/bssoundhandle.cpp": "NonMatching"
+			"bsaudio/bssoundhandle.cpp": "NonMatching",
+			"bsaudio/xenon/bsxenonaudio.cpp": "NonMatching",
+			"bsaudio/xenon/bsxenonaudiolistener.cpp": "NonMatching"
 		}
 	},
 	"zlib": {

@@ -1,10 +1,23 @@
 #include "bsaudio.h"
+#include "bsaudio/bsaudiolistener.h"
 #include "bsaudio/bsaudiomanager.h"
 #include "bsaudio/bssoundhandle.h"
 #include "bscore/memorycontexttracker.h"
 #include "gamebryo2.2/corelibs/nimain/nipoint3.h"
 
-BSAudio::BSAudio() {}
+BSAudio::BSAudio() {
+    bAudioEnabled = false;
+    bInitialized = false;
+    iMusicStartOffset = 0;
+    bSeekMusic = false;
+    pfnIDCallback = nullptr;
+    pfnNameCallback = nullptr;
+    pfnRandomFilenameCallback = nullptr;
+    pfnSettingsCallback = nullptr;
+    pfnSynchPausedCallback = nullptr;
+    pfnSynchUnPausedCallback = nullptr;
+    pListener = nullptr;
+}
 
 BSAudio::~BSAudio() {}
 
@@ -15,7 +28,11 @@ void BSAudio::Init(void *pHandle) {
         "D:\\_Fallout3\\Platforms\\Common\\Code\\BSAudio\\BSAudio.cpp",
         79
     );
-    ;
+    SynchTimer.Restart();
+    if (bMultiThread) {
+        BSAudioManager::QInstance().StartAudioThread();
+    }
+    bInitialized = true;
 }
 
 void BSAudio::Shutdown() {
@@ -116,7 +133,7 @@ void BSAudio::SetConditions(float afCurrentGamehour, uint aiWeatherConditions) {
         MEM_CONTEXT_AUDIO,
         true,
         "D:\\_Fallout3\\Platforms\\Common\\Code\\BSAudio\\BSAudio.cpp",
-        193
+        200
     );
     return BSAudioManager::QInstance().SetConditions(
         afCurrentGamehour, aiWeatherConditions
@@ -127,12 +144,29 @@ void BSAudio::PositionListener(NiPoint3 aNewPosition) {
     BSAudioManager::QInstance().PositionListener(aNewPosition);
 }
 
+NiPoint3 BSAudio::GetListenerPosition() {
+    return pListener ? pListener->GetPosition() : NiPoint3::ZERO;
+}
+
+void BSAudio::OrientListener(NiPoint3 aFront, NiPoint3 aTop) {
+    BSAudioListener *listener = pListener;
+    if (listener) {
+        BSAudioListener *list2 = pListener;
+        list2->SetOrientation(aFront, aTop);
+    }
+}
+
 void BSAudio::SetListenerUnderwater(bool abIsUnderwater) {
     BSAudioManager::QInstance().SetListenerUnderwater(abIsUnderwater);
 }
 
 void BSAudio::SetEnvironment(uint aiEnviroType) {
-    // pListener->SetEnvironment(aiEnviroType);
+    BSAudioListener *listener = pListener;
+    if (listener) {
+        uint evtype;
+        evtype = aiEnviroType;
+        pListener->SetEnvironmentType(evtype);
+    }
 }
 
 float BSAudio::GetMasterVolume() { return BSAudioManager::QInstance().GetMasterVolume(); }

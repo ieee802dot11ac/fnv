@@ -3,6 +3,7 @@
 #include <types.h>
 #include "bsaudio/bssoundhandle.h"
 #include "bsaudio/bsaudiosynchtimer.h"
+#include "bsaudio/bsaudiolistener.h"
 #include "bscore/memorymanager.h"
 #include "gamebryo2.2/corelibs/nimain/nipoint3.h"
 #include "gamebryo2.2/corelibs/nimain/niavobject.h"
@@ -47,7 +48,7 @@ public:
     void PositionListener(NiPoint3);
     void OrientListener(NiPoint3, NiPoint3);
     void SetEnvironment(uint);
-    // BSAudioListener *GetListener();
+    BSAudioListener *GetListener();
     NiPoint3 GetListenerPosition();
     void SetListenerUnderwater(bool);
     bool IsInitialized();
@@ -132,7 +133,7 @@ protected:
     bool bMultiThread; // 0x06
     uint iMusicStartOffset; // 0x08
     bool bSeekMusic; // 0x0c
-    // BSAudioListener *pListener; // 0x10
+    BSAudioListener *pListener; // 0x10
     BSAudioSynchTimer SynchTimer; // 0x14
 
 protected:

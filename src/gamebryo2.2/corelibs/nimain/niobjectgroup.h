@@ -1,6 +1,6 @@
 #pragma once
 
-#include "nirefobject.h"
+#include "nisystem/nimemobject.h"
 
 class NiObjectGroup : public NiMemObject {
 public:

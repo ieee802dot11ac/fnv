@@ -23,6 +23,7 @@
         "gamebryo": {
             "base": "base",
             "flags": [
+                "/I src/gamebryo2.2/corelibs",
                 "/Od",
                 "/Ob1"
             ]

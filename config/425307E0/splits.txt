@@ -95,6 +95,46 @@ lib/havok/common/base/reflection/hkclass.cpp:
 	.pdata      start:0x82213520 end:0x82213590
 	.text       start:0x82C167D8 end:0x82C176B0
 
+gamebryo2.2/corelibs/nianimation/nianimationkey.cpp:
+	.pdata      start:0x8221A620 end:0x8221A640
+	.text       start:0x82D9DDB0 end:0x82D9E618
+
+gamebryo2.2/corelibs/nianimation/nicolorinterpolator.cpp:
+	.pdata      start:0x8221A648 end:0x8221A6B0
+	.text       start:0x82D9E788 end:0x82D9F740
+
+gamebryo2.2/corelibs/nianimation/nipathinterpolator.cpp:
+	.pdata      start:0x8221A6B0 end:0x8221A778
+	.text       start:0x82D9F740 end:0x82DA2F80
+
+gamebryo2.2/corelibs/nicollision/niboxcapsuleintersector.cpp:
+	.pdata      start:0x8221C640 end:0x8221C658
+	.text       start:0x82E0E500 end:0x82E0EBD0
+
+gamebryo2.2/corelibs/nicollision/niboxsphereintersector.cpp:
+	.pdata      start:0x8221C658 end:0x8221C670
+	.text       start:0x82E0EBD0 end:0x82E0F950
+
+gamebryo2.2/corelibs/nicollision/niobbroot.cpp:
+	.pdata      start:0x8221C690 end:0x8221C6C8
+	.text       start:0x82E10C38 end:0x82E123F8
+
+gamebryo2.2/corelibs/nicollision/niobbleaf.cpp:
+	.pdata      start:0x8221C6C8 end:0x8221C718
+	.text       start:0x82E123F8 end:0x82E16648
+
+gamebryo2.2/corelibs/nicollision/niobbnode.cpp:
+	.pdata      start:0x8221C718 end:0x8221C768
+	.text       start:0x82E166E0 end:0x82E19AE8
+
+gamebryo2.2/corelibs/nicollision/niobbox.cpp:
+	.pdata      start:0x8221C768 end:0x8221C790
+	.text       start:0x82E19AE8 end:0x82E23C80
+
+gamebryo2.2/corelibs/nimain/nimatrix3.cpp:
+	.pdata      start:0x8221C790 end:0x8221C800
+	.text       start:0x82E23C80 end:0x82E27A20
+
 gamebryo2.2/corelibs/nimain/niglobalstringtable.cpp:
 	.pdata      start:0x8221C800 end:0x8221C850
 	.text       start:0x82E27A20 end:0x82E28670

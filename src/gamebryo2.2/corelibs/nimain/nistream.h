@@ -1,10 +1,10 @@
 #pragma once
-#include "gamebryo2.2/corelibs/nimain/nifixedstring.h"
-#include "gamebryo2.2/corelibs/nimain/niobjectgroup.h"
-#include "gamebryo2.2/corelibs/nimain/nitarray.h"
+#include "nimain/nifixedstring.h"
+#include "nimain/niobject.h"
+#include "nimain/niobjectgroup.h"
+#include "nimain/nitarray.h"
+#include "nisystem/nibinarystream.h"
 #include <types.h>
-#include "niobject.h"
-#include "nibinarystream.h"
 
 #define VERSION(hh, hl, lh, ll) ((u8(hh) << 24) | (u8(hl) << 16) | (u8(lh) << 8) | u8(ll))
 

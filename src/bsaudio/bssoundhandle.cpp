@@ -5,137 +5,122 @@
 bool BSSoundHandle::Play(bool abLoopPlayback) {
     if (iSoundID == -1) {
         return false;
-    } else {
-        eState = ASSUMED_STATE_PLAYING;
-        return BSAudioManager::QInstance().Play(iSoundID, abLoopPlayback);
     }
+    eState = ASSUMED_STATE_PLAYING;
+    return BSAudioManager::QInstance().Play(iSoundID, abLoopPlayback);
 }
 
 bool BSSoundHandle::PlayAfter(uint aiDelay, int aiPlayFlags) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        eState = ASSUMED_STATE_PLAYING;
-        return BSAudioManager::QInstance().PlayAfter(iSoundID, aiDelay, aiPlayFlags);
     }
+    eState = ASSUMED_STATE_PLAYING;
+    return BSAudioManager::QInstance().PlayAfter(iSoundID, aiDelay, aiPlayFlags);
 }
 
 bool BSSoundHandle::Pause() {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        eState = ASSUMED_STATE_PAUSED;
-        return BSAudioManager::QInstance().Pause(iSoundID);
     }
+    eState = ASSUMED_STATE_PAUSED;
+    return BSAudioManager::QInstance().Pause(iSoundID);
 }
 
 bool BSSoundHandle::Stop() {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        eState = ASSUMED_STATE_STOPPED;
-        return BSAudioManager::QInstance().Stop(iSoundID);
     }
+    eState = ASSUMED_STATE_STOPPED;
+    return BSAudioManager::QInstance().Stop(iSoundID);
 }
 
 bool BSSoundHandle::IsPlaying() {
     if (iSoundID == -1) {
         return false;
-    } else if (bAssumeSuccess) {
-        return eState == ASSUMED_STATE_PLAYING;
-    } else {
-        return BSAudioManager::QInstance().IsPlaying(iSoundID);
     }
+    if (bAssumeSuccess) {
+        return eState == ASSUMED_STATE_PLAYING;
+    } else
+        return BSAudioManager::QInstance().IsPlaying(iSoundID);
 }
 
 int BSSoundHandle::GetSoundType() {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().GetSoundType(iSoundID);
     }
+    return BSAudioManager::QInstance().GetSoundType(iSoundID);
 }
 
 bool BSSoundHandle::SetStaticAttenuation(u16 aiStaticAttenutation) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetStaticAttenuation(
-            iSoundID, aiStaticAttenutation
-        );
     }
+    return BSAudioManager::QInstance().SetStaticAttenuation(
+        iSoundID, aiStaticAttenutation
+    );
 }
 
 bool BSSoundHandle::SetVolume(float afNewVolume) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetVolume(iSoundID, afNewVolume);
     }
+    return BSAudioManager::QInstance().SetVolume(iSoundID, afNewVolume);
 }
 
 float BSSoundHandle::GetVolume() {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().GetVolume(iSoundID);
     }
+    return BSAudioManager::QInstance().GetVolume(iSoundID);
 }
 
 bool BSSoundHandle::SetFrequency(float afNewFrequency) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetFrequency(iSoundID, afNewFrequency);
     }
+    return BSAudioManager::QInstance().SetFrequency(iSoundID, afNewFrequency);
 }
 
 bool BSSoundHandle::SetModFrequency(float afNewFrequency) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetModFrequency(iSoundID, afNewFrequency);
     }
+    return BSAudioManager::QInstance().SetModFrequency(iSoundID, afNewFrequency);
 }
 
 bool BSSoundHandle::SetFrequencyVariance(u8 aiFreqVariance) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetFrequencyVariance(iSoundID, aiFreqVariance);
     }
+    return BSAudioManager::QInstance().SetFrequencyVariance(iSoundID, aiFreqVariance);
 }
 
 bool BSSoundHandle::SetBalance(int aiNewBalance) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetBalance(iSoundID, aiNewBalance);
     }
+    return BSAudioManager::QInstance().SetBalance(iSoundID, aiNewBalance);
 }
 
 int BSSoundHandle::GetDuration() {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().GetDuration(iSoundID);
     }
+    return BSAudioManager::QInstance().GetDuration(iSoundID);
 }
 
 bool BSSoundHandle::SetPosition(float afX, float afY, float afZ) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetPosition(iSoundID, afX, afY, afZ);
     }
+    return BSAudioManager::QInstance().SetPosition(iSoundID, afX, afY, afZ);
 }
 
 bool BSSoundHandle::SetBeamEnd(float afX, float afY, float afZ) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetBeamEnd(iSoundID, afX, afY, afZ);
     }
+    return BSAudioManager::QInstance().SetBeamEnd(iSoundID, afX, afY, afZ);
 }
 
 void BSSoundHandle::SetMinMax(float afMin, float afMax) {
@@ -166,58 +151,53 @@ void BSSoundHandle::SetReverbAttenuation(u16 aiReverbAtt) {
 bool BSSoundHandle::SetOrientation(float afX, float afY, float afZ) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().SetOrientation(iSoundID, afX, afY, afZ);
     }
+    return BSAudioManager::QInstance().SetOrientation(iSoundID, afX, afY, afZ);
 }
 
 bool BSSoundHandle::IsValid() {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        return BSAudioManager::QInstance().IsValid(iSoundID);
     }
+    return BSAudioManager::QInstance().IsValid(iSoundID);
 }
 
 bool BSSoundHandle::Release() {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        bool b = BSAudioManager::QInstance().Release(iSoundID);
-        if (b) {
-            iSoundID = -1;
-        }
-        return b;
     }
+    bool b = BSAudioManager::QInstance().Release(iSoundID);
+    if (b) {
+        iSoundID = -1;
+    }
+    return b;
 }
 
 bool BSSoundHandle::FadeInPlay(uint aiMilliseconds) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        eState = ASSUMED_STATE_PLAYING;
-        BSAudioManager::QInstance().FadeInPlay(iSoundID, aiMilliseconds);
-        return true;
     }
+    eState = ASSUMED_STATE_PLAYING;
+    BSAudioManager::QInstance().FadeInPlay(iSoundID, aiMilliseconds);
+    return true;
 }
 
 bool BSSoundHandle::FadeOutAndRelease(uint aiMilliseconds) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        BSAudioManager::QInstance().FadeOut(iSoundID, aiMilliseconds, 38);
-        iSoundID = -1;
-        return true;
     }
+    BSAudioManager::QInstance().FadeOut(iSoundID, aiMilliseconds, 38);
+    iSoundID = -1;
+    return true;
 }
 
 bool BSSoundHandle::FadeOut(uint aiMilliseconds) {
     if (iSoundID == -1) {
         return 0;
-    } else {
-        BSAudioManager::QInstance().FadeOut(iSoundID, aiMilliseconds, 1);
-        return true;
     }
+    eState = ASSUMED_STATE_STOPPED;
+    BSAudioManager::QInstance().FadeOut(iSoundID, aiMilliseconds, 0);
+    return true;
 }
 
 void BSSoundHandle::SetTimeConstraints(unsigned char aiStart, unsigned char aiStop) {

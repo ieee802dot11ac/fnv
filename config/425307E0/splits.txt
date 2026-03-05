@@ -95,6 +95,10 @@ lib/havok/common/base/reflection/hkclass.cpp:
 	.pdata      start:0x82213520 end:0x82213590
 	.text       start:0x82C167D8 end:0x82C176B0
 
+gamebryo2.2/corelibs/nianimation/nikeybasedinterpolator.cpp:
+	.pdata      start:0x8221A5D0 end:0x8221A620
+	.text       start:0x82D9D970 end:0x82D9DDB0
+
 gamebryo2.2/corelibs/nianimation/nianimationkey.cpp:
 	.pdata      start:0x8221A620 end:0x8221A640
 	.text       start:0x82D9DDB0 end:0x82D9E618
@@ -111,6 +115,18 @@ gamebryo2.2/corelibs/nianimation/nitransforminterpolator.cpp:
 	.pdata      start:0x8221A790 end:0x8221A828
 	.text       start:0x82DA3360 end:0x82DA5A98
 
+gamebryo2.2/corelibs/nianimation/niblendfloatinterpolator.cpp:
+	.pdata      start:0x8221A828 end:0x8221A890
+	.text       start:0x82DA5A98 end:0x82DA62B8
+
+gamebryo2.2/corelibs/nianimation/nifloatextradatacontroller.cpp:
+	.pdata      start:0x8221A890 end:0x8221A8E8
+	.text       start:0x82DA62B8 end:0x82DA68B8
+
+gamebryo2.2/corelibs/nianimation/niblendtransforminterpolator.cpp:
+	.pdata      start:0x8221A8E8 end:0x8221A950
+	.text       start:0x82DA68B8 end:0x82DA7788
+
 gamebryo2.2/corelibs/nianimation/bsanimnotelistener.cpp:
 	.pdata      start:0x8221A950 end:0x8221A988
 	.text       start:0x82DA7788 end:0x82DA7E60
@@ -118,6 +134,22 @@ gamebryo2.2/corelibs/nianimation/bsanimnotelistener.cpp:
 gamebryo2.2/corelibs/nianimation/nimorphdata.cpp:
 	.pdata      start:0x8221A988 end:0x8221A9F8
 	.text       start:0x82DA7E60 end:0x82DA9000
+
+gamebryo2.2/corelibs/nianimation/niflipcontroller.cpp:
+	.pdata      start:0x8221A9F8 end:0x8221AA80
+	.text       start:0x82DA9000 end:0x82DAA128
+
+gamebryo2.2/corelibs/nianimation/niblendboolinterpolator.cpp:
+	.pdata      start:0x8221AA80 end:0x8221AAF0
+	.text       start:0x82DAA128 end:0x82DAA9F0
+
+gamebryo2.2/corelibs/nianimation/niboolinterpolator.cpp:
+	.pdata      start:0x8221AAF0 end:0x8221AB68
+	.text       start:0x82DAA9F0 end:0x82DAB5F8
+
+gamebryo2.2/corelibs/nianimation/niinterpolator.cpp:
+	.pdata      start:0x8221BF20 end:0x8221BF60
+	.text       start:0x82DD2C00 end:0x82DD2E80
 
 gamebryo2.2/corelibs/nicollision/niboxcapsuleintersector.cpp:
 	.pdata      start:0x8221C640 end:0x8221C658

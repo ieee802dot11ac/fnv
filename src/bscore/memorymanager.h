@@ -96,4 +96,8 @@ protected:
     void *operator new(size_t s, const char *file, int line, const char *func) {         \
         return MemoryManager::Instance().Allocate(s, file, line, func);                  \
     }                                                                                    \
-    void operator delete(void *v) { MemoryManager::Instance().Deallocate(v); }
+    void *operator new[](size_t s, const char *file, int line, const char *func) {       \
+        return MemoryManager::Instance().Allocate(s, file, line, func);                  \
+    }                                                                                    \
+    void operator delete(void *v) { MemoryManager::Instance().Deallocate(v); }           \
+    void operator delete[](void *v) { MemoryManager::Instance().Deallocate(v); }

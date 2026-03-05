@@ -53,14 +53,13 @@ const NiRTTI *NiObject::GetStreamableRTTI() const { return GetRTTI(); }
 bool NiObject::IsEqual(NiObject *other) {
     if (other == nullptr) {
         return false;
-    } else {
-        const char *their_name = other->GetRTTI()->GetName();
-        const char *my_name = GetRTTI()->GetName();
-        if (std::strcmp(my_name, their_name)) {
-            return false;
-        } else
-            return true;
     }
+    const char *their_name = other->GetRTTI()->GetName();
+    const char *my_name = GetRTTI()->GetName();
+    if (std::strcmp(my_name, their_name)) {
+        return false;
+    }
+    return true;
 }
 
 void NiObject::GetViewerStrings(NiTPrimitiveArray<char *> *pStrings) {

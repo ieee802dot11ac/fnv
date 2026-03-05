@@ -1,9 +1,10 @@
 {
 	"gamebryo": {
 		"progress_category": "gamebryo",
-		"mw_version": "X360/16.00.11886.00",
+		"mw_version": "X360/16.00.10224.00",
 		"cflags": "gamebryo",
 		"objects": {
+			"gamebryo2.2/corelibs/nianimation/nimorphdata.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niavobject.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niobject.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niobjectnet.cpp": "NonMatching",
@@ -14,7 +15,7 @@
 	},
 	"newvegas": {
 		"progress_category": "newvegas",
-		"mw_version": "X360/16.00.11886.00",
+		"mw_version": "X360/16.00.10224.00",
 		"cflags": "base",
 		"objects": {
 			"fallout/misc/calendar.cpp": "NonMatching",
@@ -24,7 +25,7 @@
 	},
 	"creation": {
 		"progress_category": "newvegas",
-		"mw_version": "X360/16.00.11886.00",
+		"mw_version": "X360/16.00.10224.00",
 		"cflags": "gamebryo",
 		"objects": {
 			"bsaudio/bsaudio.cpp": "NonMatching",
@@ -38,7 +39,7 @@
 	},
 	"zlib": {
 		"progress_category": "lib",
-		"mw_version": "X360/16.00.11886.00",
+		"mw_version": "X360/16.00.10224.00",
 		"cflags": "speedtree",
 		"objects": {
 			"lib/zlib/adler32.c": "NonMatching",
@@ -53,7 +54,7 @@
 	},
 	"speedtree": {
 		"progress_category": "lib",
-		"mw_version": "X360/16.00.11886.00",
+		"mw_version": "X360/16.00.10224.00",
 		"cflags": "speedtree",
 		"objects": {
 			"lib/speedtree/indexedgeometry.cpp": "NonMatching"
@@ -61,7 +62,7 @@
 	},
 	"havok": {
 		"progress_category": "lib",
-		"mw_version": "X360/16.00.11886.00",
+		"mw_version": "X360/16.00.10224.00",
 		"cflags": "havok",
 		"objects": {
 			"lib/havok/common/base/reflection/hkclass.cpp": "NonMatching"

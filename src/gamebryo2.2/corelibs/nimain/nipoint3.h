@@ -1,4 +1,5 @@
 #pragma once
+#include "bscore/memorymanager.h"
 #include <types.h>
 #include "nistream.h"
 
@@ -56,6 +57,9 @@ public:
     static void WeightedPointsPlusWeightedPoints(
         NiPoint3 *__restrict, float, NiPoint3 const *__restrict, uint
     );
+
+    // thanks todd
+    BS_MEM_OVERLOADS
 
 protected:
     static uint *InitSqrtTable();

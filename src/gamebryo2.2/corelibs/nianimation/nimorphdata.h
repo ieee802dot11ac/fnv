@@ -34,7 +34,7 @@ public:
     };
     static const NiRTTI ms_RTTI;
 
-    virtual const NiRTTI *GetRTTI() const;
+    virtual const NiRTTI *GetRTTI() const { return &ms_RTTI; }
     virtual void LoadBinary(NiStream &);
     virtual void LinkObject(NiStream &);
     virtual bool RegisterStreamables(NiStream &);

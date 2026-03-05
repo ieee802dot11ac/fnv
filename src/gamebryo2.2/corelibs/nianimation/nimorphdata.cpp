@@ -1,4 +1,6 @@
 #include "nimorphdata.h"
+#include "nimain/nitarray.h"
+#include "nimain/niviewerstrings.h"
 
 NiMorphData::MorphTarget::MorphTarget() {}
 
@@ -21,4 +23,13 @@ bool NiMorphData::RegisterStreamables(NiStream &kStream) {
         m_aMorphTargets[i].RegisterStreamables(kStream);
     }
     return true;
+}
+
+void NiMorphData::GetViewerStrings(NiTPrimitiveArray<char *> *pStrings) {
+    NiObject::GetViewerStrings(pStrings);
+    NiAddViewerString(&ms_RTTI, pStrings);
+    NiAddViewerString("m_uiNumTargets", m_uiNumTargets, pStrings);
+    NiAddViewerString("m_uiNumVertsPerTarget", m_uiNumVertsPerTarget, pStrings);
+    char *morphtarget = NiGetViewerString("MorphTarget");
+    pStrings->Add(morphtarget);
 }

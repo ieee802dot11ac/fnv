@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bscore/memorymanager.h"
+#include "nimain/nifixedstring.h"
 #include "nimain/niobject.h"
 #include "nimain/nipoint3.h"
 
@@ -15,7 +16,8 @@ public:
         NiPoint3 GetTargetVert(uint) const;
         void ReplaceTargetVerts(NiPoint3 *);
         void SetName(const NiFixedString &);
-        const NiFixedString &GetName();
+        const NiFixedString &GetName() { return m_kName; }
+        const NiFixedString &GetNameNoInline();
         void LoadBinary(NiStream &, uint);
         void SaveBinary(NiStream &, uint);
         void RegisterStreamables(NiStream &);
@@ -31,6 +33,7 @@ public:
         NiFixedString m_kName; // 0x4
         float m_fLegacyWeight; // 0x8
         // NiPointer<NiInterpolator> m_spLegacyInterpolator; // 0xc
+        u32 pad;
     };
     static const NiRTTI ms_RTTI;
 

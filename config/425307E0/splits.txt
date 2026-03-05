@@ -107,6 +107,18 @@ gamebryo2.2/corelibs/nianimation/nipathinterpolator.cpp:
 	.pdata      start:0x8221A6B0 end:0x8221A778
 	.text       start:0x82D9F740 end:0x82DA2F80
 
+gamebryo2.2/corelibs/nianimation/nitransforminterpolator.cpp:
+	.pdata      start:0x8221A790 end:0x8221A828
+	.text       start:0x82DA3360 end:0x82DA5A98
+
+gamebryo2.2/corelibs/nianimation/bsanimnotelistener.cpp:
+	.pdata      start:0x8221A950 end:0x8221A988
+	.text       start:0x82DA7788 end:0x82DA7E60
+
+gamebryo2.2/corelibs/nianimation/nimorphdata.cpp:
+	.pdata      start:0x8221A988 end:0x8221A9F8
+	.text       start:0x82DA7E60 end:0x82DA9000
+
 gamebryo2.2/corelibs/nicollision/niboxcapsuleintersector.cpp:
 	.pdata      start:0x8221C640 end:0x8221C658
 	.text       start:0x82E0E500 end:0x82E0EBD0
@@ -114,6 +126,10 @@ gamebryo2.2/corelibs/nicollision/niboxcapsuleintersector.cpp:
 gamebryo2.2/corelibs/nicollision/niboxsphereintersector.cpp:
 	.pdata      start:0x8221C658 end:0x8221C670
 	.text       start:0x82E0EBD0 end:0x82E0F950
+
+gamebryo2.2/corelibs/nicollision/nisphere.cpp:
+	.pdata      start:0x8221C670 end:0x8221C690
+	.text       start:0x82E0F950 end:0x82E10C38
 
 gamebryo2.2/corelibs/nicollision/niobbroot.cpp:
 	.pdata      start:0x8221C690 end:0x8221C6C8

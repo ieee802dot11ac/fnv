@@ -4,6 +4,7 @@
 		"mw_version": "X360/16.00.10224.00",
 		"cflags": "gamebryo",
 		"objects": {
+			"gamebryo2.2/corelibs/nianimation/bsanimnotelistener.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nianimation/nianimationkey.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nianimation/niblendboolinterpolator.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nianimation/niblendfloatinterpolator.cpp": "NonMatching",
@@ -17,7 +18,16 @@
 			"gamebryo2.2/corelibs/nianimation/nimorphdata.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nianimation/nipathinterpolator.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nianimation/nitransforminterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nicollision/niboxcapsuleintersector.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nicollision/niboxsphereintersector.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nicollision/nisphere.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nicollision/niobbroot.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nicollision/niobbleaf.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nicollision/niobbnode.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nicollision/niobbox.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niavobject.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/niglobalstringtable.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nimatrix3.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niobject.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niobjectnet.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nipoint3.cpp": "NonMatching",
@@ -46,7 +56,8 @@
 			"bsaudio/bsaudiosynchtimer.cpp": "NonMatching",
 			"bsaudio/bssoundhandle.cpp": "NonMatching",
 			"bsaudio/xenon/bsxenonaudio.cpp": "NonMatching",
-			"bsaudio/xenon/bsxenonaudiolistener.cpp": "NonMatching"
+			"bsaudio/xenon/bsxenonaudiolistener.cpp": "NonMatching",
+			"bshavok/bhkbinaryaction.cpp": "NonMatching"
 		}
 	},
 	"zlib": {
@@ -77,7 +88,8 @@
 		"mw_version": "X360/16.00.10224.00",
 		"cflags": "havok",
 		"objects": {
-			"lib/havok/common/base/reflection/hkclass.cpp": "NonMatching"
+			"lib/havok/common/base/reflection/hkclass.cpp": "NonMatching",
+			"lib/havok/physics/dynamics/hkpcachingshapephantom.cpp": "NonMatching"
 		}
 	}
 }

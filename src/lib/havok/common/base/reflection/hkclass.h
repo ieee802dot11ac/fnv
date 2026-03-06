@@ -10,43 +10,83 @@
 // so this one is stolen from amped 3 :3
 class hkClass { /* Size=0x24 */
 public:
+    enum FlagValues {
+        FLAGS_NONE = 0x0000,
+        FLAGS_NOT_SERIALIZABLE = 0x0001,
+    };
     static const hkInternalClassMember Members[0];
 
-    hkClass(const char *, const hkClass *, int32_t, const hkClass **, int32_t, const hkClassEnum *, int32_t, const hkClassMember *, int32_t, const void *);
+    hkClass(
+        char const *,
+        hkClass const *,
+        int,
+        hkClass const **,
+        int,
+        hkClassEnum const *,
+        int,
+        hkClassMember const *,
+        int,
+        void const *,
+        hkCustomAttributes const *,
+        unsigned int,
+        unsigned int
+    );
     const char *getName() const;
     hkClass *getParent();
     const hkClass *getParent() const;
-    int32_t getInheritanceDepth() const;
+    int getInheritanceDepth() const;
     hkBool isSuperClass(const hkClass &) const;
-    const hkClass *getInterface(int32_t) const;
-    int32_t getNumInterfaces() const;
-    const hkClass *getDeclaredInterface(int32_t) const;
-    int32_t getNumDeclaredInterfaces() const;
-    const hkClassEnum &getEnum(int32_t) const;
+    const hkClass *getInterface(int) const;
+    int getNumInterfaces() const;
+    const hkClass *getDeclaredInterface(int) const;
+    int getNumDeclaredInterfaces() const;
+    const hkClassEnum &getEnum(int) const;
     const hkClassEnum *getEnumByName(const char *) const;
-    int32_t getNumEnums() const;
-    hkClassMember &getMember(int32_t);
-    const hkClassMember &getMember(int32_t) const;
-    int32_t getNumMembers() const;
-    const hkClassMember &getDeclaredMember(int32_t) const;
-    int32_t getNumDeclaredMembers() const;
+    int getNumEnums() const;
+    const hkClassEnum &getDeclaredEnum(int) const;
+    const hkClassEnum *getDeclaredEnumByName(char const *) const;
+    int getNumDeclaredEnums() const;
+    hkClassMember &getMember(int);
+    const hkClassMember &getMember(int) const;
+    int getNumMembers() const;
+    const hkClassMember &getDeclaredMember(int) const;
+    int getNumDeclaredMembers() const;
+    const hkClassMember *getDeclaredMemberByName(const char *) const;
     const hkClassMember *getMemberByName(const char *) const;
-    int32_t getObjectSize() const;
-    void setObjectSize(int32_t);
+    int getMemberIndexByName(char const *) const;
+    int getDeclaredMemberIndexByName(char const *) const;
+    int getObjectSize() const;
+    void setObjectSize(int);
     hkBool hasVtable() const;
-    // hkResult getDefault(int32_t, hkStreamWriter *) const;
-    uint32_t getSignature() const;
+
+    int hasDefault(int memberIndex) const;
+    int hasDeclaredDefault(int declaredIndex) const;
+
+    const hkVariant *getAttribute(const char *) const;
+
+    const hkFlags<FlagValues, uint> &getFlags(void) const;
+    hkFlags<FlagValues, uint> &getFlags(void);
+
+    int getDescribedVersion() const;
+    // hkResult getDefault(int, hkStreamWriter *) const;
+    uint getSignature(int) const;
     // void write(hkStreamWriter *) const;
 
     HKMEMOPS_ARR
 protected:
     const char *m_name; // 0x00
     const hkClass *m_parent; // 0x04
-    int32_t m_objectSize; // 0x08
-    int32_t m_numImplementedInterfaces; // 0x0c
+    int m_objectSize; // 0x08
+    int m_numImplementedInterfaces; // 0x0c
     const hkClassEnum *m_declaredEnums; // 0x10
-    int32_t m_numDeclaredEnums; // 0x14
+    int m_numDeclaredEnums; // 0x14
     const hkClassMember *m_declaredMembers; // 0x18
-    int32_t m_numDeclaredMembers; // 0x1c
+    int m_numDeclaredMembers; // 0x1c
     const void *m_defaults; // 0x20
+    const hkCustomAttributes *m_attributes; // 0x24
+    hkFlags<FlagValues, uint> m_flags; // 0x28
+    int m_describedVersion; // 0x2c
+
+private:
+    hkResult retrieveMember(int, const void *&, const hkClassMember *&) const;
 };

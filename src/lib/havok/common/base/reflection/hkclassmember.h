@@ -67,7 +67,7 @@ public:
     };
 
     void iShouldNotHaveVtable() const;
-    const char *getName() const;
+    const char *getName() const { return m_name; }
     hkClassMember::Type getType() const;
     void setType(hkClassMember::Type);
     hkClassMember::Type getSubType() const;

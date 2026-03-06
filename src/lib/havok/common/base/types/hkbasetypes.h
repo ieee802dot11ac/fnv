@@ -5,7 +5,7 @@ private:
     char m_bool; // 0x0
 
 public:
-    hkBool(bool);
+    hkBool(bool b) : m_bool(b) {}
     hkBool();
     operator bool() const;
     hkBool operator==(bool) const;

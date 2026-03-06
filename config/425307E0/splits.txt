@@ -95,6 +95,14 @@ lib/havok/common/base/reflection/hkclass.cpp:
 	.pdata      start:0x82213520 end:0x82213590
 	.text       start:0x82C167D8 end:0x82C176B0
 
+lib/havok/physics/dynamics/hkpcachingshapephantom.cpp:
+	.pdata      start:0x822138B8 end:0x82213928
+	.text       start:0x82C1E588 end:0x82C1F2D0
+
+bshavok/bhkbinaryaction.cpp:
+	.pdata      start:0x82213928 end:0x82213980
+	.text       start:0x82C1F2D0 end:0x82C1FAB0
+
 gamebryo2.2/corelibs/nianimation/nikeybasedinterpolator.cpp:
 	.pdata      start:0x8221A5D0 end:0x8221A620
 	.text       start:0x82D9D970 end:0x82D9DDB0

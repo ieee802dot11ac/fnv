@@ -15,6 +15,50 @@ fallout_shared/tesform.cpp:
 	.pdata      start:0x821E5CB0 end:0x821E5E98
 	.text       start:0x822D3640 end:0x822D7498
 
+fallout_shared/tesscript.cpp:
+	.pdata      start:0x821EBA50 end:0x821EBB30
+	.text       start:0x823E68D0 end:0x823E9588
+
+fallout/magic/magicboltprojectile.cpp:
+	.pdata      start:0x821F7058 end:0x821F70E0
+	.text       start:0x826441F0 end:0x82647410
+
+fallout/magic/scripteffect.cpp:
+	.pdata      start:0x821F7700 end:0x821F7768
+	.text       start:0x826582F8 end:0x82658A78
+
+fallout/magic/shieldeffect.cpp:
+	.pdata      start:0x821F7768 end:0x821F77B8
+	.text       start:0x82658A78 end:0x82658F48
+
+fallout/magic/summoncreatureeffect.cpp:
+	.pdata      start:0x821F77B8 end:0x821F7828
+	.text       start:0x82658F48 end:0x82659AD8
+
+fallout/magic/sundamageeffect.cpp:
+	.pdata      start:0x821F7828 end:0x821F7870
+	.text       start:0x82659AD8 end:0x8265A370
+
+fallout/magic/telekinesiseffect.cpp:
+	.pdata      start:0x821F7870 end:0x821F78E0
+	.text       start:0x8265A370 end:0x8265B0E8
+
+fallout/dialogue/conversation.cpp:
+	.pdata      start:0x821F7CA0 end:0x821F7D08
+	.text       start:0x82669970 end:0x8266A5E0
+
+fallout/dialogue/dialogueitem.cpp:
+	.pdata      start:0x821F7D08 end:0x821F7D78
+	.text       start:0x8266A5E0 end:0x8266B250
+
+fallout/dialogue/dialogueresponse.cpp:
+	.pdata      start:0x821F7D78 end:0x821F7DA8
+	.text       start:0x8266B250 end:0x8266B968
+
+fallout/dialogue/menutopic.cpp:
+	.pdata      start:0x821F7DA8 end:0x821F7E50
+	.text       start:0x8266B968 end:0x8266D968
+
 fallout/misc/calendar.cpp:
 	.pdata      start:0x821F8C80 end:0x821F8CA0
 	.text       start:0x82690448 end:0x826909F0
@@ -91,6 +135,10 @@ lib/speedtree/indexedgeometry.cpp:
 	.pdata      start:0x82205F08 end:0x82205FA0
 	.text       start:0x82992550 end:0x82994780
 
+bsshader/bsshader.cpp:
+	.pdata      start:0x8220CDC0 end:0x8220CE70
+	.text       start:0x82ADCA90 end:0x82ADEB30
+
 lib/havok/common/base/reflection/hkclass.cpp:
 	.pdata      start:0x82213520 end:0x82213590
 	.text       start:0x82C167D8 end:0x82C176B0
@@ -110,6 +158,10 @@ lib/havok/common/base/reflection/hkclassmember.cpp:
 lib/havok/common/base/reflection/hkclassmemberaccessor.cpp:
 	.pdata      start:0x82214E98 end:0x82214EC0
 	.text       start:0x82C5FFA8 end:0x82C60380
+
+lib/havok/common/geometryutilities/misc/hkgeometryutils.cpp:
+	.pdata      start:0x82215558 end:0x82215580
+	.text       start:0x82C7D188 end:0x82C81278
 
 gamebryo2.2/corelibs/nianimation/nikeybasedinterpolator.cpp:
 	.pdata      start:0x8221A5D0 end:0x8221A620

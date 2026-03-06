@@ -42,9 +42,20 @@
 		"mw_version": "X360/16.00.10224.00",
 		"cflags": "base",
 		"objects": {
+			"fallout/dialogue/conversation.cpp": "NonMatching",
+			"fallout/dialogue/dialogueitem.cpp": "NonMatching",
+			"fallout/dialogue/dialogueresponse.cpp": "NonMatching",
+			"fallout/dialogue/menutopic.cpp": "NonMatching",
+			"fallout/magic/magicboltprojectile.cpp": "NonMatching",
+			"fallout/magic/scripteffect.cpp": "NonMatching",
+			"fallout/magic/shieldeffect.cpp": "NonMatching",
+			"fallout/magic/summoncreatureeffect.cpp": "NonMatching",
+			"fallout/magic/sundamageeffect.cpp": "NonMatching",
+			"fallout/magic/telekinesiseffect.cpp": "NonMatching",
 			"fallout/misc/calendar.cpp": "NonMatching",
 			"fallout/misc/main.cpp": "NonMatching",
-			"fallout_shared/tesform.cpp": "NonMatching"
+			"fallout_shared/tesform.cpp": "NonMatching",
+			"fallout_shared/tesscript.cpp": "NonMatching"
 		}
 	},
 	"creation": {
@@ -59,7 +70,8 @@
 			"bsaudio/bssoundhandle.cpp": "NonMatching",
 			"bsaudio/xenon/bsxenonaudio.cpp": "NonMatching",
 			"bsaudio/xenon/bsxenonaudiolistener.cpp": "NonMatching",
-			"bshavok/bhkbinaryaction.cpp": "NonMatching"
+			"bshavok/bhkbinaryaction.cpp": "NonMatching",
+			"bsshader/bsshader.cpp": "NonMatching"
 		}
 	},
 	"zlib": {
@@ -91,6 +103,9 @@
 		"cflags": "havok",
 		"objects": {
 			"lib/havok/common/base/reflection/hkclass.cpp": "NonMatching",
+			"lib/havok/common/base/reflection/hkclassmember.cpp": "NonMatching",
+			"lib/havok/common/base/reflection/hkclassmemberaccessor.cpp": "NonMatching",
+			"lib/havok/common/geometryutilities/misc/hkgeometryutils.cpp": "NonMatching",
 			"lib/havok/physics/dynamics/hkpcachingshapephantom.cpp": "NonMatching"
 		}
 	}

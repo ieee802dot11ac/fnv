@@ -103,6 +103,14 @@ bshavok/bhkbinaryaction.cpp:
 	.pdata      start:0x82213928 end:0x82213980
 	.text       start:0x82C1F2D0 end:0x82C1FAB0
 
+lib/havok/common/base/reflection/hkclassmember.cpp:
+	.pdata      start:0x82214E60 end:0x82214E98
+	.text       start:0x82C5F550 end:0x82C5FFA8
+
+lib/havok/common/base/reflection/hkclassmemberaccessor.cpp:
+	.pdata      start:0x82214E98 end:0x82214EC0
+	.text       start:0x82C5FFA8 end:0x82C60380
+
 gamebryo2.2/corelibs/nianimation/nikeybasedinterpolator.cpp:
 	.pdata      start:0x8221A5D0 end:0x8221A620
 	.text       start:0x82D9D970 end:0x82D9DDB0
@@ -168,8 +176,16 @@ gamebryo2.2/corelibs/nicollision/niboxsphereintersector.cpp:
 	.text       start:0x82E0EBD0 end:0x82E0F950
 
 gamebryo2.2/corelibs/nicollision/nisphere.cpp:
-	.pdata      start:0x8221C670 end:0x8221C690
-	.text       start:0x82E0F950 end:0x82E10C38
+	.pdata      start:0x8221C670 end:0x8221C678
+	.text       start:0x82E0F950 end:0x82E0FA40
+
+gamebryo2.2/corelibs/nicollision/nidistpnttri.cpp:
+	.pdata      start:0x8221C678 end:0x8221C680
+	.text       start:0x82E0FA40 end:0x82E10800
+
+gamebryo2.2/corelibs/nicollision/nispheretriintersector.cpp:
+	.pdata      start:0x8221C680 end:0x8221C690
+	.text       start:0x82E10800 end:0x82E10C38
 
 gamebryo2.2/corelibs/nicollision/niobbroot.cpp:
 	.pdata      start:0x8221C690 end:0x8221C6C8

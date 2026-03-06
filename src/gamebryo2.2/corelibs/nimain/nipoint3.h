@@ -12,8 +12,12 @@ public:
     NiPoint3();
     float &operator[](int);
     float const &operator[](int) const;
-    bool operator==(NiPoint3 const &) const;
-    bool operator!=(NiPoint3 const &) const;
+    bool operator==(NiPoint3 const &kPoint) const {
+        return x == kPoint.x && y == kPoint.y && z == kPoint.z;
+    }
+    bool operator!=(NiPoint3 const &kPoint) const {
+        return (x != kPoint.x || y != kPoint.y || z != kPoint.z);
+    }
     NiPoint3 operator+(NiPoint3 const &) const;
     NiPoint3 operator-() const;
     NiPoint3 operator-(NiPoint3 const &) const;

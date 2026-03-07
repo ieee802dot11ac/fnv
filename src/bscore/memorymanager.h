@@ -1,6 +1,7 @@
 #pragma once
 
 #include <types.h>
+#include <types_compat.h>
 
 class MemoryManager {
 public:

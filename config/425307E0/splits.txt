@@ -15,9 +15,25 @@ fallout_shared/tesform.cpp:
 	.pdata      start:0x821E5CB0 end:0x821E5E98
 	.text       start:0x822D3640 end:0x822D7498
 
+fallout_shared/gridarray.cpp:
+	.pdata      start:0x821E6EB8 end:0x821E6ED8
+	.text       start:0x82308658 end:0x82308AD8
+
+fallout_shared/gridcell.cpp:
+	.pdata      start:0x821E6ED8 end:0x821E6FA8
+	.text       start:0x82308AD8 end:0x8230A9E0
+
 fallout_shared/tesscript.cpp:
 	.pdata      start:0x821EBA50 end:0x821EBB30
 	.text       start:0x823E68D0 end:0x823E9588
+
+fallout/magic/activeeffect.cpp:
+	.pdata      start:0x821F6A68 end:0x821F6B70
+	.text       start:0x82637870 end:0x8263A498
+
+fallout/magic/associateditemeffect.cpp:
+	.pdata      start:0x821F6B70 end:0x821F6BA0
+	.text       start:0x8263A498 end:0x8263A6D8
 
 fallout/magic/magicboltprojectile.cpp:
 	.pdata      start:0x821F7058 end:0x821F70E0
@@ -43,6 +59,10 @@ fallout/magic/telekinesiseffect.cpp:
 	.pdata      start:0x821F7870 end:0x821F78E0
 	.text       start:0x8265A370 end:0x8265B0E8
 
+fallout/audio/falloutradio.cpp:
+	.pdata      start:0x821F7B30 end:0x821F7C38
+	.text       start:0x82661DE8 end:0x82666478
+
 fallout/dialogue/conversation.cpp:
 	.pdata      start:0x821F7CA0 end:0x821F7D08
 	.text       start:0x82669970 end:0x8266A5E0
@@ -59,6 +79,18 @@ fallout/dialogue/menutopic.cpp:
 	.pdata      start:0x821F7DA8 end:0x821F7E50
 	.text       start:0x8266B968 end:0x8266D968
 
+fallout/misc/saveload/bgsloadformbuffer.cpp:
+	.pdata      start:0x821F8A28 end:0x821F8A60
+	.text       start:0x8268C8D8 end:0x8268CB98
+
+fallout/misc/saveload/bgsloadgamebuffer.cpp:
+	.pdata      start:0x821F8A60 end:0x821F8AB0
+	.text       start:0x8268CB98 end:0x8268D1E8
+
+fallout/misc/saveload/bgssaveformbuffer.cpp:
+	.pdata      start:0x821F8B38 end:0x821F8B68
+	.text       start:0x8268DFF0 end:0x8268E218
+
 fallout/misc/calendar.cpp:
 	.pdata      start:0x821F8C80 end:0x821F8CA0
 	.text       start:0x82690448 end:0x826909F0
@@ -66,6 +98,14 @@ fallout/misc/calendar.cpp:
 fallout/misc/main.cpp:
 	.pdata      start:0x821F8DC0 end:0x821F9068
 	.text       start:0x826930B0 end:0x826A0A90
+
+fallout/ai/actor.cpp:
+	.pdata      start:0x821F9E60 end:0x821FA1B0
+	.text       start:0x826CA918 end:0x826EB338
+
+fallout/ai/actorpackage.cpp:
+	.pdata      start:0x821FA1C8 end:0x821FA218
+	.text       start:0x826EB4A0 end:0x826EC180
 
 bsaudio/bsaudio.cpp:
 	.pdata      start:0x82202A68 end:0x82202C60

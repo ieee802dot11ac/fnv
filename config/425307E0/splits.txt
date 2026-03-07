@@ -11,6 +11,22 @@ Sections:
 	BINKDATA    type:data align:65536
 	.idata      type:data align:65536
 
+remotelog/rlog_client.cpp:
+	.pdata      start:0x821E2400 end:0x821E24B0
+	.text       start:0x82250000 end:0x82250B98
+
+remotelog/avltree.cpp:
+	.pdata      start:0x821E24B0 end:0x821E24D8
+	.text       start:0x82250B98 end:0x82251240
+
+remotelog/socket.cpp:
+	.pdata      start:0x821E24E8 end:0x821E2528
+	.text       start:0x82251358 end:0x82251C20
+
+fallout_shared/magic/magicsystem.cpp:
+	.pdata      start:0x821E2A78 end:0x821E2AA0
+	.text       start:0x8225C688 end:0x8225D9F0
+
 fallout_shared/tesform.cpp:
 	.pdata      start:0x821E5CB0 end:0x821E5E98
 	.text       start:0x822D3640 end:0x822D7498
@@ -38,6 +54,26 @@ fallout/magic/associateditemeffect.cpp:
 fallout/magic/magicboltprojectile.cpp:
 	.pdata      start:0x821F7058 end:0x821F70E0
 	.text       start:0x826441F0 end:0x82647410
+
+fallout/magic/magiclight.cpp:
+	.pdata      start:0x821F7298 end:0x821F72C0
+	.text       start:0x8264DA98 end:0x8264E098
+
+fallout/magic/magicmodelhiteffect.cpp:
+	.pdata      start:0x821F72C0 end:0x821F7350
+	.text       start:0x8264E098 end:0x8264F6E0
+
+fallout/magic/magicprojectile.cpp:
+	.pdata      start:0x821F7350 end:0x821F73E0
+	.text       start:0x8264F6E0 end:0x82650AA0
+
+fallout/magic/magicshaderhiteffect.cpp:
+	.pdata      start:0x821F73E0 end:0x821F7460
+	.text       start:0x82650AA0 end:0x82652098
+
+fallout/magic/magictarget.cpp:
+	.pdata      start:0x821F74D8 end:0x821F75E0
+	.text       start:0x82653AA0 end:0x82656580
 
 fallout/magic/scripteffect.cpp:
 	.pdata      start:0x821F7700 end:0x821F7768
@@ -327,3 +363,19 @@ gamebryo2.2/corelibs/nimain/niobject.cpp:
 
 gamebryo2.2/corelibs/nimain/nirtti.cpp:
 	.text       start:0x82E66DA8 end:0x82E66DD8
+
+xdk/eh/rtti.cpp:
+	.pdata      start:0x8221FD48 end:0x8221FD80
+	.text       start:0x82EB3530 end:0x82EB3C68
+
+xdk/eh/throw.cpp:
+	.pdata      start:0x82220220 end:0x82220228
+	.text       start:0x82EBD040 end:0x82EBD0C8
+
+xdk/d3d9i/cinstruction.cpp:
+	.pdata      start:0x82222540 end:0x82222570
+	.text       start:0x82F3EFD0 end:0x82F3FC50
+
+xdk/d3d9i/cargument.cpp:
+	.pdata      start:0x82222570 end:0x82222588
+	.text       start:0x82F3FC50 end:0x82F3FEF0

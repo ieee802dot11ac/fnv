@@ -52,6 +52,11 @@
 			"fallout/magic/activeeffect.cpp": "NonMatching",
 			"fallout/magic/associateditemeffect.cpp": "NonMatching",
 			"fallout/magic/magicboltprojectile.cpp": "NonMatching",
+			"fallout/magic/magiclight.cpp": "NonMatching",
+			"fallout/magic/magicmodelhiteffect.cpp": "NonMatching",
+			"fallout/magic/magicprojectile.cpp": "NonMatching",
+			"fallout/magic/magicshaderhiteffect.cpp": "NonMatching",
+			"fallout/magic/magictarget.cpp": "NonMatching",
 			"fallout/magic/scripteffect.cpp": "NonMatching",
 			"fallout/magic/shieldeffect.cpp": "NonMatching",
 			"fallout/magic/summoncreatureeffect.cpp": "NonMatching",
@@ -64,8 +69,12 @@
 			"fallout/misc/saveload/bgssaveformbuffer.cpp": "NonMatching",
 			"fallout_shared/gridarray.cpp": "NonMatching",
 			"fallout_shared/gridcell.cpp": "NonMatching",
+			"fallout_shared/magic/magicsystem.cpp": "NonMatching",
 			"fallout_shared/tesform.cpp": "NonMatching",
-			"fallout_shared/tesscript.cpp": "NonMatching"
+			"fallout_shared/tesscript.cpp": "NonMatching",
+			"remotelog/avltree.cpp": "NonMatching",
+			"remotelog/rlog_client.cpp": "NonMatching",
+			"remotelog/socket.cpp": "NonMatching"
 		}
 	},
 	"creation": {
@@ -117,6 +126,17 @@
 			"lib/havok/common/base/reflection/hkclassmemberaccessor.cpp": "NonMatching",
 			"lib/havok/common/geometryutilities/misc/hkgeometryutils.cpp": "NonMatching",
 			"lib/havok/physics/dynamics/hkpcachingshapephantom.cpp": "NonMatching"
+		}
+	},
+	"xdk": {
+		"progress_category": "sdk",
+		"mw_version": "X360/16.00.10224.00",
+		"cflags": "xdk",
+		"objects": {
+			"xdk/d3d9i/cargument.cpp": "NonMatching",
+			"xdk/d3d9i/cinstruction.cpp": "NonMatching",
+			"xdk/eh/rtti.cpp": "NonMatching",
+			"xdk/eh/throw.cpp": "NonMatching"
 		}
 	}
 }

@@ -2,12 +2,13 @@
 #include "nimain/nifixedstring.h"
 #include "nimain/niobject.h"
 #include "nimain/niobjectgroup.h"
-#include "nimain/nipoint3.h"
 #include "nimain/nitarray.h"
 #include "nisystem/nibinarystream.h"
 #include <types.h>
 
 #define VERSION(hh, hl, lh, ll) ((u8(hh) << 24) | (u8(hl) << 16) | (u8(lh) << 8) | u8(ll))
+
+class NiAVObject;
 
 class NiStream {
 public:
@@ -168,7 +169,7 @@ protected:
     void FreeLoadData();
     void DoThreadPause();
     void SetSelectiveUpdateFlagsForOldVersions();
-    // void SetSelectiveUpdateFlagsTTTFRecursive(NiAVObject *);
+    void SetSelectiveUpdateFlagsTTTFRecursive(NiAVObject *);
     void LoadRTTIString(char *);
     bool LoadRTTI();
     void SaveRTTI();
@@ -199,9 +200,8 @@ protected:
     static uint const ms_uiNifMinUserDefinedVersion;
     static uint const ms_uiNifMaxUserDefinedVersion;
     // static NiTStringPointerMap<CreateFunction> *ms_pkLoaders;
-    // typedef NiTPrimitiveArray<void (*)(NiStream &, NiObject *)>
-    // PostProcessFunctionArray;
-    // static PostProcessFunctionArray * ms_pkPostProcessFunctions;
+    typedef NiTPrimitiveArray<void (*)(NiStream &, NiObject *)> PostProcessFunctionArray;
+    static PostProcessFunctionArray *ms_pkPostProcessFunctions;
     // static NiCriticalSection ms_kCleanupCriticalSection;
     static bool bUseDefaultPath;
 };

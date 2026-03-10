@@ -17,7 +17,7 @@ public:
     virtual bool RegisterStreamables(NiStream &);
     virtual void SaveBinary(NiStream &);
     virtual bool IsEqual(NiObject *);
-    // virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
+    virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
     const NiFixedString &GetName() const;
     void SetName(const NiFixedString &);
     virtual bool IsStreamable() const;

@@ -2,6 +2,7 @@
 
 #include "gamebryo2.2/corelibs/nimain/nirtti.h"
 #include "gamebryo2.2/corelibs/nimain/nitarray.h"
+#include "nimain/nifixedstring.h"
 #include <types.h>
 
 char *NiGetViewerString(const char *pcRttiName);
@@ -18,6 +19,13 @@ char *NiGetViewerString(const char *pcPrefix, const char *pcValue);
 
 inline void NiAddViewerString(const NiRTTI *pkRTTI, NiTPrimitiveArray<char *> *pStrings) {
     char *str = NiGetViewerString(pkRTTI->GetName());
+    pStrings->Add(str);
+}
+
+inline void NiAddViewerString(
+    const char *pcPrefix, const NiFixedString &kValue, NiTPrimitiveArray<char *> *pStrings
+) {
+    char *str = NiGetViewerString(pcPrefix, kValue);
     pStrings->Add(str);
 }
 

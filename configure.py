@@ -159,8 +159,8 @@ if not config.non_matching:
 # Tool versions
 config.binutils_tag = "2.42-1"
 config.compilers_tag = "20260305"
-config.dtk_tag = "v0.3.0"
-config.objdiff_tag = "v3.5.1"
+config.dtk_tag = "v0.3.1"
+config.objdiff_tag = "v3.7.0"
 config.sjiswrap_tag = "v1.2.1"
 config.wibo_tag = "1.0.0"
 

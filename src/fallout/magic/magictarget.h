@@ -1,6 +1,9 @@
 #pragma once
 
 #include "fallout_shared/magic/magicsystem.h"
+#include "fallout_shared/tesobjectrefr.h"
+
+class Actor;
 
 class MagicTarget {
 public:
@@ -8,29 +11,29 @@ public:
     MagicTarget();
     ~MagicTarget();
     void Dispel();
-    void Dispel(const EffectArchetypes::ArchetypeID, MagicCaster *);
-    void Dispel(const EffectSetting *, MagicItem *);
-    void Dispel(const EffectSetting *, MagicCaster *);
-    void Dispel(MagicSystem::SpellType);
-    void Dispel(EffectItem *, MagicItem *, MagicCaster *);
-    void Dispel(MagicItem *, MagicCaster *, ActiveEffect *);
-    void Dispel(TESBoundObject *, bool);
+    // void Dispel(const EffectArchetypes::ArchetypeID, MagicCaster *);
+    // void Dispel(const EffectSetting *, MagicItem *);
+    // void Dispel(const EffectSetting *, MagicCaster *);
+    // void Dispel(MagicSystem::SpellType);
+    // void Dispel(EffectItem *, MagicItem *, MagicCaster *);
+    // void Dispel(MagicItem *, MagicCaster *, ActiveEffect *);
+    // void Dispel(TESBoundObject *, bool);
     void DispelAllSpells(bool);
-    bool IsSpellTarget(MagicItem *, bool);
-    bool IsLastEffect(MagicItem *, ActiveEffect *);
-    bool IsEffectTarget(const EffectArchetypes::ArchetypeID, bool);
-    bool IsEnchantmentTarget(TESBoundObject *);
-    bool HasEffect(const EffectSetting *);
+    // bool IsSpellTarget(MagicItem *, bool);
+    // bool IsLastEffect(MagicItem *, ActiveEffect *);
+    // bool IsEffectTarget(const EffectArchetypes::ArchetypeID, bool);
+    // bool IsEnchantmentTarget(TESBoundObject *);
+    // bool HasEffect(const EffectSetting *);
     bool HasDamageHealthEffect();
-    bool HasHostileEffect(MagicCaster *);
-    float GetEffectMagnitude(const EffectSetting *);
-    float GetUsageMonitorEffectMagnitude(MagicItem *);
-    virtual bool AddTarget(MagicCaster *, MagicItem *, ActiveEffect *, bool);
+    // bool HasHostileEffect(MagicCaster *);
+    // float GetEffectMagnitude(const EffectSetting *);
+    // float GetUsageMonitorEffectMagnitude(MagicItem *);
+    // virtual bool AddTarget(MagicCaster *, MagicItem *, ActiveEffect *, bool);
     void UpdateTarget(float);
-    void StartSpell(MagicItem *);
-    bool CheckAddEffect(MagicCaster *, MagicItem *, ActiveEffect *);
+    // void StartSpell(MagicItem *);
+    // bool CheckAddEffect(MagicCaster *, MagicItem *, ActiveEffect *);
     virtual TESObjectREFR *GetTargetStatsObject();
-    virtual BSSimpleList<ActiveEffect *> *GetActiveEffectList();
+    // virtual BSSimpleList<ActiveEffect *> *GetActiveEffectList();
     virtual bool MagicTargetIsActor();
     Actor *GetTargetAsActor();
     bool HasRecoverableActorValueEffect(ActorValue::Index);

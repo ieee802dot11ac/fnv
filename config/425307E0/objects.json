@@ -28,13 +28,17 @@
 			"gamebryo2.2/corelibs/nicollision/nisphere.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nicollision/nispheretriintersector.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niavobject.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/niextradata.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niglobalstringtable.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nilight.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nimatrix3.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niobject.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niobjectnet.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nipoint3.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nirefobject.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nimain/nirtti.cpp": "NonMatching"
+			"gamebryo2.2/corelibs/nimain/nirtti.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nitrishapedata.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nixenonrenderer/nid3dshaderprogramfactory.cpp": "NonMatching"
 		}
 	},
 	"newvegas": {
@@ -52,6 +56,9 @@
 			"fallout/magic/activeeffect.cpp": "NonMatching",
 			"fallout/magic/associateditemeffect.cpp": "NonMatching",
 			"fallout/magic/magicboltprojectile.cpp": "NonMatching",
+			"fallout/magic/magiccaster.cpp": "NonMatching",
+			"fallout/magic/magicfogprojectile.cpp": "NonMatching",
+			"fallout/magic/magichiteffect.cpp": "NonMatching",
 			"fallout/magic/magiclight.cpp": "NonMatching",
 			"fallout/magic/magicmodelhiteffect.cpp": "NonMatching",
 			"fallout/magic/magicprojectile.cpp": "NonMatching",
@@ -71,6 +78,7 @@
 			"fallout_shared/gridcell.cpp": "NonMatching",
 			"fallout_shared/magic/magicsystem.cpp": "NonMatching",
 			"fallout_shared/tesform.cpp": "NonMatching",
+			"fallout_shared/tesobjectrefr.cpp": "NonMatching",
 			"fallout_shared/tesscript.cpp": "NonMatching",
 			"remotelog/avltree.cpp": "NonMatching",
 			"remotelog/rlog_client.cpp": "NonMatching",
@@ -133,6 +141,7 @@
 		"mw_version": "X360/16.00.10224.00",
 		"cflags": "xdk",
 		"objects": {
+			"xdk/d3d9i/shader.cpp": "NonMatching",
 			"xdk/d3d9i/cargument.cpp": "NonMatching",
 			"xdk/d3d9i/cinstruction.cpp": "NonMatching",
 			"xdk/eh/rtti.cpp": "NonMatching",

@@ -1,26 +1,16 @@
 #pragma once
 
+#include "bscore/bssimplelist.h"
 #include "bscore/bsstring.h"
-#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
-#include <types.h>
+#include "fallout/misc/saveload/bgssaveformbuffer.h"
 #include "fallout_shared/baseformcomponent.h"
+#include "fallout_shared/enums.h"
+#include "fallout_shared/tesfile.h"
+#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
+#include "win_types.h"
+#include <types.h>
 
-class TESForm : public BaseFormComponent { /* Size=0x28 */
-private:
-    /* 0x0004 */ u8 cFormType;
-    /* 0x0008 */ uint iFormFlags;
-    /* 0x000c */ uint iFormID;
-    /* 0x0010 */ BSStringT<char> cFormEditorID;
-    /* 0x0018 */ uint iVersionControl;
-    /* 0x001c */ u8 cVCVersion;
-    /* 0x0020 */ u8 pad_pSourceFiles[8];
-    //   /* 0x0020 */ BSSimpleList<TESFile *> pSourceFiles;
-
-    static uint iTotalFormCount;
-    static void *pFormBuffer;
-    static uint iBufferSize;
-    static bool bEndianSwapOnSave;
-
+class TESForm : public BaseFormComponent {
 public:
     static bool bFormIDsBashed;
     // static NiTPointerMap<unsigned int,TESForm *>* pAllForms;
@@ -37,19 +27,20 @@ public:
     virtual void ClearDataComponent();
     void ClearDataAllComponents();
     virtual bool ProcessBeforeSave();
-    // virtual bool Load(TESFile *);
-    // virtual bool LoadPartial(TESFile *);
-    // virtual bool Save(TESFile *);
+    virtual bool Load(TESFile *);
+    virtual bool LoadPartial(TESFile *);
+    virtual bool Save(TESFile *);
     virtual void Save();
-    // virtual bool LoadEdit(TESFile *);
-    // virtual bool SaveEdit(TESFile *);
+    virtual bool LoadEdit(TESFile *);
+    virtual bool SaveEdit(TESFile *);
     // virtual bool SavesBefore(FORM *);
     virtual bool SavesBefore(TESForm *);
     void SaveData();
-    // void LoadData(TESFile *, void *, u16);
+    void LoadData(TESFile *, void *, u16);
     uint GetDataSizeAdded();
     //   public: virtual TESForm* CreateDuplicateForm(bool, NiTPointerMap<TESForm
-    //   *,TESForm *>*); public: virtual void PostDuplicateProcess(NiTPointerMap<TESForm
+    //   *,TESForm *>*);
+    // public: virtual void PostDuplicateProcess(NiTPointerMap<TESForm
     //   *,TESForm *>*);
     virtual void AddChange(int);
     void ForceChange(int);
@@ -83,21 +74,22 @@ public:
     void LoadGameDataOLD(void *, int);
     void SaveNumericID(uint *, int);
     void LoadNumericID(uint *, int);
-    //   public: virtual bool FindInFileFast(TESFile*);
-    //   public: virtual void CheckSaveGame(BGSSaveFormBuffer*);
+
+    virtual bool FindInFileFast(TESFile *);
+    virtual void CheckSaveGame(BGSSaveFormBuffer *);
     //   public: virtual void FinishLoadGame(BGSLoadFormBuffer*);
     virtual void InitItem();
     uint GetFileCount();
-    // TESFile *GetFile(int);
-    // TESFile *GetOwnerMaster();
-    // void SetFile(TESFile *);
-    // bool IsInFile(TESFile *);
+    TESFile *GetFile(int);
+    TESFile *GetOwnerMaster();
+    void SetFile(TESFile *);
+    bool IsInFile(TESFile *);
     void ClearFiles();
-    //   public: BSSimpleList<TESFile *>* GetFileList();
+    BSSimpleList<TESFile *> *GetFileList();
     char *GetFormTypeString() const;
-    //   public: ENUM_FORM_ID GetFormType() const;
-    //   public: void SetFormType(ENUM_FORM_ID);
-    //   public: virtual ENUM_FORM_ID GetSavedFormType();
+    ENUM_FORM_ID GetFormType() const;
+    void SetFormType(ENUM_FORM_ID);
+    virtual ENUM_FORM_ID GetSavedFormType();
     virtual void GetFormDetailedString(BSStringT<char> &);
     void RemoveFromDataStructures();
     bool GetMaster() const;
@@ -181,7 +173,7 @@ public:
     void SetHasResults(bool);
     bool IsDefaultForm() const;
     virtual void SaveObjectBound();
-    //   public: virtual void LoadObjectBound(TESFile*);
+    virtual void LoadObjectBound(TESFile *);
     virtual bool IsBoundObject();
     virtual bool IsObject();
     virtual bool IsMagicItem();
@@ -191,7 +183,7 @@ public:
     virtual bool IsMobileObject();
     virtual bool IsActor();
     virtual uint GetRefCount();
-    //   public: void LoadForm(TESFile*);
+    void LoadForm(TESFile *);
     virtual void Copy(TESForm *);
     virtual bool Compare(TESForm *);
     virtual void CopyComponent(BaseFormComponent *);
@@ -202,7 +194,7 @@ public:
     //   public: virtual void CreateGroupData(FORM*, FORM_GROUP*);
     uint GetFormEditorIDLength();
     virtual const char *GetFormEditorID();
-    //   public: bool SetFormEditorID(HWND__*, uint);
+    bool SetFormEditorID(HWND *, uint);
     bool SetFormEditorID(const char *);
     void SetVCVersion(unsigned char);
     unsigned char GetVCVersion();
@@ -240,7 +232,6 @@ public:
     void __SaveData(void *, uint);
     void StartForm();
     void CloseForm();
-    TESForm &operator=(const TESForm &);
 
     static void CompressSaveBuffer();
     //   public: static void RunPostDuplicateProcess(NiTPointerMap<TESForm *,TESForm *>*);
@@ -248,35 +239,48 @@ public:
     static TESForm *GetFormByEditorID(const char *);
     static TESForm *GetFormByFullName(const char *, unsigned char);
     static const char *GetFormTypeString(unsigned char);
-    //   public: static ENUM_FORM_ID GetFormTypeFromFormString(uint);
+    static ENUM_FORM_ID GetFormTypeFromFormString(uint);
     static bool CanBeOnLocalMap(unsigned char);
     static bool IsDefaultForm(uint);
     static bool FixFormEditorID(const char *);
     static bool FixFormEditorID(char *);
-    //   public: static void AddCompileIndex(uint&, TESFile*);
+    static void AddCompileIndex(uint &, TESFile *);
     static void ReleaseFormDataStructures();
-
-private:
-    static void InitializeFormDataStructures();
-    //   public: static void AddChunk(CHUNK_ID, _ULARGE_INTEGER);
-    //   public: static void AddChunk(CHUNK_ID, u16);
-    //   public: static void AddChunk(CHUNK_ID, s16);
-    //   public: static void AddChunk(CHUNK_ID, uint);
-    //   public: static void AddChunk(CHUNK_ID, float);
-    //   public: static void AddChunk(CHUNK_ID, int);
-    //   public: static void AddChunk(CHUNK_ID, unsigned char);
-    //   public: static void AddChunk(CHUNK_ID, char);
-    //   public: static void AddChunk(CHUNK_ID);
-    //   public: static void AddChunkArray(CHUNK_ID, const char*, uint);
-    //   public: static void AddChunkArray(CHUNK_ID, const u16*, uint);
-    //   public: static void AddChunkArray(CHUNK_ID, const s16*, uint);
-    //   public: static void AddChunkArray(CHUNK_ID, const uint*, uint);
-    //   public: static void AddChunkArray(CHUNK_ID, const int*, uint);
-    //   public: static void AddChunkArray(CHUNK_ID, const float*, uint);
-    //   public: static void __AddChunkData(CHUNK_ID, const void*, uint);
-public:
     static bool QEndianSwapOnSave();
     static void SetEndianSwapOnSave(bool);
-    //   private: static void AddChunkArray32(CHUNK_ID, const void*, uint);
-    //   private: static void AddChunkArray16(CHUNK_ID, const void*, uint);
+
+    static void AddChunk(CHUNK_ID, ULARGE_INTEGER);
+    static void AddChunk(CHUNK_ID, u16);
+    static void AddChunk(CHUNK_ID, s16);
+    static void AddChunk(CHUNK_ID, uint);
+    static void AddChunk(CHUNK_ID, float);
+    static void AddChunk(CHUNK_ID, int);
+    static void AddChunk(CHUNK_ID, u8);
+    static void AddChunk(CHUNK_ID, s8);
+    static void AddChunk(CHUNK_ID);
+    static void AddChunkArray(CHUNK_ID, const char *, uint);
+    static void AddChunkArray(CHUNK_ID, const u16 *, uint);
+    static void AddChunkArray(CHUNK_ID, const s16 *, uint);
+    static void AddChunkArray(CHUNK_ID, const uint *, uint);
+    static void AddChunkArray(CHUNK_ID, const int *, uint);
+    static void AddChunkArray(CHUNK_ID, const float *, uint);
+    static void __AddChunkData(CHUNK_ID, const void *, uint);
+
+private:
+    u8 cFormType; // 0x04
+    uint iFormFlags; // 0x08
+    uint iFormID; // 0x0c
+    BSStringT<char> cFormEditorID; // 0x10
+    uint iVersionControl; // 0x18
+    u8 cVCVersion; // 0x1c
+    BSSimpleList<TESFile *> pSourceFiles; // 0x20
+
+    static uint iTotalFormCount;
+    static void *pFormBuffer;
+    static uint iBufferSize;
+    static bool bEndianSwapOnSave;
+
+    static void InitializeFormDataStructures();
+    static void AddChunkArray32(CHUNK_ID, const void *, uint);
+    static void AddChunkArray16(CHUNK_ID, const void *, uint);
 };

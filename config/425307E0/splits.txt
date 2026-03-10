@@ -39,6 +39,10 @@ fallout_shared/gridcell.cpp:
 	.pdata      start:0x821E6ED8 end:0x821E6FA8
 	.text       start:0x82308AD8 end:0x8230A9E0
 
+fallout_shared/tesobjectrefr.cpp:
+	.pdata      start:0x821E9D28 end:0x821EA738
+	.text       start:0x8239B4E8 end:0x823BB788
+
 fallout_shared/tesscript.cpp:
 	.pdata      start:0x821EBA50 end:0x821EBB30
 	.text       start:0x823E68D0 end:0x823E9588
@@ -52,8 +56,20 @@ fallout/magic/associateditemeffect.cpp:
 	.text       start:0x8263A498 end:0x8263A6D8
 
 fallout/magic/magicboltprojectile.cpp:
-	.pdata      start:0x821F7058 end:0x821F70E0
-	.text       start:0x826441F0 end:0x82647410
+	.pdata      start:0x821F7058 end:0x821F70E8
+	.text       start:0x826441F0 end:0x82647460
+
+fallout/magic/magiccaster.cpp:
+	.pdata      start:0x821F70E8 end:0x821F71B8
+	.text       start:0x82647460 end:0x8264B228
+
+fallout/magic/magicfogprojectile.cpp:
+	.pdata      start:0x821F71B8 end:0x821F7238
+	.text       start:0x8264B228 end:0x8264D1C0
+
+fallout/magic/magichiteffect.cpp:
+	.pdata      start:0x821F7238 end:0x821F7298
+	.text       start:0x8264D1C0 end:0x8264DA98
 
 fallout/magic/magiclight.cpp:
 	.pdata      start:0x821F7298 end:0x821F72C0
@@ -142,6 +158,14 @@ fallout/ai/actor.cpp:
 fallout/ai/actorpackage.cpp:
 	.pdata      start:0x821FA1C8 end:0x821FA218
 	.text       start:0x826EB4A0 end:0x826EC180
+
+xdk/d3d9i/shader.cpp:
+	.pdata      start:0x821FF670 end:0x821FF890
+	.text       start:0x8283B708 end:0x828422E0
+
+gamebryo2.2/corelibs/nixenonrenderer/nid3dshaderprogramfactory.cpp:
+	.pdata      start:0x82201310 end:0x822013F0
+	.text       start:0x828AEFD8 end:0x828B0688
 
 bsaudio/bsaudio.cpp:
 	.pdata      start:0x82202A68 end:0x82202C60
@@ -361,8 +385,20 @@ gamebryo2.2/corelibs/nimain/niobject.cpp:
 	.pdata      start:0x8221CA68 end:0x8221CAD0
 	.text       start:0x82E2DEE8 end:0x82E2E6A0
 
+gamebryo2.2/corelibs/nimain/nilight.cpp:
+	.pdata      start:0x8221D950 end:0x8221D998
+	.text       start:0x82E556B8 end:0x82E55E18
+
+gamebryo2.2/corelibs/nimain/niextradata.cpp:
+	.pdata      start:0x8221DDB8 end:0x8221DE20
+	.text       start:0x82E666C0 end:0x82E66DA8
+
 gamebryo2.2/corelibs/nimain/nirtti.cpp:
 	.text       start:0x82E66DA8 end:0x82E66DD8
+
+gamebryo2.2/corelibs/nimain/nitrishapedata.cpp:
+	.pdata      start:0x8221DE20 end:0x8221DE98
+	.text       start:0x82E66DD8 end:0x82E67C10
 
 xdk/eh/rtti.cpp:
 	.pdata      start:0x8221FD48 end:0x8221FD80

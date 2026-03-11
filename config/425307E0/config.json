@@ -47,7 +47,9 @@
         },
         "xdk": {
             "base": "base",
-            "flags": []
+            "flags": [
+                "/O1"
+            ]
         }
     }
 }

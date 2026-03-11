@@ -187,9 +187,17 @@ xdk/png/pngmem.cpp:
 	.pdata      start:0x821FF178 end:0x821FF188
 	.text       start:0x8282A6B8 end:0x8282A800
 
+xdk/zlib/inflate.cpp:
+	.pdata      start:0x821FF2B8 end:0x821FF2D8
+	.text       start:0x8282DE88 end:0x8282E640
+
 xdk/jpeg/jdhuff.cpp:
 	.pdata      start:0x821FF3F0 end:0x821FF420
 	.text       start:0x82831E98 end:0x82832B80
+
+xdk/zlib/inftrees.cpp:
+	.pdata      start:0x821FF5D0 end:0x821FF5E8
+	.text       start:0x8283A040 end:0x8283A7B0
 
 xdk/d3d9i/shader.cpp:
 	.pdata      start:0x821FF670 end:0x821FF890

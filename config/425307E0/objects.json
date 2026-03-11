@@ -28,6 +28,9 @@
 			"gamebryo2.2/corelibs/nicollision/nisphere.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nicollision/nispheretriintersector.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niavobject.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nicolor.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nicullingprocess.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/nidynamiceffect.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niextradata.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/niglobalstringtable.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/nilight.cpp": "NonMatching",
@@ -146,10 +149,17 @@
 			"xdk/d3d9i/cinstruction.cpp": "NonMatching",
 			"xdk/eh/rtti.cpp": "NonMatching",
 			"xdk/eh/throw.cpp": "NonMatching",
+			"xdk/jpeg/jdapimin.cpp": "NonMatching",
+			"xdk/jpeg/jdapistd.cpp": "NonMatching",
+			"xdk/jpeg/jdhuff.cpp": "NonMatching",
+			"xdk/LIBCMT/longjmp.c": "NonMatching",
 			"xdk/png/png.cpp": "NonMatching",
 			"xdk/png/pngerror.cpp": "NonMatching",
 			"xdk/png/pngget.cpp": "NonMatching",
-			"xdk/png/pngset.cpp": "NonMatching"
+			"xdk/png/pngmem.cpp": "NonMatching",
+			"xdk/png/pngset.cpp": "NonMatching",
+			"xdk/zlib/inflate.cpp": "NonMatching",
+			"xdk/zlib/inftrees.cpp": "NonMatching"
 		}
 	}
 }

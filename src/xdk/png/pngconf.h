@@ -17,21 +17,22 @@
 #ifndef PNGCONF_H
 #define PNGCONF_H
 
+namespace D3DX {
 // NEW VEGAS HACK: FAR breaks shit
 #undef USE_FAR_KEYWORD
 
-/* This is the size of the compression buffer, and thus the size of
- * an IDAT chunk.  Make this whatever size you feel is best for your
- * machine.  One of these will be allocated per png_struct.  When this
- * is full, it writes the data to the disk, and does some other
- * calculations.  Making this an extremely small size will slow
- * the library down, but you may want to experiment to determine
- * where it becomes significant, if you are concerned with memory
- * usage.  Note that zlib allocates at least 32Kb also.  For readers,
- * this describes the size of the buffer available to read the data in.
- * Unless this gets smaller than the size of a row (compressed),
- * it should not make much difference how big this is.
- */
+    /* This is the size of the compression buffer, and thus the size of
+     * an IDAT chunk.  Make this whatever size you feel is best for your
+     * machine.  One of these will be allocated per png_struct.  When this
+     * is full, it writes the data to the disk, and does some other
+     * calculations.  Making this an extremely small size will slow
+     * the library down, but you may want to experiment to determine
+     * where it becomes significant, if you are concerned with memory
+     * usage.  Note that zlib allocates at least 32Kb also.  For readers,
+     * this describes the size of the buffer available to read the data in.
+     * Unless this gets smaller than the size of a row (compressed),
+     * it should not make much difference how big this is.
+     */
 
 #ifndef PNG_ZBUF_SIZE
 #define PNG_ZBUF_SIZE 8192
@@ -123,7 +124,7 @@
 #undef _BSD_SOURCE
 #endif
 #ifdef _SETJMP_H
-__png.h__ already includes setjmp.h __dont__ include it again
+    __png.h__ already includes setjmp.h __dont__ include it again
 #endif
 #endif /* __linux__ */
 
@@ -156,9 +157,9 @@ __png.h__ already includes setjmp.h __dont__ include it again
  */
 #define PNG_EXTERN
 
-/* Other defines specific to compilers can go here.  Try to keep
- * them inside an appropriate ifdef/endif pair for portability.
- */
+    /* Other defines specific to compilers can go here.  Try to keep
+     * them inside an appropriate ifdef/endif pair for portability.
+     */
 
 #if defined(MACOS)
 /* We need to check that <math.h> hasn't already been included earlier
@@ -204,12 +205,12 @@ __png.h__ already includes setjmp.h __dont__ include it again
 #define PNG_DITHER_BLUE_BITS 5
 #endif
 
-/* This controls how fine the gamma correction becomes when you
- * are only interested in 8 bits anyway.  Increasing this value
- * results in more memory being used, and more pow() functions
- * being called to fill in the gamma tables.  Don't set this value
- * less then 8, and even that may not work (I haven't tested it).
- */
+    /* This controls how fine the gamma correction becomes when you
+     * are only interested in 8 bits anyway.  Increasing this value
+     * results in more memory being used, and more pow() functions
+     * being called to fill in the gamma tables.  Don't set this value
+     * less then 8, and even that may not work (I haven't tested it).
+     */
 
 #ifndef PNG_MAX_GAMMA_8
 #define PNG_MAX_GAMMA_8 11
@@ -224,10 +225,10 @@ __png.h__ already includes setjmp.h __dont__ include it again
 
 #endif /* PNG_INTERNAL */
 
-/* The following uses const char * instead of char * for error
- * and warning message functions, so some compilers won't complain.
- * If you do not want to use const, define PNG_NO_CONST here.
- */
+    /* The following uses const char * instead of char * for error
+     * and warning message functions, so some compilers won't complain.
+     * If you do not want to use const, define PNG_NO_CONST here.
+     */
 
 #ifndef PNG_NO_CONST
 #define PNG_CONST const
@@ -235,31 +236,31 @@ __png.h__ already includes setjmp.h __dont__ include it again
 #define PNG_CONST
 #endif
 
-/* The following defines give you the ability to remove code from the
- * library that you will not be using.  I wish I could figure out how to
- * automate this, but I can't do that without making it seriously hard
- * on the users.  So if you are not using an ability, change the #define
- * to and #undef, and that part of the library will not be compiled.  If
- * your linker can't find a function, you may want to make sure the
- * ability is defined here.  Some of these depend upon some others being
- * defined.  I haven't figured out all the interactions here, so you may
- * have to experiment awhile to get everything to compile.  If you are
- * creating or using a shared library, you probably shouldn't touch this,
- * as it will affect the size of the structures, and this will cause bad
- * things to happen if the library and/or application ever change.
- */
+    /* The following defines give you the ability to remove code from the
+     * library that you will not be using.  I wish I could figure out how to
+     * automate this, but I can't do that without making it seriously hard
+     * on the users.  So if you are not using an ability, change the #define
+     * to and #undef, and that part of the library will not be compiled.  If
+     * your linker can't find a function, you may want to make sure the
+     * ability is defined here.  Some of these depend upon some others being
+     * defined.  I haven't figured out all the interactions here, so you may
+     * have to experiment awhile to get everything to compile.  If you are
+     * creating or using a shared library, you probably shouldn't touch this,
+     * as it will affect the size of the structures, and this will cause bad
+     * things to happen if the library and/or application ever change.
+     */
 
-/* Any transformations you will not be using can be undef'ed here */
+    /* Any transformations you will not be using can be undef'ed here */
 
-/* GR-P, 0.96a: Set "*TRANSFORMS_SUPPORTED as default but allow user
-   to turn it off with "*TRANSFORMS_NOT_SUPPORTED" or *PNG_NO_*_TRANSFORMS
-   on the compile line, then pick and choose which ones to define without
-   having to edit this file. It is safe to use the *TRANSFORMS_NOT_SUPPORTED
-   if you only want to have a png-compliant reader/writer but don't need
-   any of the extra transformations.  This saves about 80 kbytes in a
-   typical installation of the library. (PNG_NO_* form added in version
-   1.0.1c, for consistency)
- */
+    /* GR-P, 0.96a: Set "*TRANSFORMS_SUPPORTED as default but allow user
+       to turn it off with "*TRANSFORMS_NOT_SUPPORTED" or *PNG_NO_*_TRANSFORMS
+       on the compile line, then pick and choose which ones to define without
+       having to edit this file. It is safe to use the *TRANSFORMS_NOT_SUPPORTED
+       if you only want to have a png-compliant reader/writer but don't need
+       any of the extra transformations.  This saves about 80 kbytes in a
+       typical installation of the library. (PNG_NO_* form added in version
+       1.0.1c, for consistency)
+     */
 
 #if !defined(PNG_READ_TRANSFORMS_NOT_SUPPORTED) && !defined(PNG_NO_READ_TRANSFORMS)
 #define PNG_READ_TRANSFORMS_SUPPORTED
@@ -417,31 +418,31 @@ __png.h__ already includes setjmp.h __dont__ include it again
 #define PNG_ASSEMBLER_CODE_SUPPORTED
 #endif
 
-/* These are currently experimental features, define them if you want */
+    /* These are currently experimental features, define them if you want */
 
-/* very little testing */
-/*
-#define PNG_READ_16_TO_8_ACCURATE_SCALE_SUPPORTED
-#define PNG_USER_MEM_SUPPORTED
-*/
+    /* very little testing */
+    /*
+    #define PNG_READ_16_TO_8_ACCURATE_SCALE_SUPPORTED
+    #define PNG_USER_MEM_SUPPORTED
+    */
 
-/* This is only for PowerPC big-endian and 680x0 systems */
-/* some testing */
-/*
-#define PNG_READ_BIG_ENDIAN_SUPPORTED
-*/
+    /* This is only for PowerPC big-endian and 680x0 systems */
+    /* some testing */
+    /*
+    #define PNG_READ_BIG_ENDIAN_SUPPORTED
+    */
 
-/* These functions are turned off by default, as they will be phased out. */
-/*
-#define  PNG_USELESS_TESTS_SUPPORTED
-#define  PNG_CORRECT_PALETTE_SUPPORTED
-*/
+    /* These functions are turned off by default, as they will be phased out. */
+    /*
+    #define  PNG_USELESS_TESTS_SUPPORTED
+    #define  PNG_CORRECT_PALETTE_SUPPORTED
+    */
 
-/* Any chunks you are not interested in, you can undef here.  The
- * ones that allocate memory may be expecially important (hIST,
- * tEXt, zTXt, tRNS, pCAL).  Others will just save time and make png_info
- * a bit smaller.
- */
+    /* Any chunks you are not interested in, you can undef here.  The
+     * ones that allocate memory may be expecially important (hIST,
+     * tEXt, zTXt, tRNS, pCAL).  Others will just save time and make png_info
+     * a bit smaller.
+     */
 
 #if !defined(PNG_READ_ANCILLARY_CHUNKS_NOT_SUPPORTED)                                    \
     && !defined(PNG_NO_READ_ANCILLARY_CHUNKS)
@@ -544,24 +545,24 @@ __png.h__ already includes setjmp.h __dont__ include it again
 #include <time.h>
 #endif
 
-    /* Some typedefs to get us started.  These should be safe on most of the
-     * common platforms.  The typedefs should be at least as large as the
-     * numbers suggest (a png_uint_32 must be at least 32 bits long), but they
-     * don't have to be exactly that size.  Some compilers dislike passing
-     * unsigned shorts as function parameters, so you may be better off using
-     * unsigned int for png_uint_16.  Likewise, for 64-bit systems, you may
-     * want to have unsigned int for png_uint_32 instead of unsigned long.
-     */
+        /* Some typedefs to get us started.  These should be safe on most of the
+         * common platforms.  The typedefs should be at least as large as the
+         * numbers suggest (a png_uint_32 must be at least 32 bits long), but they
+         * don't have to be exactly that size.  Some compilers dislike passing
+         * unsigned shorts as function parameters, so you may be better off using
+         * unsigned int for png_uint_16.  Likewise, for 64-bit systems, you may
+         * want to have unsigned int for png_uint_32 instead of unsigned long.
+         */
 
-    typedef unsigned long png_uint_32;
-typedef long png_int_32;
-typedef unsigned short png_uint_16;
-typedef short png_int_16;
-typedef unsigned char png_byte;
+        typedef unsigned long png_uint_32;
+    typedef long png_int_32;
+    typedef unsigned short png_uint_16;
+    typedef short png_int_16;
+    typedef unsigned char png_byte;
 
-/* This is usually size_t.  It is typedef'ed just in case you need it to
-   change (I'm not sure if you will or not, so I thought I'd be safe) */
-typedef size_t png_size_t;
+    /* This is usually size_t.  It is typedef'ed just in case you need it to
+       change (I'm not sure if you will or not, so I thought I'd be safe) */
+    typedef size_t png_size_t;
 
 /* The following is needed for medium model support.  It cannot be in the
  * PNG_INTERNAL section.  Needs modification for other compilers besides
@@ -623,37 +624,37 @@ typedef size_t png_size_t;
 #define FARDATA
 #endif
 
-/* Add typedefs for pointers */
-typedef void FAR *png_voidp;
-typedef png_byte FAR *png_bytep;
-typedef png_uint_32 FAR *png_uint_32p;
-typedef png_int_32 FAR *png_int_32p;
-typedef png_uint_16 FAR *png_uint_16p;
-typedef png_int_16 FAR *png_int_16p;
-typedef PNG_CONST char FAR *png_const_charp;
-typedef char FAR *png_charp;
-typedef double FAR *png_doublep;
+    /* Add typedefs for pointers */
+    typedef void FAR *png_voidp;
+    typedef png_byte FAR *png_bytep;
+    typedef png_uint_32 FAR *png_uint_32p;
+    typedef png_int_32 FAR *png_int_32p;
+    typedef png_uint_16 FAR *png_uint_16p;
+    typedef png_int_16 FAR *png_int_16p;
+    typedef PNG_CONST char FAR *png_const_charp;
+    typedef char FAR *png_charp;
+    typedef double FAR *png_doublep;
 
-/* Pointers to pointers; i.e. arrays */
-typedef png_byte FAR * FAR * png_bytepp;
-typedef png_uint_32 FAR * FAR * png_uint_32pp;
-typedef png_int_32 FAR * FAR * png_int_32pp;
-typedef png_uint_16 FAR * FAR * png_uint_16pp;
-typedef png_int_16 FAR * FAR * png_int_16pp;
-typedef PNG_CONST char FAR * FAR * png_const_charpp;
-typedef char FAR * FAR * png_charpp;
-typedef double FAR * FAR * png_doublepp;
+    /* Pointers to pointers; i.e. arrays */
+    typedef png_byte FAR * FAR * png_bytepp;
+    typedef png_uint_32 FAR * FAR * png_uint_32pp;
+    typedef png_int_32 FAR * FAR * png_int_32pp;
+    typedef png_uint_16 FAR * FAR * png_uint_16pp;
+    typedef png_int_16 FAR * FAR * png_int_16pp;
+    typedef PNG_CONST char FAR * FAR * png_const_charpp;
+    typedef char FAR * FAR * png_charpp;
+    typedef double FAR * FAR * png_doublepp;
 
-/* Pointers to pointers to pointers; i.e. pointer to array */
-typedef char FAR * FAR * FAR *png_charppp;
+    /* Pointers to pointers to pointers; i.e. pointer to array */
+    typedef char FAR * FAR * FAR *png_charppp;
 
-/* libpng typedefs for types in zlib. If zlib changes
- * or another compression library is used, then change these.
- * Eliminates need to change all the source files.
- */
-typedef charf *png_zcharp;
-typedef charf * FAR * png_zcharpp;
-typedef z_stream FAR *png_zstreamp;
+    /* libpng typedefs for types in zlib. If zlib changes
+     * or another compression library is used, then change these.
+     * Eliminates need to change all the source files.
+     */
+    typedef charf *png_zcharp;
+    typedef charf * FAR * png_zcharpp;
+    typedef z_stream FAR *png_zstreamp;
 
 #ifndef PNG_EXPORT
 /* allow for compilation as dll under MS Windows */
@@ -681,9 +682,9 @@ typedef z_stream FAR *png_zstreamp;
 #define PNG_EXPORT(type, symbol) type symbol
 #endif
 
-/* User may want to use these so not in PNG_INTERNAL. Any library functions
- * that are passed far data must be model independent.
- */
+    /* User may want to use these so not in PNG_INTERNAL. Any library functions
+     * that are passed far data must be model independent.
+     */
 
 #if defined(USE_FAR_KEYWORD) /* memory model independent fns */
 /* use this to make far-to-near assignments */
@@ -714,5 +715,7 @@ typedef z_stream FAR *png_zstreamp;
 #undef PNG_ZBUF_SIZE
 #define PNG_ZBUF_SIZE 65536
 #endif
+
+}
 
 #endif /* PNGCONF_H */

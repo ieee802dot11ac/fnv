@@ -5,7 +5,7 @@ class TESForm;
 class BGSChangeFlags {
 public:
     BGSChangeFlags(int);
-    BGSChangeFlags();
+    BGSChangeFlags() { iFlags = 0; }
     bool CheckFlags(int);
     bool CheckFlagsExact(int);
     bool CheckFlagsExclusive(int);

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "fallout/misc/saveload/bgssaveloadfile.h"
 #include "nimain/nipoint3.h"
 #include "types.h"
 
@@ -12,8 +13,8 @@ public:
     BGSSaveGameBuffer(const BGSSaveGameBuffer &);
     BGSSaveGameBuffer();
     ~BGSSaveGameBuffer();
-    //   void Save(BGSSaveLoadFile*, uint);
-    //   void Save(BGSSaveLoadFile*);
+    void Save(BGSSaveLoadFile *, uint);
+    void Save(BGSSaveLoadFile *);
     uint GetBufferPosition();
     char *GetBuffer();
     void ClearPosition();

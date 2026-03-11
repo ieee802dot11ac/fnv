@@ -25,6 +25,9 @@ struct FORM {
     BS_MEM_OVERLOADS
 };
 
+class BGSLoadFormBuffer;
+class BGSSaveFormBuffer;
+
 class TESForm : public BaseFormComponent {
 public:
     static bool bFormIDsBashed;
@@ -48,7 +51,7 @@ public:
     virtual void Save();
     virtual bool LoadEdit(TESFile *);
     virtual bool SaveEdit(TESFile *);
-    // virtual bool SavesBefore(FORM *);
+    virtual bool SavesBefore(FORM *);
     virtual bool SavesBefore(TESForm *);
     void SaveData();
     void LoadData(TESFile *, void *, u16);
@@ -63,12 +66,12 @@ public:
     virtual u16 GetSaveSize(uint);
     virtual void SaveGame(BGSSaveFormBuffer *);
     virtual void SaveGame(uint);
-    // virtual void LoadGame(BGSLoadFormBuffer *);
+    virtual void LoadGame(BGSLoadFormBuffer *);
     virtual void LoadGame(uint, uint);
-    //   public: virtual void InitLoadGame(BGSLoadFormBuffer*);
+    virtual void InitLoadGame(BGSLoadFormBuffer *);
     virtual void InitLoadGame(uint, uint);
     virtual void FinishInitLoadGame(uint, uint);
-    //   public: virtual void Revert(BGSLoadFormBuffer*);
+    virtual void Revert(BGSLoadFormBuffer *);
     virtual void Revert(uint);
     virtual void LoadQueuedFormData(u16);
     void SaveGameDataOLD(double *, int);
@@ -92,7 +95,7 @@ public:
 
     virtual bool FindInFileFast(TESFile *);
     virtual void CheckSaveGame(BGSSaveFormBuffer *);
-    //   public: virtual void FinishLoadGame(BGSLoadFormBuffer*);
+    virtual void FinishLoadGame(BGSLoadFormBuffer *);
     virtual void InitItem();
     uint GetFileCount();
     TESFile *GetFile(int);

@@ -67,6 +67,12 @@
 			"fallout/magic/magicprojectile.cpp": "NonMatching",
 			"fallout/magic/magicshaderhiteffect.cpp": "NonMatching",
 			"fallout/magic/magictarget.cpp": "NonMatching",
+			"fallout/magic/nighteyeeffect.cpp": "NonMatching",
+			"fallout/magic/nonactormagiccaster.cpp": "NonMatching",
+			"fallout/magic/nonactormagictarget.cpp": "NonMatching",
+			"fallout/magic/openeffect.cpp": "NonMatching",
+			"fallout/magic/paralysiseffect.cpp": "NonMatching",
+			"fallout/magic/reanimateeffect.cpp": "NonMatching",
 			"fallout/magic/scripteffect.cpp": "NonMatching",
 			"fallout/magic/shieldeffect.cpp": "NonMatching",
 			"fallout/magic/summoncreatureeffect.cpp": "NonMatching",
@@ -136,6 +142,8 @@
 			"lib/havok/common/base/reflection/hkclassmember.cpp": "NonMatching",
 			"lib/havok/common/base/reflection/hkclassmemberaccessor.cpp": "NonMatching",
 			"lib/havok/common/geometryutilities/misc/hkgeometryutils.cpp": "NonMatching",
+			"lib/havok/physics/collide/shape/compound/collection/extendedmeshshape/hkpextendedmeshshape.cpp": "NonMatching",
+			"lib/havok/physics/collide/shape/hkpshape.cpp": "NonMatching",
 			"lib/havok/physics/dynamics/hkpcachingshapephantom.cpp": "NonMatching"
 		}
 	},

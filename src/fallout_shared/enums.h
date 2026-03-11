@@ -1,5 +1,6 @@
 #pragma once
 
+#include "types.h"
 enum BIPED_BONE {
     BIPED_BONE_NONE = 0xff,
     BIPED_BONE_HEAD = 0x0000,
@@ -642,3 +643,6 @@ enum SIZE_TYPE {
     SIZE_INT = 0x0002,
     SIZE_COUNT = 0x0003,
 };
+
+SIZE_TYPE GetSizeTypeForSize(uint);
+uint GetSizeTypeSize(SIZE_TYPE);

@@ -2,13 +2,15 @@
 
 #include "fallout/misc/saveload/bgschangeflags.h"
 #include "fallout/misc/saveload/bgssavegamebuffer.h"
+#include "fallout/misc/saveload/bgssaveloadfile.h"
 #include "fallout/misc/saveload/bgssaveloadstructs.h"
 #include "fallout_shared/tesform.h"
 
 class BGSSaveFormBuffer : public BGSSaveGameBuffer {
+public:
     BGSSaveFormBuffer(const BGSSaveFormBuffer &);
     BGSSaveFormBuffer();
-    // void Save(BGSSaveLoadFile*);
+    void Save(BGSSaveLoadFile *);
     void SetHeader(unsigned int, BGSChangeFlags, ENUM_FORM_ID, unsigned char);
     BGSChangeFlags GetChangeFlags();
     void SetChangeFlags(BGSChangeFlags);

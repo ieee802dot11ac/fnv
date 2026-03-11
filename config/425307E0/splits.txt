@@ -91,6 +91,30 @@ fallout/magic/magictarget.cpp:
 	.pdata      start:0x821F74D8 end:0x821F75E0
 	.text       start:0x82653AA0 end:0x82656580
 
+fallout/magic/nighteyeeffect.cpp:
+	.pdata      start:0x821F75E0 end:0x821F7618
+	.text       start:0x82656580 end:0x826568F0
+
+fallout/magic/nonactormagiccaster.cpp:
+	.pdata      start:0x821F7618 end:0x821F7648
+	.text       start:0x826568F0 end:0x82656D80
+
+fallout/magic/nonactormagictarget.cpp:
+	.pdata      start:0x821F7648 end:0x821F7660
+	.text       start:0x82656D80 end:0x82656ED8
+
+fallout/magic/openeffect.cpp:
+	.pdata      start:0x821F7660 end:0x821F7678
+	.text       start:0x82656ED8 end:0x826570D0
+
+fallout/magic/paralysiseffect.cpp:
+	.pdata      start:0x821F7678 end:0x821F76A0
+	.text       start:0x826570D0 end:0x82657358
+
+fallout/magic/reanimateeffect.cpp:
+	.pdata      start:0x821F76A0 end:0x821F7700
+	.text       start:0x82657358 end:0x826582F8
+
 fallout/magic/scripteffect.cpp:
 	.pdata      start:0x821F7700 end:0x821F7768
 	.text       start:0x826582F8 end:0x82658A78
@@ -130,6 +154,10 @@ fallout/dialogue/dialogueresponse.cpp:
 fallout/dialogue/menutopic.cpp:
 	.pdata      start:0x821F7DA8 end:0x821F7E50
 	.text       start:0x8266B968 end:0x8266D968
+
+fallout/misc/saveload/bgssaveloadheader.cpp:
+	.pdata      start:0x821F83E8 end:0x821F8408
+	.text       start:0x8267AFD8 end:0x8267B7B8
 
 fallout/misc/saveload/bgsloadformbuffer.cpp:
 	.pdata      start:0x821F8A28 end:0x821F8A60
@@ -298,6 +326,10 @@ bsshader/bsshader.cpp:
 	.pdata      start:0x8220CDC0 end:0x8220CE70
 	.text       start:0x82ADCA90 end:0x82ADEB30
 
+lib/havok/physics/collide/shape/hkpshape.cpp:
+	.pdata      start:0x8220EB60 end:0x8220EB70
+	.text       start:0x82B54D00 end:0x82B55008
+
 lib/havok/common/base/reflection/hkclass.cpp:
 	.pdata      start:0x82213520 end:0x82213590
 	.text       start:0x82C167D8 end:0x82C176B0
@@ -309,6 +341,10 @@ lib/havok/physics/dynamics/hkpcachingshapephantom.cpp:
 bshavok/bhkbinaryaction.cpp:
 	.pdata      start:0x82213928 end:0x82213980
 	.text       start:0x82C1F2D0 end:0x82C1FAB0
+
+lib/havok/physics/collide/shape/compound/collection/extendedmeshshape/hkpextendedmeshshape.cpp:
+	.pdata      start:0x82213E40 end:0x82213F10
+	.text       start:0x82C29E30 end:0x82C2C0D0
 
 lib/havok/common/base/reflection/hkclassmember.cpp:
 	.pdata      start:0x82214E60 end:0x82214E98

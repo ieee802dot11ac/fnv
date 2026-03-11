@@ -12,7 +12,7 @@ void *realloc(void *ptr, size_t size);
 void free(void *);
 
 #pragma intrinsic(_alloca)
-void *_alloca(size_t size);
+void *_alloca(uint size);
 
 typedef struct {
     int quot;

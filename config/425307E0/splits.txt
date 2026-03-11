@@ -159,6 +159,38 @@ fallout/ai/actorpackage.cpp:
 	.pdata      start:0x821FA1C8 end:0x821FA218
 	.text       start:0x826EB4A0 end:0x826EC180
 
+xdk/png/pngerror.cpp:
+	.pdata      start:0x821FEF68 end:0x821FEF88
+	.text       start:0x828223A0 end:0x82822598
+
+xdk/png/png.cpp:
+	.pdata      start:0x821FEF88 end:0x821FEFA8
+	.text       start:0x82822598 end:0x82822788
+
+xdk/jpeg/jdapimin.cpp:
+	.pdata      start:0x821FEFA8 end:0x821FEFD0
+	.text       start:0x82822788 end:0x82822E30
+
+xdk/jpeg/jdapistd.cpp:
+	.pdata      start:0x821FEFD0 end:0x821FEFE8
+	.text       start:0x82822E30 end:0x82823160
+
+xdk/png/pngset.cpp:
+	.pdata      start:0x821FF088 end:0x821FF090
+	.text       start:0x82825498 end:0x828256C8
+
+xdk/png/pngget.cpp:
+	.pdata      start:0x821FF0C8 end:0x821FF0D0
+	.text       start:0x82826280 end:0x82826478
+
+xdk/png/pngmem.cpp:
+	.pdata      start:0x821FF178 end:0x821FF188
+	.text       start:0x8282A6B8 end:0x8282A800
+
+xdk/jpeg/jdhuff.cpp:
+	.pdata      start:0x821FF3F0 end:0x821FF420
+	.text       start:0x82831E98 end:0x82832B80
+
 xdk/d3d9i/shader.cpp:
 	.pdata      start:0x821FF670 end:0x821FF890
 	.text       start:0x8283B708 end:0x828422E0
@@ -385,6 +417,18 @@ gamebryo2.2/corelibs/nimain/niobject.cpp:
 	.pdata      start:0x8221CA68 end:0x8221CAD0
 	.text       start:0x82E2DEE8 end:0x82E2E6A0
 
+gamebryo2.2/corelibs/nimain/nidynamiceffect.cpp:
+	.pdata      start:0x8221D390 end:0x8221D3E0
+	.text       start:0x82E45970 end:0x82E46258
+
+gamebryo2.2/corelibs/nimain/nicullingprocess.cpp:
+	.pdata      start:0x8221D3E0 end:0x8221D418
+	.text       start:0x82E46258 end:0x82E47378
+
+gamebryo2.2/corelibs/nimain/nicolor.cpp:
+	.pdata      start:0x8221D418 end:0x8221D440
+	.text       start:0x82E47378 end:0x82E47658
+
 gamebryo2.2/corelibs/nimain/nilight.cpp:
 	.pdata      start:0x8221D950 end:0x8221D998
 	.text       start:0x82E556B8 end:0x82E55E18
@@ -399,6 +443,10 @@ gamebryo2.2/corelibs/nimain/nirtti.cpp:
 gamebryo2.2/corelibs/nimain/nitrishapedata.cpp:
 	.pdata      start:0x8221DE20 end:0x8221DE98
 	.text       start:0x82E66DD8 end:0x82E67C10
+
+xdk/LIBCMT/longjmp.c:
+	.pdata      start:0x8221FFD8 end:0x8221FFE0
+	.text       start:0x82EB9350 end:0x82EB9668
 
 xdk/eh/rtti.cpp:
 	.pdata      start:0x8221FD48 end:0x8221FD80

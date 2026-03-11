@@ -6,33 +6,33 @@
 class MemoryManager {
 public:
     ~MemoryManager();
-    void AddPool(uint32_t, uint32_t, char *);
-    void *Allocate(uint32_t, const char *, const int32_t, const char *);
-    void *Allocate(uint32_t);
-    void *AllocatePhysical(uint32_t, uint32_t);
-    void *TryAndAllocate(uint32_t);
-    void *Reallocate(void *, uint32_t, const char *, const int32_t, const char *);
-    void *Reallocate(void *, uint32_t);
+    void AddPool(uint, uint, char *);
+    void *Allocate(uint, const char *, const int, const char *);
+    void *Allocate(uint);
+    void *AllocatePhysical(uint, uint);
+    void *TryAndAllocate(uint);
+    void *Reallocate(void *, uint, const char *, const int, const char *);
+    void *Reallocate(void *, uint);
     void Deallocate(void *);
-    void DeallocatePhysical(void *, uint32_t, uint32_t);
-    void *DoSystemAllocation(uint32_t, bool);
+    void DeallocatePhysical(void *, uint, uint);
+    void *DoSystemAllocation(uint, bool);
     void DoSystemDeallocation(void *, bool);
     // MemoryContextTracker &GetContextTracker();
     // MemoryUsageTracker *GetUsageTracker();
     // ScrapHeap *GetThreadScrapHeap();
-    void Memset(void *, const int32_t, uint32_t) const;
-    void Memcpy(void *, void *, uint32_t) const;
+    void Memset(void *, const int, uint) const;
+    void Memcpy(void *, void *, uint) const;
     void CheckMemoryIntegrity(bool);
-    uint32_t Size(const void *) const;
-    uint32_t GetNumHeaps() const;
-    uint32_t GetNumPhysicalHeaps() const;
-    // bool GetHeapStats(uint32_t, bool, HeapStats *) const;
-    // bool GetPhysicalHeapStats(uint32_t, bool, HeapStats *) const;
-    // bool GetDefaultHeapStats(uint32_t, bool, HeapStats *) const;
-    int32_t GetCalculatedMemoryUsed();
-    int32_t GetReportedMemoryUsed();
-    // int32_t OutputDebugInfo(IMemoryManagerFile *, bool);
-    // IMemoryHeap *GetHeapByIndex(uint32_t) const;
+    uint Size(const void *) const;
+    uint GetNumHeaps() const;
+    uint GetNumPhysicalHeaps() const;
+    // bool GetHeapStats(uint, bool, HeapStats *) const;
+    // bool GetPhysicalHeapStats(uint, bool, HeapStats *) const;
+    // bool GetDefaultHeapStats(uint, bool, HeapStats *) const;
+    int GetCalculatedMemoryUsed();
+    int GetReportedMemoryUsed();
+    // int OutputDebugInfo(IMemoryManagerFile *, bool);
+    // IMemoryHeap *GetHeapByIndex(uint) const;
     // IMemoryHeap *GetHeapForPointer(const void *) const;
     // IMemoryHeap *GetHeapForPhysicalPointer(const void *) const;
     // IMemoryHeap *GetMemHeap(_XALLOC_ATTRIBUTES *);
@@ -45,7 +45,7 @@ public:
     static void SetCheckMemOnFree(bool);
     static bool QDelayedFreeEnabled();
     static bool QCheckMemOnFree();
-    static const int32_t DEFAULT_ALIGNMENT;
+    static const int DEFAULT_ALIGNMENT;
 
 protected:
     MemoryManager();
@@ -57,18 +57,18 @@ protected:
     void SpecifyPools();
     void SetupDuplicatedPools();
     void ClearDuplicatedPools();
-    // uint32_t ProcessMemoryProblem(IMemoryHeap *, int32_t, bool *);
+    // uint ProcessMemoryProblem(IMemoryHeap *, int, bool *);
     void InitializeStackTrace();
-    // int32_t OutputModuleInfoToFile(IMemoryManagerFile *);
-    // int32_t OutputPoolInfoToFile(IMemoryManagerFile *);
-    // int32_t OutputHeapInfoToFile(IMemoryManagerFile *, bool);
+    // int OutputModuleInfoToFile(IMemoryManagerFile *);
+    // int OutputPoolInfoToFile(IMemoryManagerFile *);
+    // int OutputHeapInfoToFile(IMemoryManagerFile *, bool);
     void InitializeTrackers();
     void UpdateSystemMemoryUsage();
 
     static MemoryManager s_Instance;
-    static const int32_t MIN_MEM_SIZE;
+    static const int MIN_MEM_SIZE;
     static bool bCheckFreeBlocksOnFree;
-    static uint32_t iDelayFreeBlocksEnabled;
+    static uint iDelayFreeBlocksEnabled;
 
 private:
     // RemoteLog m_rlog; // 0x0
@@ -86,10 +86,10 @@ protected:
     // IMemoryHeap **ppPhysicalHeaps; // 0x330;
     bool bSpecialHeaps; // 0x334;
     bool bAllowPoolUse; // 0x335;
-    uint32_t iSysAllocBytes; // 0x338;
-    uint32_t iMallocBytes; // 0x33c;
+    uint iSysAllocBytes; // 0x338;
+    uint iMallocBytes; // 0x33c;
     void *iLoadAddress; // 0x340;
-    uint32_t iImageSize; // 0x344;
+    uint iImageSize; // 0x344;
     bool bCaptureStack; // 0x348;
 };
 

@@ -55,7 +55,7 @@ public:
     void StatusOn(char const *, char const *, float, u32, u32);
     void StatusOff();
     static bool QInitialized();
-    static BSCoreMessage &QInstance();
+    static BSCoreMessage &QInstance() { return *pHandler; }
     static void SetHandler(BSCoreMessage *);
     virtual void Error(char const *);
     virtual s32 Warning(char const *);
@@ -79,3 +79,9 @@ protected:
     static char const *WarningContextStrings[24];
     static WARNING_TYPES sCurrentWarningContext;
 };
+
+#define BS_ASSERT(cond, file, line)                                                      \
+    ((cond) || (BSCoreMessage::QInstance().Assert(file, line, __FUNCTION__)))
+
+#define BS_ASSERT_NOFUNC(cond, file, line)                                               \
+    ((cond) || (BSCoreMessage::QInstance().Assert(file, line, nullptr)))

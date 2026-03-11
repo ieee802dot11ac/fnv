@@ -9,6 +9,8 @@
 #define SEH_EXCEPT __except
 #define SEH_FINALLY __finally
 #define FORCEINLINE __forceinline
+
+#define NORETURN __declspec(noreturn)
 #else
 #define CDECL
 #define STDCALL
@@ -18,6 +20,8 @@
 #define SEH_EXCEPT catch
 #define SEH_FINALLY ;
 #define FORCEINLINE
+
+#define NORETURN
 #endif
 
 #define ROTATE_LEFT(x, i) (((x) << (i)) | ((x) >> ((sizeof((x)) * 8) - (i))))

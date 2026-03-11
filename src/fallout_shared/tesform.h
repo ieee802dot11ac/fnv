@@ -2,6 +2,7 @@
 
 #include "bscore/bssimplelist.h"
 #include "bscore/bsstring.h"
+#include "bscore/memorymanager.h"
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
 #include "fallout_shared/baseformcomponent.h"
 #include "fallout_shared/enums.h"
@@ -9,6 +10,20 @@
 #include "gamebryo2.2/corelibs/nimain/nipoint3.h"
 #include "win_types.h"
 #include <types.h>
+
+struct FORM {
+    uint form; // 0x00
+    uint length; // 0x04
+    uint flags; // 0x08
+    uint iFormID; // 0x0c
+    uint iVersionControl; // 0x10
+    u16 sFormVersion; // 0x14
+    u16 sVCVersion; // 0x16
+
+    void Endian();
+
+    BS_MEM_OVERLOADS
+};
 
 class TESForm : public BaseFormComponent {
 public:
@@ -46,7 +61,7 @@ public:
     void ForceChange(int);
     virtual void RemoveChange(int);
     virtual u16 GetSaveSize(uint);
-    // virtual void SaveGame(BGSSaveFormBuffer *);
+    virtual void SaveGame(BGSSaveFormBuffer *);
     virtual void SaveGame(uint);
     // virtual void LoadGame(BGSLoadFormBuffer *);
     virtual void LoadGame(uint, uint);
@@ -92,10 +107,10 @@ public:
     virtual ENUM_FORM_ID GetSavedFormType();
     virtual void GetFormDetailedString(BSStringT<char> &);
     void RemoveFromDataStructures();
-    bool GetMaster() const;
-    bool GetDelete() const;
+    bool GetMaster() const; // bit 0
+    bool GetDelete() const; // bit 6
     bool GetAltered() const;
-    bool GetInitialized() const;
+    bool GetInitialized() const; // bit 3
     virtual bool GetQuestObject() const;
     virtual bool GetHasSpokenFlag() const;
     virtual bool GetHavokDeath() const;
@@ -107,9 +122,9 @@ public:
     bool GetIgnoreFriendlyHits() const;
     virtual bool GetObstacle() const;
     bool GetFireOff() const;
-    bool GetTemporary() const;
+    bool GetTemporary() const { return iFormFlags & 0x4000; }
     bool GetIgnore() const;
-    bool GetNoCollision() const;
+    bool GetNoCollision() const; // bit 5
     bool GetHasResults() const;
     bool GetNoAIAcquire() const;
     bool GetReflectedByAutoWater() const;
@@ -190,7 +205,7 @@ public:
     virtual bool CompareComponent(BaseFormComponent *);
     void CopyAllComponents(TESForm *);
     bool CompareAllComponents(TESForm *);
-    //   public: virtual bool BelongsInGroup(FORM*, bool, bool);
+    virtual bool BelongsInGroup(FORM *, bool, bool);
     //   public: virtual void CreateGroupData(FORM*, FORM_GROUP*);
     uint GetFormEditorIDLength();
     virtual const char *GetFormEditorID();

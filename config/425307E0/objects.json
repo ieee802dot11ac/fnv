@@ -145,7 +145,11 @@
 			"xdk/d3d9i/cargument.cpp": "NonMatching",
 			"xdk/d3d9i/cinstruction.cpp": "NonMatching",
 			"xdk/eh/rtti.cpp": "NonMatching",
-			"xdk/eh/throw.cpp": "NonMatching"
+			"xdk/eh/throw.cpp": "NonMatching",
+			"xdk/png/png.cpp": "NonMatching",
+			"xdk/png/pngerror.cpp": "NonMatching",
+			"xdk/png/pngget.cpp": "NonMatching",
+			"xdk/png/pngset.cpp": "NonMatching"
 		}
 	}
 }

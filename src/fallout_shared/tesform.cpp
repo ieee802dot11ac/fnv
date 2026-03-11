@@ -1,4 +1,7 @@
 #include "tesform.h"
+#include "fallout_shared/enums.h"
+#include "bscore/bscoremessage.h"
+#include <cstring>
 
 TESForm::TESForm() {}
 
@@ -18,17 +21,11 @@ void TESForm::ReleaseFormDataStructures() {}
 
 void TESForm::RemoveFromDataStructures() {}
 
-// bool TESForm::Save(class TESFile *apFile) {
-
-// 	return 0;
-// }
+bool TESForm::Save(TESFile *apFile) { return 0; }
 
 void TESForm::CompressSaveBuffer() {}
 
-// bool TESForm::SaveEdit(class TESFile *apFile) {
-
-// 	return 0;
-// }
+bool TESForm::SaveEdit(TESFile *apFile) { return 0; }
 
 bool TESForm::SavesBefore(TESForm *apForm) { return 0; }
 
@@ -39,7 +36,13 @@ bool TESForm::SavesBefore(TESForm *apForm) { return 0; }
 
 void TESForm::SetTemporary() {}
 
-void TESForm::SetMaster(bool abMaster) {}
+void TESForm::SetMaster(bool abMaster) {
+    if (abMaster) {
+        iFormFlags |= 1;
+    } else {
+        iFormFlags &= ~1;
+    }
+}
 
 void TESForm::SetNoCollision(bool abNoCollision) {}
 
@@ -47,9 +50,22 @@ void TESForm::SetDelete(bool abDeleted) {}
 
 void TESForm::SetEmpty(bool abEmpty) {}
 
-void TESForm::SetResetDestruct(bool abVal) {}
+void TESForm::SetResetDestruct(bool abVal) {
+    if (abVal) {
+        iFormFlags |= 0x2000;
+    } else {
+        iFormFlags &= ~0x2000;
+    }
+}
 
-void TESForm::SetDestroyed(bool abVal) {}
+void TESForm::SetDestroyed(bool abVal) {
+    if (abVal) {
+        iFormFlags |= 0x800000;
+    } else {
+        iFormFlags &= ~0x800000;
+    }
+    AddChange(1);
+}
 
 void TESForm::SetDestructible(bool abVal) {}
 
@@ -154,7 +170,7 @@ void TESForm::LoadGameDataOLD(short *apData, int aiSize) {}
 
 void TESForm::LoadGameDataOLD(int *apData, int aiSize) {}
 
-// void TESForm::SaveGame(BGSSaveFormBuffer *apSaveGameBuffer) {}
+void TESForm::SaveGame(BGSSaveFormBuffer *apSaveGameBuffer) {}
 
 // void TESForm::LoadGame(BGSLoadFormBuffer *apLoadGameBuffer) {}
 
@@ -165,13 +181,13 @@ bool TESForm::IsDefaultForm() const {
     return 0;
 }
 
-// TESFile *TESForm::GetFile(int aiIndex) { return 0; }
+TESFile *TESForm::GetFile(int aiIndex) { return 0; }
 
-// TESFile *TESForm::GetOwnerMaster() { return 0; }
+TESFile *TESForm::GetOwnerMaster() { return 0; }
 
-// void TESForm::SetFile(TESFile *apFile) {}
+void TESForm::SetFile(TESFile *apFile) {}
 
-// void TESForm::LoadForm(TESFile *apFile) {}
+void TESForm::LoadForm(TESFile *apFile) {}
 
 void TESForm::Copy(TESForm *apCopy) {}
 
@@ -181,9 +197,9 @@ void TESForm::CopyAllComponents(TESForm *apCopy) {}
 
 bool TESForm::CompareAllComponents(TESForm *apCompare) { return 0; }
 
-// void TESForm::CopyComponent(BaseFormComponent *apCopyFC) {}
+void TESForm::CopyComponent(BaseFormComponent *apCopyFC) {}
 
-// bool TESForm::CompareComponent(BaseFormComponent *apCompareFC) {}
+bool TESForm::CompareComponent(BaseFormComponent *apCompareFC) { return false; }
 
 // bool TESForm::BelongsInGroup(
 //     FORM *apGroupFORM, bool abAllowParentGroups, bool abCurrentOnly
@@ -191,37 +207,85 @@ bool TESForm::CompareAllComponents(TESForm *apCompare) { return 0; }
 
 // void TESForm::CreateGroupData(FORM *apOutGroupFORM, FORM_GROUP *apParentGroup) {}
 
-void TESForm::StartForm() {}
+void TESForm::CloseForm() {
+    if (GetTemporary())
+        return;
+    FORM *f = (FORM *)pFormBuffer;
+    f->length = iBufferSize - sizeof(FORM);
+    if (bEndianSwapOnSave) {
+        f->Endian();
+    }
+}
 
-void TESForm::CloseForm() {}
+void TESForm::AddChunk(CHUNK_ID aeChunkID, uint aiData) {}
 
-// void TESForm::AddChunk(CHUNK_ID aeChunkID) {}
+void TESForm::__AddChunkData(CHUNK_ID aeChunkID, void const *apData, uint aiSize) {
+    BS_ASSERT_NOFUNC(
+        (aiSize & 0xFFFF) != 0,
+        "D:\\_Fallout3\\Platforms\\Common\\Code\\Fallout Shared\\TESForm.cpp",
+        2147
+    );
+    int bufsiz = iBufferSize;
 
-// void TESForm::AddChunkArray(CHUNK_ID aeChunkID, char const *apData, uint aiSize) {}
-
-// void TESForm::AddChunkArray(CHUNK_ID aeChunkID, float const *apData, uint aiCount) {}
-
-// void TESForm::AddChunkArray(CHUNK_ID aeChunkID, short const *apData, uint aiCount) {}
-
-// void TESForm::AddChunkArray32(CHUNK_ID aeChunkID, void const *apData, uint aiCount) {}
-
-// void TESForm::AddChunkArray16(CHUNK_ID aeChunkID, void const *apData, uint aiCount) {}
-
-// void TESForm::AddChunk(CHUNK_ID aeChunkID, char aiData) {}
-
-// void TESForm::AddChunk(CHUNK_ID aeChunkID, uint aiData) {}
-
-// void TESForm::AddChunk(CHUNK_ID aeChunkID, float afData) {}
-
-// void TESForm::AddChunk(CHUNK_ID aeChunkID, unsigned short aiData) {}
-
-// void TESForm::__AddChunkData(CHUNK_ID aeChunkID, void const *apData, uint aiSize) {}
+    memcpy((char *)pFormBuffer + bufsiz + 6, apData, aiSize);
+}
 
 // bool TESForm::ExpandChunk(CHUNK *apChunk, unsigned short asExpandSize) {}
 
+void TESForm::StartForm() {
+    if (!GetTemporary()) {
+        iBufferSize = sizeof(FORM);
+        FORM *form = new (
+            "D:\\_Fallout3\\Platforms\\Common\\Code\\Fallout Shared\\TESForm.cpp",
+            1878,
+            __FUNCTION__
+        ) FORM;
+        pFormBuffer = form;
+        uint flags = iFormFlags;
+        form->flags = flags;
+        if (cFormType != TES4_ID) {
+            form->flags = flags & 0x30032FE0;
+        }
+        form->form = formEnumString[cFormType].iFormString;
+        form->iFormID = iFormID;
+        form->length = 0;
+        form->sFormVersion = TESFile::GetFileFormVersion();
+        form->iVersionControl = 0;
+        form->sVCVersion = 0;
+        SaveObjectBound();
+    }
+}
+
+void TESForm::AddChunk(CHUNK_ID aeChunkID) { __AddChunkData(aeChunkID, nullptr, 0); }
+
+void TESForm::AddChunkArray(CHUNK_ID aeChunkID, char const *apData, uint aiSize) {
+    __AddChunkData(aeChunkID, apData, aiSize);
+}
+
+void TESForm::AddChunkArray(CHUNK_ID aeChunkID, float const *apData, uint aiCount) {}
+
+void TESForm::AddChunkArray(CHUNK_ID aeChunkID, short const *apData, uint aiCount) {
+    AddChunkArray16(aeChunkID, apData, aiCount);
+}
+
+void TESForm::AddChunkArray32(CHUNK_ID aeChunkID, void const *apData, uint aiCount) {}
+
+void TESForm::AddChunkArray16(CHUNK_ID aeChunkID, void const *apData, uint aiCount) {
+    aiCount *= 2;
+    if (bEndianSwapOnSave) {
+    }
+    __AddChunkData(aeChunkID, apData, aiCount);
+}
+
+void TESForm::AddChunk(CHUNK_ID aeChunkID, s8 aiData) {}
+
+void TESForm::AddChunk(CHUNK_ID aeChunkID, float afData) {}
+
+void TESForm::AddChunk(CHUNK_ID aeChunkID, unsigned short aiData) {}
+
 void TESForm::FreeFormBuffer() {}
 
-// bool TESForm::FindInFileFast(TESFile *apFile) {}
+bool TESForm::FindInFileFast(TESFile *apFile) { return false; }
 
 uint TESForm::GetFormIDAsSaved() { return 0; }
 

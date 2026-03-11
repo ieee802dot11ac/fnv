@@ -608,6 +608,14 @@ enum ENUM_FORM_ID {
     FORM_ID_COUNT = 0x0079,
 };
 
+struct FORM_ENUM_STRING {
+    unsigned char cFormID; // 0x0
+    char *pFormString; // 0x4
+    unsigned int iFormString; // 0x8
+};
+
+extern FORM_ENUM_STRING *formEnumString;
+
 enum IO_TASK_PRIORITY {
     IO_TASK_PRIORITY_CRITICAL = 0x0000,
     IO_TASK_PRIORITY_VERY_HIGH = 0x0001,

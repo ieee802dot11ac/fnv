@@ -158,6 +158,11 @@
 			"xdk/png/pngget.cpp": "NonMatching",
 			"xdk/png/pngmem.cpp": "NonMatching",
 			"xdk/png/pngset.cpp": "NonMatching",
+			"xdk/png/pngread.cpp": "NonMatching",
+			"xdk/png/pngrio.cpp": "NonMatching",
+			"xdk/png/pngrtran.cpp": "NonMatching",
+			"xdk/png/pngrutil.cpp": "NonMatching",
+			"xdk/png/pngtrans.cpp": "NonMatching",
 			"xdk/zlib/inflate.cpp": "NonMatching",
 			"xdk/zlib/inftrees.cpp": "NonMatching"
 		}

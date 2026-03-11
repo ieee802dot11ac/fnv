@@ -20,6 +20,33 @@
 namespace D3DX {
 // NEW VEGAS HACK: FAR breaks shit
 #undef USE_FAR_KEYWORD
+#define PNG_NO_READ_USER_TRANSFORM
+#define PNG_NO_WRITE_USER_TRANSFORM
+// #define PNG_NO_READ_DITHER
+#define PNG_NO_PROGRESSIVE_READ
+#define PNG_NO_STDIO
+#define PNG_NO_READ_BACKGROUND
+#define PNG_NO_READ_bKGD
+#define PNG_NO_READ_cHRM
+#define PNG_NO_READ_hIST
+#define PNG_NO_READ_oFFs
+#define PNG_NO_READ_pCAL
+#define PNG_NO_READ_pHYs
+#define PNG_NO_READ_sBIT
+#define PNG_NO_READ_tEXt
+#define PNG_NO_READ_tIME
+#define PNG_NO_READ_zTXt
+#define PNG_NO_WRITE_BACKGROUND
+#define PNG_NO_WRITE_bKGD
+#define PNG_NO_WRITE_cHRM
+#define PNG_NO_WRITE_hIST
+#define PNG_NO_WRITE_oFFs
+#define PNG_NO_WRITE_pCAL
+#define PNG_NO_WRITE_pHYs
+#define PNG_NO_WRITE_sBIT
+#define PNG_NO_WRITE_tEXt
+#define PNG_NO_WRITE_tIME
+#define PNG_NO_WRITE_zTXt
 
     /* This is the size of the compression buffer, and thus the size of
      * an IDAT chunk.  Make this whatever size you feel is best for your

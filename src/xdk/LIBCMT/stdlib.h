@@ -7,13 +7,17 @@
 extern "C" {
 #endif
 
-void *malloc(size_t size);
+// 360 hack cause idgaf
+void *XMemAlloc(size_t size, uint flags);
+void XMemFree(void *mem, uint flags);
+
+static void *malloc(size_t size) { return XMemAlloc(size, 0x24810000); }
 void *calloc(size_t nitems, size_t size);
 void *realloc(void *ptr, size_t size);
-void free(void *);
+static void free(void *ptr) { XMemFree(ptr, 0x24810000); }
 
-#pragma intrinsic(_alloca)
 void *_alloca(uint size);
+#pragma intrinsic(_alloca)
 
 typedef struct {
     int quot;

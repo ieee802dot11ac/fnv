@@ -179,9 +179,20 @@ xdk/png/pngset.cpp:
 	.pdata      start:0x821FF088 end:0x821FF090
 	.text       start:0x82825498 end:0x828256C8
 
+xdk/png/pngread.cpp:
+	.pdata      start:0x821FF090 end:0x821FF0C8
+	.text       start:0x828256C8 end:0x82826280
+
 xdk/png/pngget.cpp:
 	.pdata      start:0x821FF0C8 end:0x821FF0D0
 	.text       start:0x82826280 end:0x82826478
+
+xdk/png/pngtrans.cpp:
+	.text       start:0x82826478 end:0x828266B0
+
+xdk/png/pngrtran.cpp:
+	.pdata      start:0x821FF0D0 end:0x821FF108
+	.text       start:0x828266B0 end:0x828282F8
 
 xdk/png/pngmem.cpp:
 	.pdata      start:0x821FF178 end:0x821FF188
@@ -190,6 +201,14 @@ xdk/png/pngmem.cpp:
 xdk/zlib/inflate.cpp:
 	.pdata      start:0x821FF2B8 end:0x821FF2D8
 	.text       start:0x8282DE88 end:0x8282E640
+
+xdk/png/pngrutil.cpp:
+	.pdata      start:0x821FF2D8 end:0x821FF358
+	.text       start:0x8282E640 end:0x82830150
+
+xdk/png/pngrio.cpp:
+	.pdata      start:0x821FF108 end:0x821FF110
+	.text       start:0x828282F8 end:0x82828388
 
 xdk/jpeg/jdhuff.cpp:
 	.pdata      start:0x821FF3F0 end:0x821FF420

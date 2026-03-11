@@ -89,6 +89,9 @@ png_set_IHDR(png_structp png_ptr, png_infop info_ptr,
    png_debug1(1, "in %s storage function\n", "IHDR");
    if (png_ptr == NULL || info_ptr == NULL)
       return;
+   if (width > 1000000 || height > 1000000) {
+      png_error(png_ptr, "image size exceeds user limits in IHDR");
+   }
 
    info_ptr->width = width;
    info_ptr->height = height;

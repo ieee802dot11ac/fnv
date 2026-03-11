@@ -1,6 +1,7 @@
 #pragma once
 #include "stddef.h"
 #include "wchar.h"
+#include <types.h>
 
 #ifdef __cplusplus
 extern "C" {

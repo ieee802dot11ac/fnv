@@ -1,9 +1,12 @@
 #pragma once
 
+#include "fallout_shared/magic/magicitem.h"
 #include "fallout_shared/magic/magicsystem.h"
 #include "fallout_shared/tesobjectrefr.h"
 
 class Actor;
+class ActiveEffect;
+class MagicCaster;
 
 class MagicTarget {
 public:
@@ -25,7 +28,7 @@ public:
     // bool IsEnchantmentTarget(TESBoundObject *);
     // bool HasEffect(const EffectSetting *);
     bool HasDamageHealthEffect();
-    // bool HasHostileEffect(MagicCaster *);
+    bool HasHostileEffect(MagicCaster *);
     // float GetEffectMagnitude(const EffectSetting *);
     // float GetUsageMonitorEffectMagnitude(MagicItem *);
     // virtual bool AddTarget(MagicCaster *, MagicItem *, ActiveEffect *, bool);

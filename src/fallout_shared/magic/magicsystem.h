@@ -78,16 +78,16 @@ public:
     static TESSound *GetEnchantHitSound(School);
     static float GetChameleonMaxRefraction();
     static float GetChameleonMinRefraction();
-    static TESEffectShader *GetAbsorbShaderEffect();
-    static TESEffectShader *GetReflectShaderEffect();
-    static TESEffectShader *GetDetectLifeShaderEffect();
-    static SpellItem *GetPipBoyLightSpell();
+    // static TESEffectShader *GetAbsorbShaderEffect();
+    // static TESEffectShader *GetReflectShaderEffect();
+    // static TESEffectShader *GetDetectLifeShaderEffect();
+    // static SpellItem *GetPipBoyLightSpell();
     static void GetProjectileDistance(ProjectileType, float &, float &);
     static bool CheckFlareFlag(FlareType, unsigned int);
     static bool ShouldEffectFlare(FlareType);
-    static FlareType CheckEffectFlares(const EffectSetting *);
-    static FlareType CheckEffectTriggersFlare(const EffectSetting *);
-    static bool CheckBoundItemEffects(EffectItem *, EffectItem *);
+    // static FlareType CheckEffectFlares(const EffectSetting *);
+    // static FlareType CheckEffectTriggersFlare(const EffectSetting *);
+    // static bool CheckBoundItemEffects(EffectItem *, EffectItem *);
 
 private:
     static bool bShowMagicStats;
@@ -109,8 +109,8 @@ private:
     static TESSound *pIllusionEnchantHitSound;
     static TESSound *pMysticismEnchantHitSound;
     static TESSound *pRestorationEnchantHitSound;
-    static TESEffectShader *pAbsorbShaderEffect;
-    static TESEffectShader *pReflectShaderEffect;
-    static TESEffectShader *pDetectLifeShaderEffect;
-    static SpellItem *pPipBoyLightSpell;
+    // static TESEffectShader *pAbsorbShaderEffect;
+    // static TESEffectShader *pReflectShaderEffect;
+    // static TESEffectShader *pDetectLifeShaderEffect;
+    // static SpellItem *pPipBoyLightSpell;
 };

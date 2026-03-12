@@ -1,6 +1,7 @@
 #pragma once
 
 #include "fallout_shared/tesfile.h"
+#include "fallout_shared/tesobject.h"
 #include "fallout_shared/tessoundfile.h"
 #include "gamebryo2.2/corelibs/nimain/niavobject.h"
 #include "fallout_shared/tesform.h"

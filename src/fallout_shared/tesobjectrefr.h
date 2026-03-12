@@ -2,6 +2,7 @@
 
 #include "bsaudio/bssoundhandle.h"
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
+#include "fallout_shared/teschildcell.h"
 #include "fallout_shared/tesfile.h"
 #include "fallout_shared/tesform.h"
 #include "fallout_shared/tesglobal.h"
@@ -33,9 +34,9 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     virtual bool Compare(TESForm *);
     virtual void InitItem();
     bool SortsBeforeRef(TESObjectREFR *);
-    //   virtual bool SavesBefore(FORM*);
+    virtual bool SavesBefore(FORM *);
     virtual bool SavesBefore(TESForm *);
-    //   virtual bool BelongsInGroup(FORM*, bool, bool);
+    virtual bool BelongsInGroup(FORM *, bool, bool);
     //   virtual void CreateGroupData(FORM*, FORM_GROUP*);
     void AddLockChange();
     void SetLastFinishedSequence(const char *);
@@ -44,11 +45,11 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     virtual unsigned short GetSaveSize(unsigned int);
     virtual void SaveGame(BGSSaveFormBuffer *);
     virtual void SaveGame(unsigned int);
-    // virtual void LoadGame(BGSLoadFormBuffer *);
+    virtual void LoadGame(BGSLoadFormBuffer *);
     virtual void LoadGame(unsigned int, unsigned int);
-    // virtual void Revert(BGSLoadFormBuffer *);
+    virtual void Revert(BGSLoadFormBuffer *);
     virtual void Revert(unsigned int);
-    // virtual void InitLoadGame(BGSLoadFormBuffer *);
+    virtual void InitLoadGame(BGSLoadFormBuffer *);
     virtual void InitLoadGame(unsigned int, unsigned int);
     virtual void FinishInitLoadGame(unsigned int, unsigned int);
     unsigned short GetAttachedAnimationSaveSize();
@@ -58,7 +59,7 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     //   unsigned short GetHavokDataSaveSize(HavokSaveData*);
     void SaveHavokData(BGSSaveFormBuffer *);
     //   void SaveHavokData(HavokSaveData*);
-    // void LoadHavokData(BGSLoadFormBuffer *);
+    void LoadHavokData(BGSLoadFormBuffer *);
     void LoadHavokData(unsigned short);
     virtual bool GetEditorLocation(NiPoint3 &, NiPoint3 &, TESForm *&, TESForm *);
     bool MoveToEditorLocation(TESForm *);
@@ -73,11 +74,11 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     //   void SayForceGoodbyeGreetingToPlayer(TESTopic*, bool, bool);
     virtual void DamageObject(float, bool);
     virtual void CheckSaveGame(BGSSaveFormBuffer *);
-    // virtual void FinishLoadGame(BGSLoadFormBuffer *);
+    virtual void FinishLoadGame(BGSLoadFormBuffer *);
     // void GatherHavokSaveData(BGSHavokSaveData *);
     bool CheckSaveAnimation();
     void SaveAnimation(BGSSaveFormBuffer *);
-    //   void LoadAnimation(BGSLoadFormBuffer*);
+    void LoadAnimation(BGSLoadFormBuffer *);
     void ResetAnimation();
     //   bool SetSequencePosition(NiControllerManager*, const char*, float);
     virtual ENUM_FORM_ID GetSavedFormType();
@@ -182,7 +183,7 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     unsigned int GetCalcLevel(bool);
     //   virtual void SetActorCause(ActorCause*);
     //   virtual ActorCause* GetActorCause();
-    //   bool IsAnOwner(Actor*, bool);
+    bool IsAnOwner(Actor *, bool);
     bool IsOwnerEvil(TESForm *);
     int GetValue();
     int GetQuality();
@@ -263,7 +264,7 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     //   void GetOEIFastInventoryIterator(const bool, OEI_Fast_InventoryIterator**,
     //   InventoryChanges**);
     int GetInventoryCount(bool, bool);
-    //   int GetInventoryObjectCount(TESBoundObject*);
+    int GetInventoryObjectCount(TESBoundObject *);
     //   TESContainer* HasContainer();
     float GetWeightInContainer(bool);
     //   int MultiBoundCollectObjects(TESObjectCELL*);
@@ -369,9 +370,9 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     //   void EndSequence(NiControllerSequence*);
     //   virtual Animation* GetAnimation();
     //   Animation* SetAnimation(Animation*);
-    //   virtual BipedAnim* GetBiped();
-    //   virtual BipedAnim* GetCurrentBiped();
-    //   virtual void SetBiped(BipedAnim*);
+    virtual BipedAnim *GetBiped();
+    virtual BipedAnim *GetCurrentBiped();
+    virtual void SetBiped(BipedAnim *);
     //   void SetDismembered(BGSBodyPart::LIMB_ENUM, TESForm*, CAUSE_OF_DEATH,
     //   BGSBodyPart::LIMB_ENUM, bool); void SetLimbRemoved(BGSBodyPart::LIMB_ENUM, bool);
     //   bool GetDismembered(BGSBodyPart::LIMB_ENUM);
@@ -391,17 +392,17 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     //   void AttachAmulet(TESObjectCLOT*);
     void RemoveAmulet();
     void UpdateMultiBoundPrimitive();
-    //   bool GetIsOfType(TESBoundObject*);
+    bool GetIsOfType(TESBoundObject *);
     virtual void SetAltered(bool);
     virtual const char *GetFormEditorID();
     virtual void GetFormDetailedString(BSStringT<char> &);
     const char *GetFullName();
-    //   TESBoundObject* GetObjectReference();
+    TESBoundObject *GetObjectReference();
     const NiPoint3 &GetAngleOnReference();
     virtual const NiPoint3 &GetLocationOnReference();
     //   BGSWorldLocation GetWorldLocation();
     virtual void SetRunsInLow(bool);
-    //   void SetObjectReference(TESBoundObject*);
+    void SetObjectReference(TESBoundObject *);
     void SetAngleOnReference(NiPoint3);
     void SetAngleOnReferenceX(float);
     void SetAngleOnReferenceY(float);
@@ -415,7 +416,7 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     virtual void SetActionComplete(bool);
     virtual void SetMovementComplete(bool);
     int GetCount();
-    //   bool Activate(TESObjectREFR*, bool, TESBoundObject*, int);
+    bool Activate(TESObjectREFR *, bool, TESBoundObject *, int);
     void Enable();
     void Disable();
     virtual void ResetInventory(bool);
@@ -491,7 +492,7 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     //   bhkWorldNS::ObjectRecData&);
     static unsigned int GetLightingObjectType(NiAVObject *);
     static TESObjectREFR *CreateReference(unsigned char, bool);
-    //   static bool IsReferenceFormType(ENUM_FORM_ID);
+    static bool IsReferenceFormType(ENUM_FORM_ID);
     static bool CanBeActivateParent(TESObjectREFR *, int);
     static bool CanBeEnableParent(TESObjectREFR *, int);
     static bool IsPersistentRef(TESObjectREFR *, int);
@@ -509,13 +510,13 @@ class TESObjectREFR : public TESForm, public TESChildCell {
     static bool IsHavokStillActive(NiAVObject *);
     static void HavokActivateCallback(NiAVObject *);
     static void HavokDeactivateCallback(NiAVObject *);
-    //   static bool AddAddonNodes(NiNode*);
-    //   static bool AddMasterParticleAddonNodes(NiNode*);
-    //   static bool RemoveMasterParticleAddonNodes(NiNode*);
-    //   static bool RemoveAddonNodes(NiNode*);
-    //   static bool RemoveSounds(NiNode*);
-    //   static bool HasAddonNodes(NiNode*);
-    //   static bool HasAddonFlags(NiNode*);
+    static bool AddAddonNodes(NiNode *);
+    static bool AddMasterParticleAddonNodes(NiNode *);
+    static bool RemoveMasterParticleAddonNodes(NiNode *);
+    static bool RemoveAddonNodes(NiNode *);
+    static bool RemoveSounds(NiNode *);
+    static bool HasAddonNodes(NiNode *);
+    static bool HasAddonFlags(NiNode *);
     static void RandomizeAddons(NiAVObject *, float);
     static bool IsValidRadioPositionRef(TESObjectREFR *, int);
     //   static bool QVerticesInsideMultiboundRecurse(NiAVObject*, BSMultiBound*, bool&,
@@ -535,7 +536,7 @@ class TESObjectREFR : public TESForm, public TESChildCell {
 
 protected:
     //   void InitCollisionObject(NiNode*, bool, NiCollisionGroup*);
-    //   OBJ_REFR* GetData();
+    OBJ_REFR *GetData();
     void CreateLoadedData();
     void FreeLoadedData();
 
@@ -543,8 +544,8 @@ protected:
     OBJ_REFR data; // 0x30
     float fRefScale; // 0x4c
     TESObjectCELL *pParentCell; // 0x50
-    ExtraDataList m_Extra; // 0x54
-    LOADED_REF_DATA *pLoadedData; // 0x74
+    // ExtraDataList m_Extra; // 0x54
+    // LOADED_REF_DATA *pLoadedData; // 0x74
 
     static TESObjectREFR *pBackgroundLoadingRef;
     static NiAVObject *pBackgroundLoading3D;

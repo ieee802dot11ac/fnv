@@ -1,11 +1,14 @@
 #pragma once
 
+#include "fallout_shared/bipedanim.h"
 #include "fallout_shared/tesform.h"
 #include "nimain/niavobject.h"
+#include "nimain/ninpshortpoint3.h"
 
 class TESObjectCELL;
 class TESObjectList;
 class TESObjectREFR;
+class TESWaterForm;
 
 class TESObject : public TESForm {
 public:
@@ -77,4 +80,52 @@ protected:
     TESObject *lnk_lpRoot; // 0x4
     TESObject *lnk_lpTail; // 0x8
     TESObjectCELL *pOwner; // 0xc
+};
+
+class TESBoundObject : public TESObject {
+public:
+    struct BOUND_DATA {
+        NiNPShortPoint3 BoundMin; // 0
+        NiNPShortPoint3 BoundMax; // 6
+
+        void Endian();
+    };
+
+    TESBoundObject(const TESBoundObject &);
+    TESBoundObject();
+    virtual ~TESBoundObject();
+    virtual bool IsBoundObject();
+    void SetBoundMinMax(NiAVObject *);
+    void CopyBoundData(TESBoundObject *);
+    NiPoint3 GetBoundMin();
+    NiPoint3 GetBoundMax();
+    float GetBoundSize();
+    virtual void SaveObjectBound();
+    virtual void LoadObjectBound(TESFile *);
+    virtual NiAVObject *Clone3D(TESObjectREFR *, bool);
+    virtual NiAVObject *Clone3D(TESObjectREFR *);
+    virtual bool ReplaceModel(const char *);
+    virtual bool ReplaceModel();
+    virtual bool Activate(TESObjectREFR *, TESObjectREFR *, bool, TESBoundObject *, int);
+    bool GetLODObjectExists(bool);
+    TESBoundObject &operator=(const TESBoundObject &);
+
+    //   static void CalcBoundingBox(NiAVObject*, NiPoint3*, NiPoint3*, const NiPoint3&,
+    //   const NiMatrix3&, const float&); static void
+    //   CalcBoundingBoxRecursive(NiAVObject*, NiPoint3*, NiPoint3*, bool&, bool&, const
+    //   NiPoint3&, const NiMatrix3&, const float&);
+
+protected:
+    BOUND_DATA BoundData; // 0x34
+};
+
+class TESBoundAnimObject : public TESBoundObject {
+public:
+    TESBoundAnimObject(const TESBoundAnimObject &);
+    TESBoundAnimObject();
+    virtual ~TESBoundAnimObject();
+    virtual bool IsBoundAnimObject();
+    virtual void Set3D(NiAVObject *, bool);
+    virtual bool ReplaceModel(const char *);
+    TESBoundAnimObject &operator=(const TESBoundAnimObject &);
 };

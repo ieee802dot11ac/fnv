@@ -31,7 +31,7 @@ public:
     float GetRawCost();
     EffectItem *GetUsageMonitorEffect();
     virtual int GetMaxEffectCount();
-    virtual SkillLevel::Value GetLevel();
+    // virtual SkillLevel::Value GetLevel();
     EffectItem *GetCostliestEffect(MagicSystem::Range, bool);
     BSStringT<char> GetCostliestEffectString();
     BSStringT<char> GetMagicSchoolString();

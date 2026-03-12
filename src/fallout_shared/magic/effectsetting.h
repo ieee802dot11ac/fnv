@@ -1,8 +1,12 @@
 #pragma once
 
 #include "fallout_shared/actorvalue.h"
+#include "fallout_shared/magic/effectarchetype.h"
+#include "fallout_shared/tesdescription.h"
 #include "fallout_shared/tesform.h"
 #include "fallout_shared/tesfullname.h"
+#include "fallout_shared/tesicon.h"
+#include "fallout_shared/tesmodel.h"
 #include "fallout_shared/tessound.h"
 #include "fallout_shared/magic/magicsystem.h"
 
@@ -64,7 +68,7 @@ public:
         TESSound *pAreaSound; // 0x34
         float fCEEnchantFactor; // 0x38
         float fCEBarterFactor; // 0x3c
-        // EffectArchetypes::ArchetypeID eArchetype; // 0x40
+        EffectArchetypes::ArchetypeID eArchetype; // 0x40
         ActorValue::Index eAssociatedActorValue; // 0x44
 
         void Endian();

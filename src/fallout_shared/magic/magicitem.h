@@ -26,7 +26,7 @@ public:
     virtual bool IgnoreResistance();
     virtual bool GetNoAbsorbOrReflect();
     unsigned int GetMagicItemFormID();
-    // EffectSetting *GetAVEffect(MagicSystem::Range);
+    EffectSetting *GetAVEffect(MagicSystem::Range);
     bool CanLoadSpell();
     void Preload(bool);
     void FinishedLoading();

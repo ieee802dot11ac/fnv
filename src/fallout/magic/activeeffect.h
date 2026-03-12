@@ -54,9 +54,9 @@ public:
     bool WasDispeled();
     virtual void Update(float);
     void EvaluateConditions(float, bool);
-    BSSimpleList<MagicHitEffect *> *GetHitEffects();
-    void RemoveHitEffect(MagicHitEffect *);
-    void SetHitEffects(BSSimpleList<MagicHitEffect *> *);
+    // BSSimpleList<MagicHitEffect *> *GetHitEffects();
+    // void RemoveHitEffect(MagicHitEffect *);
+    // void SetHitEffects(BSSimpleList<MagicHitEffect *> *);
     void ForceNoHitEffect();
     bool IsFlagSet(ActiveEffectFlags);
     void SetFlag(ActiveEffectFlags);
@@ -126,6 +126,6 @@ protected:
     MagicSystem::SpellType eSpellType; // 0x2c
     BSSoundHandle PersistentSound; // 0x30
     TESBoundObject *pSource; // 0x3c
-    BSSimpleList<MagicHitEffect *> *pHitEffects; // 0x40
+    // BSSimpleList<MagicHitEffect *> *pHitEffects; // 0x40
     MagicItem *pDisplacementSpell; // 0x44
 };

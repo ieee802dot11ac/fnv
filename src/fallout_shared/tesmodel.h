@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bscore/bsstring.h"
+#include "bssystem/bsfile.h"
 #include "fallout_shared/baseformcomponent.h"
 #include "fallout_shared/tesform.h"
 
@@ -9,8 +10,8 @@ public:
     TESTextureList();
     ~TESTextureList();
     bool ClearData();
-    void SaveToBuffer(BSHashData *);
-    void LoadFromBuffer(BSHashData *, unsigned int, TESForm *, const char *);
+    // void SaveToBuffer(BSHashData *);
+    // void LoadFromBuffer(BSHashData *, unsigned int, TESForm *, const char *);
     void Save(CHUNK_ID, const char *);
     void Load(TESFile *, TESForm *, const char *);
     void Copy(TESTextureList *);
@@ -29,10 +30,10 @@ public:
     virtual ~TESModel();
     virtual void InitializeDataComponent();
     virtual void ClearDataComponent();
-    //   void Save(CHUNK_ID, CHUNK_ID);
+    void Save(CHUNK_ID, CHUNK_ID);
     virtual void CopyComponent(BaseFormComponent *);
     virtual bool CompareComponent(BaseFormComponent *);
-    //   void SaveFlags(CHUNK_ID);
+    void SaveFlags(CHUNK_ID);
     unsigned int GetModelLength() const;
     virtual const char *GetModel() const;
     virtual void SetModel(const char *);
@@ -46,12 +47,12 @@ public:
     unsigned int GetSkinFlags();
     void SetSkinFlags(unsigned int);
     bool ClearTextureList();
-    //   TESTextureList* GetTextureList();
+    TESTextureList *GetTextureList();
 
     static unsigned int GetModelLength(TESForm *);
     static const char *GetModel(TESForm *);
     static void GetDistantModelName(char *, TESForm *);
-    //   static bool IsModelChunk(CHUNK_ID);
+    static bool IsModelChunk(CHUNK_ID);
     static void LoadModelChunk(TESModel *, TESFile *);
     static void LoadModelTextureChunk(TESModel *, TESFile *);
 

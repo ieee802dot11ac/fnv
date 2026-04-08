@@ -1,6 +1,15 @@
 #include "magictarget.h"
 #include "fallout_shared/magic/spellitem.h"
 #include "fallout/magic/activeeffect.h"
+// #include "fallout_shared/actor.h"
+
+Actor *MagicTarget::GetTargetAsActor() {
+    if (MagicTargetIsActor()) {
+        // return static_cast<Actor*>(this);
+    } else {
+        return nullptr;
+    }
+}
 
 void MagicTarget::Dispel() {
     for (BSSimpleList<ActiveEffect *> *fx = GetActiveEffectList(); fx != nullptr;) {

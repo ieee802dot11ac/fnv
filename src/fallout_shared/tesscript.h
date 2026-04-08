@@ -82,6 +82,10 @@ private:
     static SCRIPT_REFERENCED_OBJECT *pLastRefObject;
 
 #pragma region Every Script Builtin
+// args:
+// const SCRIPT_PARAMETER* apParameters, const char* apCompiledParams,
+// TESObjectREFR* apRefObject, TESObjectREFR* apContainer, Script* apScript,
+// ScriptLocals* apScriptLocals, double& afReturnValue, uint32_t& auiOffset
 #define TSCRIPTFUNC_GENERIC(name)                                                        \
     static bool name(                                                                    \
         const SCRIPT_PARAMETER *,                                                        \

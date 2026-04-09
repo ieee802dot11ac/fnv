@@ -519,6 +519,15 @@ xdk/eh/throw.cpp:
 	.pdata      start:0x82220220 end:0x82220228
 	.text       start:0x82EBD040 end:0x82EBD0C8
 
+xdk/d3d9i/cnode.cpp:
+	.pdata      start:0x822217C8 end:0x82221950
+	.text       start:0x82F0C2A8 end:0x82F10170
+
+xdk/d3d9i/cshaderprogram.cpp:
+	.rdata      start:0x8215DE20 end:0x8215FB00
+	.pdata      start:0x822220C0 end:0x822224B8
+	.text       start:0x82F26840 end:0x82F3C3C8
+
 xdk/d3d9i/cinstruction.cpp:
 	.pdata      start:0x82222540 end:0x82222570
 	.text       start:0x82F3EFD0 end:0x82F3FC50

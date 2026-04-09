@@ -110,6 +110,7 @@ typedef int HFILE;
 typedef HINSTANCE HMODULE;
 typedef LONG HRESULT;
 
+#define E_FAIL 0x80004005
 #define INVALID_HANDLE_VALUE ((HANDLE)(LONG_PTR) - 1)
 #define SUCCEEDED(hr) (((HRESULT)(hr)) >= 0)
 

@@ -523,6 +523,14 @@ xdk/d3d9i/cnode.cpp:
 	.pdata      start:0x822217C8 end:0x82221950
 	.text       start:0x82F0C2A8 end:0x82F10170
 
+xdk/d3d9i/threadlocaldata.cpp:
+	.pdata      start:0x82221950 end:0x82221960
+	.text       start:0x82F10170 end:0x82F10418
+
+xdk/d3d9i/c30swprogram.cpp:
+	.pdata      start:0x82221BB0 end:0x822220C0
+	.text       start:0x82F1BA88 end:0x82F26840
+
 xdk/d3d9i/cshaderprogram.cpp:
 	.rdata      start:0x8215DE20 end:0x8215FB00
 	.pdata      start:0x822220C0 end:0x822224B8
@@ -535,3 +543,11 @@ xdk/d3d9i/cinstruction.cpp:
 xdk/d3d9i/cargument.cpp:
 	.pdata      start:0x82222570 end:0x82222588
 	.text       start:0x82F3FC50 end:0x82F3FEF0
+
+xdk/d3d9i/instr.cpp:
+	.pdata      start:0x82227458 end:0x822277C8
+	.text       start:0x830BC150 end:0x830CB020
+
+xdk/d3d9i/linkageinfo.cpp:
+	.pdata      start:0x82228100 end:0x82228168
+	.text       start:0x830ECF48 end:0x830EE310

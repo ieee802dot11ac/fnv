@@ -1,5 +1,6 @@
 #pragma once
 
+#include "d3d9i/calloc.h"
 #include "d3d9i/cnode.h"
 #include "types.h"
 #include <cstddef>
@@ -11,7 +12,7 @@ namespace D3DXShader {
         CInstruction();
         ~CInstruction();
         long Initialize(D3DXShader::CInstruction *);
-        long Initialize(unsigned int, unsigned int, unsigned int, int);
+        long Initialize(u32, unsigned int, unsigned int, int);
         long Instance(D3DXShader::CInstruction *);
         unsigned int GetSize();
         unsigned int GetParameters();
@@ -44,7 +45,7 @@ namespace D3DXShader {
         int IsEndIf();
 
         static unsigned int *Alloc(u32);
-        // static void SetAlloc(D3DXCore::CAlloc *);
+        static void SetAlloc(D3DXCore::CAlloc *);
         static void *operator new(size_t);
         static void operator delete(void *);
 

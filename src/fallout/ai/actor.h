@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bscore/bssimplelist.h"
+#include "fallout/ai/mobileobject.h"
 #include "fallout/magic/magictarget.h"
 #include "fallout_shared/enums.h"
 #include "fallout_shared/teschildcell.h"

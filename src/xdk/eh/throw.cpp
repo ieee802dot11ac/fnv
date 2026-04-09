@@ -1,4 +1,4 @@
-#include "errhandlingapi.h"
+#include "xdk/xapilibi/errhandlingapi.h"
 #include "seh.hpp"
 
 static EHExceptionRecord ExceptionTemplate;

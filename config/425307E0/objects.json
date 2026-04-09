@@ -161,6 +161,7 @@
 			"xdk/d3d9i/instr.cpp": "NonMatching",
 			"xdk/d3d9i/linkageinfo.cpp": "NonMatching",
 			"xdk/d3d9i/shader.cpp": "NonMatching",
+			"xdk/d3d9i/threadlocaldata.cpp": "NonMatching",
 			"xdk/eh/rtti.cpp": "NonMatching",
 			"xdk/eh/throw.cpp": "NonMatching",
 			"xdk/jpeg/jdapimin.cpp": "NonMatching",

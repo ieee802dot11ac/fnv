@@ -1,7 +1,7 @@
 #pragma once
 
-#include "niobjectnet.h"
-#include "nipoint3.h"
+#include "NiObjectNET.h"
+#include "NiPoint3.h"
 
 class NiAVObject : public NiObjectNET {
 public:

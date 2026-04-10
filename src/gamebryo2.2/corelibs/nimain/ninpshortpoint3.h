@@ -1,6 +1,6 @@
 #pragma once
 
-#include "nipoint3.h"
+#include "NiPoint3.h"
 
 class NiNPShortPoint3 {
 public:

@@ -1,9 +1,9 @@
 #pragma once
 
 #include "bscore/memorymanager.h"
-#include "nimain/nifixedstring.h"
-#include "nimain/niobject.h"
-#include "nimain/nipoint3.h"
+#include "nimain/NiFixedString.h"
+#include "nimain/NiObject.h"
+#include "nimain/NiPoint3.h"
 
 class NiMorphData : public NiObject {
 public:

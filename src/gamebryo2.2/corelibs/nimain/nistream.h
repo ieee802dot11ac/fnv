@@ -1,7 +1,7 @@
 #pragma once
-#include "nimain/nifixedstring.h"
-#include "nimain/niobject.h"
-#include "nimain/niobjectgroup.h"
+#include "nimain/NiFixedString.h"
+#include "nimain/NiObject.h"
+#include "nimain/NiObjectGroup.h"
 #include "nimain/nitarray.h"
 #include "nisystem/nibinarystream.h"
 #include <types.h>

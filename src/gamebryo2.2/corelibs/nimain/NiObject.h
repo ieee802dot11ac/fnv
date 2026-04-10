@@ -1,9 +1,9 @@
 #pragma once
 
 #include "nitarray.h"
-#include "nirefobject.h"
-#include "nirtti.h"
-#include "niobjectgroup.h"
+#include "NiRefObject.h"
+#include "NiRTTI.h"
+#include "NiObjectGroup.h"
 #include "nismartpointer.h"
 
 class NiStream;

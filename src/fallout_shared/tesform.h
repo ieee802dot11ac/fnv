@@ -7,7 +7,7 @@
 #include "fallout_shared/baseformcomponent.h"
 #include "fallout_shared/enums.h"
 #include "fallout_shared/tesfile.h"
-#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
+#include "gamebryo2.2/corelibs/nimain/NiPoint3.h"
 #include "win_types.h"
 #include <types.h>
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "nimain/niavobject.h"
+#include "nimain/NiAVObject.h"
 #include "nimain/nitobjectlist.h"
 
 class NiNode : public NiAVObject {

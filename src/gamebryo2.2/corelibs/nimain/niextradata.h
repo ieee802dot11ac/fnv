@@ -1,7 +1,7 @@
 #pragma once
 
-#include "niobject.h"
-#include "nifixedstring.h"
+#include "NiObject.h"
+#include "NiFixedString.h"
 
 class NiExtraData : public NiObject {
 public:

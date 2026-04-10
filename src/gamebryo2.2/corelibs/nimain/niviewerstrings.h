@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gamebryo2.2/corelibs/nimain/nirtti.h"
+#include "gamebryo2.2/corelibs/nimain/NiRTTI.h"
 #include "gamebryo2.2/corelibs/nimain/nitarray.h"
 #include "nimain/nifixedstring.h"
 #include <types.h>

@@ -3,7 +3,7 @@
 #include "winnt.h"
 #include <types.h>
 #include <types_compat.h>
-#include "nisystem/nimemobject.h"
+#include "nisystem/NiMemObject.h"
 
 class NiRefObject : public NiMemObject {
 public:

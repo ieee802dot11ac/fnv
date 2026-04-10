@@ -1,8 +1,8 @@
 #pragma once
 
-#include "niobject.h"
+#include "NiObject.h"
 #include "niextradata.h"
-#include "nifixedstring.h"
+#include "NiFixedString.h"
 #include "nitimecontroller.h"
 
 class NiObjectNET : public NiObject {

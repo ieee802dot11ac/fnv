@@ -1,8 +1,8 @@
 #pragma once
 
 #include "fallout_shared/tesform.h"
-#include "nimain/niavobject.h"
-#include "nimain/ninode.h"
+#include "nimain/NiAVObject.h"
+#include "nimain/NiNode.h"
 
 class TESAmmo;
 class TESObjectARMO;

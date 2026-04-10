@@ -2,7 +2,7 @@
 #include "types.h"
 #include "xapilibi/processthreadsapi.h"
 
-static uint s_tlsIndex;
+static uint s_tlsIndex = -1;
 static volatile int g_NumContenders;
 static volatile int g_SpinLock;
 

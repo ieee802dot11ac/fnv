@@ -1,6 +1,6 @@
-#include "magictarget.h"
+#include "MagicTarget.h"
 #include "fallout_shared/magic/spellitem.h"
-#include "fallout/magic/activeeffect.h"
+#include "fallout/magic/ActiveEffect.h"
 // #include "fallout_shared/actor.h"
 
 Actor *MagicTarget::GetTargetAsActor() {

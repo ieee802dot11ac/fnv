@@ -1,7 +1,7 @@
 #pragma once
 
 #include "fallout/misc/saveload/bgssaveloadfile.h"
-#include "nimain/nipoint3.h"
+#include "nimain/NiPoint3.h"
 #include "types.h"
 
 class TESForm;

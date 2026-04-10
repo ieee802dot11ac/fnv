@@ -1,7 +1,7 @@
 #pragma once
 
 #include <types.h>
-#include "niobjectnet.h"
+#include "NiObjectNET.h"
 
 class NiCloningProcess {
 public:

@@ -2,7 +2,7 @@
 
 #include "fallout_shared/bipedanim.h"
 #include "fallout_shared/tesform.h"
-#include "nimain/niavobject.h"
+#include "nimain/NiAVObject.h"
 #include "nimain/ninpshortpoint3.h"
 
 class TESObjectCELL;

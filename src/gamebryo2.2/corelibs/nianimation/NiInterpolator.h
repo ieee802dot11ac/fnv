@@ -1,8 +1,8 @@
 #pragma once
 
-#include "nimain/niobject.h"
-#include "nimain/niobjectnet.h"
-#include "nimain/nipoint3.h"
+#include "nimain/NiObject.h"
+#include "nimain/NiObjectNET.h"
+#include "nimain/NiPoint3.h"
 
 class NiInterpolator : public NiObject {
 public:

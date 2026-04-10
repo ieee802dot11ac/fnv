@@ -1,7 +1,7 @@
 #pragma once
 
-#include "nianimation/niinterpolator.h"
-#include "nianimation/nianimationkey.h"
+#include "nianimation/NiInterpolator.h"
+#include "nianimation/NiAnimationKey.h"
 
 class NiKeyBasedInterpolator : public NiInterpolator {
 public:

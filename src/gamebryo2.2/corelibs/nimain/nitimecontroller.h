@@ -1,6 +1,6 @@
 #pragma once
 
-#include "niobject.h"
+#include "NiObject.h"
 
 class NiObjectNET;
 

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "bsaudio/bssoundhandle.h"
-#include "fallout/magic/magictarget.h"
+#include "bsaudio/BSSoundHandle.h"
+#include "fallout/magic/MagicTarget.h"
 #include "fallout_shared/magic/magicitem.h"
 #include "fallout_shared/magic/magicsystem.h"
 

@@ -1586,7 +1586,7 @@ FalloutAudio.cpp:
 	.data       start:0x8324ED90 end:0x8324EEEE
 	.data       start:0x83295420 end:0x832954A8 rename:.bss
 
-VampirismEffect.cpp:
+fallout/magic/VampirismEffect.cpp:
 	.rdata      start:0x82090E70 end:0x82090F8D
 	.rdata      start:0x821CC5BC end:0x821CC608 rename:.rdata$r
 	.pdata      start:0x821F79B8 end:0x821F79D0
@@ -1597,7 +1597,7 @@ VampirismEffect.cpp:
 	.data       start:0x8324ED60 end:0x8324ED8C
 	.data       start:0x832953B8 end:0x83295420 rename:.bss
 
-ValueModifierEffect.cpp:
+fallout/magic/ValueModifierEffect.cpp:
 	.rdata      start:0x82090CB0 end:0x82090E6B
 	.rdata      start:0x821CC5A8 end:0x821CC5BC rename:.rdata$r
 	.pdata      start:0x821F7948 end:0x821F79B8
@@ -1608,7 +1608,7 @@ ValueModifierEffect.cpp:
 	.data       start:0x8324ED40 end:0x8324ED60
 	.data       start:0x83295350 end:0x832953B8 rename:.bss
 
-ValueAndConditionsEffect.cpp:
+fallout/magic/ValueAndConditionsEffect.cpp:
 	.rdata      start:0x82090B70 end:0x82090CAE
 	.rdata      start:0x821CC558 end:0x821CC5A8 rename:.rdata$r
 	.pdata      start:0x821F7910 end:0x821F7948
@@ -1619,7 +1619,7 @@ ValueAndConditionsEffect.cpp:
 	.data       start:0x8324ED20 end:0x8324ED40
 	.data       start:0x832952E8 end:0x83295350 rename:.bss
 
-TurnUndeadEffect.cpp:
+fallout/magic/TurnUndeadEffect.cpp:
 	.rdata      start:0x82090A50 end:0x82090B66
 	.rdata      start:0x821CC50C end:0x821CC558 rename:.rdata$r
 	.pdata      start:0x821F78E0 end:0x821F7910
@@ -1630,7 +1630,7 @@ TurnUndeadEffect.cpp:
 	.data       start:0x8324ECE0 end:0x8324ED1F
 	.data       start:0x83295280 end:0x832952E8 rename:.bss
 
-TelekinesisEffect.cpp:
+fallout/magic/TelekinesisEffect.cpp:
 	.rdata      start:0x82090900 end:0x82090A47
 	.rdata      start:0x821CC4BC end:0x821CC50C rename:.rdata$r
 	.pdata      start:0x821F7870 end:0x821F78E0
@@ -1641,7 +1641,7 @@ TelekinesisEffect.cpp:
 	.data       start:0x8324ECA0 end:0x8324ECE0
 	.data       start:0x83295218 end:0x83295280 rename:.bss
 
-SunDamageEffect.cpp:
+fallout/magic/SunDamageEffect.cpp:
 	.rdata      start:0x820907C0 end:0x820908F9
 	.rdata      start:0x821CC470 end:0x821CC4BC rename:.rdata$r
 	.pdata      start:0x821F7828 end:0x821F7870
@@ -1652,7 +1652,7 @@ SunDamageEffect.cpp:
 	.data       start:0x8324EC50 end:0x8324EC92
 	.data       start:0x832951B0 end:0x83295218 rename:.bss
 
-SummonCreatureEffect.cpp:
+fallout/magic/SummonCreatureEffect.cpp:
 	.rdata      start:0x82090610 end:0x820907B1
 	.rdata      start:0x821CC420 end:0x821CC470 rename:.rdata$r
 	.pdata      start:0x821F77B8 end:0x821F7828
@@ -1663,7 +1663,7 @@ SummonCreatureEffect.cpp:
 	.data       start:0x8324EC00 end:0x8324EC4F
 	.data       start:0x83295144 end:0x832951B0 rename:.bss
 
-ShieldEffect.cpp:
+fallout/magic/ShieldEffect.cpp:
 	.rdata      start:0x820904F0 end:0x8209060A
 	.rdata      start:0x821CC3D0 end:0x821CC420 rename:.rdata$r
 	.pdata      start:0x821F7768 end:0x821F77B8
@@ -1674,7 +1674,7 @@ ShieldEffect.cpp:
 	.data       start:0x8324EBC0 end:0x8324EBFB
 	.data       start:0x832950DC end:0x83295144 rename:.bss
 
-ScriptEffect.cpp:
+fallout/magic/ScriptEffect.cpp:
 	.rdata      start:0x820903EC end:0x820904E3
 	.rdata      start:0x821CC384 end:0x821CC3D0 rename:.rdata$r
 	.pdata      start:0x821F7700 end:0x821F7768
@@ -1685,7 +1685,7 @@ ScriptEffect.cpp:
 	.data       start:0x8324EB80 end:0x8324EBB3
 	.data       start:0x832950D0 end:0x832950DC rename:.bss
 
-ReanimateEffect.cpp:
+fallout/magic/ReanimateEffect.cpp:
 	.rdata      start:0x82090240 end:0x820903EC
 	.rdata      start:0x821CC338 end:0x821CC384 rename:.rdata$r
 	.pdata      start:0x821F76A0 end:0x821F7700
@@ -1696,7 +1696,7 @@ ReanimateEffect.cpp:
 	.data       start:0x8324EB30 end:0x8324EB7A
 	.data       start:0x83295068 end:0x832950D0 rename:.bss
 
-ParalysisEffect.cpp:
+fallout/magic/ParalysisEffect.cpp:
 	.rdata      start:0x82090110 end:0x82090235
 	.rdata      start:0x821CC2E8 end:0x821CC338 rename:.rdata$r
 	.pdata      start:0x821F7678 end:0x821F76A0
@@ -1707,7 +1707,7 @@ ParalysisEffect.cpp:
 	.data       start:0x8324EAF0 end:0x8324EB2E
 	.data       start:0x83295000 end:0x83295068 rename:.bss
 
-OpenEffect.cpp:
+fallout/magic/OpenEffect.cpp:
 	.rdata      start:0x82090000 end:0x82090104
 	.rdata      start:0x821CC29C end:0x821CC2E8 rename:.rdata$r
 	.pdata      start:0x821F7660 end:0x821F7678
@@ -1718,7 +1718,7 @@ OpenEffect.cpp:
 	.data       start:0x8324EAB0 end:0x8324EAE9
 	.data       start:0x83294F98 end:0x83295000 rename:.bss
 
-NonActorMagicTarget.cpp:
+fallout/magic/NonActorMagicTarget.cpp:
 	.rdata      start:0x8208FFA8 end:0x8208FFF4
 	.rdata      start:0x821CC21C end:0x821CC29C rename:.rdata$r
 	.pdata      start:0x821F7640 end:0x821F7660
@@ -1728,7 +1728,7 @@ NonActorMagicTarget.cpp:
 	.data       start:0x8324EA90 end:0x8324EAA8
 	.data       start:0x83294F90 end:0x83294F98 rename:.bss
 
-NonActorMagicCaster.cpp:
+fallout/magic/NonActorMagicCaster.cpp:
 	.rdata      start:0x8208FF10 end:0x8208FFA8
 	.rdata      start:0x821CC19C end:0x821CC21C rename:.rdata$r
 	.pdata      start:0x821F7618 end:0x821F7640
@@ -1739,7 +1739,7 @@ NonActorMagicCaster.cpp:
 	.data       start:0x8324EA70 end:0x8324EA90
 	.data       start:0x83294F28 end:0x83294F90 rename:.bss
 
-NightEyeEffect.cpp:
+fallout/magic/NightEyeEffect.cpp:
 	.rdata      start:0x8208FDF0 end:0x8208FF10
 	.rdata      start:0x821CC14C end:0x821CC19C rename:.rdata$r
 	.pdata      start:0x821F75E0 end:0x821F7618
@@ -1891,7 +1891,7 @@ LimbConditionEffect.cpp:
 	.data       start:0x8324E5E0 end:0x8324E622
 	.data       start:0x832949AC end:0x83294A14 rename:.bss
 
-LightEffect.cpp:
+fallout/magic/LightEffect.cpp:
 	.rdata      start:0x8208DA40 end:0x8208DBF9
 	.rdata      start:0x821CBB68 end:0x821CBBB4 rename:.rdata$r
 	.pdata      start:0x821F6F18 end:0x821F6F90
@@ -1902,7 +1902,7 @@ LightEffect.cpp:
 	.data       start:0x8324E5A0 end:0x8324E5DA
 	.data       start:0x83294940 end:0x832949AC rename:.bss
 
-InvisibilityEffect.cpp:
+fallout/magic/InvisibilityEffect.cpp:
 	.rdata      start:0x8208D8F0 end:0x8208DA40
 	.rdata      start:0x821CBB18 end:0x821CBB68 rename:.rdata$r
 	.pdata      start:0x821F6EE0 end:0x821F6F18
@@ -1913,7 +1913,7 @@ InvisibilityEffect.cpp:
 	.data       start:0x8324E550 end:0x8324E59D
 	.data       start:0x832948D8 end:0x83294940 rename:.bss
 
-FrenzyEffect.cpp:
+fallout/magic/FrenzyEffect.cpp:
 	.rdata      start:0x8208D7D0 end:0x8208D8EA
 	.rdata      start:0x821CBAC8 end:0x821CBB18 rename:.rdata$r
 	.pdata      start:0x821F6EA8 end:0x821F6EE0
@@ -1924,7 +1924,7 @@ FrenzyEffect.cpp:
 	.data       start:0x8324E510 end:0x8324E54B
 	.data       start:0x83294870 end:0x832948D8 rename:.bss
 
-DispelEffect.cpp:
+fallout/magic/DispelEffect.cpp:
 	.rdata      start:0x8208D6C0 end:0x8208D7CA
 	.rdata      start:0x821CBA7C end:0x821CBAC8 rename:.rdata$r
 	.pdata      start:0x821F6E88 end:0x821F6EA8
@@ -1935,7 +1935,7 @@ DispelEffect.cpp:
 	.data       start:0x8324E4D0 end:0x8324E50B
 	.data       start:0x83294808 end:0x83294870 rename:.bss
 
-DisintegrateWeaponEffect.cpp:
+fallout/magic/DisintegrateWeaponEffect.cpp:
 	.rdata      start:0x8208D560 end:0x8208D6BE
 	.rdata      start:0x821CBA30 end:0x821CBA7C rename:.rdata$r
 	.pdata      start:0x821F6E70 end:0x821F6E88
@@ -1946,7 +1946,7 @@ DisintegrateWeaponEffect.cpp:
 	.data       start:0x8324E480 end:0x8324E4C7
 	.data       start:0x832947A0 end:0x83294808 rename:.bss
 
-DisintegrateArmorEffect.cpp:
+fallout/magic/DisintegrateArmorEffect.cpp:
 	.rdata      start:0x8208D400 end:0x8208D55D
 	.rdata      start:0x821CB9E4 end:0x821CBA30 rename:.rdata$r
 	.pdata      start:0x821F6E38 end:0x821F6E70
@@ -1957,7 +1957,7 @@ DisintegrateArmorEffect.cpp:
 	.data       start:0x8324E430 end:0x8324E476
 	.data       start:0x83294738 end:0x832947A0 rename:.bss
 
-DetectLifeEffect.cpp:
+fallout/magic/DetectLifeEffect.cpp:
 	.rdata      start:0x8208D2B0 end:0x8208D3FE
 	.rdata      start:0x821CB994 end:0x821CB9E4 rename:.rdata$r
 	.pdata      start:0x821F6E08 end:0x821F6E38
@@ -1968,7 +1968,7 @@ DetectLifeEffect.cpp:
 	.data       start:0x8324E3F0 end:0x8324E42F
 	.data       start:0x832946D0 end:0x83294738 rename:.bss
 
-DemoralizeEffect.cpp:
+fallout/magic/DemoralizeEffect.cpp:
 	.rdata      start:0x8208D190 end:0x8208D2A6
 	.rdata      start:0x821CB948 end:0x821CB994 rename:.rdata$r
 	.pdata      start:0x821F6DD0 end:0x821F6E08
@@ -1979,7 +1979,7 @@ DemoralizeEffect.cpp:
 	.data       start:0x8324E390 end:0x8324E3E7
 	.data       start:0x83294668 end:0x832946D0 rename:.bss
 
-DarknessEffect.cpp:
+fallout/magic/DarknessEffect.cpp:
 	.rdata      start:0x8208D070 end:0x8208D190
 	.rdata      start:0x821CB8F8 end:0x821CB948 rename:.rdata$r
 	.pdata      start:0x821F6DA0 end:0x821F6DD0
@@ -1990,7 +1990,7 @@ DarknessEffect.cpp:
 	.data       start:0x8324E350 end:0x8324E38D
 	.data       start:0x83294600 end:0x83294668 rename:.bss
 
-CureEffect.cpp:
+fallout/magic/CureEffect.cpp:
 	.rdata      start:0x8208CEE0 end:0x8208D066
 	.rdata      start:0x821CB8AC end:0x821CB8F8 rename:.rdata$r
 	.pdata      start:0x821F6D78 end:0x821F6DA0
@@ -2001,7 +2001,7 @@ CureEffect.cpp:
 	.data       start:0x8324E310 end:0x8324E349
 	.data       start:0x83294594 end:0x83294600 rename:.bss
 
-ConcussionEffect.cpp:
+fallout/magic/ConcussionEffect.cpp:
 	.rdata      start:0x8208CDA0 end:0x8208CED6
 	.rdata      start:0x821CB860 end:0x821CB8AC rename:.rdata$r
 	.pdata      start:0x821F6D48 end:0x821F6D78
@@ -2012,7 +2012,7 @@ ConcussionEffect.cpp:
 	.data       start:0x8324E2D0 end:0x8324E30F
 	.data       start:0x8329452C end:0x83294594 rename:.bss
 
-CommandHumanoidEffect.cpp:
+fallout/magic/CommandHumanoidEffect.cpp:
 	.rdata      start:0x8208CC70 end:0x8208CD93
 	.rdata      start:0x821CB810 end:0x821CB860 rename:.rdata$r
 	.pdata      start:0x821F6D30 end:0x821F6D48
@@ -2023,7 +2023,7 @@ CommandHumanoidEffect.cpp:
 	.data       start:0x8324E280 end:0x8324E2C4
 	.data       start:0x832944C4 end:0x8329452C rename:.bss
 
-CommandEffect.cpp:
+fallout/magic/CommandEffect.cpp:
 	.rdata      start:0x8208CB70 end:0x8208CC68
 	.rdata      start:0x821CB7FC end:0x821CB810 rename:.rdata$r
 	.pdata      start:0x821F6CF0 end:0x821F6D30
@@ -2034,7 +2034,7 @@ CommandEffect.cpp:
 	.data       start:0x8324E250 end:0x8324E27C
 	.data       start:0x8329445C end:0x832944C4 rename:.bss
 
-CommandCreatureEffect.cpp:
+fallout/magic/CommandCreatureEffect.cpp:
 	.rdata      start:0x8208CA40 end:0x8208CB63
 	.rdata      start:0x821CB774 end:0x821CB7FC rename:.rdata$r
 	.pdata      start:0x821F6CD8 end:0x821F6CF0
@@ -2045,7 +2045,7 @@ CommandCreatureEffect.cpp:
 	.data       start:0x8324E1F0 end:0x8324E250
 	.data       start:0x832943F4 end:0x8329445C rename:.bss
 
-ChameleonEffect.cpp:
+fallout/magic/ChameleonEffect.cpp:
 	.rdata      start:0x8208C910 end:0x8208CA35
 	.rdata      start:0x821CB724 end:0x821CB774 rename:.rdata$r
 	.pdata      start:0x821F6C98 end:0x821F6CD8
@@ -2056,7 +2056,7 @@ ChameleonEffect.cpp:
 	.data       start:0x8324E1B0 end:0x8324E1EE
 	.data       start:0x8329438C end:0x832943F4 rename:.bss
 
-CalmEffect.cpp:
+fallout/magic/CalmEffect.cpp:
 	.rdata      start:0x8208C7F0 end:0x8208C904
 	.rdata      start:0x821CB6D4 end:0x821CB724 rename:.rdata$r
 	.pdata      start:0x821F6C68 end:0x821F6C98
@@ -2067,7 +2067,7 @@ CalmEffect.cpp:
 	.data       start:0x8324E170 end:0x8324E1A9
 	.data       start:0x83294324 end:0x8329438C rename:.bss
 
-BoundItemEffect.cpp:
+fallout/magic/BoundItemEffect.cpp:
 	.rdata      start:0x8208C620 end:0x8208C7EA
 	.rdata      start:0x821CB684 end:0x821CB6D4 rename:.rdata$r
 	.pdata      start:0x821F6BF0 end:0x821F6C68
@@ -2101,7 +2101,7 @@ bhkCharacterListenerSpell.cpp:
 	.data       start:0x8324DF70 end:0x8324E0BA
 	.data       start:0x832941EC end:0x83294254 rename:.bss
 
-AssociatedItemEffect.cpp:
+fallout/magic/AssociatedItemEffect.cpp:
 	.rdata      start:0x8208C2B0 end:0x8208C387
 	.rdata      start:0x821CB2C8 end:0x821CB314 rename:.rdata$r
 	.pdata      start:0x821F6B70 end:0x821F6BA0
@@ -2111,7 +2111,7 @@ AssociatedItemEffect.cpp:
 	.data       start:0x8324DF30 end:0x8324DF6B
 	.data       start:0x832941E4 end:0x832941EC rename:.bss
 
-ActiveEffect.cpp:
+fallout/magic/ActiveEffect.cpp:
 	.rdata      start:0x8208C000 end:0x8208C2AF
 	.rdata      start:0x821CB2B4 end:0x821CB2C8 rename:.rdata$r
 	.pdata      start:0x821F6A68 end:0x821F6B70
@@ -2122,7 +2122,7 @@ ActiveEffect.cpp:
 	.data       start:0x8324DEF0 end:0x8324DF2E
 	.data       start:0x8329417C end:0x832941E4 rename:.bss
 
-AbsorbEffect.cpp:
+fallout/magic/AbsorbEffect.cpp:
 	.rdata      start:0x8208BEC0 end:0x8208BFFA
 	.rdata      start:0x821CB1F8 end:0x821CB2B4 rename:.rdata$r
 	.pdata      start:0x821F6A10 end:0x821F6A68
@@ -6773,7 +6773,7 @@ SpellItem.cpp:
 	.data       start:0x83221030 end:0x83221050
 	.data       start:0x832894B0 end:0x83289518 rename:.bss
 
-fallout/magic/MagicSystem.cpp:
+fallout_shared/magic/MagicSystem.cpp:
 	.rdata      start:0x820031E0 end:0x82003AF0
 	.pdata      start:0x821E2A78 end:0x821E2AA0
 	.pdata      start:0x82228C80 end:0x82228E90
@@ -6997,57 +6997,57 @@ xdk/zlib/adler32.cpp:
 	.pdata      start:0x821FF528 end:0x821FF530
 	.text       start:0x82835DF8 end:0x82835F78
 
-pngwutil.cpp:
+xdk/png/pngwutil.cpp:
 	.rdata      start:0x820B73F8 end:0x820B748D
 
-pngwrite.cpp:
+xdk/png/pngwrite.cpp:
 	.rdata      start:0x820B4F4C end:0x820B4F8F
 
-pngtrans.cpp:
+xdk/png/pngtrans.cpp:
 	.text       start:0x82826478 end:0x828266AC
 
-pngrio.cpp:
+xdk/png/pngrio.cpp:
 	.rdata      start:0x820B521C end:0x820B52B1
 	.pdata      start:0x821FF108 end:0x821FF110
 	.text       start:0x828282F8 end:0x82828384
 
-pngmem.cpp:
+xdk/png/pngmem.cpp:
 	.rdata      start:0x820B6E94 end:0x820B6EA2
 	.pdata      start:0x821FF178 end:0x821FF188
 	.text       start:0x8282A6B8 end:0x8282A800
 
-pngerror.cpp:
+xdk/png/pngerror.cpp:
 	.rdata      start:0x820B3A98 end:0x820B3AA8
 	.pdata      start:0x821FEF68 end:0x821FEF88
 	.text       start:0x828223A0 end:0x82822598
 
-pngrutil.cpp:
+xdk/png/pngrutil.cpp:
 	.rdata      start:0x820B7594 end:0x820B7AB0
 	.pdata      start:0x821FF2D8 end:0x821FF358
 	.text       start:0x8282E640 end:0x8283014C
 
-pngrtran.cpp:
+xdk/png/pngrtran.cpp:
 	.rdata      start:0x820B51C8 end:0x820B521C
 	.pdata      start:0x821FF0D0 end:0x821FF108
 	.text       start:0x828266B0 end:0x828282F8
 	.data       start:0x83255E18 end:0x83255E38
 
-pngread.cpp:
+xdk/png/pngread.cpp:
 	.rdata      start:0x820B4FFC end:0x820B5191
 	.pdata      start:0x821FF090 end:0x821FF0C8
 	.text       start:0x828256C8 end:0x82826280
 
-pngget.cpp:
+xdk/png/pngget.cpp:
 	.rdata      start:0x820B5194 end:0x820B51C6
 	.pdata      start:0x821FF0C8 end:0x821FF0D0
 	.text       start:0x82826280 end:0x82826474
 
-pngset.cpp:
+xdk/png/pngset.cpp:
 	.rdata      start:0x820B4F90 end:0x820B4FFC
 	.pdata      start:0x821FF088 end:0x821FF090
 	.text       start:0x82825498 end:0x828256C4
 
-png.cpp:
+xdk/png/png.cpp:
 	.rdata      start:0x820B3AA8 end:0x820B3AB0
 	.pdata      start:0x821FEF88 end:0x821FEFA8
 	.text       start:0x82822598 end:0x82822788
@@ -7193,50 +7193,50 @@ cuassembler.cpp:
 	.text       start:0x82F115D0 end:0x82F1BA88
 	.data       start:0x8326C370 end:0x8326C918
 
-cnodeuasm.cpp:
+xdk/d3d9i/cnodeuasm.cpp:
 	.rdata      start:0x8217A40C end:0x8217A43C
 	.pdata      start:0x82222F90 end:0x82222FD0
 	.text       start:0x82F87008 end:0x82F87618
 
-threadlocaldata.cpp:
+xdk/d3d9i/threadlocaldata.cpp:
 	.pdata      start:0x82221950 end:0x82221960
 	.text       start:0x82F10170 end:0x82F10414
 	.data       start:0x8326C368 end:0x8326C36C
 	.data       start:0x8332AC98 end:0x8332ACA0 rename:.bss
 
-cpreprocessor.cpp:
+xdk/d3d9i/cpreprocessor.cpp:
 	.rdata      start:0x82151410 end:0x82152238
 	.pdata      start:0x822210C0 end:0x82221238
 	.text       start:0x82EE41E8 end:0x82EE964C
 
-ctokenize.cpp:
+xdk/d3d9i/ctokenize.cpp:
 	.rdata      start:0x82152238 end:0x82152512
 	.pdata      start:0x82221238 end:0x822212F8
 	.text       start:0x82EE9650 end:0x82EEB860
 
-ctransform.cpp:
+xdk/d3d9i/ctransform.cpp:
 	.pdata      start:0x82222FD0 end:0x82222FF8
 	.text       start:0x82F876F8 end:0x82F88964
 
-cprogram.cpp:
+xdk/d3d9i/cprogram.cpp:
 	.rdata      start:0x82160BA4 end:0x82160E94
 	.pdata      start:0x822225F0 end:0x822228C8
 	.text       start:0x82F409E0 end:0x82F5AF8C
 
-cbaseprogram.cpp:
+xdk/d3d9i/cbaseprogram.cpp:
 	.rdata      start:0x82160B7C end:0x82160BA1
 	.pdata      start:0x82222588 end:0x822225F0
 	.text       start:0x82F3FEF0 end:0x82F409E0
 
-cinstruction.cpp:
+xdk/d3d9i/cinstruction.cpp:
 	.pdata      start:0x82222540 end:0x82222570
 	.text       start:0x82F3EFD0 end:0x82F3FC50
 
-cargument.cpp:
+xdk/d3d9i/cargument.cpp:
 	.pdata      start:0x82222570 end:0x82222588
 	.text       start:0x82F3FC50 end:0x82F3FEF0
 
-cpool.cpp:
+xdk/d3d9i/cpool.cpp:
 	.text       start:0x82F87618 end:0x82F876F8
 
 c30swprogram.cpp:
@@ -19947,7 +19947,7 @@ NiAmbientLight.cpp:
 	.data       start:0x8321FF04 end:0x8321FF08 rename:.CRT$XCU
 	.data       start:0x8332A0E4 end:0x8332A0EC rename:.bss
 
-NiAVObject.cpp:
+gamebryo2.2/corelibs/nimain/NiAVObject.cpp:
 	.rdata      start:0x821400A8 end:0x82140357
 	.pdata      start:0x8221C868 end:0x8221C990
 	.pdata      start:0x82241C48 end:0x82241C50
@@ -20107,12 +20107,12 @@ NiDepthStencilBuffer.cpp:
 	.data       start:0x8321FEC0 end:0x8321FEC4 rename:.CRT$XCU
 	.data       start:0x83329EA4 end:0x83329EB4 rename:.bss
 
-NiDevImageConverter.cpp:
+gamebryo2.2/corelibs/nimain/NiDevImageConverter.cpp:
 	.rdata      start:0x82144140 end:0x82144392
 	.pdata      start:0x8221DCD8 end:0x8221DDB8
 	.text       start:0x82E5D100 end:0x82E666C0
 
-NiDirectionalLight.cpp:
+gamebryo2.2/corelibs/nimain/NiDirectionalLight.cpp:
 	.rdata      start:0x82143D00 end:0x82143E8F
 	.pdata      start:0x8221DBD8 end:0x8221DC20
 	.pdata      start:0x82241DB8 end:0x82241DC0
@@ -20121,7 +20121,7 @@ NiDirectionalLight.cpp:
 	.data       start:0x8321FD4C end:0x8321FD50 rename:.CRT$XCU
 	.data       start:0x83327BD0 end:0x83327BD8 rename:.bss
 
-NiDitherProperty.cpp:
+gamebryo2.2/corelibs/nimain/NiDitherProperty.cpp:
 	.rdata      start:0x8214BEB0 end:0x8214BFE6
 	.pdata      start:0x8221FAA0 end:0x8221FAB8
 	.pdata      start:0x82242268 end:0x82242278
@@ -20132,7 +20132,7 @@ NiDitherProperty.cpp:
 	.data       start:0x8321FFC4 end:0x8321FFCC rename:.CRT$XCU
 	.data       start:0x8332A3E4 end:0x8332A3F0 rename:.bss
 
-NiDynamicEffect.cpp:
+gamebryo2.2/corelibs/nimain/NiDynamicEffect.cpp:
 	.rdata      start:0x82141B08 end:0x82141C1C
 	.pdata      start:0x8221D390 end:0x8221D3E0
 	.pdata      start:0x82241D08 end:0x82241D10
@@ -20142,7 +20142,7 @@ NiDynamicEffect.cpp:
 	.data       start:0x8326A608 end:0x8326A60C
 	.data       start:0x83327A08 end:0x83327A10 rename:.bss
 
-NiExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiExtraData.cpp:
 	.rdata      start:0x82144398 end:0x821444C0
 	.pdata      start:0x8221DDB8 end:0x8221DE20
 	.pdata      start:0x82241DD0 end:0x82241DD8
@@ -20151,14 +20151,14 @@ NiExtraData.cpp:
 	.data       start:0x8321FD58 end:0x8321FD5C rename:.CRT$XCU
 	.data       start:0x83327BE8 end:0x83327BF0 rename:.bss
 
-NiFixedString.cpp:
+gamebryo2.2/corelibs/nimain/NiFixedString.cpp:
 	.pdata      start:0x82241D58 end:0x82241D60
 	.text       start:0x831E2470 end:0x831E24BC rename:.text$yc
 	.text       start:0x831FEE58 end:0x831FEEBC rename:.text$yd
 	.data       start:0x8321FD1C end:0x8321FD20 rename:.CRT$XCU
 	.data       start:0x83327B7C end:0x83327B80 rename:.bss
 
-NiFloatExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiFloatExtraData.cpp:
 	.rdata      start:0x8214BD78 end:0x8214BEAD
 	.pdata      start:0x8221FA78 end:0x8221FAA0
 	.pdata      start:0x82242260 end:0x82242268
@@ -20167,7 +20167,7 @@ NiFloatExtraData.cpp:
 	.data       start:0x8321FFC0 end:0x8321FFC4 rename:.CRT$XCU
 	.data       start:0x8332A3DC end:0x8332A3E4 rename:.bss
 
-NiFloatsExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiFloatsExtraData.cpp:
 	.rdata      start:0x821484B0 end:0x82148642
 	.pdata      start:0x8221EC68 end:0x8221ECA0
 	.pdata      start:0x82242108 end:0x82242110
@@ -20176,7 +20176,7 @@ NiFloatsExtraData.cpp:
 	.data       start:0x8321FF00 end:0x8321FF04 rename:.CRT$XCU
 	.data       start:0x8332A0DC end:0x8332A0E4 rename:.bss
 
-NiFogProperty.cpp:
+gamebryo2.2/corelibs/nimain/NiFogProperty.cpp:
 	.rdata      start:0x821492E8 end:0x82149402
 	.pdata      start:0x8221EF98 end:0x8221EFF0
 	.pdata      start:0x82242168 end:0x82242178
@@ -20187,7 +20187,7 @@ NiFogProperty.cpp:
 	.data       start:0x8321FF34 end:0x8321FF3C rename:.CRT$XCU
 	.data       start:0x8332A19C end:0x8332A1A8 rename:.bss
 
-NiFragmentMaterial.cpp:
+gamebryo2.2/corelibs/nimain/NiFragmentMaterial.cpp:
 	.rdata      start:0x82146BCC end:0x82146C07
 	.pdata      start:0x8221E8F8 end:0x8221E900
 	.pdata      start:0x822420B0 end:0x822420B8
@@ -20197,23 +20197,23 @@ NiFragmentMaterial.cpp:
 	.data       start:0x8326A630 end:0x8326A634
 	.data       start:0x83329FE0 end:0x83329FEC rename:.bss
 
-NiFragmentShaderInstanceDescriptor.cpp:
+gamebryo2.2/corelibs/nimain/NiFragmentShaderInstanceDescriptor.cpp:
 	.rdata      start:0x82148218 end:0x8214823B
 	.pdata      start:0x822420F0 end:0x822420F8
 	.text       start:0x831E4868 end:0x831E48A0 rename:.text$yc
 	.data       start:0x8321FEF4 end:0x8321FEF8 rename:.CRT$XCU
 	.data       start:0x8332A0C4 end:0x8332A0CC rename:.bss
 
-NiFrustum.cpp:
+gamebryo2.2/corelibs/nimain/NiFrustum.cpp:
 	.rdata      start:0x82142DC8 end:0x82142E63
 	.pdata      start:0x8221D8F0 end:0x8221D8F8
 	.text       start:0x82E55098 end:0x82E5520C
 
-NiFrustumPlanes.cpp:
+gamebryo2.2/corelibs/nimain/NiFrustumPlanes.cpp:
 	.pdata      start:0x8221DAC8 end:0x8221DAD8
 	.text       start:0x82E58FA0 end:0x82E5A044
 
-NiGeometry.cpp:
+gamebryo2.2/corelibs/nimain/NiGeometry.cpp:
 	.rdata      start:0x82145100 end:0x8214529B
 	.pdata      start:0x8221E1B8 end:0x8221E288
 	.pdata      start:0x82242010 end:0x82242018
@@ -20222,7 +20222,7 @@ NiGeometry.cpp:
 	.data       start:0x8321FE7C end:0x8321FE80 rename:.CRT$XCU
 	.data       start:0x83328DFC end:0x83328E04 rename:.bss
 
-NiGeometryData.cpp:
+gamebryo2.2/corelibs/nimain/NiGeometryData.cpp:
 	.rdata      start:0x821415AC end:0x821418DF
 	.pdata      start:0x8221D150 end:0x8221D258
 	.pdata      start:0x82241CF0 end:0x82241D00
@@ -20233,18 +20233,18 @@ NiGeometryData.cpp:
 	.data       start:0x8326A604 end:0x8326A606
 	.data       start:0x83327900 end:0x83327A00 rename:.bss
 
-NiGeometryGroupManager.cpp:
+gamebryo2.2/corelibs/nimain/NiGeometryGroupManager.cpp:
 	.rdata      start:0x82144C28 end:0x82144C48
 	.pdata      start:0x8221E078 end:0x8221E080
 	.text       start:0x82E6C898 end:0x82E6C934
 	.data       start:0x83328DC4 end:0x83328DC8 rename:.bss
 
-NiGlobalConstantEntry.cpp:
+gamebryo2.2/corelibs/nimain/NiGlobalConstantEntry.cpp:
 	.rdata      start:0x82149E40 end:0x82149EBB
 	.pdata      start:0x8221F288 end:0x8221F290
 	.text       start:0x82EA16C8 end:0x82EA179C
 
-NiGlobalStringTable.cpp:
+gamebryo2.2/corelibs/nimain/NiGlobalStringTable.cpp:
 	.rdata      start:0x8213FF90 end:0x8214000F
 	.pdata      start:0x8221C800 end:0x8221C850
 	.text       start:0x82E27A20 end:0x82E2866C
@@ -20296,7 +20296,7 @@ NiIntegersExtraData.cpp:
 	.data       start:0x8321FF18 end:0x8321FF1C rename:.CRT$XCU
 	.data       start:0x8332A164 end:0x8332A16C rename:.bss
 
-NiLight.cpp:
+gamebryo2.2/corelibs/nimain/NiLight.cpp:
 	.rdata      start:0x82143010 end:0x82143118
 	.pdata      start:0x8221D950 end:0x8221D998
 	.pdata      start:0x82241D80 end:0x82241D88
@@ -20414,7 +20414,7 @@ NiMath.cpp:
 	.data       start:0x8321FE80 end:0x8321FE88 rename:.CRT$XCU
 	.data       start:0x83328E08 end:0x83329E10 rename:.bss
 
-NiMatrix3.cpp:
+gamebryo2.2/corelibs/nimain/NiMatrix3.cpp:
 	.rdata      start:0x8213FEF4 end:0x8213FF8F
 	.pdata      start:0x8221C790 end:0x8221C800
 	.pdata      start:0x82241C38 end:0x82241C48
@@ -20448,7 +20448,7 @@ NiNode.cpp:
 	.data       start:0x8321FCA4 end:0x8321FCA8 rename:.CRT$XCU
 	.data       start:0x83327A00 end:0x83327A08 rename:.bss
 
-NiObject.cpp:
+gamebryo2.2/corelibs/nimain/NiObject.cpp:
 	.rdata      start:0x821404D8 end:0x8214057D
 	.pdata      start:0x8221CA68 end:0x8221CAD0
 	.pdata      start:0x82241C60 end:0x82241C70
@@ -20458,12 +20458,12 @@ NiObject.cpp:
 	.data       start:0x8326A5A0 end:0x8326A5EC
 	.data       start:0x83327404 end:0x83327410 rename:.bss
 
-NiObjectGroup.cpp:
+gamebryo2.2/corelibs/nimain/NiObjectGroup.cpp:
 	.rdata      start:0x82149810 end:0x82149881
 	.pdata      start:0x8221F0C0 end:0x8221F0D0
 	.text       start:0x82E9B7E0 end:0x82E9B89C
 
-NiObjectNET.cpp:
+gamebryo2.2/corelibs/nimain/NiObjectNET.cpp:
 	.rdata      start:0x82140358 end:0x821404D8
 	.pdata      start:0x8221C990 end:0x8221CA60
 	.pdata      start:0x82241C50 end:0x82241C60
@@ -20571,19 +20571,19 @@ NiPixelFormat.cpp:
 	.data       start:0x8321FD64 end:0x8321FE60 rename:.CRT$XCU
 	.data       start:0x83327C00 end:0x83328DB4 rename:.bss
 
-NiPlane.cpp:
+gamebryo2.2/corelibs/nimain/NiPlane.cpp:
 	.rdata      start:0x82141A8C end:0x82141B05
 	.pdata      start:0x8221D370 end:0x8221D380
 	.text       start:0x82E452D8 end:0x82E455FC
 
-NiPoint2.cpp:
+gamebryo2.2/corelibs/nimain/NiPoint2.cpp:
 	.pdata      start:0x8221D440 end:0x8221D450
 	.text       start:0x82E47658 end:0x82E476D8
 	.text       start:0x831E2188 end:0x831E2200 rename:.text$yc
 	.data       start:0x8321FCF0 end:0x8321FCFC rename:.CRT$XCU
 	.data       start:0x83327AF8 end:0x83327B10 rename:.bss
 
-NiPoint3.cpp:
+gamebryo2.2/corelibs/nimain/NiPoint3.cpp:
 	.rdata      start:0x82140010 end:0x821400A8
 	.pdata      start:0x8221C850 end:0x8221C868
 	.text       start:0x82E28670 end:0x82E2884C
@@ -20591,17 +20591,17 @@ NiPoint3.cpp:
 	.data       start:0x8321FC04 end:0x8321FC1C rename:.CRT$XCU
 	.data       start:0x83327240 end:0x83327288 rename:.bss
 
-NiPoint3_Xenon.cpp:
+gamebryo2.2/corelibs/nimain/NiPoint3_Xenon.cpp:
 	.pdata      start:0x8221E080 end:0x8221E098
 	.text       start:0x82E6C938 end:0x82E6D69C
 	.data       start:0x83328DC8 end:0x83328DCC rename:.bss
 
-NiPoint4.cpp:
+gamebryo2.2/corelibs/nimain/NiPoint4.cpp:
 	.text       start:0x831E17D8 end:0x831E1828 rename:.text$yc
 	.data       start:0x8321FC60 end:0x8321FC64 rename:.CRT$XCU
 	.data       start:0x83327700 end:0x83327710 rename:.bss
 
-NiPointLight.cpp:
+gamebryo2.2/corelibs/nimain/NiPointLight.cpp:
 	.rdata      start:0x82144920 end:0x82144AB9
 	.pdata      start:0x8221DFA8 end:0x8221DFF0
 	.pdata      start:0x82241FE0 end:0x82241FE8
@@ -20626,7 +20626,7 @@ NiPropertyState.cpp:
 	.pdata      start:0x8221E900 end:0x8221E928
 	.text       start:0x82E85E00 end:0x82E861DC
 
-NiQuaternion.cpp:
+gamebryo2.2/corelibs/nimain/NiQuaternion.cpp:
 	.rdata      start:0x821424C0 end:0x82142560
 	.pdata      start:0x8221D638 end:0x8221D6A0
 	.pdata      start:0x82241D38 end:0x82241D48
@@ -20636,7 +20636,7 @@ NiQuaternion.cpp:
 	.data       start:0x8326A60C end:0x8326A618
 	.data       start:0x83327B4C end:0x83327B6C rename:.bss
 
-NiQuaternion_Xenon.cpp:
+gamebryo2.2/corelibs/nimain/NiQuaternion_Xenon.cpp:
 	.pdata      start:0x8221EFF0 end:0x8221EFF8
 	.text       start:0x82E9A058 end:0x82E9A1C4
 
@@ -20649,7 +20649,7 @@ NiRangeLODData.cpp:
 	.data       start:0x8321FFB4 end:0x8321FFB8 rename:.CRT$XCU
 	.data       start:0x8332A3C4 end:0x8332A3CC rename:.bss
 
-NiRefObject.cpp:
+gamebryo2.2/corelibs/nimain/NiRefObject.cpp:
 	.pdata      start:0x8221CA60 end:0x8221CA68
 	.text       start:0x82E2DE68 end:0x82E2DEE8
 	.data       start:0x83327400 end:0x83327404 rename:.bss
@@ -20663,7 +20663,7 @@ NiRenderedCubeMap.cpp:
 	.data       start:0x8321FEBC end:0x8321FEC0 rename:.CRT$XCU
 	.data       start:0x83329E9C end:0x83329EA4 rename:.bss
 
-NiRenderedTexture.cpp:
+gamebryo2.2/corelibs/nimain/NiRenderedTexture.cpp:
 	.rdata      start:0x82144F00 end:0x82145032
 	.pdata      start:0x8221E148 end:0x8221E160
 	.pdata      start:0x82242000 end:0x82242008
@@ -20692,7 +20692,7 @@ NiRenderTargetGroup.cpp:
 	.data       start:0x8321FED0 end:0x8321FED4 rename:.CRT$XCU
 	.data       start:0x83329FD8 end:0x83329FE0 rename:.bss
 
-NiRTTI.cpp:
+gamebryo2.2/corelibs/nimain/NiRTTI.cpp:
 	.text       start:0x82E66DA8 end:0x82E66DD4
 
 NiSCMExtraData.cpp:

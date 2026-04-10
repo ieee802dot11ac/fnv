@@ -1,8 +1,8 @@
 #pragma once
 
-#include "gamebryo2.2/corelibs/nimain/niavobject.h"
+#include "nimain/NiAVObject.h"
 #include <types.h>
-#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
+#include "nimain/NiPoint3.h"
 
 class BSSoundHandle {
 public:

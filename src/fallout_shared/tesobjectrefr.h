@@ -1,13 +1,12 @@
 #pragma once
 
-#include "bsaudio/bssoundhandle.h"
+#include "bsaudio/BSSoundHandle.h"
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
 #include "fallout_shared/teschildcell.h"
 #include "fallout_shared/tesfile.h"
 #include "fallout_shared/tesform.h"
 #include "fallout_shared/tesglobal.h"
 #include "fallout_shared/tessound.h"
-#include "nimain/niavobject.h"
 
 class MagicCaster;
 class MagicTarget;

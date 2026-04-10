@@ -1,9 +1,9 @@
 #pragma once
 
 #include <types.h>
-#include "bsaudio/bssoundhandle.h"
-#include "bsaudio/bsaudiosynchtimer.h"
-#include "bsaudio/bsaudiolistener.h"
+#include "bsaudio/BSSoundHandle.h"
+#include "bsaudio/BSAudioSynchTimer.h"
+#include "bsaudio/BSAudioListener.h"
 #include "bscore/memorymanager.h"
 #include "gamebryo2.2/corelibs/nimain/nipoint3.h"
 #include "gamebryo2.2/corelibs/nimain/niavobject.h"

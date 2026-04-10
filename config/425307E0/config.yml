@@ -3,8 +3,10 @@ object: orig/425307E0/Fallout_Release_MemDebug.xex
 symbols: config/425307E0/symbols.txt
 splits: config/425307E0/splits.txt
 # pdb: orig/425307E0/Fallout_Release_MemDebug.pdb
+detect_objects: false
+symbols_known: true
 quick_analysis: true
-# detect_strings: false
+detect_strings: false
 
 block_relocations:
 - source: .rdata:0x820D2C00
@@ -18,12 +20,6 @@ block_relocations:
 - target: .text:0x8292F61C
 
 add_relocations:
-- source: .data:0x832598B0
-  type: abs
-  target: static_dtree
-- source: .data:0x832598B4
-  type: abs
-  target: extra_dbits
 - source: .text:0x8292F960
   type: ha
   target: ?lbase@?1??inflate_table@@9@9

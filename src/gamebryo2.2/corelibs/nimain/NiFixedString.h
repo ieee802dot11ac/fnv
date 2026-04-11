@@ -24,7 +24,7 @@ public: // TODO: most of these are defined in nifixedstring.inl
     bool Contains(const char *) const;
     bool ContainsNoCase(const char *) const;
     uint32_t QHandle() const;
-    void Init();
+    void Init() { m_kHandle = nullptr; }
 
 protected:
     char *m_kHandle; // 0x0

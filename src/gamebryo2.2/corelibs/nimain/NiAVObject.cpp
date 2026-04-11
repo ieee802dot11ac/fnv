@@ -1,4 +1,9 @@
-/*
+#include "nimain/NiAVObject.h"
+#include "nimain/NiObjectNET.h"
+#include "nimain/NiRTTI.h"
+
+MAKERTTI(NiAVObject, NiObjectNET)
+
 NiAVObject::NiAVObject() {
     ;
     ;
@@ -14,55 +19,55 @@ void NiAVObject::AttachParent(NiNode *pkParent) {
     ;
 }
 
-NiProperty *NiAVObject::GetProperty(int iType) const {
-    ;
-    ;
-}
+// NiProperty *NiAVObject::GetProperty(int iType) const {
+//     ;
+//     ;
+// }
 
-void NiAVObject::RemoveProperty(int iType) {
-    ;
-    ;
-}
+// void NiAVObject::RemoveProperty(int iType) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::RemoveProperty(int iType, NiPointer<NiProperty> &aspProperty) {
-    ;
-    ;
-}
+// void NiAVObject::RemoveProperty(int iType, NiPointer<NiProperty> &aspProperty) {
+//     ;
+//     ;
+// }
 
 void NiAVObject::SetMaterialNeedsUpdate(bool bNeedsUpdate) {
     ;
     ;
 }
 
-void NiAVObject::Update(NiUpdateData &UpdateData) {
-    ;
-    ;
-}
+// void NiAVObject::Update(NiUpdateData &UpdateData) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::UpdateDownwardPass(NiUpdateData &UpdateData, uint uFlags) {
-    ;
-    ;
-}
+// void NiAVObject::UpdateDownwardPass(NiUpdateData &UpdateData, uint uFlags) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::UpdateSelected(NiUpdateData &UpdateData) {
-    ;
-    ;
-}
+// void NiAVObject::UpdateSelected(NiUpdateData &UpdateData) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::UpdateSelectedDownwardPass(NiUpdateData &UpdateData, uint uFlags) {
-    ;
-    ;
-}
+// void NiAVObject::UpdateSelectedDownwardPass(NiUpdateData &UpdateData, uint uFlags) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::UpdateTransformAndBounds(NiUpdateData &UpdateData) {
-    ;
-    ;
-}
+// void NiAVObject::UpdateTransformAndBounds(NiUpdateData &UpdateData) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::PreAttachUpdate(NiNode *pEventualParent, NiUpdateData &UpdateData) {
-    ;
-    ;
-}
+// void NiAVObject::PreAttachUpdate(NiNode *pEventualParent, NiUpdateData &UpdateData) {
+//     ;
+//     ;
+// }
 
 void NiAVObject::PreAttachUpdateProperties(NiNode *pEventualParent) {
     ;
@@ -79,20 +84,20 @@ void NiAVObject::PostAttachUpdate() {
     ;
 }
 
-void NiAVObject::UpdateRigidDownwardPass(NiUpdateData &UpdateData, uint uFlags) {
-    ;
-    ;
-}
+// void NiAVObject::UpdateRigidDownwardPass(NiUpdateData &UpdateData, uint uFlags) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::SetBound(BSNiBound *apBound) {
-    ;
-    ;
-}
+// void NiAVObject::SetBound(BSNiBound *apBound) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::UpdateControllers(NiUpdateData &UpdateData) {
-    ;
-    ;
-}
+// void NiAVObject::UpdateControllers(NiUpdateData &UpdateData) {
+//     ;
+//     ;
+// }
 
 void NiAVObject::UpdateProperties() {
     ;
@@ -108,68 +113,69 @@ void NiAVObject::SetSelectiveUpdateFlags(
 
 bool NiAVObject::HasTransformController() const {
     ;
-    ;
+    return false;
 }
 
 bool NiAVObject::HasPropertyController() const {
     ;
-    ;
+    return false;
 }
 
-void NiAVObject::UpdatePropertiesDownward(NiPropertyState *pkParentState) {
-    ;
-    ;
-}
+// void NiAVObject::UpdatePropertiesDownward(NiPropertyState *pkParentState) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::PushLocalProperties(
-    NiPropertyState *pkParentState, bool bCopyOnChange, NiPropertyState *&aspPropertyState
-) {
-    ;
-    ;
-}
+// void NiAVObject::PushLocalProperties(
+//     NiPropertyState *pkParentState, bool bCopyOnChange, NiPropertyState
+//     *&aspPropertyState
+// ) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::UpdateEffectsDownward(NiDynamicEffectState *pkParentState) {
-    ;
-    ;
-}
+// void NiAVObject::UpdateEffectsDownward(NiDynamicEffectState *pkParentState) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::ApplyTransform(
-    NiMatrix3 const &__formal, NiPoint3 const &__formal, bool __formal
-) {
-    ;
-    ;
-}
+// void NiAVObject::ApplyTransform(
+//     NiMatrix3 const &__formal, NiPoint3 const &__formal, bool __formal
+// ) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::Cull(NiCullingProcess &kCuller) {
-    ;
-    ;
-}
+// void NiAVObject::Cull(NiCullingProcess &kCuller) {
+//     ;
+//     ;
+// }
 
 NiAVObject *NiAVObject::GetObjectByName(NiFixedString const &kName) {
     ;
-    ;
+    return nullptr;
 }
 
-void NiAVObject::PurgeRendererData(NiRenderer *apkRenderer) {
-    ;
-    ;
-}
+// void NiAVObject::PurgeRendererData(NiRenderer *apkRenderer) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::CloneProperties(
-    NiAVObject *pkDest,
-    NiTPointerList<NiPointer<NiProperty> > *pkList,
-    NiCloningProcess &kCloning
-) {
-    ;
-    ;
-}
+// void NiAVObject::CloneProperties(
+//     NiAVObject *pkDest,
+//     NiTPointerList<NiPointer<NiProperty> > *pkList,
+//     NiCloningProcess &kCloning
+// ) {
+//     ;
+//     ;
+// }
 
-void NiAVObject::ProcessPropertyClones(
-    NiTPointerList<NiPointer<NiProperty> > *pkList, NiCloningProcess &kCloning
-) {
-    ;
-    ;
-}
+// void NiAVObject::ProcessPropertyClones(
+//     NiTPointerList<NiPointer<NiProperty> > *pkList, NiCloningProcess &kCloning
+// ) {
+//     ;
+//     ;
+// }
 
 void NiAVObject::CopyMembers(NiAVObject *pkDest, NiCloningProcess &kCloning) {
     ;
@@ -193,7 +199,7 @@ void NiAVObject::LinkObject(NiStream &kStream) {
 
 bool NiAVObject::RegisterStreamables(NiStream &kStream) {
     ;
-    ;
+    return false;
 }
 
 void NiAVObject::SaveBinary(NiStream &kStream) {
@@ -203,11 +209,10 @@ void NiAVObject::SaveBinary(NiStream &kStream) {
 
 bool NiAVObject::IsEqual(NiObject *pkObject) {
     ;
-    ;
+    return false;
 }
 
 void NiAVObject::GetViewerStrings(NiTPrimitiveArray<char *> *pkStrings) {
     ;
     ;
 }
-*/

@@ -3,6 +3,8 @@
 #include "NiObjectNET.h"
 #include "NiPoint3.h"
 
+class NiNode;
+
 class NiAVObject : public NiObjectNET {
 public:
     static const NiRTTI ms_RTTI;
@@ -19,10 +21,10 @@ public:
     virtual bool RegisterStreamables(NiStream &);
     virtual void SaveBinary(NiStream &);
     virtual bool IsEqual(NiObject *);
-    // virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
+    virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
     virtual ~NiAVObject();
-    // const NiNode *GetParent() const;
-    // NiNode *GetParent();
+    const NiNode *GetParent() const;
+    NiNode *GetParent();
     // void Update(NiUpdateData &);
     // void UpdateSelected(NiUpdateData &);
     // virtual void UpdateControllers(NiUpdateData &);
@@ -125,11 +127,11 @@ public:
     void UpdateWorldLoc();
     // virtual void UpdateTransformAndBounds(NiUpdateData &);
     // virtual void PreAttachUpdate(NiNode *, NiUpdateData &);
-    // virtual void PreAttachUpdateProperties(NiNode *);
-    // virtual void PreAttachUpdateEffects(NiNode *);
+    virtual void PreAttachUpdateProperties(NiNode *);
+    virtual void PreAttachUpdateEffects(NiNode *);
     virtual void PostAttachUpdate();
     // void PushLocalProperties(NiPropertyState *, bool, NiPropertyState *&);
-    // void AttachParent(NiNode *);
+    void AttachParent(NiNode *);
     void DetachParent();
     // void Cull(NiCullingProcess &);
     // virtual void OnVisible(NiCullingProcess &);
@@ -165,7 +167,7 @@ protected:
     bool HasTransformController() const;
     bool HasPropertyController() const;
 
-    //   protected: NiNode* m_pkParent; // 0x18
+    NiNode *m_pkParent; // 0x18
     //   protected: NiPointer<NiCollisionObject> m_spCollisionObject; // 0x1c
     //   public: BSNiBound* m_kWorldBound; // 0x20
     //   protected: NiTPointerList<NiPointer<NiProperty> > m_kPropertyList; // 0x24

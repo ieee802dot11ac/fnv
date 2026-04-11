@@ -5,19 +5,19 @@
 		"cflags": "gamebryo",
 		"objects": {
 			"gamebryo2.2/corelibs/nianimation/BSAnimNoteListener.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiAnimationkey.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiBlendboolinterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiBlendfloatinterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiBlendtransforminterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiBoolinterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiColorinterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiFlipcontroller.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiFloatextradatacontroller.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiAnimationKey.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiBlendBoolInterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiBlendFloatInterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiBlendTransformInterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiBoolInterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiColorInterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiFlipController.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiFloatExtraDataController.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nianimation/NiInterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiKeybasedinterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiMorphdata.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiPathinterpolator.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nianimation/NiTransforminterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiKeyBasedInterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiMorphData.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiPathInterpolator.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nianimation/NiTransformInterpolator.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nicollision/NiBoxCapsuleIntersector.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nicollision/NiBoxSphereIntersector.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nicollision/NiDistPntTri.cpp": "NonMatching",
@@ -32,7 +32,7 @@
 			"gamebryo2.2/corelibs/nimain/NiCullingProcess.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/NiDynamicEffect.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/NiExtraData.cpp": "NonMatching",
-			"gamebryo2.2/corelibs/nimain/Niglobalstringtable.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/NiGlobalStringTable.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/NiLight.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/NiMatrix3.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/NiObject.cpp": "NonMatching",
@@ -41,6 +41,7 @@
 			"gamebryo2.2/corelibs/nimain/NiRefObject.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/NiRTTI.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nimain/NiTriShapeData.cpp": "NonMatching",
+			"gamebryo2.2/corelibs/nimain/NiViewerStrings.cpp": "NonMatching",
 			"gamebryo2.2/corelibs/nixenonrenderer/NiD3DShaderProgramFactory.cpp": "NonMatching"
 		}
 	},
@@ -131,7 +132,7 @@
 		"mw_version": "X360/16.00.10224.00",
 		"cflags": "speedtree",
 		"objects": {
-			"lib/speedtree/indexedgeometry.cpp": "NonMatching"
+			"lib/speedtree/IndexedGeometry.cpp": "NonMatching"
 		}
 	},
 	"havok": {

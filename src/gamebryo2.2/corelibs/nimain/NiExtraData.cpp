@@ -1,9 +1,11 @@
-#include "niextradata.h"
+#include "NiExtraData.h"
 #include "nimain/nicloningprocess.h"
-#include "nimain/nifixedstring.h"
-#include "nimain/niobject.h"
+#include "nimain/NiFixedString.h"
+#include "nimain/NiObject.h"
 #include "nimain/nistream.h"
-#include "nimain/niviewerstrings.h"
+#include "nimain/NiViewerStrings.h"
+
+MAKERTTI(NiExtraData, NiObject)
 
 NiExtraData::NiExtraData() {}
 
@@ -15,6 +17,8 @@ void NiExtraData::SetName(const NiFixedString &kName) {
     ADDSTACK(0x10)
     m_kName = kName;
 }
+
+void NiExtraData::ClearName() { m_kName.Init(); }
 
 void NiExtraData::CopyMembers(NiExtraData *pDest, NiCloningProcess &kCloning) {
     NiObject::CopyMembers(pDest, kCloning);

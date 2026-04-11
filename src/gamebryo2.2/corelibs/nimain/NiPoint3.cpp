@@ -44,10 +44,10 @@ uint *NiPoint3::InitSqrtTable() {
     // instead of... using += 0.whateverf;
     for (uint i = 0; i < 128; i++) {
         *fuckery = 0x3F800000 | (i << 16);
-        f = sqrtf(f);
+        f = sqrt(f);
         table[i] = *fuckery & ~0xFF800000;
         *fuckery = 0x40000000 | (i << 16);
-        f = sqrtf(f);
+        f = sqrt(f);
         table[i + 0x80] = *fuckery & ~0xFF800000;
         // the best part? going from 1 to 256 would've incremented the 3F80
         // over to 4000 anyways. why did they do this. what the hell.

@@ -9200,7 +9200,7 @@ FileAccess.cpp:
 	.data       start:0x8321E6C8 end:0x8321E6EC rename:.CRT$XCU
 	.data       start:0x832AECB0 end:0x832AECBC rename:.bss
 
-FrondEngine.cpp:
+lib/speedtree/FrondEngine.cpp:
 	.rdata      start:0x820DBFD0 end:0x820DC113
 	.rdata      start:0x821E2200 end:0x821E221C rename:.xdata$x
 	.pdata      start:0x822059D8 end:0x82205D40
@@ -9209,7 +9209,7 @@ FrondEngine.cpp:
 	.data       start:0x8321E4C4 end:0x8321E4E8 rename:.CRT$XCU
 	.data       start:0x832AEAD4 end:0x832AEAE0 rename:.bss
 
-IndexedGeometry.cpp:
+lib/speedtree/IndexedGeometry.cpp:
 	.rdata      start:0x820DC26C end:0x820DC270
 	.pdata      start:0x82205F08 end:0x82206148
 	.text       start:0x82992550 end:0x82998580
@@ -9217,7 +9217,7 @@ IndexedGeometry.cpp:
 	.data       start:0x8321E584 end:0x8321E5A8 rename:.CRT$XCU
 	.data       start:0x832AEBAC end:0x832AEBB8 rename:.bss
 
-LeafGeometry.cpp:
+lib/speedtree/LeafGeometry.cpp:
 	.rdata      start:0x820DC118 end:0x820DC11C
 	.pdata      start:0x82205D50 end:0x82205DC0
 	.text       start:0x8298A0B8 end:0x8298D2AC
@@ -9225,7 +9225,7 @@ LeafGeometry.cpp:
 	.data       start:0x8321E518 end:0x8321E53C rename:.CRT$XCU
 	.data       start:0x832AEB80 end:0x832AEB8C rename:.bss
 
-LeafInfo.cpp:
+lib/speedtree/LeafInfo.cpp:
 	.rdata      start:0x820DC2E0 end:0x820DC330
 	.pdata      start:0x822062B0 end:0x82206300
 	.text       start:0x8299D758 end:0x8299EB10
@@ -9233,7 +9233,7 @@ LeafInfo.cpp:
 	.data       start:0x8321E680 end:0x8321E6A4 rename:.CRT$XCU
 	.data       start:0x832AEC98 end:0x832AECA4 rename:.bss
 
-LeafLod.cpp:
+lib/speedtree/LeafLod.cpp:
 	.rdata      start:0x820DC400 end:0x820DC41A
 	.pdata      start:0x82206408 end:0x82206470
 	.pdata      start:0x82242678 end:0x82242680

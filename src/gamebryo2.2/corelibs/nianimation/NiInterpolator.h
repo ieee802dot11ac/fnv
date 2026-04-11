@@ -7,10 +7,10 @@
 class NiInterpolator : public NiObject {
 public:
     static const NiRTTI ms_RTTI;
-    static const unsigned char INVALID_BOOL;
+    static const u8 INVALID_BOOL;
     static const float INVALID_FLOAT;
     //   static const NiQuaternion INVALID_QUATERNION;
-    //   static const NiPoint3 INVALID_POINT3;
+    static const NiPoint3 INVALID_POINT3;
     //   static const NiColorA INVALID_COLORA;
 
     virtual const NiRTTI *GetRTTI() const { return &ms_RTTI; }

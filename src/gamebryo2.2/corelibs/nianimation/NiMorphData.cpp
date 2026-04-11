@@ -1,13 +1,14 @@
-#include "nimorphdata.h"
+#include "NiMorphData.h"
 #include "macros.h"
-#include "nimain/nifixedstring.h"
-#include "nimain/niobject.h"
-#include "nimain/nipoint3.h"
+#include "nianimation/NiInterpolator.h"
+#include "nimain/NiFixedString.h"
+#include "nimain/NiObject.h"
+#include "nimain/NiPoint3.h"
 #include "nimain/nistream.h"
 #include "nimain/nitarray.h"
-#include "nimain/niviewerstrings.h"
+#include "nimain/NiViewerStrings.h"
 
-NiMorphData::MorphTarget::MorphTarget() {}
+NiMorphData::MorphTarget::MorphTarget() : m_spLegacyInterpolator(nullptr) {}
 
 NiMorphData::MorphTarget::~MorphTarget() { delete m_aTargetVerts; }
 
@@ -30,6 +31,10 @@ void NiMorphData::MorphTarget::SaveBinary(NiStream &kStream, unsigned int uiNumV
         const float *verts = reinterpret_cast<const float *>(m_aTargetVerts);
         NiStreamSaveBinary<float>(kStream, verts, uiNumVerts * 3);
     }
+}
+
+NiInterpolator *NiMorphData::MorphTarget::GetLegacyInterpolator() {
+    return m_spLegacyInterpolator;
 }
 
 NiMorphData::NiMorphData() {

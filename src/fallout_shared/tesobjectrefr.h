@@ -4,7 +4,7 @@
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
 #include "fallout_shared/teschildcell.h"
 #include "fallout_shared/tesfile.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 #include "fallout_shared/tesglobal.h"
 #include "fallout_shared/tessound.h"
 

@@ -3,7 +3,7 @@
 #include <types.h>
 #include "nistream.h"
 
-extern "C" const float NI_INFINITY;
+static const float NI_INFINITY = 3.4028235e38;
 
 class NiPoint3 {
 public:

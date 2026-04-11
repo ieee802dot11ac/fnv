@@ -4,8 +4,6 @@
 #include <cmath>
 #include <cstring>
 
-extern "C" const float NI_INFINITY = 3.4028234e38f;
-
 const NiPoint3 NiPoint3::ZERO(0, 0, 0);
 const NiPoint3 NiPoint3::UNIT_X(1, 0, 0);
 const NiPoint3 NiPoint3::UNIT_Y(0, 1, 0);

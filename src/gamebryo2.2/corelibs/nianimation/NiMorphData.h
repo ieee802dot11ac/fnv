@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bscore/memorymanager.h"
+#include "nianimation/NiInterpolator.h"
 #include "nimain/NiFixedString.h"
 #include "nimain/NiObject.h"
 #include "nimain/NiPoint3.h"
@@ -21,8 +22,8 @@ public:
         void LoadBinary(NiStream &, uint);
         void SaveBinary(NiStream &, uint);
         void RegisterStreamables(NiStream &);
-        // NiInterpolator* GetLegacyInterpolator();
-        // void SetLegacyInterpolator(NiInterpolator*);
+        NiInterpolator *GetLegacyInterpolator();
+        void SetLegacyInterpolator(NiInterpolator *);
         float GetLegacyWeight() const;
         bool IsEqual(MorphTarget *, uint);
 
@@ -32,8 +33,7 @@ public:
         NiPoint3 *m_aTargetVerts; // 0x0
         NiFixedString m_kName; // 0x4
         float m_fLegacyWeight; // 0x8
-        // NiPointer<NiInterpolator> m_spLegacyInterpolator; // 0xc
-        u32 pad;
+        NiPointer<NiInterpolator> m_spLegacyInterpolator; // 0xc
     };
     static const NiRTTI ms_RTTI;
 

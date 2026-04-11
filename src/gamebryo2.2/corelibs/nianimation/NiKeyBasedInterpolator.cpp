@@ -1,7 +1,10 @@
-#include "nikeybasedinterpolator.h"
-#include "nianimation/nianimationkey.h"
-#include "nianimation/niinterpolator.h"
-#include "nimain/niviewerstrings.h"
+#include "NiKeyBasedInterpolator.h"
+#include "nianimation/NiAnimationKey.h"
+#include "nianimation/NiInterpolator.h"
+#include "nimain/NiRTTI.h"
+#include "nimain/NiViewerStrings.h"
+
+MAKERTTI(NiKeyBasedInterpolator, NiInterpolator)
 
 NiKeyBasedInterpolator::NiKeyBasedInterpolator() {}
 

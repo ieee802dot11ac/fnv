@@ -2,7 +2,7 @@
 
 #include "bscore/bsstring.h"
 #include "fallout_shared/baseformcomponent.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 
 class TESDescription : public BaseFormComponent {
 public:

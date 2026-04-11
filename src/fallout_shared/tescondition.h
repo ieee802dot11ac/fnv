@@ -2,7 +2,7 @@
 
 #include "fallout_shared/enums.h"
 #include "fallout_shared/tesconditionitem.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 
 class TESCondition {
 public:

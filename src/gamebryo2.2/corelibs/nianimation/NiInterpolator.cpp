@@ -1,12 +1,18 @@
-#include "nianimation/niinterpolator.h"
+#include "nianimation/NiInterpolator.h"
+#include "nimain/NiObject.h"
+#include "nimain/NiPoint3.h"
+#include "nimain/NiRTTI.h"
 #include "nimain/nicloningprocess.h"
-#include "nimain/niobject.h"
-#include "nimain/niviewerstrings.h"
+#include "nimain/NiViewerStrings.h"
 
+const NiPoint3
+    NiInterpolator::INVALID_POINT3(-3.4028235e38, -3.4028235e38, -3.4028235e38);
+const u8 NiInterpolator::INVALID_BOOL = 2;
 const float NiInterpolator::INVALID_FLOAT = -3.4028235e38;
-const float fuckyou = 3.4028235e38;
 
-NiInterpolator::NiInterpolator() { m_fLastTime = -fuckyou; }
+MAKERTTI(NiInterpolator, NiObject)
+
+NiInterpolator::NiInterpolator() { m_fLastTime = -NI_INFINITY; }
 
 NiInterpolator::~NiInterpolator() {}
 

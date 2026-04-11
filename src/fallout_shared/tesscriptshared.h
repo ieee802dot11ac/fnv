@@ -1,6 +1,6 @@
 #pragma once
 
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 #include "types.h"
 
 class Script;

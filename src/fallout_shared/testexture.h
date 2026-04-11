@@ -2,7 +2,8 @@
 
 #include "bscore/bsstring.h"
 #include "fallout_shared/baseformcomponent.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
+#include "fallout_shared/tesobjectrefr.h"
 
 class TESTexture : public BaseFormComponent {
 public:

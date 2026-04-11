@@ -1,7 +1,7 @@
 #pragma once
 
 #include "fallout_shared/bipedanim.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 #include "nimain/NiAVObject.h"
 #include "nimain/ninpshortpoint3.h"
 

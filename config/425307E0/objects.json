@@ -85,13 +85,12 @@
 			"fallout/misc/saveload/BGSLoadGameBuffer.cpp": "NonMatching",
 			"fallout/misc/saveload/BGSSaveFormBuffer.cpp": "NonMatching",
 			"fallout/misc/saveload/BGSSaveLoadHeader.cpp": "NonMatching",
-			"fallout_shared/gridarray.cpp": "NonMatching",
-			"fallout_shared/gridcell.cpp": "NonMatching",
+			"fallout_shared/GridArray.cpp": "NonMatching",
+			"fallout_shared/GridCell.cpp": "NonMatching",
 			"fallout_shared/magic/MagicSystem.cpp": "NonMatching",
 			"fallout_shared/TESForm.cpp": "NonMatching",
 			"fallout_shared/TESObjectREFR.cpp": "NonMatching",
 			"fallout_shared/TESScript.cpp": "NonMatching",
-			"remotelog/avltree.cpp": "NonMatching",
 			"remotelog/rlog_client.cpp": "NonMatching",
 			"remotelog/socket.cpp": "NonMatching"
 		}
@@ -110,6 +109,14 @@
 			"bsaudio/xenon/BSXenonAudioListener.cpp": "NonMatching",
 			"bshavok/bhkBinaryAction.cpp": "NonMatching",
 			"bsshader/BSShader.cpp": "NonMatching"
+		}
+	},
+	"utils": {
+		"progress_category": "newvegas",
+		"mw_version": "X360/16.00.10224.00",
+		"cflags": "base",
+		"objects": {
+			"bssystemutilities/BSGameDataSystemUtility.cpp": "NonMatching"
 		}
 	},
 	"zlib": {

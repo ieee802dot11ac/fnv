@@ -4,7 +4,7 @@
 #include "fallout/misc/saveload/bgssavegamebuffer.h"
 #include "fallout/misc/saveload/bgssaveloadfile.h"
 #include "fallout/misc/saveload/bgssaveloadstructs.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 
 class BGSSaveFormBuffer : public BGSSaveGameBuffer {
 public:
@@ -12,7 +12,7 @@ public:
     BGSSaveFormBuffer();
     void Save(BGSSaveLoadFile *);
     void SetHeader(unsigned int, BGSChangeFlags, ENUM_FORM_ID, unsigned char);
-    BGSChangeFlags GetChangeFlags();
+    BGSChangeFlags GetChangeFlags() { return Header.iChangeFlags; }
     void SetChangeFlags(BGSChangeFlags);
     void AddChange(int);
     void RemoveChange(int);

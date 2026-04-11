@@ -6,7 +6,7 @@ class BGSChangeFlags {
 public:
     BGSChangeFlags(int);
     BGSChangeFlags() { iFlags = 0; }
-    bool CheckFlags(int);
+    bool CheckFlags(int i) { return iFlags & i; }
     bool CheckFlagsExact(int);
     bool CheckFlagsExclusive(int);
     void SetFlags(int);

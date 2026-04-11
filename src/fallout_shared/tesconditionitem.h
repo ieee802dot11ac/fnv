@@ -1,6 +1,7 @@
 #pragma once
 
 #include "fallout_shared/tesglobal.h"
+#include "fallout_shared/tesobjectrefr.h"
 #include "fallout_shared/tesscriptshared.h"
 
 struct CONDITION_ITEM_DATA { /* Size=0x1c */

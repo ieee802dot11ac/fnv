@@ -1,6 +1,7 @@
 #pragma once
 
 #define MAKERTTI(cls, base) const NiRTTI cls ::ms_RTTI(#cls, &base::ms_RTTI);
+#define MAKEROOTRTTI(cls) const NiRTTI cls ::ms_RTTI(#cls, nullptr);
 
 class NiRTTI {
 public:

@@ -6,6 +6,8 @@
 #include "nistream.h"
 #include "nicloningprocess.h"
 
+MAKEROOTRTTI(NiObject)
+
 NiObject::NiObject() {}
 
 NiObject::~NiObject() {}

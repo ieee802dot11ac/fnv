@@ -3,7 +3,7 @@
 #include "bscore/bsstring.h"
 #include "bssystem/bsfile.h"
 #include "fallout_shared/baseformcomponent.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 
 class TESTextureList {
 public:

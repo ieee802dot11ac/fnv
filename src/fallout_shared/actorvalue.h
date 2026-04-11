@@ -2,7 +2,7 @@
 
 #include "bscore/bsstring.h"
 #include "fallout_shared/tesfile.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 class ActorValueInfo;
 class ActorValueOwner;
 

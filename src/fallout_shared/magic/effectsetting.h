@@ -3,7 +3,7 @@
 #include "fallout_shared/actorvalue.h"
 #include "fallout_shared/magic/effectarchetype.h"
 #include "fallout_shared/tesdescription.h"
-#include "fallout_shared/tesform.h"
+#include "fallout_shared/TESForm.h"
 #include "fallout_shared/tesfullname.h"
 #include "fallout_shared/tesicon.h"
 #include "fallout_shared/tesmodel.h"

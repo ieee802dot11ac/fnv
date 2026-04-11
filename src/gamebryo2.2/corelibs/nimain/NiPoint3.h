@@ -3,12 +3,18 @@
 #include <types.h>
 #include "nistream.h"
 
+extern "C" const float NI_INFINITY;
+
 class NiPoint3 {
 public:
     float x; // 0x0
     float y; // 0x4
     float z; // 0x8
-    NiPoint3(float, float, float);
+    NiPoint3(float _x, float _y, float _z) {
+        x = _x;
+        y = _y;
+        z = _z;
+    }
     NiPoint3();
     float &operator[](int);
     float const &operator[](int) const;

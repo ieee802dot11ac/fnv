@@ -10118,40 +10118,40 @@ ZeroOverheadHeap.cpp:
 	.pdata      start:0x82208430 end:0x82208468
 	.text       start:0x829FC978 end:0x829FCD14
 
-BSNiAllocator.cpp:
+gamebryo2.2/corelibs/nisystem/BSNiAllocator.cpp:
 	.rdata      start:0x820E41F4 end:0x820E421C
 	.pdata      start:0x822087F8 end:0x82208838
 	.text       start:0x82A03618 end:0x82A03B8C
 
-NiBinaryStream.cpp:
+gamebryo2.2/corelibs/nisystem/NiBinaryStream.cpp:
 	.rdata      start:0x820E4034 end:0x820E4048
 	.pdata      start:0x82208798 end:0x822087B8
 	.text       start:0x82A02B10 end:0x82A03028
 	.data       start:0x832B1651 end:0x832B1652 rename:.bss
 
-NiFile.cpp:
+gamebryo2.2/corelibs/nisystem/NiFile.cpp:
 	.rdata      start:0x820E3FB0 end:0x820E4032
 	.pdata      start:0x82208738 end:0x82208798
 	.text       start:0x82A024C8 end:0x82A02B10
 	.data       start:0x8325B130 end:0x8325B140
 
-NiFile_Xenon.cpp:
+gamebryo2.2/corelibs/nisystem/NiFile_Xenon.cpp:
 	.rdata      start:0x820E3ED8 end:0x820E3FAE
 	.pdata      start:0x822086B0 end:0x82208738
 	.text       start:0x82A00710 end:0x82A024C4
 	.data       start:0x8325B114 end:0x8325B130
 	.data       start:0x832B164C end:0x832B1651 rename:.bss
 
-NiFilename.cpp:
+gamebryo2.2/corelibs/nisystem/NiFilename.cpp:
 	.pdata      start:0x822088B0 end:0x822088D0
 	.text       start:0x82A04428 end:0x82A04858
 
-NiInitOptions.cpp:
+gamebryo2.2/corelibs/nisystem/NiInitOptions.cpp:
 	.rdata      start:0x820E412C end:0x820E41F1
 	.pdata      start:0x822087E0 end:0x822087F8
 	.text       start:0x82A03460 end:0x82A03618
 
-NiLog.cpp:
+gamebryo2.2/corelibs/nisystem/NiLog.cpp:
 	.rdata      start:0x820E421C end:0x820E4221
 	.pdata      start:0x82208838 end:0x82208868
 	.pdata      start:0x822402C0 end:0x822402D8
@@ -10162,12 +10162,12 @@ NiLog.cpp:
 	.data       start:0x8321E91C end:0x8321E928 rename:.CRT$XCU
 	.data       start:0x832B16F0 end:0x832B2D14 rename:.bss
 
-NiLog_Xenon.cpp:
+gamebryo2.2/corelibs/nisystem/NiLog_Xenon.cpp:
 	.rdata      start:0x820E430C end:0x820E430E
 	.pdata      start:0x82208950 end:0x82208968
 	.text       start:0x82A05748 end:0x82A05804
 
-NiLogBehavior.cpp:
+gamebryo2.2/corelibs/nisystem/NiLogBehavior.cpp:
 	.rdata      start:0x820E4304 end:0x820E430C
 	.pdata      start:0x82208948 end:0x82208950
 	.pdata      start:0x822402D8 end:0x822402E0
@@ -10179,86 +10179,86 @@ NiLogBehavior.cpp:
 	.data       start:0x8325B144 end:0x8325B148
 	.data       start:0x832B2E3C end:0x832B2E40 rename:.bss
 
-NiMemManager.cpp:
+gamebryo2.2/corelibs/nisystem/NiMemManager.cpp:
 	.rdata      start:0x820E4048 end:0x820E40B3
 	.pdata      start:0x822087B8 end:0x822087C8
 	.text       start:0x82A03028 end:0x82A0312C
 	.data       start:0x832B1654 end:0x832B1658 rename:.bss
 
-NiMemObject.cpp:
+gamebryo2.2/corelibs/nisystem/NiMemObject.cpp:
 	.pdata      start:0x82208678 end:0x82208698
 	.text       start:0x82A003F0 end:0x82A00610
 
-NiMemoryDefines.cpp:
+gamebryo2.2/corelibs/nisystem/NiMemoryDefines.cpp:
 	.pdata      start:0x82208600 end:0x82208658
 	.text       start:0x829FFBA0 end:0x82A001E8
 
-NiMemStream.cpp:
+gamebryo2.2/corelibs/nisystem/NiMemStream.cpp:
 	.rdata      start:0x8219BCE8 end:0x8219BD9E
 	.pdata      start:0x822248F0 end:0x82224940
 	.text       start:0x82FE0D00 end:0x82FE13CC
 
-NiMessageBox.cpp:
+gamebryo2.2/corelibs/nisystem/NiMessageBox.cpp:
 	.data       start:0x8325B140 end:0x8325B144
 
-NiPath.cpp:
+gamebryo2.2/corelibs/nisystem/NiPath.cpp:
 	.rdata      start:0x820E4230 end:0x820E4238
 	.pdata      start:0x822088D0 end:0x82208900
 	.text       start:0x82A04858 end:0x82A04DD4
 
-NiPath_Xenon.cpp:
+gamebryo2.2/corelibs/nisystem/NiPath_Xenon.cpp:
 	.rdata      start:0x820E4310 end:0x820E4313
 	.pdata      start:0x82208968 end:0x82208980
 	.text       start:0x82A05808 end:0x82A05A18
 
-NiSearchPath.cpp:
+gamebryo2.2/corelibs/nisystem/NiSearchPath.cpp:
 	.rdata      start:0x820E4224 end:0x820E4230
 	.pdata      start:0x82208868 end:0x82208880
 	.text       start:0x82A03F48 end:0x82A04258
 	.data       start:0x832B2D18 end:0x832B2E20 rename:.bss
 
-NiSmallObjectAllocator.cpp:
+gamebryo2.2/corelibs/nisystem/NiSmallObjectAllocator.cpp:
 	.pdata      start:0x82208980 end:0x822089E8
 	.text       start:0x82A05A18 end:0x82A0661C
 
-NiStandardAllocator.cpp:
+gamebryo2.2/corelibs/nisystem/NiStandardAllocator.cpp:
 	.rdata      start:0x820E4238 end:0x820E4304
 	.pdata      start:0x82208900 end:0x82208948
 	.text       start:0x82A04DD8 end:0x82A056CC
 	.data       start:0x832B2E38 end:0x832B2E3C rename:.bss
 
-NiStaticDataManager.cpp:
+gamebryo2.2/corelibs/nisystem/NiStaticDataManager.cpp:
 	.rdata      start:0x820E40B4 end:0x820E4129
 	.pdata      start:0x822087C8 end:0x822087E0
 	.text       start:0x82A03130 end:0x82A0345C
 	.data       start:0x832B1658 end:0x832B16EC rename:.bss
 
-NiSystem.cpp:
+gamebryo2.2/corelibs/nisystem/NiSystem.cpp:
 	.pdata      start:0x82208658 end:0x82208678
 	.text       start:0x82A001E8 end:0x82A003EC
 	.data       start:0x8325B0C4 end:0x8325B113
 	.data       start:0x832B1638 end:0x832B1648 rename:.bss
 
-NiSystemDesc.cpp:
+gamebryo2.2/corelibs/nisystem/NiSystemDesc.cpp:
 	.rdata      start:0x820E3E60 end:0x820E3ED5
 	.pdata      start:0x82208698 end:0x822086B0
 	.text       start:0x82A00610 end:0x82A0070C
 	.data       start:0x832B1648 end:0x832B164C rename:.bss
 
-NiSystemPCH.cpp:
+gamebryo2.2/corelibs/nisystem/NiSystemPCH.cpp:
 	.data       start:0x832B2E34 end:0x832B2E38 rename:.bss
 
-NiSystemSDM.cpp:
+gamebryo2.2/corelibs/nisystem/NiSystemSDM.cpp:
 	.pdata      start:0x82208880 end:0x82208890
 	.text       start:0x82A04258 end:0x82A042F8
 	.data       start:0x832B2E20 end:0x832B2E30 rename:.bss
 
-NiThread.cpp:
+gamebryo2.2/corelibs/nisystem/NiThread.cpp:
 	.pdata      start:0x822088A8 end:0x822088B0
 	.text       start:0x82A04400 end:0x82A04428
 	.data       start:0x832B2E30 end:0x832B2E31 rename:.bss
 
-NiThread_Xenon.cpp:
+gamebryo2.2/corelibs/nisystem/NiThread_Xenon.cpp:
 	.rdata      start:0x821E1AD8 end:0x821E1AEC rename:.xdata
 	.pdata      start:0x82208890 end:0x822088A8
 	.text       start:0x82A042F8 end:0x82A04400
@@ -19978,7 +19978,7 @@ NiBackToFrontAccumulator.cpp:
 	.data       start:0x8321FF70 end:0x8321FF74 rename:.CRT$XCU
 	.data       start:0x8332A31C end:0x8332A324 rename:.bss
 
-NiBillboardNode.cpp:
+gamebryo2.2/corelibs/nimain/NiBillboardNode.cpp:
 	.rdata      start:0x82144ABC end:0x82144C28
 	.pdata      start:0x8221DFF0 end:0x8221E078
 	.pdata      start:0x82241FE8 end:0x82241FF0
@@ -19987,7 +19987,7 @@ NiBillboardNode.cpp:
 	.data       start:0x8321FE64 end:0x8321FE68 rename:.CRT$XCU
 	.data       start:0x83328DBC end:0x83328DC4 rename:.bss
 
-NiBinaryExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiBinaryExtraData.cpp:
 	.rdata      start:0x82144C48 end:0x82144D32
 	.pdata      start:0x8221E098 end:0x8221E0D8
 	.pdata      start:0x82241FF0 end:0x82241FF8
@@ -19996,7 +19996,7 @@ NiBinaryExtraData.cpp:
 	.data       start:0x8321FE68 end:0x8321FE6C rename:.CRT$XCU
 	.data       start:0x83328DCC end:0x83328DD4 rename:.bss
 
-NiBooleanExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiBooleanExtraData.cpp:
 	.rdata      start:0x8214C178 end:0x8214C2B5
 	.pdata      start:0x8221FB20 end:0x8221FB58
 	.pdata      start:0x82242280 end:0x82242288
@@ -20005,18 +20005,18 @@ NiBooleanExtraData.cpp:
 	.data       start:0x8321FFD0 end:0x8321FFD4 rename:.CRT$XCU
 	.data       start:0x8332A3F8 end:0x8332A400 rename:.bss
 
-NiBound.cpp:
+gamebryo2.2/corelibs/nimain/NiBound.cpp:
 	.rdata      start:0x82144D34 end:0x82144DB5
 	.pdata      start:0x8221E0D8 end:0x8221E0E8
 	.text       start:0x82E6DAF0 end:0x82E6DBE0
 	.data       start:0x8326A61C end:0x8326A624
 
-NiBound_Xenon.cpp:
+gamebryo2.2/corelibs/nimain/NiBound_Xenon.cpp:
 	.rdata      start:0x82144EE0 end:0x82144F00
 	.pdata      start:0x8221E140 end:0x8221E148
 	.text       start:0x82E6E280 end:0x82E6F074
 
-NiBSPNode.cpp:
+gamebryo2.2/corelibs/nimain/NiBSPNode.cpp:
 	.rdata      start:0x8214BFE8 end:0x8214C178
 	.pdata      start:0x8221FAB8 end:0x8221FB20
 	.pdata      start:0x82242278 end:0x82242280
@@ -20025,7 +20025,7 @@ NiBSPNode.cpp:
 	.data       start:0x8321FFCC end:0x8321FFD0 rename:.CRT$XCU
 	.data       start:0x8332A3F0 end:0x8332A3F8 rename:.bss
 
-NiCamera.cpp:
+gamebryo2.2/corelibs/nimain/NiCamera.cpp:
 	.rdata      start:0x82142B70 end:0x82142DC5
 	.pdata      start:0x8221D838 end:0x8221D8F0
 	.pdata      start:0x82241D70 end:0x82241D78
@@ -20034,7 +20034,7 @@ NiCamera.cpp:
 	.data       start:0x8321FD28 end:0x8321FD2C rename:.CRT$XCU
 	.data       start:0x83327B8C end:0x83327B94 rename:.bss
 
-NiCollisionObject.cpp:
+gamebryo2.2/corelibs/nimain/NiCollisionObject.cpp:
 	.rdata      start:0x82145038 end:0x821450FA
 	.pdata      start:0x8221E160 end:0x8221E1B8
 	.pdata      start:0x82242008 end:0x82242010
@@ -20043,7 +20043,7 @@ NiCollisionObject.cpp:
 	.data       start:0x8321FE78 end:0x8321FE7C rename:.CRT$XCU
 	.data       start:0x83328DF4 end:0x83328DFC rename:.bss
 
-NiColor.cpp:
+gamebryo2.2/corelibs/nimain/NiColor.cpp:
 	.rdata      start:0x82141C84 end:0x82141D42
 	.pdata      start:0x8221D418 end:0x8221D440
 	.text       start:0x82E47378 end:0x82E47658
@@ -20064,7 +20064,7 @@ NiCompUtility.cpp:
 	.rdata      start:0x8214947C end:0x82149480
 	.text       start:0x82E9A818 end:0x82E9A8B4
 
-NiCullingProcess.cpp:
+gamebryo2.2/corelibs/nimain/NiCullingProcess.cpp:
 	.rdata      start:0x82141C20 end:0x82141C81
 	.pdata      start:0x8221D3E0 end:0x8221D418
 	.pdata      start:0x82241D10 end:0x82241D18
@@ -20073,7 +20073,7 @@ NiCullingProcess.cpp:
 	.data       start:0x8321FCAC end:0x8321FCB0 rename:.CRT$XCU
 	.data       start:0x83327A10 end:0x83327A18 rename:.bss
 
-NiCullingProperty.cpp:
+gamebryo2.2/corelibs/nimain/NiCullingProperty.cpp:
 	.rdata      start:0x82149CE8 end:0x82149E3C
 	.pdata      start:0x8221F258 end:0x8221F288
 	.pdata      start:0x822421A8 end:0x822421B8
@@ -20406,7 +20406,7 @@ NiMaterialResource.cpp:
 	.pdata      start:0x8221F238 end:0x8221F258
 	.text       start:0x82EA0E18 end:0x82EA1350
 
-NiMath.cpp:
+gamebryo2.2/corelibs/nimain/NiMath.cpp:
 	.rdata      start:0x8214529C end:0x821452B4
 	.pdata      start:0x8221E288 end:0x8221E298
 	.text       start:0x82E716F8 end:0x82E71A98
@@ -20439,7 +20439,7 @@ NiNIFImageReader.cpp:
 	.pdata      start:0x8221F120 end:0x8221F158
 	.text       start:0x82E9C168 end:0x82E9C738
 
-NiNode.cpp:
+gamebryo2.2/corelibs/nimain/NiNode.cpp:
 	.rdata      start:0x821418E0 end:0x82141A8B
 	.pdata      start:0x8221D258 end:0x8221D370
 	.pdata      start:0x82241D00 end:0x82241D08
@@ -20903,7 +20903,7 @@ NiStencilProperty.cpp:
 	.data       start:0x8321FD20 end:0x8321FD28 rename:.CRT$XCU
 	.data       start:0x83327B80 end:0x83327B8C rename:.bss
 
-NiStream.cpp:
+gamebryo2.2/corelibs/nimain/NiStream.cpp:
 	.rdata      start:0x82140CA8 end:0x8214129C
 	.pdata      start:0x8221CD18 end:0x8221CFF8
 	.pdata      start:0x82241CD0 end:0x82241CE0
@@ -20914,12 +20914,12 @@ NiStream.cpp:
 	.data       start:0x8321FC74 end:0x8321FC8C rename:.CRT$XCU
 	.data       start:0x83327780 end:0x83327880 rename:.bss
 
-NiString.cpp:
+gamebryo2.2/corelibs/nimain/NiString.cpp:
 	.rdata      start:0x82149418 end:0x8214947B
 	.pdata      start:0x8221F010 end:0x8221F060
 	.text       start:0x82E9A298 end:0x82E9A818
 
-NiStringExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiStringExtraData.cpp:
 	.rdata      start:0x82143688 end:0x821437D6
 	.pdata      start:0x8221DA78 end:0x8221DAC8
 	.pdata      start:0x82241D90 end:0x82241D98
@@ -20928,7 +20928,7 @@ NiStringExtraData.cpp:
 	.data       start:0x8321FD38 end:0x8321FD3C rename:.CRT$XCU
 	.data       start:0x83327BAC end:0x83327BB4 rename:.bss
 
-NiStringsExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiStringsExtraData.cpp:
 	.rdata      start:0x8214AF68 end:0x8214B0DB
 	.pdata      start:0x8221F720 end:0x8221F768
 	.pdata      start:0x82242210 end:0x82242218
@@ -20937,7 +20937,7 @@ NiStringsExtraData.cpp:
 	.data       start:0x8321FF98 end:0x8321FF9C rename:.CRT$XCU
 	.data       start:0x8332A390 end:0x8332A398 rename:.bss
 
-NiSwitchNode.cpp:
+gamebryo2.2/corelibs/nimain/NiSwitchNode.cpp:
 	.rdata      start:0x82148F00 end:0x821490B5
 	.pdata      start:0x8221EE80 end:0x8221EF28
 	.pdata      start:0x82242150 end:0x82242158
@@ -20946,7 +20946,7 @@ NiSwitchNode.cpp:
 	.data       start:0x8321FF28 end:0x8321FF2C rename:.CRT$XCU
 	.data       start:0x8332A184 end:0x8332A18C rename:.bss
 
-NiSwitchStringExtraData.cpp:
+gamebryo2.2/corelibs/nimain/NiSwitchStringExtraData.cpp:
 	.rdata      start:0x8214ADC8 end:0x8214AF66
 	.pdata      start:0x8221F6D8 end:0x8221F720
 	.pdata      start:0x82242208 end:0x82242210
@@ -21145,7 +21145,7 @@ NiVertWeightsExtraData.cpp:
 	.data       start:0x8321FF50 end:0x8321FF54 rename:.CRT$XCU
 	.data       start:0x8332A1C4 end:0x8332A1CC rename:.bss
 
-NiViewerStrings.cpp:
+gamebryo2.2/corelibs/nimain/NiViewerStrings.cpp:
 	.rdata      start:0x82144848 end:0x8214491A
 	.pdata      start:0x8221DF50 end:0x8221DFA8
 	.text       start:0x82E6A4F0 end:0x82E6AAA4

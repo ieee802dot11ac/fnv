@@ -1,7 +1,7 @@
 #pragma once
 
 #include "NiObject.h"
-#include "niextradata.h"
+#include "NiExtraData.h"
 #include "NiFixedString.h"
 #include "nitimecontroller.h"
 

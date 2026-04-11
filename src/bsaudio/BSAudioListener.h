@@ -1,7 +1,7 @@
 #pragma once
 
 #include "bscore/memorymanager.h"
-#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
+#include "nimain/NiPoint3.h"
 
 class BSAudioListener {
 public:

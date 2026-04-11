@@ -2,6 +2,8 @@
 #include "fallout_shared/tesform.h"
 #include <math.h>
 
+Calendar appCalendar;
+
 void Calendar::ClearPointers() {
     pGameYear = nullptr;
     pGameMonth = nullptr;

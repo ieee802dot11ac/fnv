@@ -1225,7 +1225,7 @@ MemoryLevelManager.cpp:
 	.data       start:0x83251150 end:0x8325117D
 	.data       start:0x83296E84 end:0x83296F34 rename:.bss
 
-Main.cpp:
+fallout/misc/Main.cpp:
 	.rdata      start:0x820998F0 end:0x8209ADCA
 	.rdata      start:0x821CDF98 end:0x821CE1E8 rename:.rdata$r
 	.pdata      start:0x821F8D68 end:0x821F9068
@@ -1251,7 +1251,7 @@ GarbageCollector.cpp:
 	.data       start:0x83250940 end:0x83250BD2
 	.data       start:0x83296A4C end:0x83296AF4 rename:.bss
 
-calendar.cpp:
+fallout/misc/calendar.cpp:
 	.rdata      start:0x820995A0 end:0x820995EF
 	.pdata      start:0x821F8C80 end:0x821F8CA0
 	.pdata      start:0x8223BAC0 end:0x8223BB68
@@ -21962,7 +21962,7 @@ typinfo.cpp:
 	.pdata      start:0x8221FD88 end:0x8221FD90
 	.text       start:0x82EB3C90 end:0x82EB3CE8
 
-throw.cpp:
+xdk/eh/throw.cpp:
 	.rdata      start:0x8214C978 end:0x8214C998
 	.pdata      start:0x82220220 end:0x82220228
 	.text       start:0x82EBD040 end:0x82EBD0C4

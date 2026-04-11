@@ -1,9 +1,10 @@
 #pragma once
 
-#include "bscore/memorymanager.h"
+#include "bscore/BSCriticalSection.h"
 #include <types.h>
-#include "bsaudio/bssoundhandle.h"
-#include "gamebryo2.2/corelibs/nimain/niavobject.h"
+#include "bscore/memorymanager.h"
+#include "bsaudio/BSSoundHandle.h"
+#include "nimain/NiAVObject.h"
 
 enum SOUND_MSG {
     MINVALID_MSG = 0x0000,
@@ -310,11 +311,11 @@ private:
     uint iCurrentCachSize; // 0x0a0
     uint iWeatherFlags; // 0x0a4
     float fCurrentGamehour; // 0x0a8
-    // BSCriticalSection MessageCritSection; // 0x0ac
-    // BSCriticalSection StateCritSection; // 0x0d4
-    // BSCriticalSection CacheCritSection; // 0x0fc
-    // BSCriticalSection ProcessingCritSection; // 0x124
-    // BSCriticalSection CacheLoadTaskCritSection; // 0x14c
+    BSCriticalSection MessageCritSection; // 0x0ac
+    BSCriticalSection StateCritSection; // 0x0d4
+    BSCriticalSection CacheCritSection; // 0x0fc
+    BSCriticalSection ProcessingCritSection; // 0x124
+    BSCriticalSection CacheLoadTaskCritSection; // 0x14c
     // NiTPointerList<AudioLoadTask *> CacheLoadTaskList; // 0x174
     uint iDelayTimerDelta; // 0x180
     bool bPrecacheCompleted; // 0x184

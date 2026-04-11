@@ -8,8 +8,8 @@ public:
     ~BSAudioSynchTimer();
     void Update();
     void Restart();
-    void Pause();
-    void UnPause();
+    void Pause() { iFlags |= 1; }
+    void UnPause() { iFlags &= ~1; }
     bool IsPaused() { return iFlags & 1; }
     int GetSynchTime();
 

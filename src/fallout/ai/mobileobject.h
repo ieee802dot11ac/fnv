@@ -1,6 +1,6 @@
 #pragma once
 
-#include "bsaudio/bssoundhandle.h"
+#include "bsaudio/BSSoundHandle.h"
 #include "fallout/ai/baseprocess.h"
 #include "fallout_shared/tesform.h"
 #include "fallout_shared/tesobjectrefr.h"

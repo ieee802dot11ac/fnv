@@ -1,5 +1,5 @@
-#include "bsaudiomanager.h"
-#include "bsaudio/bsaudio.h"
+#include "BSAudioManager.h"
+#include "bsaudio/BSAudio.h"
 
 BSAudioManager &BSAudioManager::QInstance() {
     static BSAudioManager s_Instance;
@@ -32,7 +32,7 @@ void BSAudioManager::Update(bool abPlayGameWorldSounds) {
         BSAudio::QInstance().Precache("UIMenuPrevNext", 1);
         BSAudio::QInstance().Precache("WPNRifleAssaultFire3D", 0x102);
         BSAudio::QInstance().Precache("FXBulletImpactConc", 0x102);
-        BSAudio::QInstance().Precache("UIScreenLoadMicroFiche01", 0x101);
+        BSAudio::QInstance().Precache("UILoadScreenMicroFiche01", 0x101);
         BSAudio::QInstance().Precache("UILoadScreenInitial", 0x101);
         bPrecacheCompleted = true;
     }
@@ -197,7 +197,10 @@ void BSAudioManager::KillAllOfType(uint aiTargetType, uint aiFadeTimeMS) {}
 //     uint aiSoundHash, uint aiDirectoryHash, uint aiFlagsToApply
 // ) {}
 
-bool BSAudioManager::IsInCache(uint aiSoundHash, bool abFuzzy) { return 0; }
+bool BSAudioManager::IsInCache(uint aiSoundHash, bool abFuzzy) {
+    if (aiSoundHash == 0)
+        return 0;
+}
 
 void BSAudioManager::Precache(char *apToCache, uint aiFlags) {}
 
@@ -209,7 +212,14 @@ void BSAudioManager::Precache(
 
 // void BSAudioManager::Precache(BSGameSound *apToCache) {}
 
-void BSAudioManager::Process() {}
+void BSAudioManager::Process() {
+    BSAudio::QInstance().SynchTimerUpdate();
+    if (ProcessingCritSection.TryLock()) {
+        QInstance().ProcessMessages();
+        QInstance().ProcessSoundUpdates();
+        ProcessingCritSection.Unlock();
+    }
+}
 
 void BSAudioManager::ProcessMessages() {}
 

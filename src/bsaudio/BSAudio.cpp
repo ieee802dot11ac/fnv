@@ -1,9 +1,11 @@
-#include "bsaudio.h"
-#include "bsaudio/bsaudiolistener.h"
-#include "bsaudio/bsaudiomanager.h"
-#include "bsaudio/bssoundhandle.h"
+#include "BSAudio.h"
+#include "bsaudio/BSAudioListener.h"
+#include "bsaudio/BSAudioManager.h"
+#include "bsaudio/BSSoundHandle.h"
 #include "bscore/memorycontexttracker.h"
-#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
+#include "nimain/NiPoint3.h"
+
+BSAudio *BSAudio::pAudioInstance;
 
 BSAudio::BSAudio() {
     bAudioEnabled = false;

@@ -5,8 +5,8 @@
 #include "bsaudio/BSAudioSynchTimer.h"
 #include "bsaudio/BSAudioListener.h"
 #include "bscore/memorymanager.h"
-#include "gamebryo2.2/corelibs/nimain/nipoint3.h"
-#include "gamebryo2.2/corelibs/nimain/niavobject.h"
+#include "nimain/NiPoint3.h"
+#include "nimain/NiAVObject.h"
 
 class BSAudio { /* Size=0x38 */
     //   public: static SettingT<INISettingCollection> fDawnTime;
@@ -107,7 +107,7 @@ public:
     void PauseSynchTimer();
     void UnPauseSynchTimer();
     bool IsSynchTimerPaused();
-    void SynchTimerUpdate();
+    void SynchTimerUpdate() { SynchTimer.Update(); }
     void SetMusicStartOffset(uint);
     uint GetMusicStartOffset();
     void SetMusicSeek(bool);

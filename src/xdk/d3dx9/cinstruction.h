@@ -1,7 +1,7 @@
 #pragma once
 
-#include "d3d9i/calloc.h"
-#include "d3d9i/cnode.h"
+#include "d3dx9/calloc.h"
+#include "d3dx9/cnode.h"
 #include "types.h"
 #include <cstddef>
 

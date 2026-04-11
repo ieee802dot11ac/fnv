@@ -1,6 +1,6 @@
 #pragma once
 
-#include "d3d9i/calloc.h"
+#include "d3dx9/calloc.h"
 
 namespace D3DXShader {
     class CArgument;

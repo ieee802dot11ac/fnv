@@ -1,6 +1,7 @@
 #pragma once
 
 #include "types.h"
+
 namespace D3DXCore {
     class CAlloc { /* Size=0x18 */
     protected:

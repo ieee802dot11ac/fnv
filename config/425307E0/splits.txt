@@ -4297,7 +4297,7 @@ Atmosphere.cpp:
 	.data       start:0x8323C9A0 end:0x8323C9F4
 	.data       start:0x8328EB9C end:0x8328EC04 rename:.bss
 
-XBlendSettings.cpp:
+fallout_shared/havok/XBlendSettings.cpp:
 	.rdata      start:0x8204F190 end:0x8204F692
 	.rdata      start:0x821C3210 end:0x821C32B0 rename:.rdata$r
 	.pdata      start:0x821EEF18 end:0x821EEF40
@@ -4309,7 +4309,7 @@ XBlendSettings.cpp:
 	.data       start:0x8323C650 end:0x8323C99B
 	.data       start:0x8328EB8C end:0x8328EB9C rename:.bss
 
-ViewCaster.cpp:
+fallout_shared/havok/ViewCaster.cpp:
 	.rdata      start:0x8204F070 end:0x8204F18E
 	.pdata      start:0x821EEEF0 end:0x821EEF18
 	.pdata      start:0x8222E820 end:0x8222E8E8
@@ -4320,12 +4320,12 @@ ViewCaster.cpp:
 	.data       start:0x8323C600 end:0x8323C650
 	.data       start:0x8328EB20 end:0x8328EB8C rename:.bss
 
-TESWindListener.cpp:
+fallout_shared/havok/TESWindListener.cpp:
 	.rdata      start:0x8204F050 end:0x8204F070
 	.pdata      start:0x821EEEE8 end:0x821EEEF0
 	.text       start:0x82468890 end:0x824688F8
 
-TESWaterListener.cpp:
+fallout_shared/havok/TESWaterListener.cpp:
 	.rdata      start:0x8204EC60 end:0x8204F048
 	.rdata      start:0x821C2FD0 end:0x821C3210 rename:.rdata$r
 	.pdata      start:0x821EEDE0 end:0x821EEEE8
@@ -4338,7 +4338,7 @@ TESWaterListener.cpp:
 	.data       start:0x8323C460 end:0x8323C5F3
 	.data       start:0x8328EAAC end:0x8328EB20 rename:.bss
 
-TESTrapListener.cpp:
+fallout_shared/havok/TESTrapListener.cpp:
 	.rdata      start:0x8204E930 end:0x8204EC60
 	.rdata      start:0x821C2C48 end:0x821C2FD0 rename:.rdata$r
 	.pdata      start:0x821EECF8 end:0x821EEDE0
@@ -4349,7 +4349,7 @@ TESTrapListener.cpp:
 	.data       start:0x8323C2B0 end:0x8323C454
 	.data       start:0x8328EA44 end:0x8328EAAC rename:.bss
 
-TEShavokUtilities.cpp:
+fallout_shared/havok/TEShavokUtilities.cpp:
 	.rdata      start:0x8204E8F0 end:0x8204E92C
 	.pdata      start:0x821EEC68 end:0x821EECF8
 	.pdata      start:0x8222E618 end:0x8222E6C0
@@ -4359,7 +4359,7 @@ TEShavokUtilities.cpp:
 	.data       start:0x8323C190 end:0x8323C2B0
 	.data       start:0x8328E9DC end:0x8328EA44 rename:.bss
 
-TESArrowTargetListener.cpp:
+fallout_shared/havok/TESArrowTargetListener.cpp:
 	.rdata      start:0x8204E880 end:0x8204E8E8
 	.rdata      start:0x821C2BB8 end:0x821C2C48 rename:.rdata$r
 	.pdata      start:0x821EEC50 end:0x821EEC68
@@ -4371,7 +4371,7 @@ TESArrowTargetListener.cpp:
 	.data       start:0x8323C110 end:0x8323C189
 	.data       start:0x8328E96C end:0x8328E9DC rename:.bss
 
-SpecificItemCollector.cpp:
+fallout_shared/havok/SpecificItemCollector.cpp:
 	.rdata      start:0x8204E830 end:0x8204E880
 	.rdata      start:0x821C2B1C end:0x821C2BB8 rename:.rdata$r
 	.pdata      start:0x821EEC40 end:0x821EEC50
@@ -4381,7 +4381,7 @@ SpecificItemCollector.cpp:
 	.data       start:0x8323C0A0 end:0x8323C10C
 	.data       start:0x8328E95C end:0x8328E96C rename:.bss
 
-LoadedAreaBound.cpp:
+fallout_shared/havok/LoadedAreaBound.cpp:
 	.rdata      start:0x8204E150 end:0x8204E821
 	.rdata      start:0x821C29F0 end:0x821C2B1C rename:.rdata$r
 	.pdata      start:0x821EEB98 end:0x821EEC40
@@ -4392,7 +4392,7 @@ LoadedAreaBound.cpp:
 	.data       start:0x8323BF80 end:0x8323C09E
 	.data       start:0x8328E8F4 end:0x8328E95C rename:.bss
 
-HitCaster.cpp:
+fallout_shared/havok/HitCaster.cpp:
 	.rdata      start:0x8204E080 end:0x8204E148
 	.pdata      start:0x821EEB50 end:0x821EEB98
 	.pdata      start:0x8222E4B8 end:0x8222E4C8
@@ -4403,7 +4403,7 @@ HitCaster.cpp:
 	.data       start:0x8323BF40 end:0x8323BF78
 	.data       start:0x8328E8DC end:0x8328E8F4 rename:.bss
 
-HavokStream.cpp:
+fallout_shared/havok/HavokStream.cpp:
 	.rdata      start:0x8204DE60 end:0x8204E07B
 	.rdata      start:0x821C2700 end:0x821C29F0 rename:.rdata$r
 	.pdata      start:0x821EEA90 end:0x821EEB50
@@ -4415,7 +4415,7 @@ HavokStream.cpp:
 	.data       start:0x8323BDA0 end:0x8323BF31
 	.data       start:0x8328E8CC end:0x8328E8DC rename:.bss
 
-FOIslandActivationListener.cpp:
+fallout_shared/havok/FOIslandActivationListener.cpp:
 	.rdata      start:0x8204DDF0 end:0x8204DE5C
 	.rdata      start:0x821C2638 end:0x821C2700 rename:.rdata$r
 	.pdata      start:0x821EEA48 end:0x821EEA90
@@ -4425,7 +4425,7 @@ FOIslandActivationListener.cpp:
 	.data       start:0x8323BD20 end:0x8323BD95
 	.data       start:0x8328E8BC end:0x8328E8CC rename:.bss
 
-FOCollisionListener.cpp:
+fallout_shared/havok/FOCollisionListener.cpp:
 	.rdata      start:0x8204DC90 end:0x8204DDE3
 	.rdata      start:0x821C2568 end:0x821C2638 rename:.rdata$r
 	.pdata      start:0x821EE9F8 end:0x821EEA48
@@ -4437,7 +4437,7 @@ FOCollisionListener.cpp:
 	.data       start:0x8323BC80 end:0x8323BD16
 	.data       start:0x8328E850 end:0x8328E8BC rename:.bss
 
-DecalCaster.cpp:
+fallout_shared/havok/DecalCaster.cpp:
 	.rdata      start:0x8204DBD0 end:0x8204DC85
 	.pdata      start:0x821EE990 end:0x821EE9F8
 	.text       start:0x8245C580 end:0x8245CEBC
@@ -4446,7 +4446,7 @@ DecalCaster.cpp:
 	.data       start:0x8323BC60 end:0x8323BC80
 	.data       start:0x8328E83C end:0x8328E850 rename:.bss
 
-CellMopp.cpp:
+fallout_shared/havok/CellMopp.cpp:
 	.rdata      start:0x8204D8E0 end:0x8204DBC8
 	.rdata      start:0x821C23C0 end:0x821C2568 rename:.rdata$r
 	.pdata      start:0x821EE908 end:0x821EE990
@@ -4458,7 +4458,7 @@ CellMopp.cpp:
 	.data       start:0x8323BB00 end:0x8323BC53
 	.data       start:0x8328E820 end:0x8328E83C rename:.bss
 
-CameraCaster.cpp:
+fallout_shared/havok/CameraCaster.cpp:
 	.rdata      start:0x8204D7F0 end:0x8204D8D5
 	.rdata      start:0x821C232C end:0x821C23C0 rename:.rdata$r
 	.pdata      start:0x821EE8B0 end:0x821EE908
@@ -4470,7 +4470,7 @@ CameraCaster.cpp:
 	.data       start:0x8323BA80 end:0x8323BAF5
 	.data       start:0x8328E7B8 end:0x8328E820 rename:.bss
 
-BGSZoneTargetListener.cpp:
+fallout_shared/havok/BGSZoneTargetListener.cpp:
 	.rdata      start:0x8204D660 end:0x8204D7ED
 	.rdata      start:0x821C2190 end:0x821C232C rename:.rdata$r
 	.pdata      start:0x821EE840 end:0x821EE8B0
@@ -4480,7 +4480,7 @@ BGSZoneTargetListener.cpp:
 	.data       start:0x8323B9B0 end:0x8323BA72
 	.data       start:0x8328E7A8 end:0x8328E7B8 rename:.bss
 
-BGSAcousticSpaceListener.cpp:
+fallout_shared/havok/BGSAcousticSpaceListener.cpp:
 	.rdata      start:0x8204D4F0 end:0x8204D658
 	.rdata      start:0x821C20AC end:0x821C2190 rename:.rdata$r
 	.pdata      start:0x821EE7D8 end:0x821EE840
@@ -7187,152 +7187,152 @@ dxtn.cpp:
 	.text       start:0x82828388 end:0x8282A6B8
 	.data       start:0x83255E38 end:0x83255E58
 
-cuassembler.cpp:
+xdk/d3dx9/cuassembler.cpp:
 	.rdata      start:0x821571E4 end:0x8215C65A
 	.pdata      start:0x822219D0 end:0x82221BB0
 	.text       start:0x82F115D0 end:0x82F1BA88
 	.data       start:0x8326C370 end:0x8326C918
 
-xdk/d3d9i/cnodeuasm.cpp:
+xdk/d3dx9/cnodeuasm.cpp:
 	.rdata      start:0x8217A40C end:0x8217A43C
 	.pdata      start:0x82222F90 end:0x82222FD0
 	.text       start:0x82F87008 end:0x82F87618
 
-xdk/d3d9i/threadlocaldata.cpp:
+xdk/d3dx9/threadlocaldata.cpp:
 	.pdata      start:0x82221950 end:0x82221960
 	.text       start:0x82F10170 end:0x82F10414
 	.data       start:0x8326C368 end:0x8326C36C
 	.data       start:0x8332AC98 end:0x8332ACA0 rename:.bss
 
-xdk/d3d9i/cpreprocessor.cpp:
+xdk/d3dx9/cpreprocessor.cpp:
 	.rdata      start:0x82151410 end:0x82152238
 	.pdata      start:0x822210C0 end:0x82221238
 	.text       start:0x82EE41E8 end:0x82EE964C
 
-xdk/d3d9i/ctokenize.cpp:
+xdk/d3dx9/ctokenize.cpp:
 	.rdata      start:0x82152238 end:0x82152512
 	.pdata      start:0x82221238 end:0x822212F8
 	.text       start:0x82EE9650 end:0x82EEB860
 
-xdk/d3d9i/ctransform.cpp:
+xdk/d3dx9/ctransform.cpp:
 	.pdata      start:0x82222FD0 end:0x82222FF8
 	.text       start:0x82F876F8 end:0x82F88964
 
-xdk/d3d9i/cprogram.cpp:
+xdk/d3dx9/cprogram.cpp:
 	.rdata      start:0x82160BA4 end:0x82160E94
 	.pdata      start:0x822225F0 end:0x822228C8
 	.text       start:0x82F409E0 end:0x82F5AF8C
 
-xdk/d3d9i/cbaseprogram.cpp:
+xdk/d3dx9/cbaseprogram.cpp:
 	.rdata      start:0x82160B7C end:0x82160BA1
 	.pdata      start:0x82222588 end:0x822225F0
 	.text       start:0x82F3FEF0 end:0x82F409E0
 
-xdk/d3d9i/cinstruction.cpp:
+xdk/d3dx9/cinstruction.cpp:
 	.pdata      start:0x82222540 end:0x82222570
 	.text       start:0x82F3EFD0 end:0x82F3FC50
 
-xdk/d3d9i/cargument.cpp:
+xdk/d3dx9/cargument.cpp:
 	.pdata      start:0x82222570 end:0x82222588
 	.text       start:0x82F3FC50 end:0x82F3FEF0
 
-xdk/d3d9i/cpool.cpp:
+xdk/d3dx9/cpool.cpp:
 	.text       start:0x82F87618 end:0x82F876F8
 
-c30swprogram.cpp:
+xdk/d3dx9/c30swprogram.cpp:
 	.rdata      start:0x8215C65C end:0x8215DE20
 	.pdata      start:0x82221BB0 end:0x822220C0
 	.text       start:0x82F1BA88 end:0x82F2683C
 	.data       start:0x8326C918 end:0x8326CE58
 
-c30program.cpp:
+xdk/d3dx9/c30program.cpp:
 	.rdata      start:0x82160808 end:0x82160B7B
 	.pdata      start:0x822224B8 end:0x82222540
 	.text       start:0x82F3C3C8 end:0x82F3EFD0
 	.data       start:0x8326CE58 end:0x8326D3B4
 
-cpslegacyprogram.cpp:
+xdk/d3dx9/cpslegacyprogram.cpp:
 	.rdata      start:0x82178170 end:0x82179FF7
 	.pdata      start:0x82222C40 end:0x82222EA8
 	.text       start:0x82F72708 end:0x82F820B8
 	.data       start:0x8326D5D8 end:0x8326D6D8
 	.data       start:0x8332ACA8 end:0x8332B4A8 rename:.bss
 
-cpsprogram.cpp:
+xdk/d3dx9/cpsprogram.cpp:
 	.rdata      start:0x82177EEC end:0x8217816E
 	.pdata      start:0x82222B80 end:0x82222C40
 	.text       start:0x82F6E898 end:0x82F72704
 	.data       start:0x8326D3C8 end:0x8326D5D8
 
-cshaderprogram.cpp:
+xdk/d3dx9/cshaderprogram.cpp:
 	.rdata      start:0x8215DE20 end:0x82160806
 	.pdata      start:0x822220C0 end:0x822224B8
 	.text       start:0x82F26840 end:0x82F3C3C4
 
-cfxlprogram.cpp:
+xdk/d3dx9/cfxlprogram.cpp:
 	.rdata      start:0x8217A200 end:0x8217A40C
 	.pdata      start:0x82222F48 end:0x82222F90
 	.text       start:0x82F85A40 end:0x82F87008
 	.data       start:0x8326DA38 end:0x8326DA4C
 
-cvsprogram.cpp:
+xdk/d3dx9/cvsprogram.cpp:
 	.rdata      start:0x82179FF8 end:0x8217A1FF
 	.pdata      start:0x82222EA8 end:0x82222F48
 	.text       start:0x82F820B8 end:0x82F85A40
 	.data       start:0x8326D6D8 end:0x8326DA38
 
-effecthll.cpp:
+xdk/d3dx9/effecthll.cpp:
 	.rdata      start:0x8217A43C end:0x8217A71A
 	.pdata      start:0x82222FF8 end:0x82223018
 	.text       start:0x82F88968 end:0x82F88E8C
 	.data       start:0x8326DA50 end:0x8326DB28
 
-cnode.cpp:
+xdk/d3dx9/cnode.cpp:
 	.rdata      start:0x82156F44 end:0x82157064
 	.pdata      start:0x822217C8 end:0x82221950
 	.text       start:0x82F0C2A8 end:0x82F1016C
 
-cparse.cpp:
+xdk/d3dx9/cparse.cpp:
 	.rdata      start:0x82160E94 end:0x82177EE9
 	.pdata      start:0x822228C8 end:0x82222B80
 	.text       start:0x82F5AF90 end:0x82F6E898
 	.data       start:0x8326D3B4 end:0x8326D3C4
 
-ccompiler.cpp:
+xdk/d3dx9/ccompiler.cpp:
 	.rdata      start:0x82156130 end:0x82156EB6
 	.rdata      start:0x821E2078 end:0x821E208C rename:.xdata
 	.pdata      start:0x822213F8 end:0x822215B0
 	.text       start:0x82EF17F8 end:0x82F07248
 
-cconstanttable.cpp:
+xdk/d3dx9/cconstanttable.cpp:
 	.rdata      start:0x82156EB8 end:0x82156F44
 	.pdata      start:0x822215B0 end:0x822217B8
 	.text       start:0x82F07248 end:0x82F0C144
 
-ccommentblock.cpp:
+xdk/d3dx9/ccommentblock.cpp:
 	.pdata      start:0x822219B8 end:0x822219D0
 	.text       start:0x82F11230 end:0x82F115D0
 
-cassembler.cpp:
+xdk/d3dx9/cassembler.cpp:
 	.rdata      start:0x82152514 end:0x8215612C
 	.pdata      start:0x822212F8 end:0x822213F8
 	.text       start:0x82EEB860 end:0x82EF17F8
 
-cnodeasm.cpp:
+xdk/d3dx9/cnodeasm.cpp:
 	.rdata      start:0x821571CC end:0x821571E4
 	.pdata      start:0x82221988 end:0x822219B8
 	.text       start:0x82F10E48 end:0x82F1122C
 
-d3dx9shader2.cpp:
+xdk/d3dx9/d3dx9shader2.cpp:
 	.text       start:0x82821FB0 end:0x828220F4
 
-d3dx9shader.cpp:
+xdk/d3dx9/d3dx9shader.cpp:
 	.rdata      start:0x82150F30 end:0x8215140E
 	.pdata      start:0x82221040 end:0x822210C0
 	.text       start:0x82EE2E58 end:0x82EE41E8
 	.data       start:0x8332AC90 end:0x8332AC92 rename:.bss
 
-d3dx9fragment.cpp:
+xdk/d3dx9/d3dx9fragment.cpp:
 	.rdata      start:0x82157068 end:0x821571CA
 	.pdata      start:0x82221960 end:0x82221988
 	.text       start:0x82F10418 end:0x82F10E48

@@ -1,5 +1,5 @@
-#include "d3d9i/cinstruction.h"
-#include "d3d9i/threadlocaldata.h"
+#include "d3dx9/cinstruction.h"
+#include "d3dx9/threadlocaldata.h"
 #include "types.h"
 #include "win_types.h"
 #include <cstring>

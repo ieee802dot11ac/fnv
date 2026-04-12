@@ -2,6 +2,8 @@
 #include <types.h>
 #include <wchar.h>
 
+#define WTYPES_H
+
 #ifdef __cplusplus
 extern "C" {
 #endif

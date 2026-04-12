@@ -6938,10 +6938,10 @@ BGSDehydration.cpp:
 	.data       start:0x83220060 end:0x832200EC
 	.data       start:0x83288D00 end:0x83288D10 rename:.bss
 
-cguid.cpp:
+xdk/uuid/cguid.c:
 	.rdata      start:0x820B2FD8 end:0x820B2FE8
 
-unknwn.cpp:
+xdk/uuid/unknwn.c:
 	.rdata      start:0x820B6E84 end:0x820B6E94
 
 xdk/zlib/zutil.cpp:
@@ -8812,7 +8812,7 @@ lib/zlib/zutil.c:
 	.pdata      start:0x822033B0 end:0x822033C0
 	.text       start:0x8292E9E0 end:0x8292EA6C
 
-Archive.cpp:
+bssystem/Archive.cpp:
 	.rdata      start:0x820D5638 end:0x820D5DCF
 	.pdata      start:0x82203410 end:0x82203660
 	.pdata      start:0x8223FFA0 end:0x8223FFA8
@@ -8825,98 +8825,98 @@ Archive.cpp:
 	.data       start:0x832ACD20 end:0x832ACEBC rename:.bss
 	.tls        start:0x833360A4 end:0x833360AC rename:.tls$
 
-Archive_Xenon.cpp:
+bssystem/xenon/Archive_Xenon.cpp:
 	.rdata      start:0x820D6200 end:0x820D6261
 	.pdata      start:0x82203928 end:0x82203950
 	.text       start:0x82941B68 end:0x829423E0
 
-BSArchive.cpp:
+bssystem/BSArchive.cpp:
 	.pdata      start:0x822036E0 end:0x822036F8
 	.text       start:0x8293DA58 end:0x8293DF58
 	.data       start:0x832599E4 end:0x83259A20
 
-BSContentPackage_Xenon.cpp:
+bssystem/xenon/BSContentPackage_Xenon.cpp:
 	.rdata      start:0x820D6028 end:0x820D609B
 	.pdata      start:0x82203808 end:0x82203810
 	.text       start:0x8293F8A0 end:0x8293F94C
 
-BSFile.cpp:
+bssystem/BSFile.cpp:
 	.rdata      start:0x820D5F30 end:0x820D6024
 	.pdata      start:0x82203770 end:0x82203808
 	.text       start:0x8293E900 end:0x8293F89C
 	.data       start:0x83259A2C end:0x83259A30
 	.data       start:0x832ACF38 end:0x832ACF3C rename:.bss
 
-BSFile_Xenon.cpp:
+bssystem/xenon/BSFile_Xenon.cpp:
 	.rdata      start:0x820D60A0 end:0x820D60F9
 	.pdata      start:0x82203810 end:0x82203840
 	.text       start:0x8293F950 end:0x82940440
 	.text       start:0x831FB678 end:0x831FB67C rename:.text$yd
 	.data       start:0x832ACF3C end:0x832ACF68 rename:.bss
 
-BSFileCache.cpp:
+bssystem/BSFileCache.cpp:
 	.rdata      start:0x820D5EF0 end:0x820D5F30
 	.pdata      start:0x82203738 end:0x82203770
 	.text       start:0x8293E4D0 end:0x8293E8FC
 	.data       start:0x83259A20 end:0x83259A2C
 
-BSFileCache_Xenon.cpp:
+bssystem/xenon/BSFileCache_Xenon.cpp:
 	.pdata      start:0x822036F8 end:0x82203700
 	.text       start:0x8293DF58 end:0x8293DFD4
 	.text       start:0x831FB668 end:0x831FB674 rename:.text$yd
 	.data       start:0x832ACECC end:0x832ACF38 rename:.bss
 
-BSSearchPath.cpp:
+bssystem/BSSearchPath.cpp:
 	.rdata      start:0x820D62B4 end:0x820D6322
 	.pdata      start:0x822039B8 end:0x822039D0
 	.text       start:0x82942A78 end:0x82942BC0
 
-BSSystemDir.cpp:
+bssystem/BSSystemDir.cpp:
 	.pdata      start:0x82203860 end:0x82203868
 	.text       start:0x829405C8 end:0x8294060C
 
-BSSystemDir_Xenon.cpp:
+bssystem/xenon/BSSystemDir_Xenon.cpp:
 	.rdata      start:0x820D60FC end:0x820D60FF
 	.pdata      start:0x82203840 end:0x82203860
 	.text       start:0x82940440 end:0x829405C8
 
-BSSystemFile.cpp:
+bssystem/BSSystemFile.cpp:
 	.pdata      start:0x82203950 end:0x82203958
 	.text       start:0x829423E0 end:0x8294242C
 	.data       start:0x832ACF70 end:0x832ACF74 rename:.bss
 
-BSSystemFile_Xenon.cpp:
+bssystem/xenon/BSSystemFile_Xenon.cpp:
 	.pdata      start:0x82203700 end:0x82203738
 	.text       start:0x8293DFD8 end:0x8293E4CC
 
-BSTaskletManager.cpp:
+bssystem/BSTaskletManager.cpp:
 	.rdata      start:0x820D6268 end:0x820D62B4
 	.pdata      start:0x82203960 end:0x822039A8
 	.text       start:0x829424B0 end:0x8294295C
 	.data       start:0x832AD968 end:0x832AD9F0 rename:.bss
 
-BSTaskletManager_Xenon.cpp:
+bssystem/xenon/BSTaskletManager_Xenon.cpp:
 	.pdata      start:0x82203958 end:0x82203960
 	.text       start:0x82942430 end:0x829424B0
 	.text       start:0x831FB690 end:0x831FB69C rename:.text$yd
 	.data       start:0x832ACF74 end:0x832AD964 rename:.bss
 
-BSXenonFileCache.cpp:
+bssystem/xenon/BSXenonFileCache.cpp:
 	.rdata      start:0x820D6390 end:0x820D65BA
 	.pdata      start:0x822039E8 end:0x82203A60
 	.text       start:0x82942E30 end:0x829447CC
 	.data       start:0x832AD9F0 end:0x832AD9F1 rename:.bss
 
-BSXenonTaskletData.cpp:
+bssystem/xenon/BSXenonTaskletData.cpp:
 	.pdata      start:0x822039A8 end:0x822039B8
 	.text       start:0x82942960 end:0x82942A78
 
-BSXenonTaskletGroupData.cpp:
+bssystem/xenon/BSXenonTaskletGroupData.cpp:
 	.rdata      start:0x820D685C end:0x820D6874
 	.pdata      start:0x82203AF8 end:0x82203B20
 	.text       start:0x82945898 end:0x82945B08
 
-BSXenonTaskletManager.cpp:
+bssystem/xenon/BSXenonTaskletManager.cpp:
 	.rdata      start:0x820D65C0 end:0x820D685A
 	.rdata      start:0x821E1AC0 end:0x821E1AD4 rename:.xdata
 	.pdata      start:0x82203A60 end:0x82203AF8
@@ -8927,23 +8927,23 @@ BSXenonTaskletManager.cpp:
 	.data       start:0x8321E298 end:0x8321E29C rename:.CRT$XCU
 	.data       start:0x832AD9F4 end:0x832AD9F8 rename:.bss
 
-FileFinder.cpp:
+bssystem/FileFinder.cpp:
 	.rdata      start:0x820D5DD0 end:0x820D5EF0
 	.pdata      start:0x82203660 end:0x822036C0
 	.text       start:0x8293C810 end:0x8293D5F4
 	.data       start:0x832ACEBC end:0x832ACEC8 rename:.bss
 
-FileFinder_Xenon.cpp:
+bssystem/xenon/FileFinder_Xenon.cpp:
 	.rdata      start:0x820D6324 end:0x820D638F
 	.pdata      start:0x822039D0 end:0x822039E8
 	.text       start:0x82942BC0 end:0x82942E2C
 
-WildCard.cpp:
+bssystem/WildCard.cpp:
 	.pdata      start:0x822036C0 end:0x822036E0
 	.text       start:0x8293D5F8 end:0x8293DA58
 	.data       start:0x832ACEC8 end:0x832ACECC rename:.bss
 
-XSettingsFile.cpp:
+bssystem/xenon/XSettingsFile.cpp:
 	.rdata      start:0x820D6100 end:0x820D61F9
 	.pdata      start:0x82203868 end:0x82203928
 	.text       start:0x82940610 end:0x82941B64
@@ -9937,29 +9937,29 @@ Setting.cpp:
 	.text       start:0x829B49B0 end:0x829B51A8
 	.data       start:0x832AF55C end:0x832AF560 rename:.bss
 
-XINISetting.cpp:
+bsmain/XINISetting.cpp:
 	.rdata      start:0x820DEEE8 end:0x820DEF0D
 	.pdata      start:0x82206F30 end:0x82206F48
 	.text       start:0x829CADC8 end:0x829CAFD0
 
-XINISetting_Xenon.cpp:
+bsmain/xenon/XINISetting_Xenon.cpp:
 	.rdata      start:0x820DEF10 end:0x820DEF45
 	.pdata      start:0x82206F48 end:0x82206F58
 	.text       start:0x829CAFD0 end:0x829CB998
 
-XRegSetting.cpp:
+bsmain/xenon/XRegSetting.cpp:
 	.rdata      start:0x820E151C end:0x820E153C
 	.pdata      start:0x82207B00 end:0x82207B08
 	.text       start:0x829ECDF0 end:0x829ECEAC
 	.data       start:0x832B0940 end:0x832B0944 rename:.bss
 
-AbstractHeap.cpp:
+bscore/AbstractHeap.cpp:
 	.rdata      start:0x820E3C80 end:0x820E3DC3
 	.pdata      start:0x82208578 end:0x822085F0
 	.text       start:0x829FE580 end:0x829FFA2C
 	.data       start:0x832B162C end:0x832B1634 rename:.bss
 
-BSBlockMemHeap.cpp:
+bscore/xenon/BSBlockMemHeap.cpp:
 	.rdata      start:0x820E33A0 end:0x820E3579
 	.pdata      start:0x822082D0 end:0x822083D0
 	.pdata      start:0x822402A0 end:0x822402A8
@@ -9970,7 +9970,7 @@ BSBlockMemHeap.cpp:
 	.data       start:0x8321E90C end:0x8321E910 rename:.CRT$XCU
 	.data       start:0x832B0DA8 end:0x832B0DB8 rename:.bss
 
-BSCoreMessage.cpp:
+bscore/BSCoreMessage.cpp:
 	.rdata      start:0x820E3030 end:0x820E30F4
 	.pdata      start:0x82208140 end:0x82208148
 	.text       start:0x829F7B90 end:0x829F7C18
@@ -9978,17 +9978,17 @@ BSCoreMessage.cpp:
 	.data       start:0x832B0D34 end:0x832B0D54 rename:.bss
 	.tls        start:0x833360B0 end:0x833360B4 rename:.tls$
 
-BSCorePCH.cpp:
+bscore/BSCorePCH.cpp:
 	.data       start:0x8325B070 end:0x8325B080
 	.data       start:0x832B0D54 end:0x832B0D5C rename:.bss
 
-BSPerformanceTimer.cpp:
+bscore/BSPerformanceTimer.cpp:
 	.rdata      start:0x820E30F8 end:0x820E3214
 	.pdata      start:0x82208170 end:0x822081E0
 	.text       start:0x829F81A0 end:0x829F910C
 	.data       start:0x832B0D60 end:0x832B0D84 rename:.bss
 
-BSPrecisionTimer.cpp:
+bscore/BSPrecisionTimer.cpp:
 	.pdata      start:0x82208148 end:0x82208158
 	.text       start:0x829F7C18 end:0x829F7C90
 	.text       start:0x831CA118 end:0x831CA11C rename:.text$yc
@@ -9996,16 +9996,16 @@ BSPrecisionTimer.cpp:
 	.data       start:0x8325B080 end:0x8325B084
 	.data       start:0x832B0D5C end:0x832B0D5D rename:.bss
 
-BSRandom.cpp:
+bscore/BSRandom.cpp:
 	.pdata      start:0x82208218 end:0x82208220
 	.text       start:0x829F96C8 end:0x829F98AC
 	.data       start:0x8325B094 end:0x8325B09C
 
-BSReadWriteLock.cpp:
+bscore/BSReadWriteLock.cpp:
 	.pdata      start:0x822082A0 end:0x822082D0
 	.text       start:0x829FA2F0 end:0x829FA85C
 
-BSSystemPhysHeap.cpp:
+bscore/xenon/BSSystemPhysHeap.cpp:
 	.rdata      start:0x820E3580 end:0x820E3623
 	.pdata      start:0x822083D0 end:0x82208430
 	.pdata      start:0x822402A8 end:0x822402B0
@@ -10016,7 +10016,7 @@ BSSystemPhysHeap.cpp:
 	.data       start:0x8321E910 end:0x8321E914 rename:.CRT$XCU
 	.data       start:0x832B0DB8 end:0x832B0DC8 rename:.bss
 
-BSTexMemHeap.cpp:
+bscore/xenon/BSTexMemHeap.cpp:
 	.pdata      start:0x82208520 end:0x82208530
 	.pdata      start:0x822402B0 end:0x822402C0
 	.pdata      start:0x82242750 end:0x82242758
@@ -10027,12 +10027,12 @@ BSTexMemHeap.cpp:
 	.data       start:0x8325B09C end:0x8325B0C4
 	.data       start:0x832B15F4 end:0x832B162C rename:.bss
 
-BSThread_Xenon.cpp:
+bscore/xenon/BSThread_Xenon.cpp:
 	.rdata      start:0x820E3214 end:0x820E3279
 	.pdata      start:0x822081F0 end:0x82208218
 	.text       start:0x829F93D0 end:0x829F96C8
 
-BSTimer.cpp:
+bscore/BSTimer.cpp:
 	.pdata      start:0x822081E0 end:0x822081F0
 	.pdata      start:0x82240298 end:0x822402A0
 	.text       start:0x829F9110 end:0x829F93D0
@@ -10041,37 +10041,37 @@ BSTimer.cpp:
 	.data       start:0x8325B084 end:0x8325B094
 	.data       start:0x832B0D84 end:0x832B0DA4 rename:.bss
 
-HeapBlocks.cpp:
+bscore/HeapBlocks.cpp:
 	.text       start:0x829FFB78 end:0x829FFBA0
 
-MemCategories.cpp:
+bscore/MemCategories.cpp:
 	.rdata      start:0x820E3B98 end:0x820E3C80
 
-MemContexts.cpp:
+bscore/MemContexts.cpp:
 	.rdata      start:0x820E3814 end:0x820E3B98
 
-MemoryContextTracker.cpp:
+bscore/MemoryContextTracker.cpp:
 	.pdata      start:0x82208100 end:0x82208140
 	.text       start:0x829F77E0 end:0x829F7B90
 	.data       start:0x832B0D30 end:0x832B0D34 rename:.bss
 	.tls        start:0x833360AC end:0x833360B0 rename:.tls$
 
-MemoryHeap.cpp:
+bscore/MemoryHeap.cpp:
 	.rdata      start:0x820E36C8 end:0x820E3720
 	.pdata      start:0x82208468 end:0x822084B0
 	.text       start:0x829FCD18 end:0x829FD178
 
-MemoryLogging.cpp:
+bscore/MemoryLogging.cpp:
 	.rdata      start:0x820E37D8 end:0x820E3814
 	.pdata      start:0x82208540 end:0x82208578
 	.text       start:0x829FDFB0 end:0x829FE57C
 
-MemoryLogging_Xenon.cpp:
+bscore/xenon/MemoryLogging_Xenon.cpp:
 	.rdata      start:0x820E3DC8 end:0x820E3E60
 	.pdata      start:0x822085F0 end:0x82208600
 	.text       start:0x829FFA30 end:0x829FFB78
 
-MemoryManager.cpp:
+bscore/MemoryManager.cpp:
 	.rdata      start:0x820E2500 end:0x820E3030
 	.pdata      start:0x82207FF0 end:0x82208100
 	.pdata      start:0x82240288 end:0x82240298
@@ -10082,38 +10082,38 @@ MemoryManager.cpp:
 	.data       start:0x83210430 end:0x83210438 rename:.CRT$XCL
 	.data       start:0x832B09CC end:0x832B0D30 rename:.bss
 
-MemoryManager_Xenon.cpp:
+bscore/xenon/MemoryManager_Xenon.cpp:
 	.rdata      start:0x820E37CC end:0x820E37D5
 	.pdata      start:0x82208530 end:0x82208540
 	.text       start:0x829FDDC8 end:0x829FDF94
 
-MemoryPool.cpp:
+bscore/MemoryPool.cpp:
 	.rdata      start:0x820E3720 end:0x820E37C9
 	.pdata      start:0x822084B0 end:0x82208520
 	.text       start:0x829FD178 end:0x829FDCC4
 	.text       start:0x831FC3C0 end:0x831FC3C4 rename:.text$yd
 	.data       start:0x832B0DC8 end:0x832B15F4 rename:.bss
 
-MemoryUsageTracker.cpp:
+bscore/MemoryUsageTracker.cpp:
 	.pdata      start:0x82208158 end:0x82208170
 	.text       start:0x829F7C90 end:0x829F81A0
 
-oei_io_thread.cpp:
+bscore/oei_io_thread.cpp:
 	.rdata      start:0x8219BC54 end:0x8219BCE8
 	.pdata      start:0x82224860 end:0x822248F0
 	.text       start:0x82FE0098 end:0x82FE0CFC
 	.data       start:0x83334C14 end:0x83334C30 rename:.bss
 
-ScrapHeap.cpp:
+bscore/ScrapHeap.cpp:
 	.rdata      start:0x820E327C end:0x820E33A0
 	.pdata      start:0x82208220 end:0x822082A0
 	.text       start:0x829F98B0 end:0x829FA2EC
 	.data       start:0x832B0DA4 end:0x832B0DA8 rename:.bss
 
-XMemoryHeap.cpp:
+bscore/xenon/XMemoryHeap.cpp:
 	.text       start:0x829FDF98 end:0x829FDFB0
 
-ZeroOverheadHeap.cpp:
+bscore/ZeroOverheadHeap.cpp:
 	.rdata      start:0x820E3628 end:0x820E36C3
 	.pdata      start:0x82208430 end:0x82208468
 	.text       start:0x829FC978 end:0x829FCD14
@@ -11751,14 +11751,14 @@ bsshader/BSShaderTextureSet.cpp:
 	.data       start:0x8321EC58 end:0x8321EC60 rename:.CRT$XCU
 	.data       start:0x832BA4D8 end:0x832BA4E8 rename:.bss
 
-BSSendContextCommand.cpp:
+bsdiag/BSSendContextCommand.cpp:
 	.rdata      start:0x821075F0 end:0x82107681
 	.rdata      start:0x821D517C end:0x821D51C8 rename:.rdata$r
 	.pdata      start:0x8220D3D0 end:0x8220D3F8
 	.text       start:0x82B164E8 end:0x82B16B20
 	.data       start:0x8325C584 end:0x8325C5A7
 
-BSSendGenericDataCommand.cpp:
+bsdiag/BSSendGenericDataCommand.cpp:
 	.rdata      start:0x821073E8 end:0x82107558
 	.rdata      start:0x821D509C end:0x821D517C rename:.rdata$r
 	.pdata      start:0x8220D360 end:0x8220D3B8
@@ -11771,7 +11771,7 @@ BSSendGenericDataCommand.cpp:
 	.data       start:0x8325C4DC end:0x8325C583
 	.data       start:0x832BC590 end:0x832BC5A0 rename:.bss
 
-BSSendSceneGraphCommand.cpp:
+bsdiag/BSSendSceneGraphCommand.cpp:
 	.rdata      start:0x82106FD0 end:0x821071AF
 	.rdata      start:0x821D4FA8 end:0x821D4FF4 rename:.rdata$r
 	.pdata      start:0x8220D210 end:0x8220D2A0
@@ -11779,13 +11779,13 @@ BSSendSceneGraphCommand.cpp:
 	.data       start:0x8325C380 end:0x8325C3A6
 	.data       start:0x832BC488 end:0x832BC48C rename:.bss
 
-BSSherlockCommand.cpp:
+bsdiag/BSSherlockCommand.cpp:
 	.rdata      start:0x82107374 end:0x82107398
 	.rdata      start:0x821D5088 end:0x821D509C rename:.rdata$r
 	.pdata      start:0x8220D318 end:0x8220D320
 	.text       start:0x82B155A0 end:0x82B1565C
 
-BSSherlockCommandManager.cpp:
+bsdiag/BSSherlockCommandManager.cpp:
 	.rdata      start:0x821071B0 end:0x82107374
 	.rdata      start:0x821D4FF4 end:0x821D5088 rename:.rdata$r
 	.pdata      start:0x8220D2A0 end:0x8220D318
@@ -11793,12 +11793,12 @@ BSSherlockCommandManager.cpp:
 	.data       start:0x8325C3A8 end:0x8325C455
 	.data       start:0x832BC48C end:0x832BC490 rename:.bss
 
-BSSherlockCommandManager_Xenon.cpp:
+bsdiag/BSSherlockCommandManager_Xenon.cpp:
 	.rdata      start:0x82107558 end:0x821075F0
 	.pdata      start:0x8220D3B8 end:0x8220D3D0
 	.text       start:0x82B160F0 end:0x82B164E8
 
-DebugContexts.cpp:
+bsdiag/DebugContexts.cpp:
 	.rdata      start:0x82107398 end:0x821073E6
 	.pdata      start:0x8220D320 end:0x8220D360
 	.pdata      start:0x822406B8 end:0x822406C0
@@ -13266,13 +13266,13 @@ lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkp
 	.pdata      start:0x82216F00 end:0x82216F08
 	.text       start:0x82CD43B8 end:0x82CD4478
 
-hkpWorldViewerBase.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpWorldViewerBase.cpp:
 	.rdata      start:0x8211F7C0 end:0x8211F830
 	.rdata      start:0x821DDBE0 end:0x821DDC30 rename:.rdata$r
 	.pdata      start:0x82216BE8 end:0x82216C08
 	.text       start:0x82CC73B0 end:0x82CC7620
 
-hkpWorldSnapshotViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpWorldSnapshotViewer.cpp:
 	.rdata      start:0x821191E0 end:0x8211927C
 	.rdata      start:0x821DAFD4 end:0x821DB058 rename:.rdata$r
 	.pdata      start:0x82214468 end:0x822144A0
@@ -13280,7 +13280,7 @@ hkpWorldSnapshotViewer.cpp:
 	.data       start:0x832611E8 end:0x8326120D
 	.data       start:0x83320F60 end:0x83320F68 rename:.bss
 
-hkpWorldMemoryViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpWorldMemoryViewer.cpp:
 	.rdata      start:0x82119280 end:0x821192F0
 	.rdata      start:0x821DB058 end:0x821DB0DC rename:.rdata$r
 	.pdata      start:0x822144A0 end:0x822144D8
@@ -13288,7 +13288,7 @@ hkpWorldMemoryViewer.cpp:
 	.data       start:0x83261210 end:0x83261233
 	.data       start:0x83320F68 end:0x83320F6C rename:.bss
 
-hkpSweptTransformDisplayViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpSweptTransformDisplayViewer.cpp:
 	.rdata      start:0x821193B0 end:0x821194FC
 	.rdata      start:0x821DB1C8 end:0x821DB2B4 rename:.rdata$r
 	.pdata      start:0x82214528 end:0x82214590
@@ -13299,7 +13299,7 @@ hkpSweptTransformDisplayViewer.cpp:
 	.data       start:0x83261254 end:0x83261281
 	.data       start:0x83320F70 end:0x83320F7C rename:.bss
 
-hkpSimulationIslandViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpSimulationIslandViewer.cpp:
 	.rdata      start:0x82119500 end:0x821195A0
 	.rdata      start:0x821DB2B4 end:0x821DB36C rename:.rdata$r
 	.pdata      start:0x82214590 end:0x822145C0
@@ -13307,7 +13307,7 @@ hkpSimulationIslandViewer.cpp:
 	.data       start:0x83261284 end:0x832612AC
 	.data       start:0x83320F7C end:0x83320F80 rename:.bss
 
-hkpRigidBodyInertiaViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpRigidBodyInertiaViewer.cpp:
 	.rdata      start:0x82119840 end:0x82119914
 	.rdata      start:0x821DB618 end:0x821DB6CC rename:.rdata$r
 	.pdata      start:0x822146F0 end:0x82214740
@@ -13315,7 +13315,7 @@ hkpRigidBodyInertiaViewer.cpp:
 	.data       start:0x832613A4 end:0x832613CC
 	.data       start:0x83320F9C end:0x83320FA0 rename:.bss
 
-hkpRigidBodyCentreOfMassViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpRigidBodyCentreOfMassViewer.cpp:
 	.rdata      start:0x82119D30 end:0x82119E14
 	.rdata      start:0x821DBB48 end:0x821DBBFC rename:.rdata$r
 	.pdata      start:0x822148D8 end:0x82214928
@@ -13323,7 +13323,7 @@ hkpRigidBodyCentreOfMassViewer.cpp:
 	.data       start:0x832614F0 end:0x83261521
 	.data       start:0x83320FC0 end:0x83320FC4 rename:.bss
 
-hkpPhantomDisplayViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpPhantomDisplayViewer.cpp:
 	.rdata      start:0x821196B0 end:0x821197C6
 	.rdata      start:0x821DB420 end:0x821DB594 rename:.rdata$r
 	.pdata      start:0x82214640 end:0x822146B0
@@ -13334,7 +13334,7 @@ hkpPhantomDisplayViewer.cpp:
 	.data       start:0x832612D0 end:0x8326137C
 	.data       start:0x83320F8C end:0x83320F98 rename:.bss
 
-hkpConstraintViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/hkpConstraintViewer.cpp:
 	.rdata      start:0x82119CA0 end:0x82119D30
 	.rdata      start:0x821DBAAC end:0x821DBB48 rename:.rdata$r
 	.pdata      start:0x82214890 end:0x822148D8
@@ -13342,7 +13342,7 @@ hkpConstraintViewer.cpp:
 	.data       start:0x832614C8 end:0x832614EE
 	.data       start:0x83320FBC end:0x83320FC0 rename:.bss
 
-hkpWeldingViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpWeldingViewer.cpp:
 	.rdata      start:0x82119120 end:0x821191DE
 	.rdata      start:0x821DAE6C end:0x821DAFD4 rename:.rdata$r
 	.pdata      start:0x82214438 end:0x82214468
@@ -13350,7 +13350,7 @@ hkpWeldingViewer.cpp:
 	.data       start:0x83261174 end:0x832611E5
 	.data       start:0x83320F5C end:0x83320F60 rename:.bss
 
-hkpToiCountViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpToiCountViewer.cpp:
 	.rdata      start:0x82119920 end:0x821199DF
 	.rdata      start:0x821DB6CC end:0x821DB7D0 rename:.rdata$r
 	.pdata      start:0x82214740 end:0x822147B8
@@ -13358,7 +13358,7 @@ hkpToiCountViewer.cpp:
 	.data       start:0x832613CC end:0x832613EC
 	.data       start:0x83320FA0 end:0x83320FA4 rename:.bss
 
-hkpToiContactPointViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpToiContactPointViewer.cpp:
 	.rdata      start:0x821199E0 end:0x82119A8A
 	.rdata      start:0x821DB7D0 end:0x821DB86C rename:.rdata$r
 	.pdata      start:0x822147B8 end:0x822147F0
@@ -13366,7 +13366,7 @@ hkpToiContactPointViewer.cpp:
 	.data       start:0x832613F0 end:0x83261427
 	.data       start:0x83320FA4 end:0x83320FA8 rename:.bss
 
-hkpShapeDisplayViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpShapeDisplayViewer.cpp:
 	.rdata      start:0x821195A0 end:0x821196A2
 	.rdata      start:0x821DB36C end:0x821DB420 rename:.rdata$r
 	.pdata      start:0x822145C0 end:0x82214640
@@ -13377,7 +13377,7 @@ hkpShapeDisplayViewer.cpp:
 	.data       start:0x832612AC end:0x832612D0
 	.data       start:0x83320F80 end:0x83320F8C rename:.bss
 
-hkpMidphaseViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpMidphaseViewer.cpp:
 	.rdata      start:0x82119E20 end:0x82119EB0
 	.rdata      start:0x821DBBFC end:0x821DBC98 rename:.rdata$r
 	.pdata      start:0x82214928 end:0x82214958
@@ -13385,7 +13385,7 @@ hkpMidphaseViewer.cpp:
 	.data       start:0x83261530 end:0x83261560
 	.data       start:0x83320FC4 end:0x83320FC8 rename:.bss
 
-hkpInactiveContactPointViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpInactiveContactPointViewer.cpp:
 	.rdata      start:0x82119A90 end:0x82119B20
 	.rdata      start:0x821DB86C end:0x821DB958 rename:.rdata$r
 	.pdata      start:0x822147F0 end:0x82214808
@@ -13393,7 +13393,7 @@ hkpInactiveContactPointViewer.cpp:
 	.data       start:0x83261428 end:0x83261478
 	.data       start:0x83320FA8 end:0x83320FAC rename:.bss
 
-hkpConvexRadiusViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpConvexRadiusViewer.cpp:
 	.rdata      start:0x82119BB0 end:0x82119C9E
 	.rdata      start:0x821DB9F8 end:0x821DBAAC rename:.rdata$r
 	.pdata      start:0x82214828 end:0x82214890
@@ -13404,7 +13404,7 @@ hkpConvexRadiusViewer.cpp:
 	.data       start:0x832614A4 end:0x832614C8
 	.data       start:0x83320FB0 end:0x83320FBC rename:.bss
 
-hkpConvexRadiusBuilder.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpConvexRadiusBuilder.cpp:
 	.rdata      start:0x8211FB00 end:0x8211FB5B
 	.rdata      start:0x821DDEC4 end:0x821DDFB8 rename:.rdata$r
 	.pdata      start:0x82216DD0 end:0x82216E10
@@ -13414,14 +13414,14 @@ hkpConvexRadiusBuilder.cpp:
 	.data       start:0x83263A20 end:0x83263ACE
 	.data       start:0x83321BF4 end:0x83321BF8 rename:.bss
 
-hkpContactPointViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpContactPointViewer.cpp:
 	.rdata      start:0x8211FA30 end:0x8211FAFE
 	.rdata      start:0x821DDE74 end:0x821DDEC4 rename:.rdata$r
 	.pdata      start:0x82216DA0 end:0x82216DD0
 	.text       start:0x82CCE6F0 end:0x82CCEF08
 	.data       start:0x83263A10 end:0x83263A20
 
-hkpBroadphaseViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpBroadphaseViewer.cpp:
 	.rdata      start:0x82119EB0 end:0x82119F36
 	.rdata      start:0x821DBC98 end:0x821DBD34 rename:.rdata$r
 	.pdata      start:0x82214958 end:0x82214988
@@ -13429,7 +13429,7 @@ hkpBroadphaseViewer.cpp:
 	.data       start:0x83261560 end:0x83261582
 	.data       start:0x83320FC8 end:0x83320FCC rename:.bss
 
-hkpActiveContactPointViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpActiveContactPointViewer.cpp:
 	.rdata      start:0x82119B20 end:0x82119BAC
 	.rdata      start:0x821DB958 end:0x821DB9F8 rename:.rdata$r
 	.pdata      start:0x82214808 end:0x82214828
@@ -16581,25 +16581,25 @@ hkpCdBodyClass.cpp:
 hkpCollisionAgent.cpp:
 	.text       start:0x82C79E30 end:0x82C79E54
 
-hkaRagdollUtils.cpp:
+lib/havok/animation/ragdoll/utils/hkaRagdollUtils.cpp:
 	.rdata      start:0x821130E4 end:0x821132D4
 	.rdata      start:0x821D6DFC end:0x821D6E4C rename:.rdata$r
 	.pdata      start:0x82211138 end:0x82211198
 	.text       start:0x82BA7070 end:0x82BA978C
 	.data       start:0x8325E150 end:0x8325E16A
 
-hkaPoseMatchingUtility.cpp:
+lib/havok/animation/ragdoll/posematching/hkaPoseMatchingUtility.cpp:
 	.pdata      start:0x82210FA0 end:0x82210FC8
 	.text       start:0x82B9D0A8 end:0x82B9D800
 
-hkaDetectRagdollPenetration.cpp:
+lib/havok/animation/ragdoll/penetration/hkaDetectRagdollPenetration.cpp:
 	.rdata      start:0x821156F4 end:0x82115704
 	.rdata      start:0x821D7F44 end:0x821D7F94 rename:.rdata$r
 	.pdata      start:0x822123A0 end:0x822123C0
 	.text       start:0x82BECB70 end:0x82BED298
 	.data       start:0x8325ED78 end:0x8325EDA2
 
-hkaRagdollInstanceClass.cpp:
+lib/havok/animation/ragdoll/instance/hkaRagdollInstanceClass.cpp:
 	.rdata      start:0x8212CC20 end:0x8212CCAB
 	.pdata      start:0x822174C0 end:0x822174C8
 	.pdata      start:0x822413A8 end:0x822413B8
@@ -16608,18 +16608,18 @@ hkaRagdollInstanceClass.cpp:
 	.data       start:0x8321F72C end:0x8321F734 rename:.CRT$XCU
 	.data       start:0x833247A0 end:0x833247E8 rename:.bss
 
-hkaRagdollInstance.cpp:
+lib/havok/animation/ragdoll/instance/hkaRagdollInstance.cpp:
 	.rdata      start:0x82112BD0 end:0x82112BE4
 	.rdata      start:0x821D6D5C end:0x821D6DAC rename:.rdata$r
 	.pdata      start:0x82210FC8 end:0x82211050
 	.text       start:0x82B9D800 end:0x82B9F2C0
 	.data       start:0x8325E0C4 end:0x8325E0E5
 
-hkaRagdollRigidBodyController.cpp:
+lib/havok/animation/ragdoll/controller/rigidbody/hkaRagdollRigidBodyController.cpp:
 	.pdata      start:0x82210DF0 end:0x82210E08
 	.text       start:0x82B972C8 end:0x82B97A4C
 
-hkaKeyFrameHierarchyUtilityClass.cpp:
+lib/havok/animation/ragdoll/controller/rigidbody/hkaKeyFrameHierarchyUtilityClass.cpp:
 	.rdata      start:0x8212425C end:0x82124FF8
 	.pdata      start:0x82240EC8 end:0x82240ED8
 	.text       start:0x82CE7488 end:0x82CE74BC
@@ -16628,7 +16628,7 @@ hkaKeyFrameHierarchyUtilityClass.cpp:
 	.data       start:0x83264F7C end:0x832650CE
 	.data       start:0x83322BE0 end:0x83322C40 rename:.bss
 
-hkaKeyFrameHierarchyUtility.cpp:
+lib/havok/animation/ragdoll/controller/rigidbody/hkaKeyFrameHierarchyUtility.cpp:
 	.pdata      start:0x822149A0 end:0x822149B8
 	.text       start:0x82C440A0 end:0x82C44E2C
 
@@ -16682,7 +16682,7 @@ hkaProcessFlyingColors.cpp:
 	.text       start:0x82D67728 end:0x82D67A18
 	.data       start:0x8326A450 end:0x8326A454
 
-hkaAnimationContainerClass.cpp:
+lib/havok/animation/animation/hkaAnimationContainerClass.cpp:
 	.rdata      start:0x8212D208 end:0x8212D2DE
 	.rdata      start:0x821DEFA8 end:0x821DEFF8 rename:.rdata$r
 	.pdata      start:0x82217518 end:0x82217528
@@ -16693,13 +16693,13 @@ hkaAnimationContainerClass.cpp:
 	.data       start:0x83267CE4 end:0x83267D20
 	.data       start:0x83324980 end:0x833249B0 rename:.bss
 
-hkaSkeletonUtils.cpp:
+lib/havok/animation/animation/rig/hkaSkeletonUtils.cpp:
 	.rdata      start:0x821129EC end:0x82112A74
 	.pdata      start:0x82210E20 end:0x82210E98
 	.text       start:0x82B993D8 end:0x82B9AB7C
 	.data       start:0x8325DFD0 end:0x8325DFE0
 
-hkaSkeletonClass.cpp:
+lib/havok/animation/animation/rig/hkaSkeletonClass.cpp:
 	.rdata      start:0x82125DC0 end:0x82125EF8
 	.pdata      start:0x822172C8 end:0x822172D8
 	.pdata      start:0x82240F20 end:0x82240F38
@@ -16709,11 +16709,11 @@ hkaSkeletonClass.cpp:
 	.data       start:0x832655AC end:0x832655EF
 	.data       start:0x83322DF0 end:0x83322E68 rename:.bss
 
-hkaPose.cpp:
+lib/havok/animation/animation/rig/hkaPose.cpp:
 	.pdata      start:0x82210D58 end:0x82210DF0
 	.text       start:0x82B958A0 end:0x82B972C8
 
-hkaBoneClass.cpp:
+lib/havok/animation/animation/rig/hkaBoneClass.cpp:
 	.rdata      start:0x821262C4 end:0x8212630C
 	.pdata      start:0x82240F60 end:0x82240F68
 	.text       start:0x82CE7D18 end:0x82CE7D3C
@@ -16722,7 +16722,7 @@ hkaBoneClass.cpp:
 	.data       start:0x832656EC end:0x8326571A
 	.data       start:0x83322F40 end:0x83322F70 rename:.bss
 
-hkaBoneAttachmentClass.cpp:
+lib/havok/animation/animation/rig/hkaBoneAttachmentClass.cpp:
 	.rdata      start:0x8212D0F0 end:0x8212D1AA
 	.rdata      start:0x821DEF08 end:0x821DEF58 rename:.rdata$r
 	.pdata      start:0x822174F8 end:0x82217510
@@ -16733,7 +16733,7 @@ hkaBoneAttachmentClass.cpp:
 	.data       start:0x83267C7C end:0x83267C9C
 	.data       start:0x83324908 end:0x83324950 rename:.bss
 
-hkaFootstepAnalysisInfoClass.cpp:
+lib/havok/animation/animation/motionanalysis/hkaFootstepAnalysisInfoClass.cpp:
 	.rdata      start:0x8212CDE8 end:0x8212D029
 	.rdata      start:0x821DEE28 end:0x821DEE78 rename:.rdata$r
 	.pdata      start:0x822174E0 end:0x822174F0
@@ -16744,13 +16744,13 @@ hkaFootstepAnalysisInfoClass.cpp:
 	.data       start:0x83267B9C end:0x83267C0C
 	.data       start:0x83324860 end:0x833248D8 rename:.bss
 
-hkaFootstepAnalysisInfo.cpp:
+lib/havok/animation/animation/motionanalysis/hkaFootstepAnalysisInfo.cpp:
 	.rdata      start:0x82133730 end:0x82133740
 	.rdata      start:0x821E160C end:0x821E165C rename:.rdata$r
 	.pdata      start:0x82218B40 end:0x82218B68
 	.text       start:0x82D3C6F8 end:0x82D3D470
 
-hkaDefaultAnimatedReferenceFrameClass.cpp:
+lib/havok/animation/animation/motion/default/hkaDefaultAnimatedReferenceFrameClass.cpp:
 	.rdata      start:0x8212D02C end:0x8212D0ED
 	.rdata      start:0x821DEE78 end:0x821DEF08 rename:.rdata$r
 	.pdata      start:0x822174F0 end:0x822174F8
@@ -16761,24 +16761,24 @@ hkaDefaultAnimatedReferenceFrameClass.cpp:
 	.data       start:0x83267C0C end:0x83267C7C
 	.data       start:0x833248D8 end:0x83324908 rename:.bss
 
-hkaDefaultAnimatedReferenceFrame.cpp:
+lib/havok/animation/animation/motion/default/hkaDefaultAnimatedReferenceFrame.cpp:
 	.rdata      start:0x82133740 end:0x82133870
 	.pdata      start:0x82218B68 end:0x82218B88
 	.text       start:0x82D3D470 end:0x82D3E0C4
 
-hkaAnimatedReferenceFrameClass.cpp:
+lib/havok/animation/animation/motion/hkaAnimatedReferenceFrameClass.cpp:
 	.rdata      start:0x821235F4 end:0x8212360E
 	.pdata      start:0x82240D78 end:0x82240D80
 	.text       start:0x831D4920 end:0x831D4988 rename:.text$yc
 	.data       start:0x8321F3D4 end:0x8321F3D8 rename:.CRT$XCU
 	.data       start:0x83322448 end:0x83322478 rename:.bss
 
-hkaSkeletonMapperUtils.cpp:
+lib/havok/animation/animation/mapper/hkaSkeletonMapperUtils.cpp:
 	.rdata      start:0x82112DF0 end:0x821130E2
 	.pdata      start:0x822110F0 end:0x82211138
 	.text       start:0x82BA27E8 end:0x82BA7070
 
-hkaSkeletonMapperDataClass.cpp:
+lib/havok/animation/animation/mapper/hkaSkeletonMapperDataClass.cpp:
 	.rdata      start:0x82125B2C end:0x82125DBE
 	.pdata      start:0x82240F08 end:0x82240F20
 	.text       start:0x82CE79C0 end:0x82CE7A14
@@ -16787,11 +16787,11 @@ hkaSkeletonMapperDataClass.cpp:
 	.data       start:0x83265410 end:0x832655AC
 	.data       start:0x83322D60 end:0x83322DF0 rename:.bss
 
-hkaSkeletonMapperData.cpp:
+lib/havok/animation/animation/mapper/hkaSkeletonMapperData.cpp:
 	.pdata      start:0x822110E8 end:0x822110F0
 	.text       start:0x82BA2610 end:0x82BA27E4
 
-hkaSkeletonMapperClass.cpp:
+lib/havok/animation/animation/mapper/hkaSkeletonMapperClass.cpp:
 	.rdata      start:0x8212CCAC end:0x8212CD46
 	.pdata      start:0x822174C8 end:0x822174D0
 	.pdata      start:0x822413B8 end:0x822413C8
@@ -16801,30 +16801,30 @@ hkaSkeletonMapperClass.cpp:
 	.data       start:0x83267B4C end:0x83267B50
 	.data       start:0x833247E8 end:0x83324830 rename:.bss
 
-hkaSkeletonMapper.cpp:
+lib/havok/animation/animation/mapper/hkaSkeletonMapper.cpp:
 	.rdata      start:0x82112BF0 end:0x82112DE5
 	.rdata      start:0x821D6DAC end:0x821D6DFC rename:.rdata$r
 	.pdata      start:0x82211050 end:0x822110B8
 	.text       start:0x82B9F2C0 end:0x82BA1F74
 	.data       start:0x8325E0E8 end:0x8325E108
 
-hkaTwoJointsIkSolver.cpp:
+lib/havok/animation/animation/ik/twojoints/hkaTwoJointsIkSolver.cpp:
 	.rdata      start:0x821129B0 end:0x821129E9
 	.pdata      start:0x82210E08 end:0x82210E20
 	.text       start:0x82B97A50 end:0x82B993D4
 
-hkaLookAtIkSolver.cpp:
+lib/havok/animation/animation/ik/lookat/hkaLookAtIkSolver.cpp:
 	.pdata      start:0x82210F80 end:0x82210FA0
 	.text       start:0x82B9C6B0 end:0x82B9D0A8
 
-hkaFootPlacementIkSolver.cpp:
+lib/havok/animation/animation/ik/footplacement/hkaFootPlacementIkSolver.cpp:
 	.rdata      start:0x82112980 end:0x821129B0
 	.rdata      start:0x821D6B68 end:0x821D6BB8 rename:.rdata$r
 	.pdata      start:0x82210D38 end:0x82210D58
 	.text       start:0x82B94740 end:0x82B958A0
 	.data       start:0x8325DFA8 end:0x8325DFCF
 
-hkaMeshBindingClass.cpp:
+lib/havok/animation/animation/deform/skinning/hkaMeshBindingClass.cpp:
 	.rdata      start:0x82125EF8 end:0x8212600F
 	.pdata      start:0x822172D8 end:0x822172E8
 	.pdata      start:0x82240F38 end:0x82240F50
@@ -16834,13 +16834,13 @@ hkaMeshBindingClass.cpp:
 	.data       start:0x832655F0 end:0x8326564D
 	.data       start:0x83322E68 end:0x83322EE0 rename:.bss
 
-hkaMeshBinding.cpp:
+lib/havok/animation/animation/deform/skinning/hkaMeshBinding.cpp:
 	.rdata      start:0x82133134 end:0x82133144
 	.rdata      start:0x821E13FC end:0x821E144C rename:.rdata$r
 	.pdata      start:0x82218658 end:0x82218678
 	.text       start:0x82D2D868 end:0x82D2DAE0
 
-hkaWaveletCompressedAnimationClass.cpp:
+lib/havok/animation/animation/animation/waveletcompressed/hkaWaveletCompressedAnimationClass.cpp:
 	.rdata      start:0x82124FF8 end:0x82125646
 	.rdata      start:0x821DE504 end:0x821DE5A8 rename:.rdata$r
 	.pdata      start:0x82217290 end:0x822172C0
@@ -16851,18 +16851,18 @@ hkaWaveletCompressedAnimationClass.cpp:
 	.data       start:0x832650D0 end:0x832651DF
 	.data       start:0x83322C40 end:0x83322CD0 rename:.bss
 
-hkaWaveletCompressedAnimation.cpp:
+lib/havok/animation/animation/animation/waveletcompressed/hkaWaveletCompressedAnimation.cpp:
 	.rdata      start:0x82132CA0 end:0x82132D45
 	.pdata      start:0x822184D8 end:0x82218538
 	.text       start:0x82D26F08 end:0x82D28C7C
 
-hkaTrackAnalysis.cpp:
+lib/havok/animation/animation/animation/util/hkaTrackAnalysis.cpp:
 	.rdata      start:0x82134010 end:0x82134157
 	.pdata      start:0x82219138 end:0x82219190
 	.text       start:0x82D4CBE8 end:0x82D4FE60
 	.data       start:0x8326A388 end:0x8326A398
 
-hkaAnimationPreviewColorClass.cpp:
+lib/havok/animation/animation/animation/util/hkaAnimationPreviewColorClass.cpp:
 	.rdata      start:0x8212D1AC end:0x8212D206
 	.rdata      start:0x821DEF58 end:0x821DEFA8 rename:.rdata$r
 	.pdata      start:0x82217510 end:0x82217518
@@ -16873,17 +16873,17 @@ hkaAnimationPreviewColorClass.cpp:
 	.data       start:0x83267C9C end:0x83267CE4
 	.data       start:0x83324950 end:0x83324980 rename:.bss
 
-hkaAnimationPreviewColor.cpp:
+lib/havok/animation/animation/animation/util/hkaAnimationPreviewColor.cpp:
 	.pdata      start:0x82218B88 end:0x82218B98
 	.text       start:0x82D3E0C8 end:0x82D3E1E8
 
-hkaSplineCompressedAnimationCtor.cpp:
+lib/havok/animation/animation/animation/splinecompressed/hkaSplineCompressedAnimationCtor.cpp:
 	.rdata      start:0x82132D48 end:0x82132E64
 	.pdata      start:0x82218538 end:0x822185D0
 	.text       start:0x82D28C80 end:0x82D2B848
 	.data       start:0x8326A138 end:0x8326A168
 
-hkaSplineCompressedAnimationClass.cpp:
+lib/havok/animation/animation/animation/splinecompressed/hkaSplineCompressedAnimationClass.cpp:
 	.rdata      start:0x82125648 end:0x82125B29
 	.rdata      start:0x821DE5A8 end:0x821DE5FC rename:.rdata$r
 	.pdata      start:0x822172C0 end:0x822172C8
@@ -16894,13 +16894,13 @@ hkaSplineCompressedAnimationClass.cpp:
 	.data       start:0x832651E0 end:0x8326540E
 	.data       start:0x83322CD0 end:0x83322D60 rename:.bss
 
-hkaSplineCompressedAnimation.cpp:
+lib/havok/animation/animation/animation/splinecompressed/hkaSplineCompressedAnimation.cpp:
 	.rdata      start:0x82132E64 end:0x82133133
 	.pdata      start:0x822185D0 end:0x82218658
 	.text       start:0x82D2B848 end:0x82D2D868
 	.data       start:0x8326A168 end:0x8326A190
 
-hkaInterleavedUncompressedAnimationClass.cpp:
+lib/havok/animation/animation/animation/interleaved/hkaInterleavedUncompressedAnimationClass.cpp:
 	.rdata      start:0x8212CD48 end:0x8212CDE8
 	.rdata      start:0x821DEDD4 end:0x821DEE28 rename:.rdata$r
 	.pdata      start:0x822174D0 end:0x822174E0
@@ -16911,12 +16911,12 @@ hkaInterleavedUncompressedAnimationClass.cpp:
 	.data       start:0x83267B50 end:0x83267B9C
 	.data       start:0x83324830 end:0x83324860 rename:.bss
 
-hkaInterleavedUncompressedAnimation.cpp:
+lib/havok/animation/animation/animation/interleaved/hkaInterleavedUncompressedAnimation.cpp:
 	.rdata      start:0x82133720 end:0x8213372D
 	.pdata      start:0x82218B10 end:0x82218B40
 	.text       start:0x82D3B8A0 end:0x82D3C6F4
 
-hkaDeltaCompressedAnimationClass.cpp:
+lib/havok/animation/animation/animation/deltacompressed/hkaDeltaCompressedAnimationClass.cpp:
 	.rdata      start:0x82126010 end:0x821262C4
 	.rdata      start:0x821DE5FC end:0x821DE650 rename:.rdata$r
 	.pdata      start:0x822172E8 end:0x822172F0
@@ -16927,12 +16927,12 @@ hkaDeltaCompressedAnimationClass.cpp:
 	.data       start:0x83265650 end:0x832656E9
 	.data       start:0x83322EE0 end:0x83322F40 rename:.bss
 
-hkaDeltaCompressedAnimation.cpp:
+lib/havok/animation/animation/animation/deltacompressed/hkaDeltaCompressedAnimation.cpp:
 	.rdata      start:0x82133144 end:0x821331EA
 	.pdata      start:0x82218678 end:0x822186D0
 	.text       start:0x82D2DAE0 end:0x82D2F974
 
-hkaAnnotationTrackClass.cpp:
+lib/havok/animation/animation/animation/hkaAnnotationTrackClass.cpp:
 	.rdata      start:0x8212630C end:0x821263BF
 	.pdata      start:0x82240F68 end:0x82240F78
 	.text       start:0x82CE7D40 end:0x82CE7D94
@@ -16941,11 +16941,11 @@ hkaAnnotationTrackClass.cpp:
 	.data       start:0x8326571C end:0x83265799
 	.data       start:0x83322F70 end:0x83322FD0 rename:.bss
 
-hkaAnnotationTrack.cpp:
+lib/havok/animation/animation/animation/hkaAnnotationTrack.cpp:
 	.pdata      start:0x82219128 end:0x82219138
 	.text       start:0x82D4CA50 end:0x82D4CBE4
 
-hkaAnimationClass.cpp:
+lib/havok/animation/animation/animation/hkaAnimationClass.cpp:
 	.rdata      start:0x82123488 end:0x821235F1
 	.pdata      start:0x82240D70 end:0x82240D78
 	.text       start:0x831D4888 end:0x831D491C rename:.text$yc
@@ -16953,7 +16953,7 @@ hkaAnimationClass.cpp:
 	.data       start:0x83264B90 end:0x83264C28
 	.data       start:0x83322418 end:0x83322448 rename:.bss
 
-hkaAnimationBindingClass.cpp:
+lib/havok/animation/animation/animation/hkaAnimationBindingClass.cpp:
 	.rdata      start:0x8212D2E0 end:0x8212D388
 	.rdata      start:0x821DEFF8 end:0x821DF048 rename:.rdata$r
 	.pdata      start:0x82217528 end:0x82217540
@@ -16964,7 +16964,7 @@ hkaAnimationBindingClass.cpp:
 	.data       start:0x83267D20 end:0x83267DC2
 	.data       start:0x833249B0 end:0x833249F8 rename:.bss
 
-hkaAnimation.cpp:
+lib/havok/animation/animation/animation/hkaAnimation.cpp:
 	.pdata      start:0x822184B8 end:0x822184D8
 	.text       start:0x82D269A8 end:0x82D26F08
 

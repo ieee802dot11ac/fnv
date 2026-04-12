@@ -1,6 +1,8 @@
-#include "bssoundhandle.h"
-#include "bsaudio/bsaudio.h"
-#include "bsaudio/bsaudiomanager.h"
+#include "BSSoundHandle.h"
+#include "bsaudio/BSAudio.h"
+#include "bsaudio/BSAudioManager.h"
+
+void (*BSSoundHandle::pfnAddMovingSoundCallback)(NiAVObject *);
 
 bool BSSoundHandle::Play(bool abLoopPlayback) {
     if (iSoundID == -1) {

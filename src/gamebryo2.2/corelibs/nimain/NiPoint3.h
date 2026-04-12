@@ -15,7 +15,7 @@ public:
         y = _y;
         z = _z;
     }
-    NiPoint3();
+    NiPoint3() {}
     float &operator[](int);
     float const &operator[](int) const;
     bool operator==(NiPoint3 const &kPoint) const {

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "bscore/memorymanager.h"
 #include "nimain/nitarray.h"
 #include <types.h>
 
@@ -88,6 +89,8 @@ public:
 
     static SETTING_TYPE DataType(const char *);
 
+    BS_MEM_OVERLOADS
+
 protected:
     static SETTING_VALUE stdef;
 };
@@ -96,14 +99,14 @@ template <typename T>
 class SettingT : public Setting {
 public:
     SettingT<T>(const SettingT<T> &);
-    SettingT<T>(const char *, u8);
-    SettingT<T>(const char *, s8);
-    SettingT<T>(const char *, bool);
-    SettingT<T>(const char *, float);
-    SettingT<T>(const char *, uint);
-    SettingT<T>(const char *, int);
-    SettingT<T>(const char *, char *);
-    SettingT<T>(const char *, SETTING_VALUE);
+    SettingT<T>(const char *, u8) {}
+    SettingT<T>(const char *, s8) {}
+    SettingT<T>(const char *, bool) {}
+    SettingT<T>(const char *, float) {}
+    SettingT<T>(const char *, uint) {}
+    SettingT<T>(const char *, int) {}
+    SettingT<T>(const char *, char *) {}
+    SettingT<T>(const char *, SETTING_VALUE) {}
     virtual ~SettingT<T>();
     SettingT<T> &operator=(const SettingT<T> &);
     SettingT<T> &operator=(const u8);

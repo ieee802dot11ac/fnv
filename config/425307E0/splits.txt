@@ -4017,7 +4017,7 @@ fallout_shared/ActionPoints.cpp:
 	.data       start:0x83245D40 end:0x83245FB4
 	.data       start:0x8328F99C end:0x8328FA04 rename:.bss
 
-BSTreeNode.cpp:
+fallout_shared/speedtree/BSTreeNode.cpp:
 	.rdata      start:0x820685F0 end:0x82068D6C
 	.rdata      start:0x821C3D48 end:0x821C3FE0 rename:.rdata$r
 	.pdata      start:0x821EFDB0 end:0x821EFEA8
@@ -4029,7 +4029,7 @@ BSTreeNode.cpp:
 	.data       start:0x83245BF0 end:0x83245D39
 	.data       start:0x8328F980 end:0x8328F99C rename:.bss
 
-BSTreeModel.cpp:
+fallout_shared/speedtree/BSTreeModel.cpp:
 	.rdata      start:0x82068370 end:0x820685E1
 	.rdata      start:0x821C3CF8 end:0x821C3D48 rename:.rdata$r
 	.pdata      start:0x821EFD30 end:0x821EFDB0
@@ -4041,7 +4041,7 @@ BSTreeModel.cpp:
 	.data       start:0x83245BA0 end:0x83245BE6
 	.data       start:0x8328F944 end:0x8328F980 rename:.bss
 
-BSTreeManager.cpp:
+fallout_shared/speedtree/BSTreeManager.cpp:
 	.rdata      start:0x82067C30 end:0x8206836D
 	.rdata      start:0x821C3C18 end:0x821C3CF8 rename:.rdata$r
 	.pdata      start:0x821EFBF8 end:0x821EFD30
@@ -4053,7 +4053,7 @@ BSTreeManager.cpp:
 	.data       start:0x83245960 end:0x83245B96
 	.data       start:0x8328F890 end:0x8328F944 rename:.bss
 
-BSFaceGenNiNode.cpp:
+fallout_shared/facegen/BSFaceGenNiNode.cpp:
 	.rdata      start:0x820678D0 end:0x82067C28
 	.rdata      start:0x821C3BB8 end:0x821C3C18 rename:.rdata$r
 	.pdata      start:0x821EFB60 end:0x821EFBF8
@@ -4064,7 +4064,7 @@ BSFaceGenNiNode.cpp:
 	.data       start:0x83245920 end:0x8324595E
 	.data       start:0x8328F820 end:0x8328F890 rename:.bss
 
-BSFaceGenMorphData.cpp:
+fallout_shared/facegen/BSFaceGenMorphData.cpp:
 	.rdata      start:0x82067430 end:0x820678C3
 	.rdata      start:0x821C3A7C end:0x821C3BB8 rename:.rdata$r
 	.pdata      start:0x821EFAF8 end:0x821EFB60
@@ -4074,7 +4074,7 @@ BSFaceGenMorphData.cpp:
 	.data       start:0x83245860 end:0x83245916
 	.data       start:0x8328F7F0 end:0x8328F820 rename:.bss
 
-BSFaceGenMorph.cpp:
+fallout_shared/facegen/BSFaceGenMorph.cpp:
 	.rdata      start:0x82067340 end:0x82067430
 	.rdata      start:0x821C399C end:0x821C3A7C rename:.rdata$r
 	.pdata      start:0x821EFAA8 end:0x821EFAF8
@@ -4084,7 +4084,7 @@ BSFaceGenMorph.cpp:
 	.data       start:0x832457D0 end:0x8324585C
 	.data       start:0x8328F7C0 end:0x8328F7F0 rename:.bss
 
-BSFaceGenModel.cpp:
+fallout_shared/facegen/BSFaceGenModel.cpp:
 	.rdata      start:0x82066F48 end:0x82067340
 	.rdata      start:0x821C38F4 end:0x821C399C rename:.rdata$r
 	.pdata      start:0x821EF868 end:0x821EFAA8
@@ -4094,7 +4094,7 @@ BSFaceGenModel.cpp:
 	.data       start:0x83245760 end:0x832457CE
 	.data       start:0x8328F7A4 end:0x8328F7C0 rename:.bss
 
-BSFaceGenManager.cpp:
+fallout_shared/facegen/BSFaceGenManager.cpp:
 	.rdata      start:0x82066678 end:0x82066F45
 	.rdata      start:0x821C36E0 end:0x821C38F4 rename:.rdata$r
 	.pdata      start:0x821EF568 end:0x821EF868
@@ -4106,7 +4106,7 @@ BSFaceGenManager.cpp:
 	.data       start:0x83245360 end:0x83245758
 	.data       start:0x8328F6C4 end:0x8328F7A4 rename:.bss
 
-BSFaceGenKeyframe.cpp:
+fallout_shared/facegen/BSFaceGenKeyframe.cpp:
 	.rdata      start:0x820664BC end:0x82066675
 	.rdata      start:0x821C364C end:0x821C36E0 rename:.rdata$r
 	.pdata      start:0x821EF4E0 end:0x821EF568
@@ -4116,7 +4116,7 @@ BSFaceGenKeyframe.cpp:
 	.data       start:0x83245300 end:0x83245360
 	.data       start:0x8328F6B8 end:0x8328F6C4 rename:.bss
 
-BSFaceGenImage.cpp:
+fallout_shared/facegen/BSFaceGenImage.cpp:
 	.rdata      start:0x820663E0 end:0x820664B9
 	.rdata      start:0x821C35FC end:0x821C364C rename:.rdata$r
 	.pdata      start:0x821EF4A0 end:0x821EF4E0
@@ -4128,7 +4128,7 @@ BSFaceGenImage.cpp:
 	.data       start:0x832452B0 end:0x832452F9
 	.data       start:0x8328F6A4 end:0x8328F6B8 rename:.bss
 
-BSFaceGenAnimationData.cpp:
+fallout_shared/facegen/BSFaceGenAnimationData.cpp:
 	.rdata      start:0x82065D50 end:0x820663DB
 	.rdata      start:0x821C35A4 end:0x821C35FC rename:.rdata$r
 	.pdata      start:0x821EF3C0 end:0x821EF4A0
@@ -4140,7 +4140,7 @@ BSFaceGenAnimationData.cpp:
 	.data       start:0x83245090 end:0x832452A9
 	.data       start:0x8328F630 end:0x8328F6A4 rename:.bss
 
-MenuGamesettings.cpp:
+fallout_shared/MenuGamesettings.cpp:
 	.rdata      start:0x8205AC0C end:0x82065D4E
 	.pdata      start:0x822325A0 end:0x82234868
 	.text       start:0x8247DD90 end:0x8247DE1C
@@ -4161,7 +4161,7 @@ fallout_shared/magic/MagicFormulas.cpp:
 	.data       start:0x832414D0 end:0x83241CB0
 	.data       start:0x8328EFF0 end:0x8328EFFC rename:.bss
 
-GamePlayFormulas.cpp:
+fallout_shared/GamePlayFormulas.cpp:
 	.rdata      start:0x82056F70 end:0x82059B3E
 	.pdata      start:0x821EF350 end:0x821EF3A0
 	.pdata      start:0x82231148 end:0x82232070
@@ -4172,7 +4172,7 @@ GamePlayFormulas.cpp:
 	.data       start:0x8323FDC0 end:0x832414D0
 	.data       start:0x8328EFE4 end:0x8328EFF0 rename:.bss
 
-CombatFormulas.cpp:
+fallout_shared/CombatFormulas.cpp:
 	.rdata      start:0x820526A0 end:0x82056F64
 	.pdata      start:0x821EF2A0 end:0x821EF350
 	.pdata      start:0x8222FCA8 end:0x82231148
@@ -4183,7 +4183,7 @@ CombatFormulas.cpp:
 	.data       start:0x8323DF00 end:0x8323FDB4
 	.data       start:0x8328EF7C end:0x8328EFE4 rename:.bss
 
-AiFormulas.cpp:
+fallout_shared/AiFormulas.cpp:
 	.rdata      start:0x82050420 end:0x82052692
 	.rdata      start:0x821C355C end:0x821C35A4 rename:.rdata$r
 	.pdata      start:0x821EF1F0 end:0x821EF2A0
@@ -4195,7 +4195,7 @@ AiFormulas.cpp:
 	.data       start:0x8323CD70 end:0x8323DEF4
 	.data       start:0x8328EF14 end:0x8328EF7C rename:.bss
 
-Sun.cpp:
+fallout_shared/sky/Sun.cpp:
 	.rdata      start:0x82050250 end:0x82050416
 	.rdata      start:0x821C3510 end:0x821C355C rename:.rdata$r
 	.pdata      start:0x821EF1B0 end:0x821EF1F0
@@ -4207,7 +4207,7 @@ Sun.cpp:
 	.data       start:0x8323CCD0 end:0x8323CD62
 	.data       start:0x8328EEAC end:0x8328EF14 rename:.bss
 
-Stars.cpp:
+fallout_shared/sky/Stars.cpp:
 	.rdata      start:0x82050170 end:0x8205024E
 	.rdata      start:0x821C34C4 end:0x821C3510 rename:.rdata$r
 	.pdata      start:0x821EF180 end:0x821EF1B0
@@ -4219,7 +4219,7 @@ Stars.cpp:
 	.data       start:0x8323CC60 end:0x8323CCC4
 	.data       start:0x8328EE34 end:0x8328EEAC rename:.bss
 
-SkyTextureManager.cpp:
+fallout_shared/sky/SkyTextureManager.cpp:
 	.rdata      start:0x820500A4 end:0x82050167
 	.rdata      start:0x821C346C end:0x821C34C4 rename:.rdata$r
 	.pdata      start:0x821EF170 end:0x821EF180
@@ -4229,7 +4229,7 @@ SkyTextureManager.cpp:
 	.data       start:0x8323CC30 end:0x8323CC5E
 	.data       start:0x8328EE28 end:0x8328EE34 rename:.bss
 
-SkyObject.cpp:
+fallout_shared/sky/SkyObject.cpp:
 	.rdata      start:0x82050000 end:0x820500A2
 	.rdata      start:0x821C3458 end:0x821C346C rename:.rdata$r
 	.pdata      start:0x821EF150 end:0x821EF170
@@ -4240,7 +4240,7 @@ SkyObject.cpp:
 	.data       start:0x8323CC10 end:0x8323CC30
 	.data       start:0x8328EDC0 end:0x8328EE28 rename:.bss
 
-Sky.cpp:
+fallout_shared/sky/Sky.cpp:
 	.rdata      start:0x8204FC00 end:0x8204FFF3
 	.rdata      start:0x821C3410 end:0x821C3458 rename:.rdata$r
 	.pdata      start:0x821EF038 end:0x821EF150
@@ -4252,7 +4252,7 @@ Sky.cpp:
 	.data       start:0x8323CAD0 end:0x8323CC0A
 	.data       start:0x8328ED40 end:0x8328EDBE rename:.bss
 
-Precipitation.cpp:
+fallout_shared/sky/Precipitation.cpp:
 	.rdata      start:0x8204FA70 end:0x8204FBF5
 	.rdata      start:0x821C33C8 end:0x821C3410 rename:.rdata$r
 	.pdata      start:0x821EEFE0 end:0x821EF038
@@ -4263,7 +4263,7 @@ Precipitation.cpp:
 	.data       start:0x8323CA90 end:0x8323CACC
 	.data       start:0x8328ECD8 end:0x8328ED40 rename:.bss
 
-Moon.cpp:
+fallout_shared/sky/Moon.cpp:
 	.rdata      start:0x8204F900 end:0x8204FA66
 	.rdata      start:0x821C337C end:0x821C33C8 rename:.rdata$r
 	.pdata      start:0x821EEFA8 end:0x821EEFE0
@@ -4274,7 +4274,7 @@ Moon.cpp:
 	.data       start:0x8323CA50 end:0x8323CA83
 	.data       start:0x8328EC6C end:0x8328ECD8 rename:.bss
 
-Clouds.cpp:
+fallout_shared/sky/Clouds.cpp:
 	.rdata      start:0x8204F7E0 end:0x8204F8F2
 	.rdata      start:0x821C3330 end:0x821C337C rename:.rdata$r
 	.pdata      start:0x821EEF68 end:0x821EEFA8
@@ -4286,7 +4286,7 @@ Clouds.cpp:
 	.data       start:0x8323CA00 end:0x8323CA41
 	.data       start:0x8328EC04 end:0x8328EC6C rename:.bss
 
-Atmosphere.cpp:
+fallout_shared/sky/Atmosphere.cpp:
 	.rdata      start:0x8204F6A0 end:0x8204F7D8
 	.rdata      start:0x821C32B0 end:0x821C3330 rename:.rdata$r
 	.pdata      start:0x821EEF40 end:0x821EEF68
@@ -8580,14 +8580,14 @@ XVirtualKeyboard.cpp:
 	.data       start:0x83258A6C end:0x83258AAF
 	.data       start:0x832AC4C4 end:0x832AC4E8 rename:.bss
 
-CachedDebugText.cpp:
+bsmenu/CachedDebugText.cpp:
 	.rdata      start:0x820D0FEC end:0x820D1066
 	.rdata      start:0x821D2B58 end:0x821D2BA4 rename:.rdata$r
 	.pdata      start:0x822029E0 end:0x82202A30
 	.text       start:0x8290A330 end:0x8290AAEC
 	.data       start:0x83259210 end:0x8325922E
 
-DebugText.cpp:
+bsmenu/DebugText.cpp:
 	.rdata      start:0x820CE9A0 end:0x820CECDF
 	.rdata      start:0x821D21A8 end:0x821D22DC rename:.rdata$r
 	.pdata      start:0x82201EE8 end:0x82202050
@@ -8600,7 +8600,7 @@ DebugText.cpp:
 	.data       start:0x83258AB0 end:0x83258B56
 	.data       start:0x832AC51C end:0x832AC57C rename:.bss
 
-Font.cpp:
+bsmenu/Font.cpp:
 	.rdata      start:0x820D0184 end:0x820D07E6
 	.rdata      start:0x821D2764 end:0x821D27AC rename:.rdata$r
 	.pdata      start:0x822024E8 end:0x822026C0
@@ -8613,7 +8613,7 @@ Font.cpp:
 	.data       start:0x83258E00 end:0x83258E62
 	.data       start:0x832AC694 end:0x832AC714 rename:.bss
 
-Menu.cpp:
+bsmenu/Menu.cpp:
 	.rdata      start:0x820D08CC end:0x820D0DF0
 	.rdata      start:0x821D27AC end:0x821D2B58 rename:.rdata$r
 	.pdata      start:0x822027A0 end:0x82202918
@@ -8626,7 +8626,7 @@ Menu.cpp:
 	.data       start:0x83258E80 end:0x832591C4
 	.data       start:0x832AC7C0 end:0x832AC860 rename:.bss
 
-RadialTile.cpp:
+bsmenu/RadialTile.cpp:
 	.rdata      start:0x820D1068 end:0x820D10D0
 	.rdata      start:0x821D2BA4 end:0x821D2BF4 rename:.rdata$r
 	.pdata      start:0x82202A30 end:0x82202A50
@@ -8636,7 +8636,7 @@ RadialTile.cpp:
 	.data       start:0x83259230 end:0x83259240
 	.data       start:0x832AC8C8 end:0x832AC8D8 rename:.bss
 
-Tile.cpp:
+bsmenu/Tile.cpp:
 	.rdata      start:0x820CECE0 end:0x820D0181
 	.rdata      start:0x821D22DC end:0x821D2764 rename:.rdata$r
 	.pdata      start:0x82202050 end:0x822024E8
@@ -8649,7 +8649,7 @@ Tile.cpp:
 	.data       start:0x83258B60 end:0x83258DFB
 	.data       start:0x832AC57C end:0x832AC694 rename:.bss
 
-Tile3D.cpp:
+bsmenu/Tile3D.cpp:
 	.rdata      start:0x820D0F60 end:0x820D0FE9
 	.pdata      start:0x82202988 end:0x822029E0
 	.pdata      start:0x8223FE98 end:0x8223FEA0
@@ -8659,7 +8659,7 @@ Tile3D.cpp:
 	.data       start:0x83259200 end:0x83259210
 	.data       start:0x832AC894 end:0x832AC8C8 rename:.bss
 
-TileImage.cpp:
+bsmenu/TileImage.cpp:
 	.rdata      start:0x820D0E74 end:0x820D0F60
 	.pdata      start:0x82202958 end:0x82202988
 	.text       start:0x82907D78 end:0x82908E80
@@ -8668,7 +8668,7 @@ TileImage.cpp:
 	.data       start:0x832591F0 end:0x83259200
 	.data       start:0x832AC880 end:0x832AC894 rename:.bss
 
-TileMenu.cpp:
+bsmenu/TileMenu.cpp:
 	.rdata      start:0x820D0E48 end:0x820D0E71
 	.pdata      start:0x82202930 end:0x82202958
 	.text       start:0x829077C8 end:0x82907D74
@@ -8677,7 +8677,7 @@ TileMenu.cpp:
 	.data       start:0x832591E0 end:0x832591F0
 	.data       start:0x832AC870 end:0x832AC880 rename:.bss
 
-TileRect.cpp:
+bsmenu/TileRect.cpp:
 	.rdata      start:0x820D0DF0 end:0x820D0E47
 	.pdata      start:0x82202918 end:0x82202930
 	.text       start:0x829073A8 end:0x829077C8
@@ -8686,7 +8686,7 @@ TileRect.cpp:
 	.data       start:0x832591D0 end:0x832591E0
 	.data       start:0x832AC860 end:0x832AC870 rename:.bss
 
-TileText.cpp:
+bsmenu/TileText.cpp:
 	.rdata      start:0x820D10D0 end:0x820D1127
 	.pdata      start:0x82202A50 end:0x82202A68
 	.text       start:0x8290AEB8 end:0x8290BC68
@@ -8695,7 +8695,7 @@ TileText.cpp:
 	.data       start:0x83259240 end:0x83259250
 	.data       start:0x832AC8D8 end:0x832AC8E8 rename:.bss
 
-XUserInterface.cpp:
+bsmenu/XUserInterface.cpp:
 	.rdata      start:0x820D07F0 end:0x820D08CC
 	.pdata      start:0x822026C0 end:0x822027A0
 	.pdata      start:0x8223FDC8 end:0x8223FE80
@@ -8953,7 +8953,7 @@ XSettingsFile.cpp:
 	.data       start:0x83259A30 end:0x83259A38
 	.data       start:0x832ACF68 end:0x832ACF70 rename:.bss
 
-binaryFile.cpp:
+lib/facegen/binaryFile.cpp:
 	.rdata      start:0x820D7AF0 end:0x820D9B03
 	.pdata      start:0x822045E0 end:0x82204700
 	.pdata      start:0x82240000 end:0x82240010
@@ -8963,7 +8963,7 @@ binaryFile.cpp:
 	.data       start:0x83259AE0 end:0x83259AF0
 	.data       start:0x832ADA48 end:0x832ADA5C rename:.bss
 
-EgmFileIO.cpp:
+lib/facegen/EgmFileIO.cpp:
 	.rdata      start:0x820D7534 end:0x820D767A
 	.pdata      start:0x82203DE0 end:0x82203EA0
 	.pdata      start:0x8223FFE0 end:0x8223FFF0
@@ -8973,7 +8973,7 @@ EgmFileIO.cpp:
 	.data       start:0x83259AC0 end:0x83259AD0
 	.data       start:0x832ADA28 end:0x832ADA38 rename:.bss
 
-EgtFileIO_Sdk.cpp:
+lib/facegen/EgtFileIO_Sdk.cpp:
 	.rdata      start:0x820D7448 end:0x820D7532
 	.pdata      start:0x82203D28 end:0x82203DE0
 	.pdata      start:0x8223FFD0 end:0x8223FFE0
@@ -8983,7 +8983,7 @@ EgtFileIO_Sdk.cpp:
 	.data       start:0x83259AB0 end:0x83259AC0
 	.data       start:0x832ADA18 end:0x832ADA28 rename:.bss
 
-FanCtlFile.cpp:
+lib/facegen/FanCtlFile.cpp:
 	.rdata      start:0x820D68F0 end:0x820D6A1C
 	.rdata      start:0x821D2BF4 end:0x821D2C88 rename:.rdata$r
 	.pdata      start:0x82203B30 end:0x82203B70
@@ -8994,7 +8994,7 @@ FanCtlFile.cpp:
 	.data       start:0x83259A40 end:0x83259A92
 	.data       start:0x832AD9F8 end:0x832ADA08 rename:.bss
 
-TriFileIO.cpp:
+lib/facegen/TriFileIO.cpp:
 	.rdata      start:0x820D767C end:0x820D7AE9
 	.pdata      start:0x82203EA0 end:0x822045E0
 	.pdata      start:0x8223FFF0 end:0x82240000
@@ -9004,7 +9004,7 @@ TriFileIO.cpp:
 	.data       start:0x83259AD0 end:0x83259AE0
 	.data       start:0x832ADA38 end:0x832ADA48 rename:.bss
 
-algs.cpp:
+lib/facegen/algs.cpp:
 	.rdata      start:0x820D9C98 end:0x820DA124
 	.rdata      start:0x821D2C88 end:0x821D32C8 rename:.rdata$r
 	.pdata      start:0x82204758 end:0x82205258
@@ -9012,7 +9012,7 @@ algs.cpp:
 	.data       start:0x83259AF0 end:0x83259E6B
 	.data       start:0x832ADB74 end:0x832ADB80 rename:.bss
 
-FanControls.cpp:
+lib/facegen/FanControls.cpp:
 	.rdata      start:0x820D6A1C end:0x820D7445
 	.pdata      start:0x82203B70 end:0x82203D28
 	.pdata      start:0x8223FFC0 end:0x8223FFD0
@@ -9022,7 +9022,7 @@ FanControls.cpp:
 	.data       start:0x83259AA0 end:0x83259AB0
 	.data       start:0x832ADA08 end:0x832ADA18 rename:.bss
 
-FutDensity.cpp:
+lib/facegen/FutDensity.cpp:
 	.rdata      start:0x820D9B08 end:0x820D9B18
 	.pdata      start:0x82204700 end:0x82204720
 	.pdata      start:0x82240010 end:0x82240018
@@ -9031,12 +9031,12 @@ FutDensity.cpp:
 	.data       start:0x8321E3DC end:0x8321E3E8 rename:.CRT$XCU
 	.data       start:0x832ADA60 end:0x832ADA70 rename:.bss
 
-assert.cpp:
+lib/facegen/assert.cpp:
 	.rdata      start:0x820D6874 end:0x820D68ED
 	.pdata      start:0x82203B20 end:0x82203B30
 	.text       start:0x82945B08 end:0x82945BC8
 
-lastError.cpp:
+lib/facegen/lastError.cpp:
 	.rdata      start:0x820D9B18 end:0x820D9C93
 	.pdata      start:0x82204720 end:0x82204758
 	.pdata      start:0x82240018 end:0x82240020
@@ -10845,7 +10845,7 @@ gamebryo2.2/corelibs/niparticle/NiPSysVortexFieldModifier.cpp:
 	.data       start:0x8321E9F4 end:0x8321E9F8 rename:.CRT$XCU
 	.data       start:0x832B2F78 end:0x832B2F80 rename:.bss
 
-BSShaderUtil.cpp:
+bsshader/BSShaderUtil.cpp:
 	.rdata      start:0x820F1C54 end:0x820F1EE6
 	.pdata      start:0x8220A840 end:0x8220A8E8
 	.pdata      start:0x82240638 end:0x82240650
@@ -10857,7 +10857,7 @@ BSShaderUtil.cpp:
 	.data       start:0x8325B2D8 end:0x8325B2F8
 	.data       start:0x832B4410 end:0x832B442C rename:.bss
 
-MTRenderingSystem.cpp:
+bsshader/MTRenderingSystem.cpp:
 	.rdata      start:0x820F3F60 end:0x820F41E2
 	.pdata      start:0x8220ADF8 end:0x8220AE70
 	.pdata      start:0x82240658 end:0x82240670
@@ -13172,7 +13172,7 @@ hkpBallGun.cpp:
 	.pdata      start:0x82218EB0 end:0x82218ED8
 	.text       start:0x82D44560 end:0x82D44C84
 
-hkpVehicleViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/vehicle/hkpVehicleViewer.cpp:
 	.rdata      start:0x821192F0 end:0x821193B0
 	.rdata      start:0x821DB0DC end:0x821DB1C8 rename:.rdata$r
 	.pdata      start:0x822144D8 end:0x82214528
@@ -13180,7 +13180,7 @@ hkpVehicleViewer.cpp:
 	.data       start:0x83261234 end:0x83261253
 	.data       start:0x83320F6C end:0x83320F70 rename:.bss
 
-hkpMousePickingViewer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/utilities/hkpMousePickingViewer.cpp:
 	.rdata      start:0x821197D0 end:0x82119840
 	.rdata      start:0x821DB594 end:0x821DB618 rename:.rdata$r
 	.pdata      start:0x822146B0 end:0x822146F0
@@ -13188,80 +13188,80 @@ hkpMousePickingViewer.cpp:
 	.data       start:0x8326137C end:0x832613A4
 	.data       start:0x83320F98 end:0x83320F9C rename:.bss
 
-hkpWheelDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpWheelDrawer.cpp:
 	.rdata      start:0x8211FCC0 end:0x8211FCE0
 	.pdata      start:0x82216ED8 end:0x82216EE0
 	.text       start:0x82CD34F0 end:0x82CD38E8
 
-hkpStiffSpringDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpStiffSpringDrawer.cpp:
 	.rdata      start:0x8211FCE0 end:0x8211FD00
 	.pdata      start:0x82216EE0 end:0x82216EE8
 	.text       start:0x82CD38E8 end:0x82CD3A68
 
-hkpRagdollLimitsDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpRagdollLimitsDrawer.cpp:
 	.rdata      start:0x8211FBF0 end:0x8211FC10
 	.pdata      start:0x82216EA8 end:0x82216EB0
 	.text       start:0x82CD1EC0 end:0x82CD2450
 
-hkpRagdollDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpRagdollDrawer.cpp:
 	.rdata      start:0x8211FC60 end:0x8211FC80
 	.pdata      start:0x82216EC0 end:0x82216EC8
 	.text       start:0x82CD2A40 end:0x82CD3010
 
-hkpPulleyDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpPulleyDrawer.cpp:
 	.rdata      start:0x8211FC30 end:0x8211FC60
 	.pdata      start:0x82216EB8 end:0x82216EC0
 	.text       start:0x82CD2820 end:0x82CD2A40
 	.data       start:0x83263B60 end:0x83263B70
 
-hkpPrismaticDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpPrismaticDrawer.cpp:
 	.rdata      start:0x8211FD00 end:0x8211FD20
 	.pdata      start:0x82216EE8 end:0x82216EF0
 	.text       start:0x82CD3A68 end:0x82CD3DA4
 
-hkpPrimitiveDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpPrimitiveDrawer.cpp:
 	.rdata      start:0x82132620 end:0x82132648
 	.pdata      start:0x82217DD8 end:0x82217E00
 	.text       start:0x82D02F60 end:0x82D039E4
 
-hkpPointToPlaneDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpPointToPlaneDrawer.cpp:
 	.rdata      start:0x8211FC80 end:0x8211FCA0
 	.pdata      start:0x82216EC8 end:0x82216ED0
 	.text       start:0x82CD3010 end:0x82CD3304
 	.data       start:0x83263B70 end:0x83263B80
 
-hkpPointToPathDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpPointToPathDrawer.cpp:
 	.rdata      start:0x8211FCA0 end:0x8211FCC0
 	.pdata      start:0x82216ED0 end:0x82216ED8
 	.text       start:0x82CD3308 end:0x82CD34F0
 
-hkpLimitedHingeDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpLimitedHingeDrawer.cpp:
 	.rdata      start:0x8211FD20 end:0x8211FD40
 	.pdata      start:0x82216EF0 end:0x82216EF8
 	.text       start:0x82CD3DA8 end:0x82CD4238
 
-hkpHingeLimitsDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpHingeLimitsDrawer.cpp:
 	.rdata      start:0x8211FC10 end:0x8211FC30
 	.pdata      start:0x82216EB0 end:0x82216EB8
 	.text       start:0x82CD2450 end:0x82CD281C
 
-hkpHingeDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpHingeDrawer.cpp:
 	.rdata      start:0x8211FD40 end:0x8211FD60
 	.pdata      start:0x82216EF8 end:0x82216F00
 	.text       start:0x82CD4238 end:0x82CD43B4
 
-hkpConstraintDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpConstraintDrawer.cpp:
 	.rdata      start:0x8211FB60 end:0x8211FB80
 	.pdata      start:0x82216E10 end:0x82216E30
 	.text       start:0x82CD04A0 end:0x82CD08B0
 
-hkpConstraintChainDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpConstraintChainDrawer.cpp:
 	.rdata      start:0x8211FBD0 end:0x8211FBF0
 	.pdata      start:0x82216EA0 end:0x82216EA8
 	.text       start:0x82CD1C60 end:0x82CD1EBC
 	.data       start:0x83263B50 end:0x83263B60
 
-hkpBallSocketDrawer.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/dynamics/constraint/drawer/hkpBallSocketDrawer.cpp:
 	.rdata      start:0x8211FD60 end:0x8211FD80
 	.pdata      start:0x82216F00 end:0x82216F08
 	.text       start:0x82CD43B8 end:0x82CD4478

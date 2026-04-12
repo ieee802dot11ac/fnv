@@ -17935,7 +17935,7 @@ hkConvexPenetrationUtil.cpp:
 	.text       start:0x82D665B0 end:0x82D67728
 	.data       start:0x8326A440 end:0x8326A450
 
-hkSerializeDeprecated.cpp:
+lib/havok/common/compat/deprecated/hkSerializeDeprecated.cpp:
 	.rdata      start:0x8211D8AC end:0x8211D93E
 	.rdata      start:0x821DC798 end:0x821DC83C rename:.rdata$r
 	.pdata      start:0x82215A18 end:0x82215A30
@@ -17946,7 +17946,7 @@ hkSerializeDeprecated.cpp:
 	.data       start:0x83262C84 end:0x83262CF0
 	.data       start:0x83321A24 end:0x83321A34 rename:.bss
 
-hkMotionStateClass.cpp:
+lib/havok/common/base/types/physics/motionstate/hkMotionStateClass.cpp:
 	.rdata      start:0x8212B4A4 end:0x8212B616
 	.pdata      start:0x82241318 end:0x82241320
 	.text       start:0x82CEA8A8 end:0x82CEA8BC
@@ -17955,11 +17955,11 @@ hkMotionStateClass.cpp:
 	.data       start:0x832673BC end:0x832673F0
 	.data       start:0x83324440 end:0x83324470 rename:.bss
 
-hkMotionState.cpp:
+lib/havok/common/base/types/physics/motionstate/hkMotionState.cpp:
 	.pdata      start:0x82211418 end:0x82211420
 	.text       start:0x82BB61E0 end:0x82BB623C
 
-hkContactPointMaterialClass.cpp:
+lib/havok/common/base/types/physics/contactpoint/hkContactPointMaterialClass.cpp:
 	.rdata      start:0x8212B998 end:0x8212BAC7
 	.pdata      start:0x82241368 end:0x82241370
 	.text       start:0x82CEAB08 end:0x82CEAB1C
@@ -17968,7 +17968,7 @@ hkContactPointMaterialClass.cpp:
 	.data       start:0x83267748 end:0x83267789
 	.data       start:0x83324620 end:0x83324650 rename:.bss
 
-hkContactPointClass.cpp:
+lib/havok/common/base/types/physics/contactpoint/hkContactPointClass.cpp:
 	.rdata      start:0x8212BAC8 end:0x8212BB1B
 	.pdata      start:0x82241370 end:0x82241378
 	.text       start:0x82CEAB20 end:0x82CEAB34
@@ -17977,7 +17977,7 @@ hkContactPointClass.cpp:
 	.data       start:0x8326778C end:0x832677C1
 	.data       start:0x83324650 end:0x83324680 rename:.bss
 
-hkSphereClass.cpp:
+lib/havok/common/base/types/geometry/sphere/hkSphereClass.cpp:
 	.rdata      start:0x8212B47C end:0x8212B4A1
 	.pdata      start:0x82241310 end:0x82241318
 	.text       start:0x82CEA890 end:0x82CEA8A4
@@ -17986,7 +17986,7 @@ hkSphereClass.cpp:
 	.data       start:0x8326738C end:0x832673BB
 	.data       start:0x83324410 end:0x83324440 rename:.bss
 
-hkLocalFrameClass.cpp:
+lib/havok/common/base/types/geometry/localframe/hkLocalFrameClass.cpp:
 	.rdata      start:0x8211BE74 end:0x8211BFB3
 	.rdata      start:0x821DC39C end:0x821DC47C rename:.rdata$r
 	.pdata      start:0x82215508 end:0x82215528
@@ -17997,16 +17997,16 @@ hkLocalFrameClass.cpp:
 	.data       start:0x83262498 end:0x832624F5
 	.data       start:0x83321564 end:0x83321624 rename:.bss
 
-hkLocalFrame.cpp:
+lib/havok/common/base/types/geometry/localframe/hkLocalFrame.cpp:
 	.pdata      start:0x822170E0 end:0x82217110
 	.text       start:0x82CE1AB8 end:0x82CE1F18
 
-hkAabbUtil.cpp:
+lib/havok/common/base/types/geometry/aabb/hkAabbUtil.cpp:
 	.rdata      start:0x8210F304 end:0x8210F30C
 	.pdata      start:0x8220FDE0 end:0x8220FDF0
 	.text       start:0x82B7CAE0 end:0x82B7D24C
 
-hkAabbClass.cpp:
+lib/havok/common/base/types/geometry/aabb/hkAabbClass.cpp:
 	.rdata      start:0x821217C4 end:0x821218DD
 	.pdata      start:0x82240D38 end:0x82240D48
 	.text       start:0x82CD4890 end:0x82CD48BC
@@ -18015,10 +18015,10 @@ hkAabbClass.cpp:
 	.data       start:0x83264520 end:0x83264583
 	.data       start:0x83322288 end:0x833222E8 rename:.bss
 
-hkAabb.cpp:
+lib/havok/common/base/types/geometry/aabb/hkAabb.cpp:
 	.text       start:0x82B73A68 end:0x82B73AD4
 
-hkGeometryClass.cpp:
+lib/havok/common/base/types/geometry/hkGeometryClass.cpp:
 	.rdata      start:0x8212B870 end:0x8212B91F
 	.pdata      start:0x82241348 end:0x82241358
 	.text       start:0x82CEAAA0 end:0x82CEAAD4
@@ -18027,7 +18027,7 @@ hkGeometryClass.cpp:
 	.data       start:0x83267658 end:0x832676C5
 	.data       start:0x83324560 end:0x833245C0 rename:.bss
 
-hkColorClass.cpp:
+lib/havok/common/base/types/color/hkColorClass.cpp:
 	.rdata      start:0x8212BB1C end:0x8212C5FC
 	.pdata      start:0x82241378 end:0x82241380
 	.text       start:0x82CEAB38 end:0x82CEAB4C
@@ -18036,47 +18036,47 @@ hkColorClass.cpp:
 	.data       start:0x832677C4 end:0x832677F6
 	.data       start:0x83324680 end:0x833246B0 rename:.bss
 
-hkColor.cpp:
+lib/havok/common/base/types/color/hkColor.cpp:
 	.pdata      start:0x8220F3A0 end:0x8220F3C0
 	.text       start:0x82B68480 end:0x82B68804
 	.data       start:0x8325D948 end:0x8325D9C8
 	.data       start:0x83320414 end:0x83320420 rename:.bss
 
-hkRefVariant.cpp:
+lib/havok/common/base/types/hkRefVariant.cpp:
 	.pdata      start:0x82213598 end:0x822135B0
 	.text       start:0x82C17710 end:0x82C17834
 
-hkBaseTypes.cpp:
+lib/havok/common/base/types/hkBaseTypes.cpp:
 	.rdata      start:0x8210B690 end:0x8210BE90
 	.text       start:0x82B4FB38 end:0x82B4FC94
 
-hkWin32Thread.cpp:
+lib/havok/common/base/thread/thread/win32/hkWin32Thread.cpp:
 	.rdata      start:0x821E1AF0 end:0x821E1B04 rename:.xdata
 	.pdata      start:0x82214F08 end:0x82214F38
 	.text       start:0x82C60B70 end:0x82C60D70
 
-hkWin32Semaphore.cpp:
+lib/havok/common/base/thread/semaphore/win32/hkWin32Semaphore.cpp:
 	.pdata      start:0x82211A68 end:0x82211A70
 	.text       start:0x82BC8820 end:0x82BC88A4
 
-hkJobQueue.cpp:
+lib/havok/common/base/thread/jobqueue/hkJobQueue.cpp:
 	.rdata      start:0x821140E0 end:0x821141A4
 	.pdata      start:0x82211A70 end:0x82211B30
 	.text       start:0x82BC88A8 end:0x82BCA8F8
 	.tls        start:0x833360C8 end:0x833360CC rename:.tls$
 
-hkCpuJobThreadPool.cpp:
+lib/havok/common/base/thread/job/threadpool/cpu/hkCpuJobThreadPool.cpp:
 	.rdata      start:0x82116120 end:0x82116172
 	.rdata      start:0x821D86F4 end:0x821D8784 rename:.rdata$r
 	.pdata      start:0x822128C8 end:0x82212928
 	.text       start:0x82BFAD40 end:0x82BFB5F8
 	.data       start:0x8325F1B0 end:0x8325F1F1
 
-hkWin32CriticalSection.cpp:
+lib/havok/common/base/thread/criticalsection/hkWin32CriticalSection.cpp:
 	.pdata      start:0x82211560 end:0x82211568
 	.text       start:0x82BB8660 end:0x82BB8690
 
-hkSystemClock.cpp:
+lib/havok/common/base/system/stopwatch/hkSystemClock.cpp:
 	.rdata      start:0x8211F524 end:0x8211F556
 	.rdata      start:0x821DD724 end:0x821DD80C rename:.rdata$r
 	.pdata      start:0x82216948 end:0x82216958
@@ -18086,10 +18086,10 @@ hkSystemClock.cpp:
 	.data       start:0x832636C0 end:0x83263740
 	.data       start:0x83321BD0 end:0x83321BE0 rename:.bss
 
-hkStopwatch.cpp:
+lib/havok/common/base/system/stopwatch/hkStopwatch.cpp:
 	.text       start:0x82C35D08 end:0x82C35D60
 
-hkStackTracer.cpp:
+lib/havok/common/base/system/stacktracer/hkStackTracer.cpp:
 	.rdata      start:0x8211C5E4 end:0x8211C61E
 	.rdata      start:0x821DC47C end:0x821DC520 rename:.rdata$r
 	.pdata      start:0x82215598 end:0x822155A0
@@ -18099,26 +18099,26 @@ hkStackTracer.cpp:
 	.data       start:0x832629F0 end:0x83262A4C
 	.data       start:0x83321960 end:0x8332197C rename:.bss
 
-hkStdioStreamWriter.cpp:
+lib/havok/common/base/system/io/writer/stdio/hkStdioStreamWriter.cpp:
 	.rdata      start:0x82115D8C end:0x82115DB8
 	.rdata      start:0x821D85A8 end:0x821D85FC rename:.rdata$r
 	.pdata      start:0x82212770 end:0x822127B0
 	.text       start:0x82BF9100 end:0x82BF9470
 	.data       start:0x8325F118 end:0x8325F13A
 
-hkOffsetOnlyStreamWriter.cpp:
+lib/havok/common/base/system/io/writer/offsetonly/hkOffsetOnlyStreamWriter.cpp:
 	.rdata      start:0x82131C8C end:0x82131CB4
 	.rdata      start:0x821E08A0 end:0x821E08F4 rename:.rdata$r
 	.text       start:0x82CF1368 end:0x82CF1444
 	.data       start:0x832698B4 end:0x832698DB
 
-hkCrc32StreamWriter.cpp:
+lib/havok/common/base/system/io/writer/crc32/hkCrc32StreamWriter.cpp:
 	.rdata      start:0x8211C9D4 end:0x8211C9FC
 	.rdata      start:0x821DC64C end:0x821DC6A0 rename:.rdata$r
 	.text       start:0x82C973F8 end:0x82C9751C
 	.data       start:0x83262B70 end:0x83262B92
 
-hkBufferedStreamWriter.cpp:
+lib/havok/common/base/system/io/writer/buffered/hkBufferedStreamWriter.cpp:
 	.rdata      start:0x82115ACC end:0x82115B13
 	.rdata      start:0x821D833C end:0x821D8390 rename:.rdata$r
 	.pdata      start:0x82212508 end:0x82212568
@@ -18129,7 +18129,7 @@ hkBufferedStreamWriter.cpp:
 	.data       start:0x8325EFE4 end:0x8325F009
 	.data       start:0x83320994 end:0x833209C4 rename:.bss
 
-hkArrayStreamWriter.cpp:
+lib/havok/common/base/system/io/writer/array/hkArrayStreamWriter.cpp:
 	.rdata      start:0x821170D0 end:0x82117118
 	.rdata      start:0x821D9A24 end:0x821D9A78 rename:.rdata$r
 	.pdata      start:0x822134B8 end:0x82213518
@@ -18140,7 +18140,7 @@ hkArrayStreamWriter.cpp:
 	.data       start:0x8325FE78 end:0x8325FEA0
 	.data       start:0x83320AA0 end:0x83320AD0 rename:.bss
 
-hkStreamWriterClass.cpp:
+lib/havok/common/base/system/io/writer/hkStreamWriterClass.cpp:
 	.rdata      start:0x821241F0 end:0x8212425B
 	.pdata      start:0x82240EC0 end:0x82240EC8
 	.text       start:0x831D5BA8 end:0x831D5C18 rename:.text$yc
@@ -18148,10 +18148,10 @@ hkStreamWriterClass.cpp:
 	.data       start:0x83264F78 end:0x83264F7C
 	.data       start:0x83322BB0 end:0x83322BE0 rename:.bss
 
-hkStreamWriter.cpp:
+lib/havok/common/base/system/io/writer/hkStreamWriter.cpp:
 	.text       start:0x82B69E00 end:0x82B69E1C
 
-hkBsdSocket.cpp:
+lib/havok/common/base/system/io/socket/bsd/hkBsdSocket.cpp:
 	.rdata      start:0x8211C620 end:0x8211C709
 	.rdata      start:0x821DC520 end:0x821DC574 rename:.rdata$r
 	.pdata      start:0x822155A0 end:0x822155F8
@@ -18159,7 +18159,7 @@ hkBsdSocket.cpp:
 	.data       start:0x83262A4C end:0x83262A66
 	.data       start:0x8332197C end:0x8332197D rename:.bss
 
-hkSocket.cpp:
+lib/havok/common/base/system/io/socket/hkSocket.cpp:
 	.rdata      start:0x82115DB8 end:0x82115E44
 	.rdata      start:0x821D85FC end:0x821D86F4 rename:.rdata$r
 	.pdata      start:0x822127B0 end:0x822127E8
@@ -18167,32 +18167,32 @@ hkSocket.cpp:
 	.data       start:0x8325F13C end:0x8325F1AF
 	.data       start:0x833209F4 end:0x833209F5 rename:.bss
 
-hkStdioStreamReader.cpp:
+lib/havok/common/base/system/io/reader/stdio/hkStdioStreamReader.cpp:
 	.rdata      start:0x82115D58 end:0x82115D8C
 	.rdata      start:0x821D8510 end:0x821D85A8 rename:.rdata$r
 	.pdata      start:0x82212740 end:0x82212770
 	.text       start:0x82BF8EA0 end:0x82BF90FC
 	.data       start:0x8325F0CC end:0x8325F116
 
-hkMemoryStreamReader.cpp:
+lib/havok/common/base/system/io/reader/memory/hkMemoryStreamReader.cpp:
 	.rdata      start:0x82131E44 end:0x82131E78
 	.rdata      start:0x821E09B0 end:0x821E0A04 rename:.rdata$r
 	.pdata      start:0x82217A38 end:0x82217A60
 	.text       start:0x82CF4AE8 end:0x82CF4E88
 	.data       start:0x8326991C end:0x8326993F
 
-hkBufferedStreamReader.cpp:
+lib/havok/common/base/system/io/reader/buffered/hkBufferedStreamReader.cpp:
 	.rdata      start:0x82115D20 end:0x82115D58
 	.rdata      start:0x821D84BC end:0x821D8510 rename:.rdata$r
 	.pdata      start:0x822126E0 end:0x82212740
 	.text       start:0x82BF8808 end:0x82BF8EA0
 	.data       start:0x8325F0A4 end:0x8325F0C9
 
-hkStreamReader.cpp:
+lib/havok/common/base/system/io/reader/hkStreamReader.cpp:
 	.pdata      start:0x8220F490 end:0x8220F4A0
 	.text       start:0x82B69D00 end:0x82B69DFC
 
-hkOStreamClass.cpp:
+lib/havok/common/base/system/io/ostream/hkOStreamClass.cpp:
 	.rdata      start:0x82131C5C end:0x82131C74
 	.pdata      start:0x82241888 end:0x82241890
 	.text       start:0x82CF0928 end:0x82CF097C
@@ -18201,7 +18201,7 @@ hkOStreamClass.cpp:
 	.data       start:0x83269854 end:0x8326986C
 	.data       start:0x83326108 end:0x83326138 rename:.bss
 
-hkOStream.cpp:
+lib/havok/common/base/system/io/ostream/hkOStream.cpp:
 	.rdata      start:0x8210F5CC end:0x8210F65E
 	.rdata      start:0x821D65F8 end:0x821D66B4 rename:.rdata$r
 	.pdata      start:0x8220FE90 end:0x8220FF78
@@ -18212,45 +18212,45 @@ hkOStream.cpp:
 	.data       start:0x8325DD64 end:0x8325DDAE
 	.data       start:0x8332053C end:0x8332056C rename:.bss
 
-hkOArchive.cpp:
+lib/havok/common/base/system/io/oarchive/hkOArchive.cpp:
 	.rdata      start:0x8211904C end:0x8211905C
 	.rdata      start:0x821DAC84 end:0x821DACD4 rename:.rdata$r
 	.pdata      start:0x82214228 end:0x822142D0
 	.text       start:0x82C35D60 end:0x82C3662C
 	.data       start:0x832610CC end:0x832610E5
 
-hkIStream.cpp:
+lib/havok/common/base/system/io/istream/hkIStream.cpp:
 	.rdata      start:0x8211EB9C end:0x8211EBAC
 	.rdata      start:0x821DD2F8 end:0x821DD348 rename:.rdata$r
 	.pdata      start:0x82216438 end:0x822164F0
 	.text       start:0x82CB2418 end:0x82CB32CC
 	.data       start:0x832632EC end:0x83263304
 
-hkIArchive.cpp:
+lib/havok/common/base/system/io/iarchive/hkIArchive.cpp:
 	.rdata      start:0x8211F558 end:0x8211F568
 	.rdata      start:0x821DD80C end:0x821DD85C rename:.rdata$r
 	.pdata      start:0x82216958 end:0x82216998
 	.text       start:0x82CC2080 end:0x82CC2464
 	.data       start:0x83263740 end:0x83263759
 
-hkNativeFileSystem.cpp:
+lib/havok/common/base/system/io/filesystem/hkNativeFileSystem.cpp:
 	.rdata      start:0x82115CBC end:0x82115CC8
 	.pdata      start:0x82212690 end:0x822126A0
 	.text       start:0x82BF7F80 end:0x82BF8314
 	.data       start:0x8325F078 end:0x8325F084
 
-hkFileSystem.cpp:
+lib/havok/common/base/system/io/filesystem/hkFileSystem.cpp:
 	.rdata      start:0x8210DD6C end:0x8210DD79
 	.text       start:0x831CF958 end:0x831CF978 rename:.text$yc
 	.data       start:0x8321EFD8 end:0x8321EFDC rename:.CRT$XCU
 	.data       start:0x8325DA44 end:0x8325DA54
 	.data       start:0x83320434 end:0x83320438 rename:.bss
 
-hkWin32ListDirectory.cpp:
+lib/havok/common/base/system/io/directory/win32/hkWin32ListDirectory.cpp:
 	.pdata      start:0x82215588 end:0x82215598
 	.text       start:0x82C81300 end:0x82C8154C
 
-hkError.cpp:
+lib/havok/common/base/system/error/hkError.cpp:
 	.rdata      start:0x8210DBC4 end:0x8210DD6C
 	.rdata      start:0x821D6124 end:0x821D61B4 rename:.rdata$r
 	.pdata      start:0x8220F4A0 end:0x8220F4C0
@@ -18260,14 +18260,14 @@ hkError.cpp:
 	.data       start:0x8325DA00 end:0x8325DA44
 	.data       start:0x83320430 end:0x83320434 rename:.bss
 
-hkDefaultError.cpp:
+lib/havok/common/base/system/error/hkDefaultError.cpp:
 	.rdata      start:0x82115CC8 end:0x82115D20
 	.rdata      start:0x821D8464 end:0x821D84BC rename:.rdata$r
 	.pdata      start:0x822126A0 end:0x822126E0
 	.text       start:0x82BF8318 end:0x82BF8808
 	.data       start:0x8325F084 end:0x8325F0A1
 
-hkBaseSystem.cpp:
+lib/havok/common/base/system/hkBaseSystem.cpp:
 	.rdata      start:0x8210EB74 end:0x8210EBB5
 	.rdata      start:0x821D6364 end:0x821D6460 rename:.rdata$r
 	.pdata      start:0x8220FB38 end:0x8220FB98
@@ -18380,12 +18380,12 @@ lib/havok/common/base/reflection/hkClass.cpp:
 	.pdata      start:0x82213518 end:0x82213598
 	.text       start:0x82C16758 end:0x82C1770C
 
-hkSingleton.cpp:
+lib/havok/common/base/object/hkSingleton.cpp:
 	.pdata      start:0x82211510 end:0x82211528
 	.text       start:0x82BB8050 end:0x82BB823C
 	.data       start:0x83320744 end:0x83320748 rename:.bss
 
-hkReferencedObjectClass.cpp:
+lib/havok/common/base/object/hkReferencedObjectClass.cpp:
 	.rdata      start:0x8211380C end:0x8211386F
 	.pdata      start:0x82240908 end:0x82240910
 	.text       start:0x82BB8000 end:0x82BB804C
@@ -18394,7 +18394,7 @@ hkReferencedObjectClass.cpp:
 	.data       start:0x8325E210 end:0x8325E228
 	.data       start:0x83320714 end:0x83320744 rename:.bss
 
-hkReferencedObject.cpp:
+lib/havok/common/base/object/hkReferencedObject.cpp:
 	.rdata      start:0x8210AD6C end:0x8210ADA3
 	.rdata      start:0x821D5218 end:0x821D52BC rename:.rdata$r
 	.pdata      start:0x8220E3C8 end:0x8220E418
@@ -18405,13 +18405,13 @@ hkReferencedObject.cpp:
 	.data       start:0x833202C4 end:0x833202C8 rename:.bss
 	.tls        start:0x833360C0 end:0x833360C4 rename:.tls$
 
-hkBaseObjectClass.cpp:
+lib/havok/common/base/object/hkBaseObjectClass.cpp:
 	.pdata      start:0x82240AD8 end:0x82240AE0
 	.text       start:0x831D1DB8 end:0x831D1E1C rename:.text$yc
 	.data       start:0x8321F200 end:0x8321F204 rename:.CRT$XCU
 	.data       start:0x833210FC end:0x8332112C rename:.bss
 
-hkMonitorStreamAnalyzerClass.cpp:
+lib/havok/common/base/monitor/monitorstreamanalyzer/hkMonitorStreamAnalyzerClass.cpp:
 	.rdata      start:0x8212B618 end:0x8212B86E
 	.rdata      start:0x821DED84 end:0x821DEDD4 rename:.rdata$r
 	.pdata      start:0x822174B0 end:0x822174C0
@@ -18422,28 +18422,28 @@ hkMonitorStreamAnalyzerClass.cpp:
 	.data       start:0x832673F0 end:0x83267656
 	.data       start:0x83324470 end:0x83324560 rename:.bss
 
-hkMonitorStreamAnalyzer.cpp:
+lib/havok/common/base/monitor/monitorstreamanalyzer/hkMonitorStreamAnalyzer.cpp:
 	.rdata      start:0x82131FDC end:0x82132613
 	.pdata      start:0x82217C50 end:0x82217DD8
 	.text       start:0x82CFC868 end:0x82D02F5C
 	.data       start:0x83269A34 end:0x83269B80
 
-hkMonitorStream.cpp:
+lib/havok/common/base/monitor/hkMonitorStream.cpp:
 	.pdata      start:0x8220F568 end:0x8220F588
 	.text       start:0x82B6B4D0 end:0x82B6B6E8
 	.tls        start:0x833360C4 end:0x833360C8 rename:.tls$
 
-hkStackMemory.cpp:
+lib/havok/common/base/memory/util/stack/hkStackMemory.cpp:
 	.text       start:0x82D4CA48 end:0x82D4CA4C
 
-hkMemUtil.cpp:
+lib/havok/common/base/memory/util/hkMemUtil.cpp:
 	.text       start:0x82BFA9D0 end:0x82BFAC40
 
-hkDebugMemorySnapshot.cpp:
+lib/havok/common/base/memory/system/util/hkDebugMemorySnapshot.cpp:
 	.pdata      start:0x82216838 end:0x82216850
 	.text       start:0x82CBEFE8 end:0x82CBF314
 
-hkFreeListMemorySystem.cpp:
+lib/havok/common/base/memory/system/freelist/hkFreeListMemorySystem.cpp:
 	.rdata      start:0x82112358 end:0x82112499
 	.rdata      start:0x821D6744 end:0x821D6870 rename:.rdata$r
 	.pdata      start:0x82210B90 end:0x82210BF0
@@ -18451,7 +18451,7 @@ hkFreeListMemorySystem.cpp:
 	.data       start:0x8325DE4C end:0x8325DED9
 	.data       start:0x833206B8 end:0x833206BC rename:.bss
 
-hkMemorySystem.cpp:
+lib/havok/common/base/memory/system/hkMemorySystem.cpp:
 	.rdata      start:0x8210EBB8 end:0x8210EE25
 	.rdata      start:0x821D6460 end:0x821D64A8 rename:.rdata$r
 	.pdata      start:0x8220FB98 end:0x8220FBA8
@@ -18459,77 +18459,77 @@ hkMemorySystem.cpp:
 	.data       start:0x8325DC78 end:0x8325DC95
 	.data       start:0x833204F4 end:0x833204F8 rename:.bss
 
-hkMemoryRouter.cpp:
+lib/havok/common/base/memory/router/hkMemoryRouter.cpp:
 	.pdata      start:0x8220DEE8 end:0x8220DF00
 	.text       start:0x82B36E98 end:0x82B370A0
 	.tls        start:0x833360BC end:0x833360C0 rename:.tls$
 
-hkThreadMemory.cpp:
+lib/havok/common/base/memory/allocator/thread/hkThreadMemory.cpp:
 	.pdata      start:0x822127E8 end:0x82212830
 	.text       start:0x82BF9720 end:0x82BFA188
 
-hkSolverAllocator.cpp:
+lib/havok/common/base/memory/allocator/solver/hkSolverAllocator.cpp:
 	.rdata      start:0x82118C64 end:0x82118C9C
 	.rdata      start:0x821DABA0 end:0x821DABEC rename:.rdata$r
 	.pdata      start:0x82214108 end:0x82214138
 	.text       start:0x82C33758 end:0x82C33E3C
 	.data       start:0x8326105C end:0x8326107C
 
-hkSystemMemoryBlockServer.cpp:
+lib/havok/common/base/memory/allocator/systemmemoryblockserver/hkSystemMemoryBlockServer.cpp:
 	.rdata      start:0x8211901C end:0x8211904C
 	.rdata      start:0x821DAC38 end:0x821DAC84 rename:.rdata$r
 	.text       start:0x82C35B80 end:0x82C35D08
 	.data       start:0x832610A4 end:0x832610CC
 
-hkLargeBlockAllocator.cpp:
+lib/havok/common/base/memory/allocator/freelist/hkLargeBlockAllocator.cpp:
 	.rdata      start:0x8211F4DC end:0x8211F524
 	.rdata      start:0x821DD690 end:0x821DD724 rename:.rdata$r
 	.pdata      start:0x822168C8 end:0x82216948
 	.text       start:0x82CC07E8 end:0x82CC1F10
 	.data       start:0x83263674 end:0x832636C0
 
-hkFreeListAllocator.cpp:
+lib/havok/common/base/memory/allocator/freelist/hkFreeListAllocator.cpp:
 	.rdata      start:0x82118F58 end:0x8211901C
 	.rdata      start:0x821DABEC end:0x821DAC38 rename:.rdata$r
 	.pdata      start:0x82214190 end:0x82214228
 	.text       start:0x82C34AB8 end:0x82C35B80
 	.data       start:0x8326107C end:0x832610A2
 
-hkFreeList.cpp:
+lib/havok/common/base/memory/allocator/freelist/hkFreeList.cpp:
 	.pdata      start:0x82216850 end:0x822168C8
 	.text       start:0x82CBF318 end:0x82CC07E4
 
-hkLeakDetectAllocator.cpp:
+lib/havok/common/base/memory/allocator/checking/hkLeakDetectAllocator.cpp:
 	.rdata      start:0x82118CA0 end:0x82118F56
 	.pdata      start:0x82214138 end:0x82214190
 	.text       start:0x82C33E40 end:0x82C34AB4
 
-hkMemoryAllocator.cpp:
+lib/havok/common/base/memory/allocator/hkMemoryAllocator.cpp:
 	.rdata      start:0x8210F30C end:0x8210F344
 	.rdata      start:0x821D654C end:0x821D6594 rename:.rdata$r
 	.pdata      start:0x8220FDF0 end:0x8220FE08
 	.text       start:0x82B7D250 end:0x82B7D3D4
 	.data       start:0x8325DD44 end:0x8325DD64
 
-hkVector4Util.cpp:
+lib/havok/common/base/math/vector/hkVector4Util.cpp:
 	.rdata      start:0x8211B8D0 end:0x8211B90B
 	.pdata      start:0x82215180 end:0x82215190
 	.text       start:0x82C70090 end:0x82C70834
 	.data       start:0x83261FF0 end:0x83262010
 	.data       start:0x83321440 end:0x83321444 rename:.bss
 
-hkVector4.cpp:
+lib/havok/common/base/math/vector/hkVector4.cpp:
 	.pdata      start:0x8220D440 end:0x8220D450
 	.text       start:0x82B17A88 end:0x82B17E6C
 	.text       start:0x831CDD00 end:0x831CDD1C rename:.text$yc
 	.data       start:0x8321EDDC end:0x8321EDE0 rename:.CRT$XCU
 	.data       start:0x832BC7B0 end:0x832BC7C0 rename:.bss
 
-hkMathUtil.cpp:
+lib/havok/common/base/math/util/hkMathUtil.cpp:
 	.pdata      start:0x82214AC0 end:0x82214AD0
 	.text       start:0x82C4B2A8 end:0x82C4B8AC
 
-hkMathTypes.cpp:
+lib/havok/common/base/math/types/hkMathTypes.cpp:
 	.rdata      start:0x8210772C end:0x82107744
 	.pdata      start:0x8220D438 end:0x8220D440
 	.pdata      start:0x822406C8 end:0x822406D8
@@ -18538,12 +18538,12 @@ hkMathTypes.cpp:
 	.data       start:0x8321EDD4 end:0x8321EDDC rename:.CRT$XCU
 	.data       start:0x832BC5B0 end:0x832BC7B0 rename:.bss
 
-hkSweptTransformUtil.cpp:
+lib/havok/common/base/math/swepttransform/hkSweptTransformUtil.cpp:
 	.rdata      start:0x82113780 end:0x82113790
 	.pdata      start:0x822113C8 end:0x82211410
 	.text       start:0x82BB51C0 end:0x82BB6058
 
-hkSweptTransformClass.cpp:
+lib/havok/common/base/math/swepttransform/hkSweptTransformClass.cpp:
 	.rdata      start:0x8212B3A4 end:0x8212B479
 	.pdata      start:0x82241308 end:0x82241310
 	.text       start:0x82CEA878 end:0x82CEA88C
@@ -18552,11 +18552,11 @@ hkSweptTransformClass.cpp:
 	.data       start:0x83267354 end:0x8326738B
 	.data       start:0x833243E0 end:0x83324410 rename:.bss
 
-hkSweptTransform.cpp:
+lib/havok/common/base/math/swepttransform/hkSweptTransform.cpp:
 	.pdata      start:0x82211410 end:0x82211418
 	.text       start:0x82BB6058 end:0x82BB61E0
 
-hkQuaternion.cpp:
+lib/havok/common/base/math/quaternion/hkQuaternion.cpp:
 	.rdata      start:0x8210DD7C end:0x8210DD80
 	.pdata      start:0x8220F590 end:0x8220F5C8
 	.text       start:0x82B6B780 end:0x82B6C0D0
@@ -18565,7 +18565,7 @@ hkQuaternion.cpp:
 	.data       start:0x8325DA60 end:0x8325DA70
 	.data       start:0x83320440 end:0x83320450 rename:.bss
 
-hkQsTransform.cpp:
+lib/havok/common/base/math/qstransform/hkQsTransform.cpp:
 	.pdata      start:0x822110B8 end:0x822110E8
 	.text       start:0x82BA1F78 end:0x82BA260C
 	.text       start:0x831D00E8 end:0x831D0124 rename:.text$yc
@@ -18573,7 +18573,7 @@ hkQsTransform.cpp:
 	.data       start:0x8325E110 end:0x8325E150
 	.data       start:0x833206C0 end:0x833206F0 rename:.bss
 
-hkTransform.cpp:
+lib/havok/common/base/math/matrix/hkTransform.cpp:
 	.pdata      start:0x8220F5E0 end:0x8220F610
 	.text       start:0x82B6C400 end:0x82B6C858
 	.text       start:0x831CF998 end:0x831CF9E4 rename:.text$yc
@@ -18581,15 +18581,15 @@ hkTransform.cpp:
 	.data       start:0x8325DA70 end:0x8325DAC0
 	.data       start:0x83320450 end:0x83320490 rename:.bss
 
-hkRotation.cpp:
+lib/havok/common/base/math/matrix/hkRotation.cpp:
 	.pdata      start:0x8220F5C8 end:0x8220F5E0
 	.text       start:0x82B6C0D0 end:0x82B6C400
 
-hkMatrix6.cpp:
+lib/havok/common/base/math/matrix/hkMatrix6.cpp:
 	.pdata      start:0x822182F8 end:0x82218320
 	.text       start:0x82D1FD60 end:0x82D20514
 
-hkMatrix4.cpp:
+lib/havok/common/base/math/matrix/hkMatrix4.cpp:
 	.pdata      start:0x82216F08 end:0x82216F30
 	.text       start:0x82CD48C0 end:0x82CD54F0
 	.text       start:0x831D45C0 end:0x831D460C rename:.text$yc
@@ -18597,16 +18597,16 @@ hkMatrix4.cpp:
 	.data       start:0x83264590 end:0x832645E0
 	.data       start:0x833222F0 end:0x83322330 rename:.bss
 
-hkMatrix3.cpp:
+lib/havok/common/base/math/matrix/hkMatrix3.cpp:
 	.rdata      start:0x82113480 end:0x82113484
 	.pdata      start:0x82211218 end:0x82211240
 	.text       start:0x82BAB810 end:0x82BAC78C
 	.data       start:0x8325E180 end:0x8325E190
 
-hkMath.cpp:
+lib/havok/common/base/math/hkMath.cpp:
 	.rdata      start:0x8210A5B0 end:0x8210A660
 
-hkTraceStreamClass.cpp:
+lib/havok/common/base/debugutil/tracestream/hkTraceStreamClass.cpp:
 	.rdata      start:0x8212B31C end:0x8212B3A3
 	.pdata      start:0x822412F8 end:0x82241308
 	.text       start:0x82CEA808 end:0x82CEA874
@@ -18615,7 +18615,7 @@ hkTraceStreamClass.cpp:
 	.data       start:0x83267300 end:0x83267352
 	.data       start:0x83324380 end:0x833243E0 rename:.bss
 
-hkTraceStream.cpp:
+lib/havok/common/base/debugutil/tracestream/hkTraceStream.cpp:
 	.rdata      start:0x8211B584 end:0x8211B5AA
 	.rdata      start:0x821DBDD4 end:0x821DBE78 rename:.rdata$r
 	.pdata      start:0x82214F38 end:0x82214F48
@@ -18625,26 +18625,26 @@ hkTraceStream.cpp:
 	.data       start:0x83261EE4 end:0x83261F40
 	.data       start:0x8332112C end:0x83321130 rename:.bss
 
-hkStatisticsCollectorUtil.cpp:
+lib/havok/common/base/debugutil/statisticscollector/util/hkStatisticsCollectorUtil.cpp:
 	.rdata      start:0x821137FC end:0x8211380A
 	.pdata      start:0x82211490 end:0x82211510
 	.text       start:0x82BB70F8 end:0x82BB8000
 
-hkStreamStatisticsCollector.cpp:
+lib/havok/common/base/debugutil/statisticscollector/stream/hkStreamStatisticsCollector.cpp:
 	.rdata      start:0x8211F940 end:0x8211F969
 	.rdata      start:0x821DDC30 end:0x821DDC84 rename:.rdata$r
 	.pdata      start:0x82216C90 end:0x82216D20
 	.text       start:0x82CC9A58 end:0x82CCAAD8
 	.data       start:0x832638CC end:0x832638F6
 
-hkStatisticsCollector.cpp:
+lib/havok/common/base/debugutil/statisticscollector/hkStatisticsCollector.cpp:
 	.rdata      start:0x821141BC end:0x8211422C
 	.rdata      start:0x821D73C0 end:0x821D7410 rename:.rdata$r
 	.pdata      start:0x82211BC0 end:0x82211C10
 	.text       start:0x82BCBCF8 end:0x82BCC2AC
 	.data       start:0x8325E530 end:0x8325E554
 
-hkMultiThreadCheckClass.cpp:
+lib/havok/common/base/debugutil/multithreadcheck/hkMultiThreadCheckClass.cpp:
 	.rdata      start:0x8211BCF0 end:0x8211BE33
 	.pdata      start:0x82240B00 end:0x82240B08
 	.text       start:0x82C7C788 end:0x82C7C79C
@@ -18653,38 +18653,38 @@ hkMultiThreadCheckClass.cpp:
 	.data       start:0x83262418 end:0x83262459
 	.data       start:0x83321504 end:0x83321534 rename:.bss
 
-hkMultiThreadCheck.cpp:
+lib/havok/common/base/debugutil/multithreadcheck/hkMultiThreadCheck.cpp:
 	.pdata      start:0x82211528 end:0x82211560
 	.text       start:0x82BB8240 end:0x82BB865C
 	.data       start:0x83320748 end:0x8332074C rename:.bss
 
-hkMemoryExceptionTestingUtil.cpp:
+lib/havok/common/base/debugutil/memoryexceptiontestingutil/hkMemoryExceptionTestingUtil.cpp:
 	.pdata      start:0x82214F80 end:0x82214F90
 	.text       start:0x82C61508 end:0x82C6172C
 	.data       start:0x83321130 end:0x83321138 rename:.bss
 
-hkStringMap.cpp:
+lib/havok/common/base/container/stringmap/hkStringMap.cpp:
 	.pdata      start:0x82214EC0 end:0x82214F08
 	.text       start:0x82C60380 end:0x82C60B70
 
-hkStringPtr.cpp:
+lib/havok/common/base/container/string/hkStringPtr.cpp:
 	.pdata      start:0x8220F440 end:0x8220F490
 	.text       start:0x82B69768 end:0x82B69CFC
 	.data       start:0x8332042C end:0x83320430 rename:.bss
 
-hkStringBuf.cpp:
+lib/havok/common/base/container/string/hkStringBuf.cpp:
 	.pdata      start:0x82214358 end:0x82214438
 	.text       start:0x82C37268 end:0x82C38964
 
-hkString.cpp:
+lib/havok/common/base/container/string/hkString.cpp:
 	.pdata      start:0x8220F518 end:0x8220F568
 	.text       start:0x82B6AC38 end:0x82B6B4CC
 
-hkMap.cpp:
+lib/havok/common/base/container/pointermap/hkMap.cpp:
 	.pdata      start:0x8220F4C0 end:0x8220F518
 	.text       start:0x82B6A0A0 end:0x82B6AC38
 
-hkBitFieldClass.cpp:
+lib/havok/common/base/container/bitfield/hkBitFieldClass.cpp:
 	.rdata      start:0x8212CBD4 end:0x8212CC1F
 	.pdata      start:0x822413A0 end:0x822413A8
 	.text       start:0x82CEABB0 end:0x82CEABCC
@@ -18693,32 +18693,32 @@ hkBitFieldClass.cpp:
 	.data       start:0x83267B18 end:0x83267B49
 	.data       start:0x83324770 end:0x833247A0 rename:.bss
 
-hkBitField.cpp:
+lib/havok/common/base/container/bitfield/hkBitField.cpp:
 	.pdata      start:0x822166E0 end:0x822166F0
 	.text       start:0x82CB88D8 end:0x82CB8C08
 
-hkSmallArray.cpp:
+lib/havok/common/base/container/array/hkSmallArray.cpp:
 	.pdata      start:0x82211BB0 end:0x82211BC0
 	.text       start:0x82BCBBA8 end:0x82BCBCF8
 
-hkArrayUtil.cpp:
+lib/havok/common/base/container/array/hkArrayUtil.cpp:
 	.pdata      start:0x8220E418 end:0x8220E430
 	.text       start:0x82B43460 end:0x82B4369C
 
-hkUnionFind.cpp:
+lib/havok/common/base/algorithm/unionfind/hkUnionFind.cpp:
 	.pdata      start:0x82212598 end:0x822125C0
 	.text       start:0x82BF4200 end:0x82BF4A10
 
-hkRadixSort.cpp:
+lib/havok/common/base/algorithm/sort/hkRadixSort.cpp:
 	.pdata      start:0x82215408 end:0x82215418
 	.text       start:0x82C79E58 end:0x82C7A8F4
 
-hkLineSegmentUtil.cpp:
+lib/havok/common/base/algorithm/collide/linesegment/hkLineSegmentUtil.cpp:
 	.pdata      start:0x82212420 end:0x82212428
 	.text       start:0x82BEEDE0 end:0x82BEF124
 	.data       start:0x8325EE20 end:0x8325EE30
 
-hk1AxisSweep.cpp:
+lib/havok/common/base/algorithm/collide/1axissweep/hk1AxisSweep.cpp:
 	.pdata      start:0x82215828 end:0x82215840
 	.text       start:0x82C8FCE8 end:0x82C9070C
 

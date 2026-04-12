@@ -104,7 +104,7 @@ public:
     void ClearFiles();
     BSSimpleList<TESFile *> *GetFileList();
     char *GetFormTypeString() const;
-    ENUM_FORM_ID GetFormType() const;
+    ENUM_FORM_ID GetFormType() const { return ENUM_FORM_ID(cFormType); }
     void SetFormType(ENUM_FORM_ID);
     virtual ENUM_FORM_ID GetSavedFormType();
     virtual void GetFormDetailedString(BSStringT<char> &);

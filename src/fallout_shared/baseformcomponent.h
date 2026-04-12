@@ -7,6 +7,6 @@ public:
     virtual void CopyComponent(BaseFormComponent *);
     virtual bool CompareComponent(BaseFormComponent *);
     BaseFormComponent(const BaseFormComponent &);
-    BaseFormComponent();
+    BaseFormComponent() {}
     BaseFormComponent &operator=(const BaseFormComponent &);
 };

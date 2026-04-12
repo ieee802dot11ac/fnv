@@ -1,6 +1,8 @@
 #pragma once
 
 #include "bsaudio/BSSoundHandle.h"
+#include "bscore/memorymanager.h"
+#include "fallout/magic/MagicHitEffect.h"
 #include "fallout/magic/MagicTarget.h"
 #include "fallout_shared/magic/magicitem.h"
 #include "fallout_shared/magic/magicsystem.h"
@@ -44,7 +46,7 @@ public:
     void SetEnchantmentSource(TESBoundObject *);
     TESBoundObject *GetEnchantmentSource();
     void SetDisplacementSpell(MagicItem *);
-    MagicItem *GetDisplacementSpell();
+    MagicItem *GetDisplacementSpell() { return pDisplacementSpell; }
     bool CheckDisplacementSpellOnTarget();
     void Dispel(bool);
     bool IsFinished();
@@ -58,8 +60,8 @@ public:
     // void RemoveHitEffect(MagicHitEffect *);
     // void SetHitEffects(BSSimpleList<MagicHitEffect *> *);
     void ForceNoHitEffect();
-    bool IsFlagSet(ActiveEffectFlags);
-    void SetFlag(ActiveEffectFlags);
+    bool IsFlagSet(ActiveEffectFlags flag) { return iFlags & flag; }
+    void SetFlag(ActiveEffectFlags flag) { iFlags |= flag; }
     void ClearFlag(ActiveEffectFlags);
     void SetDead(bool);
     bool IsDead();
@@ -100,6 +102,8 @@ public:
     static void
     FinishLoadActiveEffectList(BGSLoadFormBuffer *, BSSimpleList<ActiveEffect *> *);
 
+    BS_MEM_OVERLOADS
+
 protected:
     virtual void CopyData(ActiveEffect *);
     virtual bool CheckCast(MagicCaster *);
@@ -126,6 +130,6 @@ protected:
     MagicSystem::SpellType eSpellType; // 0x2c
     BSSoundHandle PersistentSound; // 0x30
     TESBoundObject *pSource; // 0x3c
-    // BSSimpleList<MagicHitEffect *> *pHitEffects; // 0x40
+    BSSimpleList<MagicHitEffect *> *pHitEffects; // 0x40
     MagicItem *pDisplacementSpell; // 0x44
 };

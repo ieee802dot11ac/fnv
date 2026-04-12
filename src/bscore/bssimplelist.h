@@ -1,14 +1,15 @@
 #pragma once
 
+#include "bscore/memorymanager.h"
 template <typename T>
 class BSSimpleList {
 public:
     BSSimpleList(T &);
     BSSimpleList() {
-        m_item = nullptr;
+        // m_item = nullptr;
         m_pkNext = nullptr;
     }
-    ~BSSimpleList() { RemoveAll(); }
+    ~BSSimpleList(); // { RemoveAll(); }
     void SetItem(T &);
     T &GetItem() { return m_item; }
     T &GetItem() const;
@@ -25,6 +26,8 @@ public:
     void Sort(int (*)(T, T));
     void Insert(T, int (*)(T, T));
     void Traverse(bool (*)(T, unsigned int), unsigned int);
+
+    BS_MEM_OVERLOADS
 
 protected:
     T m_item;

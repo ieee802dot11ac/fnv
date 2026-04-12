@@ -1,6 +1,7 @@
 #include "TESValueForm.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
+#include "fallout/misc/saveload/BGSLoadFormBuffer.h"
 #include "fallout_shared/magic/magicitem.h"
 
 bool TESValueForm::CompareComponent(BaseFormComponent *apCompareFC) {
@@ -54,7 +55,11 @@ void TESValueForm::SaveGame(BGSSaveFormBuffer *apSaveGameBuffer) {
     }
 }
 
-void TESValueForm::LoadGame(BGSLoadFormBuffer *apLoadGameBuffer) {}
+void TESValueForm::LoadGame(BGSLoadFormBuffer *apLoadGameBuffer) {
+    if (apLoadGameBuffer->GetChangeFlags().CheckFlags(2)) {
+        apLoadGameBuffer->LoadDataEndian(&iValue, sizeof(iValue), 4);
+    }
+}
 
 TESValueForm::TESValueForm() { iValue = 0; }
 

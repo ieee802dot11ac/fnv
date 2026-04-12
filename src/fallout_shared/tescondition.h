@@ -26,7 +26,9 @@ public:
     void ForceTrailingAnd();
     bool IsTrue(TESObjectREFR *, TESObjectREFR *, bool &, bool);
     bool IsTrue(TESObjectREFR *, TESObjectREFR *);
-    const BSSimpleList<TESConditionItem *> *GetConditionItemListConst();
+    const BSSimpleList<TESConditionItem *> *GetConditionItemListConst() {
+        return &listConditions;
+    }
 
     static const char *GetComparisonConditionSymbol(ENUM_COMPARISON_CONDITION);
     static bool CheckValue(ENUM_COMPARISON_CONDITION, float, float);

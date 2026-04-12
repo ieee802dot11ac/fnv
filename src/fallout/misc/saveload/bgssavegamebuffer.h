@@ -1,7 +1,9 @@
 #pragma once
 
 #include "fallout/misc/saveload/bgssaveloadfile.h"
+#include "nimain/NiMatrix3.h"
 #include "nimain/NiPoint3.h"
+#include "nimain/NiQuaternion.h"
 #include "types.h"
 
 class TESForm;
@@ -20,7 +22,7 @@ public:
     void ClearPosition();
     uint GetDataSize();
     uint GetDebugOverhead();
-    //   void SaveData(NiQuaternion*, uint, uint);
+    void SaveData(NiQuaternion *, uint, uint);
     //   void SaveData(hkVector4*, uint, uint);
     void SaveData(double *, uint, uint);
     void SaveData(NiPoint3 *, uint, uint);
@@ -31,7 +33,7 @@ public:
     void SaveData(s32 *, uint, uint);
     void SaveData(u16 *, uint, uint);
     void SaveData(s16 *, uint, uint);
-    //   void SaveData(NiMatrix3*, uint, uint);
+    void SaveData(NiMatrix3 *, uint, uint);
     void SaveData(void *, uint, uint);
     void SaveData(void *, uint, uint, uint);
     void SaveFormID(TESForm *, uint);

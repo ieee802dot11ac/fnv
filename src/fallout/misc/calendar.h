@@ -51,8 +51,8 @@ class Calendar { /* Size=0x1c */
     /* 0x0018 */ uint iMidnightsPassed;
 
 public:
-    Calendar();
-    ~Calendar();
+    Calendar() {}
+    ~Calendar() {}
     void InitGlobals();
     void Update(float);
     void ClearPointers();

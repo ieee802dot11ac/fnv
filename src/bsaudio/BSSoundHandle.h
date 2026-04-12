@@ -17,7 +17,8 @@ public:
         : iSoundID(handle.iSoundID), bAssumeSuccess(handle.bAssumeSuccess),
           eState(handle.eState) {}
     BSSoundHandle(uint);
-    BSSoundHandle();
+    BSSoundHandle()
+        : iSoundID(-1), bAssumeSuccess(false), eState(ASSUMED_STATE_INITIALIZED) {}
     ~BSSoundHandle() {}
     void Clear();
     bool Play(bool);

@@ -1,6 +1,8 @@
 #pragma once
 
+#include "bscore/memorymanager.h"
 #include "fallout_shared/TESForm.h"
+#include "fallout_shared/tesobjectrefr.h"
 #include "types.h"
 
 class Script;
@@ -1177,6 +1179,8 @@ public:
     BSSimpleList<ACTION_OBJECT *> *m_pActionList; // 0x08
     BSSimpleList<SCRIPT_LOCAL *> *m_pLocalList; // 0x0c
     SCRIPT_EFFECT_DATA *m_pScriptEffectData; // 0x10
+
+    BS_MEM_OVERLOADS
 
 protected:
     static ScriptLocals *pLastVarSearchScriptLocals;

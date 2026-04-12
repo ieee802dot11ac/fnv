@@ -8,6 +8,7 @@
 
 class NiStream;
 class NiCloningProcess;
+class NiNode;
 
 class NiObject : public NiRefObject {
 public:
@@ -17,7 +18,7 @@ public:
     static bool IsExactKindOf(const NiRTTI *, const NiObject *);
     bool IsKindOf(const NiRTTI *) const;
     static bool IsKindOf(const NiRTTI *, const NiObject *);
-    // virtual NiNode *IsNode();
+    virtual NiNode *IsNode();
     // virtual BSFadeNode *IsFadeNode();
     // virtual BSMultiBoundNode *IsMultiBoundNode();
     // virtual NiGeometry *IsGeometry();

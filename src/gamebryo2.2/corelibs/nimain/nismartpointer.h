@@ -5,6 +5,8 @@ class NiPointer {
 public:
     NiPointer(NiPointer<T> const &);
 
+    NiPointer() : m_pObject(nullptr) {}
+
     NiPointer(T *pObject) : m_pObject(pObject) {
         if (pObject) {
             pObject->IncRefCount();
@@ -12,9 +14,9 @@ public:
     }
 
     ~NiPointer() {
-        if (m_pObject) {
-            m_pObject->DecRefCount();
-        }
+        // if (m_pObject) {
+        //     m_pObject->DecRefCount();
+        // }
     }
 
     operator T *() const { return m_pObject; }

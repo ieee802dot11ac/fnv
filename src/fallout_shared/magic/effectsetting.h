@@ -118,7 +118,7 @@ public:
     void SetCastSound(TESSound *);
     TESSound *GetBoltSound();
     void SetBoltSound(TESSound *);
-    TESSound *GetHitSound();
+    TESSound *GetHitSound() { return data.pHitSound; }
     void SetHitSound(TESSound *);
     TESSound *GetAreaSound();
     void SetAreaSound(TESSound *);
@@ -134,8 +134,8 @@ public:
     float GetConstantEffectEnchantmentFactor();
     void SetConstantEffectBarterFactor(float);
     float GetConstantEffectBarterFactor();
-    // EffectArchetypes::ArchetypeID GetEffectArchetype();
-    // void SetEffectArchetype(EffectArchetypes::ArchetypeID);
+    EffectArchetypes::ArchetypeID GetEffectArchetype();
+    void SetEffectArchetype(EffectArchetypes::ArchetypeID);
     virtual char *GetObjectTypeName();
     bool IsAssociatedItemLoaded();
     bool IsAssociatedItemQueued();

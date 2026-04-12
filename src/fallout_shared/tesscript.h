@@ -1,6 +1,7 @@
 #pragma once
 
-#include "fallout_shared/tesform.h"
+#include "bscore/BSCriticalSection.h"
+#include "fallout_shared/TESForm.h"
 #include "fallout_shared/tesobject.h"
 #include "fallout_shared/tesscriptshared.h"
 #include "fallout_shared/tesscriptvariable.h"
@@ -68,7 +69,7 @@ private:
     BSSimpleList<SCRIPT_REFERENCED_OBJECT *> listRefObjects; // 0x54
     BSSimpleList<ScriptVariable *> listVariables; // 0x5c
     static TESForm *pCrimeVictim;
-    //   static BSCriticalSection ScriptRefListCrit;
+    static BSCriticalSection ScriptRefListCrit;
     static BSSimpleList<TESObjectREFR *> ReferencesToEnable;
     static BSSimpleList<TESObjectREFR *> ReferencesToDisable;
     static BSSimpleList<TESObjectREFR *> ReferencesToDelete;
@@ -80,7 +81,6 @@ private:
     static ScriptLocals *pLastScriptLocals;
     static unsigned int iLastRefSearchIndex;
     static SCRIPT_REFERENCED_OBJECT *pLastRefObject;
-
 #pragma region Every Script Builtin
 // args:
 // const SCRIPT_PARAMETER* apParameters, const char* apCompiledParams,
@@ -99,8 +99,9 @@ private:
     );
 #define TSCRIPTFUNC_GET_PVPVRD(name)                                                     \
     static bool name(TESObjectREFR *, void *, void *, double &);
+    /*
 
-public:
+    public:
     static bool VerboseOutput();
     static void SavePendingReferences(BGSSaveFormBuffer *);
     static void LoadPendingReferences(BGSLoadFormBuffer *);
@@ -497,9 +498,8 @@ public:
     TSCRIPTFUNC_GENERIC(ToggleHDRDebugFunction)
     TSCRIPTFUNC_GENERIC(ShowPivotFunction)
     static void
-    CheckFlagFunction(unsigned int, TESObjectREFR *, TESForm *, ScriptLocals *, double &);
-    TSCRIPTFUNC_GENERIC(OnAddFunction)
-    TSCRIPTFUNC_GENERIC(OnEquipFunction)
+    CheckFlagFunction(unsigned int, TESObjectREFR *, TESForm *, ScriptLocals *, double
+&); TSCRIPTFUNC_GENERIC(OnAddFunction) TSCRIPTFUNC_GENERIC(OnEquipFunction)
     TSCRIPTFUNC_GENERIC(OnUnequipFunction)
     TSCRIPTFUNC_GENERIC(OnDropFunction)
     TSCRIPTFUNC_GENERIC(OnHitFunction)
@@ -567,8 +567,8 @@ public:
     TSCRIPTFUNC_GENERIC(GetOpenStateFunction)
     TSCRIPTFUNC_GENERIC(MoveToFunction)
     TSCRIPTFUNC_GENERIC(MoveToQuestTargetFunction)
-    static void MoveToFunctionBase(TESObjectREFR *, TESObjectREFR *, float, float, float);
-    TSCRIPTFUNC_GENERIC(MoveToFadeFunction)
+    static void MoveToFunctionBase(TESObjectREFR *, TESObjectREFR *, float, float,
+float); TSCRIPTFUNC_GENERIC(MoveToFadeFunction)
     TSCRIPTFUNC_GENERIC(GetIsCurrentPackageFunction)
     TSCRIPTFUNC_GENERIC(AddFaceAnimNoteFunction)
     TSCRIPTFUNC_GENERIC(WakeUpPCFunction)
@@ -1275,6 +1275,7 @@ public:
     static void SetCrimeVictim(TESForm *);
     static void ClearButtonPressed();
     static void ClearOptimizations();
+    */
 #undef TSCRIPTFUNC_GENERIC
 #undef TSCRIPTFUNC_GET_PVPVRD
 #pragma endregion

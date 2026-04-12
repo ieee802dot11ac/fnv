@@ -31,7 +31,7 @@ public:
     void InitItem(TESForm *);
     BSStringT<char> GetEffectString(MagicItem *, float);
     BSStringT<char> GetEffectString(MagicSystem::SpellType, float, bool, bool, bool);
-    EffectSetting *GetEffectSetting();
+    EffectSetting *GetEffectSetting() { return pEffectSetting; }
     const char *GetIcon();
     int GetMagnitude();
     bool SetMagnitude(int);
@@ -56,7 +56,7 @@ public:
     Script *GetScript();
     float GetCost(Actor *);
     float GetRawCost();
-    TESCondition *GetConditions();
+    TESCondition *GetConditions() { return &Conditions; }
     void SetConditions(TESCondition *);
     void SetEffect(EffectSetting *);
 

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "fallout_shared/tesobjectrefr.h"
 #include "fallout_shared/tesscriptvariable.h"
 
 enum COMPILER_NAME {

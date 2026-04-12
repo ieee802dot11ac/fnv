@@ -1,5 +1,6 @@
 #pragma once
 
+#include "fallout_shared/enums.h"
 class BGSSaveLoadFile {
 public:
     BGSSaveLoadFile(const char *, bool, unsigned int);
@@ -25,3 +26,5 @@ protected:
     unsigned int iSimulatedFileSize; // 0x108
     unsigned int iSimulatedFilePosition; // 0x10c
 };
+
+void SaveGameSizeToFile(BGSSaveLoadFile *apFile, uint aiSize, SIZE_TYPE aeSizeType);

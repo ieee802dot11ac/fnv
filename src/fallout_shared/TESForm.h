@@ -236,7 +236,7 @@ public:
     //   TESBoundObject*, int);
     uint GetFormFlags() const;
     void SetFormFlags(uint);
-    uint GetFormID() const;
+    uint GetFormID() const { return iFormID; }
     uint GetFormIDAsSaved();
     uint GetFormIDWithoutIndex() const;
     bool FormIDMatchesWithoutIndex(uint) const;

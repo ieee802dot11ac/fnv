@@ -1,10 +1,18 @@
 #include "bgssaveformbuffer.h"
 #include "fallout/misc/saveload/bgssavegamebuffer.h"
-// #include "fallout_shared/tesobjectrefr.h"
+#include "fallout/misc/saveload/bgssaveloadfile.h"
+#include "fallout_shared/enums.h"
+#include "fallout_shared/tesobjectrefr.h"
 
 BGSSaveFormBuffer::BGSSaveFormBuffer() { pForm = nullptr; }
 
-void BGSSaveFormBuffer::Save(BGSSaveLoadFile *apFile) {}
+void BGSSaveFormBuffer::Save(BGSSaveLoadFile *apFile) {
+    uint size = iBufferPosition;
+    SIZE_TYPE siztyp = GetSizeTypeForSize(size);
+    apFile->Write(&Header, sizeof(Header));
+    SaveGameSizeToFile(apFile, size, siztyp);
+    BGSSaveGameBuffer::Save(apFile, size);
+}
 
 void BGSSaveFormBuffer::SetHeader(
     uint aiFormID, BGSChangeFlags aiChangeFlags, ENUM_FORM_ID aeFormType, u8 acVersion

@@ -11,6 +11,7 @@
 #define FORCEINLINE __forceinline
 
 #define NORETURN __declspec(noreturn)
+#define DECLSPEC(x) __declspec(x)
 #else
 #define CDECL
 #define STDCALL
@@ -22,6 +23,7 @@
 #define FORCEINLINE
 
 #define NORETURN
+#define DECLSPEC(x)
 #endif
 
 #define ROTATE_LEFT(x, i) (((x) << (i)) | ((x) >> ((sizeof((x)) * 8) - (i))))

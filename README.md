@@ -16,6 +16,8 @@ A work-in-progress decompilation of Fallout: New Vegas.
 
 This repository does **not** contain any game assets or assembly whatsoever. An existing copy of the game is required.
 
+Please do not use any AI software to decompile game code. This project wishes to distance itself as far from AI as possible, as there are concerns of legality since AI has been known to source illegally obtained information from SDK leaks. We aim to be a clean project written only by real people.
+
 Supported versions:
 
 - `425307E0`: 2010-11-10 (USA)

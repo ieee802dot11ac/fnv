@@ -1,5 +1,10 @@
 #pragma once
 
+#include "bscore/bssimplelist.h"
+#include "fallout_shared/TESForm.h"
+#include "fallout_shared/teschildcell.h"
+#include "nimain/NiTMap.h"
+#include "nisystem/NiFile.h"
 #include "win_types.h"
 #include "bscore/bsstring.h"
 #include "xapilibi/minwinbase.h"
@@ -9,12 +14,12 @@ class TESForm;
 class TESFile {
 public:
     TESFile(const TESFile &);
-    //   TESFile(const char*, const char*, NiFile::OpenMode);
+    TESFile(const char *, const char *, NiFile::OpenMode);
     ~TESFile();
-    //   bool CreateTES(const char*, const char*, NiFile::OpenMode);
-    //   bool CreateTES(NiFile::OpenMode);
-    //   bool OpenTES(const char*, const char*, NiFile::OpenMode, bool);
-    //   bool OpenTES(NiFile::OpenMode, bool);
+    bool CreateTES(const char *, const char *, NiFile::OpenMode);
+    bool CreateTES(NiFile::OpenMode);
+    bool OpenTES(const char *, const char *, NiFile::OpenMode, bool);
+    bool OpenTES(NiFile::OpenMode, bool);
     bool CloseTES();
     bool DeleteTES();
     bool IsOpen();
@@ -42,27 +47,27 @@ public:
     void GetLastWriteTime(PSYSTEMTIME);
     BSStringT<char> *GetCreator();
     BSStringT<char> *GetSummary();
-    //   bool MastersChecked(BSSimpleList<TESFile *>*);
-    //   bool GenIndexTable(BSSimpleList<TESFile *>*, bool);
+    bool MastersChecked(BSSimpleList<TESFile *> *);
+    bool GenIndexTable(BSSimpleList<TESFile *> *, bool);
     TESFile *GetIndexFile(uint);
     char *GetIndexName(uint);
     uint GetIndexCount();
     uint GetFileIndex(TESFile *);
     void ClearMasters();
     void AddMaster(char *);
-    //   bool AddMasters(BSSimpleList<TESFile *>*);
+    bool AddMasters(BSSimpleList<TESFile *> *);
     void RemoveMaster(uint);
     bool DependsOnMaster(char *);
     bool MastersChanged();
     bool CheckLODPlugins();
-    //   BSSimpleList<char *>* GetMasterList();
+    BSSimpleList<char *> *GetMasterList();
     unsigned char GetCompileIndex();
     void SetCompileIndex(unsigned char);
     void AddToDataHandler();
     bool CurrentGroupMayContainForm(TESForm *);
-    //   void StartGroup(FORM*);
+    void StartGroup(FORM *);
     void EndGroup();
-    //   void OpenGroup(FORM*);
+    void OpenGroup(FORM *);
     void CloseGroup();
     bool FindForm(TESForm *);
     bool NextGroup();
@@ -75,16 +80,16 @@ public:
     bool NextForm(bool);
     bool GetNextForm();
     void GetTESFormNoRet();
-    //   ENUM_FORM_ID GetTESForm();
+    ENUM_FORM_ID GetTESForm();
     uint GetOffset();
     uint GetOffsetChunk();
     bool SetOffset(uint);
     bool SetOffsetChunk(uint);
-    //   ENUM_FORM_ID GetFormAtOffset(uint);
+    ENUM_FORM_ID GetFormAtOffset(uint);
     uint CopyCurrentFormToBuffer(void *, uint);
-    //   CHUNK_ID GetTESChunk();
+    CHUNK_ID GetTESChunk();
     bool NextChunk();
-    uint GetChunkSize();
+    uint GetChunkSize() { return m_actualChunkSize; }
     bool GetChunkData(unsigned short &);
     bool GetChunkData(short &);
     bool GetChunkData(float &);
@@ -98,7 +103,7 @@ public:
     void LoadForm(TESForm *);
     //   TES_RETURN_CODE AddChunk(CHUNK_ID, void*, uint);
     uint CloseForm();
-    //   bool ForceSaveFormHeader(FORM*, uint);
+    bool ForceSaveFormHeader(FORM *, uint);
     void SetMaster(bool);
     bool GetMaster();
     void SetOptimizedFile(bool);
@@ -125,7 +130,7 @@ public:
     //   void SetFile(BSFile*);
     //   BSFile* GetFile();
     //   TES_RETURN_CODE GetLastFileError();
-    //   FORM* GetFormData();
+    FORM *GetFormData();
     uint GetID();
     unsigned short GetFormVersion();
     bool TakeOwnership();
@@ -140,7 +145,7 @@ public:
     void SetTempIDOwner(bool);
     bool GetTempIDOwner();
 
-    // static void DeleteFileList(BSSimpleList<TESFile *>*);
+    static void DeleteFileList(BSSimpleList<TESFile *> *);
     static bool TakeFileOwnership(char *);
     static unsigned short GetFileFormVersion();
     static void SetTempIDOwnedByFile(uint, TESFile *);
@@ -156,7 +161,7 @@ protected:
     void DecompressCurrentForm();
     bool ReadFormHeader();
     bool ReadChunkHeader();
-    //   BSSimpleList<ULARGE_INTEGER *>* GetMasterDataList();
+    BSSimpleList<ULARGE_INTEGER *> *GetMasterDataList();
     void ClearMasterLists();
     void ClearThreadSafeFiles();
     void SetThreadSafeParent(TESFile *);
@@ -166,7 +171,7 @@ protected:
     TESFile *pThreadSafeParent; // 0x004
     // NiTPointerMap<uint,TESFile *>* pThreadSafeFileMap; // 0x008
 
-    //   static NiTMap<uint,TESFile *>* pOwnedTempIDMap;
+    static NiTMap<uint, TESFile *> *pOwnedTempIDMap;
     static uint iOwnerFileCount;
 
 private:
@@ -186,16 +191,16 @@ private:
     uint m_uiBufferAllocSize; // 0x22c
     uint m_firstCellOffset; // 0x230
     uint m_currCellOffset; // 0x234
-    // TESObjectCELL* m_pCurrCell; // 0x238
+    TESObjectCELL *m_pCurrCell; // 0x238
     uint m_currRefOffset; // 0x23c
-    // FORM m_currentform; // 0x240
-    // CHUNK_ID m_currentchunkID; // 0x258
+    FORM m_currentform; // 0x240
+    CHUNK_ID m_currentchunkID; // 0x258
     uint m_actualChunkSize; // 0x25c
     uint m_filesize; // 0x260
     uint m_fileoffset; // 0x264
     uint m_formoffset; // 0x268
     uint m_chunkoffset; // 0x26c
-    // FORM m_saveform; // 0x270
+    FORM m_saveform; // 0x270
     uint m_saveformoffset; // 0x288
     uint m_savechunkoffset; // 0x28c
     // BSSimpleList<FORM_GROUP *> m_grouplist; // 0x290
@@ -205,8 +210,8 @@ private:
     WIN32_FIND_DATAA m_FileInfo; // 0x29c
     // FILE_HEADER fileHeaderInfo; // 0x3dc
     uint m_Flags; // 0x3e8
-    // BSSimpleList<char *> listMasters; // 0x3ec
-    // BSSimpleList<PULARGE_INTEGER> listMastersData; // 0x3f4
+    BSSimpleList<char *> listMasters; // 0x3ec
+    BSSimpleList<PULARGE_INTEGER> listMastersData; // 0x3f4
     uint iMasterCount; // 0x3fc
     TESFile **m_pMasterPtrs; // 0x400
     FILETIME DeletedFormTime; // 0x404

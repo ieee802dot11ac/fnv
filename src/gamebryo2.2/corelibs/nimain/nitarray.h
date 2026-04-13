@@ -16,9 +16,15 @@ public:
     void SetGrowBy(uint);
     T *GetBase();
     T &GetAt(uint) const;
-    void SetAt(uint, T &);
-    uint SetAtGrow(uint, T &);
-    uint Add(const T &);
+    void SetAt(uint, const T &);
+    uint SetAtGrow(uint desired, const T &ref) {
+        if (desired >= m_usMaxSize) {
+            SetSize(m_usGrowBy + desired);
+        }
+        SetAt(desired, ref);
+        return desired;
+    }
+    uint Add(const T &ref) { return SetAtGrow(m_usSize, ref); }
     uint AddFirstEmpty(T &);
     uint AddLastEmpty(T &);
     uint InsertAt(uint, T &);

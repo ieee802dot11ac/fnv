@@ -2,6 +2,7 @@
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
 #include "fallout_shared/enums.h"
 #include "bscore/bscoremessage.h"
+#include "tesfile.h"
 #include <cstring>
 
 TESForm::TESForm() {}

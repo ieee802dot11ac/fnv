@@ -5,10 +5,11 @@
 #include "bscore/memorymanager.h"
 #include "fallout_shared/baseformcomponent.h"
 #include "fallout_shared/enums.h"
-#include "fallout_shared/tesfile.h"
 #include "gamebryo2.2/corelibs/nimain/NiPoint3.h"
 #include "win_types.h"
 #include <types.h>
+
+class TESFile;
 
 struct FORM {
     uint form; // 0x00
@@ -105,7 +106,7 @@ public:
     BSSimpleList<TESFile *> *GetFileList();
     char *GetFormTypeString() const;
     ENUM_FORM_ID GetFormType() const { return ENUM_FORM_ID(cFormType); }
-    void SetFormType(ENUM_FORM_ID);
+    void SetFormType(ENUM_FORM_ID type) { cFormType = type; }
     virtual ENUM_FORM_ID GetSavedFormType();
     virtual void GetFormDetailedString(BSStringT<char> &);
     void RemoveFromDataStructures();
@@ -245,7 +246,7 @@ public:
     void *GetFormBuffer();
     uint GetFormBufferSize();
     void FreeFormBuffer();
-    //   public: bool ExpandChunk(CHUNK*, u16);
+    // bool ExpandChunk(CHUNK*, u16);
     void __SaveData(void *, uint);
     void StartForm();
     void CloseForm();
@@ -263,7 +264,7 @@ public:
     static bool FixFormEditorID(char *);
     static void AddCompileIndex(uint &, TESFile *);
     static void ReleaseFormDataStructures();
-    static bool QEndianSwapOnSave();
+    static bool QEndianSwapOnSave() { return bEndianSwapOnSave; }
     static void SetEndianSwapOnSave(bool);
 
     static void AddChunk(CHUNK_ID, ULARGE_INTEGER);

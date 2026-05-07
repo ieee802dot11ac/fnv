@@ -3,9 +3,13 @@
 #include "bscore/BSCriticalSection.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout_shared/tesobject.h"
+// #include "fallout_shared/TESQuest.h"
 #include "fallout_shared/tesscriptshared.h"
 #include "fallout_shared/tesscriptvariable.h"
 #include "fallout_shared/tesscriptcompiler.h"
+#include "macros.h"
+
+class TESQuest;
 
 class Script : public TESForm {
 public:
@@ -42,8 +46,8 @@ public:
     virtual void InitItem();
     bool GetIsCompiled();
     void SetIsCompiled(bool);
-    //    void SetOwnerQuest(TESQuest*);
-    //    TESQuest* GetOwnerQuest();
+    void SetOwnerQuest(TESQuest *);
+    TESQuest *GetOwnerQuest();
     BSSimpleList<ScriptVariable *> *GetVariableList();
     SCRIPT_REFERENCED_OBJECT *GetReferencedObject(unsigned int, ScriptLocals *);
     BSSimpleList<SCRIPT_REFERENCED_OBJECT *> *GetReferencedObjectList();
@@ -65,23 +69,24 @@ private:
     float fProfilerTimer; // 0x44
     float fQuestScriptDelay; // 0x48
     float fQuestScriptGetSecondsBuffer; // 0x4c
-    //   TESQuest* pOwnerQuest; // 0x50
+    TESQuest *pOwnerQuest; // 0x50
     BSSimpleList<SCRIPT_REFERENCED_OBJECT *> listRefObjects; // 0x54
     BSSimpleList<ScriptVariable *> listVariables; // 0x5c
-    static TESForm *pCrimeVictim;
+
+    static TLS TESForm *pCrimeVictim;
     static BSCriticalSection ScriptRefListCrit;
     static BSSimpleList<TESObjectREFR *> ReferencesToEnable;
     static BSSimpleList<TESObjectREFR *> ReferencesToDisable;
     static BSSimpleList<TESObjectREFR *> ReferencesToDelete;
     static BSSimpleList<TESObjectREFR *> ReferencesToFadeDisable;
-    static bool m_bSystemOutput;
+    static TLS bool m_bSystemOutput;
     static char m_cButtonValue;
     static unsigned int m_iButtonOwner;
-    static Script *pLastRefSearchScript;
-    static ScriptLocals *pLastScriptLocals;
-    static unsigned int iLastRefSearchIndex;
-    static SCRIPT_REFERENCED_OBJECT *pLastRefObject;
-#pragma region Every Script Builtin
+    static TLS Script *pLastRefSearchScript;
+    static TLS ScriptLocals *pLastScriptLocals;
+    static TLS unsigned int iLastRefSearchIndex;
+    static TLS SCRIPT_REFERENCED_OBJECT *pLastRefObject;
+#pragma region Script Builtins
 // args:
 // const SCRIPT_PARAMETER* apParameters, const char* apCompiledParams,
 // TESObjectREFR* apRefObject, TESObjectREFR* apContainer, Script* apScript,

@@ -12,6 +12,8 @@
 
 #define NORETURN __declspec(noreturn)
 #define DECLSPEC(x) __declspec(x)
+
+#define TLS __declspec(thread)
 #else
 #define CDECL
 #define STDCALL
@@ -24,6 +26,8 @@
 
 #define NORETURN
 #define DECLSPEC(x)
+
+#define TLS thread_local
 #endif
 
 #define ROTATE_LEFT(x, i) (((x) << (i)) | ((x) >> ((sizeof((x)) * 8) - (i))))

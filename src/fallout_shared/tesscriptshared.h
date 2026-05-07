@@ -1183,7 +1183,7 @@ public:
     BS_MEM_OVERLOADS
 
 protected:
-    static ScriptLocals *pLastVarSearchScriptLocals;
-    static uint iLastVarSearchID;
-    static SCRIPT_LOCAL *pLastVar;
+    static TLS ScriptLocals *pLastVarSearchScriptLocals;
+    static TLS uint iLastVarSearchID;
+    static TLS SCRIPT_LOCAL *pLastVar;
 };

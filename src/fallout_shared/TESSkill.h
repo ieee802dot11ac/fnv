@@ -4,7 +4,7 @@
 #include "fallout_shared/SkillLevel.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout_shared/actorvalue.h"
-#include "fallout_shared/tesdescription.h"
+#include "fallout_shared/TESDescription.h"
 #include "fallout_shared/testexture.h"
 #include "types.h"
 

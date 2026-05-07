@@ -1,10 +1,12 @@
 #pragma once
 
 #include "bsmain/Setting.h"
+#include "fallout_shared/TESEyes.h"
 #include "fallout_shared/TESForm.h"
+#include "fallout_shared/TESHair.h"
 #include "fallout_shared/TESSkill.h"
 #include "fallout_shared/actorvalue.h"
-#include "fallout_shared/tesdescription.h"
+#include "fallout_shared/TESDescription.h"
 #include "fallout_shared/tesfullname.h"
 #include "fallout_shared/tesmodel.h"
 #include "fallout_shared/testexture.h"

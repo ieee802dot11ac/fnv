@@ -11,11 +11,11 @@ public:
     ~BSStringT() { Set(nullptr, 0); }
     bool Set(const BSStringT<T> &);
     bool Set(const T *, uint);
-    const T *String() const;
+    const T *String() const { return pString; }
     uint ByteLength() const;
     uint ByteLengthWithNull() const;
-    uint Length() const;
-    uint MaxLength() const;
+    uint Length() const { return sLen; }
+    uint MaxLength() const { return sMaxLen; }
     void Fill(T);
     int VSPrintF(const T *, T *);
     int SPrintF(const T *, ...);

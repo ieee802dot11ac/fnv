@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bscore/bssimplelist.h"
+#include "bssystem/bsfile.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout_shared/teschildcell.h"
 #include "nimain/NiTMap.h"
@@ -81,7 +82,7 @@ public:
     bool GetNextForm();
     void GetTESFormNoRet();
     ENUM_FORM_ID GetTESForm();
-    uint GetOffset();
+    uint GetOffset() { return m_fileoffset; }
     uint GetOffsetChunk();
     bool SetOffset(uint);
     bool SetOffsetChunk(uint);
@@ -127,8 +128,8 @@ public:
     TESFile *GetThreadSafeParent();
     void CopyThreadSafeParentAuxBuffer();
     void ClearAuxBuffer();
-    //   void SetFile(BSFile*);
-    //   BSFile* GetFile();
+    void SetFile(BSFile *);
+    BSFile *GetFile();
     //   TES_RETURN_CODE GetLastFileError();
     FORM *GetFormData();
     uint GetID();
@@ -180,8 +181,8 @@ private:
     void InitEndian();
     //   TES_RETURN_CODE EasyWrite(void*, uint);
 
-    //  BSFile* m_pLockedFile; // 0x00c
-    // BSFile* m_pFile; // 0x010
+    BSFile *m_pLockedFile; // 0x00c
+    BSFile *m_pFile; // 0x010
     // TESBitArrayFile* pFormUserDataBitArray; // 0x014
     // TESBitArrayFile* pFormVersionBitArray; // 0x018
     // TESBitArrayFile* pFormIDBitArray; // 0x01c

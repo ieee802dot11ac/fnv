@@ -6,6 +6,7 @@
 #include "fallout_shared/baseformcomponent.h"
 #include "fallout_shared/enums.h"
 #include "gamebryo2.2/corelibs/nimain/NiPoint3.h"
+#include "nimain/NiColor.h"
 #include "nimain/NiTPointerMap.h"
 #include "win_types.h"
 #include <types.h>
@@ -104,7 +105,7 @@ public:
     void SetFile(TESFile *);
     bool IsInFile(TESFile *);
     void ClearFiles();
-    BSSimpleList<TESFile *> *GetFileList();
+    BSSimpleList<TESFile *> *GetFileList() { return &pSourceFiles; }
     char *GetFormTypeString() const;
     ENUM_FORM_ID GetFormType() const { return ENUM_FORM_ID(cFormType); }
     void SetFormType(ENUM_FORM_ID type) { cFormType = type; }
@@ -144,7 +145,7 @@ public:
     virtual void SetOnLocalMap(bool);
     bool GetMustBeVisibleDistant() const;
     void SetMustBeVisibleDistant(bool);
-    // virtual NiColor* GetEmittanceColor();
+    virtual NiColor *GetEmittanceColor();
     bool GetEmpty() const;
     bool GetResetDestruct() const;
     bool GetDestroyed() const;

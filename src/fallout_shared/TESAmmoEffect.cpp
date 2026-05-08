@@ -5,6 +5,7 @@
 #include "fallout_shared/XGameSetting.h"
 #include "fallout_shared/enums.h"
 #include "fallout_shared/tesfullname.h"
+#include "stdlib.h"
 #include <cstring>
 
 SETTING(GameSettingCollection, sAmmoEffectDAM, "DAM")
@@ -15,19 +16,41 @@ SETTING(GameSettingCollection, sAmmoEffectCondition, "Gun CND")
 SETTING(GameSettingCollection, sAmmoEffectFatigue, "Target Fatigue")
 
 void AMMO_EFFECT_DATA::Endian() {
-    EndianSwap(reinterpret_cast<u32 *>(&iAmmoEffectType));
-    EndianSwap(reinterpret_cast<u32 *>(&iOperation));
-    EndianSwap(reinterpret_cast<u32 *>(&fValue));
+    EndianSwapEq(reinterpret_cast<u32 &>(iAmmoEffectType));
+    EndianSwapEq(reinterpret_cast<u32 &>(iOperation));
+    EndianSwapEq(reinterpret_cast<u32 &>(fValue));
 }
 
 bool TESAmmoEffect::Load(TESFile *apFile) {
-    if (apFile->GetTESForm() != AMEF_ID) {
+    u8 formid = apFile->GetTESForm();
+    if (formid != AMEF_ID)
         return false;
-    }
     LoadForm(apFile);
     SetInitialized(false);
-    while (CHUNK_ID id = apFile->GetTESChunk()) {
-        if (apFile->NextChunk() == false)
+    for (CHUNK_ID chunk = apFile->GetTESChunk(); chunk != NO_CHUNK;
+         chunk = apFile->GetTESChunk()) {
+        switch (chunk) {
+        case OBND_ID: {
+            LoadObjectBound(apFile);
+        } break;
+        case EDID_ID: {
+            void *buf = alloca(apFile->GetChunkSize());
+            apFile->GetChunkData(buf, 0x200);
+            SetFormEditorID(static_cast<const char *>(buf));
+        } break;
+        case DATA_ID: {
+            LoadData(apFile, &data, sizeof(AMMO_EFFECT_DATA));
+            if (apFile->GetLittleEndian()) {
+                data.Endian();
+            }
+        } break;
+        case FULL_ID: {
+            LoadFullNameChunk(this, apFile);
+        } break;
+        default:
+            break;
+        }
+        if (!apFile->NextChunk())
             break;
     }
     return true;

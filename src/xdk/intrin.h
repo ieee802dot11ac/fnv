@@ -7,9 +7,11 @@ extern "C" {
 
 LONG _InterlockedIncrement(LONG volatile *Addend);
 LONG _InterlockedDecrement(LONG volatile *Addend);
+ULONG _byteswap_ulong(ULONG);
 
 #pragma intrinsic(_InterlockedIncrement)
 #pragma intrinsic(_InterlockedDecrement)
+#pragma intrinsic(_byteswap_ulong)
 
 #ifdef __cplusplus
 }

@@ -9,7 +9,7 @@ public:
         // m_item = nullptr;
         m_pkNext = nullptr;
     }
-    ~BSSimpleList(); // { RemoveAll(); }
+    ~BSSimpleList() { RemoveAll(); }
     void SetItem(T &);
     T &GetItem() { return m_item; }
     T &GetItem() const;
@@ -22,7 +22,10 @@ public:
     void Remove(T &);
     void RemoveHead();
     void RemoveAll();
-    void AddTail(T &);
+    void AddTail(const T &obj) {
+        // currently only works for BS_MEM_OVERLOADS. lawl
+        new ("", 221, __FUNCTION__) BSSimpleList<T>();
+    }
     void Sort(int (*)(T, T));
     void Insert(T, int (*)(T, T));
     void Traverse(bool (*)(T, unsigned int), unsigned int);

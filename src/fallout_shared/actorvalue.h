@@ -108,9 +108,9 @@ public:
         AI_ATTRIBUTE_COUNT = 0x0005,
         CONDITION_COUNT = 0x0007,
         INT_COUNT = 0x0010,
-        VALUE_NONE = 0xff,
-        SKILL_NONE = 0xff,
-        ATTRIBUTE_NONE = 0xff,
+        VALUE_NONE = -1,
+        SKILL_NONE = -1,
+        ATTRIBUTE_NONE = -1,
     };
     enum Section {
         ATTRIBUTE = 0x0000,

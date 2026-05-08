@@ -1,7 +1,7 @@
 #pragma once
 
 #include "fallout_shared/enums.h"
-#include "fallout_shared/tesconditionitem.h"
+#include "fallout_shared/TESConditionItem.h"
 #include "fallout_shared/TESForm.h"
 
 class TESCondition {

@@ -117,7 +117,7 @@ public:
     void SetActive(bool);
     bool GetActive();
     void SetLittleEndian(bool);
-    bool GetLittleEndian();
+    bool GetLittleEndian() { return bMustEndianConvert; }
     bool QEndian();
     void SetUnicode(bool);
     bool GetUnicode();

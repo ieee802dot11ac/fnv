@@ -1,6 +1,7 @@
 #pragma once
 
 #include "xapilibi/synchapi.h"
+
 class NiCriticalSection { /* Size=0x80 */
 public:
     NiCriticalSection() { InitializeCriticalSection(&m_kCriticalSection); }

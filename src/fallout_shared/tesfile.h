@@ -9,6 +9,7 @@
 #include "win_types.h"
 #include "bscore/bsstring.h"
 #include "xapilibi/minwinbase.h"
+#include "nimain/NiTPointerMap.h"
 
 class TESForm;
 
@@ -170,7 +171,7 @@ protected:
 
     // TES_RETURN_CODE m_lastError; // 0x000
     TESFile *pThreadSafeParent; // 0x004
-    // NiTPointerMap<uint,TESFile *>* pThreadSafeFileMap; // 0x008
+    NiTPointerMap<uint, TESFile *> *pThreadSafeFileMap; // 0x008
 
     static NiTMap<uint, TESFile *> *pOwnedTempIDMap;
     static uint iOwnerFileCount;

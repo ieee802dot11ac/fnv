@@ -1,15 +1,17 @@
 #pragma once
 
 #include "bscore/BSCriticalSection.h"
+// #include "fallout_shared/ExtraDataList.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout_shared/tesobject.h"
 // #include "fallout_shared/TESQuest.h"
-#include "fallout_shared/tesscriptshared.h"
-#include "fallout_shared/tesscriptvariable.h"
-#include "fallout_shared/tesscriptcompiler.h"
+#include "fallout_shared/TESScriptShared.h"
+#include "fallout_shared/TESScriptVariable.h"
+#include "fallout_shared/TESScriptCompiler.h"
 #include "macros.h"
 
 class TESQuest;
+class ExtraDataList;
 
 class Script : public TESForm {
 public:
@@ -104,14 +106,13 @@ private:
     );
 #define TSCRIPTFUNC_GET_PVPVRD(name)                                                     \
     static bool name(TESObjectREFR *, void *, void *, double &);
-    /*
 
-    public:
+public:
     static bool VerboseOutput();
     static void SavePendingReferences(BGSSaveFormBuffer *);
     static void LoadPendingReferences(BGSLoadFormBuffer *);
     static void RevertPendingReferences(BGSLoadFormBuffer *);
-    // static void InitActionList(TESObjectREFR*, ExtraDataList*);
+    static void InitActionList(TESObjectREFR *, ExtraDataList *);
     static void CopyReferencedObjectList(
         BSSimpleList<SCRIPT_REFERENCED_OBJECT *> *,
         BSSimpleList<SCRIPT_REFERENCED_OBJECT *> *,
@@ -120,7 +121,8 @@ private:
     static void CopyVariableList(
         BSSimpleList<ScriptVariable *> *, BSSimpleList<ScriptVariable *> *, Script *
     );
-    // static bool SetActionFlag(TESForm*, ExtraDataList*, unsigned int);
+    static bool SetActionFlag(TESForm *, ExtraDataList *, unsigned int);
+
     static bool ParseParameters(
         const SCRIPT_PARAMETER *,
         const char *,
@@ -143,30 +145,31 @@ private:
     );
     static void PutNumericIDInDouble(const unsigned int &, double &);
     static void GetNumericIDFromDouble(unsigned int &, const double &);
+    /*
     TSCRIPTFUNC_GENERIC(UnimplementedFunction)
     TSCRIPTFUNC_GENERIC(MessageBoxFunction)
     static bool BuildMessageBoxStringFromParameters(
-        const SCRIPT_PARAMETER *,
-        const char *,
-        TESObjectREFR *,
-        TESObjectREFR *,
-        Script *,
-        ScriptLocals *,
-        double &,
-        unsigned int &,
-        const char *,
-        BSStringT<char> &
+    const SCRIPT_PARAMETER *,
+    const char *,
+    TESObjectREFR *,
+    TESObjectREFR *,
+    Script *,
+    ScriptLocals *,
+    double &,
+    unsigned int &,
+    const char *,
+    BSStringT<char> &
     );
     static bool BuildMessageBoxButtonsFromParameters(
-        const SCRIPT_PARAMETER *,
-        const char *,
-        TESObjectREFR *,
-        TESObjectREFR *,
-        Script *,
-        ScriptLocals *,
-        double &,
-        unsigned int &,
-        BSStringT<char> *
+    const SCRIPT_PARAMETER *,
+    const char *,
+    TESObjectREFR *,
+    TESObjectREFR *,
+    Script *,
+    ScriptLocals *,
+    double &,
+    unsigned int &,
+    BSStringT<char> *
     );
     static void HandleMessageMenu();
     TSCRIPTFUNC_GENERIC(MessageFunction)
@@ -504,7 +507,7 @@ private:
     TSCRIPTFUNC_GENERIC(ShowPivotFunction)
     static void
     CheckFlagFunction(unsigned int, TESObjectREFR *, TESForm *, ScriptLocals *, double
-&); TSCRIPTFUNC_GENERIC(OnAddFunction) TSCRIPTFUNC_GENERIC(OnEquipFunction)
+    &); TSCRIPTFUNC_GENERIC(OnAddFunction) TSCRIPTFUNC_GENERIC(OnEquipFunction)
     TSCRIPTFUNC_GENERIC(OnUnequipFunction)
     TSCRIPTFUNC_GENERIC(OnDropFunction)
     TSCRIPTFUNC_GENERIC(OnHitFunction)
@@ -573,7 +576,7 @@ private:
     TSCRIPTFUNC_GENERIC(MoveToFunction)
     TSCRIPTFUNC_GENERIC(MoveToQuestTargetFunction)
     static void MoveToFunctionBase(TESObjectREFR *, TESObjectREFR *, float, float,
-float); TSCRIPTFUNC_GENERIC(MoveToFadeFunction)
+    float); TSCRIPTFUNC_GENERIC(MoveToFadeFunction)
     TSCRIPTFUNC_GENERIC(GetIsCurrentPackageFunction)
     TSCRIPTFUNC_GENERIC(AddFaceAnimNoteFunction)
     TSCRIPTFUNC_GENERIC(WakeUpPCFunction)
@@ -1265,6 +1268,7 @@ float); TSCRIPTFUNC_GENERIC(MoveToFadeFunction)
     TSCRIPTFUNC_GENERIC(SetCasinoWinningsLevel)
     TSCRIPTFUNC_GENERIC(GetDLCCountFunction)
     TSCRIPTFUNC_GENERIC(IsDLCInstalledFunction)
+    */
     static void AddPendingDisabledReference(TESObjectREFR *, bool);
     static void AddPendingEnabledReference(TESObjectREFR *);
     static bool IsPendingEnabledReference(TESObjectREFR *);
@@ -1280,7 +1284,6 @@ float); TSCRIPTFUNC_GENERIC(MoveToFadeFunction)
     static void SetCrimeVictim(TESForm *);
     static void ClearButtonPressed();
     static void ClearOptimizations();
-    */
 #undef TSCRIPTFUNC_GENERIC
 #undef TSCRIPTFUNC_GET_PVPVRD
 #pragma endregion

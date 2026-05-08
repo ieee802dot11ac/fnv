@@ -32,6 +32,7 @@
 
 #define ROTATE_LEFT(x, i) (((x) << (i)) | ((x) >> ((sizeof((x)) * 8) - (i))))
 #define ROTATE_RIGHT(x, i) (((x) >> (i)) | ((x) << ((sizeof((x)) * 8) - (i))))
+#define BIT(i) (1 << (i))
 
 // clang-format off
 #define DIM(x) ( sizeof(x)/sizeof(x[0]) )

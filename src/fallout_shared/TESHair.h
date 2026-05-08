@@ -1,5 +1,6 @@
 #pragma once
 
+#include "bscore/memorymanager.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout_shared/tesfullname.h"
 #include "fallout_shared/tesmodel.h"
@@ -7,7 +8,6 @@
 
 class TESHair : public TESForm, public TESFullName, public TESModel, public TESTexture {
 public:
-    TESHair(const TESHair &);
     TESHair();
     virtual ~TESHair();
     virtual void InitializeData();
@@ -24,6 +24,8 @@ public:
     bool IsFixedColor();
     void SetFixedColor(bool);
     bool CanBeHairForNPC(class TESNPC *);
+
+    BS_MEM_OVERLOADS
 
 protected:
     char cFlags; // 0x58

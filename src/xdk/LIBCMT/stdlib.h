@@ -18,6 +18,7 @@ static void free(void *ptr) { XMemFree(ptr, 0x24810000); }
 
 void *_alloca(uint size);
 #pragma intrinsic(_alloca)
+#define alloca _alloca
 
 typedef struct {
     int quot;

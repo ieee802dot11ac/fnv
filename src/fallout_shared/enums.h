@@ -1,5 +1,6 @@
 #pragma once
 
+#include "nimain/NiPoint3.h"
 #include "types.h"
 
 enum ANIM_GROUP_ENUM {
@@ -893,6 +894,13 @@ enum ENUM_FORM_ID {
     HUNG_ID = 0x0077,
     SLPD_ID = 0x0078,
     FORM_ID_COUNT = 0x0079,
+};
+
+struct FILE_POS_ROT {
+    NiPoint3 pos; // 0x0
+    NiPoint3 rot; // 0xc
+
+    void Endian();
 };
 
 struct FORM_ENUM_STRING {

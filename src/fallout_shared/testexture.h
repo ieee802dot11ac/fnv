@@ -22,7 +22,6 @@ public:
     virtual const char *GetAsNormalFile(BSStringT<char> &) const;
     virtual const char *GetAsSpecularFile(BSStringT<char> &) const;
     virtual char *GetDefaultPath() const;
-    TESTexture &operator=(const TESTexture &);
 
     static unsigned int GetTextureNameLength(TESForm *);
     static const char *GetTextureName(TESForm *, TESObjectREFR *);

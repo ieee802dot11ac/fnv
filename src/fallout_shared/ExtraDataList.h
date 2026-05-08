@@ -4,8 +4,9 @@
 #include "fallout/misc/saveload/BGSLoadFormBuffer.h"
 #include "fallout_shared/ExtraDataObjects.h"
 #include "fallout_shared/TESForm.h"
-#include "fallout_shared/TESScript.h"
 #include "fallout_shared/tesobjectrefr.h"
+
+class Script;
 
 class ExtraDataList : public BaseExtraList {
 public:

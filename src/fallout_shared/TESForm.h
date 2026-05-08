@@ -6,6 +6,7 @@
 #include "fallout_shared/baseformcomponent.h"
 #include "fallout_shared/enums.h"
 #include "gamebryo2.2/corelibs/nimain/NiPoint3.h"
+#include "nimain/NiTPointerMap.h"
 #include "win_types.h"
 #include <types.h>
 
@@ -27,11 +28,13 @@ struct FORM {
 
 class BGSLoadFormBuffer;
 class BGSSaveFormBuffer;
+class TESObjectREFR;
+class TESBoundObject;
 
 class TESForm : public BaseFormComponent {
 public:
     static bool bFormIDsBashed;
-    // static NiTPointerMap<unsigned int,TESForm *>* pAllForms;
+    static NiTPointerMap<uint, TESForm *> *pAllForms;
     // static NiTLargePrimitiveArray<TESForm *>* pAlteredForms;
     // static BSTCaseInsensitiveStringMap<TESForm *>* pAllFormsByEditorID;
 
@@ -56,10 +59,8 @@ public:
     void SaveData();
     void LoadData(TESFile *, void *, u16);
     uint GetDataSizeAdded();
-    //   public: virtual TESForm* CreateDuplicateForm(bool, NiTPointerMap<TESForm
-    //   *,TESForm *>*);
-    // public: virtual void PostDuplicateProcess(NiTPointerMap<TESForm
-    //   *,TESForm *>*);
+    virtual TESForm *CreateDuplicateForm(bool, NiTPointerMap<TESForm *, TESForm *> *);
+    virtual void PostDuplicateProcess(NiTPointerMap<TESForm *, TESForm *> *);
     virtual void AddChange(int);
     void ForceChange(int);
     virtual void RemoveChange(int);
@@ -143,7 +144,7 @@ public:
     virtual void SetOnLocalMap(bool);
     bool GetMustBeVisibleDistant() const;
     void SetMustBeVisibleDistant(bool);
-    //   public: virtual NiColor* GetEmittanceColor();
+    // virtual NiColor* GetEmittanceColor();
     bool GetEmpty() const;
     bool GetResetDestruct() const;
     bool GetDestroyed() const;
@@ -233,8 +234,9 @@ public:
     virtual bool IsParentForm();
     virtual bool IsParentFormTree();
     virtual bool IsFormTypeChild(unsigned char);
-    //   public: virtual bool Activate(TESObjectREFR*, TESObjectREFR*, bool,
-    //   TESBoundObject*, int);
+
+public:
+    virtual bool Activate(TESObjectREFR *, TESObjectREFR *, bool, TESBoundObject *, int);
     uint GetFormFlags() const;
     void SetFormFlags(uint);
     uint GetFormID() const { return iFormID; }
@@ -252,7 +254,7 @@ public:
     void CloseForm();
 
     static void CompressSaveBuffer();
-    //   public: static void RunPostDuplicateProcess(NiTPointerMap<TESForm *,TESForm *>*);
+    static void RunPostDuplicateProcess(NiTPointerMap<TESForm *, TESForm *> *);
     static TESForm *GetFormByNumericID(uint);
     static TESForm *GetFormByEditorID(const char *);
     static TESForm *GetFormByFullName(const char *, unsigned char);

@@ -2,6 +2,7 @@
 
 #include "fallout_shared/BGSMessageIcon.h"
 #include "fallout_shared/BGSPickupPutdownSounds.h"
+#include "fallout_shared/Defines.h"
 #include "fallout_shared/TESModelTextureSwap.h"
 #include "fallout_shared/TESScriptableForm.h"
 #include "fallout_shared/TESValueForm.h"
@@ -13,14 +14,17 @@
 struct CARAVANDECKDATA {
     int iDeckSize; // 0x0
 
-    void Endian();
+    void Endian() { EndianSwapEq(iDeckSize); }
 };
 
 struct CARAVANCARDDATA {
     uint iFaceValue; // 0x0
     uint iCardSuit; // 0x4
 
-    void Endian();
+    void Endian() {
+        EndianSwapEq(iFaceValue);
+        EndianSwapEq(iCardSuit);
+    }
 };
 
 class TESCaravanCard : public TESBoundObject,

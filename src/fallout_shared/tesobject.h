@@ -110,10 +110,24 @@ public:
     bool GetLODObjectExists(bool);
     TESBoundObject &operator=(const TESBoundObject &);
 
-    //   static void CalcBoundingBox(NiAVObject*, NiPoint3*, NiPoint3*, const NiPoint3&,
-    //   const NiMatrix3&, const float&); static void
-    //   CalcBoundingBoxRecursive(NiAVObject*, NiPoint3*, NiPoint3*, bool&, bool&, const
-    //   NiPoint3&, const NiMatrix3&, const float&);
+    static void CalcBoundingBox(
+        NiAVObject *,
+        NiPoint3 *,
+        NiPoint3 *,
+        const NiPoint3 &,
+        const NiMatrix3 &,
+        const float &
+    );
+    static void CalcBoundingBoxRecursive(
+        NiAVObject *,
+        NiPoint3 *,
+        NiPoint3 *,
+        bool &,
+        bool &,
+        const NiPoint3 &,
+        const NiMatrix3 &,
+        const float &
+    );
 
 protected:
     BOUND_DATA BoundData; // 0x34

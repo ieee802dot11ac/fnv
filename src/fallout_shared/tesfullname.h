@@ -16,7 +16,6 @@ public:
     void SetFullName(const char *);
     TESFullName(const TESFullName &);
     TESFullName() {}
-    ~TESFullName() {}
 
     static unsigned int GetFullNameLength(TESForm *);
     static const char *GetFullName(TESForm *);

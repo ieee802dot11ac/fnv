@@ -27,9 +27,9 @@ public:
     bool IsOpen();
     bool QDLC();
     void SetDLC(bool);
-    //   TES_RETURN_CODE LoadTESInfo();
-    //   TES_RETURN_CODE SaveTESInfo();
-    //   TES_RETURN_CODE RewriteFormHeader();
+    TES_RETURN_CODE LoadTESInfo();
+    TES_RETURN_CODE SaveTESInfo();
+    TES_RETURN_CODE RewriteFormHeader();
     TESForm *BuildTESInfoForm();
     int GetFormCount();
     void ModFormCount(int);
@@ -100,10 +100,10 @@ public:
     bool GetChunkData(void *, uint);
     void ClearCurrentChunk();
     bool SetFilename(char *);
-    //   TES_RETURN_CODE AddTESForm(TESForm*);
-    //   TES_RETURN_CODE StartForm(TESForm*);
+    TES_RETURN_CODE AddTESForm(TESForm *);
+    TES_RETURN_CODE StartForm(TESForm *);
     void LoadForm(TESForm *);
-    //   TES_RETURN_CODE AddChunk(CHUNK_ID, void*, uint);
+    TES_RETURN_CODE AddChunk(CHUNK_ID, void *, uint);
     uint CloseForm();
     bool ForceSaveFormHeader(FORM *, uint);
     void SetMaster(bool);
@@ -131,10 +131,10 @@ public:
     void ClearAuxBuffer();
     void SetFile(BSFile *);
     BSFile *GetFile();
-    //   TES_RETURN_CODE GetLastFileError();
+    TES_RETURN_CODE GetLastFileError();
     FORM *GetFormData();
     uint GetID();
-    unsigned short GetFormVersion();
+    u16 GetFormVersion() { return m_currentform.sFormVersion; }
     bool TakeOwnership();
     void SetCached(bool);
     void SetCaching(bool);
@@ -169,7 +169,7 @@ protected:
     void SetThreadSafeParent(TESFile *);
     TESFile *GetThreadSafeFileForThread(uint);
 
-    // TES_RETURN_CODE m_lastError; // 0x000
+    TES_RETURN_CODE m_lastError; // 0x000
     TESFile *pThreadSafeParent; // 0x004
     NiTPointerMap<uint, TESFile *> *pThreadSafeFileMap; // 0x008
 
@@ -180,13 +180,13 @@ private:
     uint GetFlags();
     uint GetVersionInfo();
     void InitEndian();
-    //   TES_RETURN_CODE EasyWrite(void*, uint);
+    TES_RETURN_CODE EasyWrite(void *, uint);
 
     BSFile *m_pLockedFile; // 0x00c
     BSFile *m_pFile; // 0x010
-    // TESBitArrayFile* pFormUserDataBitArray; // 0x014
-    // TESBitArrayFile* pFormVersionBitArray; // 0x018
-    // TESBitArrayFile* pFormIDBitArray; // 0x01c
+    class TESBitArrayFile *pFormUserDataBitArray; // 0x014
+    class TESBitArrayFile *pFormVersionBitArray; // 0x018
+    class TESBitArrayFile *pFormIDBitArray; // 0x01c
     char m_Filename[260]; // 0x020
     char m_Path[260]; // 0x124
     char *m_pBuffer; // 0x228
@@ -209,7 +209,7 @@ private:
     bool bHasGroups; // 0x298
     bool bMustEndianConvert; // 0x299
     bool bCloseFileOverride; // 0x29a
-    WIN32_FIND_DATAA m_FileInfo; // 0x29c
+    // WIN32_FIND_DATAA m_FileInfo; // 0x29c
     // FILE_HEADER fileHeaderInfo; // 0x3dc
     uint m_Flags; // 0x3e8
     BSSimpleList<char *> listMasters; // 0x3ec

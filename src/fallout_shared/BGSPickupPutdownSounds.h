@@ -16,8 +16,8 @@ public:
     void InitItem(TESForm *);
     TESSound *GetPickupSound();
     TESSound *GetPutdownSound();
-    void SetPickupSound(TESSound *);
-    void SetPutdownSound(TESSound *);
+    void SetPickupSound(TESSound *apPickupSound) { pPickupSound = apPickupSound; }
+    void SetPutdownSound(TESSound *apPutdownSound) { pPutdownSound = apPutdownSound; }
 
     static TESSound *GetPickupSound(TESForm *);
     static TESSound *GetPutdownSound(TESForm *);

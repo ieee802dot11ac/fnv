@@ -17,7 +17,7 @@ public:
     void InitItem(TESForm *);
     Script *GetFormScript();
     const char *GetFormScriptEditorID();
-    void SetFormScript(Script *);
+    void SetFormScript(Script *apFormScript) { pFormScript = apFormScript; }
 
     static Script *GetFormScript(TESForm *);
     static const char *GetFormScriptEditorID(TESForm *);

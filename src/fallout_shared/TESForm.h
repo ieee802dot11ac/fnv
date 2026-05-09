@@ -115,7 +115,7 @@ public:
     bool GetMaster() const; // bit 0
     bool GetDelete() const; // bit 6
     bool GetAltered() const;
-    bool GetInitialized() const; // bit 3
+    bool GetInitialized() const { return iFormFlags & BIT(3); } // bit 3
     virtual bool GetQuestObject() const;
     virtual bool GetHasSpokenFlag() const;
     virtual bool GetHavokDeath() const;
@@ -287,6 +287,7 @@ public:
     static void AddChunkArray(CHUNK_ID, const float *, uint);
     static void __AddChunkData(CHUNK_ID, const void *, uint);
 
+#pragma region Members
 private:
     u8 cFormType; // 0x04
     uint iFormFlags; // 0x08

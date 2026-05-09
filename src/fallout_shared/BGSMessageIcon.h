@@ -13,7 +13,7 @@ public:
     void Save(CHUNK_ID);
     virtual void CopyComponent(BaseFormComponent *);
     virtual bool CompareComponent(BaseFormComponent *);
-    TESIcon *GetIcon();
+    TESIcon *GetIcon() { return &Icon; }
     const char *GetMessageIconTextureName();
     uint GetMessageIconTextureNameLength() const;
     void SetMessageIconTextureName(const char *);

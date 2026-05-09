@@ -68,7 +68,7 @@ public:
         uValue = aValue;
     }
     virtual ~Setting();
-    const char *String();
+    const char *String() { return uValue.str; }
     int &Int() { return uValue.i; }
     uint &UInt();
     float &Float() { return uValue.f; }

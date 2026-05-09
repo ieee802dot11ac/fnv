@@ -114,8 +114,8 @@ protected:
 };
 
 void Error(char const *apMessage, ...);
-s32 Warning(char const *apMessage, ...);
-s32 Warning(WARNING_TYPES aWarningContext, char const *apMessage, ...);
+int Warning(char const *apMessage, ...);
+int Warning(WARNING_TYPES aWarningContext, char const *apMessage, ...);
 void ProgramFlow(char const *apMessage, ...);
 void InitializationFlow(char const *apMessage, ...);
 void DebugString(char const *apMessage, ...);

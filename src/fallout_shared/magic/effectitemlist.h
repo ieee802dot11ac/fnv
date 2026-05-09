@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bscore/bssimplelist.h"
+#include "fallout_shared/SkillLevel.h"
 #include "fallout_shared/TESScript.h"
 #include "fallout_shared/magic/effectitem.h"
 #include "fallout_shared/magic/magicsystem.h"
@@ -32,7 +33,7 @@ public:
     float GetRawCost();
     EffectItem *GetUsageMonitorEffect();
     virtual int GetMaxEffectCount();
-    // virtual SkillLevel::Value GetLevel();
+    virtual SkillLevel::Value GetLevel();
     EffectItem *GetCostliestEffect(MagicSystem::Range, bool);
     BSStringT<char> GetCostliestEffectString();
     BSStringT<char> GetMagicSchoolString();
@@ -47,8 +48,7 @@ public:
     void Copy(EffectItemList *);
     bool Compare(EffectItemList *);
     unsigned char GetEffectItemIndex(EffectItem *);
-    EffectItem *GetEffectItemByIndex(unsigned char);
-    ~EffectItemList();
+    EffectItem *GetEffectItemByIndex(u8);
 
 protected:
     int iHostileCount; // 0xc

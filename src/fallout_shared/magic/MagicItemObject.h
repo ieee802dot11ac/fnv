@@ -1,7 +1,8 @@
 #pragma once
 
-#include "fallout_shared/magic/magicitem.h"
+#include "fallout_shared/magic/MagicItem.h"
 #include "fallout_shared/tesobject.h"
+
 class MagicItemObject : public TESBoundObject, public MagicItem {
 public:
     virtual bool IsAutoCalc() = 0;

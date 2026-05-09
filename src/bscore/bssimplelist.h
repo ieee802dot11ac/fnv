@@ -13,11 +13,11 @@ public:
     void SetItem(T &);
     T &GetItem() { return m_item; }
     T &GetItem() const;
-    void SetNext(BSSimpleList<T> *);
+    void SetNext(BSSimpleList<T> *pkNext) { m_pkNext = pkNext; }
     BSSimpleList<T> *GetNext() const { return m_pkNext; }
     bool IsEmpty() const { return (m_pkNext == nullptr && m_item == 0); }
     bool IsInList(T &) const;
-    unsigned int ItemsInList() const;
+    uint ItemsInList() const;
     void AddHead(T &);
     void Remove(T &);
     void RemoveHead();
@@ -37,8 +37,6 @@ protected:
     BSSimpleList<T> *m_pkNext; // 0x4
 
 private:
-    BSSimpleList(const BSSimpleList<T> &);
-    BSSimpleList<T> &operator=(const BSSimpleList<T> &);
     void BubbleSort(int (*)(T, T));
     void ShellSort(T *, int (*)(T, T), int);
     void QuickSort(T *, int (*)(T, T), int, int);

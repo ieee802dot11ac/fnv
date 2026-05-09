@@ -1,7 +1,7 @@
 #pragma once
 
 #include "fallout_shared/TESForm.h"
-#include "fallout_shared/magic/magicitem.h"
+#include "fallout_shared/magic/MagicItem.h"
 
 class MagicItemForm : public TESForm, public MagicItem {
 public:

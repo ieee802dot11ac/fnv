@@ -9,11 +9,14 @@ public:
     BSStringT(const T *);
     BSStringT() : pString(nullptr), sLen(0), sMaxLen(0) {}
     ~BSStringT() { Set(nullptr, 0); }
-    bool Set(const BSStringT<T> &);
+    bool Set(const BSStringT<T> &rhs) {
+        Set(rhs.String(), 0);
+        return true;
+    }
     bool Set(const T *, uint);
     const T *String() const { return int(pString) != 0 ? pString : ""; }
-    uint ByteLength() const;
-    uint ByteLengthWithNull() const;
+    uint ByteLength() const { return sLen; }
+    uint ByteLengthWithNull() const { return sLen + 1; }
     uint Length() const { return sLen; }
     uint MaxLength() const { return sMaxLen; }
     void Fill(T);
@@ -23,8 +26,14 @@ public:
     int StrCmp(const T *, bool) const;
     void MakeUpper();
     void MakeLower();
-    BSStringT<T> &operator=(BSStringT<T> const &);
-    BSStringT<T> &operator=(const T *);
+    BSStringT<T> &operator=(BSStringT<T> const &rhs) {
+        Set(rhs);
+        return *this;
+    }
+    BSStringT<T> &operator=(const T *rhs) {
+        Set(rhs, 0);
+        return *this;
+    }
     bool operator==(const BSStringT<T> &) const;
     bool operator==(const T *) const;
     bool operator!=(const BSStringT<T> &) const;

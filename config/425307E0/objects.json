@@ -835,7 +835,7 @@
 			"fallout_shared/TESParameters.cpp": "NonMatching",
 			"fallout_shared/TESConditionItem.cpp": "NonMatching",
 			"fallout_shared/TESCondition.cpp": "NonMatching",
-			"fallout_shared/SkillLevel.cpp": "NonMatching",
+			"fallout_shared/SkillLevel.cpp": "Matching",
 			"fallout_shared/PackageTarget.cpp": "NonMatching",
 			"fallout_shared/PackageSchedule.cpp": "NonMatching",
 			"fallout_shared/PackageLocation.cpp": "NonMatching",

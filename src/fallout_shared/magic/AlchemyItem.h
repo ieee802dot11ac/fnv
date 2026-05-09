@@ -8,7 +8,7 @@
 #include "fallout_shared/TESScriptableForm.h"
 #include "fallout_shared/TESWeightForm.h"
 #include "fallout_shared/magic/MagicItemObject.h"
-#include "fallout_shared/magic/magicitem.h"
+#include "fallout_shared/magic/MagicItem.h"
 #include "fallout_shared/magic/spellitem.h"
 #include "fallout_shared/tesicon.h"
 

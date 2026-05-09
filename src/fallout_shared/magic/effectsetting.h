@@ -4,7 +4,7 @@
 #include "fallout_shared/magic/effectarchetype.h"
 #include "fallout_shared/TESDescription.h"
 #include "fallout_shared/TESForm.h"
-#include "fallout_shared/tesfullname.h"
+#include "fallout_shared/TESFullName.h"
 #include "fallout_shared/tesicon.h"
 #include "fallout_shared/tesmodel.h"
 #include "fallout_shared/tessound.h"

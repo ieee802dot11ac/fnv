@@ -13,9 +13,9 @@ public:
     void Save();
     virtual void CopyComponent(BaseFormComponent *);
     virtual bool CompareComponent(BaseFormComponent *);
-    int GetFormValue();
+    int GetFormValue() { return iValue; }
     void SetFormValue(int);
-    virtual unsigned short GetSaveSize(unsigned int);
+    virtual u16 GetSaveSize(unsigned int);
     void SaveGame(BGSSaveFormBuffer *);
     virtual void SaveGame(unsigned int);
     void LoadGame(BGSLoadFormBuffer *);

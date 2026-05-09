@@ -2,6 +2,7 @@
 #include "fallout_shared/TESForm.h"
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
 #include "fallout/misc/saveload/BGSLoadFormBuffer.h"
+#include "fallout_shared/magic/AlchemyItem.h"
 #include "fallout_shared/magic/magicitem.h"
 
 bool TESValueForm::CompareComponent(BaseFormComponent *apCompareFC) {
@@ -23,10 +24,10 @@ int TESValueForm::GetFormValue(TESForm *apForm) {
     if (apMI) {
         return apMI->GetCost(nullptr);
     }
-    // AlchemyItem *apAI = dynamic_cast<AlchemyItem *>(apForm);
-    // if (apAI) {
-    //     return apAI->GetCost(nullptr);
-    // }
+    AlchemyItem *apAI = dynamic_cast<AlchemyItem *>(apForm);
+    if (apAI) {
+        return apAI->GetCost(nullptr);
+    }
     return -1;
 }
 
@@ -34,7 +35,7 @@ void TESValueForm::SetFormValue(int aiValue) {
     iValue = aiValue;
     TESForm *apCopyForm = dynamic_cast<TESForm *>(this);
     if (apCopyForm) {
-        apCopyForm->GetSaveSize(2);
+        apCopyForm->AddChange(2);
     }
 }
 
@@ -68,6 +69,6 @@ TESValueForm::~TESValueForm() {}
 void TESValueForm::CopyComponent(BaseFormComponent *apCopyFC) {
     TESValueForm *apCopyVF = dynamic_cast<TESValueForm *>(apCopyFC);
     if (apCopyVF) {
-        apCopyVF->SetFormValue(iValue);
+        SetFormValue(apCopyVF->iValue);
     }
 }

@@ -205,11 +205,11 @@ private:
     FORM m_saveform; // 0x270
     uint m_saveformoffset; // 0x288
     uint m_savechunkoffset; // 0x28c
-    // BSSimpleList<FORM_GROUP *> m_grouplist; // 0x290
+    BSSimpleList<FORM_GROUP *> m_grouplist; // 0x290
     bool bHasGroups; // 0x298
     bool bMustEndianConvert; // 0x299
     bool bCloseFileOverride; // 0x29a
-    // WIN32_FIND_DATAA m_FileInfo; // 0x29c
+    WIN32_FIND_DATAA m_FileInfo; // 0x29c
     // FILE_HEADER fileHeaderInfo; // 0x3dc
     uint m_Flags; // 0x3e8
     BSSimpleList<char *> listMasters; // 0x3ec

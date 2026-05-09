@@ -16,8 +16,8 @@ public:
     virtual void CopyComponent(BaseFormComponent *);
     virtual bool CompareComponent(BaseFormComponent *);
     unsigned int GetTextureNameLength() const;
-    const char *GetTextureName() const;
-    void SetTextureName(const char *);
+    const char *GetTextureName() const { return TextureName.String(); }
+    void SetTextureName(const char *aTextureName) { TextureName.Set(aTextureName, 0); }
     virtual unsigned int GetMaxAllowedSize();
     virtual const char *GetAsNormalFile(BSStringT<char> &) const;
     virtual const char *GetAsSpecularFile(BSStringT<char> &) const;

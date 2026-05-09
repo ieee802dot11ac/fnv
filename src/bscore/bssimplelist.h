@@ -6,7 +6,7 @@ class BSSimpleList {
 public:
     BSSimpleList(T &);
     BSSimpleList() {
-        // m_item = nullptr;
+        m_item = nullptr;
         m_pkNext = nullptr;
     }
     ~BSSimpleList() { RemoveAll(); }
@@ -26,9 +26,9 @@ public:
         // currently only works for BS_MEM_OVERLOADS. lawl
         new ("", 221, __FUNCTION__) BSSimpleList<T>();
     }
-    void Sort(int (*)(T, T));
-    void Insert(T, int (*)(T, T));
-    void Traverse(bool (*)(T, unsigned int), unsigned int);
+    void Sort(int (*)(T *, T *));
+    void Insert(T *, int (*)(T *, T *));
+    void Traverse(bool (*)(T *, unsigned int), unsigned int);
 
     BS_MEM_OVERLOADS
 

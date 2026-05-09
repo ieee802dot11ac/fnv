@@ -1,5 +1,6 @@
 #pragma once
 
+#include "bscore/memorymanager.h"
 #include "fallout_shared/BGSMessageIcon.h"
 #include "fallout_shared/BGSPickupPutdownSounds.h"
 #include "fallout_shared/Defines.h"
@@ -90,6 +91,8 @@ public:
 
     static int SortCardsFunc(const void *, const void *);
 
+    BS_MEM_OVERLOADS
+
 protected:
     bool bIsActive; // 0xa8
     TESTexture faceTexture; // 0xac
@@ -110,6 +113,8 @@ public:
     virtual void ClearData();
     BSSimpleList<TESCaravanCard *> *GetCaravanDeck();
     CARAVANDECKDATA *GetData();
+
+    BS_MEM_OVERLOADS
 
 protected:
     BSSimpleList<TESCaravanCard *> *pDeck; // 0x34
@@ -143,6 +148,8 @@ public:
     virtual void SaveGame(unsigned int);
     virtual void LoadGame(BGSLoadFormBuffer *);
     virtual void LoadGame(unsigned int, unsigned int);
+
+    BS_MEM_OVERLOADS
 
 protected:
     TESModelTextureSwap anteModels[2]; // 0x9c

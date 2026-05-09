@@ -11,7 +11,7 @@ public:
     ~BSStringT() { Set(nullptr, 0); }
     bool Set(const BSStringT<T> &);
     bool Set(const T *, uint);
-    const T *String() const { return pString; }
+    const T *String() const { return int(pString) != 0 ? pString : ""; }
     uint ByteLength() const;
     uint ByteLengthWithNull() const;
     uint Length() const { return sLen; }
@@ -32,7 +32,7 @@ public:
     BSStringT<T> &operator+=(const BSStringT<T> &);
     BSStringT<T> &operator+=(const T *);
     T &operator[](uint);
-    operator const T *() const;
+    operator const T *() const { return String(); }
     BSStringT<T> RemoveCurlyContent();
 
 protected:

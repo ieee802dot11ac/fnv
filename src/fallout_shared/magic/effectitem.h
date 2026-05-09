@@ -2,7 +2,7 @@
 
 #include "fallout_shared/magic/effectsetting.h"
 #include "fallout_shared/magic/magicsystem.h"
-#include "fallout_shared/tescondition.h"
+#include "fallout_shared/TESCondition.h"
 
 class MagicItem;
 

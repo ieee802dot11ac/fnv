@@ -61,7 +61,8 @@ bool TESCaravanCard::Load(TESFile *apFile) {
         } break;
         case MODD_ID:
         case MODL_ID:
-        case MOSD_ID: {
+        case MOSD_ID:
+        case MODT_ID: {
             LoadModelChunk(this, apFile);
         } break;
             LOADEDITORID
@@ -79,13 +80,13 @@ bool TESCaravanCard::Load(TESFile *apFile) {
             apFile->GetChunkData(reinterpret_cast<int &>(sound));
             SetPickupSound(sound);
         } break;
-        case FULL_ID: {
-            LoadFullNameChunk(this, apFile);
-        } break;
         case ZNAM_ID: {
             TESSound *sound = nullptr;
             apFile->GetChunkData(reinterpret_cast<int &>(sound));
             SetPutdownSound(sound);
+        } break;
+        case FULL_ID: {
+            LoadFullNameChunk(this, apFile);
         } break;
         case ICON_ID: {
             LoadTextureChunk(this, apFile);
@@ -106,7 +107,7 @@ bool TESCaravanCard::Load(TESFile *apFile) {
             auto csize = apFile->GetChunkSize();
             void *buf = alloca(csize);
             apFile->GetChunkData(buf, csize);
-            UnpackTextureSwapChunkData(buf, apFile->GetFormVersion(), csize);
+            UnpackTextureSwapChunkData(buf, csize, apFile->GetFormVersion());
         } break;
         default:
             break;
@@ -117,21 +118,13 @@ bool TESCaravanCard::Load(TESFile *apFile) {
     return true;
 }
 
-NiAVObject *TESCaravanCard::Clone3D(TESObjectREFR *pRequester, bool deepCopy) {
-    return nullptr;
+int TESCaravanCard::SortCardsFunc(const void *t1, const void *t2) {
+    const TESCaravanCard *c1 = *reinterpret_cast<const TESCaravanCard *const *>(t1);
+    const TESCaravanCard *c2 = *reinterpret_cast<const TESCaravanCard *const *>(t2);
+    if (int(c1->data.iFaceValue) > int(c2->data.iFaceValue))
+        return true;
+    return int(c1->data.iFaceValue) < int(c2->data.iFaceValue) ? -1 : 0;
 }
-
-u16 TESCaravanCard::GetSaveSize(uint aiFlags) { return 0; }
-
-void TESCaravanCard::SaveGame(uint aiFlags) {}
-
-void TESCaravanCard::LoadGame(uint aiFlags, uint aiCurrentFlags) {}
-
-void TESCaravanCard::SaveGame(BGSSaveFormBuffer *apSaveGameBuffer) {}
-
-void TESCaravanCard::LoadGame(BGSLoadFormBuffer *apLoadGameBuffer) {}
-
-int TESCaravanCard::SortCardsFunc(const void *t1, const void *t2) { return 0; }
 
 void TESCaravanMoney::ClearData() {
     anteModels[0].ClearDataComponent();
@@ -164,29 +157,100 @@ void TESCaravanMoney::Save() {
     CloseForm();
 }
 
-bool TESCaravanMoney::Load(TESFile *apFile) { return false; }
+bool TESCaravanMoney::Load(TESFile *apFile) {
+    u8 formid = apFile->GetTESForm();
+    bool carddata_firsthalf = false;
+    if (formid != CMNY_ID)
+        return false;
+    LoadForm(apFile);
+    SetInitialized(false);
+    for (CHUNK_ID chunk = apFile->GetTESChunk(); chunk != NO_CHUNK;
+         chunk = apFile->GetTESChunk()) {
+        switch (chunk) {
+        case DATA_ID: {
+            LoadData(apFile, nullptr, 0);
+        } break;
+        case MOD3_ID: {
+            auto csize = apFile->GetChunkSize();
+            void *buf = alloca(csize);
+            apFile->GetChunkData(buf, 0);
+            anteModels[1].SetModel(reinterpret_cast<const char *>(buf));
+            LoadModelTextureChunk(&anteModels[1], apFile);
+        } break;
+        case MOD2_ID: {
+            auto csize = apFile->GetChunkSize();
+            void *buf = alloca(csize);
+            apFile->GetChunkData(buf, 0);
+            anteModels[0].SetModel(reinterpret_cast<const char *>(buf));
+            LoadModelTextureChunk(&anteModels[0], apFile);
+        } break;
+            LOADEDITORID
+        case OBND_ID: {
+            LoadObjectBound(apFile);
+        } break;
+        case YNAM_ID: {
+            TESSound *sound = nullptr;
+            apFile->GetChunkData(reinterpret_cast<int &>(sound));
+            SetPickupSound(sound);
+        } break;
+        case FULL_ID: {
+            LoadFullNameChunk(this, apFile);
+        } break;
+        case ZNAM_ID: {
+            // hey guys. why are we loading raw pointers from disk.
+            TESSound *sound = nullptr;
+            apFile->GetChunkData(reinterpret_cast<int &>(sound));
+            SetPutdownSound(sound);
+        } break;
+        case MICO_ID: {
+            LoadMessageIcon(this, apFile);
+        } break;
+        case ICON_ID: {
+            LoadTextureChunk(this, apFile);
+        } break;
+        case MODL_ID:
+        case MODD_ID:
+        case MODT_ID:
+        case MOSD_ID: {
+            LoadModelChunk(this, apFile);
+        } break;
+        case MODS_ID: {
+            auto csize = apFile->GetChunkSize();
+            void *buf = alloca(csize);
+            apFile->GetChunkData(buf, csize);
+            UnpackTextureSwapChunkData(buf, csize, apFile->GetFormVersion());
+        } break;
+        default:
+            break;
+        }
+        if (!apFile->NextChunk())
+            break;
+    }
+    return true;
+}
 
-void TESCaravanMoney::Copy(TESForm *apCopy) {}
+void TESCaravanMoney::Copy(TESForm *apCopy) {
+    TESCaravanMoney *apCopy_Money = dynamic_cast<TESCaravanMoney *>(apCopy);
+    if (apCopy_Money != nullptr) {
+        CopyAllComponents(apCopy_Money);
+        anteModels[0].SetModel(apCopy_Money->anteModels[0].GetModel());
+        anteModels[1].SetModel(apCopy_Money->anteModels[1].GetModel());
+        SetFormType(apCopy->GetFormType());
+    }
+}
 
 bool TESCaravanMoney::Compare(TESForm *apCompare) { return false; }
 
-NiAVObject *TESCaravanMoney::Clone3D(TESObjectREFR *pRequester, bool deepCopy) {
-    return nullptr;
-}
-
-u16 TESCaravanMoney::GetSaveSize(uint aiFlags) { return 0; }
-
-void TESCaravanMoney::SaveGame(uint aiFlags) {}
-
-void TESCaravanMoney::LoadGame(uint aiFlags, uint aiCurrentFlags) {}
-
-void TESCaravanMoney::SaveGame(BGSSaveFormBuffer *apSaveGameBuffer) {}
-
-void TESCaravanMoney::LoadGame(BGSLoadFormBuffer *apLoadGameBuffer) {}
-
 bool TESCaravanCard::Compare(TESForm *apCompare) { return false; }
 
-void TESCaravanDeck::InitializeData() {}
+void TESCaravanDeck::InitializeData() {
+    pDeck = new (
+        "D:\\_Fallout3\\Platforms\\Common\\Code\\Fallout Shared\\TESCaravan.cpp",
+        490,
+        __FUNCTION__
+    ) BSSimpleList<TESCaravanCard *>;
+    data.iDeckSize = 0;
+}
 
 void TESCaravanDeck::Save() {
     StartForm();
@@ -207,12 +271,86 @@ void TESCaravanDeck::Save() {
 
 bool TESCaravanDeck::Compare(TESForm *apCompare) { return false; }
 
-void TESCaravanCard::Copy(TESForm *apCopy) {}
+void TESCaravanCard::Copy(TESForm *apCopy) {
+    TESCaravanCard *apCopy_Card = dynamic_cast<TESCaravanCard *>(apCopy);
+    if (apCopy_Card != nullptr) {
+        CopyAllComponents(apCopy_Card);
+        faceTexture.SetTextureName(apCopy_Card->faceTexture.GetTextureName());
+        backTexture.SetTextureName(apCopy_Card->backTexture.GetTextureName());
+        data = apCopy_Card->data;
+        SetFormType(apCopy->GetFormType());
+    }
+}
 
-void TESCaravanDeck::ClearData() {}
+void TESCaravanDeck::ClearData() {
+    pDeck->RemoveAll();
+    memset(&data, 0, sizeof(data));
+}
 
-bool TESCaravanDeck::Load(TESFile *apFile) { return false; }
+bool TESCaravanDeck::Load(TESFile *apFile) {
+    u8 formid = apFile->GetTESForm();
+    bool carddata_firsthalf = false;
+    if (formid != CDCK_ID)
+        return false;
+    LoadForm(apFile);
+    SetInitialized(false);
+    for (CHUNK_ID chunk = apFile->GetTESChunk(); chunk != NO_CHUNK;
+         chunk = apFile->GetTESChunk()) {
+        switch (chunk) {
+        case DATA_ID: {
+            LoadData(apFile, &data, sizeof(CARAVANDECKDATA));
+        } break;
+            LOADEDITORID
+        case OBND_ID: {
+            LoadObjectBound(apFile);
+        } break;
+        case FULL_ID: {
+            LoadFullNameChunk(this, apFile);
+        } break;
+        case CARD_ID: {
+            uint card_fid;
+            apFile->GetChunkData(card_fid);
+            AddCompileIndex(card_fid, apFile);
+            TESForm *card_form = GetFormByNumericID(card_fid);
+            auto *card = reinterpret_cast<TESCaravanCard *>(card_form);
+            if (pDeck != nullptr && !pDeck->IsEmpty()) {
+                pDeck->AddHead(card);
+                break;
+            }
+            if (card_form != nullptr)
+                pDeck->GetItem() = card;
+        } break;
+        default:
+            break;
+        }
+        if (chunk == DATA_ID && apFile->GetLittleEndian()) {
+            data.Endian();
+        }
+        if (!apFile->NextChunk())
+            break;
+    }
+    return true;
+}
 
 void TESCaravanDeck::Copy(TESForm *apCopy) {}
 
 TESCaravanCard::~TESCaravanCard() { ClearData(); }
+
+TESCaravanMoney::TESCaravanMoney() {
+    SetFormType(CMNY_ID);
+    InitializeData();
+}
+
+TESCaravanMoney::~TESCaravanMoney() { ClearData(); }
+
+TESCaravanDeck::TESCaravanDeck() {
+    SetFormType(CDCK_ID);
+    InitializeData();
+}
+
+TESCaravanDeck::~TESCaravanDeck() { ClearData(); }
+
+TESCaravanCard::TESCaravanCard() {
+    SetFormType(CCRD_ID);
+    InitializeData();
+}

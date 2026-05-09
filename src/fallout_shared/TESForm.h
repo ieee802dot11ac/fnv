@@ -27,6 +27,13 @@ struct FORM {
     BS_MEM_OVERLOADS
 };
 
+struct FORM_GROUP {
+    FORM GroupData; // 0x00
+    uint iGroupOffset; // 0x18
+
+    void Endian();
+};
+
 class BGSLoadFormBuffer;
 class BGSSaveFormBuffer;
 class TESObjectREFR;

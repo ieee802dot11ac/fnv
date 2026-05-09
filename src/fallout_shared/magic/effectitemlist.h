@@ -1,6 +1,7 @@
 #pragma once
 
 #include "bscore/bssimplelist.h"
+#include "fallout_shared/TESScript.h"
 #include "fallout_shared/magic/effectitem.h"
 #include "fallout_shared/magic/magicsystem.h"
 

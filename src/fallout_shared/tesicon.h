@@ -5,7 +5,4 @@
 class TESIcon : public TESTexture {
 public:
     virtual char *GetDefaultPath() const;
-    TESIcon(const TESIcon &);
-    TESIcon();
-    TESIcon &operator=(const TESIcon &);
 };

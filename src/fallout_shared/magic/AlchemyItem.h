@@ -1,7 +1,15 @@
 #pragma once
 
+#include "fallout_shared/BGSDestructibleObjectForm.h"
+#include "fallout_shared/BGSEquipType.h"
+#include "fallout_shared/BGSMessageIcon.h"
+#include "fallout_shared/BGSPickupPutdownSounds.h"
+#include "fallout_shared/TESModelTextureSwap.h"
+#include "fallout_shared/TESScriptableForm.h"
 #include "fallout_shared/TESWeightForm.h"
+#include "fallout_shared/magic/MagicItemObject.h"
 #include "fallout_shared/magic/magicitem.h"
+#include "fallout_shared/magic/spellitem.h"
 #include "fallout_shared/tesicon.h"
 
 struct AlchemyItemData { /* Size=0x14 */

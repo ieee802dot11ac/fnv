@@ -1,7 +1,8 @@
 #pragma once
 
 #include "fallout_shared/TESForm.h"
-#include "fallout_shared/tesglobal.h"
+#include "fallout_shared/TESGlobal.h"
+#include "fallout_shared/TESScript.h"
 
 class TESNPC;
 

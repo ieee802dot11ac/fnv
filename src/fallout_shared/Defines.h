@@ -24,6 +24,10 @@ inline void EndianSwapEq(uint &i) {
     i = _byteswap_ulong(j);
 }
 
+#define LOADOBJBOUND                                                                     \
+    case OBND_ID: {                                                                      \
+        LoadObjectBound(apFile);                                                         \
+    } break;
 #define LOADEDITORID                                                                     \
     case EDID_ID: {                                                                      \
         void *buf = alloca(apFile->GetChunkSize());                                      \

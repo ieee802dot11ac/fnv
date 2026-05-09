@@ -1,7 +1,7 @@
 #pragma once
 
 #include "bscore/memorymanager.h"
-#include "fallout_shared/tesglobal.h"
+#include "fallout_shared/TESGlobal.h"
 #include "fallout_shared/tesobjectrefr.h"
 #include "fallout_shared/TESScriptShared.h"
 

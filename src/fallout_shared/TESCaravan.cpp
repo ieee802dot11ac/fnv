@@ -72,9 +72,7 @@ bool TESCaravanCard::Load(TESFile *apFile) {
             SetFormScript(script);
             TESScriptableForm::InitItem(this);
         } break;
-        case OBND_ID: {
-            LoadObjectBound(apFile);
-        } break;
+            LOADOBJBOUND
         case YNAM_ID: {
             TESSound *sound = nullptr;
             apFile->GetChunkData(reinterpret_cast<int &>(sound));
@@ -185,9 +183,7 @@ bool TESCaravanMoney::Load(TESFile *apFile) {
             LoadModelTextureChunk(&anteModels[0], apFile);
         } break;
             LOADEDITORID
-        case OBND_ID: {
-            LoadObjectBound(apFile);
-        } break;
+            LOADOBJBOUND
         case YNAM_ID: {
             TESSound *sound = nullptr;
             apFile->GetChunkData(reinterpret_cast<int &>(sound));
@@ -301,9 +297,7 @@ bool TESCaravanDeck::Load(TESFile *apFile) {
             LoadData(apFile, &data, sizeof(CARAVANDECKDATA));
         } break;
             LOADEDITORID
-        case OBND_ID: {
-            LoadObjectBound(apFile);
-        } break;
+            LOADOBJBOUND
         case FULL_ID: {
             LoadFullNameChunk(this, apFile);
         } break;

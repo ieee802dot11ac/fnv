@@ -4,7 +4,6 @@
 #include "fallout_shared/XGameSetting.h"
 #include "fallout_shared/actorvalue.h"
 #include "fallout_shared/enums.h"
-#include "stdlib.h"
 #include <cstring>
 
 static SETTING(GameSettingCollection, sSpecNameCombat, "Strength");
@@ -53,14 +52,8 @@ bool TESSkill::Load(TESFile *apFile) {
         case DESC_ID: {
             LoadDescriptionData(this, apFile);
         } break;
-        case OBND_ID: {
-            LoadObjectBound(apFile);
-        } break;
-        case EDID_ID: {
-            void *buf = alloca(apFile->GetChunkSize());
-            apFile->GetChunkData(buf, 0x200);
-            SetFormEditorID(static_cast<const char *>(buf));
-        } break;
+            LOADOBJBOUND
+            LOADEDITORID
         case DATA_ID: {
             LoadData(apFile, &data, sizeof(SKILL_DATA));
         } break;

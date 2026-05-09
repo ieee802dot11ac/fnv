@@ -1,4 +1,5 @@
 #include "TESEyes.h"
+#include "fallout_shared/Defines.h"
 #include "stdlib.h"
 
 void TESEyes::InitializeData() { cFlags = 0; }
@@ -18,14 +19,8 @@ bool TESEyes::Load(TESFile *apFile) {
     for (CHUNK_ID chunk = apFile->GetTESChunk(); chunk != NO_CHUNK;
          chunk = apFile->GetTESChunk()) {
         switch (chunk) {
-        case OBND_ID: {
-            LoadObjectBound(apFile);
-        } break;
-        case EDID_ID: {
-            void *buf = alloca(apFile->GetChunkSize());
-            apFile->GetChunkData(buf, 0x200);
-            SetFormEditorID(static_cast<const char *>(buf));
-        } break;
+            LOADOBJBOUND
+            LOADEDITORID
         case DATA_ID: {
             apFile->GetChunkData(&cFlags, sizeof(cFlags));
         } break;

@@ -30,14 +30,8 @@ bool TESAmmoEffect::Load(TESFile *apFile) {
     for (CHUNK_ID chunk = apFile->GetTESChunk(); chunk != NO_CHUNK;
          chunk = apFile->GetTESChunk()) {
         switch (chunk) {
-        case OBND_ID: {
-            LoadObjectBound(apFile);
-        } break;
-        case EDID_ID: {
-            void *buf = alloca(apFile->GetChunkSize());
-            apFile->GetChunkData(buf, 0x200);
-            SetFormEditorID(static_cast<const char *>(buf));
-        } break;
+            LOADOBJBOUND
+            LOADEDITORID
         case DATA_ID: {
             LoadData(apFile, &data, sizeof(AMMO_EFFECT_DATA));
             if (apFile->GetLittleEndian()) {

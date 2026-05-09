@@ -1,24 +1,25 @@
 #pragma once
 
+#include "bscore/memorymanager.h"
 #include "fallout_shared/TESForm.h"
 
-class TESGlobal : public TESForm { /* Size=0x30 */
-    /* 0x0000: fields for TESForm */
-private:
-    /* 0x0028 */ char cType;
-    /* 0x002c */ float fValue;
-
+class TESGlobal : public TESForm {
 public:
     TESGlobal(const TESGlobal &);
     TESGlobal();
-    virtual ~TESGlobal();
+    virtual ~TESGlobal() { /* blr stub*/ }
     virtual void Save();
-    // virtual bool Load(TESFile *);
+    virtual bool Load(TESFile *);
     virtual void Copy(TESForm *);
     virtual bool Compare(TESForm *);
     void SetType(char);
     char GetType();
     void SetValue(float value) { fValue = value; }
     float GetValue() { return fValue; }
-    TESGlobal &operator=(const TESGlobal &);
+
+    BS_MEM_OVERLOADS
+
+private:
+    char cType; // 0x28
+    float fValue; // 0x2c
 };

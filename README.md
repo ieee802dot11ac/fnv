@@ -20,7 +20,7 @@ Please do not use any AI software to decompile game code. This project wishes to
 
 Supported versions:
 
-- `425307E0`: 2010-11-10 (USA)
+- `425307E0`: 2010-11-10 (USA, file Fallout_Release_MemDebug.xex)
 
 Dependencies
 ============

@@ -1,5 +1,7 @@
 #pragma once
 
+#include "fallout_shared/BGSMessageIcon.h"
+#include "fallout_shared/BGSPickupPutdownSounds.h"
 #include "fallout_shared/TESModelTextureSwap.h"
 #include "fallout_shared/TESScriptableForm.h"
 #include "fallout_shared/TESValueForm.h"

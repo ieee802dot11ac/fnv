@@ -39,7 +39,7 @@ public:
 
     static void LoadModelTextureSwapChunk(TESModelTextureSwap *, TESFile *);
     static int FindGeometryIndexRecurse(NiAVObject *, const NiFixedString &);
-    static bool SwapTexturesRecurse(NiAVObject *, BSMap<int, TEX_SWAP *> *, int &);
+    // static bool SwapTexturesRecurse(NiAVObject *, BSMap<int, TEX_SWAP *> *, int &);
     static void FillTexSwapNameList(NiAVObject *, BSSimpleList<TS_GEOM_DATA *> *, int &);
     static bool HasTextureSwap(TESForm *, TESObjectREFR *);
 };

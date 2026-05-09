@@ -3,6 +3,7 @@
 #include "NiObject.h"
 #include "NiExtraData.h"
 #include "NiFixedString.h"
+#include "nisystem/NiCriticalSection.h"
 #include "nitimecontroller.h"
 
 class NiObjectNET : public NiObject {
@@ -14,7 +15,7 @@ public:
     };
 
     static const NiRTTI ms_RTTI;
-    // static NiCriticalSection ExtraDataCrit;
+    static NiCriticalSection ExtraDataCrit;
 
     virtual const NiRTTI *GetRTTI() const;
     virtual void LoadBinary(NiStream &);
@@ -26,22 +27,22 @@ public:
     virtual ~NiObjectNET();
     void SetName(const NiFixedString &);
     const NiFixedString &GetName() const;
-    uint16_t GetExtraDataSize() const;
+    u16 GetExtraDataSize() const;
     bool AddExtraData(NiExtraData *);
     bool AddExtraData(const NiFixedString &, NiExtraData *);
     NiExtraData *GetExtraData(const NiFixedString &) const;
-    NiExtraData *GetExtraDataAt(uint16_t) const;
+    NiExtraData *GetExtraDataAt(u16) const;
     bool RemoveExtraData(const NiFixedString &);
-    bool RemoveExtraDataAt(uint16_t);
+    bool RemoveExtraDataAt(u16);
     void RemoveAllExtraData();
-    bool SetExtraDataSize(uint16_t);
+    bool SetExtraDataSize(u16);
     void PrependController(NiTimeController *);
     void SetControllers(NiTimeController *);
     NiTimeController *GetControllers() const;
     void RemoveController(NiTimeController *);
     void RemoveAllControllers();
     bool InsertExtraData(NiExtraData *);
-    void DeleteExtraData(uint16_t);
+    void DeleteExtraData(u16);
     NiTimeController *GetController(const NiRTTI *) const;
     virtual void PostLinkObject(NiStream &);
     virtual void ProcessClone(NiCloningProcess &);
@@ -59,8 +60,8 @@ protected:
     NiFixedString m_kName; // 0x08
     NiPointer<NiTimeController> m_spControllers; // 0x0c
     NiExtraData **m_ppkExtra; // 0x10
-    uint16_t m_usExtraDataSize; // 0x14
-    uint16_t m_usMaxSize; // 0x16
+    u16 m_usExtraDataSize; // 0x14
+    u16 m_usMaxSize; // 0x16
     static NiObjectNET::CopyType ms_eCopyType;
     static char ms_cAppendCharacter;
 };

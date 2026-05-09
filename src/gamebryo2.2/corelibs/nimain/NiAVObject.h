@@ -2,8 +2,10 @@
 
 #include "NiObjectNET.h"
 #include "NiPoint3.h"
+#include "nimain/BSNiBound.h"
 #include "nimain/NiProperty.h"
 #include "nimain/NiQuaternion.h"
+#include "nimain/NiTPointerList.h"
 #include "nimain/NiUpdateData.h"
 
 class NiNode;
@@ -34,28 +36,28 @@ public:
     void UpdateObjectControllers(NiUpdateData &, bool);
     void UpdateProperties();
     void UpdateEffects();
-    // virtual void SetBound(BSNiBound *);
+    virtual void SetBound(BSNiBound *);
     void SetTranslate(float, float, float);
     void SetTranslate(const NiPoint3 &);
     const NiPoint3 &GetTranslate() const;
     void SetRotate(const NiQuaternion &);
     void SetRotate(float, float, float, float);
-    // void SetRotate(const NiMatrix3 &);
-    // void GetRotate(NiQuaternion &) const;
+    void SetRotate(const NiMatrix3 &);
+    void GetRotate(NiQuaternion &) const;
     void GetRotate(float &, float &, float &, float &) const;
-    // const NiMatrix3 &GetRotate() const;
-    // void SetRotateAboutCenter(const NiMatrix3 &, const NiPoint3 &, const NiPoint3 &);
+    const NiMatrix3 &GetRotate() const;
+    void SetRotateAboutCenter(const NiMatrix3 &, const NiPoint3 &, const NiPoint3 &);
     void SetScale(float);
     float GetScale() const;
-    // virtual void ApplyTransform(const NiMatrix3 &, const NiPoint3 &, bool);
+    virtual void ApplyTransform(const NiMatrix3 &, const NiPoint3 &, bool);
     const NiPoint3 &GetWorldTranslate() const;
-    // const NiMatrix3 &GetWorldRotate() const;
+    const NiMatrix3 &GetWorldRotate() const;
     float GetWorldScale() const;
-    // const NiBound &GetWorldBound() const;
+    const NiBound &GetWorldBound() const;
     float GetWorldBoundRadius();
     void CreateBoundIfNone();
-    // const NiTPointerList<NiPointer<NiProperty> > &GetPropertyList() const;
-    // NiTPointerList<NiPointer<NiProperty> > &GetPropertyList();
+    const NiTPointerList<NiPointer<NiProperty> > &GetPropertyList() const;
+    NiTPointerList<NiPointer<NiProperty> > &GetPropertyList();
     void AttachProperty(NiProperty *);
     void DetachProperty(NiProperty *);
     void DetachAllProperties();
@@ -115,9 +117,9 @@ public:
     // void SetCollisionObject(NiCollisionObject *);
     // NiCollisionObject *GetCollisionObject() const;
     void SetWorldTranslate(const NiPoint3 &);
-    // void SetWorldRotate(const NiMatrix3 &);
+    void SetWorldRotate(const NiMatrix3 &);
     void SetWorldScale(float);
-    // void SetWorldBound(const NiBound &);
+    void SetWorldBound(const NiBound &);
     virtual void UpdateDownwardPass(NiUpdateData &, uint);
     virtual void UpdateSelectedDownwardPass(NiUpdateData &, uint);
     virtual void UpdateRigidDownwardPass(NiUpdateData &, uint);
@@ -129,7 +131,7 @@ public:
     virtual void UpdateWorldBound();
     void UpdateWorldLoc();
     virtual void UpdateTransformAndBounds(NiUpdateData &);
-    // virtual void PreAttachUpdate(NiNode *, NiUpdateData &);
+    virtual void PreAttachUpdate(NiNode *, NiUpdateData &);
     virtual void PreAttachUpdateProperties(NiNode *);
     virtual void PreAttachUpdateEffects(NiNode *);
     virtual void PostAttachUpdate();
@@ -140,8 +142,8 @@ public:
     // virtual void OnVisible(NiCullingProcess &);
     void DoSelectedUpdate(NiUpdateData &, uint);
     virtual void ProcessClone(NiCloningProcess &);
-    // const NiTransform &GetWorldTransform() const;
-    // const NiTransform &GetLocalTransform() const;
+    const NiTransform &GetWorldTransform() const;
+    const NiTransform &GetLocalTransform() const;
     // virtual void PurgeRendererData(NiRenderer *);
     NiAVObject(const NiAVObject &);
     NiAVObject &operator=(const NiAVObject &);
@@ -161,21 +163,21 @@ protected:
     void SetBit(bool, uint);
     bool GetBit(uint) const;
     void CopyTransforms(const NiAVObject *);
-    // void CloneProperties(
-    //     NiAVObject *, NiTPointerList<NiPointer<NiProperty> > *, NiCloningProcess &
-    // );
-    // void
-    // ProcessPropertyClones(NiTPointerList<NiPointer<NiProperty> > *, NiCloningProcess
-    // &);
+    void CloneProperties(
+        NiAVObject *, NiTPointerList<NiPointer<NiProperty> > *, NiCloningProcess &
+    );
+    void
+    ProcessPropertyClones(NiTPointerList<NiPointer<NiProperty> > *, NiCloningProcess &);
     bool HasTransformController() const;
     bool HasPropertyController() const;
 
     NiNode *m_pkParent; // 0x18
-    //   protected: NiPointer<NiCollisionObject> m_spCollisionObject; // 0x1c
-    //   public: BSNiBound* m_kWorldBound; // 0x20
-    //   protected: NiTPointerList<NiPointer<NiProperty> > m_kPropertyList; // 0x24
+    //  protected: NiPointer<NiCollisionObject> m_spCollisionObject; // 0x1c
+public:
+    BSNiBound *m_kWorldBound; // 0x20
 protected:
+    NiTPointerList<NiPointer<NiProperty> > m_kPropertyList; // 0x24
     uint m_uFlags; // 0x30
-    //   protected: NiTransform m_kLocal; // 0x40
-    //   protected: NiTransform m_kWorld; // 0x80
+    NiTransform m_kLocal; // 0x40
+    NiTransform m_kWorld; // 0x80
 };

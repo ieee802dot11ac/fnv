@@ -1,8 +1,16 @@
 #pragma once
 
 #include "nimain/NiAVObject.h"
+#include "nimain/NiBound.h"
 #include "nimain/NiColor.h"
+#include "nimain/NiGeometryData.h"
 #include "nimain/NiPoint2.h"
+#include "nimain/NiPropertyState.h"
+#include "nimain/NiSkinInstance.h"
+
+class NiRenderer;
+class NiShader;
+class NiCullingProcess;
 
 class NiGeometry : public NiAVObject {
 public:

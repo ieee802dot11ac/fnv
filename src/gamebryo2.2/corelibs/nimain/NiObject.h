@@ -13,27 +13,7 @@ class NiNode;
 class NiObject : public NiRefObject {
 public:
     static const NiRTTI ms_RTTI;
-    virtual const NiRTTI *GetRTTI() const;
-    bool IsExactKindOf(const NiRTTI *) const;
-    static bool IsExactKindOf(const NiRTTI *, const NiObject *);
-    bool IsKindOf(const NiRTTI *) const;
-    static bool IsKindOf(const NiRTTI *, const NiObject *);
-    virtual NiNode *IsNode();
-    // virtual BSFadeNode *IsFadeNode();
-    // virtual BSMultiBoundNode *IsMultiBoundNode();
-    // virtual NiGeometry *IsGeometry();
-    // virtual NiTriBasedGeom *IsTriBasedGeom();
-    // virtual NiTriStrips *IsTriStrips();
-    // virtual NiTriShape *IsTriShape();
-    // virtual BSSegmentedTriShape *IsSegmentedTriShape();
-    // virtual BSResizableTriShape *IsResizableTriShape();
-    // virtual NiParticles *IsParticlesGeom();
-    // virtual NiLines *IsLinesGeom();
-    // virtual bhkNiCollisionObject *IsBhkNiCollisionObject();
-    // virtual bhkBlendCollisionObject *IsBhkBlendCollisionObject();
-    // virtual bhkRigidBody *IsBhkRigidBody() const;
-    // virtual bhkLimitedHingeConstraint *IsBhkLimitedHingeConstraint();
-    NiObject *DynamicCast(const NiRTTI *__restrict) const;
+
     static NiObject *DynamicCast(const NiRTTI *__restrict, const NiObject *);
     virtual NiObject *CreateClone(NiCloningProcess &);
     virtual void LoadBinary(NiStream &);
@@ -57,7 +37,8 @@ public:
     virtual uint GetBlockAllocationSize() const;
     virtual NiObjectGroup *GetGroup() const;
     virtual void SetGroup(NiObjectGroup *);
-    // virtual NiControllerManager *IsNiControllerManager();
+
+    RTTI_BASEDEFS
 
 protected:
     NiObject();

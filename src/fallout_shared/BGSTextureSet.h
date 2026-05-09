@@ -1,7 +1,9 @@
 #pragma once
 
+#include "fallout_shared/DecalData.h"
 #include "fallout_shared/tesobject.h"
 #include "fallout_shared/testexture.h"
+#include "bsshader/BSShaderProperty.h"
 #include "nimain/NiTexture.h"
 
 class BSTextureSet : public NiObject {
@@ -49,6 +51,17 @@ protected:
 
 class BGSTextureSet : public TESBoundObject, public BSTextureSet {
 public:
+    enum TexType {
+        TEXTYPE_BASE = 0x0000,
+        TEXTYPE_NORMAL = 0x0001,
+        TEXTYPE_ENV_MASK = 0x0002,
+        TEXTYPE_GLOW = 0x0003,
+        TEXTYPE_HEIGHT = 0x0004,
+        TEXTYPE_ENV = 0x0005,
+        TEXTYPE_SPECULAR = 0x0006,
+        TEXTYPE_COUNT = 0x0007,
+    };
+
     BGSTextureSet(const BGSTextureSet &);
     BGSTextureSet();
     virtual ~BGSTextureSet();
@@ -70,7 +83,7 @@ public:
     virtual void
     GetTexture(BSShaderProperty::TextureTypeEnum, NiPointer<NiTexture> &) const;
     virtual void SetTextureFilename(BSShaderProperty::TextureTypeEnum, const char *);
-    void QueueTextureSet(IO_TASK_PRIORITY, QueuedFile *, bool);
+    // void QueueTextureSet(IO_TASK_PRIORITY, QueuedFile *, bool);
     bool QHasSpecular();
     void SetHasSpecular(bool);
 

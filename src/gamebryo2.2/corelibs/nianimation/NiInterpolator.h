@@ -1,17 +1,19 @@
 #pragma once
 
+#include "nimain/NiColor.h"
 #include "nimain/NiObject.h"
 #include "nimain/NiObjectNET.h"
 #include "nimain/NiPoint3.h"
+#include "nimain/NiQuaternion.h"
 
 class NiInterpolator : public NiObject {
 public:
     static const NiRTTI ms_RTTI;
     static const u8 INVALID_BOOL;
     static const float INVALID_FLOAT;
-    //   static const NiQuaternion INVALID_QUATERNION;
+    static const NiQuaternion INVALID_QUATERNION;
     static const NiPoint3 INVALID_POINT3;
-    //   static const NiColorA INVALID_COLORA;
+    static const NiColorA INVALID_COLORA;
 
     virtual const NiRTTI *GetRTTI() const { return &ms_RTTI; }
     virtual void LoadBinary(NiStream &);
@@ -22,9 +24,9 @@ public:
     virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
     virtual ~NiInterpolator();
     //   virtual bool Update(float, NiObjectNET*, NiQuatTransform&);
-    //   virtual bool Update(float, NiObjectNET*, NiColorA&);
+    virtual bool Update(float, NiObjectNET *, NiColorA &);
     virtual bool Update(float, NiObjectNET *, NiPoint3 &);
-    //   virtual bool Update(float, NiObjectNET*, NiQuaternion&);
+    virtual bool Update(float, NiObjectNET *, NiQuaternion &);
     virtual bool Update(float, NiObjectNET *, float &);
     virtual bool Update(float, NiObjectNET *, bool &);
     virtual bool IsBoolValueSupported() const;
@@ -42,8 +44,6 @@ public:
     virtual bool SetUpDependencies() { return true; }
     virtual bool AlwaysUpdate() const;
     virtual class NiBoolInterpolator *IsNiBoolInterpolator();
-    NiInterpolator(const NiInterpolator &);
-    NiInterpolator &operator=(const NiInterpolator &);
 
 protected:
     NiInterpolator();

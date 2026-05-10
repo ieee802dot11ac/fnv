@@ -1,7 +1,7 @@
 #pragma once
 
 #include "bscore/memorymanager.h"
-#include "fallout_shared/tesfullname.h"
+#include "fallout_shared/TESFullName.h"
 #include "fallout_shared/testexture.h"
 
 class TESEyes : public TESForm, public TESFullName, public TESTexture {

@@ -16,25 +16,9 @@ NiInterpolator::NiInterpolator() { m_fLastTime = -NI_INFINITY; }
 
 NiInterpolator::~NiInterpolator() {}
 
-// bool NiInterpolator::Update(float, NiObjectNET*, NiQuatTransform&) {
-// 	return 0;
-// }
-
-// bool NiInterpolator::Update(float, NiObjectNET*, NiColorA&) {
-// 	return 0;
-// }
-
 bool NiInterpolator::Update(float fTime, NiObjectNET *pkInterpTarget, NiPoint3 &) {
     return 0;
 }
-
-// bool NiInterpolator::Update(float, NiObjectNET*, NiQuaternion&) {
-// 	return 0;
-// }
-
-bool NiInterpolator::Update(float, NiObjectNET *, float &) { return 0; }
-
-bool NiInterpolator::Update(float, NiObjectNET *, bool &) { return 0; }
 
 void NiInterpolator::GetActiveTimeRange(float &fBeginKeyTime, float &fEndKeyTime) const {
     fBeginKeyTime = 0.0f;

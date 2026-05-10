@@ -15,18 +15,18 @@ public:
     virtual bool IsEqual(NiObject *);
     virtual void GetViewerStrings(NiTPrimitiveArray<char *> *);
     virtual ~NiKeyBasedInterpolator();
-    virtual uint16_t GetKeyChannelCount() const;
-    virtual uint32_t GetKeyCount(uint16_t) const;
-    virtual NiAnimationKey::KeyType GetKeyType(uint16_t) const;
-    virtual NiAnimationKey::KeyContent GetKeyContent(uint16_t) const;
-    virtual NiAnimationKey *GetKeyArray(uint16_t) const;
-    virtual unsigned char GetKeyStride(uint16_t) const;
-    virtual bool GetChannelPosed(uint16_t) const;
-    uint32_t GetAllocatedSize(uint16_t) const;
+    virtual u16 GetKeyChannelCount() const;
+    virtual uint GetKeyCount(u16) const;
+    virtual NiAnimationKey::KeyType GetKeyType(u16) const;
+    virtual NiAnimationKey::KeyContent GetKeyContent(u16) const;
+    virtual NiAnimationKey *GetKeyArray(u16) const;
+    virtual unsigned char GetKeyStride(u16) const;
+    virtual bool GetChannelPosed(u16) const;
+    uint GetAllocatedSize(u16) const;
     NiAnimationKey *GetKeyAt(uint, u16) const;
-    void FillDerivedValues(uint16_t);
+    void FillDerivedValues(u16);
     NiAnimationKey *
-    GetAnim(uint32_t &, NiAnimationKey::KeyType &, unsigned char &, uint16_t) const;
+    GetAnim(uint &, NiAnimationKey::KeyType &, unsigned char &, u16) const;
     virtual void GetActiveTimeRange(float &, float &) const;
     NiKeyBasedInterpolator(const NiKeyBasedInterpolator &);
     NiKeyBasedInterpolator &operator=(const NiKeyBasedInterpolator &);

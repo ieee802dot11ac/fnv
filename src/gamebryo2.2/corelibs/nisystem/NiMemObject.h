@@ -20,6 +20,6 @@ public:
     static void operator delete[](void *, uint);
     static void operator delete[](void *, char const *, int, char const *);
 
-    static void operator delete(void *ptr) { operator delete(ptr, nullptr); }
+    static void operator delete(void *ptr) { operator delete(ptr, 12); }
     static void operator delete[](void *ptr) { operator delete(ptr, nullptr); }
 };

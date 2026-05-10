@@ -1,6 +1,6 @@
 #pragma once
 
-#include "fallout_shared/tessound.h"
+#include "fallout_shared/TESSound.h"
 
 class BGSPickupPutdownSounds : public BaseFormComponent {
 public:

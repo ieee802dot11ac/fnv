@@ -1,7 +1,7 @@
 #pragma once
 
 #include "fallout_shared/actorvalue.h"
-#include "fallout_shared/tessound.h"
+#include "fallout_shared/TESSound.h"
 
 class MagicSystem {
 public:

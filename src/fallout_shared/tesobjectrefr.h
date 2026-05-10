@@ -6,7 +6,7 @@
 #include "fallout_shared/tesfile.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout_shared/TESGlobal.h"
-#include "fallout_shared/tessound.h"
+#include "fallout_shared/TESSound.h"
 
 class MagicCaster;
 class MagicTarget;

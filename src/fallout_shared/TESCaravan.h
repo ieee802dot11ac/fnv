@@ -7,7 +7,7 @@
 #include "fallout_shared/TESModelTextureSwap.h"
 #include "fallout_shared/TESScriptableForm.h"
 #include "fallout_shared/TESValueForm.h"
-#include "fallout_shared/tesfullname.h"
+#include "fallout_shared/TESFullName.h"
 #include "fallout_shared/tesicon.h"
 #include "fallout_shared/tesobject.h"
 #include "fallout_shared/testexture.h"

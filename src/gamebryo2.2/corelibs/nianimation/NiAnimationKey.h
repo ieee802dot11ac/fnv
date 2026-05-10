@@ -3,6 +3,10 @@
 #include <types.h>
 #include "nimain/nistream.h"
 
+typedef void (*InterpFunction)(
+    float, const class NiAnimationKey *, const class NiAnimationKey *, void *
+);
+
 class NiAnimationKey {
 public:
     enum KeyType {
@@ -37,15 +41,12 @@ public:
     static float (*GetCurvatureFunction(NiAnimationKey::KeyContent, NiAnimationKey::KeyType))(
         NiAnimationKey *, uint32_t
     );
-    static void (*GetInterpFunction(NiAnimationKey::KeyContent, NiAnimationKey::KeyType))(
-        float, const NiAnimationKey *, const NiAnimationKey *, void *
-    );
-    static void (*GetInterpD1Function(NiAnimationKey::KeyContent, NiAnimationKey::KeyType))(
-        float, const NiAnimationKey *, const NiAnimationKey *, void *
-    );
-    static void (*GetInterpD2Function(NiAnimationKey::KeyContent, NiAnimationKey::KeyType))(
-        float, const NiAnimationKey *, const NiAnimationKey *, void *
-    );
+    static InterpFunction
+        GetInterpFunction(NiAnimationKey::KeyContent, NiAnimationKey::KeyType);
+    static InterpFunction
+        GetInterpD1Function(NiAnimationKey::KeyContent, NiAnimationKey::KeyType);
+    static InterpFunction
+        GetInterpD2Function(NiAnimationKey::KeyContent, NiAnimationKey::KeyType);
     static void (*GetFillDerivedFunction(NiAnimationKey::KeyContent, NiAnimationKey::KeyType))(
         NiAnimationKey *, uint32_t, unsigned char
     );
@@ -126,19 +127,13 @@ protected:
         float (*)(NiAnimationKey *, uint32_t)
     );
     static void SetInterpFunction(
-        NiAnimationKey::KeyContent,
-        NiAnimationKey::KeyType,
-        void (*)(float, const NiAnimationKey *, const NiAnimationKey *, void *)
+        NiAnimationKey::KeyContent, NiAnimationKey::KeyType, InterpFunction
     );
     static void SetInterpD1Function(
-        NiAnimationKey::KeyContent,
-        NiAnimationKey::KeyType,
-        void (*)(float, const NiAnimationKey *, const NiAnimationKey *, void *)
+        NiAnimationKey::KeyContent, NiAnimationKey::KeyType, InterpFunction
     );
     static void SetInterpD2Function(
-        NiAnimationKey::KeyContent,
-        NiAnimationKey::KeyType,
-        void (*)(float, const NiAnimationKey *, const NiAnimationKey *, void *)
+        NiAnimationKey::KeyContent, NiAnimationKey::KeyType, InterpFunction
     );
     static void SetEqualFunction(
         NiAnimationKey::KeyContent,

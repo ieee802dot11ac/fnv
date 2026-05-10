@@ -2,7 +2,7 @@
 
 #include "bscore/memorymanager.h"
 #include "fallout_shared/TESForm.h"
-#include "fallout_shared/tesfullname.h"
+#include "fallout_shared/TESFullName.h"
 #include "fallout_shared/tesmodel.h"
 #include "fallout_shared/testexture.h"
 

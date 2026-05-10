@@ -7,7 +7,7 @@
 #include "fallout_shared/TESFullName.h"
 #include "fallout_shared/tesicon.h"
 #include "fallout_shared/tesmodel.h"
-#include "fallout_shared/tessound.h"
+#include "fallout_shared/TESSound.h"
 #include "fallout_shared/magic/magicsystem.h"
 
 class EffectSetting : public TESForm,

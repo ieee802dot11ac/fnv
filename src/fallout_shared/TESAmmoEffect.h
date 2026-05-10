@@ -2,7 +2,7 @@
 
 #include "bscore/memorymanager.h"
 #include "fallout_shared/TESForm.h"
-#include "fallout_shared/tesfullname.h"
+#include "fallout_shared/TESFullName.h"
 
 enum AMMO_EFFECT_TYPE {
     AMMO_EFFECT_DAM = 0x0000,
@@ -40,7 +40,7 @@ public:
     virtual bool Compare(TESForm *);
     AMMO_OPERATION_TYPE GetOperation();
     void SetOperation(AMMO_OPERATION_TYPE);
-    AMMO_EFFECT_TYPE GetEffectType();
+    AMMO_EFFECT_TYPE GetEffectType() { return data.iAmmoEffectType; }
     void SetEffectType(AMMO_EFFECT_TYPE);
     float GetEffectValue();
     void SetEffectValue(float);

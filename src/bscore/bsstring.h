@@ -15,8 +15,8 @@ public:
     }
     bool Set(const T *, uint);
     const T *String() const { return int(pString) != 0 ? pString : ""; }
-    uint ByteLength() const { return sLen; }
-    uint ByteLengthWithNull() const { return sLen + 1; }
+    uint ByteLength() const { return strlen(pString); }
+    uint ByteLengthWithNull() const { return strlen(pString) + 1; }
     uint Length() const { return sLen; }
     uint MaxLength() const { return sMaxLen; }
     void Fill(T);
@@ -41,7 +41,7 @@ public:
     BSStringT<T> &operator+=(const BSStringT<T> &);
     BSStringT<T> &operator+=(const T *);
     T &operator[](uint);
-    operator const T *() const { return String(); }
+    operator const T *() const { return pString; }
     BSStringT<T> RemoveCurlyContent();
 
 protected:

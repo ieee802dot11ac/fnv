@@ -34,3 +34,8 @@ inline void EndianSwapEq(uint &i) {
         apFile->GetChunkData(buf, 0x200);                                                \
         SetFormEditorID(static_cast<const char *>(buf));                                 \
     } break;
+
+#define ENDIAN(data)                                                                     \
+    if (QEndianSwapOnSave()) {                                                           \
+        data.Endian();                                                                   \
+    }

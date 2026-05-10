@@ -1,5 +1,6 @@
 #pragma once
 
+#include "nimain/BSNiBound.h"
 #include "nitarray.h"
 #include "NiRefObject.h"
 #include "NiRTTI.h"
@@ -33,7 +34,7 @@ public:
     virtual void PostLinkObject(NiStream &);
     virtual bool StreamCanSkip();
     virtual const NiRTTI *GetStreamableRTTI() const;
-    // virtual void SetBound(BSNiBound *);
+    virtual void SetBound(BSNiBound *);
     virtual uint GetBlockAllocationSize() const;
     virtual NiObjectGroup *GetGroup() const;
     virtual void SetGroup(NiObjectGroup *);

@@ -1,6 +1,5 @@
 #pragma once
 #include "nimain/NiFixedString.h"
-#include "nimain/NiObject.h"
 #include "nimain/NiObjectGroup.h"
 #include "nimain/nitarray.h"
 #include "nisystem/nibinarystream.h"
@@ -9,6 +8,7 @@
 #define VERSION(hh, hl, lh, ll) ((u8(hh) << 24) | (u8(hl) << 16) | (u8(lh) << 8) | u8(ll))
 
 class NiAVObject;
+class NiObject;
 
 class NiStream {
 public:

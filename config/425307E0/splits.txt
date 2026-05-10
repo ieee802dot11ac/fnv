@@ -49,24 +49,24 @@ pchmesh.cpp:
 pchmath.cpp:
 	.data       start:0x832AA418 end:0x832AA41C rename:.bss
 
-pchcore.cpp:
+xdk/d3dx9/pchcore.cpp:
 	.data       start:0x832AA40C end:0x832AA410 rename:.bss
 	.XBLD       start:0x83350000 end:0x83350010 rename:.XBLD$V
 
-precomp.cpp:
+xdk/d3d9i/precomp.cpp:
 	.rdata      start:0x820BA220 end:0x820BA239
 	.data       start:0x83256470 end:0x83256478
 	.data       start:0x832AA454 end:0x832AA458 rename:.bss
 	.XBLD       start:0x83350010 end:0x83350020 rename:.XBLD$V
 
-x2headers.cpp:
+xdk/xaudio2/x2headers.cpp:
 	.data       start:0x8332B52C end:0x8332B530 rename:.bss
 	.XBLD       start:0x83350080 end:0x83350090 rename:.XBLD$V
 
-module14_precomp.cpp:
+xdk/xaudio2/module14_precomp.cpp:
 	.data       start:0x8332B528 end:0x8332B52C rename:.bss
 
-leapcore.cpp:
+xdk/xaudio2/leapcore.cpp:
 	.data       start:0x8332BA38 end:0x8332BA3C rename:.bss
 
 x3dgeneral.cpp:
@@ -7154,34 +7154,34 @@ xdk/jpeg/jerror.cpp:
 	.pdata      start:0x821FF068 end:0x821FF088
 	.text       start:0x828251E0 end:0x82825498
 
-d3dx9tex.cpp:
+xdk/d3dx9/d3dx9tex.cpp:
 	.rdata      start:0x820B20C0 end:0x820B2D9C
 	.pdata      start:0x821FEA70 end:0x821FEAD0
 	.text       start:0x8280AF38 end:0x8280D2FC
 	.data       start:0x83255670 end:0x83255678
 
-cimage.cpp:
+xdk/d3dx9/cimage.cpp:
 	.rdata      start:0x820B2DB8 end:0x820B2E93
 	.pdata      start:0x821FEAF8 end:0x821FEB88
 	.text       start:0x8280DFE8 end:0x82811DA8
 	.data       start:0x83255678 end:0x83255D10
 
-clock.cpp:
+xdk/d3dx9/clock.cpp:
 	.pdata      start:0x821FEC70 end:0x821FEC98
 	.text       start:0x828158A0 end:0x82816380
 
-cblt.cpp:
+xdk/d3dx9/cblt.cpp:
 	.pdata      start:0x821FEBA0 end:0x821FEC70
 	.text       start:0x82812018 end:0x8281589C
 	.data       start:0x83255D10 end:0x83255D18
 
-ccodec.cpp:
+xdk/d3dx9/ccodec.cpp:
 	.rdata      start:0x820B2FE8 end:0x820B3A7C
 	.pdata      start:0x821FEC98 end:0x821FEF40
 	.text       start:0x82816380 end:0x82821FB0
 	.data       start:0x83255D18 end:0x83255E18
 
-dxtn.cpp:
+xdk/d3dx9/dxtn.cpp:
 	.rdata      start:0x820B6D38 end:0x820B6E3C
 	.pdata      start:0x821FF110 end:0x821FF178
 	.text       start:0x82828388 end:0x8282A6B8
@@ -7337,30 +7337,30 @@ xdk/d3dx9/d3dx9fragment.cpp:
 	.pdata      start:0x82221960 end:0x82221988
 	.text       start:0x82F10418 end:0x82F10E48
 
-perlin.cpp:
+xdk/d3dx9/perlin.cpp:
 	.rdata      start:0x820B5318 end:0x820B6D38
 
-d3dxmath.cpp:
+xdk/d3dx9/d3dxmath.cpp:
 	.rdata      start:0x820B2D9C end:0x820B2DB4
 	.pdata      start:0x821FEAD0 end:0x821FEAF8
 	.text       start:0x8280D300 end:0x8280DFE4
 
-d3dx9dbg.cpp:
+xdk/d3dx9/d3dx9dbg.cpp:
 	.rdata      start:0x820B2E94 end:0x820B2FD8
 	.pdata      start:0x821FEB88 end:0x821FEB90
 	.text       start:0x82811DA8 end:0x82811E88
 	.data       start:0x832AA414 end:0x832AA418 rename:.bss
 
-cfile.cpp:
+xdk/d3dx9/cfile.cpp:
 	.pdata      start:0x821FEB90 end:0x821FEBA0
 	.text       start:0x82811E88 end:0x82812014
 
-cbuffer.cpp:
+xdk/d3dx9/cbuffer.cpp:
 	.rdata      start:0x820B3A7C end:0x820B3A98
 	.pdata      start:0x821FEF40 end:0x821FEF68
 	.text       start:0x828220F8 end:0x8282239C
 
-calloc.cpp:
+xdk/d3dx9/calloc.cpp:
 	.pdata      start:0x822217B8 end:0x822217C8
 	.text       start:0x82F0C148 end:0x82F0C2A4
 
@@ -7541,272 +7541,272 @@ sockapi.cpp:
 	.pdata      start:0x82223048 end:0x82223050
 	.text       start:0x82F8A1C0 end:0x82F8A3D4
 
-x2mixmatrix.cpp:
+xdk/xaudio2/x2mixmatrix.cpp:
 	.pdata      start:0x822241E0 end:0x822241F0
 	.text       start:0x82FC31B0 end:0x82FC3404
 
-x2effectchain.cpp:
+xdk/xaudio2/x2effectchain.cpp:
 	.pdata      start:0x82223B38 end:0x82223B60
 	.text       start:0x82FAFB48 end:0x82FB01B8
 
-x2bufferpool.cpp:
+xdk/xaudio2/x2bufferpool.cpp:
 	.pdata      start:0x82223430 end:0x82223478
 	.text       start:0x82F91ED0 end:0x82F92684
 
-x2engine.cpp:
+xdk/xaudio2/x2engine.cpp:
 	.rdata      start:0x8217A71C end:0x8217A7F8
 	.rdata      start:0x821E2090 end:0x821E20A4 rename:.xdata
 	.pdata      start:0x822230D0 end:0x82223268
 	.text       start:0x82F8AF98 end:0x82F8D9AC
 
-x2voicebase.cpp:
+xdk/xaudio2/x2voicebase.cpp:
 	.rdata      start:0x8217BE20 end:0x8217BE90
 	.pdata      start:0x82223B60 end:0x82223C80
 	.text       start:0x82FB01B8 end:0x82FB21E0
 
-x2voicesource.cpp:
+xdk/xaudio2/x2voicesource.cpp:
 	.rdata      start:0x8217AA80 end:0x8217AB9C
 	.pdata      start:0x82223478 end:0x82223578
 	.text       start:0x82F92688 end:0x82F94414
 
-x2voicesubmix.cpp:
+xdk/xaudio2/x2voicesubmix.cpp:
 	.rdata      start:0x8217AF80 end:0x8217AFF0
 	.pdata      start:0x822237D0 end:0x822237F0
 	.text       start:0x82F9A030 end:0x82F9A324
 
-x2voiceoutput.cpp:
+xdk/xaudio2/x2voiceoutput.cpp:
 	.rdata      start:0x8217AEC0 end:0x8217AF7C
 	.pdata      start:0x822237A8 end:0x822237D0
 	.text       start:0x82F99850 end:0x82F9A02C
 
-x2voicewma.cpp:
+xdk/xaudio2/x2voicewma.cpp:
 	.rdata      start:0x8217AB9C end:0x8217ACB4
 	.pdata      start:0x822235B8 end:0x82223640
 	.text       start:0x82F95420 end:0x82F96944
 
-x2voicexma.cpp:
+xdk/xaudio2/x2voicexma.cpp:
 	.rdata      start:0x8217ACB4 end:0x8217ADD8
 	.pdata      start:0x82223640 end:0x82223768
 	.text       start:0x82F96948 end:0x82F98BBC
 
-x2xmahal.cpp:
+xdk/xaudio2/x2xmahal.cpp:
 	.pdata      start:0x82223578 end:0x822235B8
 	.text       start:0x82F94418 end:0x82F95420
 	.data       start:0x8326F87C end:0x8326F898
 	.data       start:0x8332B530 end:0x8332BA38 rename:.bss
 
-spdtx.cpp:
+xdk/xaudio2/spdtx.cpp:
 	.rdata      start:0x8218CD38 end:0x8218CD8E
 	.data       start:0x8326F99C end:0x8326F9BC
 
-spdif_spdtx.cpp:
+xdk/xaudio2/spdif_spdtx.cpp:
 	.rdata      start:0x8219B85C end:0x8219B8E8
 	.data       start:0x8326FB2C end:0x8326FB48
 
-strmdec_wma_xenon.cpp:
+xdk/xaudio2/strmdec_wma_xenon.cpp:
 	.pdata      start:0x822244C0 end:0x822244E0
 	.text       start:0x82FD2550 end:0x82FD32DC
 
-wmabuffilt.cpp:
+xdk/xaudio2/wmabuffilt.cpp:
 	.pdata      start:0x822246A8 end:0x822246D8
 	.text       start:0x82FDA4F0 end:0x82FDAC94
 
-wmaltrt.cpp:
+xdk/xaudio2/wmaltrt.cpp:
 	.rdata      start:0x821811A8 end:0x821811E0
 	.pdata      start:0x822242A8 end:0x822242C8
 	.text       start:0x82FC60C0 end:0x82FC6AE0
 
-strmdec_wma.cpp:
+xdk/xaudio2/strmdec_wma.cpp:
 	.rdata      start:0x821811E8 end:0x8218126C
 	.pdata      start:0x82224338 end:0x82224368
 	.text       start:0x82FC7F08 end:0x82FC8C28
 
-msaudiodec.cpp:
+xdk/xaudio2/msaudiodec.cpp:
 	.rdata      start:0x8217BE90 end:0x8217BF98
 	.rdata      start:0x821E20A8 end:0x821E20BC rename:.xdata
 	.pdata      start:0x82223C80 end:0x82223DC0
 	.text       start:0x82FB21E0 end:0x82FB9A9C
 
-losslessdecprolsl.cpp:
+xdk/xaudio2/losslessdecprolsl.cpp:
 	.pdata      start:0x822246D8 end:0x822246E0
 	.text       start:0x82FDAC98 end:0x82FDAEF0
 
-losslessdecpro.cpp:
+xdk/xaudio2/losslessdecpro.cpp:
 	.rdata      start:0x82181270 end:0x82181274
 	.pdata      start:0x822243C0 end:0x822243E0
 	.text       start:0x82FCD158 end:0x82FCD988
 
-entropydecprolsl.cpp:
+xdk/xaudio2/entropydecprolsl.cpp:
 	.pdata      start:0x82224368 end:0x82224378
 	.text       start:0x82FC8C28 end:0x82FC92B4
 
-entropydecpro.cpp:
+xdk/xaudio2/entropydecpro.cpp:
 	.rdata      start:0x8218CD0C end:0x8218CD14
 	.pdata      start:0x82224450 end:0x822244C0
 	.text       start:0x82FD0270 end:0x82FD2338
 
-entropydecstd.cpp:
+xdk/xaudio2/entropydecstd.cpp:
 	.pdata      start:0x82224428 end:0x82224450
 	.text       start:0x82FCFAB0 end:0x82FD0270
 
-entropydec.cpp:
+xdk/xaudio2/entropydec.cpp:
 	.pdata      start:0x822243A8 end:0x822243B8
 	.text       start:0x82FCAF60 end:0x82FCC8F4
 
-config.cpp:
+xdk/xaudio2/config.cpp:
 	.rdata      start:0x8217BF98 end:0x8217F618
 	.pdata      start:0x82223DC0 end:0x82223E08
 	.text       start:0x82FB9AA0 end:0x82FBACF4
 
-tables_rc.cpp:
+xdk/xaudio2/tables_rc.cpp:
 	.rdata      start:0x8218CE98 end:0x82198FA6
 
-quantization.cpp:
+xdk/xaudio2/quantization.cpp:
 	.rdata      start:0x8218CD90 end:0x8218CE98
 	.data       start:0x83334738 end:0x83334B40 rename:.bss
 
-encinit.cpp:
+xdk/xaudio2/encinit.cpp:
 	.rdata      start:0x8217F618 end:0x8217FBE8
 	.pdata      start:0x82223E08 end:0x82223E10
 	.text       start:0x82FBACF8 end:0x82FBAD84
 	.data       start:0x8332BA3C end:0x8332BA4C rename:.bss
 
-msaudioenc.cpp:
+xdk/xaudio2/msaudioenc.cpp:
 	.data       start:0x83334B40 end:0x83334BA8 rename:.bss
 
-masking.cpp:
+xdk/xaudio2/masking.cpp:
 	.data       start:0x8332BF28 end:0x83334738 rename:.bss
 
-wmaxenon_stub.cpp:
+xdk/xaudio2/wmaxenon_stub.cpp:
 	.pdata      start:0x822243B8 end:0x822243C0
 	.text       start:0x82FCC8F8 end:0x82FCD154
 
-fft_xenon.cpp:
+xdk/xaudio2/fft_xenon.cpp:
 	.rdata      start:0x82199120 end:0x82199220
 	.pdata      start:0x82224690 end:0x822246A0
 	.text       start:0x82FD8D80 end:0x82FD976C
 
-aureconsample_xenon.cpp:
+xdk/xaudio2/aureconsample_xenon.cpp:
 	.rdata      start:0x821990F0 end:0x82199120
 	.pdata      start:0x82224678 end:0x82224690
 	.text       start:0x82FD7F90 end:0x82FD8D80
 
-wmamalloc.cpp:
+xdk/xaudio2/wmamalloc.cpp:
 	.pdata      start:0x822241F0 end:0x822241F8
 	.text       start:0x82FC3408 end:0x82FC3500
 
-pcmfmt.cpp:
+xdk/xaudio2/pcmfmt.cpp:
 	.rdata      start:0x8218CD14 end:0x8218CD38
 
-wmafmt.cpp:
+xdk/xaudio2/wmafmt.cpp:
 	.text       start:0x82FBAD88 end:0x82FBAE14
 
-msaudiostdpro.cpp:
+xdk/xaudio2/msaudiostdpro.cpp:
 	.rdata      start:0x8218126C end:0x82181270
 	.pdata      start:0x82224378 end:0x822243A8
 	.text       start:0x82FC92B8 end:0x82FCAF5C
 	.data       start:0x8332BA70 end:0x8332BB20 rename:.bss
 
-msaudiopro.cpp:
+xdk/xaudio2/msaudiopro.cpp:
 	.rdata      start:0x821811E0 end:0x821811E4
 	.pdata      start:0x822242C8 end:0x82224338
 	.text       start:0x82FC6AE0 end:0x82FC7F04
 
-msaudiostd.cpp:
+xdk/xaudio2/msaudiostd.cpp:
 	.text       start:0x82FCD988 end:0x82FCD9E8
 
-msaudio.cpp:
+xdk/xaudio2/msaudio.cpp:
 	.rdata      start:0x82181190 end:0x821811A8
 	.pdata      start:0x822241F8 end:0x822242A8
 	.text       start:0x82FC3500 end:0x82FC60C0
 
-lpcprolsl.cpp:
+xdk/xaudio2/lpcprolsl.cpp:
 	.text       start:0x82FDAEF0 end:0x82FDAF18
 
-lowrate_commonstd.cpp:
+xdk/xaudio2/lowrate_commonstd.cpp:
 	.rdata      start:0x8219903C end:0x82199048
 	.pdata      start:0x82224650 end:0x82224668
 	.text       start:0x82FD5C38 end:0x82FD7448
 
-float.cpp:
+xdk/xaudio2/float.cpp:
 	.pdata      start:0x822246A0 end:0x822246A8
 	.text       start:0x82FD9770 end:0x82FDA4EC
 
-fft.cpp:
+xdk/xaudio2/fft.cpp:
 	.rdata      start:0x82199048 end:0x821990E8
 	.pdata      start:0x82224668 end:0x82224678
 	.text       start:0x82FD7448 end:0x82FD7F8C
 
-drccommonpro.cpp:
+xdk/xaudio2/drccommonpro.cpp:
 	.rdata      start:0x82181278 end:0x82183400
 	.pdata      start:0x822243E0 end:0x82224428
 	.text       start:0x82FCD9E8 end:0x82FCFAAC
 	.data       start:0x8332BB20 end:0x8332BF24 rename:.bss
 
-dectablesstdpro.cpp:
+xdk/xaudio2/dectablesstdpro.cpp:
 	.rdata      start:0x8219B438 end:0x8219B844
 
-dectablespro.cpp:
+xdk/xaudio2/dectablespro.cpp:
 	.rdata      start:0x82199220 end:0x8219B438
 	.data       start:0x8326F9C0 end:0x8326FB2C
 
-dectablesstd.cpp:
+xdk/xaudio2/dectablesstd.cpp:
 	.rdata      start:0x82183400 end:0x8218CD0C
 
-dectables.cpp:
+xdk/xaudio2/dectables.cpp:
 	.rdata      start:0x8219B844 end:0x8219B85C
 
-configcommon.cpp:
+xdk/xaudio2/configcommon.cpp:
 	.text       start:0x82FD2338 end:0x82FD2550
 
-oapreverb.cpp:
+xdk/xaudio2/oapreverb.cpp:
 	.rdata      start:0x8217B048 end:0x8217BD5C
 	.pdata      start:0x82223960 end:0x82223A30
 	.text       start:0x82FA5480 end:0x82FAE41C
 
-oapreverbnearestprime.cpp:
+xdk/xaudio2/oapreverbnearestprime.cpp:
 	.rdata      start:0x8217FC60 end:0x82180F98
 	.text       start:0x82FBEB98 end:0x82FBEC0C
 
-msadpcm.cpp:
+xdk/xaudio2/msadpcm.cpp:
 	.rdata      start:0x8217FBE8 end:0x8217FC60
 	.pdata      start:0x82223E10 end:0x82223EA0
 	.text       start:0x82FBAE18 end:0x82FBEB94
 	.data       start:0x8326F920 end:0x8326F968
 
-adpcm_codec.cpp:
+xdk/xaudio2/adpcm_codec.cpp:
 	.text       start:0x82FA5380 end:0x82FA547C
 	.data       start:0x8326F8D8 end:0x8326F920
 
-xapobase.cpp:
+xdk/xaudio2/xapobase.cpp:
 	.rdata      start:0x8217AFF0 end:0x8217B01E
 	.pdata      start:0x822237F0 end:0x82223858
 	.text       start:0x82F9A328 end:0x82F9BFE4
 	.data       start:0x8326F8B8 end:0x8326F8D8
 	.XBLD       start:0x83350090 end:0x833500A0 rename:.XBLD$V
 
-oapresamplelinear.cpp:
+xdk/xaudio2/oapresamplelinear.cpp:
 	.rdata      start:0x8217B020 end:0x8217B030
 	.pdata      start:0x822238D8 end:0x82223938
 	.text       start:0x82FA0B88 end:0x82FA43BC
 
-oapfilter.cpp:
+xdk/xaudio2/oapfilter.cpp:
 	.pdata      start:0x82223958 end:0x82223960
 	.text       start:0x82FA50C0 end:0x82FA537C
 
-oapmatrixmix.cpp:
+xdk/xaudio2/oapmatrixmix.cpp:
 	.pdata      start:0x82223858 end:0x822238D8
 	.text       start:0x82F9BFE8 end:0x82FA0B88
 
-oapclip.cpp:
+xdk/xaudio2/oapclip.cpp:
 	.rdata      start:0x8217B030 end:0x8217B048
 	.pdata      start:0x82223938 end:0x82223958
 	.text       start:0x82FA43C0 end:0x82FA50AC
 
-oapcontrolfp.cpp:
+xdk/xaudio2/oapcontrolfp.cpp:
 	.text       start:0x82FA50B0 end:0x82FA50BC
 
-adpcm.cpp:
+xdk/xaudio2/adpcm.cpp:
 	.rdata      start:0x8217A9DC end:0x8217AA2C
 	.pdata      start:0x82223388 end:0x822233C8
 	.pdata      start:0x822422F0 end:0x822422F8
@@ -7815,13 +7815,13 @@ adpcm.cpp:
 	.data       start:0x83220004 end:0x83220008 rename:.CRT$XCU
 	.data       start:0x8326EBF0 end:0x8326F01C
 
-volumemeter.cpp:
+xdk/xaudio2/volumemeter.cpp:
 	.pdata      start:0x822422F8 end:0x82242300
 	.text       start:0x831E5C50 end:0x831E5CE0 rename:.text$yc
 	.data       start:0x83220008 end:0x8322000C rename:.CRT$XCU
 	.data       start:0x8326F020 end:0x8326F44C
 
-reverb.cpp:
+xdk/xaudio2/reverb.cpp:
 	.rdata      start:0x8217AA2C end:0x8217AA80
 	.pdata      start:0x822233C8 end:0x82223428
 	.pdata      start:0x82242300 end:0x82242308
@@ -7830,7 +7830,7 @@ reverb.cpp:
 	.data       start:0x8322000C end:0x83220010 rename:.CRT$XCU
 	.data       start:0x8326F450 end:0x8326F87C
 
-apofiltermatrixmix.cpp:
+xdk/xaudio2/apofiltermatrixmix.cpp:
 	.rdata      start:0x8217A978 end:0x8217A9DC
 	.pdata      start:0x82223320 end:0x82223388
 	.pdata      start:0x822422E8 end:0x822422F0
@@ -7839,7 +7839,7 @@ apofiltermatrixmix.cpp:
 	.data       start:0x83220000 end:0x83220004 rename:.CRT$XCU
 	.data       start:0x8326E7C0 end:0x8326EBEC
 
-filter.cpp:
+xdk/xaudio2/filter.cpp:
 	.rdata      start:0x8217A924 end:0x8217A974
 	.pdata      start:0x822232D8 end:0x82223320
 	.pdata      start:0x822422E0 end:0x822422E8
@@ -7848,7 +7848,7 @@ filter.cpp:
 	.data       start:0x8321FFFC end:0x83220000 rename:.CRT$XCU
 	.data       start:0x8326E390 end:0x8326E7BC
 
-clipper.cpp:
+xdk/xaudio2/clipper.cpp:
 	.rdata      start:0x8217A8E8 end:0x8217A924
 	.pdata      start:0x822232B8 end:0x822232D8
 	.pdata      start:0x822422D8 end:0x822422E0
@@ -7857,7 +7857,7 @@ clipper.cpp:
 	.data       start:0x8321FFF8 end:0x8321FFFC rename:.CRT$XCU
 	.data       start:0x8326DF60 end:0x8326E38C
 
-src_fast.cpp:
+xdk/xaudio2/src_fast.cpp:
 	.rdata      start:0x8217A7F8 end:0x8217A8E8
 	.pdata      start:0x82223268 end:0x822232B8
 	.pdata      start:0x822422D0 end:0x822422D8
@@ -7866,16 +7866,16 @@ src_fast.cpp:
 	.data       start:0x8321FFF4 end:0x8321FFF8 rename:.CRT$XCU
 	.data       start:0x8326DB30 end:0x8326DF5C
 
-leapfxlib.cpp:
+xdk/xaudio2/leapfxlib.cpp:
 	.pdata      start:0x82223050 end:0x822230D0
 	.text       start:0x82F8A3D8 end:0x82F8AF98
 	.data       start:0x8332B4B8 end:0x8332B528 rename:.bss
 
-leaplib.cpp:
+xdk/xaudio2/leaplib.cpp:
 	.pdata      start:0x82223428 end:0x82223430
 	.text       start:0x82F91E10 end:0x82F91ED0
 
-xboxrendererconnection.cpp:
+xdk/xaudio2/xboxrendererconnection.cpp:
 	.rdata      start:0x821810FC end:0x82181190
 	.pdata      start:0x82224170 end:0x822241E0
 	.text       start:0x82FC2898 end:0x82FC31B0
@@ -7883,72 +7883,72 @@ xboxrendererconnection.cpp:
 	.data       start:0x8332BA4C end:0x8332BA70 rename:.bss
 	.XBMOVIE    start:0x83336204 end:0x83336208 rename:.XBMOVIE$XAUDIO
 
-swoutput.cpp:
+xdk/xaudio2/swoutput.cpp:
 	.rdata      start:0x82198FA8 end:0x82198FD8
 	.pdata      start:0x82224510 end:0x82224558
 	.text       start:0x82FD3688 end:0x82FD3BB4
 
-swvoice.cpp:
+xdk/xaudio2/swvoice.cpp:
 	.rdata      start:0x8219900C end:0x8219903C
 	.pdata      start:0x82224590 end:0x82224650
 	.text       start:0x82FD41E0 end:0x82FD5C38
 
-swfilter.cpp:
+xdk/xaudio2/swfilter.cpp:
 	.rdata      start:0x82198FD8 end:0x8219900C
 	.pdata      start:0x82224558 end:0x82224590
 	.text       start:0x82FD3BB8 end:0x82FD41E0
 
-baseswfilter.cpp:
+xdk/xaudio2/baseswfilter.cpp:
 	.rdata      start:0x8219B8E8 end:0x8219B918
 	.pdata      start:0x822246E0 end:0x822246F8
 	.text       start:0x82FDAF18 end:0x82FDB24C
 
-voiceskin.cpp:
+xdk/xaudio2/voiceskin.cpp:
 	.rdata      start:0x82180FFC end:0x82181070
 	.pdata      start:0x82223FF0 end:0x82224090
 	.text       start:0x82FC0A60 end:0x82FC17DC
 
-outputskin.cpp:
+xdk/xaudio2/outputskin.cpp:
 	.rdata      start:0x821810A8 end:0x821810FC
 	.pdata      start:0x82224130 end:0x82224170
 	.text       start:0x82FC2448 end:0x82FC2898
 
-filterskin.cpp:
+xdk/xaudio2/filterskin.cpp:
 	.rdata      start:0x82180FA8 end:0x82180FFC
 	.pdata      start:0x82223FB8 end:0x82223FF0
 	.text       start:0x82FC06B8 end:0x82FC0A5C
 
-baseskin.cpp:
+xdk/xaudio2/baseskin.cpp:
 	.rdata      start:0x82181070 end:0x821810A8
 	.pdata      start:0x82224090 end:0x822240E8
 	.text       start:0x82FC17E0 end:0x82FC1E94
 
-buffer.cpp:
+xdk/xaudio2/buffer.cpp:
 	.pdata      start:0x822244E0 end:0x82224510
 	.text       start:0x82FD32E0 end:0x82FD3688
 	.data       start:0x83334BA8 end:0x83334BAC rename:.bss
 
-commandmanager.cpp:
+xdk/xaudio2/commandmanager.cpp:
 	.pdata      start:0x822240E8 end:0x82224130
 	.text       start:0x82FC1E98 end:0x82FC2444
 
-graphmgr.cpp:
+xdk/xaudio2/graphmgr.cpp:
 	.rdata      start:0x82180F98 end:0x82180FA8
 	.rdata      start:0x821E20C0 end:0x821E20D4 rename:.xdata
 	.pdata      start:0x82223ED0 end:0x82223FB8
 	.text       start:0x82FBF160 end:0x82FC06B4
 	.data       start:0x8326F968 end:0x8326F970
 
-buffermgr.cpp:
+xdk/xaudio2/buffermgr.cpp:
 	.pdata      start:0x82223EA0 end:0x82223ED0
 	.text       start:0x82FBEC10 end:0x82FBF15C
 
-system.cpp:
+xdk/xaudio2/system.cpp:
 	.rdata      start:0x8217BD5C end:0x8217BE20
 	.pdata      start:0x82223A30 end:0x82223B38
 	.text       start:0x82FAE420 end:0x82FAFB44
 
-waveutils.cpp:
+xdk/xaudio2/waveutils.cpp:
 	.rdata      start:0x8217ADD8 end:0x8217AEBD
 	.pdata      start:0x82223768 end:0x822237A8
 	.text       start:0x82F98BC0 end:0x82F9984C
@@ -11808,7 +11808,7 @@ bsdiag/DebugContexts.cpp:
 	.data       start:0x8325C458 end:0x8325C4DC
 	.data       start:0x832BC490 end:0x832BC590 rename:.bss
 
-bhkAabbPhantom.cpp:
+bshavok/bhkAabbPhantom.cpp:
 	.rdata      start:0x8210C5F8 end:0x8210C690
 	.pdata      start:0x8220EB10 end:0x8220EB60
 	.text       start:0x82B54658 end:0x82B54CFC
@@ -11816,11 +11816,11 @@ bhkAabbPhantom.cpp:
 	.data       start:0x8321EF74 end:0x8321EF78 rename:.CRT$XCU
 	.data       start:0x8332034C end:0x83320358 rename:.bss
 
-bhkAcousticSpacePhantomCallbackShape.cpp:
+bshavok/bhkAcousticSpacePhantomCallbackShape.cpp:
 	.pdata      start:0x8220EBD0 end:0x8220EBE0
 	.text       start:0x82B55770 end:0x82B55838
 
-bhkAction.cpp:
+bshavok/bhkAction.cpp:
 	.rdata      start:0x8210A3D4 end:0x8210A41A
 	.pdata      start:0x8220E0B0 end:0x8220E0D0
 	.text       start:0x82B3C0E0 end:0x82B3C38C
@@ -11828,7 +11828,7 @@ bhkAction.cpp:
 	.data       start:0x8321EF1C end:0x8321EF20 rename:.CRT$XCU
 	.data       start:0x83320244 end:0x83320250 rename:.bss
 
-bhkAngularDashpotAction.cpp:
+bshavok/bhkAngularDashpotAction.cpp:
 	.rdata      start:0x8210FF28 end:0x821100BD
 	.pdata      start:0x82210230 end:0x82210288
 	.text       start:0x82B83208 end:0x82B83984
@@ -11836,7 +11836,7 @@ bhkAngularDashpotAction.cpp:
 	.data       start:0x8321F04C end:0x8321F050 rename:.CRT$XCU
 	.data       start:0x833205AC end:0x833205B8 rename:.bss
 
-bhkAvoidBox.cpp:
+bshavok/bhkAvoidBox.cpp:
 	.rdata      start:0x8210D500 end:0x8210D510
 	.pdata      start:0x8220F0B0 end:0x8220F0C0
 	.text       start:0x82B61190 end:0x82B61268
@@ -11845,7 +11845,7 @@ bhkAvoidBox.cpp:
 	.data       start:0x8325D880 end:0x8325D910
 	.data       start:0x833203CC end:0x833203E0 rename:.bss
 
-bhkBallAndSocketConstraint.cpp:
+bshavok/bhkBallAndSocketConstraint.cpp:
 	.rdata      start:0x821110B0 end:0x82111178
 	.pdata      start:0x82210628 end:0x82210678
 	.text       start:0x82B88848 end:0x82B88DB4
@@ -11853,7 +11853,7 @@ bhkBallAndSocketConstraint.cpp:
 	.data       start:0x8321F074 end:0x8321F078 rename:.CRT$XCU
 	.data       start:0x83320624 end:0x83320630 rename:.bss
 
-bhkBallSocketConstraintChain.cpp:
+bshavok/bhkBallSocketConstraintChain.cpp:
 	.rdata      start:0x82110E08 end:0x821110AE
 	.pdata      start:0x822105B0 end:0x82210628
 	.text       start:0x82B87E60 end:0x82B88848
@@ -11861,7 +11861,7 @@ bhkBallSocketConstraintChain.cpp:
 	.data       start:0x8321F070 end:0x8321F074 rename:.CRT$XCU
 	.data       start:0x83320618 end:0x83320624 rename:.bss
 
-bhkBinaryAction.cpp:
+bshavok/bhkBinaryAction.cpp:
 	.rdata      start:0x82118244 end:0x821182B4
 	.pdata      start:0x82213928 end:0x82213980
 	.text       start:0x82C1F2D0 end:0x82C1FAAC
@@ -11869,7 +11869,7 @@ bhkBinaryAction.cpp:
 	.data       start:0x8321F1A8 end:0x8321F1AC rename:.CRT$XCU
 	.data       start:0x83320F0C end:0x83320F18 rename:.bss
 
-bhkBlendCollisionObject.cpp:
+bshavok/bhkBlendCollisionObject.cpp:
 	.rdata      start:0x82109A88 end:0x82109C3A
 	.pdata      start:0x8220DE48 end:0x8220DEE8
 	.text       start:0x82B358E0 end:0x82B36E98
@@ -11878,7 +11878,7 @@ bhkBlendCollisionObject.cpp:
 	.data       start:0x8325C980 end:0x8325CA84
 	.data       start:0x8331FF58 end:0x8331FF68 rename:.bss
 
-bhkBlendCollisionObjectAddRotation.cpp:
+bshavok/bhkBlendCollisionObjectAddRotation.cpp:
 	.rdata      start:0x8210A970 end:0x8210AAF3
 	.pdata      start:0x8220E228 end:0x8220E260
 	.text       start:0x82B3EDD8 end:0x82B3F218
@@ -11886,7 +11886,7 @@ bhkBlendCollisionObjectAddRotation.cpp:
 	.data       start:0x8321EF3C end:0x8321EF40 rename:.CRT$XCU
 	.data       start:0x8332028C end:0x83320294 rename:.bss
 
-bhkBlendController.cpp:
+bshavok/bhkBlendController.cpp:
 	.rdata      start:0x8210CF88 end:0x8210D148
 	.pdata      start:0x8220EEC8 end:0x8220EF70
 	.text       start:0x82B5B698 end:0x82B5D188
@@ -11895,7 +11895,7 @@ bhkBlendController.cpp:
 	.data       start:0x8325D440 end:0x8325D754
 	.data       start:0x833203C0 end:0x833203CC rename:.bss
 
-bhkBoxShape.cpp:
+bshavok/bhkBoxShape.cpp:
 	.rdata      start:0x8210CEE8 end:0x8210CF88
 	.pdata      start:0x8220EE60 end:0x8220EEC8
 	.text       start:0x82B5ADC0 end:0x82B5B698
@@ -11905,7 +11905,7 @@ bhkBoxShape.cpp:
 	.data       start:0x8325D43C end:0x8325D440
 	.data       start:0x833203A8 end:0x833203C0 rename:.bss
 
-bhkBreakableConstraint.cpp:
+bshavok/bhkBreakableConstraint.cpp:
 	.rdata      start:0x821100C0 end:0x821102BE
 	.pdata      start:0x82210288 end:0x82210310
 	.text       start:0x82B83988 end:0x82B84344
@@ -11913,7 +11913,7 @@ bhkBreakableConstraint.cpp:
 	.data       start:0x8321F050 end:0x8321F054 rename:.CRT$XCU
 	.data       start:0x833205B8 end:0x833205C4 rename:.bss
 
-bhkBvTreeShape.cpp:
+bshavok/bhkBvTreeShape.cpp:
 	.rdata      start:0x8210CA00 end:0x8210CA4F
 	.pdata      start:0x8220ECB0 end:0x8220ED20
 	.text       start:0x82B57608 end:0x82B57DA4
@@ -11921,7 +11921,7 @@ bhkBvTreeShape.cpp:
 	.data       start:0x8321EF88 end:0x8321EF8C rename:.CRT$XCU
 	.data       start:0x8332037C end:0x83320388 rename:.bss
 
-bhkCachingShapePhantom.cpp:
+bshavok/bhkCachingShapePhantom.cpp:
 	.rdata      start:0x8210F910 end:0x8210F9E8
 	.pdata      start:0x822100C8 end:0x82210110
 	.text       start:0x82B80F40 end:0x82B81624
@@ -11929,7 +11929,7 @@ bhkCachingShapePhantom.cpp:
 	.data       start:0x8321F03C end:0x8321F040 rename:.CRT$XCU
 	.data       start:0x8332057C end:0x83320588 rename:.bss
 
-bhkCapsuleShape.cpp:
+bshavok/bhkCapsuleShape.cpp:
 	.rdata      start:0x8210D840 end:0x8210D8E1
 	.pdata      start:0x8220F1B0 end:0x8220F230
 	.text       start:0x82B62900 end:0x82B6363C
@@ -11938,7 +11938,7 @@ bhkCapsuleShape.cpp:
 	.data       start:0x8325D910 end:0x8325D924
 	.data       start:0x833203F8 end:0x83320408 rename:.bss
 
-bhkCharacterController.cpp:
+bshavok/bhkCharacterController.cpp:
 	.rdata      start:0x82108EDC end:0x82109745
 	.pdata      start:0x8220DAF0 end:0x8220DD30
 	.pdata      start:0x822408B8 end:0x822408C0
@@ -11949,7 +11949,7 @@ bhkCharacterController.cpp:
 	.data       start:0x8325C900 end:0x8325C974
 	.data       start:0x8331FED4 end:0x8331FF20 rename:.bss
 
-bhkCharacterListener.cpp:
+bshavok/bhkCharacterListener.cpp:
 	.rdata      start:0x821082EC end:0x82108320
 	.pdata      start:0x8220D808 end:0x8220D830
 	.text       start:0x82B1F7C0 end:0x82B1FC88
@@ -11958,7 +11958,7 @@ bhkCharacterListener.cpp:
 	.data       start:0x8325C6C0 end:0x8325C6C8
 	.data       start:0x8331FEC8 end:0x8331FECC rename:.bss
 
-bhkCharacterPointCollector.cpp:
+bshavok/bhkCharacterPointCollector.cpp:
 	.rdata      start:0x82113330 end:0x821133A0
 	.pdata      start:0x822111B8 end:0x822111E8
 	.pdata      start:0x82240900 end:0x82240908
@@ -11967,7 +11967,7 @@ bhkCharacterPointCollector.cpp:
 	.data       start:0x8321F0B8 end:0x8321F0BC rename:.CRT$XCU
 	.data       start:0x833206FC end:0x83320700 rename:.bss
 
-bhkCharacterProxy.cpp:
+bshavok/bhkCharacterProxy.cpp:
 	.rdata      start:0x8210D8E4 end:0x8210D9A6
 	.pdata      start:0x8220F230 end:0x8220F2C8
 	.text       start:0x82B63640 end:0x82B6413C
@@ -11976,25 +11976,25 @@ bhkCharacterProxy.cpp:
 	.data       start:0x8325D924 end:0x8325D928
 	.data       start:0x83320408 end:0x83320414 rename:.bss
 
-bhkCharacterStateClimbing.cpp:
+bshavok/bhkCharacterStateClimbing.cpp:
 	.pdata      start:0x822111E8 end:0x822111F0
 	.text       start:0x82BAA898 end:0x82BAA91C
 
-bhkCharacterStateFlying.cpp:
+bshavok/bhkCharacterStateFlying.cpp:
 	.text       start:0x82BAA920 end:0x82BAA928
 
-bhkCharacterStateInAir.cpp:
+bshavok/bhkCharacterStateInAir.cpp:
 	.rdata      start:0x821133E4 end:0x82113408
 	.pdata      start:0x822111F8 end:0x82211200
 	.text       start:0x82BAAC38 end:0x82BAAF10
 
-bhkCharacterStateJumping.cpp:
+bshavok/bhkCharacterStateJumping.cpp:
 	.rdata      start:0x82113408 end:0x82113430
 	.pdata      start:0x82211200 end:0x82211208
 	.text       start:0x82BAAF10 end:0x82BAB150
 	.data       start:0x8325E16C end:0x8325E170
 
-bhkCharacterStateOnGround.cpp:
+bshavok/bhkCharacterStateOnGround.cpp:
 	.rdata      start:0x82113458 end:0x82113480
 	.pdata      start:0x82211210 end:0x82211218
 	.text       start:0x82BAB4B0 end:0x82BAB80C
@@ -12003,12 +12003,12 @@ bhkCharacterStateOnGround.cpp:
 	.data       start:0x8325E174 end:0x8325E178
 	.data       start:0x83320704 end:0x83320708 rename:.bss
 
-bhkCharacterStateProjectile.cpp:
+bshavok/bhkCharacterStateProjectile.cpp:
 	.rdata      start:0x821133C0 end:0x821133E4
 	.pdata      start:0x822111F0 end:0x822111F8
 	.text       start:0x82BAA928 end:0x82BAAC38
 
-bhkCharacterStateSwimming.cpp:
+bshavok/bhkCharacterStateSwimming.cpp:
 	.rdata      start:0x82113430 end:0x82113458
 	.pdata      start:0x82211208 end:0x82211210
 	.text       start:0x82BAB150 end:0x82BAB4B0
@@ -12017,7 +12017,7 @@ bhkCharacterStateSwimming.cpp:
 	.data       start:0x8325E170 end:0x8325E174
 	.data       start:0x83320700 end:0x83320704 rename:.bss
 
-bhkCharControllerShape.cpp:
+bshavok/bhkCharControllerShape.cpp:
 	.rdata      start:0x821134A4 end:0x8211365F
 	.pdata      start:0x82211270 end:0x82211290
 	.text       start:0x82BAE5D0 end:0x82BAE8B4
@@ -12026,7 +12026,7 @@ bhkCharControllerShape.cpp:
 	.data       start:0x8325E1B0 end:0x8325E1B4
 	.data       start:0x83320708 end:0x83320714 rename:.bss
 
-bhkCollisionBox.cpp:
+bshavok/bhkCollisionBox.cpp:
 	.rdata      start:0x8210F2B0 end:0x8210F304
 	.pdata      start:0x8220FDC0 end:0x8220FDE0
 	.text       start:0x82B7C7E0 end:0x82B7CADC
@@ -12035,14 +12035,14 @@ bhkCollisionBox.cpp:
 	.data       start:0x8325DD40 end:0x8325DD44
 	.data       start:0x83320528 end:0x83320538 rename:.bss
 
-bhkCollisionFilter.cpp:
+bshavok/bhkCollisionFilter.cpp:
 	.rdata      start:0x82109C3C end:0x82109FB2
 	.pdata      start:0x8220DF00 end:0x8220DF38
 	.text       start:0x82B370A0 end:0x82B39AC0
 	.data       start:0x8325CA88 end:0x8325CBC0
 	.data       start:0x8331FF68 end:0x833201F0 rename:.bss
 
-bhkCollisionObject.cpp:
+bshavok/bhkCollisionObject.cpp:
 	.rdata      start:0x82107684 end:0x8210772B
 	.pdata      start:0x8220D3F8 end:0x8220D438
 	.text       start:0x82B16B20 end:0x82B177F8
@@ -12051,7 +12051,7 @@ bhkCollisionObject.cpp:
 	.data       start:0x8325C5A8 end:0x8325C5AC
 	.data       start:0x832BC5A0 end:0x832BC5AC rename:.bss
 
-bhkConstraint.cpp:
+bshavok/bhkConstraint.cpp:
 	.rdata      start:0x8210F0BC end:0x8210F1BE
 	.pdata      start:0x8220FC70 end:0x8220FD40
 	.text       start:0x82B7A4A8 end:0x82B7B79C
@@ -12059,7 +12059,7 @@ bhkConstraint.cpp:
 	.data       start:0x8321F020 end:0x8321F024 rename:.CRT$XCU
 	.data       start:0x83320510 end:0x8332051C rename:.bss
 
-bhkConstraintChain.cpp:
+bshavok/bhkConstraintChain.cpp:
 	.rdata      start:0x821186A8 end:0x821186FF
 	.pdata      start:0x82213C88 end:0x82213CF0
 	.text       start:0x82C268B8 end:0x82C2749C
@@ -12067,12 +12067,12 @@ bhkConstraintChain.cpp:
 	.data       start:0x8321F1B0 end:0x8321F1B4 rename:.CRT$XCU
 	.data       start:0x83320F24 end:0x83320F30 rename:.bss
 
-bhkConstraintManager.cpp:
+bshavok/bhkConstraintManager.cpp:
 	.rdata      start:0x82115704 end:0x82115884
 	.pdata      start:0x822123E0 end:0x82212400
 	.text       start:0x82BEDE00 end:0x82BEE53C
 
-bhkConvexListShape.cpp:
+bshavok/bhkConvexListShape.cpp:
 	.rdata      start:0x821121C0 end:0x82112358
 	.pdata      start:0x82210AE8 end:0x82210B90
 	.text       start:0x82B8FF40 end:0x82B91070
@@ -12080,7 +12080,7 @@ bhkConvexListShape.cpp:
 	.data       start:0x8321F0AC end:0x8321F0B0 rename:.CRT$XCU
 	.data       start:0x833206AC end:0x833206B8 rename:.bss
 
-bhkConvexShape.cpp:
+bshavok/bhkConvexShape.cpp:
 	.rdata      start:0x8210C338 end:0x8210C393
 	.pdata      start:0x8220E998 end:0x8220E9C0
 	.text       start:0x82B51E68 end:0x82B520EC
@@ -12089,7 +12089,7 @@ bhkConvexShape.cpp:
 	.data       start:0x8325D364 end:0x8325D368
 	.data       start:0x83320300 end:0x8332030C rename:.bss
 
-bhkConvexSweepShape.cpp:
+bshavok/bhkConvexSweepShape.cpp:
 	.rdata      start:0x82112050 end:0x821121B9
 	.pdata      start:0x82210AB8 end:0x82210AE8
 	.text       start:0x82B8FC10 end:0x82B8FF3C
@@ -12097,7 +12097,7 @@ bhkConvexSweepShape.cpp:
 	.data       start:0x8321F0A8 end:0x8321F0AC rename:.CRT$XCU
 	.data       start:0x833206A4 end:0x833206AC rename:.bss
 
-bhkConvexTransformShape.cpp:
+bshavok/bhkConvexTransformShape.cpp:
 	.rdata      start:0x82111E78 end:0x8211204E
 	.pdata      start:0x82210A20 end:0x82210AB8
 	.text       start:0x82B8EE28 end:0x82B8FC0C
@@ -12106,7 +12106,7 @@ bhkConvexTransformShape.cpp:
 	.data       start:0x8325DE48 end:0x8325DE4C
 	.data       start:0x83320698 end:0x833206A4 rename:.bss
 
-bhkConvexVerticesShape.cpp:
+bshavok/bhkConvexVerticesShape.cpp:
 	.rdata      start:0x82111CD8 end:0x82111E78
 	.pdata      start:0x822109A0 end:0x82210A20
 	.text       start:0x82B8E138 end:0x82B8EE28
@@ -12115,7 +12115,7 @@ bhkConvexVerticesShape.cpp:
 	.data       start:0x8325DE44 end:0x8325DE48
 	.data       start:0x83320688 end:0x83320698 rename:.bss
 
-bhkCylinderShape.cpp:
+bshavok/bhkCylinderShape.cpp:
 	.rdata      start:0x82111B48 end:0x82111CD7
 	.pdata      start:0x82210930 end:0x822109A0
 	.text       start:0x82B8D4A8 end:0x82B8E134
@@ -12124,7 +12124,7 @@ bhkCylinderShape.cpp:
 	.data       start:0x8325DE30 end:0x8325DE44
 	.data       start:0x83320678 end:0x83320688 rename:.bss
 
-bhkDashpotAction.cpp:
+bshavok/bhkDashpotAction.cpp:
 	.rdata      start:0x8210FDB0 end:0x8210FF26
 	.pdata      start:0x822101D8 end:0x82210230
 	.text       start:0x82B82920 end:0x82B83208
@@ -12132,7 +12132,7 @@ bhkDashpotAction.cpp:
 	.data       start:0x8321F048 end:0x8321F04C rename:.CRT$XCU
 	.data       start:0x833205A0 end:0x833205AC rename:.bss
 
-bhkEntity.cpp:
+bshavok/bhkEntity.cpp:
 	.rdata      start:0x8210BE90 end:0x8210BEE2
 	.pdata      start:0x8220E870 end:0x8220E8A8
 	.text       start:0x82B4FC98 end:0x82B500F0
@@ -12140,12 +12140,12 @@ bhkEntity.cpp:
 	.data       start:0x8321EF58 end:0x8321EF5C rename:.CRT$XCU
 	.data       start:0x833202DC end:0x833202E8 rename:.bss
 
-bhkEntityListener.cpp:
+bshavok/bhkEntityListener.cpp:
 	.rdata      start:0x8210B610 end:0x8210B651
 	.pdata      start:0x8220E840 end:0x8220E868
 	.text       start:0x82B4F4C8 end:0x82B4F764
 
-bhkExtendedMeshShape.cpp:
+bshavok/bhkExtendedMeshShape.cpp:
 	.rdata      start:0x82111888 end:0x82111B45
 	.pdata      start:0x82210868 end:0x82210930
 	.text       start:0x82B8C388 end:0x82B8D4A4
@@ -12153,7 +12153,7 @@ bhkExtendedMeshShape.cpp:
 	.data       start:0x8321F08C end:0x8321F094 rename:.CRT$XCU
 	.data       start:0x83320664 end:0x83320678 rename:.bss
 
-bhkExtraData.cpp:
+bshavok/bhkExtraData.cpp:
 	.rdata      start:0x8210F7B8 end:0x8210F90E
 	.pdata      start:0x82210050 end:0x822100C8
 	.text       start:0x82B805F0 end:0x82B80F40
@@ -12161,12 +12161,12 @@ bhkExtraData.cpp:
 	.data       start:0x8321F038 end:0x8321F03C rename:.CRT$XCU
 	.data       start:0x83320574 end:0x8332057C rename:.bss
 
-bhkFilteredCdBodyCollector.cpp:
+bshavok/bhkFilteredCdBodyCollector.cpp:
 	.rdata      start:0x8210EAC8 end:0x8210EB12
 	.pdata      start:0x8220FAF0 end:0x8220FAF8
 	.text       start:0x82B76E88 end:0x82B76F68
 
-bhkFixedConstraint.cpp:
+bshavok/bhkFixedConstraint.cpp:
 	.rdata      start:0x821109A8 end:0x82110C54
 	.pdata      start:0x822104E8 end:0x82210550
 	.text       start:0x82B86D50 end:0x82B875F4
@@ -12174,7 +12174,7 @@ bhkFixedConstraint.cpp:
 	.data       start:0x8321F068 end:0x8321F06C rename:.CRT$XCU
 	.data       start:0x83320600 end:0x8332060C rename:.bss
 
-bhkForceController.cpp:
+bshavok/bhkForceController.cpp:
 	.rdata      start:0x8210E1EC end:0x8210E35F
 	.pdata      start:0x8220F938 end:0x8220F980
 	.text       start:0x82B743A8 end:0x82B74AF8
@@ -12183,7 +12183,7 @@ bhkForceController.cpp:
 	.data       start:0x8325DB4C end:0x8325DB50
 	.data       start:0x833204C4 end:0x833204CC rename:.bss
 
-bhkGenericConstraint.cpp:
+bshavok/bhkGenericConstraint.cpp:
 	.rdata      start:0x82118570 end:0x82118611
 	.pdata      start:0x82213AC0 end:0x82213AF0
 	.text       start:0x82C229D0 end:0x82C22D54
@@ -12191,7 +12191,7 @@ bhkGenericConstraint.cpp:
 	.data       start:0x8321F1AC end:0x8321F1B0 rename:.CRT$XCU
 	.data       start:0x83320F18 end:0x83320F24 rename:.bss
 
-bhkGeometryUtil.cpp:
+bshavok/bhkGeometryUtil.cpp:
 	.rdata      start:0x82118B6C end:0x82118B70
 	.pdata      start:0x82213FC0 end:0x82213FC8
 	.text       start:0x82C2F520 end:0x82C2F5A4
@@ -12200,7 +12200,7 @@ bhkGeometryUtil.cpp:
 	.data       start:0x83260FF8 end:0x83260FFC
 	.data       start:0x83320F54 end:0x83320F58 rename:.bss
 
-bhkHeightFieldShape.cpp:
+bshavok/bhkHeightFieldShape.cpp:
 	.rdata      start:0x82118910 end:0x82118968
 	.pdata      start:0x82213E18 end:0x82213E28
 	.text       start:0x82C29808 end:0x82C298FC
@@ -12208,7 +12208,7 @@ bhkHeightFieldShape.cpp:
 	.data       start:0x8321F1B4 end:0x8321F1B8 rename:.CRT$XCU
 	.data       start:0x83320F30 end:0x83320F3C rename:.bss
 
-bhkHingeConstraint.cpp:
+bshavok/bhkHingeConstraint.cpp:
 	.rdata      start:0x8210F208 end:0x8210F2B0
 	.pdata      start:0x8220FD68 end:0x8220FDC0
 	.text       start:0x82B7BEF8 end:0x82B7C7E0
@@ -12217,7 +12217,7 @@ bhkHingeConstraint.cpp:
 	.data       start:0x8325DD30 end:0x8325DD40
 	.data       start:0x8332051C end:0x83320528 rename:.bss
 
-bhkHingeLimitsConstraint.cpp:
+bshavok/bhkHingeLimitsConstraint.cpp:
 	.rdata      start:0x82110C58 end:0x82110E06
 	.pdata      start:0x82210550 end:0x822105B0
 	.text       start:0x82B875F8 end:0x82B87E60
@@ -12225,11 +12225,11 @@ bhkHingeLimitsConstraint.cpp:
 	.data       start:0x8321F06C end:0x8321F070 rename:.CRT$XCU
 	.data       start:0x8332060C end:0x83320618 rename:.bss
 
-bhkLimitedForceConstraintMotor.cpp:
+bshavok/bhkLimitedForceConstraintMotor.cpp:
 	.pdata      start:0x822155F8 end:0x82215608
 	.text       start:0x82C82178 end:0x82C82208
 
-bhkLimitedHingeConstraint.cpp:
+bshavok/bhkLimitedHingeConstraint.cpp:
 	.rdata      start:0x8210D700 end:0x8210D83D
 	.pdata      start:0x8220F140 end:0x8220F1B0
 	.text       start:0x82B61BB8 end:0x82B628FC
@@ -12237,7 +12237,7 @@ bhkLimitedHingeConstraint.cpp:
 	.data       start:0x8321EFC0 end:0x8321EFC4 rename:.CRT$XCU
 	.data       start:0x833203EC end:0x833203F8 rename:.bss
 
-bhkLiquidAction.cpp:
+bshavok/bhkLiquidAction.cpp:
 	.rdata      start:0x8210EE60 end:0x8210F0B9
 	.pdata      start:0x8220FBC0 end:0x8220FC68
 	.pdata      start:0x822408F0 end:0x822408F8
@@ -12249,7 +12249,7 @@ bhkLiquidAction.cpp:
 	.data       start:0x8325DCC0 end:0x8325DCE8
 	.data       start:0x833204F8 end:0x83320509 rename:.bss
 
-bhkListShape.cpp:
+bshavok/bhkListShape.cpp:
 	.rdata      start:0x82111178 end:0x82111290
 	.pdata      start:0x82210678 end:0x82210710
 	.text       start:0x82B88DB8 end:0x82B8A068
@@ -12258,7 +12258,7 @@ bhkListShape.cpp:
 	.data       start:0x8325DE24 end:0x8325DE28
 	.data       start:0x83320630 end:0x83320640 rename:.bss
 
-bhkMalleableConstraint.cpp:
+bshavok/bhkMalleableConstraint.cpp:
 	.rdata      start:0x8210D510 end:0x8210D6FC
 	.pdata      start:0x8220F0C0 end:0x8220F140
 	.text       start:0x82B61268 end:0x82B61BB8
@@ -12266,7 +12266,7 @@ bhkMalleableConstraint.cpp:
 	.data       start:0x8321EFBC end:0x8321EFC0 rename:.CRT$XCU
 	.data       start:0x833203E0 end:0x833203EC rename:.bss
 
-bhkMoppBvTreeShape.cpp:
+bshavok/bhkMoppBvTreeShape.cpp:
 	.rdata      start:0x82111290 end:0x82111499
 	.pdata      start:0x82210710 end:0x82210798
 	.text       start:0x82B8A068 end:0x82B8AD2C
@@ -12275,7 +12275,7 @@ bhkMoppBvTreeShape.cpp:
 	.data       start:0x8325DE28 end:0x8325DE2C
 	.data       start:0x83320640 end:0x8332064C rename:.bss
 
-bhkMotorAction.cpp:
+bshavok/bhkMotorAction.cpp:
 	.rdata      start:0x8210FC38 end:0x8210FDA9
 	.pdata      start:0x82210180 end:0x822101D8
 	.text       start:0x82B820B8 end:0x82B8291C
@@ -12283,7 +12283,7 @@ bhkMotorAction.cpp:
 	.data       start:0x8321F044 end:0x8321F048 rename:.CRT$XCU
 	.data       start:0x83320594 end:0x833205A0 rename:.bss
 
-bhkMouseSpringAction.cpp:
+bshavok/bhkMouseSpringAction.cpp:
 	.rdata      start:0x8210A4C8 end:0x8210A5A7
 	.pdata      start:0x8220E120 end:0x8220E170
 	.text       start:0x82B3C9F8 end:0x82B3D46C
@@ -12292,7 +12292,7 @@ bhkMouseSpringAction.cpp:
 	.data       start:0x8325CE20 end:0x8325CE24
 	.data       start:0x8332025C end:0x8332026C rename:.bss
 
-bhkMultiSphereShape.cpp:
+bshavok/bhkMultiSphereShape.cpp:
 	.rdata      start:0x8210DFFC end:0x8210E0CD
 	.pdata      start:0x8220F7F8 end:0x8220F858
 	.text       start:0x82B72150 end:0x82B72B38
@@ -12301,12 +12301,12 @@ bhkMultiSphereShape.cpp:
 	.data       start:0x8325DAE4 end:0x8325DAE8
 	.data       start:0x833204AC end:0x833204B8 rename:.bss
 
-bhkMultithreadedSystem.cpp:
+bshavok/bhkMultithreadedSystem.cpp:
 	.rdata      start:0x8210F3C0 end:0x8210F5CA
 	.pdata      start:0x8220FE38 end:0x8220FE70
 	.text       start:0x82B7DA60 end:0x82B7DFC4
 
-bhkNiCollisionObject.cpp:
+bshavok/bhkNiCollisionObject.cpp:
 	.rdata      start:0x82108130 end:0x821082EA
 	.pdata      start:0x8220D750 end:0x8220D808
 	.pdata      start:0x82240748 end:0x82240750
@@ -12318,7 +12318,7 @@ bhkNiCollisionObject.cpp:
 	.data       start:0x8331FEA8 end:0x8331FEC8 rename:.bss
 	.tls        start:0x833360B8 end:0x833360BC rename:.tls$
 
-bhkNiTriStripsShape.cpp:
+bshavok/bhkNiTriStripsShape.cpp:
 	.rdata      start:0x8210CCD0 end:0x8210CEE6
 	.pdata      start:0x8220EDD0 end:0x8220EE60
 	.text       start:0x82B592F0 end:0x82B5ADC0
@@ -12327,7 +12327,7 @@ bhkNiTriStripsShape.cpp:
 	.data       start:0x8321EF90 end:0x8321EF98 rename:.CRT$XCU
 	.data       start:0x83320394 end:0x833203A8 rename:.bss
 
-bhkOrientHingedBodyAction.cpp:
+bshavok/bhkOrientHingedBodyAction.cpp:
 	.rdata      start:0x8210E360 end:0x8210E4F3
 	.pdata      start:0x8220F980 end:0x8220F9E0
 	.text       start:0x82B74AF8 end:0x82B75284
@@ -12335,7 +12335,7 @@ bhkOrientHingedBodyAction.cpp:
 	.data       start:0x8321F000 end:0x8321F004 rename:.CRT$XCU
 	.data       start:0x833204CC end:0x833204D8 rename:.bss
 
-bhkPackedNiTriStripsShape.cpp:
+bshavok/bhkPackedNiTriStripsShape.cpp:
 	.rdata      start:0x8210CA50 end:0x8210CCCF
 	.pdata      start:0x8220ED20 end:0x8220EDD0
 	.text       start:0x82B57DA8 end:0x82B592EC
@@ -12344,7 +12344,7 @@ bhkPackedNiTriStripsShape.cpp:
 	.data       start:0x8325D438 end:0x8325D43C
 	.data       start:0x83320388 end:0x83320394 rename:.bss
 
-bhkPCollisionObject.cpp:
+bshavok/bhkPCollisionObject.cpp:
 	.rdata      start:0x8210A660 end:0x8210A6F1
 	.pdata      start:0x8220E170 end:0x8220E198
 	.text       start:0x82B3D470 end:0x82B3D8F4
@@ -12353,7 +12353,7 @@ bhkPCollisionObject.cpp:
 	.data       start:0x8325CE24 end:0x8325CE28
 	.data       start:0x8332026C end:0x83320278 rename:.bss
 
-bhkPhantom.cpp:
+bshavok/bhkPhantom.cpp:
 	.rdata      start:0x8210C294 end:0x8210C2DB
 	.pdata      start:0x8220E968 end:0x8220E988
 	.text       start:0x82B51BB8 end:0x82B51D6C
@@ -12361,12 +12361,12 @@ bhkPhantom.cpp:
 	.data       start:0x8321EF5C end:0x8321EF60 rename:.CRT$XCU
 	.data       start:0x833202E8 end:0x833202F4 rename:.bss
 
-bhkPhantomOverlapListener.cpp:
+bshavok/bhkPhantomOverlapListener.cpp:
 	.pdata      start:0x8220FE08 end:0x8220FE10
 	.text       start:0x82B7D3D8 end:0x82B7D42C
 	.data       start:0x83320538 end:0x8332053C rename:.bss
 
-bhkPlaneShape.cpp:
+bshavok/bhkPlaneShape.cpp:
 	.rdata      start:0x82111620 end:0x82111885
 	.pdata      start:0x82210800 end:0x82210868
 	.text       start:0x82B8B7D8 end:0x82B8C384
@@ -12375,7 +12375,7 @@ bhkPlaneShape.cpp:
 	.data       start:0x8325DE2C end:0x8325DE30
 	.data       start:0x83320658 end:0x83320664 rename:.bss
 
-bhkPointToPathConstraint.cpp:
+bshavok/bhkPointToPathConstraint.cpp:
 	.rdata      start:0x8211C580 end:0x8211C5E1
 	.pdata      start:0x82215528 end:0x82215550
 	.text       start:0x82C7CC98 end:0x82C7CF88
@@ -12383,7 +12383,7 @@ bhkPointToPathConstraint.cpp:
 	.data       start:0x8321F298 end:0x8321F29C rename:.CRT$XCU
 	.data       start:0x83321954 end:0x83321960 rename:.bss
 
-bhkPoseArray.cpp:
+bshavok/bhkPoseArray.cpp:
 	.rdata      start:0x8210F6B8 end:0x8210F7B5
 	.pdata      start:0x8220FFF8 end:0x82210050
 	.text       start:0x82B7FE20 end:0x82B805EC
@@ -12391,7 +12391,7 @@ bhkPoseArray.cpp:
 	.data       start:0x8321F034 end:0x8321F038 rename:.CRT$XCU
 	.data       start:0x8332056C end:0x83320574 rename:.bss
 
-bhkPositionConstraintMotor.cpp:
+bshavok/bhkPositionConstraintMotor.cpp:
 	.rdata      start:0x82115ED8 end:0x82115F97
 	.pdata      start:0x82212860 end:0x82212880
 	.text       start:0x82BFA418 end:0x82BFA5E4
@@ -12399,7 +12399,7 @@ bhkPositionConstraintMotor.cpp:
 	.data       start:0x8321F110 end:0x8321F114 rename:.CRT$XCU
 	.data       start:0x83320A40 end:0x83320A48 rename:.bss
 
-bhkPrismaticConstraint.cpp:
+bshavok/bhkPrismaticConstraint.cpp:
 	.rdata      start:0x82110800 end:0x821109A8
 	.pdata      start:0x82210488 end:0x822104E8
 	.text       start:0x82B86578 end:0x82B86D50
@@ -12407,7 +12407,7 @@ bhkPrismaticConstraint.cpp:
 	.data       start:0x8321F064 end:0x8321F068 rename:.CRT$XCU
 	.data       start:0x833205F4 end:0x83320600 rename:.bss
 
-bhkRagdollConstraint.cpp:
+bshavok/bhkRagdollConstraint.cpp:
 	.rdata      start:0x82110720 end:0x821107FF
 	.pdata      start:0x82210430 end:0x82210488
 	.text       start:0x82B85828 end:0x82B86578
@@ -12415,7 +12415,7 @@ bhkRagdollConstraint.cpp:
 	.data       start:0x8321F060 end:0x8321F064 rename:.CRT$XCU
 	.data       start:0x833205E8 end:0x833205F4 rename:.bss
 
-bhkRagdollController.cpp:
+bshavok/bhkRagdollController.cpp:
 	.rdata      start:0x82108320 end:0x82108EDC
 	.pdata      start:0x8220D830 end:0x8220DAF0
 	.pdata      start:0x82240750 end:0x822408B8
@@ -12427,7 +12427,7 @@ bhkRagdollController.cpp:
 	.data       start:0x8325C6C8 end:0x8325C8FC
 	.data       start:0x8331FECC end:0x8331FED4 rename:.bss
 
-bhkRagdollLimitsConstraint.cpp:
+bshavok/bhkRagdollLimitsConstraint.cpp:
 	.rdata      start:0x82110518 end:0x8211071D
 	.pdata      start:0x822103D8 end:0x82210430
 	.text       start:0x82B850F8 end:0x82B85828
@@ -12435,7 +12435,7 @@ bhkRagdollLimitsConstraint.cpp:
 	.data       start:0x8321F05C end:0x8321F060 rename:.CRT$XCU
 	.data       start:0x833205DC end:0x833205E8 rename:.bss
 
-bhkRagdollPenetrationUtil.cpp:
+bshavok/bhkRagdollPenetrationUtil.cpp:
 	.rdata      start:0x8210D304 end:0x8210D4D0
 	.pdata      start:0x8220EFE0 end:0x8220F088
 	.pdata      start:0x822408D8 end:0x822408F0
@@ -12445,7 +12445,7 @@ bhkRagdollPenetrationUtil.cpp:
 	.data       start:0x8321EFA8 end:0x8321EFB4 rename:.CRT$XCU
 	.data       start:0x8325D85C end:0x8325D880
 
-bhkRagdollTemplate.cpp:
+bshavok/bhkRagdollTemplate.cpp:
 	.rdata      start:0x8210E4F4 end:0x8210EAC1
 	.pdata      start:0x8220F9E0 end:0x8220FAF0
 	.text       start:0x82B75288 end:0x82B76E84
@@ -12454,7 +12454,7 @@ bhkRagdollTemplate.cpp:
 	.data       start:0x8325DB50 end:0x8325DB54
 	.data       start:0x833204D8 end:0x833204EC rename:.bss
 
-bhkRefObject.cpp:
+bshavok/bhkRefObject.cpp:
 	.rdata      start:0x8210A220 end:0x8210A315
 	.pdata      start:0x8220E018 end:0x8220E048
 	.text       start:0x82B3B4F8 end:0x82B3B81C
@@ -12462,7 +12462,7 @@ bhkRefObject.cpp:
 	.data       start:0x8321EF10 end:0x8321EF14 rename:.CRT$XCU
 	.data       start:0x8332020C end:0x83320214 rename:.bss
 
-bhkRigidBody.cpp:
+bshavok/bhkRigidBody.cpp:
 	.rdata      start:0x8210AAF4 end:0x8210AD69
 	.pdata      start:0x8220E260 end:0x8220E3C8
 	.text       start:0x82B3F218 end:0x82B42D44
@@ -12471,7 +12471,7 @@ bhkRigidBody.cpp:
 	.data       start:0x8325CE2C end:0x8325CE34
 	.data       start:0x83320294 end:0x833202C4 rename:.bss
 
-bhkRigidBodyT.cpp:
+bshavok/bhkRigidBodyT.cpp:
 	.rdata      start:0x8210DD80 end:0x8210DF3E
 	.pdata      start:0x8220F610 end:0x8220F6A8
 	.text       start:0x82B6C858 end:0x82B6D62C
@@ -12480,7 +12480,7 @@ bhkRigidBodyT.cpp:
 	.data       start:0x8325DAC0 end:0x8325DAC4
 	.data       start:0x83320490 end:0x833204A0 rename:.bss
 
-bhkSerializable.cpp:
+bshavok/bhkSerializable.cpp:
 	.rdata      start:0x8210A318 end:0x8210A368
 	.pdata      start:0x8220E048 end:0x8220E0A0
 	.pdata      start:0x822408C8 end:0x822408D0
@@ -12490,7 +12490,7 @@ bhkSerializable.cpp:
 	.data       start:0x8321EF14 end:0x8321EF1C rename:.CRT$XCU
 	.data       start:0x83320214 end:0x83320244 rename:.bss
 
-bhkShape.cpp:
+bshavok/bhkShape.cpp:
 	.rdata      start:0x82109FB4 end:0x8210A189
 	.pdata      start:0x8220DF50 end:0x8220DFA0
 	.text       start:0x82B39ED0 end:0x82B3A6A4
@@ -12499,7 +12499,7 @@ bhkShape.cpp:
 	.data       start:0x8325CBC0 end:0x8325CE08
 	.data       start:0x833201F0 end:0x83320200 rename:.bss
 
-bhkShapeCollection.cpp:
+bshavok/bhkShapeCollection.cpp:
 	.rdata      start:0x821132D8 end:0x8211332F
 	.pdata      start:0x82211198 end:0x822111B8
 	.text       start:0x82BA9790 end:0x82BA9A74
@@ -12507,7 +12507,7 @@ bhkShapeCollection.cpp:
 	.data       start:0x8321F0B4 end:0x8321F0B8 rename:.CRT$XCU
 	.data       start:0x833206F0 end:0x833206FC rename:.bss
 
-bhkShapePhantom.cpp:
+bshavok/bhkShapePhantom.cpp:
 	.rdata      start:0x8210C448 end:0x8210C4A8
 	.pdata      start:0x8220EA70 end:0x8220EAA8
 	.pdata      start:0x822408D0 end:0x822408D8
@@ -12518,7 +12518,7 @@ bhkShapePhantom.cpp:
 	.data       start:0x8325D39C end:0x8325D3A0
 	.data       start:0x8332030C end:0x83320340 rename:.bss
 
-bhkSimpleShapePhantom.cpp:
+bshavok/bhkSimpleShapePhantom.cpp:
 	.rdata      start:0x8210C538 end:0x8210C5F7
 	.pdata      start:0x8220EAD0 end:0x8220EB10
 	.text       start:0x82B54090 end:0x82B54654
@@ -12526,7 +12526,7 @@ bhkSimpleShapePhantom.cpp:
 	.data       start:0x8321EF70 end:0x8321EF74 rename:.CRT$XCU
 	.data       start:0x83320340 end:0x8332034C rename:.bss
 
-bhkSPCollisionObject.cpp:
+bshavok/bhkSPCollisionObject.cpp:
 	.rdata      start:0x8210DF6C end:0x8210DFFA
 	.pdata      start:0x8220F7D0 end:0x8220F7F8
 	.text       start:0x82B71E58 end:0x82B7214C
@@ -12535,7 +12535,7 @@ bhkSPCollisionObject.cpp:
 	.data       start:0x8325DAE0 end:0x8325DAE4
 	.data       start:0x833204A0 end:0x833204AC rename:.bss
 
-bhkSphereRepShape.cpp:
+bshavok/bhkSphereRepShape.cpp:
 	.rdata      start:0x8210C2E0 end:0x8210C336
 	.pdata      start:0x8220E988 end:0x8220E998
 	.text       start:0x82B51D70 end:0x82B51E64
@@ -12543,7 +12543,7 @@ bhkSphereRepShape.cpp:
 	.data       start:0x8321EF60 end:0x8321EF64 rename:.CRT$XCU
 	.data       start:0x833202F4 end:0x83320300 rename:.bss
 
-bhkSphereShape.cpp:
+bshavok/bhkSphereShape.cpp:
 	.rdata      start:0x8210C690 end:0x8210C72C
 	.pdata      start:0x8220EB70 end:0x8220EBB8
 	.text       start:0x82B55050 end:0x82B55554
@@ -12553,7 +12553,7 @@ bhkSphereShape.cpp:
 	.data       start:0x8325D3F0 end:0x8325D3F4
 	.data       start:0x83320358 end:0x83320370 rename:.bss
 
-bhkSpringAction.cpp:
+bshavok/bhkSpringAction.cpp:
 	.rdata      start:0x8210F9E8 end:0x8210FC31
 	.pdata      start:0x82210110 end:0x82210180
 	.text       start:0x82B81628 end:0x82B820B4
@@ -12561,7 +12561,7 @@ bhkSpringAction.cpp:
 	.data       start:0x8321F040 end:0x8321F044 rename:.CRT$XCU
 	.data       start:0x83320588 end:0x83320594 rename:.bss
 
-bhkSpringDamperConstraintMotor.cpp:
+bshavok/bhkSpringDamperConstraintMotor.cpp:
 	.rdata      start:0x82116058 end:0x8211611F
 	.pdata      start:0x82212898 end:0x822128C0
 	.text       start:0x82BFA7C0 end:0x82BFA9CC
@@ -12569,7 +12569,7 @@ bhkSpringDamperConstraintMotor.cpp:
 	.data       start:0x8321F118 end:0x8321F11C rename:.CRT$XCU
 	.data       start:0x83320A50 end:0x83320A58 rename:.bss
 
-bhkStiffSpringConstraint.cpp:
+bshavok/bhkStiffSpringConstraint.cpp:
 	.rdata      start:0x82110458 end:0x82110516
 	.pdata      start:0x82210388 end:0x822103D8
 	.text       start:0x82B84B90 end:0x82B850F8
@@ -12577,12 +12577,12 @@ bhkStiffSpringConstraint.cpp:
 	.data       start:0x8321F058 end:0x8321F05C rename:.CRT$XCU
 	.data       start:0x833205D0 end:0x833205DC rename:.bss
 
-bhkStream.cpp:
+bshavok/bhkStream.cpp:
 	.rdata      start:0x82113738 end:0x82113771
 	.pdata      start:0x82211378 end:0x822113C8
 	.text       start:0x82BB4870 end:0x82BB51BC
 
-bhkTransformShape.cpp:
+bshavok/bhkTransformShape.cpp:
 	.rdata      start:0x8210E0D0 end:0x8210E1A3
 	.pdata      start:0x8220F858 end:0x8220F8F8
 	.text       start:0x82B72B38 end:0x82B73A64
@@ -12591,7 +12591,7 @@ bhkTransformShape.cpp:
 	.data       start:0x8325DAE8 end:0x8325DAEC
 	.data       start:0x833204B8 end:0x833204C4 rename:.bss
 
-bhkTriangleShape.cpp:
+bshavok/bhkTriangleShape.cpp:
 	.rdata      start:0x821114A0 end:0x8211161E
 	.pdata      start:0x82210798 end:0x82210800
 	.text       start:0x82B8AD30 end:0x82B8B7D4
@@ -12599,7 +12599,7 @@ bhkTriangleShape.cpp:
 	.data       start:0x8321F084 end:0x8321F088 rename:.CRT$XCU
 	.data       start:0x8332064C end:0x83320658 rename:.bss
 
-bhkTriSampledHeightFieldBvTreeShape.cpp:
+bshavok/bhkTriSampledHeightFieldBvTreeShape.cpp:
 	.rdata      start:0x8210DAC4 end:0x8210DBC4
 	.pdata      start:0x8220F3D8 end:0x8220F440
 	.text       start:0x82B68A80 end:0x82B696AC
@@ -12608,7 +12608,7 @@ bhkTriSampledHeightFieldBvTreeShape.cpp:
 	.data       start:0x8325D9D0 end:0x8325D9F0
 	.data       start:0x83320420 end:0x8332042C rename:.bss
 
-bhkUnaryAction.cpp:
+bshavok/bhkUnaryAction.cpp:
 	.rdata      start:0x8210A420 end:0x8210A4C7
 	.pdata      start:0x8220E0D0 end:0x8220E120
 	.text       start:0x82B3C390 end:0x82B3C9F4
@@ -12616,7 +12616,7 @@ bhkUnaryAction.cpp:
 	.data       start:0x8321EF20 end:0x8321EF24 rename:.CRT$XCU
 	.data       start:0x83320250 end:0x8332025C rename:.bss
 
-bhkUtilFunctions.cpp:
+bshavok/bhkUtilFunctions.cpp:
 	.rdata      start:0x8210977C end:0x82109A85
 	.pdata      start:0x8220DD40 end:0x8220DE48
 	.pdata      start:0x822408C0 end:0x822408C8
@@ -12627,7 +12627,7 @@ bhkUtilFunctions.cpp:
 	.data       start:0x8325C97C end:0x8325C980
 	.data       start:0x8331FF28 end:0x8331FF58 rename:.bss
 
-bhkVelocityConstraintMotor.cpp:
+bshavok/bhkVelocityConstraintMotor.cpp:
 	.rdata      start:0x82115F98 end:0x82116057
 	.pdata      start:0x82212880 end:0x82212898
 	.text       start:0x82BFA5E8 end:0x82BFA7BC
@@ -12635,16 +12635,16 @@ bhkVelocityConstraintMotor.cpp:
 	.data       start:0x8321F114 end:0x8321F118 rename:.CRT$XCU
 	.data       start:0x83320A48 end:0x83320A50 rename:.bss
 
-bhkWaterListener.cpp:
+bshavok/bhkWaterListener.cpp:
 	.rdata      start:0x8210DF40 end:0x8210DF6C
 	.text       start:0x82B71E30 end:0x82B71E58
 
-bhkWaterPhantomCallbackShape.cpp:
+bshavok/bhkWaterPhantomCallbackShape.cpp:
 	.rdata      start:0x8210C730 end:0x8210C77C
 	.pdata      start:0x8220EBB8 end:0x8220EBD0
 	.text       start:0x82B55558 end:0x82B5576C
 
-bhkWheelConstraint.cpp:
+bshavok/bhkWheelConstraint.cpp:
 	.rdata      start:0x821102C0 end:0x82110458
 	.pdata      start:0x82210310 end:0x82210388
 	.text       start:0x82B84348 end:0x82B84B8C
@@ -12652,14 +12652,14 @@ bhkWheelConstraint.cpp:
 	.data       start:0x8321F054 end:0x8321F058 rename:.CRT$XCU
 	.data       start:0x833205C4 end:0x833205D0 rename:.bss
 
-bhkWindListener.cpp:
+bshavok/bhkWindListener.cpp:
 	.rdata      start:0x82109748 end:0x8210977C
 	.pdata      start:0x8220DD30 end:0x8220DD40
 	.text       start:0x82B33318 end:0x82B335A0
 	.data       start:0x8325C974 end:0x8325C97C
 	.data       start:0x8331FF20 end:0x8331FF28 rename:.bss
 
-bhkWorld.cpp:
+bshavok/bhkWorld.cpp:
 	.rdata      start:0x82107748 end:0x8210812A
 	.pdata      start:0x8220D450 end:0x8220D750
 	.pdata      start:0x822406D8 end:0x82240748
@@ -12670,7 +12670,7 @@ bhkWorld.cpp:
 	.data       start:0x8325C5B0 end:0x8325C6B4
 	.data       start:0x832BC7C0 end:0x8331FEA8 rename:.bss
 
-bhkWorldM.cpp:
+bshavok/bhkWorldM.cpp:
 	.rdata      start:0x8210B430 end:0x8210B59A
 	.pdata      start:0x8220E6F0 end:0x8220E718
 	.text       start:0x82B4CE20 end:0x82B4D2EC
@@ -12679,7 +12679,7 @@ bhkWorldM.cpp:
 	.data       start:0x8325D1C8 end:0x8325D1CC
 	.data       start:0x833202CC end:0x833202D8 rename:.bss
 
-bhkWorldObject.cpp:
+bshavok/bhkWorldObject.cpp:
 	.rdata      start:0x8210A18C end:0x8210A21A
 	.pdata      start:0x8220DFA0 end:0x8220E018
 	.text       start:0x82B3A6A8 end:0x82B3B4F8
@@ -12687,7 +12687,7 @@ bhkWorldObject.cpp:
 	.data       start:0x8321EF0C end:0x8321EF10 rename:.CRT$XCU
 	.data       start:0x83320200 end:0x8332020C rename:.bss
 
-BSHavokPCH.cpp:
+bshavok/BSHavokPCH.cpp:
 	.rdata      start:0x8211CA50 end:0x8211D660
 	.text       start:0x831D2C68 end:0x831D2CF0 rename:.text$yc
 	.data       start:0x8321F2AC end:0x8321F2B8 rename:.CRT$XCU

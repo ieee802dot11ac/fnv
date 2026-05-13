@@ -12694,11 +12694,11 @@ bshavok/BSHavokPCH.cpp:
 	.data       start:0x83262BD0 end:0x83262BF0
 	.data       start:0x833219CC end:0x833219D8 rename:.bss
 
-hkBSHeightFieldShape.cpp:
+bshavok/hkBSHeightFieldShape.cpp:
 	.text       start:0x82B696B0 end:0x82B69764
 	.data       start:0x8325D9F0 end:0x8325DA00
 
-hkLiquidAction.cpp:
+bshavok/hkLiquidAction.cpp:
 	.rdata      start:0x82115E44 end:0x82115ED3
 	.pdata      start:0x82212830 end:0x82212860
 	.pdata      start:0x82240978 end:0x82240988
@@ -12707,7 +12707,7 @@ hkLiquidAction.cpp:
 	.data       start:0x8321F108 end:0x8321F110 rename:.CRT$XCU
 	.data       start:0x833209F8 end:0x83320A40 rename:.bss
 
-hkNiTriStripsShape.cpp:
+bshavok/hkNiTriStripsShape.cpp:
 	.rdata      start:0x8210C77C end:0x8210C884
 	.pdata      start:0x8220EBE0 end:0x8220EC50
 	.text       start:0x82B55838 end:0x82B5664C
@@ -12716,16 +12716,16 @@ hkNiTriStripsShape.cpp:
 	.data       start:0x8325D3F4 end:0x8325D3F8
 	.data       start:0x83320370 end:0x83320374 rename:.bss
 
-hkNormalTriangleShape.cpp:
+bshavok/hkNormalTriangleShape.cpp:
 	.pdata      start:0x82212370 end:0x82212378
 	.text       start:0x82BEC2E8 end:0x82BEC3D0
 
-hkOrientHingedBodyAction.cpp:
+bshavok/hkOrientHingedBodyAction.cpp:
 	.rdata      start:0x82115BC0 end:0x82115C28
 	.pdata      start:0x82212648 end:0x82212660
 	.text       start:0x82BF77D0 end:0x82BF7C38
 
-hkPackedNiTriStripsShape.cpp:
+bshavok/hkPackedNiTriStripsShape.cpp:
 	.rdata      start:0x8210C888 end:0x8210CA00
 	.pdata      start:0x8220EC50 end:0x8220ECB0
 	.text       start:0x82B56650 end:0x82B57608
@@ -12734,11 +12734,11 @@ hkPackedNiTriStripsShape.cpp:
 	.data       start:0x8325D3F8 end:0x8325D438
 	.data       start:0x83320374 end:0x8332037C rename:.bss
 
-hkScaledMoppBvTreeShape.cpp:
+bshavok/hkScaledMoppBvTreeShape.cpp:
 	.pdata      start:0x82213DF8 end:0x82213E00
 	.text       start:0x82C292C0 end:0x82C2930C
 
-WeaponObject.cpp:
+bshavok/WeaponObject.cpp:
 	.rdata      start:0x8210A6F4 end:0x8210A96D
 	.pdata      start:0x8220E198 end:0x8220E228
 	.text       start:0x82B3D8F8 end:0x82B3EDD4
@@ -12748,7 +12748,7 @@ WeaponObject.cpp:
 	.data       start:0x8325CE28 end:0x8325CE2C
 	.data       start:0x83320278 end:0x8332028C rename:.bss
 
-hkpVehicleInstanceClass.cpp:
+lib/havok/physics/vehicle/hkpVehicleInstanceClass.cpp:
 	.rdata      start:0x82126608 end:0x82126CD8
 	.rdata      start:0x821DE778 end:0x821DE7D0 rename:.rdata$r
 	.pdata      start:0x82217308 end:0x82217320
@@ -12759,12 +12759,12 @@ hkpVehicleInstanceClass.cpp:
 	.data       start:0x83265888 end:0x832658EF
 	.data       start:0x83323030 end:0x833230A8 rename:.bss
 
-hkpVehicleInstance.cpp:
+lib/havok/physics/vehicle/hkpVehicleInstance.cpp:
 	.rdata      start:0x821331EC end:0x8213323C
 	.pdata      start:0x82218768 end:0x82218858
 	.text       start:0x82D30D20 end:0x82D33D38
 
-hkpVehicleDataClass.cpp:
+lib/havok/physics/vehicle/hkpVehicleDataClass.cpp:
 	.rdata      start:0x8212737C end:0x821278B7
 	.rdata      start:0x821DE8F0 end:0x821DE940 rename:.rdata$r
 	.pdata      start:0x82217348 end:0x82217358
@@ -12775,11 +12775,11 @@ hkpVehicleDataClass.cpp:
 	.data       start:0x83265B98 end:0x83265C1A
 	.data       start:0x83323228 end:0x83323288 rename:.bss
 
-hkpVehicleData.cpp:
+lib/havok/physics/vehicle/hkpVehicleData.cpp:
 	.pdata      start:0x82218868 end:0x82218878
 	.text       start:0x82D34008 end:0x82D3449C
 
-hkpRejectChassisListenerClass.cpp:
+lib/havok/physics/vehicle/wheelcollide/rejectchassislistener/hkpRejectChassisListenerClass.cpp:
 	.rdata      start:0x8212DCDC end:0x8212DD15
 	.pdata      start:0x82241478 end:0x82241480
 	.text       start:0x82CEBDD0 end:0x82CEBE34
@@ -12788,10 +12788,10 @@ hkpRejectChassisListenerClass.cpp:
 	.data       start:0x8326821C end:0x83268234
 	.data       start:0x83324C08 end:0x83324C38 rename:.bss
 
-hkpRejectChassisListener.cpp:
+lib/havok/physics/vehicle/wheelcollide/rejectchassislistener/hkpRejectChassisListener.cpp:
 	.text       start:0x82D2F978 end:0x82D2F9C8
 
-hkpVehicleRayCastWheelCollideClass.cpp:
+lib/havok/physics/vehicle/wheelcollide/raycast/hkpVehicleRayCastWheelCollideClass.cpp:
 	.rdata      start:0x8212D388 end:0x8212D456
 	.rdata      start:0x821DF048 end:0x821DF09C rename:.rdata$r
 	.pdata      start:0x82217540 end:0x82217550
@@ -12802,12 +12802,12 @@ hkpVehicleRayCastWheelCollideClass.cpp:
 	.data       start:0x83267DC4 end:0x83267E08
 	.data       start:0x833249F8 end:0x83324A28 rename:.bss
 
-hkpVehicleRayCastWheelCollide.cpp:
+lib/havok/physics/vehicle/wheelcollide/raycast/hkpVehicleRayCastWheelCollide.cpp:
 	.pdata      start:0x82218B98 end:0x82218BE0
 	.text       start:0x82D3E1E8 end:0x82D3EB48
 	.data       start:0x8326A1B0 end:0x8326A1C0
 
-hkpVehicleLinearCastWheelCollideClass.cpp:
+lib/havok/physics/vehicle/wheelcollide/linearcast/hkpVehicleLinearCastWheelCollideClass.cpp:
 	.rdata      start:0x821263C0 end:0x82126605
 	.rdata      start:0x821DE650 end:0x821DE778 rename:.rdata$r
 	.pdata      start:0x822172F0 end:0x82217308
@@ -12818,12 +12818,12 @@ hkpVehicleLinearCastWheelCollideClass.cpp:
 	.data       start:0x8326579C end:0x83265886
 	.data       start:0x83322FD0 end:0x83323030 rename:.bss
 
-hkpVehicleLinearCastWheelCollide.cpp:
+lib/havok/physics/vehicle/wheelcollide/linearcast/hkpVehicleLinearCastWheelCollide.cpp:
 	.pdata      start:0x822186D0 end:0x82218768
 	.text       start:0x82D2F9C8 end:0x82D30D20
 	.data       start:0x8326A190 end:0x8326A1A0
 
-hkpVehicleWheelCollideClass.cpp:
+lib/havok/physics/vehicle/wheelcollide/hkpVehicleWheelCollideClass.cpp:
 	.rdata      start:0x82123610 end:0x8212377B
 	.pdata      start:0x82240D80 end:0x82240D88
 	.text       start:0x831D4988 end:0x831D4A04 rename:.text$yc
@@ -12831,7 +12831,7 @@ hkpVehicleWheelCollideClass.cpp:
 	.data       start:0x83264C28 end:0x83264C2C
 	.data       start:0x83322478 end:0x833224A8 rename:.bss
 
-hkpVehicleDefaultVelocityDamperClass.cpp:
+lib/havok/physics/vehicle/velocitydamper/default/hkpVehicleDefaultVelocityDamperClass.cpp:
 	.rdata      start:0x8212D720 end:0x8212D7DC
 	.rdata      start:0x821DF2FC end:0x821DF38C rename:.rdata$r
 	.pdata      start:0x82241450 end:0x82241458
@@ -12841,18 +12841,18 @@ hkpVehicleDefaultVelocityDamperClass.cpp:
 	.data       start:0x83268010 end:0x83268080
 	.data       start:0x83324B18 end:0x83324B48 rename:.bss
 
-hkpVehicleDefaultVelocityDamper.cpp:
+lib/havok/physics/vehicle/velocitydamper/default/hkpVehicleDefaultVelocityDamper.cpp:
 	.pdata      start:0x82218C78 end:0x82218C80
 	.text       start:0x82D403D0 end:0x82D404A0
 
-hkpVehicleVelocityDamperClass.cpp:
+lib/havok/physics/vehicle/velocitydamper/hkpVehicleVelocityDamperClass.cpp:
 	.rdata      start:0x8212377C end:0x82123795
 	.pdata      start:0x82240D88 end:0x82240D90
 	.text       start:0x831D4A08 end:0x831D4A70 rename:.text$yc
 	.data       start:0x8321F3DC end:0x8321F3E0 rename:.CRT$XCU
 	.data       start:0x833224A8 end:0x833224D8 rename:.bss
 
-hkpTyremarksInfoClass.cpp:
+lib/havok/physics/vehicle/tyremarks/hkpTyremarksInfoClass.cpp:
 	.rdata      start:0x821278B8 end:0x82127A59
 	.rdata      start:0x821DE940 end:0x821DE9E0 rename:.rdata$r
 	.pdata      start:0x82217358 end:0x82217370
@@ -12863,12 +12863,12 @@ hkpTyremarksInfoClass.cpp:
 	.data       start:0x83265C1C end:0x83265CC3
 	.data       start:0x83323288 end:0x83323318 rename:.bss
 
-hkpTyremarksInfo.cpp:
+lib/havok/physics/vehicle/tyremarks/hkpTyremarksInfo.cpp:
 	.rdata      start:0x8213323C end:0x82133243
 	.pdata      start:0x82218878 end:0x822188A0
 	.text       start:0x82D344A0 end:0x82D34C54
 
-hkpVehicleDefaultTransmissionClass.cpp:
+lib/havok/physics/vehicle/transmission/default/hkpVehicleDefaultTransmissionClass.cpp:
 	.rdata      start:0x8212D7DC end:0x8212D946
 	.rdata      start:0x821DF38C end:0x821DF41C rename:.rdata$r
 	.pdata      start:0x82217558 end:0x82217568
@@ -12879,19 +12879,19 @@ hkpVehicleDefaultTransmissionClass.cpp:
 	.data       start:0x83268080 end:0x832680EC
 	.data       start:0x83324B48 end:0x83324B78 rename:.bss
 
-hkpVehicleDefaultTransmission.cpp:
+lib/havok/physics/vehicle/transmission/default/hkpVehicleDefaultTransmission.cpp:
 	.rdata      start:0x821338E8 end:0x821338F4
 	.pdata      start:0x82218C80 end:0x82218C98
 	.text       start:0x82D404A0 end:0x82D408AC
 
-hkpVehicleTransmissionClass.cpp:
+lib/havok/physics/vehicle/transmission/hkpVehicleTransmissionClass.cpp:
 	.rdata      start:0x82123798 end:0x821237AF
 	.pdata      start:0x82240D90 end:0x82240D98
 	.text       start:0x831D4A70 end:0x831D4AD8 rename:.text$yc
 	.data       start:0x8321F3E0 end:0x8321F3E4 rename:.CRT$XCU
 	.data       start:0x833224D8 end:0x83322508 rename:.bss
 
-hkpVehicleDefaultSuspensionClass.cpp:
+lib/havok/physics/vehicle/suspension/default/hkpVehicleDefaultSuspensionClass.cpp:
 	.rdata      start:0x82127120 end:0x82127234
 	.rdata      start:0x821DE7D0 end:0x821DE860 rename:.rdata$r
 	.pdata      start:0x82217320 end:0x82217338
@@ -12902,11 +12902,11 @@ hkpVehicleDefaultSuspensionClass.cpp:
 	.data       start:0x83265A14 end:0x83265AE2
 	.data       start:0x83323168 end:0x833231C8 rename:.bss
 
-hkpVehicleDefaultSuspension.cpp:
+lib/havok/physics/vehicle/suspension/default/hkpVehicleDefaultSuspension.cpp:
 	.pdata      start:0x82218858 end:0x82218860
 	.text       start:0x82D33D38 end:0x82D33E2C
 
-hkpVehicleSuspensionClass.cpp:
+lib/havok/physics/vehicle/suspension/hkpVehicleSuspensionClass.cpp:
 	.rdata      start:0x821237B0 end:0x82123895
 	.pdata      start:0x82240D98 end:0x82240DA8
 	.text       start:0x82CE71C8 end:0x82CE71DC
@@ -12915,7 +12915,7 @@ hkpVehicleSuspensionClass.cpp:
 	.data       start:0x83264C2C end:0x83264C81
 	.data       start:0x83322508 end:0x83322568 rename:.bss
 
-hkpVehicleDefaultSteeringClass.cpp:
+lib/havok/physics/vehicle/steering/default/hkpVehicleDefaultSteeringClass.cpp:
 	.rdata      start:0x8212D948 end:0x8212DA02
 	.rdata      start:0x821DF41C end:0x821DF4AC rename:.rdata$r
 	.pdata      start:0x82217568 end:0x82217570
@@ -12926,18 +12926,18 @@ hkpVehicleDefaultSteeringClass.cpp:
 	.data       start:0x832680EC end:0x83268150
 	.data       start:0x83324B78 end:0x83324BA8 rename:.bss
 
-hkpVehicleDefaultSteering.cpp:
+lib/havok/physics/vehicle/steering/default/hkpVehicleDefaultSteering.cpp:
 	.pdata      start:0x82218C98 end:0x82218CA8
 	.text       start:0x82D408B0 end:0x82D40A14
 
-hkpVehicleSteeringClass.cpp:
+lib/havok/physics/vehicle/steering/hkpVehicleSteeringClass.cpp:
 	.rdata      start:0x82123898 end:0x821238AB
 	.pdata      start:0x82240DA8 end:0x82240DB0
 	.text       start:0x831D4BC8 end:0x831D4C30 rename:.text$yc
 	.data       start:0x8321F3EC end:0x8321F3F0 rename:.CRT$XCU
 	.data       start:0x83322568 end:0x83322598 rename:.bss
 
-hkpVehicleRayCastBatchingManagerClass.cpp:
+lib/havok/physics/vehicle/manager/raycastbatchingmanager/hkpVehicleRayCastBatchingManagerClass.cpp:
 	.rdata      start:0x8212D458 end:0x8212D4C5
 	.rdata      start:0x821DF09C end:0x821DF184 rename:.rdata$r
 	.pdata      start:0x82217550 end:0x82217558
@@ -12948,13 +12948,13 @@ hkpVehicleRayCastBatchingManagerClass.cpp:
 	.data       start:0x83267E10 end:0x83267EB3
 	.data       start:0x83324A28 end:0x83324A58 rename:.bss
 
-hkpVehicleRayCastBatchingManager.cpp:
+lib/havok/physics/vehicle/manager/raycastbatchingmanager/hkpVehicleRayCastBatchingManager.cpp:
 	.rdata      start:0x8213388C end:0x821338C5
 	.pdata      start:0x82218C28 end:0x82218C38
 	.text       start:0x82D3F1C0 end:0x82D3F804
 	.data       start:0x8326A1D0 end:0x8326A1E0
 
-hkpVehicleLinearCastBatchingManagerClass.cpp:
+lib/havok/physics/vehicle/manager/linearcastbatchingmanager/hkpVehicleLinearCastBatchingManagerClass.cpp:
 	.rdata      start:0x8212D508 end:0x8212D55C
 	.rdata      start:0x821DF184 end:0x821DF1DC rename:.rdata$r
 	.pdata      start:0x82241438 end:0x82241440
@@ -12964,13 +12964,13 @@ hkpVehicleLinearCastBatchingManagerClass.cpp:
 	.data       start:0x83267ED0 end:0x83267F2A
 	.data       start:0x83324A88 end:0x83324AB8 rename:.bss
 
-hkpVehicleLinearCastBatchingManager.cpp:
+lib/havok/physics/vehicle/manager/linearcastbatchingmanager/hkpVehicleLinearCastBatchingManager.cpp:
 	.rdata      start:0x821338C8 end:0x821338E4
 	.pdata      start:0x82218C38 end:0x82218C60
 	.text       start:0x82D3F808 end:0x82D3FF10
 	.data       start:0x8326A1E0 end:0x8326A1F0
 
-hkpVehicleManagerClass.cpp:
+lib/havok/physics/vehicle/manager/hkpVehicleManagerClass.cpp:
 	.rdata      start:0x8212D4C8 end:0x8212D506
 	.pdata      start:0x82241430 end:0x82241438
 	.text       start:0x82CEB948 end:0x82CEB994
@@ -12979,24 +12979,24 @@ hkpVehicleManagerClass.cpp:
 	.data       start:0x83267EB4 end:0x83267ECC
 	.data       start:0x83324A58 end:0x83324A88 rename:.bss
 
-hkpVehicleManager.cpp:
+lib/havok/physics/vehicle/manager/hkpVehicleManager.cpp:
 	.pdata      start:0x82218BE0 end:0x82218C08
 	.text       start:0x82D3EB48 end:0x82D3EEE8
 
-hkpVehicleCastBatchingManagerClass.cpp:
+lib/havok/physics/vehicle/manager/hkpVehicleCastBatchingManagerClass.cpp:
 	.rdata      start:0x821238F4 end:0x8212393A
 	.pdata      start:0x82240DC8 end:0x82240DD0
 	.text       start:0x831D4D68 end:0x831D4DE4 rename:.text$yc
 	.data       start:0x8321F3FC end:0x8321F400 rename:.CRT$XCU
 	.data       start:0x83322628 end:0x83322658 rename:.bss
 
-hkpVehicleCastBatchingManager.cpp:
+lib/havok/physics/vehicle/manager/hkpVehicleCastBatchingManager.cpp:
 	.rdata      start:0x82133870 end:0x8213388A
 	.pdata      start:0x82218C08 end:0x82218C28
 	.text       start:0x82D3EEE8 end:0x82D3F1C0
 	.data       start:0x8326A1C0 end:0x8326A1D0
 
-hkpVehicleFrictionClass.cpp:
+lib/havok/physics/vehicle/friction/hkpVehicleFrictionClass.cpp:
 	.rdata      start:0x82126CD8 end:0x8212711D
 	.pdata      start:0x82240FA0 end:0x82240FC0
 	.text       start:0x82CE8090 end:0x82CE80F4
@@ -13005,7 +13005,7 @@ hkpVehicleFrictionClass.cpp:
 	.data       start:0x832658F0 end:0x83265A13
 	.data       start:0x833230A8 end:0x83323168 rename:.bss
 
-hkpVehicleDefaultEngineClass.cpp:
+lib/havok/physics/vehicle/engine/default/hkpVehicleDefaultEngineClass.cpp:
 	.rdata      start:0x8212DA04 end:0x8212DBDC
 	.rdata      start:0x821DF4AC end:0x821DF53C rename:.rdata$r
 	.pdata      start:0x82241468 end:0x82241470
@@ -13015,18 +13015,18 @@ hkpVehicleDefaultEngineClass.cpp:
 	.data       start:0x83268150 end:0x832681B0
 	.data       start:0x83324BA8 end:0x83324BD8 rename:.bss
 
-hkpVehicleDefaultEngine.cpp:
+lib/havok/physics/vehicle/engine/default/hkpVehicleDefaultEngine.cpp:
 	.rdata      start:0x821338F4 end:0x821338F8
 	.text       start:0x82D40A18 end:0x82D40C00
 
-hkpVehicleEngineClass.cpp:
+lib/havok/physics/vehicle/engine/hkpVehicleEngineClass.cpp:
 	.rdata      start:0x821238AC end:0x821238BD
 	.pdata      start:0x82240DB0 end:0x82240DB8
 	.text       start:0x831D4C30 end:0x831D4C98 rename:.text$yc
 	.data       start:0x8321F3F0 end:0x8321F3F4 rename:.CRT$XCU
 	.data       start:0x83322598 end:0x833225C8 rename:.bss
 
-hkpVehicleDefaultAnalogDriverInputClass.cpp:
+lib/havok/physics/vehicle/driverinput/default/hkpVehicleDefaultAnalogDriverInputClass.cpp:
 	.rdata      start:0x8212D55C end:0x8212D71F
 	.rdata      start:0x821DF1DC end:0x821DF2FC rename:.rdata$r
 	.pdata      start:0x82241440 end:0x82241450
@@ -13036,19 +13036,19 @@ hkpVehicleDefaultAnalogDriverInputClass.cpp:
 	.data       start:0x83267F2C end:0x83268010
 	.data       start:0x83324AB8 end:0x83324B18 rename:.bss
 
-hkpVehicleDefaultAnalogDriverInput.cpp:
+lib/havok/physics/vehicle/driverinput/default/hkpVehicleDefaultAnalogDriverInput.cpp:
 	.rdata      start:0x821338E4 end:0x821338E8
 	.pdata      start:0x82218C60 end:0x82218C78
 	.text       start:0x82D3FF10 end:0x82D403D0
 
-hkpVehicleDriverInputClass.cpp:
+lib/havok/physics/vehicle/driverinput/hkpVehicleDriverInputClass.cpp:
 	.rdata      start:0x821238C0 end:0x821238F2
 	.pdata      start:0x82240DB8 end:0x82240DC8
 	.text       start:0x831D4C98 end:0x831D4D68 rename:.text$yc
 	.data       start:0x8321F3F4 end:0x8321F3FC rename:.CRT$XCU
 	.data       start:0x833225C8 end:0x83322628 rename:.bss
 
-hkpVehicleDefaultBrakeClass.cpp:
+lib/havok/physics/vehicle/brake/default/hkpVehicleDefaultBrakeClass.cpp:
 	.rdata      start:0x82127234 end:0x8212737B
 	.rdata      start:0x821DE860 end:0x821DE8F0 rename:.rdata$r
 	.pdata      start:0x82217338 end:0x82217348
@@ -13059,18 +13059,18 @@ hkpVehicleDefaultBrakeClass.cpp:
 	.data       start:0x83265AE4 end:0x83265B98
 	.data       start:0x833231C8 end:0x83323228 rename:.bss
 
-hkpVehicleDefaultBrake.cpp:
+lib/havok/physics/vehicle/brake/default/hkpVehicleDefaultBrake.cpp:
 	.pdata      start:0x82218860 end:0x82218868
 	.text       start:0x82D33E30 end:0x82D34008
 
-hkpVehicleBrakeClass.cpp:
+lib/havok/physics/vehicle/brake/hkpVehicleBrakeClass.cpp:
 	.rdata      start:0x8212393C end:0x8212394C
 	.pdata      start:0x82240DD0 end:0x82240DD8
 	.text       start:0x831D4DE8 end:0x831D4E50 rename:.text$yc
 	.data       start:0x8321F400 end:0x8321F404 rename:.CRT$XCU
 	.data       start:0x83322658 end:0x83322688 rename:.bss
 
-hkpVehicleDefaultAerodynamicsClass.cpp:
+lib/havok/physics/vehicle/aerodynamics/default/hkpVehicleDefaultAerodynamicsClass.cpp:
 	.rdata      start:0x8212DBDC end:0x8212DCDA
 	.rdata      start:0x821DF53C end:0x821DF5CC rename:.rdata$r
 	.pdata      start:0x82241470 end:0x82241478
@@ -13080,18 +13080,18 @@ hkpVehicleDefaultAerodynamicsClass.cpp:
 	.data       start:0x832681B0 end:0x8326821C
 	.data       start:0x83324BD8 end:0x83324C08 rename:.bss
 
-hkpVehicleDefaultAerodynamics.cpp:
+lib/havok/physics/vehicle/aerodynamics/default/hkpVehicleDefaultAerodynamics.cpp:
 	.pdata      start:0x82218CA8 end:0x82218CB0
 	.text       start:0x82D40C00 end:0x82D40DF0
 
-hkpVehicleAerodynamicsClass.cpp:
+lib/havok/physics/vehicle/aerodynamics/hkpVehicleAerodynamicsClass.cpp:
 	.rdata      start:0x8212394C end:0x82123963
 	.pdata      start:0x82240DD8 end:0x82240DE0
 	.text       start:0x831D4E50 end:0x831D4EB8 rename:.text$yc
 	.data       start:0x8321F404 end:0x8321F408 rename:.CRT$XCU
 	.data       start:0x83322688 end:0x833226B8 rename:.bss
 
-hkpProjectileGunClass.cpp:
+lib/havok/physics/utilities/weapons/hkpProjectileGunClass.cpp:
 	.rdata      start:0x8212E178 end:0x8212E30D
 	.pdata      start:0x822175A8 end:0x822175B0
 	.pdata      start:0x822414B0 end:0x822414C0
@@ -13101,14 +13101,14 @@ hkpProjectileGunClass.cpp:
 	.data       start:0x832683C8 end:0x8326842F
 	.data       start:0x83324D28 end:0x83324D70 rename:.bss
 
-hkpProjectileGun.cpp:
+lib/havok/physics/utilities/weapons/hkpProjectileGun.cpp:
 	.rdata      start:0x82133920 end:0x821339AC
 	.rdata      start:0x821E165C end:0x821E1770 rename:.rdata$r
 	.pdata      start:0x82218CD0 end:0x82218D70
 	.text       start:0x82D412B0 end:0x82D41EC0
 	.data       start:0x8326A1F0 end:0x8326A20F
 
-hkpMountedBallGunClass.cpp:
+lib/havok/physics/utilities/weapons/hkpMountedBallGunClass.cpp:
 	.rdata      start:0x8212E500 end:0x8212E59A
 	.pdata      start:0x822175D0 end:0x822175D8
 	.pdata      start:0x822414E0 end:0x822414F0
@@ -13118,13 +13118,13 @@ hkpMountedBallGunClass.cpp:
 	.data       start:0x83268430 end:0x83268478
 	.data       start:0x83324E00 end:0x83324E48 rename:.bss
 
-hkpMountedBallGun.cpp:
+lib/havok/physics/utilities/weapons/hkpMountedBallGun.cpp:
 	.rdata      start:0x821339B0 end:0x82133A1F
 	.rdata      start:0x821E1770 end:0x821E1808 rename:.rdata$r
 	.pdata      start:0x82218D70 end:0x82218D98
 	.text       start:0x82D41EC0 end:0x82D42454
 
-hkpGravityGunClass.cpp:
+lib/havok/physics/utilities/weapons/hkpGravityGunClass.cpp:
 	.rdata      start:0x8212E720 end:0x8212EABE
 	.pdata      start:0x822175E8 end:0x822175F0
 	.pdata      start:0x82241508 end:0x82241518
@@ -13134,13 +13134,13 @@ hkpGravityGunClass.cpp:
 	.data       start:0x832684B8 end:0x832685DC
 	.data       start:0x83324EC0 end:0x83324F08 rename:.bss
 
-hkpGravityGun.cpp:
+lib/havok/physics/utilities/weapons/hkpGravityGun.cpp:
 	.rdata      start:0x82133A40 end:0x82133AA4
 	.rdata      start:0x821E1808 end:0x821E185C rename:.rdata$r
 	.pdata      start:0x82218DC8 end:0x82218E20
 	.text       start:0x82D42B28 end:0x82D435F4
 
-hkpFirstPersonGunClass.cpp:
+lib/havok/physics/utilities/weapons/hkpFirstPersonGunClass.cpp:
 	.rdata      start:0x8212EAC0 end:0x8212ED92
 	.pdata      start:0x822175F0 end:0x822175F8
 	.pdata      start:0x82241518 end:0x82241528
@@ -13150,13 +13150,13 @@ hkpFirstPersonGunClass.cpp:
 	.data       start:0x832685E0 end:0x83268690
 	.data       start:0x83324F08 end:0x83324F50 rename:.bss
 
-hkpFirstPersonGun.cpp:
+lib/havok/physics/utilities/weapons/hkpFirstPersonGun.cpp:
 	.rdata      start:0x82133AB0 end:0x82133AF8
 	.rdata      start:0x821E185C end:0x821E1870 rename:.rdata$r
 	.pdata      start:0x82218E20 end:0x82218E48
 	.text       start:0x82D435F8 end:0x82D43B08
 
-hkpBallGunClass.cpp:
+lib/havok/physics/utilities/weapons/hkpBallGunClass.cpp:
 	.rdata      start:0x8212F1AC end:0x8212F413
 	.pdata      start:0x82217640 end:0x82217648
 	.pdata      start:0x82241560 end:0x82241570
@@ -13166,7 +13166,7 @@ hkpBallGunClass.cpp:
 	.data       start:0x832687EC end:0x832688E5
 	.data       start:0x83325088 end:0x833250D0 rename:.bss
 
-hkpBallGun.cpp:
+lib/havok/physics/utilities/weapons/hkpBallGun.cpp:
 	.rdata      start:0x82133B40 end:0x82133B90
 	.rdata      start:0x821E1870 end:0x821E1884 rename:.rdata$r
 	.pdata      start:0x82218EB0 end:0x82218ED8
@@ -13437,7 +13437,7 @@ lib/havok/physics/utilities/visualdebugger/viewer/collide/hkpActiveContactPointV
 	.data       start:0x83261478 end:0x832614A2
 	.data       start:0x83320FAC end:0x83320FB0 rename:.bss
 
-hkpShapeDisplayBuilder.cpp:
+lib/havok/physics/utilities/visualdebugger/viewer/hkpShapeDisplayBuilder.cpp:
 	.rdata      start:0x8211F970 end:0x8211F9DB
 	.rdata      start:0x821DDC84 end:0x821DDD78 rename:.rdata$r
 	.pdata      start:0x82216D20 end:0x82216D60
@@ -13447,14 +13447,14 @@ hkpShapeDisplayBuilder.cpp:
 	.data       start:0x83263900 end:0x832639AE
 	.data       start:0x83321BF0 end:0x83321BF4 rename:.bss
 
-hkpPhysicsContext.cpp:
+lib/havok/physics/utilities/visualdebugger/hkpPhysicsContext.cpp:
 	.rdata      start:0x82112830 end:0x82112958
 	.rdata      start:0x821D68C0 end:0x821D6B68 rename:.rdata$r
 	.pdata      start:0x82210C80 end:0x82210D08
 	.text       start:0x82B931B8 end:0x82B94240
 	.data       start:0x8325DEFC end:0x8325DFA8
 
-hkpSerializedDisplayRbTransformsClass.cpp:
+lib/havok/physics/utilities/serialize/display/hkpSerializedDisplayRbTransformsClass.cpp:
 	.rdata      start:0x82127D50 end:0x82127E41
 	.rdata      start:0x821DE9E0 end:0x821DEA30 rename:.rdata$r
 	.pdata      start:0x82217378 end:0x82217380
@@ -13465,12 +13465,12 @@ hkpSerializedDisplayRbTransformsClass.cpp:
 	.data       start:0x83265EA4 end:0x83265F4C
 	.data       start:0x833233C0 end:0x83323420 rename:.bss
 
-hkpSerializedDisplayRbTransforms.cpp:
+lib/havok/physics/utilities/serialize/display/hkpSerializedDisplayRbTransforms.cpp:
 	.rdata      start:0x82133250 end:0x82133270
 	.pdata      start:0x822188A0 end:0x822188A8
 	.text       start:0x82D34C58 end:0x82D34D24
 
-hkpSerializedDisplayMarkerListClass.cpp:
+lib/havok/physics/utilities/serialize/display/hkpSerializedDisplayMarkerListClass.cpp:
 	.rdata      start:0x8212DFC8 end:0x8212E037
 	.rdata      start:0x821DF5CC end:0x821DF61C rename:.rdata$r
 	.pdata      start:0x82217580 end:0x82217590
@@ -13481,7 +13481,7 @@ hkpSerializedDisplayMarkerListClass.cpp:
 	.data       start:0x8326831C end:0x83268364
 	.data       start:0x83324C80 end:0x83324CB0 rename:.bss
 
-hkpSerializedDisplayMarkerClass.cpp:
+lib/havok/physics/utilities/serialize/display/hkpSerializedDisplayMarkerClass.cpp:
 	.rdata      start:0x8212E040 end:0x8212E0A3
 	.rdata      start:0x821DF61C end:0x821DF66C rename:.rdata$r
 	.pdata      start:0x82241498 end:0x822414A0
@@ -13491,7 +13491,7 @@ hkpSerializedDisplayMarkerClass.cpp:
 	.data       start:0x83268364 end:0x832683A8
 	.data       start:0x83324CB0 end:0x83324CE0 rename:.bss
 
-hkpPhysicsDataClass.cpp:
+lib/havok/physics/utilities/serialize/hkpPhysicsDataClass.cpp:
 	.rdata      start:0x821172D4 end:0x82117350
 	.rdata      start:0x821D9DE4 end:0x821D9E34 rename:.rdata$r
 	.pdata      start:0x82213690 end:0x82213698
@@ -13502,21 +13502,21 @@ hkpPhysicsDataClass.cpp:
 	.data       start:0x83260128 end:0x83260160
 	.data       start:0x83320B4C end:0x83320B7C rename:.bss
 
-hkpPhysicsData.cpp:
+lib/havok/physics/utilities/serialize/hkpPhysicsData.cpp:
 	.rdata      start:0x82118150 end:0x821181E3
 	.rdata      start:0x821DA218 end:0x821DA26C rename:.rdata$r
 	.pdata      start:0x82213870 end:0x822138B8
 	.text       start:0x82C1D7B0 end:0x82C1E588
 	.data       start:0x83260B7C end:0x83260BA7
 
-hkpHavokSnapshot.cpp:
+lib/havok/physics/utilities/serialize/hkpHavokSnapshot.cpp:
 	.rdata      start:0x8210F660 end:0x8210F6B4
 	.rdata      start:0x821D66B4 end:0x821D6744 rename:.rdata$r
 	.pdata      start:0x8220FF78 end:0x8220FFC0
 	.text       start:0x82B7EF98 end:0x82B7F800
 	.data       start:0x8325DDB0 end:0x8325DE23
 
-hkpDisplayBindingDataClass.cpp:
+lib/havok/physics/utilities/serialize/hkpDisplayBindingDataClass.cpp:
 	.rdata      start:0x8212ED94 end:0x8212EF62
 	.rdata      start:0x821DF778 end:0x821DF868 rename:.rdata$r
 	.pdata      start:0x822175F8 end:0x82217620
@@ -13527,7 +13527,7 @@ hkpDisplayBindingDataClass.cpp:
 	.data       start:0x83268690 end:0x83268760
 	.data       start:0x83324F50 end:0x83324FE0 rename:.bss
 
-hkpSerializedAgentNnEntryClass.cpp:
+lib/havok/physics/utilities/dynamics/savecontactpoints/hkpSerializedAgentNnEntryClass.cpp:
 	.rdata      start:0x82127A5C end:0x82127D4E
 	.pdata      start:0x82217370 end:0x82217378
 	.pdata      start:0x82241008 end:0x82241028
@@ -13537,24 +13537,24 @@ hkpSerializedAgentNnEntryClass.cpp:
 	.data       start:0x83265CC8 end:0x83265EA2
 	.data       start:0x83323318 end:0x833233C0 rename:.bss
 
-hkpSerializedAgentNnEntry.cpp:
+lib/havok/physics/utilities/dynamics/savecontactpoints/hkpSerializedAgentNnEntry.cpp:
 	.rdata      start:0x82131E80 end:0x82131EA0
 	.pdata      start:0x82217A60 end:0x82217A70
 	.text       start:0x82CF4E88 end:0x82CF5140
 
-hkpSaveContactPointsUtil.cpp:
+lib/havok/physics/utilities/dynamics/savecontactpoints/hkpSaveContactPointsUtil.cpp:
 	.rdata      start:0x8211EF50 end:0x8211EFA4
 	.rdata      start:0x821DD370 end:0x821DD4A0 rename:.rdata$r
 	.pdata      start:0x82216548 end:0x822165D0
 	.text       start:0x82CB4020 end:0x82CB5E8C
 	.data       start:0x832633F0 end:0x832634B4
 
-hkpSaveContactPointsEndianUtil.cpp:
+lib/havok/physics/utilities/dynamics/savecontactpoints/hkpSaveContactPointsEndianUtil.cpp:
 	.rdata      start:0x82131EA0 end:0x82131EC0
 	.pdata      start:0x82217A70 end:0x82217A88
 	.text       start:0x82CF5140 end:0x82CF58B0
 
-hkpPhysicsSystemWithContactsClass.cpp:
+lib/havok/physics/utilities/dynamics/savecontactpoints/hkpPhysicsSystemWithContactsClass.cpp:
 	.rdata      start:0x8212E310 end:0x8212E375
 	.pdata      start:0x822175B0 end:0x822175C0
 	.pdata      start:0x822414C0 end:0x822414D0
@@ -13563,12 +13563,12 @@ hkpPhysicsSystemWithContactsClass.cpp:
 	.data       start:0x8321F7BC end:0x8321F7C4 rename:.CRT$XCU
 	.data       start:0x83324D70 end:0x83324DB8 rename:.bss
 
-hkpPhysicsSystemWithContacts.cpp:
+lib/havok/physics/utilities/dynamics/savecontactpoints/hkpPhysicsSystemWithContacts.cpp:
 	.rdata      start:0x8211EFB0 end:0x8211EFD0
 	.pdata      start:0x822165D0 end:0x822165F0
 	.text       start:0x82CB5E90 end:0x82CB60EC
 
-hkpInertiaTensorComputerClass.cpp:
+lib/havok/physics/utilities/dynamics/inertia/hkpInertiaTensorComputerClass.cpp:
 	.rdata      start:0x82127FE4 end:0x821280A2
 	.pdata      start:0x82241050 end:0x82241058
 	.text       start:0x82CE8AB0 end:0x82CE8ACC
@@ -13577,13 +13577,13 @@ hkpInertiaTensorComputerClass.cpp:
 	.data       start:0x83266014 end:0x8326604C
 	.data       start:0x833234B0 end:0x833234E0 rename:.bss
 
-hkpInertiaTensorComputer.cpp:
+lib/havok/physics/utilities/dynamics/inertia/hkpInertiaTensorComputer.cpp:
 	.rdata      start:0x821136F0 end:0x82113738
 	.pdata      start:0x822112A8 end:0x82211378
 	.text       start:0x82BAF1B8 end:0x82BB4870
 	.data       start:0x8325E1E0 end:0x8325E1F0
 
-hkpGroupCollisionFilterClass.cpp:
+lib/havok/physics/utilities/deprecated/h1group/hkpGroupCollisionFilterClass.cpp:
 	.rdata      start:0x8212E640 end:0x8212E720
 	.rdata      start:0x821DF6C4 end:0x821DF778 rename:.rdata$r
 	.pdata      start:0x82241500 end:0x82241508
@@ -13593,12 +13593,12 @@ hkpGroupCollisionFilterClass.cpp:
 	.data       start:0x83268478 end:0x832684B8
 	.data       start:0x83324E90 end:0x83324EC0 rename:.bss
 
-hkpGroupCollisionFilter.cpp:
+lib/havok/physics/utilities/deprecated/h1group/hkpGroupCollisionFilter.cpp:
 	.rdata      start:0x82133A20 end:0x82133A40
 	.pdata      start:0x82218D98 end:0x82218DC8
 	.text       start:0x82D42458 end:0x82D42B24
 
-hkpDisableEntityCollisionFilterClass.cpp:
+lib/havok/physics/utilities/deprecated/disableentity/hkpDisableEntityCollisionFilterClass.cpp:
 	.rdata      start:0x8212EF64 end:0x8212F03C
 	.rdata      start:0x821DF868 end:0x821DF934 rename:.rdata$r
 	.pdata      start:0x82217620 end:0x82217628
@@ -13609,12 +13609,12 @@ hkpDisableEntityCollisionFilterClass.cpp:
 	.data       start:0x83268760 end:0x832687A8
 	.data       start:0x83324FE0 end:0x83325010 rename:.bss
 
-hkpDisableEntityCollisionFilter.cpp:
+lib/havok/physics/utilities/deprecated/disableentity/hkpDisableEntityCollisionFilter.cpp:
 	.rdata      start:0x82133B00 end:0x82133B20
 	.pdata      start:0x82218E48 end:0x82218E70
 	.text       start:0x82D43B08 end:0x82D44040
 
-hkpPoweredChainMapperClass.cpp:
+lib/havok/physics/utilities/constraint/chain/hkpPoweredChainMapperClass.cpp:
 	.rdata      start:0x82127E44 end:0x82127FE2
 	.rdata      start:0x821DEA30 end:0x821DEA80 rename:.rdata$r
 	.pdata      start:0x82217380 end:0x82217388
@@ -13625,33 +13625,33 @@ hkpPoweredChainMapperClass.cpp:
 	.data       start:0x83265F4C end:0x83266011
 	.data       start:0x83323420 end:0x833234B0 rename:.bss
 
-hkpPoweredChainMapper.cpp:
+lib/havok/physics/utilities/constraint/chain/hkpPoweredChainMapper.cpp:
 	.rdata      start:0x82133270 end:0x82133354
 	.pdata      start:0x822188A8 end:0x822188D0
 	.text       start:0x82D34D28 end:0x82D35F24
 
-hkpConstraintChainUtil.cpp:
+lib/havok/physics/utilities/constraint/chain/hkpConstraintChainUtil.cpp:
 	.rdata      start:0x821345E0 end:0x82134726
 	.pdata      start:0x82219398 end:0x822193D8
 	.text       start:0x82D5D988 end:0x82D5EDAC
 
-hkpConstraintUtils.cpp:
+lib/havok/physics/utilities/constraint/bilateral/hkpConstraintUtils.cpp:
 	.rdata      start:0x82134450 end:0x821345E0
 	.pdata      start:0x82219358 end:0x82219398
 	.text       start:0x82D5CDF0 end:0x82D5D984
 
-hkpTransformCollapseUtil.cpp:
+lib/havok/physics/utilities/collide/shapeutils/collapsetransform/hkpTransformCollapseUtil.cpp:
 	.rdata      start:0x8211AF40 end:0x8211B049
 	.pdata      start:0x82214AD0 end:0x82214B38
 	.text       start:0x82C4B8B0 end:0x82C4D624
 	.data       start:0x83261C90 end:0x83261CA0
 
-hkpGroupFilterUtil.cpp:
+lib/havok/physics/utilities/collide/filter/groupfilter/hkpGroupFilterUtil.cpp:
 	.rdata      start:0x8211B050 end:0x8211B070
 	.pdata      start:0x82214B38 end:0x82214B40
 	.text       start:0x82C4D628 end:0x82C4D70C
 
-hkpConstrainedSystemFilterClass.cpp:
+lib/havok/physics/utilities/collide/filter/constrainedsystem/hkpConstrainedSystemFilterClass.cpp:
 	.rdata      start:0x8212F0E4 end:0x8212F1AB
 	.rdata      start:0x821DF934 end:0x821DFA1C rename:.rdata$r
 	.pdata      start:0x82217638 end:0x82217640
@@ -13662,34 +13662,34 @@ hkpConstrainedSystemFilterClass.cpp:
 	.data       start:0x832687A8 end:0x832687EC
 	.data       start:0x83325058 end:0x83325088 rename:.bss
 
-hkpConstrainedSystemFilter.cpp:
+lib/havok/physics/utilities/collide/filter/constrainedsystem/hkpConstrainedSystemFilter.cpp:
 	.rdata      start:0x82133B20 end:0x82133B40
 	.pdata      start:0x82218E70 end:0x82218EB0
 	.text       start:0x82D44040 end:0x82D4455C
 
-hkpCharacterMovementUtil.cpp:
+lib/havok/physics/utilities/charactercontrol/statemachine/util/hkpCharacterMovementUtil.cpp:
 	.rdata      start:0x8211B070 end:0x8211B090
 	.pdata      start:0x82214B40 end:0x82214B48
 	.text       start:0x82C4D710 end:0x82C4D960
 
-hkpCharacterStateManager.cpp:
+lib/havok/physics/utilities/charactercontrol/statemachine/hkpCharacterStateManager.cpp:
 	.rdata      start:0x8210EE30 end:0x8210EE60
 	.rdata      start:0x821D64A8 end:0x821D64F8 rename:.rdata$r
 	.pdata      start:0x8220FBA8 end:0x8220FBC0
 	.text       start:0x82B78850 end:0x82B789A8
 	.data       start:0x8325DC98 end:0x8325DCBF
 
-hkpCharacterState.cpp:
+lib/havok/physics/utilities/charactercontrol/statemachine/hkpCharacterState.cpp:
 	.rdata      start:0x821133A0 end:0x821133C0
 	.text       start:0x82BAA720 end:0x82BAA72C
 
-hkpCharacterContext.cpp:
+lib/havok/physics/utilities/charactercontrol/statemachine/hkpCharacterContext.cpp:
 	.rdata      start:0x8210D4D0 end:0x8210D500
 	.rdata      start:0x821D6074 end:0x821D6088 rename:.rdata$r
 	.pdata      start:0x8220F088 end:0x8220F0B0
 	.text       start:0x82B60DA8 end:0x82B6118C
 
-hkpCharacterProxyCinfoClass.cpp:
+lib/havok/physics/utilities/charactercontrol/characterproxy/hkpCharacterProxyCinfoClass.cpp:
 	.rdata      start:0x821280A4 end:0x82128453
 	.pdata      start:0x82241058 end:0x82241060
 	.text       start:0x82CE8AD0 end:0x82CE8AE4
@@ -13698,14 +13698,14 @@ hkpCharacterProxyCinfoClass.cpp:
 	.data       start:0x8326604C end:0x83266089
 	.data       start:0x833234E0 end:0x83323510 rename:.bss
 
-hkpCharacterProxy.cpp:
+lib/havok/physics/utilities/charactercontrol/characterproxy/hkpCharacterProxy.cpp:
 	.rdata      start:0x8210D9B0 end:0x8210DAC3
 	.rdata      start:0x821D6088 end:0x821D6124 rename:.rdata$r
 	.pdata      start:0x8220F2C8 end:0x8220F3A0
 	.text       start:0x82B64140 end:0x82B68480
 	.data       start:0x8325D928 end:0x8325D948
 
-hkpSpringActionClass.cpp:
+lib/havok/physics/utilities/actions/spring/hkpSpringActionClass.cpp:
 	.rdata      start:0x8212DD18 end:0x8212DFC8
 	.pdata      start:0x82217570 end:0x82217580
 	.pdata      start:0x82241480 end:0x82241490
@@ -13715,14 +13715,14 @@ hkpSpringActionClass.cpp:
 	.data       start:0x83268234 end:0x8326831C
 	.data       start:0x83324C38 end:0x83324C80 rename:.bss
 
-hkpSpringAction.cpp:
+lib/havok/physics/utilities/actions/spring/hkpSpringAction.cpp:
 	.rdata      start:0x821182C0 end:0x82118304
 	.rdata      start:0x821DA2C8 end:0x821DA360 rename:.rdata$r
 	.pdata      start:0x82213980 end:0x822139B0
 	.text       start:0x82C1FAB0 end:0x82C20030
 	.data       start:0x83260BD0 end:0x83260C0E
 
-hkpReorientActionClass.cpp:
+lib/havok/physics/utilities/actions/reorient/hkpReorientActionClass.cpp:
 	.rdata      start:0x8212E0A4 end:0x8212E176
 	.rdata      start:0x821DF66C end:0x821DF6C4 rename:.rdata$r
 	.pdata      start:0x82217590 end:0x822175A8
@@ -13733,12 +13733,12 @@ hkpReorientActionClass.cpp:
 	.data       start:0x832683A8 end:0x832683C8
 	.data       start:0x83324CE0 end:0x83324D28 rename:.bss
 
-hkpReorientAction.cpp:
+lib/havok/physics/utilities/actions/reorient/hkpReorientAction.cpp:
 	.rdata      start:0x82133900 end:0x82133920
 	.pdata      start:0x82218CB0 end:0x82218CD0
 	.text       start:0x82D40DF0 end:0x82D412B0
 
-hkpMouseSpringActionClass.cpp:
+lib/havok/physics/utilities/actions/mousespring/hkpMouseSpringActionClass.cpp:
 	.rdata      start:0x8212E378 end:0x8212E4F5
 	.pdata      start:0x822175C0 end:0x822175D0
 	.pdata      start:0x822414D0 end:0x822414E0
@@ -13747,14 +13747,14 @@ hkpMouseSpringActionClass.cpp:
 	.data       start:0x8321F7C4 end:0x8321F7CC rename:.CRT$XCU
 	.data       start:0x83324DB8 end:0x83324E00 rename:.bss
 
-hkpMouseSpringAction.cpp:
+lib/havok/physics/utilities/actions/mousespring/hkpMouseSpringAction.cpp:
 	.rdata      start:0x8210EB20 end:0x8210EB74
 	.rdata      start:0x821D6244 end:0x821D6364 rename:.rdata$r
 	.pdata      start:0x8220FAF8 end:0x8220FB38
 	.text       start:0x82B76F68 end:0x82B779BC
 	.data       start:0x8325DB54 end:0x8325DBF4
 
-hkpMotorActionClass.cpp:
+lib/havok/physics/utilities/actions/motor/hkpMotorActionClass.cpp:
 	.rdata      start:0x8212E59C end:0x8212E63F
 	.pdata      start:0x822175D8 end:0x822175E8
 	.pdata      start:0x822414F0 end:0x82241500
@@ -13763,14 +13763,14 @@ hkpMotorActionClass.cpp:
 	.data       start:0x8321F7D4 end:0x8321F7DC rename:.CRT$XCU
 	.data       start:0x83324E48 end:0x83324E90 rename:.bss
 
-hkpMotorAction.cpp:
+lib/havok/physics/utilities/actions/motor/hkpMotorAction.cpp:
 	.rdata      start:0x82118310 end:0x82118354
 	.rdata      start:0x821DA360 end:0x821DA3B8 rename:.rdata$r
 	.pdata      start:0x822139B0 end:0x822139C8
 	.text       start:0x82C20030 end:0x82C202BC
 	.data       start:0x83260C10 end:0x83260C2D
 
-hkpDashpotActionClass.cpp:
+lib/havok/physics/utilities/actions/dashpot/hkpDashpotActionClass.cpp:
 	.rdata      start:0x8212F03C end:0x8212F0E1
 	.pdata      start:0x82217628 end:0x82217638
 	.pdata      start:0x82241548 end:0x82241558
@@ -13779,14 +13779,14 @@ hkpDashpotActionClass.cpp:
 	.data       start:0x8321F804 end:0x8321F80C rename:.CRT$XCU
 	.data       start:0x83325010 end:0x83325058 rename:.bss
 
-hkpDashpotAction.cpp:
+lib/havok/physics/utilities/actions/dashpot/hkpDashpotAction.cpp:
 	.rdata      start:0x82118360 end:0x821183B2
 	.rdata      start:0x821DA3B8 end:0x821DA410 rename:.rdata$r
 	.pdata      start:0x822139C8 end:0x822139E0
 	.text       start:0x82C202C0 end:0x82C2058C
 	.data       start:0x83260C30 end:0x83260C4F
 
-hkpAngularDashpotActionClass.cpp:
+lib/havok/physics/utilities/actions/angulardashpot/hkpAngularDashpotActionClass.cpp:
 	.rdata      start:0x8212F420 end:0x8212F4A0
 	.pdata      start:0x82217648 end:0x82217658
 	.pdata      start:0x82241570 end:0x82241580
@@ -13795,14 +13795,14 @@ hkpAngularDashpotActionClass.cpp:
 	.data       start:0x8321F818 end:0x8321F820 rename:.CRT$XCU
 	.data       start:0x833250D0 end:0x83325118 rename:.bss
 
-hkpAngularDashpotAction.cpp:
+lib/havok/physics/utilities/actions/angulardashpot/hkpAngularDashpotAction.cpp:
 	.rdata      start:0x821183C0 end:0x82118404
 	.rdata      start:0x821DA410 end:0x821DA468 rename:.rdata$r
 	.pdata      start:0x822139E0 end:0x822139F8
 	.text       start:0x82C20590 end:0x82C208E0
 	.data       start:0x83260C50 end:0x83260C76
 
-hkpDefaultToiResourceMgr.cpp:
+lib/havok/physics/internal/dynamics/world/simulation/continuous/toiresourcemgr/default/hkpDefaultToiResourceMgr.cpp:
 	.rdata      start:0x8211BBC0 end:0x8211BBFC
 	.rdata      start:0x821DC2B8 end:0x821DC348 rename:.rdata$r
 	.pdata      start:0x822153F0 end:0x82215408
@@ -13813,64 +13813,64 @@ hkpDefaultToiResourceMgr.cpp:
 	.data       start:0x83262320 end:0x83262367
 	.data       start:0x83321474 end:0x833214A4 rename:.bss
 
-hkpMoppSphereVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppSphereVirtualMachine.cpp:
 	.rdata      start:0x82134A6C end:0x82134AA3
 	.pdata      start:0x822195B8 end:0x822195C8
 	.text       start:0x82D68820 end:0x82D692FC
 	.data       start:0x83326503 end:0x83326504 rename:.bss
 
-hkpMoppRayBundleVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppRayBundleVirtualMachine.cpp:
 	.rdata      start:0x8211F410 end:0x8211F470
 	.pdata      start:0x82216720 end:0x82216738
 	.text       start:0x82CBAE30 end:0x82CBC748
 	.data       start:0x83321BCE end:0x83321BCF rename:.bss
 
-hkpMoppObbVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppObbVirtualMachine.cpp:
 	.rdata      start:0x8211F398 end:0x8211F3CC
 	.pdata      start:0x822166F0 end:0x82216708
 	.text       start:0x82CB8C08 end:0x82CB9ABC
 	.data       start:0x83321BCC end:0x83321BCD rename:.bss
 
-hkpMoppModifyVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppModifyVirtualMachine.cpp:
 	.rdata      start:0x82134B1C end:0x82134B53
 	.pdata      start:0x82219608 end:0x82219618
 	.text       start:0x82D6B600 end:0x82D6C3C0
 	.data       start:0x83326504 end:0x83326505 rename:.bss
 
-hkpMoppMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppMachine.cpp:
 	.rdata      start:0x821347E8 end:0x82134863
 	.pdata      start:0x82219438 end:0x822194B0
 	.text       start:0x82D5F9D8 end:0x82D63E4C
 
-hkpMoppLongRayVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppLongRayVirtualMachine.cpp:
 	.rdata      start:0x8211F3CC end:0x8211F404
 	.pdata      start:0x82216708 end:0x82216720
 	.text       start:0x82CB9AC0 end:0x82CBAE2C
 	.data       start:0x83321BCD end:0x83321BCE rename:.bss
 
-hkpMoppKDopGeometriesVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppKDopGeometriesVirtualMachine.cpp:
 	.rdata      start:0x82134AA4 end:0x82134AE3
 	.pdata      start:0x822195C8 end:0x822195F0
 	.text       start:0x82D69300 end:0x82D6A664
 
-hkpMoppFindAllVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppFindAllVirtualMachine.cpp:
 	.rdata      start:0x82134AE4 end:0x82134B1C
 	.pdata      start:0x822195F0 end:0x82219608
 	.text       start:0x82D6A668 end:0x82D6B5FC
 
-hkpMoppEarlyExitObbVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppEarlyExitObbVirtualMachine.cpp:
 	.rdata      start:0x82134A2C end:0x82134A69
 	.pdata      start:0x822195A0 end:0x822195B8
 	.text       start:0x82D67AF8 end:0x82D6881C
 	.data       start:0x83326502 end:0x83326503 rename:.bss
 
-hkpMoppAabbCastVirtualMachine.cpp:
+lib/havok/physics/internal/collide/mopp/machine/hkpMoppAabbCastVirtualMachine.cpp:
 	.rdata      start:0x8211C758 end:0x8211C825
 	.pdata      start:0x822156D0 end:0x822156E0
 	.text       start:0x82C86B78 end:0x82C87FB8
 	.data       start:0x833219BC end:0x833219BD rename:.bss
 
-hkpMoppCodeClass.cpp:
+lib/havok/physics/internal/collide/mopp/code/hkpMoppCodeClass.cpp:
 	.rdata      start:0x82128454 end:0x821285AC
 	.pdata      start:0x82241060 end:0x82241078
 	.text       start:0x82CE8AE8 end:0x82CE8B64
@@ -13879,41 +13879,41 @@ hkpMoppCodeClass.cpp:
 	.data       start:0x83266090 end:0x83266177
 	.data       start:0x83323510 end:0x833235A0 rename:.bss
 
-hkpMoppSplitter.cpp:
+lib/havok/physics/internal/collide/mopp/builder/splitter/hkpMoppSplitter.cpp:
 	.text       start:0x82CBCEF0 end:0x82CBCF54
 
-hkpMoppDefaultSplitter.cpp:
+lib/havok/physics/internal/collide/mopp/builder/splitter/hkpMoppDefaultSplitter.cpp:
 	.rdata      start:0x82131F90 end:0x82131FBC
 	.rdata      start:0x821E0AE4 end:0x821E0BB8 rename:.rdata$r
 	.pdata      start:0x82217BD8 end:0x82217C20
 	.text       start:0x82CF9988 end:0x82CFB58C
 	.data       start:0x832699AC end:0x83269A11
 
-hkpMoppCostFunction.cpp:
+lib/havok/physics/internal/collide/mopp/builder/splitter/hkpMoppCostFunction.cpp:
 	.rdata      start:0x8211F470 end:0x8211F480
 	.rdata      start:0x821DD55C end:0x821DD5AC rename:.rdata$r
 	.text       start:0x82CBCF58 end:0x82CBD008
 	.data       start:0x832635E0 end:0x83263602
 
-hkpMoppShapeMediator.cpp:
+lib/havok/physics/internal/collide/mopp/builder/mediator/shape/hkpMoppShapeMediator.cpp:
 	.rdata      start:0x8211F480 end:0x8211F4AC
 	.rdata      start:0x821DD5AC end:0x821DD63C rename:.rdata$r
 	.pdata      start:0x82216750 end:0x82216770
 	.text       start:0x82CBD008 end:0x82CBD450
 	.data       start:0x83263604 end:0x83263647
 
-hkpMoppCachedShapeMediator.cpp:
+lib/havok/physics/internal/collide/mopp/builder/mediator/cachedshape/hkpMoppCachedShapeMediator.cpp:
 	.rdata      start:0x8211F4AC end:0x8211F4D8
 	.rdata      start:0x821DD63C end:0x821DD690 rename:.rdata$r
 	.pdata      start:0x82216770 end:0x822167B0
 	.text       start:0x82CBD450 end:0x82CBDBB0
 	.data       start:0x83263648 end:0x83263671
 
-hkpMoppCompiler.cpp:
+lib/havok/physics/internal/collide/mopp/builder/compiler/hkpMoppCompiler.cpp:
 	.pdata      start:0x82216738 end:0x82216750
 	.text       start:0x82CBC748 end:0x82CBCEEC
 
-hkpMoppDefaultAssembler.cpp:
+lib/havok/physics/internal/collide/mopp/builder/assembler/hkpMoppDefaultAssembler.cpp:
 	.rdata      start:0x82131ED0 end:0x82131F90
 	.rdata      start:0x821E0A54 end:0x821E0AE4 rename:.rdata$r
 	.pdata      start:0x82217AB8 end:0x82217BD8
@@ -13943,35 +13943,35 @@ hkpConvexPenetrationUtil.cpp:
 	.text       start:0x82CE59D8 end:0x82CE71C4
 	.data       start:0x83264B80 end:0x83264B90
 
-hkpGskManifoldUtil.cpp:
+lib/havok/physics/internal/collide/gjk/gskmanifold/hkpGskManifoldUtil.cpp:
 	.rdata      start:0x8211C8E0 end:0x8211C8F0
 	.pdata      start:0x822157A8 end:0x82215808
 	.text       start:0x82C8CA60 end:0x82C8F288
 	.data       start:0x83262B20 end:0x83262B30
 
-hkpContinuousGsk.cpp:
+lib/havok/physics/internal/collide/gjk/continuous/hkpContinuousGsk.cpp:
 	.rdata      start:0x8211C9C8 end:0x8211C9D4
 	.pdata      start:0x82215890 end:0x822158E0
 	.text       start:0x82C949C8 end:0x82C97148
 	.data       start:0x83262B60 end:0x83262B70
 
-hkpGskAgentUtil.cpp:
+lib/havok/physics/internal/collide/gjk/agent/hkpGskAgentUtil.cpp:
 	.pdata      start:0x82215888 end:0x82215890
 	.text       start:0x82C94480 end:0x82C949C4
 	.data       start:0x83262B50 end:0x83262B60
 
-hkpGskCache.cpp:
+lib/havok/physics/internal/collide/gjk/hkpGskCache.cpp:
 	.pdata      start:0x82215818 end:0x82215828
 	.text       start:0x82C8F940 end:0x82C8FCE4
 	.data       start:0x83262B30 end:0x83262B40
 
-hkpGsk.cpp:
+lib/havok/physics/internal/collide/gjk/hkpGsk.cpp:
 	.rdata      start:0x8211C828 end:0x8211C83F
 	.pdata      start:0x822156E0 end:0x82215740
 	.text       start:0x82C87FB8 end:0x82C8B89C
 	.data       start:0x83262B00 end:0x83262B10
 
-hkpConvexPieceStreamDataClass.cpp:
+lib/havok/physics/internal/collide/convexpiecemesh/hkpConvexPieceStreamDataClass.cpp:
 	.rdata      start:0x8212F4A0 end:0x8212F559
 	.rdata      start:0x821DFA1C end:0x821DFA6C rename:.rdata$r
 	.pdata      start:0x82217658 end:0x82217668
@@ -13982,133 +13982,133 @@ hkpConvexPieceStreamDataClass.cpp:
 	.data       start:0x832688E8 end:0x83268928
 	.data       start:0x83325118 end:0x83325148 rename:.bss
 
-hkpKdTreeWorldManager.cpp:
+lib/havok/physics/dynamics/world/util/kdtree/hkpKdTreeWorldManager.cpp:
 	.rdata      start:0x821145B4 end:0x8211465B
 	.rdata      start:0x821D784C end:0x821D78D0 rename:.rdata$r
 	.pdata      start:0x82211D98 end:0x82211DE8
 	.text       start:0x82BD04F8 end:0x82BD1310
 	.data       start:0x8325E7C0 end:0x8325E7F4
 
-hkpEntityEntityBroadPhaseListener.cpp:
+lib/havok/physics/dynamics/world/util/broadphase/hkpEntityEntityBroadPhaseListener.cpp:
 	.rdata      start:0x82114914 end:0x82114934
 	.rdata      start:0x821D7BF0 end:0x821D7C58 rename:.rdata$r
 	.pdata      start:0x82211F90 end:0x82211F98
 	.text       start:0x82BD7BE0 end:0x82BD7CDC
 	.data       start:0x8325E918 end:0x8325E948
 
-hkpBroadPhaseBorderListener.cpp:
+lib/havok/physics/dynamics/world/util/broadphase/hkpBroadPhaseBorderListener.cpp:
 	.pdata      start:0x82211578 end:0x82211588
 	.text       start:0x82BB8820 end:0x82BB89CC
 
-hkpAabbTreeWorldManager.cpp:
+lib/havok/physics/dynamics/world/util/aabbtree/hkpAabbTreeWorldManager.cpp:
 	.rdata      start:0x821142EC end:0x821145B4
 	.rdata      start:0x821D74B4 end:0x821D784C rename:.rdata$r
 	.pdata      start:0x82211CB0 end:0x82211D98
 	.text       start:0x82BCDD10 end:0x82BD04F8
 	.data       start:0x8325E5B0 end:0x8325E7B6
 
-hkpWorldOperationUtil.cpp:
+lib/havok/physics/dynamics/world/util/hkpWorldOperationUtil.cpp:
 	.pdata      start:0x8220F6A8 end:0x8220F7C8
 	.text       start:0x82B6D630 end:0x82B71D74
 	.data       start:0x8325DAD0 end:0x8325DAE0
 
-hkpWorldOperationQueue.cpp:
+lib/havok/physics/dynamics/world/util/hkpWorldOperationQueue.cpp:
 	.pdata      start:0x822115A0 end:0x822115D8
 	.text       start:0x82BB9188 end:0x82BBA868
 
-hkpWorldMemoryUtil.cpp:
+lib/havok/physics/dynamics/world/util/hkpWorldMemoryUtil.cpp:
 	.rdata      start:0x82113EEC end:0x82113EFF
 	.pdata      start:0x822119B0 end:0x822119D0
 	.text       start:0x82BC5620 end:0x82BC5A20
 
-hkpWorldConstraintUtil.cpp:
+lib/havok/physics/dynamics/world/util/hkpWorldConstraintUtil.cpp:
 	.pdata      start:0x82212568 end:0x82212598
 	.text       start:0x82BF35B0 end:0x82BF4200
 
-hkpWorldCallbackUtil.cpp:
+lib/havok/physics/dynamics/world/util/hkpWorldCallbackUtil.cpp:
 	.rdata      start:0x82113DE8 end:0x82113EEB
 	.pdata      start:0x822118A0 end:0x82211998
 	.text       start:0x82BC35E0 end:0x82BC53E4
 
-hkpWorldAgentUtil.cpp:
+lib/havok/physics/dynamics/world/util/hkpWorldAgentUtil.cpp:
 	.pdata      start:0x8220FFC0 end:0x8220FFF8
 	.text       start:0x82B7F800 end:0x82B7FE1C
 
-hkpCpuSplitSimulationIslandJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuSplitSimulationIslandJob.cpp:
 	.rdata      start:0x8211B730 end:0x8211B73C
 	.pdata      start:0x822150B0 end:0x822150C0
 	.text       start:0x82C6C430 end:0x82C6C580
 
-hkpCpuSolveConstraintsJobs.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuSolveConstraintsJobs.cpp:
 	.rdata      start:0x8211B750 end:0x8211B77F
 	.pdata      start:0x822150C8 end:0x822150F0
 	.text       start:0x82C6C6A0 end:0x82C6CBC4
 
-hkpCpuPostCollideJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuPostCollideJob.cpp:
 	.rdata      start:0x8211B680 end:0x8211B6AA
 	.pdata      start:0x82215088 end:0x82215090
 	.text       start:0x82C6AFD8 end:0x82C6B1C4
 
-hkpCpuIntegrateMotionJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuIntegrateMotionJob.cpp:
 	.rdata      start:0x8211B73C end:0x8211B74F
 	.pdata      start:0x822150C0 end:0x822150C8
 	.text       start:0x82C6C580 end:0x82C6C69C
 
-hkpCpuIntegrateJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuIntegrateJob.cpp:
 	.rdata      start:0x8211B7C0 end:0x8211B82F
 	.pdata      start:0x82215110 end:0x82215128
 	.text       start:0x82C6D200 end:0x82C6EBF4
 
-hkpCpuFireJacobianSetupCallbackJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuFireJacobianSetupCallbackJob.cpp:
 	.rdata      start:0x8211B794 end:0x8211B7AA
 	.pdata      start:0x82215100 end:0x82215108
 	.text       start:0x82C6CF08 end:0x82C6D128
 
-hkpCpuBuildJacobiansJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuBuildJacobiansJob.cpp:
 	.rdata      start:0x8211B780 end:0x8211B791
 	.pdata      start:0x822150F0 end:0x82215100
 	.text       start:0x82C6CBC8 end:0x82C6CF04
 
-hkpCpuBuildAccumulatorsJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuBuildAccumulatorsJob.cpp:
 	.rdata      start:0x8211B7AC end:0x8211B7C0
 	.pdata      start:0x82215108 end:0x82215110
 	.text       start:0x82C6D128 end:0x82C6D200
 
-hkpCpuBroadPhaseJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuBroadPhaseJob.cpp:
 	.rdata      start:0x8211B6F0 end:0x8211B72D
 	.pdata      start:0x82215098 end:0x822150B0
 	.text       start:0x82C6BA00 end:0x82C6C430
 
-hkpCpuAgentSectorJob.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/cpu/hkpCpuAgentSectorJob.cpp:
 	.rdata      start:0x8211B6AC end:0x8211B6EE
 	.rdata      start:0x821DBFB4 end:0x821DC008 rename:.rdata$r
 	.pdata      start:0x82215090 end:0x82215098
 	.text       start:0x82C6B1C8 end:0x82C6B9FC
 	.data       start:0x83261FC0 end:0x83261FE9
 
-hkpMultithreadedSimulation.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/hkpMultithreadedSimulation.cpp:
 	.rdata      start:0x82113F00 end:0x821140E0
 	.rdata      start:0x821D71F4 end:0x821D7370 rename:.rdata$r
 	.pdata      start:0x822119D0 end:0x82211A68
 	.text       start:0x82BC5A20 end:0x82BC8820
 	.data       start:0x8325E3D0 end:0x8325E4FE
 
-hkpDynamicsJobs.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/hkpDynamicsJobs.cpp:
 	.pdata      start:0x82217058 end:0x82217060
 	.text       start:0x82CDD978 end:0x82CDDAD8
 
-hkpDynamicsJobQueueUtils.cpp:
+lib/havok/physics/dynamics/world/simulation/multithreaded/hkpDynamicsJobQueueUtils.cpp:
 	.pdata      start:0x82215128 end:0x82215148
 	.text       start:0x82C6EBF8 end:0x82C6FA34
 
-hkpContinuousSimulation.cpp:
+lib/havok/physics/dynamics/world/simulation/continuous/hkpContinuousSimulation.cpp:
 	.rdata      start:0x82114758 end:0x821148D6
 	.rdata      start:0x821D7B4C end:0x821D7B60 rename:.rdata$r
 	.pdata      start:0x82211E80 end:0x82211F90
 	.text       start:0x82BD2530 end:0x82BD7B88
 	.data       start:0x8325E8C0 end:0x8325E8D0
 
-hkpSimulationClass.cpp:
+lib/havok/physics/dynamics/world/simulation/hkpSimulationClass.cpp:
 	.rdata      start:0x8211B9D4 end:0x8211BB9A
 	.pdata      start:0x82240AE0 end:0x82240AE8
 	.text       start:0x82C79718 end:0x82C79764
@@ -14117,14 +14117,14 @@ hkpSimulationClass.cpp:
 	.data       start:0x83262200 end:0x83262300
 	.data       start:0x83321444 end:0x83321474 rename:.bss
 
-hkpSimulation.cpp:
+lib/havok/physics/dynamics/world/simulation/hkpSimulation.cpp:
 	.rdata      start:0x82113890 end:0x821139EE
 	.rdata      start:0x821D6F68 end:0x821D6FB8 rename:.rdata$r
 	.pdata      start:0x822115D8 end:0x82211658
 	.text       start:0x82BBA868 end:0x82BBCD18
 	.data       start:0x8325E250 end:0x8325E27C
 
-hkpDefaultWorldMemoryWatchDogClass.cpp:
+lib/havok/physics/dynamics/world/memory/default/hkpDefaultWorldMemoryWatchDogClass.cpp:
 	.rdata      start:0x8212FA78 end:0x8212FAE2
 	.rdata      start:0x821DFAFC end:0x821DFB8C rename:.rdata$r
 	.pdata      start:0x822415E8 end:0x822415F0
@@ -14134,41 +14134,41 @@ hkpDefaultWorldMemoryWatchDogClass.cpp:
 	.data       start:0x83268AB4 end:0x83268B28
 	.data       start:0x83325358 end:0x83325388 rename:.bss
 
-hkpDefaultWorldMemoryWatchDog.cpp:
+lib/havok/physics/dynamics/world/memory/default/hkpDefaultWorldMemoryWatchDog.cpp:
 	.pdata      start:0x82218F20 end:0x82218F38
 	.text       start:0x82D45B28 end:0x82D45D0C
 
-hkpWorldMemoryAvailableWatchDogClass.cpp:
+lib/havok/physics/dynamics/world/memory/hkpWorldMemoryAvailableWatchDogClass.cpp:
 	.rdata      start:0x821215F8 end:0x82121617
 	.pdata      start:0x82240D20 end:0x82240D28
 	.text       start:0x831D4368 end:0x831D43D4 rename:.text$yc
 	.data       start:0x8321F398 end:0x8321F39C rename:.CRT$XCU
 	.data       start:0x833221F8 end:0x83322228 rename:.bss
 
-hkpDefaultWorldMaintenanceMgr.cpp:
+lib/havok/physics/dynamics/world/maintenance/default/hkpDefaultWorldMaintenanceMgr.cpp:
 	.rdata      start:0x821146BC end:0x821146FE
 	.rdata      start:0x821D7988 end:0x821D7A18 rename:.rdata$r
 	.pdata      start:0x82211E28 end:0x82211E40
 	.text       start:0x82BD1910 end:0x82BD1C64
 	.data       start:0x8325E81C end:0x8325E870
 
-hkpPhysicsCommandMachine.cpp:
+lib/havok/physics/dynamics/world/commandqueue/hkpPhysicsCommandMachine.cpp:
 	.pdata      start:0x82217048 end:0x82217058
 	.text       start:0x82CDD8B8 end:0x82CDD978
 
-hkpBroadPhaseBorder.cpp:
+lib/havok/physics/dynamics/world/broadphaseborder/hkpBroadPhaseBorder.cpp:
 	.rdata      start:0x82114700 end:0x82114758
 	.rdata      start:0x821D7A18 end:0x821D7B4C rename:.rdata$r
 	.pdata      start:0x82211E40 end:0x82211E80
 	.text       start:0x82BD1C68 end:0x82BD2530
 	.data       start:0x8325E870 end:0x8325E8BA
 
-hkpWorldRegisterSpu.cpp:
+lib/havok/physics/dynamics/world/hkpWorldRegisterSpu.cpp:
 	.pdata      start:0x822128C0 end:0x822128C8
 	.text       start:0x82BFAC40 end:0x82BFAD40
 	.data       start:0x83320A58 end:0x83320A9C rename:.bss
 
-hkpWorldObjectClass.cpp:
+lib/havok/physics/dynamics/world/hkpWorldObjectClass.cpp:
 	.rdata      start:0x82114B00 end:0x82114D7F
 	.pdata      start:0x82240920 end:0x82240928
 	.text       start:0x831D0360 end:0x831D03E0 rename:.text$yc
@@ -14176,12 +14176,12 @@ hkpWorldObjectClass.cpp:
 	.data       start:0x8325EBC8 end:0x8325EBD4
 	.data       start:0x833207AC end:0x833207DC rename:.bss
 
-hkpWorldObject.cpp:
+lib/havok/physics/dynamics/world/hkpWorldObject.cpp:
 	.rdata      start:0x82112958 end:0x8211297F
 	.pdata      start:0x82210D08 end:0x82210D38
 	.text       start:0x82B94240 end:0x82B9473C
 
-hkpWorldClass.cpp:
+lib/havok/physics/dynamics/world/hkpWorldClass.cpp:
 	.rdata      start:0x82121B5C end:0x82122CA9
 	.pdata      start:0x822170A0 end:0x822170A8
 	.pdata      start:0x82240D48 end:0x82240D58
@@ -14191,7 +14191,7 @@ hkpWorldClass.cpp:
 	.data       start:0x832647B0 end:0x832647D0
 	.data       start:0x83322340 end:0x83322388 rename:.bss
 
-hkpWorldCinfoClass.cpp:
+lib/havok/physics/dynamics/world/hkpWorldCinfoClass.cpp:
 	.rdata      start:0x8211A3D4 end:0x8211AEDF
 	.pdata      start:0x82214998 end:0x822149A0
 	.pdata      start:0x82240AC8 end:0x82240AD8
@@ -14201,12 +14201,12 @@ hkpWorldCinfoClass.cpp:
 	.data       start:0x83261720 end:0x83261C48
 	.data       start:0x833210A4 end:0x833210EC rename:.bss
 
-hkpWorldCinfo.cpp:
+lib/havok/physics/dynamics/world/hkpWorldCinfo.cpp:
 	.rdata      start:0x8210B654 end:0x8210B690
 	.pdata      start:0x8220E868 end:0x8220E870
 	.text       start:0x82B4F768 end:0x82B4FB38
 
-hkpWorld.cpp:
+lib/havok/physics/dynamics/world/hkpWorld.cpp:
 	.rdata      start:0x8210ADA4 end:0x8210B430
 	.rdata      start:0x821D52BC end:0x821D59AC rename:.rdata$r
 	.pdata      start:0x8220E430 end:0x8220E6F0
@@ -14214,7 +14214,7 @@ hkpWorld.cpp:
 	.data       start:0x8325CEC0 end:0x8325D1C7
 	.data       start:0x833202C8 end:0x833202C9 rename:.bss
 
-hkpSimulationIsland.cpp:
+lib/havok/physics/dynamics/world/hkpSimulationIsland.cpp:
 	.rdata      start:0x8211422C end:0x821142CC
 	.rdata      start:0x821D7410 end:0x821D74B4 rename:.rdata$r
 	.pdata      start:0x82211C10 end:0x82211C48
@@ -14225,7 +14225,7 @@ hkpSimulationIsland.cpp:
 	.data       start:0x8325E554 end:0x8325E59A
 	.data       start:0x8332077C end:0x833207AC rename:.bss
 
-hkpPhysicsSystemClass.cpp:
+lib/havok/physics/dynamics/world/hkpPhysicsSystemClass.cpp:
 	.rdata      start:0x8211D67C end:0x8211D781
 	.pdata      start:0x82215940 end:0x82215948
 	.pdata      start:0x82240BC0 end:0x82240BD0
@@ -14234,14 +14234,14 @@ hkpPhysicsSystemClass.cpp:
 	.data       start:0x8321F2B8 end:0x8321F2C0 rename:.CRT$XCU
 	.data       start:0x833219D8 end:0x83321A20 rename:.bss
 
-hkpPhysicsSystem.cpp:
+lib/havok/physics/dynamics/world/hkpPhysicsSystem.cpp:
 	.rdata      start:0x821141A4 end:0x821141BC
 	.rdata      start:0x821D7370 end:0x821D73C0 rename:.rdata$r
 	.pdata      start:0x82211B30 end:0x82211BB0
 	.text       start:0x82BCA918 end:0x82BCBBA8
 	.data       start:0x8325E510 end:0x8325E52F
 
-hkpSimpleShapePhantomClass.cpp:
+lib/havok/physics/dynamics/phantom/hkpSimpleShapePhantomClass.cpp:
 	.rdata      start:0x82128A18 end:0x82128ABE
 	.pdata      start:0x82217390 end:0x822173A0
 	.pdata      start:0x822410B8 end:0x822410D0
@@ -14251,45 +14251,45 @@ hkpSimpleShapePhantomClass.cpp:
 	.data       start:0x83266300 end:0x8326634C
 	.data       start:0x83323708 end:0x83323780 rename:.bss
 
-hkpSimpleShapePhantom.cpp:
+lib/havok/physics/dynamics/phantom/hkpSimpleShapePhantom.cpp:
 	.rdata      start:0x82115420 end:0x8211547C
 	.rdata      start:0x821D7E60 end:0x821D7EBC rename:.rdata$r
 	.pdata      start:0x822122F0 end:0x82212350
 	.text       start:0x82BEA6F0 end:0x82BEB138
 	.data       start:0x8325ECB4 end:0x8325ECD8
 
-hkpShapePhantomClass.cpp:
+lib/havok/physics/dynamics/phantom/hkpShapePhantomClass.cpp:
 	.rdata      start:0x82123964 end:0x8212398C
 	.pdata      start:0x82240DE0 end:0x82240DE8
 	.text       start:0x831D4EB8 end:0x831D4F34 rename:.text$yc
 	.data       start:0x8321F408 end:0x8321F40C rename:.CRT$XCU
 	.data       start:0x833226B8 end:0x833226E8 rename:.bss
 
-hkpShapePhantom.cpp:
+lib/havok/physics/dynamics/phantom/hkpShapePhantom.cpp:
 	.rdata      start:0x8210C4A8 end:0x8210C534
 	.rdata      start:0x821D5DA4 end:0x821D5E50 rename:.rdata$r
 	.pdata      start:0x8220EAA8 end:0x8220EAD0
 	.text       start:0x82B53D08 end:0x82B54090
 	.data       start:0x8325D3A0 end:0x8325D3DA
 
-hkpPhantomClass.cpp:
+lib/havok/physics/dynamics/phantom/hkpPhantomClass.cpp:
 	.rdata      start:0x82119F38 end:0x82119F9B
 	.pdata      start:0x82240AA0 end:0x82240AA8
 	.text       start:0x831D19D8 end:0x831D1A54 rename:.text$yc
 	.data       start:0x8321F1DC end:0x8321F1E0 rename:.CRT$XCU
 	.data       start:0x83320FCC end:0x83320FFC rename:.bss
 
-hkpPhantomBroadPhaseListener.cpp:
+lib/havok/physics/dynamics/phantom/hkpPhantomBroadPhaseListener.cpp:
 	.pdata      start:0x82211568 end:0x82211578
 	.text       start:0x82BB86B0 end:0x82BB8820
 
-hkpPhantom.cpp:
+lib/havok/physics/dynamics/phantom/hkpPhantom.cpp:
 	.rdata      start:0x821142CC end:0x821142E9
 	.pdata      start:0x82211C48 end:0x82211CA0
 	.text       start:0x82BCCE90 end:0x82BCDB18
 	.data       start:0x8325E5A0 end:0x8325E5B0
 
-hkpCachingShapePhantomClass.cpp:
+lib/havok/physics/dynamics/phantom/hkpCachingShapePhantomClass.cpp:
 	.rdata      start:0x8212FD0C end:0x8212FD53
 	.pdata      start:0x822176A8 end:0x822176B8
 	.pdata      start:0x82241620 end:0x82241630
@@ -14298,14 +14298,14 @@ hkpCachingShapePhantomClass.cpp:
 	.data       start:0x8321F878 end:0x8321F880 rename:.CRT$XCU
 	.data       start:0x83325478 end:0x833254C0 rename:.bss
 
-hkpCachingShapePhantom.cpp:
+lib/havok/physics/dynamics/phantom/hkpCachingShapePhantom.cpp:
 	.rdata      start:0x821181E4 end:0x82118244
 	.rdata      start:0x821DA26C end:0x821DA2C8 rename:.rdata$r
 	.pdata      start:0x822138B8 end:0x82213928
 	.text       start:0x82C1E588 end:0x82C1F2D0
 	.data       start:0x83260BA8 end:0x83260BCD
 
-hkpAabbPhantomClass.cpp:
+lib/havok/physics/dynamics/phantom/hkpAabbPhantomClass.cpp:
 	.rdata      start:0x8212FD64 end:0x8212FDDF
 	.pdata      start:0x822176B8 end:0x822176C8
 	.pdata      start:0x82241638 end:0x82241648
@@ -14314,20 +14314,20 @@ hkpAabbPhantomClass.cpp:
 	.data       start:0x8321F884 end:0x8321F88C rename:.CRT$XCU
 	.data       start:0x833254F0 end:0x83325538 rename:.bss
 
-hkpAabbPhantom.cpp:
+lib/havok/physics/dynamics/phantom/hkpAabbPhantom.cpp:
 	.rdata      start:0x82113790 end:0x821137FC
 	.rdata      start:0x821D6EA8 end:0x821D6F00 rename:.rdata$r
 	.pdata      start:0x82211420 end:0x82211488
 	.text       start:0x82BB6240 end:0x82BB6F68
 	.data       start:0x8325E1F0 end:0x8325E20D
 
-hkpRigidMotionUtil.cpp:
+lib/havok/physics/dynamics/motion/util/hkpRigidMotionUtil.cpp:
 	.rdata      start:0x82115B14 end:0x82115B2C
 	.pdata      start:0x822125C0 end:0x822125E0
 	.text       start:0x82BF4A10 end:0x82BF6A80
 	.data       start:0x8325F010 end:0x8325F020
 
-hkpThinBoxMotionClass.cpp:
+lib/havok/physics/dynamics/motion/rigid/thinboxmotion/hkpThinBoxMotionClass.cpp:
 	.rdata      start:0x8212F5FC end:0x8212F60D
 	.pdata      start:0x82241590 end:0x82241598
 	.text       start:0x82CED100 end:0x82CED17C
@@ -14336,11 +14336,11 @@ hkpThinBoxMotionClass.cpp:
 	.data       start:0x83268940 end:0x83268958
 	.data       start:0x83325178 end:0x833251A8 rename:.bss
 
-hkpThinBoxMotion.cpp:
+lib/havok/physics/dynamics/motion/rigid/thinboxmotion/hkpThinBoxMotion.cpp:
 	.pdata      start:0x822122E0 end:0x822122E8
 	.text       start:0x82BEA5E8 end:0x82BEA62C
 
-hkpSphereMotionClass.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpSphereMotionClass.cpp:
 	.rdata      start:0x8212F670 end:0x8212F680
 	.pdata      start:0x822415A0 end:0x822415A8
 	.text       start:0x82CED1D0 end:0x82CED24C
@@ -14349,11 +14349,11 @@ hkpSphereMotionClass.cpp:
 	.data       start:0x83268970 end:0x83268988
 	.data       start:0x833251D8 end:0x83325208 rename:.bss
 
-hkpSphereMotion.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpSphereMotion.cpp:
 	.pdata      start:0x82212280 end:0x82212290
 	.text       start:0x82BE98B8 end:0x82BE9C28
 
-hkpKeyframedRigidMotionClass.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpKeyframedRigidMotionClass.cpp:
 	.rdata      start:0x8211BFB4 end:0x8211BFDD
 	.pdata      start:0x82240B38 end:0x82240B48
 	.text       start:0x82C7CA20 end:0x82C7CB1C
@@ -14362,11 +14362,11 @@ hkpKeyframedRigidMotionClass.cpp:
 	.data       start:0x832624F8 end:0x83262528
 	.data       start:0x83321624 end:0x83321684 rename:.bss
 
-hkpKeyframedRigidMotion.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpKeyframedRigidMotion.cpp:
 	.pdata      start:0x82212258 end:0x82212270
 	.text       start:0x82BE9508 end:0x82BE977C
 
-hkpFixedRigidMotionClass.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpFixedRigidMotionClass.cpp:
 	.rdata      start:0x8212FA64 end:0x8212FA78
 	.pdata      start:0x822415E0 end:0x822415E8
 	.text       start:0x82CED540 end:0x82CED5BC
@@ -14375,11 +14375,11 @@ hkpFixedRigidMotionClass.cpp:
 	.data       start:0x83268A9C end:0x83268AB4
 	.data       start:0x83325328 end:0x83325358 rename:.bss
 
-hkpFixedRigidMotion.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpFixedRigidMotion.cpp:
 	.pdata      start:0x82212270 end:0x82212280
 	.text       start:0x82BE9780 end:0x82BE98B8
 
-hkpCharacterMotionClass.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpCharacterMotionClass.cpp:
 	.rdata      start:0x8212FB98 end:0x8212FBAB
 	.pdata      start:0x82241610 end:0x82241618
 	.text       start:0x82CED798 end:0x82CED814
@@ -14388,11 +14388,11 @@ hkpCharacterMotionClass.cpp:
 	.data       start:0x83268B28 end:0x83268B40
 	.data       start:0x83325418 end:0x83325448 rename:.bss
 
-hkpCharacterMotion.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpCharacterMotion.cpp:
 	.pdata      start:0x822122C8 end:0x822122D8
 	.text       start:0x82BEA1F8 end:0x82BEA530
 
-hkpBoxMotionClass.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpBoxMotionClass.cpp:
 	.rdata      start:0x8212FD54 end:0x8212FD61
 	.pdata      start:0x82241630 end:0x82241638
 	.text       start:0x82CED938 end:0x82CED9B4
@@ -14401,11 +14401,11 @@ hkpBoxMotionClass.cpp:
 	.data       start:0x83268C04 end:0x83268C1C
 	.data       start:0x833254C0 end:0x833254F0 rename:.bss
 
-hkpBoxMotion.cpp:
+lib/havok/physics/dynamics/motion/rigid/hkpBoxMotion.cpp:
 	.pdata      start:0x82212290 end:0x822122C8
 	.text       start:0x82BE9C28 end:0x82BEA1F4
 
-hkpMotionClass.cpp:
+lib/havok/physics/dynamics/motion/hkpMotionClass.cpp:
 	.rdata      start:0x82123040 end:0x82123232
 	.pdata      start:0x82240D68 end:0x82240D70
 	.text       start:0x831D47F0 end:0x831D4884 rename:.text$yc
@@ -14413,24 +14413,24 @@ hkpMotionClass.cpp:
 	.data       start:0x832648B8 end:0x832649E0
 	.data       start:0x833223E8 end:0x83322418 rename:.bss
 
-hkpMotion.cpp:
+lib/havok/physics/dynamics/motion/hkpMotion.cpp:
 	.rdata      start:0x8210A368 end:0x8210A3D4
 	.rdata      start:0x821D51C8 end:0x821D5218 rename:.rdata$r
 	.pdata      start:0x8220E0A0 end:0x8220E0B0
 	.text       start:0x82B3BD58 end:0x82B3C0E0
 	.data       start:0x8325CE08 end:0x8325CE20
 
-hkpEntityCallbackUtil.cpp:
+lib/havok/physics/dynamics/entity/util/hkpEntityCallbackUtil.cpp:
 	.rdata      start:0x82113D5C end:0x82113DE6
 	.pdata      start:0x82211848 end:0x822118A0
 	.text       start:0x82BC2A60 end:0x82BC35E0
 
-hkpEntityAabbUtil.cpp:
+lib/havok/physics/dynamics/entity/util/hkpEntityAabbUtil.cpp:
 	.pdata      start:0x82212130 end:0x82212140
 	.text       start:0x82BE45F8 end:0x82BE5378
 	.data       start:0x8325E9E0 end:0x8325E9F0
 
-hkpRigidBodyClass.cpp:
+lib/havok/physics/dynamics/entity/hkpRigidBodyClass.cpp:
 	.pdata      start:0x82213750 end:0x82213760
 	.pdata      start:0x822409B0 end:0x822409C0
 	.text       start:0x82C1A108 end:0x82C1A1A0
@@ -14438,18 +14438,18 @@ hkpRigidBodyClass.cpp:
 	.data       start:0x8321F134 end:0x8321F13C rename:.CRT$XCU
 	.data       start:0x83320B7C end:0x83320BC4 rename:.bss
 
-hkpRigidBodyCinfo.cpp:
+lib/havok/physics/dynamics/entity/hkpRigidBodyCinfo.cpp:
 	.pdata      start:0x82211488 end:0x82211490
 	.text       start:0x82BB6F68 end:0x82BB70F4
 
-hkpRigidBody.cpp:
+lib/havok/physics/dynamics/entity/hkpRigidBody.cpp:
 	.rdata      start:0x8210C394 end:0x8210C447
 	.rdata      start:0x821D5D4C end:0x821D5DA4 rename:.rdata$r
 	.pdata      start:0x8220E9C0 end:0x8220EA70
 	.text       start:0x82B520F0 end:0x82B537BC
 	.data       start:0x8325D370 end:0x8325D39B
 
-hkpEntityClass.cpp:
+lib/havok/physics/dynamics/entity/hkpEntityClass.cpp:
 	.rdata      start:0x82114D80 end:0x8211541E
 	.pdata      start:0x822122D8 end:0x822122E0
 	.pdata      start:0x82240928 end:0x82240950
@@ -14459,44 +14459,44 @@ hkpEntityClass.cpp:
 	.data       start:0x8325EBD4 end:0x8325ECB2
 	.data       start:0x833207DC end:0x833208B4 rename:.bss
 
-hkpEntity.cpp:
+lib/havok/physics/dynamics/entity/hkpEntity.cpp:
 	.rdata      start:0x8210BEE8 end:0x8210C294
 	.rdata      start:0x821D5A50 end:0x821D5D4C rename:.rdata$r
 	.pdata      start:0x8220E8A8 end:0x8220E968
 	.text       start:0x82B500F0 end:0x82B51BB8
 	.data       start:0x8325D240 end:0x8325D364
 
-hkpBreakableBodyClass.cpp:
+lib/havok/physics/dynamics/entity/hkpBreakableBodyClass.cpp:
 	.rdata      start:0x82123AC8 end:0x82123AD9
 	.pdata      start:0x82240E08 end:0x82240E10
 	.text       start:0x831D5120 end:0x831D5188 rename:.text$yc
 	.data       start:0x8321F420 end:0x8321F424 rename:.CRT$XCU
 	.data       start:0x833227A8 end:0x833227D8 rename:.bss
 
-hkpConstraintPivotsUtil.cpp:
+lib/havok/physics/dynamics/constraint/util/hkpConstraintPivotsUtil.cpp:
 	.pdata      start:0x82215418 end:0x82215450
 	.text       start:0x82C7A8F8 end:0x82C7B100
 
-hkpConstraintDataCloningUtil.cpp:
+lib/havok/physics/dynamics/constraint/util/hkpConstraintDataCloningUtil.cpp:
 	.pdata      start:0x82215468 end:0x822154E0
 	.text       start:0x82C7B630 end:0x82C7C294
 
-hkpConstraintCallbackUtil.cpp:
+lib/havok/physics/dynamics/constraint/util/hkpConstraintCallbackUtil.cpp:
 	.rdata      start:0x8211BC44 end:0x8211BC53
 	.pdata      start:0x822154E0 end:0x82215508
 	.text       start:0x82C7C298 end:0x82C7C750
 
-hkpConstraintSolverSetup.cpp:
+lib/havok/physics/dynamics/constraint/setup/hkpConstraintSolverSetup.cpp:
 	.rdata      start:0x8211B614 end:0x8211B63B
 	.pdata      start:0x82214F90 end:0x82214FE8
 	.text       start:0x82C61730 end:0x82C62B2C
 
-hkpSimpleCollisionResponse.cpp:
+lib/havok/physics/dynamics/constraint/response/hkpSimpleCollisionResponse.cpp:
 	.pdata      start:0x822153D8 end:0x822153E8
 	.text       start:0x82C78F68 end:0x82C79714
 	.data       start:0x832621F0 end:0x83262200
 
-hkpPulleyConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/pulley/hkpPulleyConstraintDataClass.cpp:
 	.rdata      start:0x82128E7C end:0x82128F14
 	.pdata      start:0x82241100 end:0x82241110
 	.text       start:0x82CE8FA0 end:0x82CE900C
@@ -14505,13 +14505,13 @@ hkpPulleyConstraintDataClass.cpp:
 	.data       start:0x832664A0 end:0x832664FC
 	.data       start:0x833238A0 end:0x83323900 rename:.bss
 
-hkpPulleyConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/pulley/hkpPulleyConstraintData.cpp:
 	.rdata      start:0x82122CF8 end:0x82122D3C
 	.rdata      start:0x821DE250 end:0x821DE2A4 rename:.rdata$r
 	.text       start:0x82CE1910 end:0x82CE1A10
 	.data       start:0x8326480C end:0x83264832
 
-hkpVelocityConstraintMotorClass.cpp:
+lib/havok/physics/dynamics/constraint/motor/velocity/hkpVelocityConstraintMotorClass.cpp:
 	.rdata      start:0x8212F55C end:0x8212F5FB
 	.pdata      start:0x82241588 end:0x82241590
 	.text       start:0x82CED0B0 end:0x82CED0FC
@@ -14520,14 +14520,14 @@ hkpVelocityConstraintMotorClass.cpp:
 	.data       start:0x83268928 end:0x83268940
 	.data       start:0x83325148 end:0x83325178 rename:.bss
 
-hkpVelocityConstraintMotor.cpp:
+lib/havok/physics/dynamics/constraint/motor/velocity/hkpVelocityConstraintMotor.cpp:
 	.rdata      start:0x8211C70C end:0x8211C720
 	.rdata      start:0x821DC574 end:0x821DC5CC rename:.rdata$r
 	.pdata      start:0x82215608 end:0x82215610
 	.text       start:0x82C82208 end:0x82C822B0
 	.data       start:0x83262A68 end:0x83262A91
 
-hkpSpringDamperConstraintMotorClass.cpp:
+lib/havok/physics/dynamics/constraint/motor/springdamper/hkpSpringDamperConstraintMotorClass.cpp:
 	.rdata      start:0x8212F610 end:0x8212F66F
 	.pdata      start:0x82241598 end:0x822415A0
 	.text       start:0x82CED180 end:0x82CED1CC
@@ -14536,14 +14536,14 @@ hkpSpringDamperConstraintMotorClass.cpp:
 	.data       start:0x83268958 end:0x83268970
 	.data       start:0x833251A8 end:0x833251D8 rename:.bss
 
-hkpSpringDamperConstraintMotor.cpp:
+lib/havok/physics/dynamics/constraint/motor/springdamper/hkpSpringDamperConstraintMotor.cpp:
 	.rdata      start:0x8211C720 end:0x8211C734
 	.rdata      start:0x821DC5CC end:0x821DC624 rename:.rdata$r
 	.pdata      start:0x82215610 end:0x82215618
 	.text       start:0x82C822B0 end:0x82C823E0
 	.data       start:0x83262A94 end:0x83262AC1
 
-hkpPositionConstraintMotorClass.cpp:
+lib/havok/physics/dynamics/constraint/motor/position/hkpPositionConstraintMotorClass.cpp:
 	.rdata      start:0x8212F680 end:0x8212F73B
 	.pdata      start:0x822415A8 end:0x822415B0
 	.text       start:0x82CED250 end:0x82CED29C
@@ -14552,14 +14552,14 @@ hkpPositionConstraintMotorClass.cpp:
 	.data       start:0x83268988 end:0x832689A0
 	.data       start:0x83325208 end:0x83325238 rename:.bss
 
-hkpPositionConstraintMotor.cpp:
+lib/havok/physics/dynamics/constraint/motor/position/hkpPositionConstraintMotor.cpp:
 	.rdata      start:0x82112AC8 end:0x82112B08
 	.rdata      start:0x821D6C0C end:0x821D6D08 rename:.rdata$r
 	.pdata      start:0x82210EF8 end:0x82210F00
 	.text       start:0x82B9B788 end:0x82B9B8A0
 	.data       start:0x8325E018 end:0x8325E095
 
-hkpCallbackConstraintMotorClass.cpp:
+lib/havok/physics/dynamics/constraint/motor/callback/hkpCallbackConstraintMotorClass.cpp:
 	.rdata      start:0x8212FBAC end:0x8212FD0B
 	.rdata      start:0x821DFB8C end:0x821DFBE4 rename:.rdata$r
 	.pdata      start:0x82241618 end:0x82241620
@@ -14569,18 +14569,18 @@ hkpCallbackConstraintMotorClass.cpp:
 	.data       start:0x83268B40 end:0x83268C01
 	.data       start:0x83325448 end:0x83325478 rename:.bss
 
-hkpCallbackConstraintMotor.cpp:
+lib/havok/physics/dynamics/constraint/motor/callback/hkpCallbackConstraintMotor.cpp:
 	.pdata      start:0x82218F38 end:0x82218F40
 	.text       start:0x82D45D10 end:0x82D45E10
 
-hkpLimitedForceConstraintMotorClass.cpp:
+lib/havok/physics/dynamics/constraint/motor/hkpLimitedForceConstraintMotorClass.cpp:
 	.rdata      start:0x821239A0 end:0x82123A07
 	.pdata      start:0x82240DF0 end:0x82240DF8
 	.text       start:0x831D4FA0 end:0x831D501C rename:.text$yc
 	.data       start:0x8321F410 end:0x8321F414 rename:.CRT$XCU
 	.data       start:0x83322718 end:0x83322748 rename:.bss
 
-hkpConstraintMotorClass.cpp:
+lib/havok/physics/dynamics/constraint/motor/hkpConstraintMotorClass.cpp:
 	.rdata      start:0x82123A08 end:0x82123AAF
 	.pdata      start:0x82240DF8 end:0x82240E00
 	.text       start:0x831D5020 end:0x831D50B8 rename:.text$yc
@@ -14588,7 +14588,7 @@ hkpConstraintMotorClass.cpp:
 	.data       start:0x83264C84 end:0x83264CA0
 	.data       start:0x83322748 end:0x83322778 rename:.bss
 
-hkpMalleableConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/malleable/hkpMalleableConstraintDataClass.cpp:
 	.rdata      start:0x8212F880 end:0x8212F8E3
 	.pdata      start:0x82217668 end:0x82217670
 	.pdata      start:0x822415B8 end:0x822415C8
@@ -14597,17 +14597,17 @@ hkpMalleableConstraintDataClass.cpp:
 	.data       start:0x8321F840 end:0x8321F848 rename:.CRT$XCU
 	.data       start:0x83325268 end:0x833252B0 rename:.bss
 
-hkpMalleableConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/malleable/hkpMalleableConstraintData.cpp:
 	.rdata      start:0x82112B08 end:0x82112B4C
 	.rdata      start:0x821D6D08 end:0x821D6D5C rename:.rdata$r
 	.pdata      start:0x82210F00 end:0x82210F38
 	.text       start:0x82B9B8A0 end:0x82B9BBB4
 	.data       start:0x8325E098 end:0x8325E0C1
 
-hkpSimpleContactConstraintUtil.cpp:
+lib/havok/physics/dynamics/constraint/contact/hkpSimpleContactConstraintUtil.cpp:
 	.text       start:0x82CDD828 end:0x82CDD8B8
 
-hkpSimpleContactConstraintInfoClass.cpp:
+lib/havok/physics/dynamics/constraint/contact/hkpSimpleContactConstraintInfoClass.cpp:
 	.rdata      start:0x821285AC end:0x8212862B
 	.pdata      start:0x82241078 end:0x82241080
 	.text       start:0x82CE8B68 end:0x82CE8B84
@@ -14616,12 +14616,12 @@ hkpSimpleContactConstraintInfoClass.cpp:
 	.data       start:0x83266178 end:0x832661C1
 	.data       start:0x833235A0 end:0x833235D0 rename:.bss
 
-hkpSimpleContactConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/contact/hkpSimpleContactConstraintData.cpp:
 	.rdata      start:0x8211B67C end:0x8211B680
 	.pdata      start:0x82215058 end:0x82215088
 	.text       start:0x82C6A518 end:0x82C6AFD4
 
-hkpGenericConstraintSchemeClass.cpp:
+lib/havok/physics/dynamics/constraint/constraintkit/hkpGenericConstraintSchemeClass.cpp:
 	.rdata      start:0x82129604 end:0x8212978F
 	.pdata      start:0x82241178 end:0x82241188
 	.text       start:0x82CE92C0 end:0x82CE92FC
@@ -14630,11 +14630,11 @@ hkpGenericConstraintSchemeClass.cpp:
 	.data       start:0x83266758 end:0x832667F1
 	.data       start:0x83323B58 end:0x83323BB8 rename:.bss
 
-hkpGenericConstraintScheme.cpp:
+lib/havok/physics/dynamics/constraint/constraintkit/hkpGenericConstraintScheme.cpp:
 	.pdata      start:0x82216688 end:0x82216690
 	.text       start:0x82CB7950 end:0x82CB79B0
 
-hkpGenericConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/constraintkit/hkpGenericConstraintDataClass.cpp:
 	.rdata      start:0x8212FA10 end:0x8212FA61
 	.pdata      start:0x82217680 end:0x82217688
 	.pdata      start:0x822415D0 end:0x822415E0
@@ -14643,18 +14643,18 @@ hkpGenericConstraintDataClass.cpp:
 	.data       start:0x8321F84C end:0x8321F854 rename:.CRT$XCU
 	.data       start:0x833252E0 end:0x83325328 rename:.bss
 
-hkpGenericConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/constraintkit/hkpGenericConstraintData.cpp:
 	.rdata      start:0x82118618 end:0x8211865C
 	.rdata      start:0x821DA60C end:0x821DA660 rename:.rdata$r
 	.pdata      start:0x82213AF0 end:0x82213B90
 	.text       start:0x82C22D58 end:0x82C243F8
 	.data       start:0x83260D9C end:0x83260DD7
 
-hkpConstraintConstructionKit.cpp:
+lib/havok/physics/dynamics/constraint/constraintkit/hkpConstraintConstructionKit.cpp:
 	.pdata      start:0x82213B90 end:0x82213C68
 	.text       start:0x82C243F8 end:0x82C2634C
 
-hkpStiffSpringChainDataClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/stiffspring/hkpStiffSpringChainDataClass.cpp:
 	.rdata      start:0x821288E0 end:0x82128A18
 	.pdata      start:0x82217388 end:0x82217390
 	.pdata      start:0x822410A0 end:0x822410B8
@@ -14664,13 +14664,13 @@ hkpStiffSpringChainDataClass.cpp:
 	.data       start:0x83266288 end:0x832662FE
 	.data       start:0x83323690 end:0x83323708 rename:.bss
 
-hkpStiffSpringChainData.cpp:
+lib/havok/physics/dynamics/constraint/chain/stiffspring/hkpStiffSpringChainData.cpp:
 	.rdata      start:0x82133358 end:0x821333A0
 	.rdata      start:0x821E144C end:0x821E14A4 rename:.rdata$r
 	.pdata      start:0x822188D0 end:0x82218900
 	.text       start:0x82D35F28 end:0x82D36550
 
-hkpRagdollLimitsDataClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/ragdolllimits/hkpRagdollLimitsDataClass.cpp:
 	.rdata      start:0x82128B9C end:0x82128CC9
 	.pdata      start:0x822173A0 end:0x822173A8
 	.pdata      start:0x822410E0 end:0x822410F0
@@ -14680,14 +14680,14 @@ hkpRagdollLimitsDataClass.cpp:
 	.data       start:0x832663D8 end:0x83266435
 	.data       start:0x833237E0 end:0x83323840 rename:.bss
 
-hkpRagdollLimitsData.cpp:
+lib/havok/physics/dynamics/constraint/chain/ragdolllimits/hkpRagdollLimitsData.cpp:
 	.rdata      start:0x821184E0 end:0x82118524
 	.rdata      start:0x821DA564 end:0x821DA5B8 rename:.rdata$r
 	.pdata      start:0x82213A70 end:0x82213A88
 	.text       start:0x82C21C08 end:0x82C22248
 	.data       start:0x83260D20 end:0x83260D53
 
-hkpPoweredChainDataClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/powered/hkpPoweredChainDataClass.cpp:
 	.rdata      start:0x8212906C end:0x8212929C
 	.pdata      start:0x822173B0 end:0x822173B8
 	.pdata      start:0x82241120 end:0x82241138
@@ -14697,13 +14697,13 @@ hkpPoweredChainDataClass.cpp:
 	.data       start:0x83266560 end:0x832665CE
 	.data       start:0x83323960 end:0x833239D8 rename:.bss
 
-hkpPoweredChainData.cpp:
+lib/havok/physics/dynamics/constraint/chain/powered/hkpPoweredChainData.cpp:
 	.rdata      start:0x821333A0 end:0x821333E8
 	.rdata      start:0x821E14A4 end:0x821E14FC rename:.rdata$r
 	.pdata      start:0x82218918 end:0x82218948
 	.text       start:0x82D36770 end:0x82D374C0
 
-hkpHingeLimitsDataClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/hingelimits/hkpHingeLimitsDataClass.cpp:
 	.rdata      start:0x82129490 end:0x8212954B
 	.pdata      start:0x82241158 end:0x82241168
 	.text       start:0x82CE91E0 end:0x82CE924C
@@ -14712,14 +14712,14 @@ hkpHingeLimitsDataClass.cpp:
 	.data       start:0x8326669C end:0x832666F7
 	.data       start:0x83323A98 end:0x83323AF8 rename:.bss
 
-hkpHingeLimitsData.cpp:
+lib/havok/physics/dynamics/constraint/chain/hingelimits/hkpHingeLimitsData.cpp:
 	.rdata      start:0x82118660 end:0x821186A4
 	.rdata      start:0x821DA660 end:0x821DA6B4 rename:.rdata$r
 	.pdata      start:0x82213C68 end:0x82213C88
 	.text       start:0x82C26350 end:0x82C268B8
 	.data       start:0x83260DE0 end:0x83260E11
 
-hkpBallSocketChainDataClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/ballsocket/hkpBallSocketChainDataClass.cpp:
 	.rdata      start:0x82129790 end:0x8212988F
 	.pdata      start:0x822173B8 end:0x822173C0
 	.pdata      start:0x82241188 end:0x822411A0
@@ -14729,14 +14729,14 @@ hkpBallSocketChainDataClass.cpp:
 	.data       start:0x832667F4 end:0x83266840
 	.data       start:0x83323BB8 end:0x83323C30 rename:.bss
 
-hkpBallSocketChainData.cpp:
+lib/havok/physics/dynamics/constraint/chain/ballsocket/hkpBallSocketChainData.cpp:
 	.rdata      start:0x82118700 end:0x82118750
 	.rdata      start:0x821DA6B4 end:0x821DA74C rename:.rdata$r
 	.pdata      start:0x82213CF0 end:0x82213D20
 	.text       start:0x82C274A0 end:0x82C27A50
 	.data       start:0x83260E14 end:0x83260E61
 
-hkpConstraintChainInstanceClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/hkpConstraintChainInstanceClass.cpp:
 	.rdata      start:0x8212FB34 end:0x8212FB97
 	.pdata      start:0x82217698 end:0x822176A8
 	.pdata      start:0x82241600 end:0x82241610
@@ -14745,7 +14745,7 @@ hkpConstraintChainInstanceClass.cpp:
 	.data       start:0x8321F864 end:0x8321F86C rename:.CRT$XCU
 	.data       start:0x833253D0 end:0x83325418 rename:.bss
 
-hkpConstraintChainInstanceActionClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/hkpConstraintChainInstanceActionClass.cpp:
 	.rdata      start:0x8212FAE4 end:0x8212FB31
 	.pdata      start:0x82217688 end:0x82217698
 	.pdata      start:0x822415F0 end:0x82241600
@@ -14754,25 +14754,25 @@ hkpConstraintChainInstanceActionClass.cpp:
 	.data       start:0x8321F85C end:0x8321F864 rename:.CRT$XCU
 	.data       start:0x83325388 end:0x833253D0 rename:.bss
 
-hkpConstraintChainInstanceAction.cpp:
+lib/havok/physics/dynamics/constraint/chain/hkpConstraintChainInstanceAction.cpp:
 	.pdata      start:0x82217A88 end:0x82217A90
 	.text       start:0x82CF58B0 end:0x82CF59A4
 
-hkpConstraintChainInstance.cpp:
+lib/havok/physics/dynamics/constraint/chain/hkpConstraintChainInstance.cpp:
 	.rdata      start:0x8211F260 end:0x8211F2A4
 	.rdata      start:0x821DD4B4 end:0x821DD55C rename:.rdata$r
 	.pdata      start:0x82216690 end:0x822166C0
 	.text       start:0x82CB79B0 end:0x82CB7D28
 	.data       start:0x83263540 end:0x83263599
 
-hkpConstraintChainDataClass.cpp:
+lib/havok/physics/dynamics/constraint/chain/hkpConstraintChainDataClass.cpp:
 	.rdata      start:0x82123AB0 end:0x82123AC7
 	.pdata      start:0x82240E00 end:0x82240E08
 	.text       start:0x831D50B8 end:0x831D5120 rename:.text$yc
 	.data       start:0x8321F41C end:0x8321F420 rename:.CRT$XCU
 	.data       start:0x83322778 end:0x833227A8 rename:.bss
 
-hkpBreakableConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/breakable/hkpBreakableConstraintDataClass.cpp:
 	.rdata      start:0x8211F0A4 end:0x8211F1F3
 	.pdata      start:0x82216620 end:0x82216628
 	.pdata      start:0x82240C00 end:0x82240C10
@@ -14781,14 +14781,14 @@ hkpBreakableConstraintDataClass.cpp:
 	.data       start:0x8321F2EC end:0x8321F2F4 rename:.CRT$XCU
 	.data       start:0x83321B54 end:0x83321B9C rename:.bss
 
-hkpBreakableConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/breakable/hkpBreakableConstraintData.cpp:
 	.rdata      start:0x82118408 end:0x8211844C
 	.rdata      start:0x821DA468 end:0x821DA4BC rename:.rdata$r
 	.pdata      start:0x822139F8 end:0x82213A48
 	.text       start:0x82C208E0 end:0x82C2109C
 	.data       start:0x83260C78 end:0x83260CA1
 
-hkpWheelConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/wheel/hkpWheelConstraintDataClass.cpp:
 	.rdata      start:0x8212862C end:0x82128843
 	.pdata      start:0x82241080 end:0x82241090
 	.text       start:0x82CE8B88 end:0x82CE8BF4
@@ -14797,14 +14797,14 @@ hkpWheelConstraintDataClass.cpp:
 	.data       start:0x832661C4 end:0x83266223
 	.data       start:0x833235D0 end:0x83323630 rename:.bss
 
-hkpWheelConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/wheel/hkpWheelConstraintData.cpp:
 	.rdata      start:0x82118450 end:0x82118494
 	.rdata      start:0x821DA4BC end:0x821DA510 rename:.rdata$r
 	.pdata      start:0x82213A48 end:0x82213A70
 	.text       start:0x82C210A0 end:0x82C21B38
 	.data       start:0x83260CB0 end:0x83260CE5
 
-hkpStiffSpringConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/stiffspring/hkpStiffSpringConstraintDataClass.cpp:
 	.rdata      start:0x82128844 end:0x821288DD
 	.pdata      start:0x82241090 end:0x822410A0
 	.text       start:0x82CE8BF8 end:0x82CE8C64
@@ -14813,13 +14813,13 @@ hkpStiffSpringConstraintDataClass.cpp:
 	.data       start:0x83266224 end:0x83266285
 	.data       start:0x83323630 end:0x83323690 rename:.bss
 
-hkpStiffSpringConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/stiffspring/hkpStiffSpringConstraintData.cpp:
 	.rdata      start:0x82118498 end:0x821184DC
 	.rdata      start:0x821DA510 end:0x821DA564 rename:.rdata$r
 	.text       start:0x82C21B38 end:0x82C21C04
 	.data       start:0x83260CE8 end:0x83260D13
 
-hkpRotationalConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/rotational/hkpRotationalConstraintDataClass.cpp:
 	.rdata      start:0x82128AC0 end:0x82128B9C
 	.rdata      start:0x821DEA80 end:0x821DEAD4 rename:.rdata$r
 	.pdata      start:0x822410D0 end:0x822410E0
@@ -14829,11 +14829,11 @@ hkpRotationalConstraintDataClass.cpp:
 	.data       start:0x8326634C end:0x832663D8
 	.data       start:0x83323780 end:0x833237E0 rename:.bss
 
-hkpRotationalConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/rotational/hkpRotationalConstraintData.cpp:
 	.pdata      start:0x82218900 end:0x82218918
 	.text       start:0x82D36550 end:0x82D36770
 
-hkpRagdollConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/ragdoll/hkpRagdollConstraintDataClass.cpp:
 	.rdata      start:0x82128CCC end:0x82128E79
 	.pdata      start:0x822173A8 end:0x822173B0
 	.pdata      start:0x822410F0 end:0x82241100
@@ -14843,14 +14843,14 @@ hkpRagdollConstraintDataClass.cpp:
 	.data       start:0x83266438 end:0x8326649D
 	.data       start:0x83323840 end:0x833238A0 rename:.bss
 
-hkpRagdollConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/ragdoll/hkpRagdollConstraintData.cpp:
 	.rdata      start:0x82112A78 end:0x82112AC8
 	.rdata      start:0x821D6BB8 end:0x821D6C0C rename:.rdata$r
 	.pdata      start:0x82210E98 end:0x82210EF8
 	.text       start:0x82B9AB80 end:0x82B9B788
 	.data       start:0x8325DFE0 end:0x8325E017
 
-hkpPrismaticConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/prismatic/hkpPrismaticConstraintDataClass.cpp:
 	.rdata      start:0x82128F14 end:0x8212906B
 	.pdata      start:0x82241110 end:0x82241120
 	.text       start:0x82CE9010 end:0x82CE907C
@@ -14859,14 +14859,14 @@ hkpPrismaticConstraintDataClass.cpp:
 	.data       start:0x832664FC end:0x8326655F
 	.data       start:0x83323900 end:0x83323960 rename:.bss
 
-hkpPrismaticConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/prismatic/hkpPrismaticConstraintData.cpp:
 	.rdata      start:0x82118528 end:0x8211856C
 	.rdata      start:0x821DA5B8 end:0x821DA60C rename:.rdata$r
 	.pdata      start:0x82213A88 end:0x82213AC0
 	.text       start:0x82C22248 end:0x82C229CC
 	.data       start:0x83260D60 end:0x83260D99
 
-hkpPointToPlaneConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/pointtoplane/hkpPointToPlaneConstraintDataClass.cpp:
 	.rdata      start:0x8212929C end:0x8212932A
 	.pdata      start:0x82241138 end:0x82241148
 	.text       start:0x82CE9100 end:0x82CE916C
@@ -14875,14 +14875,14 @@ hkpPointToPlaneConstraintDataClass.cpp:
 	.data       start:0x832665D0 end:0x83266632
 	.data       start:0x833239D8 end:0x83323A38 rename:.bss
 
-hkpPointToPlaneConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/pointtoplane/hkpPointToPlaneConstraintData.cpp:
 	.rdata      start:0x8211BC00 end:0x8211BC44
 	.rdata      start:0x821DC348 end:0x821DC39C rename:.rdata$r
 	.pdata      start:0x82215450 end:0x82215468
 	.text       start:0x82C7B100 end:0x82C7B630
 	.data       start:0x83262370 end:0x832623AC
 
-hkpPointToPathConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/pointtopath/hkpPointToPathConstraintDataClass.cpp:
 	.rdata      start:0x8212F73C end:0x8212F879
 	.pdata      start:0x822415B0 end:0x822415B8
 	.text       start:0x82CED2A0 end:0x82CED304
@@ -14891,21 +14891,21 @@ hkpPointToPathConstraintDataClass.cpp:
 	.data       start:0x832689A0 end:0x83268A38
 	.data       start:0x83325238 end:0x83325268 rename:.bss
 
-hkpPointToPathConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/pointtopath/hkpPointToPathConstraintData.cpp:
 	.rdata      start:0x82122CB0 end:0x82122CF4
 	.rdata      start:0x821DE1FC end:0x821DE250 rename:.rdata$r
 	.pdata      start:0x822170A8 end:0x822170E0
 	.text       start:0x82CE0F20 end:0x82CE190C
 	.data       start:0x832647D0 end:0x8326480B
 
-hkpParametricCurveClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/pointtopath/hkpParametricCurveClass.cpp:
 	.rdata      start:0x8212398C end:0x8212399F
 	.pdata      start:0x82240DE8 end:0x82240DF0
 	.text       start:0x831D4F38 end:0x831D4FA0 rename:.text$yc
 	.data       start:0x8321F40C end:0x8321F410 rename:.CRT$XCU
 	.data       start:0x833226E8 end:0x83322718 rename:.bss
 
-hkpLinearParametricCurveClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/pointtopath/hkpLinearParametricCurveClass.cpp:
 	.rdata      start:0x8212F8E4 end:0x8212FA0D
 	.rdata      start:0x821DFA6C end:0x821DFAFC rename:.rdata$r
 	.pdata      start:0x82217670 end:0x82217680
@@ -14916,12 +14916,12 @@ hkpLinearParametricCurveClass.cpp:
 	.data       start:0x83268A38 end:0x83268A9C
 	.data       start:0x833252B0 end:0x833252E0 rename:.bss
 
-hkpLinearParametricCurve.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/pointtopath/hkpLinearParametricCurve.cpp:
 	.pdata      start:0x82218ED8 end:0x82218F20
 	.text       start:0x82D44C88 end:0x82D45B24
 	.data       start:0x8326A210 end:0x8326A220
 
-hkpLimitedHingeConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/limitedhinge/hkpLimitedHingeConstraintDataClass.cpp:
 	.rdata      start:0x8212932C end:0x8212948A
 	.pdata      start:0x82241148 end:0x82241158
 	.text       start:0x82CE9170 end:0x82CE91DC
@@ -14930,14 +14930,14 @@ hkpLimitedHingeConstraintDataClass.cpp:
 	.data       start:0x83266634 end:0x8326669A
 	.data       start:0x83323A38 end:0x83323A98 rename:.bss
 
-hkpLimitedHingeConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/limitedhinge/hkpLimitedHingeConstraintData.cpp:
 	.rdata      start:0x8210E1A8 end:0x8210E1EC
 	.rdata      start:0x821D61B4 end:0x821D6244 rename:.rdata$r
 	.pdata      start:0x8220F8F8 end:0x8220F938
 	.text       start:0x82B73AD8 end:0x82B743A4
 	.data       start:0x8325DAF0 end:0x8325DB4C
 
-hkpHingeConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/hinge/hkpHingeConstraintDataClass.cpp:
 	.rdata      start:0x82129550 end:0x82129603
 	.pdata      start:0x82241168 end:0x82241178
 	.text       start:0x82CE9250 end:0x82CE92BC
@@ -14946,14 +14946,14 @@ hkpHingeConstraintDataClass.cpp:
 	.data       start:0x832666F8 end:0x83266757
 	.data       start:0x83323AF8 end:0x83323B58 rename:.bss
 
-hkpHingeConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/hinge/hkpHingeConstraintData.cpp:
 	.rdata      start:0x8210F1C0 end:0x8210F204
 	.rdata      start:0x821D64F8 end:0x821D654C rename:.rdata$r
 	.pdata      start:0x8220FD40 end:0x8220FD68
 	.text       start:0x82B7B7A0 end:0x82B7BEF4
 	.data       start:0x8325DCF0 end:0x8325DD25
 
-hkpBallAndSocketConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/ballandsocket/hkpBallAndSocketConstraintDataClass.cpp:
 	.rdata      start:0x82129890 end:0x8212991B
 	.pdata      start:0x822411A0 end:0x822411B0
 	.text       start:0x82CE9380 end:0x82CE93EC
@@ -14962,18 +14962,18 @@ hkpBallAndSocketConstraintDataClass.cpp:
 	.data       start:0x83266840 end:0x832668A3
 	.data       start:0x83323C30 end:0x83323C90 rename:.bss
 
-hkpBallAndSocketConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/bilateral/ballandsocket/hkpBallAndSocketConstraintData.cpp:
 	.rdata      start:0x82118750 end:0x82118794
 	.rdata      start:0x821DA74C end:0x821DA7A0 rename:.rdata$r
 	.pdata      start:0x82213D20 end:0x82213D30
 	.text       start:0x82C27A50 end:0x82C27BF8
 	.data       start:0x83260E64 end:0x83260E91
 
-hkpConstraintAtomUtil.cpp:
+lib/havok/physics/dynamics/constraint/atom/hkpConstraintAtomUtil.cpp:
 	.pdata      start:0x82215038 end:0x82215058
 	.text       start:0x82C6A0E0 end:0x82C6A518
 
-hkpConstraintAtomClass.cpp:
+lib/havok/physics/dynamics/constraint/atom/hkpConstraintAtomClass.cpp:
 	.rdata      start:0x8211FD80 end:0x82121280
 	.pdata      start:0x82240C18 end:0x82240D18
 	.text       start:0x82CD4478 end:0x82CD488C
@@ -14982,12 +14982,12 @@ hkpConstraintAtomClass.cpp:
 	.data       start:0x83263B80 end:0x832644C2
 	.data       start:0x83321BF8 end:0x833221C8 rename:.bss
 
-hkpConstraintAtom.cpp:
+lib/havok/physics/dynamics/constraint/atom/hkpConstraintAtom.cpp:
 	.pdata      start:0x822123C0 end:0x822123E0
 	.text       start:0x82BED720 end:0x82BEDDFC
 	.data       start:0x83320950 end:0x83320991 rename:.bss
 
-hkpConstraintInstanceClass.cpp:
+lib/havok/physics/dynamics/constraint/hkpConstraintInstanceClass.cpp:
 	.rdata      start:0x82119F9C end:0x8211A332
 	.pdata      start:0x82214988 end:0x82214998
 	.pdata      start:0x82240AA8 end:0x82240AC0
@@ -14997,14 +14997,14 @@ hkpConstraintInstanceClass.cpp:
 	.data       start:0x83261588 end:0x8326171C
 	.data       start:0x83320FFC end:0x83321074 rename:.bss
 
-hkpConstraintInstance.cpp:
+lib/havok/physics/dynamics/constraint/hkpConstraintInstance.cpp:
 	.rdata      start:0x82114AE0 end:0x82114B00
 	.rdata      start:0x821D7E10 end:0x821D7E60 rename:.rdata$r
 	.pdata      start:0x822121F0 end:0x82212258
 	.text       start:0x82BE8650 end:0x82BE9508
 	.data       start:0x8325EBA4 end:0x8325EBC8
 
-hkpConstraintDataClass.cpp:
+lib/havok/physics/dynamics/constraint/hkpConstraintDataClass.cpp:
 	.rdata      start:0x82121280 end:0x821215F6
 	.pdata      start:0x82240D18 end:0x82240D20
 	.text       start:0x831D42E8 end:0x831D4364 rename:.text$yc
@@ -15012,10 +15012,10 @@ hkpConstraintDataClass.cpp:
 	.data       start:0x832644C4 end:0x832644C8
 	.data       start:0x833221C8 end:0x833221F8 rename:.bss
 
-hkpConstraintData.cpp:
+lib/havok/physics/dynamics/constraint/hkpConstraintData.cpp:
 	.text       start:0x82BED300 end:0x82BED720
 
-hkpPropertyClass.cpp:
+lib/havok/physics/dynamics/common/hkpPropertyClass.cpp:
 	.rdata      start:0x8211BC54 end:0x8211BCF0
 	.pdata      start:0x82240AF0 end:0x82240B00
 	.text       start:0x82C7C750 end:0x82C7C784
@@ -15024,7 +15024,7 @@ hkpPropertyClass.cpp:
 	.data       start:0x832623AC end:0x83262416
 	.data       start:0x833214A4 end:0x83321504 rename:.bss
 
-hkpMaterialClass.cpp:
+lib/havok/physics/dynamics/common/hkpMaterialClass.cpp:
 	.rdata      start:0x8211BFE0 end:0x8211C0A8
 	.pdata      start:0x82240B48 end:0x82240B50
 	.text       start:0x82C7CB20 end:0x82C7CB3C
@@ -15033,41 +15033,41 @@ hkpMaterialClass.cpp:
 	.data       start:0x83262528 end:0x832625AA
 	.data       start:0x83321684 end:0x833216B4 rename:.bss
 
-hkpPairCollisionFilter.cpp:
+lib/havok/physics/dynamics/collide/filter/pair/hkpPairCollisionFilter.cpp:
 	.rdata      start:0x82121940 end:0x82121988
 	.rdata      start:0x821DE198 end:0x821DE1FC rename:.rdata$r
 	.pdata      start:0x82216F90 end:0x82216FE8
 	.text       start:0x82CDA518 end:0x82CDAB50
 
-hkpConstraintCollisionFilter.cpp:
+lib/havok/physics/dynamics/collide/filter/constraint/hkpConstraintCollisionFilter.cpp:
 	.rdata      start:0x8211B5AC end:0x8211B614
 	.rdata      start:0x821DBE78 end:0x821DBFB4 rename:.rdata$r
 	.pdata      start:0x82214F48 end:0x82214F80
 	.text       start:0x82C60F00 end:0x82C61508
 	.data       start:0x83261F40 end:0x83261F91
 
-hkpReportContactMgr.cpp:
+lib/havok/physics/dynamics/collide/deprecated/hkpReportContactMgr.cpp:
 	.rdata      start:0x82113BF8 end:0x82113C5C
 	.rdata      start:0x821D7008 end:0x821D70F4 rename:.rdata$r
 	.pdata      start:0x82211710 end:0x82211748
 	.text       start:0x82BBEDE0 end:0x82BBF4B0
 	.data       start:0x8325E2B8 end:0x8325E32A
 
-hkpEndOfStepCallbackUtil.cpp:
+lib/havok/physics/dynamics/collide/contactlistener/util/hkpEndOfStepCallbackUtil.cpp:
 	.rdata      start:0x8211B9A4 end:0x8211B9D3
 	.rdata      start:0x821DC234 end:0x821DC2B8 rename:.rdata$r
 	.pdata      start:0x82215390 end:0x822153D8
 	.text       start:0x82C78070 end:0x82C78F68
 	.data       start:0x832621C0 end:0x832621E7
 
-hkpCollisionCallbackUtil.cpp:
+lib/havok/physics/dynamics/collide/contactlistener/util/hkpCollisionCallbackUtil.cpp:
 	.rdata      start:0x8211465C end:0x821146BC
 	.rdata      start:0x821D78D0 end:0x821D7988 rename:.rdata$r
 	.pdata      start:0x82211DE8 end:0x82211E28
 	.text       start:0x82BD1310 end:0x82BD1910
 	.data       start:0x8325E7F4 end:0x8325E81B
 
-hkpSimpleConstraintContactMgr.cpp:
+lib/havok/physics/dynamics/collide/hkpSimpleConstraintContactMgr.cpp:
 	.rdata      start:0x82113C5C end:0x82113D50
 	.rdata      start:0x821D70F4 end:0x821D71F4 rename:.rdata$r
 	.pdata      start:0x82211748 end:0x822117D8
@@ -15078,12 +15078,12 @@ hkpSimpleConstraintContactMgr.cpp:
 	.data       start:0x8325E32C end:0x8325E3BC
 	.data       start:0x8332074C end:0x8332077C rename:.bss
 
-hkpResponseModifier.cpp:
+lib/havok/physics/dynamics/collide/hkpResponseModifier.cpp:
 	.rdata      start:0x82112B4C end:0x82112BCD
 	.pdata      start:0x82210F38 end:0x82210F80
 	.text       start:0x82B9BBB8 end:0x82B9C6AC
 
-hkpUnaryActionClass.cpp:
+lib/havok/physics/dynamics/action/hkpUnaryActionClass.cpp:
 	.rdata      start:0x82115C70 end:0x82115CBB
 	.pdata      start:0x82240970 end:0x82240978
 	.text       start:0x831D0810 end:0x831D088C rename:.text$yc
@@ -15091,13 +15091,13 @@ hkpUnaryActionClass.cpp:
 	.data       start:0x8325F074 end:0x8325F075
 	.data       start:0x833209C4 end:0x833209F4 rename:.bss
 
-hkpUnaryAction.cpp:
+lib/havok/physics/dynamics/action/hkpUnaryAction.cpp:
 	.rdata      start:0x82115C28 end:0x82115C70
 	.rdata      start:0x821D843C end:0x821D8464 rename:.rdata$r
 	.pdata      start:0x82212660 end:0x82212690
 	.text       start:0x82BF7C38 end:0x82BF7F80
 
-hkpBinaryActionClass.cpp:
+lib/havok/physics/dynamics/action/hkpBinaryActionClass.cpp:
 	.rdata      start:0x8211EFF4 end:0x8211F0A4
 	.pdata      start:0x82240BF8 end:0x82240C00
 	.text       start:0x831D30C0 end:0x831D313C rename:.text$yc
@@ -15105,20 +15105,20 @@ hkpBinaryActionClass.cpp:
 	.data       start:0x832634B4 end:0x832634E4
 	.data       start:0x83321B24 end:0x83321B54 rename:.bss
 
-hkpBinaryAction.cpp:
+lib/havok/physics/dynamics/action/hkpBinaryAction.cpp:
 	.rdata      start:0x8211EFD0 end:0x8211EFF4
 	.rdata      start:0x821DD4A0 end:0x821DD4B4 rename:.rdata$r
 	.pdata      start:0x822165F0 end:0x82216620
 	.text       start:0x82CB60F0 end:0x82CB6444
 
-hkpArrayActionClass.cpp:
+lib/havok/physics/dynamics/action/hkpArrayActionClass.cpp:
 	.rdata      start:0x82123ADC end:0x82123B03
 	.pdata      start:0x82240E10 end:0x82240E18
 	.text       start:0x831D5188 end:0x831D5204 rename:.text$yc
 	.data       start:0x8321F424 end:0x8321F428 rename:.CRT$XCU
 	.data       start:0x833227D8 end:0x83322808 rename:.bss
 
-hkpActionClass.cpp:
+lib/havok/physics/dynamics/action/hkpActionClass.cpp:
 	.rdata      start:0x8211A334 end:0x8211A3D2
 	.pdata      start:0x82240AC0 end:0x82240AC8
 	.text       start:0x831D1C08 end:0x831D1C84 rename:.text$yc
@@ -15126,107 +15126,107 @@ hkpActionClass.cpp:
 	.data       start:0x8326171C end:0x8326171D
 	.data       start:0x83321074 end:0x833210A4 rename:.bss
 
-hkpVehicleFrictionSolver.cpp:
+lib/havok/physics/constraintsolver/vehiclefriction/hkpVehicleFrictionSolver.cpp:
 	.rdata      start:0x82134420 end:0x82134450
 	.pdata      start:0x82219340 end:0x82219358
 	.text       start:0x82D5BDD0 end:0x82D5CDF0
 	.data       start:0x8326A3C0 end:0x8326A3E0
 	.data       start:0x83326501 end:0x83326502 rename:.bss
 
-hkpSolverGetToiVelocities.cpp:
+lib/havok/physics/constraintsolver/solve/hkpSolverGetToiVelocities.cpp:
 	.rdata      start:0x8211BBA0 end:0x8211BBC0
 	.pdata      start:0x822153E8 end:0x822153F0
 	.text       start:0x82C79768 end:0x82C79C80
 	.data       start:0x83262300 end:0x83262320
 
-hkpSolverExport.cpp:
+lib/havok/physics/constraintsolver/solve/hkpSolverExport.cpp:
 	.rdata      start:0x82121990 end:0x821219B0
 	.pdata      start:0x82216FE8 end:0x82216FF0
 	.text       start:0x82CDAB50 end:0x82CDBBD4
 	.data       start:0x832646E0 end:0x83264700
 
-hkpSolverCheck.cpp:
+lib/havok/physics/constraintsolver/solve/hkpSolverCheck.cpp:
 	.rdata      start:0x821219F0 end:0x82121ACA
 	.pdata      start:0x82217040 end:0x82217048
 	.text       start:0x82CDD538 end:0x82CDD828
 	.data       start:0x83264770 end:0x83264774
 
-hkpSolver.cpp:
+lib/havok/physics/constraintsolver/solve/hkpSolver.cpp:
 	.rdata      start:0x8211B640 end:0x8211B670
 	.pdata      start:0x82214FE8 end:0x82215020
 	.text       start:0x82C62B30 end:0x82C69E3C
 	.data       start:0x83261FA0 end:0x83261FC0
 	.data       start:0x83321138 end:0x83321139 rename:.bss
 
-hkpSimplexSolver.cpp:
+lib/havok/physics/constraintsolver/simplex/hkpSimplexSolver.cpp:
 	.rdata      start:0x82115910 end:0x82115940
 	.pdata      start:0x82212428 end:0x82212450
 	.text       start:0x82BEF128 end:0x82BF0328
 	.data       start:0x8325EE30 end:0x8325EE34
 
-hkpSimpleConstraintUtil.cpp:
+lib/havok/physics/constraintsolver/simpleconstraints/hkpSimpleConstraintUtil.cpp:
 	.rdata      start:0x82121B30 end:0x82121B5C
 	.pdata      start:0x82217088 end:0x822170A0
 	.text       start:0x82CE05A0 end:0x82CE0EB8
 	.data       start:0x83264790 end:0x832647B0
 	.data       start:0x8332233C end:0x8332233D rename:.bss
 
-hkpJacobianSchema.cpp:
+lib/havok/physics/constraintsolver/jacobian/hkpJacobianSchema.cpp:
 	.rdata      start:0x821219B0 end:0x821219D0
 	.text       start:0x82CDBBD8 end:0x82CDBBDC
 	.data       start:0x83264700 end:0x83264744
 
-hkpJacobianChainSchemas.cpp:
+lib/havok/physics/constraintsolver/jacobian/hkpJacobianChainSchemas.cpp:
 	.rdata      start:0x8211F2D0 end:0x8211F2F0
 	.text       start:0x82CB88A8 end:0x82CB88D8
 	.data       start:0x832635C0 end:0x832635C4
 
-hkpMotorBuildJacobian.cpp:
+lib/havok/physics/constraintsolver/constraint/motor/hkpMotorBuildJacobian.cpp:
 	.rdata      start:0x8211F240 end:0x8211F260
 	.pdata      start:0x82216680 end:0x82216688
 	.text       start:0x82CB7610 end:0x82CB7950
 	.data       start:0x83263520 end:0x83263540
 
-hkpSimpleContactConstraintInfo.cpp:
+lib/havok/physics/constraintsolver/constraint/contact/hkpSimpleContactConstraintInfo.cpp:
 	.rdata      start:0x8211AF20 end:0x8211AF40
 	.pdata      start:0x82214AB8 end:0x82214AC0
 	.text       start:0x82C4A760 end:0x82C4B2A8
 	.data       start:0x83261C70 end:0x83261C90
 
-hkpPoweredChainSolverUtil.cpp:
+lib/havok/physics/constraintsolver/constraint/chain/hkpPoweredChainSolverUtil.cpp:
 	.rdata      start:0x821219D0 end:0x821219F0
 	.pdata      start:0x82216FF0 end:0x82217040
 	.text       start:0x82CDBBE0 end:0x82CDD534
 	.data       start:0x83264750 end:0x83264770
 
-hkpChainBuildJacobian.cpp:
+lib/havok/physics/constraintsolver/constraint/chain/hkpChainBuildJacobian.cpp:
 	.rdata      start:0x8211F2B0 end:0x8211F2D0
 	.pdata      start:0x822166C0 end:0x822166E0
 	.text       start:0x82CB7D28 end:0x82CB88A8
 	.data       start:0x832635A0 end:0x832635C0
 
-hkpInternalConstraintUtils.cpp:
+lib/havok/physics/constraintsolver/constraint/bilateral/hkpInternalConstraintUtils.cpp:
 	.rdata      start:0x8211F220 end:0x8211F240
 	.pdata      start:0x82216678 end:0x82216680
 	.text       start:0x82CB74D0 end:0x82CB760C
 	.data       start:0x83263510 end:0x83263514
 
-hkp1dBilateralConstraintBuildJacobian.cpp:
+lib/havok/physics/constraintsolver/constraint/bilateral/hkp1dBilateralConstraintBuildJacobian.cpp:
 	.rdata      start:0x8211F200 end:0x8211F220
 	.pdata      start:0x82216628 end:0x82216678
 	.text       start:0x82CB64B0 end:0x82CB74D0
 	.data       start:0x832634F0 end:0x83263510
 
-hkpBuildJacobianFromAtoms.cpp:
+lib/havok/physics/constraintsolver/constraint/atom/hkpBuildJacobianFromAtoms.cpp:
 	.rdata      start:0x8211AEE0 end:0x8211AF20
 	.pdata      start:0x822149B8 end:0x82214AB8
 	.text       start:0x82C44E30 end:0x82C4A75C
 	.data       start:0x83261C50 end:0x83261C70
 
-hkpWeldingUtilityTableInit.cpp:
+lib/havok/physics/collide/util/welding/hkpWeldingUtilityTableInit.cpp:
 	.data       start:0x83321140 end:0x83321440 rename:.bss
 
-hkpWeldingUtilityClass.cpp:
+lib/havok/physics/collide/util/welding/hkpWeldingUtilityClass.cpp:
 	.rdata      start:0x8211EC24 end:0x8211ED82
 	.pdata      start:0x82240BE8 end:0x82240BF0
 	.text       start:0x82CB33D0 end:0x82CB33E4
@@ -15235,17 +15235,17 @@ hkpWeldingUtilityClass.cpp:
 	.data       start:0x83263378 end:0x832633BC
 	.data       start:0x83321AC4 end:0x83321AF4 rename:.bss
 
-hkpWeldingUtility.cpp:
+lib/havok/physics/collide/util/welding/hkpWeldingUtility.cpp:
 	.rdata      start:0x82114934 end:0x82114938
 	.pdata      start:0x82211F98 end:0x82211FA0
 	.text       start:0x82BD7CE0 end:0x82BD7E58
 
-hkpMeshWeldingUtility.cpp:
+lib/havok/physics/collide/util/welding/hkpMeshWeldingUtility.cpp:
 	.rdata      start:0x8211F830 end:0x8211F940
 	.pdata      start:0x82216C08 end:0x82216C90
 	.text       start:0x82CC7620 end:0x82CC9A58
 
-hkpShapeInfoClass.cpp:
+lib/havok/physics/collide/util/shapeinfo/hkpShapeInfoClass.cpp:
 	.rdata      start:0x8213004C end:0x82130145
 	.rdata      start:0x821DFBE4 end:0x821DFC34 rename:.rdata$r
 	.pdata      start:0x822176D8 end:0x822176E8
@@ -15256,45 +15256,45 @@ hkpShapeInfoClass.cpp:
 	.data       start:0x83268D48 end:0x83268D7C
 	.data       start:0x83325640 end:0x83325670 rename:.bss
 
-hkpShapeDepthUtil.cpp:
+lib/havok/physics/collide/util/shapedepth/hkpShapeDepthUtil.cpp:
 	.pdata      start:0x822122E8 end:0x822122F0
 	.text       start:0x82BEA630 end:0x82BEA6F0
 
-hkpCollidableMediator.cpp:
+lib/havok/physics/collide/util/kdtree/mediator/hkpCollidableMediator.cpp:
 	.rdata      start:0x8211B988 end:0x8211B9A4
 	.rdata      start:0x821DC1A4 end:0x821DC234 rename:.rdata$r
 	.pdata      start:0x82215380 end:0x82215390
 	.text       start:0x82C77D38 end:0x82C78070
 	.data       start:0x83262160 end:0x832621C0
 
-hkpTriangleUtil.cpp:
+lib/havok/physics/collide/util/hkpTriangleUtil.cpp:
 	.text       start:0x82BAEEF0 end:0x82BAF128
 	.data       start:0x8325E1D4 end:0x8325E1D8
 
-hkpCollideTriangleUtil.cpp:
+lib/havok/physics/collide/util/hkpCollideTriangleUtil.cpp:
 	.rdata      start:0x8211348C end:0x821134A1
 	.pdata      start:0x82211260 end:0x82211270
 	.text       start:0x82BADC20 end:0x82BAE5D0
 	.data       start:0x8325E1A0 end:0x8325E1B0
 
-hkpCollideCapsuleUtil.cpp:
+lib/havok/physics/collide/util/hkpCollideCapsuleUtil.cpp:
 	.rdata      start:0x82113484 end:0x8211348C
 	.pdata      start:0x82211240 end:0x82211260
 	.text       start:0x82BAC790 end:0x82BADC20
 	.data       start:0x8325E190 end:0x8325E1A0
 
-hkpRayShapeCollectionFilterClass.cpp:
+lib/havok/physics/collide/shape/query/hkpRayShapeCollectionFilterClass.cpp:
 	.rdata      start:0x82123B20 end:0x82123B3C
 	.pdata      start:0x82240E20 end:0x82240E28
 	.text       start:0x831D5270 end:0x831D52D4 rename:.text$yc
 	.data       start:0x8321F42C end:0x8321F430 rename:.CRT$XCU
 	.data       start:0x83322838 end:0x83322868 rename:.bss
 
-hkpRayHitCollector.cpp:
+lib/havok/physics/collide/shape/query/hkpRayHitCollector.cpp:
 	.pdata      start:0x822112A0 end:0x822112A8
 	.text       start:0x82BAF128 end:0x82BAF1B4
 
-hkpTransformShapeClass.cpp:
+lib/havok/physics/collide/shape/misc/transform/hkpTransformShapeClass.cpp:
 	.rdata      start:0x8212FFA8 end:0x8213001A
 	.pdata      start:0x82241668 end:0x82241670
 	.text       start:0x82CEDCC8 end:0x82CEDD44
@@ -15303,24 +15303,24 @@ hkpTransformShapeClass.cpp:
 	.data       start:0x83268D18 end:0x83268D30
 	.data       start:0x833255E0 end:0x83325610 rename:.bss
 
-hkpTransformShape.cpp:
+lib/havok/physics/collide/shape/misc/transform/hkpTransformShape.cpp:
 	.rdata      start:0x82115B74 end:0x82115BBE
 	.rdata      start:0x821D83E8 end:0x821D843C rename:.rdata$r
 	.pdata      start:0x82212608 end:0x82212648
 	.text       start:0x82BF70D8 end:0x82BF77D0
 	.data       start:0x8325F054 end:0x8325F074
 
-hkpPhantomCallbackShapeClass.cpp:
+lib/havok/physics/collide/shape/misc/phantomcallback/hkpPhantomCallbackShapeClass.cpp:
 	.rdata      start:0x82123B54 end:0x82123B6C
 	.pdata      start:0x82240E30 end:0x82240E38
 	.text       start:0x831D5340 end:0x831D53A8 rename:.text$yc
 	.data       start:0x8321F434 end:0x8321F438 rename:.CRT$XCU
 	.data       start:0x83322898 end:0x833228C8 rename:.bss
 
-hkpPhantomCallbackShape.cpp:
+lib/havok/physics/collide/shape/misc/phantomcallback/hkpPhantomCallbackShape.cpp:
 	.text       start:0x82B55008 end:0x82B5504C
 
-hkpMultiRayShapeClass.cpp:
+lib/havok/physics/collide/shape/misc/multiray/hkpMultiRayShapeClass.cpp:
 	.rdata      start:0x82129AD0 end:0x82129BA9
 	.rdata      start:0x821DEB44 end:0x821DEB98 rename:.rdata$r
 	.pdata      start:0x822173D8 end:0x822173E8
@@ -15331,13 +15331,13 @@ hkpMultiRayShapeClass.cpp:
 	.data       start:0x832669C4 end:0x83266A37
 	.data       start:0x83323D38 end:0x83323D98 rename:.bss
 
-hkpMultiRayShape.cpp:
+lib/havok/physics/collide/shape/misc/multiray/hkpMultiRayShape.cpp:
 	.rdata      start:0x82133400 end:0x82133405
 	.pdata      start:0x82218978 end:0x82218990
 	.text       start:0x82D379D0 end:0x82D37DB8
 	.data       start:0x8326A1A0 end:0x8326A1B0
 
-hkpBvShapeClass.cpp:
+lib/havok/physics/collide/shape/misc/bv/hkpBvShapeClass.cpp:
 	.rdata      start:0x82130AB0 end:0x82130AFF
 	.pdata      start:0x82241730 end:0x82241738
 	.text       start:0x82CEED28 end:0x82CEEDA4
@@ -15346,14 +15346,14 @@ hkpBvShapeClass.cpp:
 	.data       start:0x83268FD0 end:0x83268FE8
 	.data       start:0x83325A00 end:0x83325A30 rename:.bss
 
-hkpBvShape.cpp:
+lib/havok/physics/collide/shape/misc/bv/hkpBvShape.cpp:
 	.rdata      start:0x8210D148 end:0x8210D1CC
 	.rdata      start:0x821D5E50 end:0x821D5F38 rename:.rdata$r
 	.pdata      start:0x8220EF70 end:0x8220EFA8
 	.text       start:0x82B5D188 end:0x82B5D568
 	.data       start:0x8325D754 end:0x8325D7B5
 
-hkpTriSampledHeightFieldCollectionClass.cpp:
+lib/havok/physics/collide/shape/heightfield/trisampledheightfield/hkpTriSampledHeightFieldCollectionClass.cpp:
 	.rdata      start:0x8212FE38 end:0x8212FEF3
 	.pdata      start:0x822176C8 end:0x822176D0
 	.pdata      start:0x82241650 end:0x82241660
@@ -15363,14 +15363,14 @@ hkpTriSampledHeightFieldCollectionClass.cpp:
 	.data       start:0x83268CE0 end:0x83268CF0
 	.data       start:0x83325568 end:0x833255B0 rename:.bss
 
-hkpTriSampledHeightFieldCollection.cpp:
+lib/havok/physics/collide/shape/heightfield/trisampledheightfield/hkpTriSampledHeightFieldCollection.cpp:
 	.rdata      start:0x821159B0 end:0x82115A54
 	.rdata      start:0x821D81C4 end:0x821D8290 rename:.rdata$r
 	.pdata      start:0x82212490 end:0x822124C8
 	.text       start:0x82BF1CA8 end:0x82BF2360
 	.data       start:0x8325EF10 end:0x8325EF71
 
-hkpTriSampledHeightFieldBvTreeShapeClass.cpp:
+lib/havok/physics/collide/shape/heightfield/trisampledheightfield/hkpTriSampledHeightFieldBvTreeShapeClass.cpp:
 	.rdata      start:0x8212FEF4 end:0x8212FFA4
 	.pdata      start:0x822176D0 end:0x822176D8
 	.pdata      start:0x82241660 end:0x82241668
@@ -15380,14 +15380,14 @@ hkpTriSampledHeightFieldBvTreeShapeClass.cpp:
 	.data       start:0x83268CF0 end:0x83268D18
 	.data       start:0x833255B0 end:0x833255E0 rename:.bss
 
-hkpTriSampledHeightFieldBvTreeShape.cpp:
+lib/havok/physics/collide/shape/heightfield/trisampledheightfield/hkpTriSampledHeightFieldBvTreeShape.cpp:
 	.rdata      start:0x82115A54 end:0x82115ACC
 	.rdata      start:0x821D8290 end:0x821D833C rename:.rdata$r
 	.pdata      start:0x822124C8 end:0x82212508
 	.text       start:0x82BF2360 end:0x82BF2F0C
 	.data       start:0x8325EF80 end:0x8325EFE2
 
-hkpStorageSampledHeightFieldShapeClass.cpp:
+lib/havok/physics/collide/shape/heightfield/storagesampledheightfield/hkpStorageSampledHeightFieldShapeClass.cpp:
 	.rdata      start:0x82117484 end:0x82117532
 	.rdata      start:0x821D9F54 end:0x821D9FB0 rename:.rdata$r
 	.pdata      start:0x82213760 end:0x82213768
@@ -15398,12 +15398,12 @@ hkpStorageSampledHeightFieldShapeClass.cpp:
 	.data       start:0x83260210 end:0x83260268
 	.data       start:0x83320BC4 end:0x83320BF4 rename:.bss
 
-hkpStorageSampledHeightFieldShape.cpp:
+lib/havok/physics/collide/shape/heightfield/storagesampledheightfield/hkpStorageSampledHeightFieldShape.cpp:
 	.pdata      start:0x82213768 end:0x82213790
 	.text       start:0x82C1A2E0 end:0x82C1A980
 	.data       start:0x83260270 end:0x83260280
 
-hkpSampledHeightFieldShapeClass.cpp:
+lib/havok/physics/collide/shape/heightfield/sampledheightfield/hkpSampledHeightFieldShapeClass.cpp:
 	.rdata      start:0x82117534 end:0x821176A3
 	.pdata      start:0x822409C8 end:0x822409D0
 	.text       start:0x831D0D58 end:0x831D0DEC rename:.text$yc
@@ -15411,14 +15411,14 @@ hkpSampledHeightFieldShapeClass.cpp:
 	.data       start:0x83260280 end:0x83260370
 	.data       start:0x83320BF4 end:0x83320C24 rename:.bss
 
-hkpSampledHeightFieldShape.cpp:
+lib/havok/physics/collide/shape/heightfield/sampledheightfield/hkpSampledHeightFieldShape.cpp:
 	.rdata      start:0x82115940 end:0x821159AB
 	.rdata      start:0x821D8094 end:0x821D81C4 rename:.rdata$r
 	.pdata      start:0x82212450 end:0x82212490
 	.text       start:0x82BF0328 end:0x82BF1CA4
 	.data       start:0x8325EE40 end:0x8325EF01
 
-hkpPlaneShapeClass.cpp:
+lib/havok/physics/collide/shape/heightfield/plane/hkpPlaneShapeClass.cpp:
 	.rdata      start:0x821301E8 end:0x82130246
 	.pdata      start:0x82241688 end:0x82241690
 	.text       start:0x82CEE020 end:0x82CEE094
@@ -15427,14 +15427,14 @@ hkpPlaneShapeClass.cpp:
 	.data       start:0x83268DE4 end:0x83268DFC
 	.data       start:0x833256A0 end:0x833256D0 rename:.bss
 
-hkpPlaneShape.cpp:
+lib/havok/physics/collide/shape/heightfield/plane/hkpPlaneShape.cpp:
 	.rdata      start:0x82118968 end:0x821189AA
 	.rdata      start:0x821DA8C4 end:0x821DA91C rename:.rdata$r
 	.pdata      start:0x82213E28 end:0x82213E40
 	.text       start:0x82C29900 end:0x82C29E2C
 	.data       start:0x83260F18 end:0x83260F34
 
-hkpCompressedSampledHeightFieldShapeClass.cpp:
+lib/havok/physics/collide/shape/heightfield/compressedsampledheightfield/hkpCompressedSampledHeightFieldShapeClass.cpp:
 	.rdata      start:0x821308B4 end:0x82130985
 	.rdata      start:0x821DFEE8 end:0x821DFF44 rename:.rdata$r
 	.pdata      start:0x82217748 end:0x82217750
@@ -15445,26 +15445,26 @@ hkpCompressedSampledHeightFieldShapeClass.cpp:
 	.data       start:0x83268F30 end:0x83268F8B
 	.data       start:0x83325958 end:0x83325988 rename:.bss
 
-hkpCompressedSampledHeightFieldShape.cpp:
+lib/havok/physics/collide/shape/heightfield/compressedsampledheightfield/hkpCompressedSampledHeightFieldShape.cpp:
 	.pdata      start:0x82218FF0 end:0x82219008
 	.text       start:0x82D475B0 end:0x82D47CCC
 	.data       start:0x8326A250 end:0x8326A260
 
-hkpSphereRepShapeClass.cpp:
+lib/havok/physics/collide/shape/heightfield/hkpSphereRepShapeClass.cpp:
 	.rdata      start:0x8211C568 end:0x8211C57A
 	.pdata      start:0x82240BB8 end:0x82240BC0
 	.text       start:0x831D2B60 end:0x831D2BC8 rename:.text$yc
 	.data       start:0x8321F294 end:0x8321F298 rename:.CRT$XCU
 	.data       start:0x83321924 end:0x83321954 rename:.bss
 
-hkpHeightFieldShapeClass.cpp:
+lib/havok/physics/collide/shape/heightfield/hkpHeightFieldShapeClass.cpp:
 	.rdata      start:0x8211EBAC end:0x8211EBC0
 	.pdata      start:0x82240BD0 end:0x82240BD8
 	.text       start:0x831D2E68 end:0x831D2ED0 rename:.text$yc
 	.data       start:0x8321F2D0 end:0x8321F2D4 rename:.CRT$XCU
 	.data       start:0x83321A34 end:0x83321A64 rename:.bss
 
-hkpStorageMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/deprecated/storagemesh/hkpStorageMeshShapeClass.cpp:
 	.rdata      start:0x82117F20 end:0x82118000
 	.pdata      start:0x82213858 end:0x82213868
 	.pdata      start:0x82240A30 end:0x82240A50
@@ -15473,14 +15473,14 @@ hkpStorageMeshShapeClass.cpp:
 	.data       start:0x8321F184 end:0x8321F194 rename:.CRT$XCU
 	.data       start:0x83320E04 end:0x83320E94 rename:.bss
 
-hkpStorageMeshShape.cpp:
+lib/havok/physics/collide/shape/deprecated/storagemesh/hkpStorageMeshShape.cpp:
 	.rdata      start:0x82117EB0 end:0x82117F1C
 	.rdata      start:0x821DA10C end:0x821DA218 rename:.rdata$r
 	.pdata      start:0x82213810 end:0x82213858
 	.text       start:0x82C1C710 end:0x82C1D660
 	.data       start:0x832608B4 end:0x83260927
 
-hkpMultiSphereShapeClass.cpp:
+lib/havok/physics/collide/shape/deprecated/multisphere/hkpMultiSphereShapeClass.cpp:
 	.rdata      start:0x82130260 end:0x821302B8
 	.pdata      start:0x822416A0 end:0x822416A8
 	.text       start:0x82CEE180 end:0x82CEE1F4
@@ -15489,14 +15489,14 @@ hkpMultiSphereShapeClass.cpp:
 	.data       start:0x83268DFC end:0x83268E14
 	.data       start:0x83325718 end:0x83325748 rename:.bss
 
-hkpMultiSphereShape.cpp:
+lib/havok/physics/collide/shape/deprecated/multisphere/hkpMultiSphereShape.cpp:
 	.rdata      start:0x82115B2C end:0x82115B73
 	.rdata      start:0x821D8390 end:0x821D83E8 rename:.rdata$r
 	.pdata      start:0x822125E0 end:0x82212608
 	.text       start:0x82BF6A80 end:0x82BF70D4
 	.data       start:0x8325F020 end:0x8325F052
 
-hkpMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/deprecated/mesh/hkpMeshShapeClass.cpp:
 	.rdata      start:0x82118000 end:0x8211814D
 	.pdata      start:0x82213868 end:0x82213870
 	.pdata      start:0x82240A50 end:0x82240A68
@@ -15506,13 +15506,13 @@ hkpMeshShapeClass.cpp:
 	.data       start:0x83260928 end:0x83260B7B
 	.data       start:0x83320E94 end:0x83320F0C rename:.bss
 
-hkpMeshShape.cpp:
+lib/havok/physics/collide/shape/deprecated/mesh/hkpMeshShape.cpp:
 	.rdata      start:0x8211EEE4 end:0x8211EF4C
 	.rdata      start:0x821DD348 end:0x821DD370 rename:.rdata$r
 	.pdata      start:0x822164F8 end:0x82216548
 	.text       start:0x82CB33E8 end:0x82CB401C
 
-hkpFastMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/deprecated/fastmesh/hkpFastMeshShapeClass.cpp:
 	.rdata      start:0x82130394 end:0x82130401
 	.rdata      start:0x821DFDB4 end:0x821DFE28 rename:.rdata$r
 	.pdata      start:0x82217708 end:0x82217720
@@ -15523,18 +15523,18 @@ hkpFastMeshShapeClass.cpp:
 	.data       start:0x83268E34 end:0x83268E53
 	.data       start:0x83325790 end:0x833257D8 rename:.bss
 
-hkpFastMeshShape.cpp:
+lib/havok/physics/collide/shape/deprecated/fastmesh/hkpFastMeshShape.cpp:
 	.pdata      start:0x82218FA8 end:0x82218FB8
 	.text       start:0x82D46980 end:0x82D46B00
 
-hkpConvexPieceShape.cpp:
+lib/havok/physics/collide/shape/deprecated/convexpiecemesh/hkpConvexPieceShape.cpp:
 	.rdata      start:0x82134864 end:0x821348E3
 	.rdata      start:0x821E1A2C end:0x821E1ABC rename:.rdata$r
 	.pdata      start:0x822194B0 end:0x822194E0
 	.text       start:0x82D63E50 end:0x82D64558
 	.data       start:0x8326A3F0 end:0x8326A412
 
-hkpConvexPieceMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/deprecated/convexpiecemesh/hkpConvexPieceMeshShapeClass.cpp:
 	.rdata      start:0x82130724 end:0x821307E8
 	.rdata      start:0x821DFE78 end:0x821DFEE8 rename:.rdata$r
 	.pdata      start:0x82217738 end:0x82217748
@@ -15545,12 +15545,12 @@ hkpConvexPieceMeshShapeClass.cpp:
 	.data       start:0x83268EE4 end:0x83268F0A
 	.data       start:0x833258E0 end:0x83325928 rename:.bss
 
-hkpConvexPieceMeshShape.cpp:
+lib/havok/physics/collide/shape/deprecated/convexpiecemesh/hkpConvexPieceMeshShape.cpp:
 	.rdata      start:0x82133BB4 end:0x82133BC7
 	.pdata      start:0x82218FC8 end:0x82218FF0
 	.text       start:0x82D46DE8 end:0x82D475AC
 
-hkpConvexListShapeClass.cpp:
+lib/havok/physics/collide/shape/deprecated/convexlist/hkpConvexListShapeClass.cpp:
 	.rdata      start:0x821307E8 end:0x821308B3
 	.pdata      start:0x82241708 end:0x82241710
 	.text       start:0x82CEE920 end:0x82CEE9AC
@@ -15559,14 +15559,14 @@ hkpConvexListShapeClass.cpp:
 	.data       start:0x83268F0C end:0x83268F24
 	.data       start:0x83325928 end:0x83325958 rename:.bss
 
-hkpConvexListShape.cpp:
+lib/havok/physics/collide/shape/deprecated/convexlist/hkpConvexListShape.cpp:
 	.rdata      start:0x82118BEC end:0x82118C64
 	.rdata      start:0x821DAB10 end:0x821DABA0 rename:.rdata$r
 	.pdata      start:0x822140A0 end:0x82214108
 	.text       start:0x82C32CA0 end:0x82C33758
 	.data       start:0x83261038 end:0x83261059
 
-hkpTriangleShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/triangle/hkpTriangleShapeClass.cpp:
 	.rdata      start:0x8212FDE0 end:0x8212FE35
 	.pdata      start:0x82241648 end:0x82241650
 	.text       start:0x82CEDA88 end:0x82CEDAFC
@@ -15575,13 +15575,13 @@ hkpTriangleShapeClass.cpp:
 	.data       start:0x83268C20 end:0x83268CE0
 	.data       start:0x83325538 end:0x83325568 rename:.bss
 
-hkpTriangleShape.cpp:
+lib/havok/physics/collide/shape/convex/triangle/hkpTriangleShape.cpp:
 	.rdata      start:0x821154C0 end:0x821154F4
 	.pdata      start:0x82212358 end:0x82212370
 	.text       start:0x82BEB1C0 end:0x82BEC2E4
 	.data       start:0x8325ECE0 end:0x8325ED34
 
-hkpSphereShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/sphere/hkpSphereShapeClass.cpp:
 	.rdata      start:0x8213001C end:0x8213004B
 	.pdata      start:0x82241670 end:0x82241678
 	.text       start:0x82CEDD48 end:0x82CEDDBC
@@ -15590,14 +15590,14 @@ hkpSphereShapeClass.cpp:
 	.data       start:0x83268D30 end:0x83268D48
 	.data       start:0x83325610 end:0x83325640 rename:.bss
 
-hkpSphereShape.cpp:
+lib/havok/physics/collide/shape/convex/sphere/hkpSphereShape.cpp:
 	.rdata      start:0x82113660 end:0x821136E1
 	.rdata      start:0x821D6E4C end:0x821D6EA8 rename:.rdata$r
 	.pdata      start:0x82211290 end:0x822112A0
 	.text       start:0x82BAE8B8 end:0x82BAEEF0
 	.data       start:0x8325E1B4 end:0x8325E1D1
 
-hkpCylinderShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/cylinder/hkpCylinderShapeClass.cpp:
 	.rdata      start:0x82130420 end:0x82130639
 	.pdata      start:0x82217720 end:0x82217728
 	.pdata      start:0x822416D0 end:0x822416E0
@@ -15607,14 +15607,14 @@ hkpCylinderShapeClass.cpp:
 	.data       start:0x83268E6C end:0x83268E70
 	.data       start:0x83325808 end:0x83325850 rename:.bss
 
-hkpCylinderShape.cpp:
+lib/havok/physics/collide/shape/convex/cylinder/hkpCylinderShape.cpp:
 	.rdata      start:0x82118A60 end:0x82118AC1
 	.rdata      start:0x821DA9A4 end:0x821DAA00 rename:.rdata$r
 	.pdata      start:0x82213F10 end:0x82213F40
 	.text       start:0x82C2C0C8 end:0x82C2D120
 	.data       start:0x83260F60 end:0x83260F9B
 
-hkpConvexVerticesShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/convexvertices/hkpConvexVerticesShapeClass.cpp:
 	.rdata      start:0x82129D80 end:0x82129EEB
 	.pdata      start:0x822173F0 end:0x822173F8
 	.pdata      start:0x822411F8 end:0x82241210
@@ -15624,7 +15624,7 @@ hkpConvexVerticesShapeClass.cpp:
 	.data       start:0x83266A7C end:0x83266AC5
 	.data       start:0x83323E10 end:0x83323E88 rename:.bss
 
-hkpConvexVerticesShape.cpp:
+lib/havok/physics/collide/shape/convex/convexvertices/hkpConvexVerticesShape.cpp:
 	.rdata      start:0x82118AE0 end:0x82118B6C
 	.rdata      start:0x821DAA54 end:0x821DAAB0 rename:.rdata$r
 	.pdata      start:0x82213F50 end:0x82213FC0
@@ -15632,7 +15632,7 @@ hkpConvexVerticesShape.cpp:
 	.data       start:0x83260FC0 end:0x83260FF5
 	.data       start:0x83320F40 end:0x83320F54 rename:.bss
 
-hkpConvexVerticesConnectivityClass.cpp:
+lib/havok/physics/collide/shape/convex/convexvertices/hkpConvexVerticesConnectivityClass.cpp:
 	.rdata      start:0x8213063C end:0x821306C2
 	.rdata      start:0x821DFE28 end:0x821DFE78 rename:.rdata$r
 	.pdata      start:0x82217728 end:0x82217738
@@ -15643,11 +15643,11 @@ hkpConvexVerticesConnectivityClass.cpp:
 	.data       start:0x83268E70 end:0x83268EB4
 	.data       start:0x83325850 end:0x83325880 rename:.bss
 
-hkpConvexVerticesConnectivity.cpp:
+lib/havok/physics/collide/shape/convex/convexvertices/hkpConvexVerticesConnectivity.cpp:
 	.pdata      start:0x82218FB8 end:0x82218FC8
 	.text       start:0x82D46B00 end:0x82D46DE4
 
-hkpConvexTranslateShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/convextranslate/hkpConvexTranslateShapeClass.cpp:
 	.rdata      start:0x821306C4 end:0x821306F4
 	.pdata      start:0x822416E8 end:0x822416F0
 	.text       start:0x82CEE6C8 end:0x82CEE744
@@ -15656,11 +15656,11 @@ hkpConvexTranslateShapeClass.cpp:
 	.data       start:0x83268EB4 end:0x83268ECC
 	.data       start:0x83325880 end:0x833258B0 rename:.bss
 
-hkpConvexTranslateShape.cpp:
+lib/havok/physics/collide/shape/convex/convextranslate/hkpConvexTranslateShape.cpp:
 	.pdata      start:0x822167B0 end:0x82216808
 	.text       start:0x82CBDBB0 end:0x82CBE1D4
 
-hkpConvexTransformShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/convextransform/hkpConvexTransformShapeClass.cpp:
 	.rdata      start:0x821306F4 end:0x82130724
 	.pdata      start:0x822416F0 end:0x822416F8
 	.text       start:0x82CEE748 end:0x82CEE7C4
@@ -15669,14 +15669,14 @@ hkpConvexTransformShapeClass.cpp:
 	.data       start:0x83268ECC end:0x83268EE4
 	.data       start:0x833258B0 end:0x833258E0 rename:.bss
 
-hkpConvexTransformShape.cpp:
+lib/havok/physics/collide/shape/convex/convextransform/hkpConvexTransformShape.cpp:
 	.rdata      start:0x82118B80 end:0x82118BEC
 	.rdata      start:0x821DAAB0 end:0x821DAB10 rename:.rdata$r
 	.pdata      start:0x82214040 end:0x822140A0
 	.text       start:0x82C32320 end:0x82C32C9C
 	.data       start:0x83261000 end:0x83261036
 
-hkpCapsuleShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/capsule/hkpCapsuleShapeClass.cpp:
 	.rdata      start:0x82130A14 end:0x82130AB0
 	.pdata      start:0x82241728 end:0x82241730
 	.text       start:0x82CEECB0 end:0x82CEED24
@@ -15685,14 +15685,14 @@ hkpCapsuleShapeClass.cpp:
 	.data       start:0x83268FB4 end:0x83268FD0
 	.data       start:0x833259D0 end:0x83325A00 rename:.bss
 
-hkpCapsuleShape.cpp:
+lib/havok/physics/collide/shape/convex/capsule/hkpCapsuleShape.cpp:
 	.rdata      start:0x82115888 end:0x821158E0
 	.rdata      start:0x821D7F94 end:0x821D7FF0 rename:.rdata$r
 	.pdata      start:0x82212400 end:0x82212410
 	.text       start:0x82BEE540 end:0x82BEECD0
 	.data       start:0x8325EDB0 end:0x8325EDDE
 
-hkpBoxShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/box/hkpBoxShapeClass.cpp:
 	.rdata      start:0x82130B00 end:0x82130B30
 	.pdata      start:0x82241738 end:0x82241740
 	.text       start:0x82CEEDA8 end:0x82CEEE1C
@@ -15701,14 +15701,14 @@ hkpBoxShapeClass.cpp:
 	.data       start:0x83268FE8 end:0x83269000
 	.data       start:0x83325A30 end:0x83325A60 rename:.bss
 
-hkpBoxShape.cpp:
+lib/havok/physics/collide/shape/convex/box/hkpBoxShape.cpp:
 	.rdata      start:0x8210D1D0 end:0x8210D2B4
 	.rdata      start:0x821D5F38 end:0x821D6018 rename:.rdata$r
 	.pdata      start:0x8220EFA8 end:0x8220EFB8
 	.text       start:0x82B5D568 end:0x82B5DB78
 	.data       start:0x8325D7C0 end:0x8325D82A
 
-hkpConvexShapeClass.cpp:
+lib/havok/physics/collide/shape/convex/hkpConvexShapeClass.cpp:
 	.rdata      start:0x821155A8 end:0x821156F4
 	.pdata      start:0x82240958 end:0x82240968
 	.text       start:0x831D06A8 end:0x831D07A4 rename:.text$yc
@@ -15716,14 +15716,14 @@ hkpConvexShapeClass.cpp:
 	.data       start:0x8325ED74 end:0x8325ED78
 	.data       start:0x833208E4 end:0x83320944 rename:.bss
 
-hkpConvexShape.cpp:
+lib/havok/physics/collide/shape/convex/hkpConvexShape.cpp:
 	.rdata      start:0x8210D2B8 end:0x8210D304
 	.rdata      start:0x821D6018 end:0x821D6074 rename:.rdata$r
 	.pdata      start:0x8220EFB8 end:0x8220EFE0
 	.text       start:0x82B5DB78 end:0x82B5DE50
 	.data       start:0x8325D82C end:0x8325D85A
 
-hkpRemoveTerminalsMoppModifierClass.cpp:
+lib/havok/physics/collide/shape/compound/tree/mopp/modifiers/hkpRemoveTerminalsMoppModifierClass.cpp:
 	.rdata      start:0x82130148 end:0x821301E7
 	.rdata      start:0x821DFC34 end:0x821DFD00 rename:.rdata$r
 	.pdata      start:0x822176E8 end:0x822176F0
@@ -15734,23 +15734,23 @@ hkpRemoveTerminalsMoppModifierClass.cpp:
 	.data       start:0x83268D7C end:0x83268DE4
 	.data       start:0x83325670 end:0x833256A0 rename:.bss
 
-hkpRemoveTerminalsMoppModifier.cpp:
+lib/havok/physics/collide/shape/compound/tree/mopp/modifiers/hkpRemoveTerminalsMoppModifier.cpp:
 	.rdata      start:0x82133B90 end:0x82133BB4
 	.rdata      start:0x821E1884 end:0x821E18F0 rename:.rdata$r
 	.pdata      start:0x82218F40 end:0x82218F78
 	.text       start:0x82D45E10 end:0x82D463F0
 	.data       start:0x8326A220 end:0x8326A24E
 
-hkpMoppUtility.cpp:
+lib/havok/physics/collide/shape/compound/tree/mopp/hkpMoppUtility.cpp:
 	.rdata      start:0x821188F0 end:0x82118900
 	.pdata      start:0x82213E00 end:0x82213E18
 	.text       start:0x82C29310 end:0x82C29760
 
-hkpMoppCompilerInput.cpp:
+lib/havok/physics/collide/shape/compound/tree/mopp/hkpMoppCompilerInput.cpp:
 	.rdata      start:0x82118900 end:0x82118910
 	.text       start:0x82C29760 end:0x82C29804
 
-hkpMoppBvTreeShapeClass.cpp:
+lib/havok/physics/collide/shape/compound/tree/mopp/hkpMoppBvTreeShapeClass.cpp:
 	.rdata      start:0x82123B8C end:0x82123C7B
 	.pdata      start:0x82217268 end:0x82217270
 	.pdata      start:0x82240E40 end:0x82240E58
@@ -15759,14 +15759,14 @@ hkpMoppBvTreeShapeClass.cpp:
 	.data       start:0x8321F43C end:0x8321F448 rename:.CRT$XCU
 	.data       start:0x833228F8 end:0x83322970 rename:.bss
 
-hkpMoppBvTreeShape.cpp:
+lib/havok/physics/collide/shape/compound/tree/mopp/hkpMoppBvTreeShape.cpp:
 	.rdata      start:0x82118808 end:0x821188EF
 	.rdata      start:0x821DA810 end:0x821DA8C4 rename:.rdata$r
 	.pdata      start:0x82213D90 end:0x82213DF8
 	.text       start:0x82C28990 end:0x82C292C0
 	.data       start:0x83260ECC end:0x83260F15
 
-hkpBvTreeShapeClass.cpp:
+lib/havok/physics/collide/shape/compound/tree/hkpBvTreeShapeClass.cpp:
 	.rdata      start:0x8211F2F0 end:0x8211F397
 	.pdata      start:0x82240C10 end:0x82240C18
 	.text       start:0x831D3230 end:0x831D32C0 rename:.text$yc
@@ -15774,7 +15774,7 @@ hkpBvTreeShapeClass.cpp:
 	.data       start:0x832635C4 end:0x832635E0
 	.data       start:0x83321B9C end:0x83321BCC rename:.bss
 
-hkpStorageExtendedMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/storageextendedmesh/hkpStorageExtendedMeshShapeClass.cpp:
 	.rdata      start:0x82117730 end:0x821179E8
 	.pdata      start:0x822137F0 end:0x82213808
 	.pdata      start:0x822409D0 end:0x82240A08
@@ -15784,14 +15784,14 @@ hkpStorageExtendedMeshShapeClass.cpp:
 	.data       start:0x83260440 end:0x8326048B
 	.data       start:0x83320C24 end:0x83320D2C rename:.bss
 
-hkpStorageExtendedMeshShape.cpp:
+lib/havok/physics/collide/shape/compound/collection/storageextendedmesh/hkpStorageExtendedMeshShape.cpp:
 	.rdata      start:0x821176A4 end:0x82117730
 	.rdata      start:0x821D9FB0 end:0x821DA10C rename:.rdata$r
 	.pdata      start:0x82213790 end:0x822137F0
 	.text       start:0x82C1A980 end:0x82C1C4F0
 	.data       start:0x83260370 end:0x8326043D
 
-hkpSimpleMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/simplemesh/hkpSimpleMeshShapeClass.cpp:
 	.rdata      start:0x821299C4 end:0x82129ACF
 	.rdata      start:0x821DEAD4 end:0x821DEB44 rename:.rdata$r
 	.pdata      start:0x822173C0 end:0x822173D8
@@ -15802,12 +15802,12 @@ hkpSimpleMeshShapeClass.cpp:
 	.data       start:0x832668E4 end:0x832669C2
 	.data       start:0x83323CC0 end:0x83323D38 rename:.bss
 
-hkpSimpleMeshShape.cpp:
+lib/havok/physics/collide/shape/compound/collection/simplemesh/hkpSimpleMeshShape.cpp:
 	.rdata      start:0x821333E8 end:0x821333FD
 	.pdata      start:0x82218948 end:0x82218978
 	.text       start:0x82D374C0 end:0x82D379CC
 
-hkpNamedMeshMaterialClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/mesh/hkpNamedMeshMaterialClass.cpp:
 	.rdata      start:0x8211EBC0 end:0x8211EBED
 	.pdata      start:0x82240BD8 end:0x82240BE0
 	.text       start:0x82CB3388 end:0x82CB33B8
@@ -15816,7 +15816,7 @@ hkpNamedMeshMaterialClass.cpp:
 	.data       start:0x83263304 end:0x8326333F
 	.data       start:0x83321A64 end:0x83321A94 rename:.bss
 
-hkpMeshMaterialClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/mesh/hkpMeshMaterialClass.cpp:
 	.rdata      start:0x8211EBF0 end:0x8211EC24
 	.pdata      start:0x82240BE0 end:0x82240BE8
 	.text       start:0x82CB33B8 end:0x82CB33CC
@@ -15825,7 +15825,7 @@ hkpMeshMaterialClass.cpp:
 	.data       start:0x83263340 end:0x83263376
 	.data       start:0x83321A94 end:0x83321AC4 rename:.bss
 
-hkpListShapeClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/list/hkpListShapeClass.cpp:
 	.rdata      start:0x82129BAC end:0x82129D7D
 	.pdata      start:0x822173E8 end:0x822173F0
 	.pdata      start:0x822411E0 end:0x822411F8
@@ -15835,14 +15835,14 @@ hkpListShapeClass.cpp:
 	.data       start:0x83266A38 end:0x83266A79
 	.data       start:0x83323D98 end:0x83323E10 rename:.bss
 
-hkpListShape.cpp:
+lib/havok/physics/collide/shape/compound/collection/list/hkpListShape.cpp:
 	.rdata      start:0x82118794 end:0x82118808
 	.rdata      start:0x821DA7A0 end:0x821DA810 rename:.rdata$r
 	.pdata      start:0x82213D30 end:0x82213D90
 	.text       start:0x82C27BF8 end:0x82C28990
 	.data       start:0x83260EA0 end:0x83260ECB
 
-hkpExtendedMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/extendedmeshshape/hkpExtendedMeshShapeClass.cpp:
 	.rdata      start:0x821179E8 end:0x82117EAD
 	.pdata      start:0x82213808 end:0x82213810
 	.pdata      start:0x82240A08 end:0x82240A30
@@ -15852,14 +15852,14 @@ hkpExtendedMeshShapeClass.cpp:
 	.data       start:0x83260490 end:0x832608B1
 	.data       start:0x83320D2C end:0x83320E04 rename:.bss
 
-hkpExtendedMeshShape.cpp:
+lib/havok/physics/collide/shape/compound/collection/extendedmeshshape/hkpExtendedMeshShape.cpp:
 	.rdata      start:0x821189B0 end:0x82118A60
 	.rdata      start:0x821DA91C end:0x821DA9A4 rename:.rdata$r
 	.pdata      start:0x82213E40 end:0x82213F10
 	.text       start:0x82C29E30 end:0x82C2C0C8
 	.data       start:0x83260F34 end:0x83260F5E
 
-hkpCompressedMeshShapeClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/compressedmesh/hkpCompressedMeshShapeClass.cpp:
 	.rdata      start:0x82129EEC end:0x8212A35F
 	.pdata      start:0x822173F8 end:0x82217410
 	.pdata      start:0x82241210 end:0x82241238
@@ -15869,14 +15869,14 @@ hkpCompressedMeshShapeClass.cpp:
 	.data       start:0x83266AC8 end:0x83266DC9
 	.data       start:0x83323E88 end:0x83323F60 rename:.bss
 
-hkpCompressedMeshShape.cpp:
+lib/havok/physics/collide/shape/compound/collection/compressedmesh/hkpCompressedMeshShape.cpp:
 	.rdata      start:0x82133408 end:0x82133460
 	.rdata      start:0x821E14FC end:0x821E156C rename:.rdata$r
 	.pdata      start:0x82218990 end:0x82218A08
 	.text       start:0x82D37DB8 end:0x82D395B0
 	.data       start:0x83326160 end:0x833262E0 rename:.bss
 
-hkpShapeCollectionClass.cpp:
+lib/havok/physics/collide/shape/compound/collection/hkpShapeCollectionClass.cpp:
 	.rdata      start:0x8211ED84 end:0x8211EEE3
 	.pdata      start:0x82240BF0 end:0x82240BF8
 	.text       start:0x831D3028 end:0x831D30BC rename:.text$yc
@@ -15884,19 +15884,19 @@ hkpShapeCollectionClass.cpp:
 	.data       start:0x832633BC end:0x832633F0
 	.data       start:0x83321AF4 end:0x83321B24 rename:.bss
 
-hkpShapeCollection.cpp:
+lib/havok/physics/collide/shape/compound/collection/hkpShapeCollection.cpp:
 	.rdata      start:0x821154F4 end:0x821155A7
 	.rdata      start:0x821D7EBC end:0x821D7F44 rename:.rdata$r
 	.pdata      start:0x82212378 end:0x822123A0
 	.text       start:0x82BEC3D0 end:0x82BECB70
 	.data       start:0x8325ED40 end:0x8325ED71
 
-hkpShapeType.cpp:
+lib/havok/physics/collide/shape/hkpShapeType.cpp:
 	.rdata      start:0x82116E00 end:0x821170CD
 	.pdata      start:0x822134B0 end:0x822134B8
 	.text       start:0x82C15AB8 end:0x82C15E5C
 
-hkpShapeContainerClass.cpp:
+lib/havok/physics/collide/shape/hkpShapeContainerClass.cpp:
 	.rdata      start:0x8211C524 end:0x8211C568
 	.pdata      start:0x82240BA8 end:0x82240BB8
 	.text       start:0x82C7CC48 end:0x82C7CC94
@@ -15905,213 +15905,213 @@ hkpShapeContainerClass.cpp:
 	.data       start:0x832629C8 end:0x832629E0
 	.data       start:0x833218C4 end:0x83321924 rename:.bss
 
-hkpShapeContainer.cpp:
+lib/havok/physics/collide/shape/hkpShapeContainer.cpp:
 	.pdata      start:0x82212350 end:0x82212358
 	.text       start:0x82BEB138 end:0x82BEB1C0
 
-hkpShapeClass.cpp:
+lib/havok/physics/collide/shape/hkpShapeClass.cpp:
 	.rdata      start:0x8211547C end:0x821154BD
 	.pdata      start:0x82240950 end:0x82240958
 	.text       start:0x831D0628 end:0x831D06A4 rename:.text$yc
 	.data       start:0x8321F0F4 end:0x8321F0F8 rename:.CRT$XCU
 	.data       start:0x833208B4 end:0x833208E4 rename:.bss
 
-hkpShape.cpp:
+lib/havok/physics/collide/shape/hkpShape.cpp:
 	.pdata      start:0x8220EB60 end:0x8220EB70
 	.text       start:0x82B54D00 end:0x82B55008
 	.data       start:0x8325D3E0 end:0x8325D3F0
 
-hkTreeBundleRaycastUtil.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/util/hkTreeBundleRaycastUtil.cpp:
 	.rdata      start:0x82132AD0 end:0x82132B16
 	.pdata      start:0x82218320 end:0x82218348
 	.text       start:0x82D20528 end:0x82D217B0
 	.data       start:0x8326A050 end:0x8326A060
 
-hkAabbTreeRaycastUtil.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/util/hkAabbTreeRaycastUtil.cpp:
 	.pdata      start:0x82218378 end:0x822183A0
 	.text       start:0x82D224E8 end:0x82D24150
 	.data       start:0x8326A070 end:0x8326A080
 
-hkpCpuWorldRaycastJob.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/cpu/hkpCpuWorldRaycastJob.cpp:
 	.rdata      start:0x821233F8 end:0x82123454
 	.rdata      start:0x821DE424 end:0x821DE504 rename:.rdata$r
 	.pdata      start:0x822171C8 end:0x82217210
 	.text       start:0x82CE4878 end:0x82CE55E0
 	.data       start:0x83264B00 end:0x83264B68
 
-hkpCpuShapeRaycastJob.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/cpu/hkpCpuShapeRaycastJob.cpp:
 	.rdata      start:0x82123454 end:0x8212346C
 	.pdata      start:0x82217210 end:0x82217218
 	.text       start:0x82CE55E0 end:0x82CE59D8
 	.data       start:0x83264B70 end:0x83264B80
 
-hkpCpuKdTreeRayCastJob.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/cpu/hkpCpuKdTreeRayCastJob.cpp:
 	.rdata      start:0x82134000 end:0x82134010
 	.rdata      start:0x821E19E0 end:0x821E1A2C rename:.rdata$r
 	.pdata      start:0x82219118 end:0x82219128
 	.text       start:0x82D4C4B0 end:0x82D4CA44
 	.data       start:0x8326A340 end:0x8326A387
 
-hkpCpuKdTreeBuildJob.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/cpu/hkpCpuKdTreeBuildJob.cpp:
 	.rdata      start:0x8212336C end:0x821233F6
 	.pdata      start:0x822171A0 end:0x822171C8
 	.text       start:0x82CE3D98 end:0x82CE4874
 	.data       start:0x83264AF0 end:0x83264B00
 
-hkpCpuAutoRayBundleJob.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/cpu/hkpCpuAutoRayBundleJob.cpp:
 	.rdata      start:0x82123354 end:0x8212336A
 	.pdata      start:0x82217198 end:0x822171A0
 	.text       start:0x82CE3C78 end:0x82CE3D98
 	.data       start:0x83264AE0 end:0x83264AF0
 
-hkpRayCastQueryJobUtils.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/hkpRayCastQueryJobUtils.cpp:
 	.pdata      start:0x82218348 end:0x82218378
 	.text       start:0x82D217B0 end:0x82D2239C
 	.data       start:0x8326A060 end:0x8326A070
 
-hkpRayCastQueryJobs.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/hkpRayCastQueryJobs.cpp:
 	.text       start:0x82D5F9C8 end:0x82D5F9D4
 	.data       start:0x8326A3E0 end:0x8326A3F0
 
-hkpRayCastQueryJobQueueUtils.cpp:
+lib/havok/physics/collide/query/multithreaded/raycastquery/hkpRayCastQueryJobQueueUtils.cpp:
 	.pdata      start:0x82217190 end:0x82217198
 	.text       start:0x82CE37C8 end:0x82CE3C74
 	.data       start:0x83264AD0 end:0x83264AE0
 
-hkpCpuWorldLinearCastJob.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/cpu/hkpCpuWorldLinearCastJob.cpp:
 	.rdata      start:0x821232A8 end:0x821232FB
 	.rdata      start:0x821DE33C end:0x821DE424 rename:.rdata$r
 	.pdata      start:0x82217148 end:0x82217168
 	.text       start:0x82CE2970 end:0x82CE2FE0
 	.data       start:0x83264A60 end:0x83264A9C
 
-hkpCpuWorldGetClosestPointsJob.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/cpu/hkpCpuWorldGetClosestPointsJob.cpp:
 	.rdata      start:0x82123258 end:0x821232A5
 	.rdata      start:0x821DE2A4 end:0x821DE33C rename:.rdata$r
 	.pdata      start:0x82217128 end:0x82217148
 	.text       start:0x82CE2510 end:0x82CE2970
 	.data       start:0x83264A10 end:0x83264A52
 
-hkpCpuPairLinearCastJob.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/cpu/hkpCpuPairLinearCastJob.cpp:
 	.rdata      start:0x82123338 end:0x82123352
 	.pdata      start:0x82217180 end:0x82217190
 	.text       start:0x82CE3438 end:0x82CE37C4
 	.data       start:0x83264AC0 end:0x83264AD0
 
-hkpCpuPairGetClosestPointsJob.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/cpu/hkpCpuPairGetClosestPointsJob.cpp:
 	.rdata      start:0x821232FC end:0x8212331C
 	.pdata      start:0x82217168 end:0x82217178
 	.text       start:0x82CE2FE0 end:0x82CE327C
 	.data       start:0x83264AA0 end:0x83264AB0
 
-hkpCpuMoppAabbJob.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/cpu/hkpCpuMoppAabbJob.cpp:
 	.rdata      start:0x8212331C end:0x82123335
 	.pdata      start:0x82217178 end:0x82217180
 	.text       start:0x82CE3280 end:0x82CE3438
 	.data       start:0x83264AB0 end:0x83264AC0
 
-hkpCpuKdTreeAabbJob.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/cpu/hkpCpuKdTreeAabbJob.cpp:
 	.rdata      start:0x82123248 end:0x82123258
 	.pdata      start:0x82217120 end:0x82217128
 	.text       start:0x82CE23F0 end:0x82CE2510
 	.data       start:0x83264A00 end:0x83264A10
 
-hkpCpuAabbTreeAabbJob.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/cpu/hkpCpuAabbTreeAabbJob.cpp:
 	.rdata      start:0x82123234 end:0x82123246
 	.pdata      start:0x82217118 end:0x82217120
 	.text       start:0x82CE22A0 end:0x82CE23EC
 	.data       start:0x832649F0 end:0x83264A00
 
-hkpCollisionQueryJobs.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/hkpCollisionQueryJobs.cpp:
 	.text       start:0x82BCA8F8 end:0x82BCA914
 	.data       start:0x8325E500 end:0x8325E510
 
-hkpCollisionQueryJobQueueUtils.cpp:
+lib/havok/physics/collide/query/multithreaded/collisionquery/hkpCollisionQueryJobQueueUtils.cpp:
 	.pdata      start:0x82217110 end:0x82217118
 	.text       start:0x82CE1F18 end:0x82CE229C
 	.data       start:0x832649E0 end:0x832649F0
 
-hkpQueryRegisterSpu.cpp:
+lib/havok/physics/collide/query/multithreaded/hkpQueryRegisterSpu.cpp:
 	.pdata      start:0x82215618 end:0x82215628
 	.text       start:0x82C823E0 end:0x82C82550
 	.data       start:0x83262AD0 end:0x83262AE0
 	.data       start:0x83321980 end:0x833219BC rename:.bss
 
-hkpFixedBufferRayHitCollector.cpp:
+lib/havok/physics/collide/query/collector/raycollector/hkpFixedBufferRayHitCollector.cpp:
 	.text       start:0x82D223A0 end:0x82D224E4
 	.data       start:0x83326154 end:0x83326158 rename:.bss
 
-hkpClosestRayHitCollector.cpp:
+lib/havok/physics/collide/query/collector/raycollector/hkpClosestRayHitCollector.cpp:
 	.pdata      start:0x8220F588 end:0x8220F590
 	.text       start:0x82B6B6E8 end:0x82B6B780
 
-hkpAllRayHitCollector.cpp:
+lib/havok/physics/collide/query/collector/raycollector/hkpAllRayHitCollector.cpp:
 	.pdata      start:0x8220DF38 end:0x8220DF50
 	.text       start:0x82B39AC0 end:0x82B39ED0
 
-hkpSimpleClosestContactCollector.cpp:
+lib/havok/physics/collide/query/collector/pointcollector/hkpSimpleClosestContactCollector.cpp:
 	.text       start:0x82C8F8F8 end:0x82C8F940
 
-hkpFixedBufferCdPointCollector.cpp:
+lib/havok/physics/collide/query/collector/pointcollector/hkpFixedBufferCdPointCollector.cpp:
 	.pdata      start:0x8220FC68 end:0x8220FC70
 	.text       start:0x82B7A198 end:0x82B7A4A4
 	.data       start:0x8332050C end:0x83320510 rename:.bss
 
-hkpClosestCdPointCollector.cpp:
+lib/havok/physics/collide/query/collector/pointcollector/hkpClosestCdPointCollector.cpp:
 	.text       start:0x82BAA730 end:0x82BAA894
 
-hkpAllCdPointCollector.cpp:
+lib/havok/physics/collide/query/collector/pointcollector/hkpAllCdPointCollector.cpp:
 	.pdata      start:0x8220F3C0 end:0x8220F3D8
 	.text       start:0x82B68808 end:0x82B68A80
 
-hkpKdTreeWorldLinearCaster.cpp:
+lib/havok/physics/collide/query/collector/kdtreecollector/hkpKdTreeWorldLinearCaster.cpp:
 	.pdata      start:0x822151E0 end:0x822151F0
 	.text       start:0x82C714D8 end:0x82C717B8
 
-hkpKdTreeCollidableRaycaster.cpp:
+lib/havok/physics/collide/query/collector/kdtreecollector/hkpKdTreeCollidableRaycaster.cpp:
 	.rdata      start:0x8211B90C end:0x8211B940
 	.rdata      start:0x821DC01C end:0x821DC0B0 rename:.rdata$r
 	.pdata      start:0x822151B8 end:0x822151E0
 	.text       start:0x82C70C00 end:0x82C714D4
 	.data       start:0x83262010 end:0x8326206C
 
-hkpFlagCdBodyPairCollector.cpp:
+lib/havok/physics/collide/query/collector/bodypaircollector/hkpFlagCdBodyPairCollector.cpp:
 	.text       start:0x82C8F8E8 end:0x82C8F8F4
 
-hkpFirstCdBodyPairCollector.cpp:
+lib/havok/physics/collide/query/collector/bodypaircollector/hkpFirstCdBodyPairCollector.cpp:
 	.text       start:0x82BED298 end:0x82BED2FC
 
-hkpAllCdBodyPairCollector.cpp:
+lib/havok/physics/collide/query/collector/bodypaircollector/hkpAllCdBodyPairCollector.cpp:
 	.pdata      start:0x8220F7C8 end:0x8220F7D0
 	.text       start:0x82B71D78 end:0x82B71E30
 
-hkpAabbTreeWorldLinearCaster.cpp:
+lib/havok/physics/collide/query/collector/aabbtreecollector/hkpAabbTreeWorldLinearCaster.cpp:
 	.pdata      start:0x82215240 end:0x82215260
 	.text       start:0x82C73078 end:0x82C73378
 	.data       start:0x832620C0 end:0x832620D0
 
-hkpAabbTreeCollidableRaycaster.cpp:
+lib/havok/physics/collide/query/collector/aabbtreecollector/hkpAabbTreeCollidableRaycaster.cpp:
 	.rdata      start:0x8211B960 end:0x8211B978
 	.rdata      start:0x821DC0B0 end:0x821DC114 rename:.rdata$r
 	.pdata      start:0x82215220 end:0x82215240
 	.text       start:0x82C72D88 end:0x82C73078
 	.data       start:0x83262080 end:0x832620BD
 
-hkpWorldRayCaster.cpp:
+lib/havok/physics/collide/query/castutil/hkpWorldRayCaster.cpp:
 	.rdata      start:0x8210F344 end:0x8210F373
 	.pdata      start:0x8220FE10 end:0x8220FE30
 	.text       start:0x82B7D430 end:0x82B7D91C
 
-hkpWorldLinearCaster.cpp:
+lib/havok/physics/collide/query/castutil/hkpWorldLinearCaster.cpp:
 	.pdata      start:0x82211680 end:0x82211690
 	.text       start:0x82BBD3A0 end:0x82BBD648
 
-hkpSimpleWorldRayCaster.cpp:
+lib/havok/physics/collide/query/castutil/hkpSimpleWorldRayCaster.cpp:
 	.rdata      start:0x821139F0 end:0x82113A2F
 	.pdata      start:0x82211658 end:0x82211680
 	.text       start:0x82BBCD58 end:0x82BBD39C
 
-hkpNullCollisionFilterClass.cpp:
+lib/havok/physics/collide/filter/null/hkpNullCollisionFilterClass.cpp:
 	.rdata      start:0x82130248 end:0x8213025F
 	.pdata      start:0x822176F0 end:0x822176F8
 	.pdata      start:0x82241690 end:0x822416A0
@@ -16120,10 +16120,10 @@ hkpNullCollisionFilterClass.cpp:
 	.data       start:0x8321F8B4 end:0x8321F8BC rename:.CRT$XCU
 	.data       start:0x833256D0 end:0x83325718 rename:.bss
 
-hkpNullCollisionFilter.cpp:
+lib/havok/physics/collide/filter/null/hkpNullCollisionFilter.cpp:
 	.text       start:0x82BBCD18 end:0x82BBCD58
 
-hkpCollisionFilterListClass.cpp:
+lib/havok/physics/collide/filter/list/hkpCollisionFilterListClass.cpp:
 	.rdata      start:0x82130988 end:0x82130A13
 	.rdata      start:0x821DFF44 end:0x821DFFF8 rename:.rdata$r
 	.pdata      start:0x82217750 end:0x82217760
@@ -16134,11 +16134,11 @@ hkpCollisionFilterListClass.cpp:
 	.data       start:0x83268F8C end:0x83268FB1
 	.data       start:0x83325988 end:0x833259D0 rename:.bss
 
-hkpCollisionFilterList.cpp:
+lib/havok/physics/collide/filter/list/hkpCollisionFilterList.cpp:
 	.pdata      start:0x82219008 end:0x82219050
 	.text       start:0x82D47CD0 end:0x82D48410
 
-hkpGroupFilterClass.cpp:
+lib/havok/physics/collide/filter/group/hkpGroupFilterClass.cpp:
 	.rdata      start:0x821302B8 end:0x82130393
 	.rdata      start:0x821DFD00 end:0x821DFDB4 rename:.rdata$r
 	.pdata      start:0x822176F8 end:0x82217708
@@ -16149,11 +16149,11 @@ hkpGroupFilterClass.cpp:
 	.data       start:0x83268E14 end:0x83268E31
 	.data       start:0x83325748 end:0x83325790 rename:.bss
 
-hkpGroupFilter.cpp:
+lib/havok/physics/collide/filter/group/hkpGroupFilter.cpp:
 	.pdata      start:0x82218F78 end:0x82218FA8
 	.text       start:0x82D463F0 end:0x82D4697C
 
-hkpDefaultConvexListFilterClass.cpp:
+lib/havok/physics/collide/filter/defaultconvexlist/hkpDefaultConvexListFilterClass.cpp:
 	.rdata      start:0x82130404 end:0x8213041F
 	.pdata      start:0x822416C8 end:0x822416D0
 	.text       start:0x82CEE4A8 end:0x82CEE4F4
@@ -16162,24 +16162,24 @@ hkpDefaultConvexListFilterClass.cpp:
 	.data       start:0x83268E54 end:0x83268E6C
 	.data       start:0x833257D8 end:0x83325808 rename:.bss
 
-hkpDefaultConvexListFilter.cpp:
+lib/havok/physics/collide/filter/defaultconvexlist/hkpDefaultConvexListFilter.cpp:
 	.text       start:0x82BB8690 end:0x82BB86B0
 
-hkpShapeCollectionFilterClass.cpp:
+lib/havok/physics/collide/filter/hkpShapeCollectionFilterClass.cpp:
 	.rdata      start:0x82123B04 end:0x82123B1D
 	.pdata      start:0x82240E18 end:0x82240E20
 	.text       start:0x831D5208 end:0x831D526C rename:.text$yc
 	.data       start:0x8321F428 end:0x8321F42C rename:.CRT$XCU
 	.data       start:0x83322808 end:0x83322838 rename:.bss
 
-hkpRayCollidableFilterClass.cpp:
+lib/havok/physics/collide/filter/hkpRayCollidableFilterClass.cpp:
 	.rdata      start:0x82123B3C end:0x82123B53
 	.pdata      start:0x82240E28 end:0x82240E30
 	.text       start:0x831D52D8 end:0x831D533C rename:.text$yc
 	.data       start:0x8321F430 end:0x8321F434 rename:.CRT$XCU
 	.data       start:0x83322868 end:0x83322898 rename:.bss
 
-hkpConvexListFilterClass.cpp:
+lib/havok/physics/collide/filter/hkpConvexListFilterClass.cpp:
 	.rdata      start:0x82121618 end:0x821216C4
 	.pdata      start:0x82240D28 end:0x82240D30
 	.text       start:0x831D43D8 end:0x831D4444 rename:.text$yc
@@ -16187,7 +16187,7 @@ hkpConvexListFilterClass.cpp:
 	.data       start:0x832644C8 end:0x832644CC
 	.data       start:0x83322228 end:0x83322258 rename:.bss
 
-hkpCollisionFilterClass.cpp:
+lib/havok/physics/collide/filter/hkpCollisionFilterClass.cpp:
 	.rdata      start:0x821216C4 end:0x821217C3
 	.pdata      start:0x82240D30 end:0x82240D38
 	.text       start:0x831D4448 end:0x831D44E0 rename:.text$yc
@@ -16195,20 +16195,20 @@ hkpCollisionFilterClass.cpp:
 	.data       start:0x832644D0 end:0x83264520
 	.data       start:0x83322258 end:0x83322288 rename:.bss
 
-hkpCollisionFilter.cpp:
+lib/havok/physics/collide/filter/hkpCollisionFilter.cpp:
 	.rdata      start:0x8210F374 end:0x8210F3BC
 	.rdata      start:0x821D6594 end:0x821D65F8 rename:.rdata$r
 	.pdata      start:0x8220FE30 end:0x8220FE38
 	.text       start:0x82B7D920 end:0x82B7DA5C
 
-hkpCollidableCollidableFilterClass.cpp:
+lib/havok/physics/collide/filter/hkpCollidableCollidableFilterClass.cpp:
 	.rdata      start:0x82123B6C end:0x82123B8A
 	.pdata      start:0x82240E38 end:0x82240E40
 	.text       start:0x831D53A8 end:0x831D540C rename:.text$yc
 	.data       start:0x8321F438 end:0x8321F43C rename:.CRT$XCU
 	.data       start:0x833228C8 end:0x833228F8 rename:.bss
 
-hkpTypedBroadPhaseHandleClass.cpp:
+lib/havok/physics/collide/dispatch/broadphase/hkpTypedBroadPhaseHandleClass.cpp:
 	.rdata      start:0x8212991C end:0x821299C1
 	.pdata      start:0x822411B0 end:0x822411B8
 	.text       start:0x82CE93F0 end:0x82CE940C
@@ -16217,40 +16217,40 @@ hkpTypedBroadPhaseHandleClass.cpp:
 	.data       start:0x832668A4 end:0x832668E3
 	.data       start:0x83323C90 end:0x83323CC0 rename:.bss
 
-hkpTypedBroadPhaseDispatcher.cpp:
+lib/havok/physics/collide/dispatch/broadphase/hkpTypedBroadPhaseDispatcher.cpp:
 	.rdata      start:0x82113870 end:0x82113890
 	.rdata      start:0x821D6F00 end:0x821D6F68 rename:.rdata$r
 	.pdata      start:0x82211588 end:0x822115A0
 	.text       start:0x82BB89D0 end:0x82BB9188
 	.data       start:0x8325E228 end:0x8325E250
 
-hkpNullBroadPhaseListener.cpp:
+lib/havok/physics/collide/dispatch/broadphase/hkpNullBroadPhaseListener.cpp:
 	.text       start:0x82C60EF0 end:0x82C60EFC
 
-hkpAgent3Bridge.cpp:
+lib/havok/physics/collide/dispatch/agent3bridge/hkpAgent3Bridge.cpp:
 	.rdata      start:0x8211B670 end:0x8211B67C
 	.pdata      start:0x82215020 end:0x82215038
 	.text       start:0x82C69E40 end:0x82C6A0E0
 
-hkpCollisionDispatcher.cpp:
+lib/havok/physics/collide/dispatch/hkpCollisionDispatcher.cpp:
 	.rdata      start:0x82113A30 end:0x82113BF4
 	.rdata      start:0x821D6FB8 end:0x821D7008 rename:.rdata$r
 	.pdata      start:0x82211690 end:0x82211710
 	.text       start:0x82BBD648 end:0x82BBEDE0
 	.data       start:0x8325E280 end:0x8325E2B5
 
-hkpAgentRegisterUtil.cpp:
+lib/havok/physics/collide/dispatch/hkpAgentRegisterUtil.cpp:
 	.pdata      start:0x8220FE70 end:0x8220FE90
 	.text       start:0x82B7DFC8 end:0x82B7E214
 
-hkp3AxisSweep.cpp:
+lib/havok/physics/collide/broadphase/hkp3AxisSweep.cpp:
 	.rdata      start:0x82114938 end:0x82114AA4
 	.rdata      start:0x821D7C58 end:0x821D7CE8 rename:.rdata$r
 	.pdata      start:0x82211FA0 end:0x82212130
 	.text       start:0x82BD7E58 end:0x82BE45F8
 	.data       start:0x8325E950 end:0x8325E9D4
 
-hkpBroadPhaseHandleClass.cpp:
+lib/havok/physics/collide/broadphase/hkpBroadPhaseHandleClass.cpp:
 	.rdata      start:0x8212A3DC end:0x8212A408
 	.pdata      start:0x82241240 end:0x82241248
 	.text       start:0x82CE9C08 end:0x82CE9C24
@@ -16259,34 +16259,34 @@ hkpBroadPhaseHandleClass.cpp:
 	.data       start:0x83266DFC end:0x83266E36
 	.data       start:0x83323F90 end:0x83323FC0 rename:.bss
 
-hkpBroadPhase.cpp:
+lib/havok/physics/collide/broadphase/hkpBroadPhase.cpp:
 	.rdata      start:0x8211B830 end:0x8211B8A8
 	.rdata      start:0x821DC008 end:0x821DC01C rename:.rdata$r
 	.pdata      start:0x82215148 end:0x82215168
 	.text       start:0x82C6FA38 end:0x82C6FC10
 
-hkpBoxBoxManifold.cpp:
+lib/havok/physics/collide/boxbox/hkpBoxBoxManifold.cpp:
 	.pdata      start:0x82215840 end:0x82215848
 	.text       start:0x82C90710 end:0x82C90860
 
-hkpBoxBoxCollisionDetection.cpp:
+lib/havok/physics/collide/boxbox/hkpBoxBoxCollisionDetection.cpp:
 	.rdata      start:0x8211C8F0 end:0x8211C9C8
 	.pdata      start:0x82215848 end:0x82215888
 	.text       start:0x82C90860 end:0x82C9447C
 	.data       start:0x83262B40 end:0x83262B50
 
-hkpPredGskCylinderAgent3.cpp:
+lib/havok/physics/collide/agent3/predgskcylinderagent3/hkpPredGskCylinderAgent3.cpp:
 	.rdata      start:0x82116BBC end:0x82116BCC
 	.pdata      start:0x822131A8 end:0x822131E0
 	.text       start:0x82C0F468 end:0x82C10300
 	.data       start:0x8325FC50 end:0x8325FC60
 
-hkpPredGskAgent3.cpp:
+lib/havok/physics/collide/agent3/predgskagent3/hkpPredGskAgent3.cpp:
 	.pdata      start:0x822131E0 end:0x82213210
 	.text       start:0x82C10300 end:0x82C10B08
 	.data       start:0x8325FC60 end:0x8325FC70
 
-hkpLinkedCollidableClass.cpp:
+lib/havok/physics/collide/agent3/machine/nn/hkpLinkedCollidableClass.cpp:
 	.rdata      start:0x8211BE34 end:0x8211BE74
 	.pdata      start:0x82240B08 end:0x82240B10
 	.text       start:0x82C7C7A0 end:0x82C7C804
@@ -16295,17 +16295,17 @@ hkpLinkedCollidableClass.cpp:
 	.data       start:0x8326245C end:0x83262496
 	.data       start:0x83321534 end:0x83321564 rename:.bss
 
-hkpLinkedCollidable.cpp:
+lib/havok/physics/collide/agent3/machine/nn/hkpLinkedCollidable.cpp:
 	.pdata      start:0x82211CA0 end:0x82211CB0
 	.text       start:0x82BCDB18 end:0x82BCDD0C
 
-hkpAgentNnMachine.cpp:
+lib/havok/physics/collide/agent3/machine/nn/hkpAgentNnMachine.cpp:
 	.rdata      start:0x82113D50 end:0x82113D59
 	.pdata      start:0x822117D8 end:0x82211848
 	.text       start:0x82BC0780 end:0x82BC2A5C
 	.data       start:0x8325E3C0 end:0x8325E3D0
 
-hkpAgent1nTrackClass.cpp:
+lib/havok/physics/collide/agent3/machine/1n/hkpAgent1nTrackClass.cpp:
 	.rdata      start:0x8212A408 end:0x8212A4B9
 	.pdata      start:0x82241248 end:0x82241250
 	.text       start:0x82CE9C28 end:0x82CE9C44
@@ -16314,69 +16314,69 @@ hkpAgent1nTrackClass.cpp:
 	.data       start:0x83266E38 end:0x83266E6F
 	.data       start:0x83323FC0 end:0x83323FF0 rename:.bss
 
-hkpAgent1nMachineProcess.cpp:
+lib/havok/physics/collide/agent3/machine/1n/hkpAgent1nMachineProcess.cpp:
 	.pdata      start:0x82215668 end:0x82215690
 	.text       start:0x82C83C58 end:0x82C86644
 	.data       start:0x83262AF0 end:0x83262B00
 
-hkpAgent1nMachine.cpp:
+lib/havok/physics/collide/agent3/machine/1n/hkpAgent1nMachine.cpp:
 	.rdata      start:0x8211C734 end:0x8211C740
 	.pdata      start:0x82215628 end:0x82215668
 	.text       start:0x82C82550 end:0x82C83C54
 	.data       start:0x83262AE0 end:0x83262AF0
 
-hkpAgentMachineUtil.cpp:
+lib/havok/physics/collide/agent3/machine/hkpAgentMachineUtil.cpp:
 	.rdata      start:0x8211B8A8 end:0x8211B8C4
 	.pdata      start:0x82215168 end:0x82215180
 	.text       start:0x82C6FC10 end:0x82C7008C
 
-hkpListAgent3.cpp:
+lib/havok/physics/collide/agent3/list3/hkpListAgent3.cpp:
 	.rdata      start:0x8211C740 end:0x8211C758
 	.pdata      start:0x82215690 end:0x822156B8
 	.text       start:0x82C86648 end:0x82C869F8
 
-hkpConvexListAgent3.cpp:
+lib/havok/physics/collide/agent3/convexlist3/hkpConvexListAgent3.cpp:
 	.rdata      start:0x821164DC end:0x8211653D
 	.rdata      start:0x821D8D70 end:0x821D8DC4 rename:.rdata$r
 	.pdata      start:0x82212BC8 end:0x82212C18
 	.text       start:0x82C01C88 end:0x82C02998
 	.data       start:0x8325F618 end:0x8325F647
 
-hkpCollectionCollectionAgent3.cpp:
+lib/havok/physics/collide/agent3/collectioncollection3/hkpCollectionCollectionAgent3.cpp:
 	.rdata      start:0x82116658 end:0x821166D8
 	.pdata      start:0x82212CD8 end:0x82212D18
 	.text       start:0x82C04290 end:0x82C05E44
 	.data       start:0x8325F7F0 end:0x8325F800
 	.data       start:0x83320A9D end:0x83320A9E rename:.bss
 
-hkpCollectionAgent3.cpp:
+lib/havok/physics/collide/agent3/collection3/hkpCollectionAgent3.cpp:
 	.rdata      start:0x821166D8 end:0x821166E0
 	.pdata      start:0x82212D18 end:0x82212D30
 	.text       start:0x82C05E48 end:0x82C06144
 	.data       start:0x8325F800 end:0x8325F810
 
-hkpCapsuleTriangleAgent3.cpp:
+lib/havok/physics/collide/agent3/capsuletriangle3/hkpCapsuleTriangleAgent3.cpp:
 	.rdata      start:0x8211689C end:0x821168A7
 	.pdata      start:0x82212EA8 end:0x82212ED0
 	.text       start:0x82C08948 end:0x82C0903C
 	.data       start:0x8325F9B0 end:0x8325F9C0
 
-hkpBvTreeAgent3.cpp:
+lib/havok/physics/collide/agent3/bvtree3/hkpBvTreeAgent3.cpp:
 	.rdata      start:0x82116174 end:0x821161A6
 	.pdata      start:0x82212928 end:0x82212958
 	.text       start:0x82BFB5F8 end:0x82BFBE78
 	.data       start:0x8325F200 end:0x8325F210
 
-hkpBoxBoxAgent3.cpp:
+lib/havok/physics/collide/agent3/boxbox/hkpBoxBoxAgent3.cpp:
 	.rdata      start:0x82116B64 end:0x82116B6E
 	.pdata      start:0x82213148 end:0x82213170
 	.text       start:0x82C0E7B0 end:0x82C0EBFC
 
-hkpSymmetricAgentLinearCast.cpp:
+lib/havok/physics/collide/agent/util/symmetric/hkpSymmetricAgentLinearCast.cpp:
 	.pdata      start:0x822156B8 end:0x822156D0
 	.text       start:0x82C869F8 end:0x82C86B74
 
-hkpNullAgent.cpp:
+lib/havok/physics/collide/agent/util/null/hkpNullAgent.cpp:
 	.rdata      start:0x821148D8 end:0x82114914
 	.rdata      start:0x821D7B60 end:0x821D7BF0 rename:.rdata$r
 	.text       start:0x82BD7B88 end:0x82BD7BE0
@@ -16385,128 +16385,128 @@ hkpNullAgent.cpp:
 	.data       start:0x8321F0D8 end:0x8321F0DC rename:.CRT$XCU
 	.data       start:0x8325E8D0 end:0x8325E918
 
-hkpIterativeLinearCastAgent.cpp:
+lib/havok/physics/collide/agent/util/linearcast/hkpIterativeLinearCastAgent.cpp:
 	.pdata      start:0x82215808 end:0x82215818
 	.text       start:0x82C8F288 end:0x82C8F8E4
 
-hkpTransformAgent.cpp:
+lib/havok/physics/collide/agent/miscagent/transform/hkpTransformAgent.cpp:
 	.rdata      start:0x82116C10 end:0x82116CA0
 	.rdata      start:0x821D9734 end:0x821D9828 rename:.rdata$r
 	.pdata      start:0x82213248 end:0x822132F0
 	.text       start:0x82C11558 end:0x82C124A0
 	.data       start:0x8325FCA0 end:0x8325FD4B
 
-hkpPhantomAgent.cpp:
+lib/havok/physics/collide/agent/miscagent/phantom/hkpPhantomAgent.cpp:
 	.rdata      start:0x82116BD4 end:0x82116C10
 	.rdata      start:0x821D96E0 end:0x821D9734 rename:.rdata$r
 	.pdata      start:0x82213228 end:0x82213248
 	.text       start:0x82C11130 end:0x82C11558
 	.data       start:0x8325FC80 end:0x8325FC9E
 
-hkpMultiRayConvexAgent.cpp:
+lib/havok/physics/collide/agent/miscagent/multirayconvex/hkpMultiRayConvexAgent.cpp:
 	.rdata      start:0x82116758 end:0x821167F8
 	.rdata      start:0x821D91A0 end:0x821D9254 rename:.rdata$r
 	.pdata      start:0x82212DB8 end:0x82212E38
 	.text       start:0x82C06B48 end:0x82C07B08
 	.data       start:0x8325F8A0 end:0x8325F91E
 
-hkpBvAgent.cpp:
+lib/havok/physics/collide/agent/miscagent/bv/hkpBvAgent.cpp:
 	.rdata      start:0x82116D68 end:0x82116E00
 	.rdata      start:0x821D9930 end:0x821D9A24 rename:.rdata$r
 	.pdata      start:0x82213400 end:0x822134B0
 	.text       start:0x82C14560 end:0x82C15AB8
 	.data       start:0x8325FDF0 end:0x8325FE78
 
-hkpHeightFieldAgent.cpp:
+lib/havok/physics/collide/agent/heightfieldagent/hkpHeightFieldAgent.cpp:
 	.rdata      start:0x821163C0 end:0x821164DC
 	.rdata      start:0x821D8C30 end:0x821D8D70 rename:.rdata$r
 	.pdata      start:0x82212B28 end:0x82212BC8
 	.text       start:0x82C007A8 end:0x82C01C84
 	.data       start:0x8325F530 end:0x8325F615
 
-hkpMultiSphereTriangleAgent.cpp:
+lib/havok/physics/collide/agent/deprecated/multispheretriangle/hkpMultiSphereTriangleAgent.cpp:
 	.rdata      start:0x821167F8 end:0x8211689A
 	.rdata      start:0x821D9254 end:0x821D9308 rename:.rdata$r
 	.pdata      start:0x82212E38 end:0x82212EA8
 	.text       start:0x82C07B08 end:0x82C08944
 	.data       start:0x8325F920 end:0x8325F9AB
 
-hkpMultiSphereAgent.cpp:
+lib/havok/physics/collide/agent/deprecated/multisphere/hkpMultiSphereAgent.cpp:
 	.rdata      start:0x82116CF0 end:0x82116D68
 	.rdata      start:0x821D983C end:0x821D9930 rename:.rdata$r
 	.pdata      start:0x82213368 end:0x82213400
 	.text       start:0x82C135D0 end:0x82C14560
 	.data       start:0x8325FD4C end:0x8325FDED
 
-hkpConvexListAgent.cpp:
+lib/havok/physics/collide/agent/deprecated/convexlist/hkpConvexListAgent.cpp:
 	.rdata      start:0x82116540 end:0x82116656
 	.rdata      start:0x821D8DC4 end:0x821D90AC rename:.rdata$r
 	.pdata      start:0x82212C18 end:0x82212CD8
 	.text       start:0x82C02998 end:0x82C0428C
 	.data       start:0x8325F650 end:0x8325F7E4
 
-hkpSphereTriangleAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/spheretriangle/hkpSphereTriangleAgent.cpp:
 	.rdata      start:0x82116A0C end:0x82116A90
 	.rdata      start:0x821D94C8 end:0x821D957C rename:.rdata$r
 	.pdata      start:0x82213018 end:0x82213098
 	.text       start:0x82C0BF80 end:0x82C0CF0C
 	.data       start:0x8325FB00 end:0x8325FB7E
 
-hkpSphereSphereAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/spheresphere/hkpSphereSphereAgent.cpp:
 	.rdata      start:0x82116B18 end:0x82116B63
 	.rdata      start:0x821D9630 end:0x821D9688 rename:.rdata$r
 	.pdata      start:0x82213108 end:0x82213148
 	.text       start:0x82C0DF48 end:0x82C0E7B0
 	.data       start:0x8325FC00 end:0x8325FC23
 
-hkpSphereCapsuleAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/spherecapsule/hkpSphereCapsuleAgent.cpp:
 	.rdata      start:0x82116A90 end:0x82116B18
 	.rdata      start:0x821D957C end:0x821D9630 rename:.rdata$r
 	.pdata      start:0x82213098 end:0x82213108
 	.text       start:0x82C0CF10 end:0x82C0DF44
 	.data       start:0x8325FB80 end:0x8325FBFD
 
-hkpSphereBoxAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/spherebox/hkpSphereBoxAgent.cpp:
 	.rdata      start:0x82116988 end:0x82116A0C
 	.rdata      start:0x821D9414 end:0x821D94C8 rename:.rdata$r
 	.pdata      start:0x82212FB0 end:0x82213018
 	.text       start:0x82C0AFF8 end:0x82C0BF7C
 	.data       start:0x8325FA80 end:0x8325FAF1
 
-hkpPredGskfAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/gjk/hkpPredGskfAgent.cpp:
 	.rdata      start:0x82116BCC end:0x82116BD2
 	.pdata      start:0x82213210 end:0x82213228
 	.text       start:0x82C10B08 end:0x82C11130
 	.data       start:0x8325FC70 end:0x8325FC80
 
-hkpGskfAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/gjk/hkpGskfAgent.cpp:
 	.rdata      start:0x8211C898 end:0x8211C8DF
 	.rdata      start:0x821DC638 end:0x821DC64C rename:.rdata$r
 	.pdata      start:0x82215778 end:0x822157A8
 	.text       start:0x82C8C540 end:0x82C8CA5C
 	.data       start:0x83262B10 end:0x83262B20
 
-hkpGskBaseAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/gjk/hkpGskBaseAgent.cpp:
 	.rdata      start:0x8211C840 end:0x8211C896
 	.rdata      start:0x821DC624 end:0x821DC638 rename:.rdata$r
 	.pdata      start:0x82215740 end:0x82215778
 	.text       start:0x82C8B8A0 end:0x82C8C53C
 
-hkpCapsuleTriangleAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/capsuletriangle/hkpCapsuleTriangleAgent.cpp:
 	.rdata      start:0x821168A8 end:0x8211693F
 	.rdata      start:0x821D9308 end:0x821D93BC rename:.rdata$r
 	.pdata      start:0x82212ED0 end:0x82212F60
 	.text       start:0x82C09040 end:0x82C0A504
 	.data       start:0x8325F9C0 end:0x8325FA3F
 
-hkpCapsuleCapsuleAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/capsulecapsule/hkpCapsuleCapsuleAgent.cpp:
 	.rdata      start:0x82116940 end:0x82116987
 	.rdata      start:0x821D93BC end:0x821D9414 rename:.rdata$r
 	.pdata      start:0x82212F60 end:0x82212FB0
 	.text       start:0x82C0A508 end:0x82C0AFF8
 	.data       start:0x8325FA40 end:0x8325FA75
 
-hkpBoxBoxAgent.cpp:
+lib/havok/physics/collide/agent/convexagent/boxbox/hkpBoxBoxAgent.cpp:
 	.rdata      start:0x82116B70 end:0x82116BB9
 	.rdata      start:0x821D9688 end:0x821D96E0 rename:.rdata$r
 	.pdata      start:0x82213170 end:0x822131A8
@@ -16514,41 +16514,41 @@ hkpBoxBoxAgent.cpp:
 	.data       start:0x8325FC24 end:0x8325FC41
 	.data       start:0x83320A9E end:0x83320A9F rename:.bss
 
-hkpShapeCollectionAgent.cpp:
+lib/havok/physics/collide/agent/compoundagent/shapecollection/hkpShapeCollectionAgent.cpp:
 	.rdata      start:0x82116CA0 end:0x82116CF0
 	.rdata      start:0x821D9828 end:0x821D983C rename:.rdata$r
 	.pdata      start:0x822132F0 end:0x82213368
 	.text       start:0x82C124A0 end:0x82C135CC
 
-hkpListAgent.cpp:
+lib/havok/physics/collide/agent/compoundagent/list/hkpListAgent.cpp:
 	.rdata      start:0x821166E0 end:0x82116758
 	.rdata      start:0x821D90AC end:0x821D91A0 rename:.rdata$r
 	.pdata      start:0x82212D30 end:0x82212DB8
 	.text       start:0x82C06148 end:0x82C06B48
 	.data       start:0x8325F810 end:0x8325F89A
 
-hkpMoppBvTreeStreamAgent.cpp:
+lib/havok/physics/collide/agent/compoundagent/bvtreestream/hkpMoppBvTreeStreamAgent.cpp:
 	.rdata      start:0x821161A8 end:0x821161D8
 	.rdata      start:0x821D8784 end:0x821D8868 rename:.rdata$r
 	.pdata      start:0x82212958 end:0x82212988
 	.text       start:0x82BFBE78 end:0x82BFC1C0
 	.data       start:0x8325F210 end:0x8325F2A5
 
-hkpBvTreeStreamAgent.cpp:
+lib/havok/physics/collide/agent/compoundagent/bvtreestream/hkpBvTreeStreamAgent.cpp:
 	.rdata      start:0x821161D8 end:0x82116298
 	.rdata      start:0x821D8868 end:0x821D8A3C rename:.rdata$r
 	.pdata      start:0x82212988 end:0x82212A50
 	.text       start:0x82BFC1C0 end:0x82BFD700
 	.data       start:0x8325F2A8 end:0x8325F401
 
-hkpMoppAgent.cpp:
+lib/havok/physics/collide/agent/compoundagent/bvtree/hkpMoppAgent.cpp:
 	.rdata      start:0x82116298 end:0x82116354
 	.rdata      start:0x821D8A3C end:0x821D8B90 rename:.rdata$r
 	.pdata      start:0x82212A50 end:0x82212A98
 	.text       start:0x82BFD700 end:0x82BFDD30
 	.data       start:0x8325F404 end:0x8325F4AE
 
-hkpBvTreeAgent.cpp:
+lib/havok/physics/collide/agent/compoundagent/bvtree/hkpBvTreeAgent.cpp:
 	.rdata      start:0x82116354 end:0x821163BD
 	.rdata      start:0x821D8B90 end:0x821D8C30 rename:.rdata$r
 	.pdata      start:0x82212A98 end:0x82212B28
@@ -16556,7 +16556,7 @@ hkpBvTreeAgent.cpp:
 	.data       start:0x8325F4B0 end:0x8325F525
 	.data       start:0x83320A9C end:0x83320A9D rename:.bss
 
-hkpCollidableClass.cpp:
+lib/havok/physics/collide/agent/collidable/hkpCollidableClass.cpp:
 	.rdata      start:0x82122D3C end:0x8212303E
 	.pdata      start:0x82240D58 end:0x82240D68
 	.text       start:0x82CE1A10 end:0x82CE1AB4
@@ -16565,11 +16565,11 @@ hkpCollidableClass.cpp:
 	.data       start:0x83264834 end:0x832648B4
 	.data       start:0x83322388 end:0x833223E8 rename:.bss
 
-hkpCollidable.cpp:
+lib/havok/physics/collide/agent/collidable/hkpCollidable.cpp:
 	.pdata      start:0x82211998 end:0x822119B0
 	.text       start:0x82BC53E8 end:0x82BC5620
 
-hkpCdBodyClass.cpp:
+lib/havok/physics/collide/agent/collidable/hkpCdBodyClass.cpp:
 	.rdata      start:0x8212A360 end:0x8212A3DA
 	.pdata      start:0x82241238 end:0x82241240
 	.text       start:0x82CE9BF0 end:0x82CE9C04
@@ -16578,7 +16578,7 @@ hkpCdBodyClass.cpp:
 	.data       start:0x83266DCC end:0x83266DFC
 	.data       start:0x83323F60 end:0x83323F90 rename:.bss
 
-hkpCollisionAgent.cpp:
+lib/havok/physics/collide/agent/hkpCollisionAgent.cpp:
 	.text       start:0x82C79E30 end:0x82C79E54
 
 lib/havok/animation/ragdoll/utils/hkaRagdollUtils.cpp:

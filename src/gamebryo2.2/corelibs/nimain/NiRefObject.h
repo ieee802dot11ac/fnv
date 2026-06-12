@@ -9,7 +9,10 @@ class NiRefObject : public NiMemObject {
 public:
     // it's either this, or some other thread-type primitive
     // in any case: fuck you todd.
-    NiRefObject() { InterlockedIncrement((LONG *)&ms_uiObjects); }
+    NiRefObject() {
+        m_uiRefCount = 0;
+        InterlockedIncrement((LONG *)&ms_uiObjects);
+    }
     virtual ~NiRefObject() { InterlockedDecrement((LONG *)&ms_uiObjects); }
     void IncRefCount();
     void DecRefCount();

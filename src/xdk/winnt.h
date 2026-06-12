@@ -15,11 +15,16 @@ typedef struct _EXCEPTION_RECORD {
     ULONG_PTR ExceptionInformation[4];
 } EXCEPTION_RECORD;
 
-inline LONG InterlockedIncrement(LONG volatile *Addend) {
-    return _InterlockedIncrement(Addend);
+inline LONG InterlockedIncrement(LONG *Addend) {
+    LONG v = _InterlockedIncrement(Addend);
+    __lwsync();
+    return v;
 }
-inline LONG InterlockedDecrement(LONG volatile *Addend) {
-    return _InterlockedDecrement(Addend);
+
+inline LONG InterlockedDecrement(LONG *Addend) {
+    LONG v = _InterlockedDecrement(Addend);
+    __lwsync();
+    return v;
 }
 
 #ifdef __cplusplus

@@ -14,39 +14,39 @@ Sections:
 	.XBLD       type:data align:65536
 	.reloc      type:data align:65536
 
-pchtex.cpp:
+unsorted_pch/pchtex.cpp:
 	.data       start:0x832AA410 end:0x832AA414 rename:.bss
 
-pchuasm.cpp:
+unsorted_pch/pchuasm.cpp:
 	.data       start:0x8332B4A8 end:0x8332B4AC rename:.bss
 
-pchtok.cpp:
+unsorted_pch/pchtok.cpp:
 	.data       start:0x8332AC94 end:0x8332AC98 rename:.bss
 
-pchmid.cpp:
+unsorted_pch/pchmid.cpp:
 	.data       start:0x8332B4B0 end:0x8332B4B4 rename:.bss
 
-pchgen.cpp:
+unsorted_pch/pchgen.cpp:
 	.data       start:0x8332B4AC end:0x8332B4B0 rename:.bss
 
-pchhll.cpp:
+unsorted_pch/pchhll.cpp:
 	.data       start:0x8332ACA4 end:0x8332ACA8 rename:.bss
 
-pchfx.cpp:
+unsorted_pch/pchfx.cpp:
 	.rdata      start:0x820B52B4 end:0x820B5312
 	.data       start:0x832AA41C end:0x832AA420 rename:.bss
 
-pchasm.cpp:
+unsorted_pch/pchasm.cpp:
 	.data       start:0x8332ACA0 end:0x8332ACA4 rename:.bss
 
-pchapi.cpp:
+unsorted_pch/pchapi.cpp:
 	.data       start:0x832AA420 end:0x832AA424 rename:.bss
 
-pchmesh.cpp:
+unsorted_pch/pchmesh.cpp:
 	.rdata      start:0x820B6E3C end:0x820B6E64
 	.data       start:0x832AA424 end:0x832AA428 rename:.bss
 
-pchmath.cpp:
+unsorted_pch/pchmath.cpp:
 	.data       start:0x832AA418 end:0x832AA41C rename:.bss
 
 xdk/d3dx9/pchcore.cpp:
@@ -69,94 +69,94 @@ xdk/xaudio2/module14_precomp.cpp:
 xdk/xaudio2/leapcore.cpp:
 	.data       start:0x8332BA38 end:0x8332BA3C rename:.bss
 
-x3dgeneral.cpp:
+unsorted_pch/x3dgeneral.cpp:
 	.data       start:0x83334BAC end:0x83334BB0 rename:.bss
 
-pch.cpp:
+unsorted_pch/pch.cpp:
 	.data       start:0x83334BFC end:0x83334C00 rename:.bss
 
-stdafx.cpp:
+unsorted_pch/stdafx.cpp:
 	.data       start:0x83334C08 end:0x83334C0C rename:.bss
 
-xapipch.cpp:
+unsorted_pch/xapipch.cpp:
 	.rdata      start:0x8214F7C8 end:0x8214F7E0
 	.XBLD       start:0x83350040 end:0x83350050 rename:.XBLD$V
 
-pchxmcdcodec_lzxldi.cpp:
+unsorted_pch/pchxmcdcodec_lzxldi.cpp:
 	.data       start:0x8332AC7C end:0x8332AC80 rename:.bss
 
-pchxmcdapi.cpp:
+unsorted_pch/pchxmcdapi.cpp:
 	.data       start:0x8332AC78 end:0x8332AC7C rename:.bss
 
-xrtlpch.cpp:
+unsorted_pch/xrtlpch.cpp:
 	.rdata      start:0x8214F7B0 end:0x8214F7C8
 
-pchxtc.cpp:
+unsorted_pch/pchxtc.cpp:
 	.data       start:0x8332AC8C end:0x8332AC90 rename:.bss
 
-ver.cpp:
+unsorted_pch/ver.cpp:
 	.data       start:0x83334C60 end:0x83334C64 rename:.bss
 
-pchutil.cpp:
+unsorted_pch/pchutil.cpp:
 	.data       start:0x83334C5C end:0x83334C60 rename:.bss
 
-pch5ssmUtil.cpp:
+unsorted_pch/pch5ssmUtil.cpp:
 	.data       start:0x83335588 end:0x8333558C rename:.bss
 
-pch5ssmTranslator.cpp:
+unsorted_pch/pch5ssmTranslator.cpp:
 	.data       start:0x833355C0 end:0x833355C4 rename:.bss
 
-pch5ssmStateCompiler.cpp:
+unsorted_pch/pch5ssmStateCompiler.cpp:
 	.data       start:0x83335594 end:0x83335598 rename:.bss
 
-pch5ssmStateCache.cpp:
+unsorted_pch/pch5ssmStateCache.cpp:
 	.data       start:0x833355AC end:0x833355B0 rename:.bss
 
-pch5ssmR400State.cpp:
+unsorted_pch/pch5ssmR400State.cpp:
 	.data       start:0x833355B4 end:0x833355C0 rename:.bss
 
-pch5ssmInt.cpp:
+unsorted_pch/pch5ssmInt.cpp:
 	.data       start:0x83335590 end:0x83335594 rename:.bss
 
-pch5AbstractState.cpp:
+unsorted_pch/pch5AbstractState.cpp:
 	.data       start:0x833355B0 end:0x833355B4 rename:.bss
 
-module33_precomp.cpp:
+unsorted_pch/module33_precomp.cpp:
 	.data       start:0x83335390 end:0x83335394 rename:.bss
 
-pch5driver.cpp:
+unsorted_pch/pch5driver.cpp:
 	.data       start:0x83334C64 end:0x83334C68 rename:.bss
 
-pch5util.cpp:
+unsorted_pch/pch5util.cpp:
 	.data       start:0x83335584 end:0x83335588 rename:.bss
 
-pch5pro.cpp:
+unsorted_pch/pch5pro.cpp:
 	.data       start:0x833355CC end:0x833355D0 rename:.bss
 
-pch5Opt.cpp:
+unsorted_pch/pch5Opt.cpp:
 	.rdata      start:0x821B0F88 end:0x821B0F8C
 	.data       start:0x833355DC end:0x833355E0 rename:.bss
 
-pch5IR.cpp:
+unsorted_pch/pch5IR.cpp:
 	.rdata      start:0x821A9E30 end:0x821ABBE8
 	.data       start:0x83285638 end:0x83286A18
 	.data       start:0x833355C8 end:0x833355CC rename:.bss
 
-pch5IL.cpp:
+unsorted_pch/pch5IL.cpp:
 	.data       start:0x833355D0 end:0x833355D4 rename:.bss
 
-pch5Compiler.cpp:
+unsorted_pch/pch5Compiler.cpp:
 	.rdata      start:0x821A77D8 end:0x821A77DC
 	.data       start:0x833355C4 end:0x833355C8 rename:.bss
 
-pch5Asm.cpp:
+unsorted_pch/pch5Asm.cpp:
 	.rdata      start:0x821A25B8 end:0x821A25BC
 	.data       start:0x8333558C end:0x83335590 rename:.bss
 
-pchtile.cpp:
+unsorted_pch/pchtile.cpp:
 	.data       start:0x8332AC84 end:0x8332AC88 rename:.bss
 
-pchmisc.cpp:
+unsorted_pch/pchmisc.cpp:
 	.data       start:0x8332AC80 end:0x8332AC84 rename:.bss
 	.XBLD       start:0x83350060 end:0x83350070 rename:.XBLD$V
 
@@ -7364,85 +7364,85 @@ xdk/d3dx9/calloc.cpp:
 	.pdata      start:0x822217B8 end:0x822217C8
 	.text       start:0x82F0C148 end:0x82F0C2A4
 
-init.cpp:
+xdk/d3d9i/init.cpp:
 	.rdata      start:0x820B6E64 end:0x820B6E84
 
-xps.cpp:
+xdk/d3d9i/xps.cpp:
 	.pdata      start:0x821FFCE0 end:0x821FFD78
 	.text       start:0x82851698 end:0x828530C4
 
-xenongpu.cpp:
+xdk/d3d9i/xenongpu.cpp:
 	.pdata      start:0x821FFD78 end:0x821FFD80
 	.text       start:0x828530C8 end:0x82853298
 	.data       start:0x832AB46C end:0x832AB480 rename:.bss
 
-tile.cpp:
+xdk/d3d9i/tile.cpp:
 	.pdata      start:0x821FFFD0 end:0x821FFFF0
 	.text       start:0x8285C768 end:0x8285D220
 
-texture.cpp:
+xdk/d3d9i/texture.cpp:
 	.rdata      start:0x820B9F20 end:0x820B9FA0
 	.pdata      start:0x821FF890 end:0x821FF938
 	.text       start:0x828422E0 end:0x8284479C
 	.data       start:0x832AA434 end:0x832AA438 rename:.bss
 
-swap.cpp:
+xdk/d3d9i/swap.cpp:
 	.rdata      start:0x820BB580 end:0x820BB590
 	.pdata      start:0x821FFCA0 end:0x821FFCE0
 	.text       start:0x82850818 end:0x82851698
 	.data       start:0x832AB468 end:0x832AB46C rename:.bss
 
-state.cpp:
+xdk/d3d9i/state.cpp:
 	.rdata      start:0x820B9FA0 end:0x820BA010
 	.pdata      start:0x821FF938 end:0x821FF9C8
 	.text       start:0x828447A0 end:0x82847DDC
 	.data       start:0x83255EC0 end:0x83256470
 
-shader.cpp:
+xdk/d3d9i/shader.cpp:
 	.rdata      start:0x820B9D38 end:0x820B9F1B
 	.pdata      start:0x821FF670 end:0x821FF890
 	.text       start:0x8283B708 end:0x828422DC
 	.data       start:0x83255E58 end:0x83255EBC
 	.data       start:0x832AA428 end:0x832AA434 rename:.bss
 
-scaler.cpp:
+xdk/d3d9i/scaler.cpp:
 	.rdata      start:0x820BC450 end:0x820BC518
 	.pdata      start:0x821FFE80 end:0x821FFEF0
 	.text       start:0x828568F0 end:0x82858628
 
-ring.cpp:
+xdk/d3d9i/ring.cpp:
 	.rdata      start:0x820BA0D0 end:0x820BA0F0
 	.pdata      start:0x821FFA40 end:0x821FFB20
 	.text       start:0x82849368 end:0x8284B358
 	.data       start:0x832AA44C end:0x832AA454 rename:.bss
 
-resource.cpp:
+xdk/d3d9i/resource.cpp:
 	.rdata      start:0x820BA010 end:0x820BA0D0
 	.pdata      start:0x821FF9C8 end:0x821FFA40
 	.text       start:0x82847DE0 end:0x82849368
 	.data       start:0x832AA438 end:0x832AA44C rename:.bss
 
-resolve.cpp:
+xdk/d3d9i/resolve.cpp:
 	.rdata      start:0x820C0CD8 end:0x820C0DC0
 	.pdata      start:0x821FFFF0 end:0x82200020
 	.text       start:0x8285D238 end:0x8285ED5C
 
-query.cpp:
+xdk/d3d9i/query.cpp:
 	.rdata      start:0x820BA0F0 end:0x820BA220
 	.pdata      start:0x821FFB20 end:0x821FFB98
 	.text       start:0x8284B358 end:0x8284E268
 
-pix.cpp:
+xdk/d3d9i/pix.cpp:
 	.rdata      start:0x820BB590 end:0x820BC446
 	.pdata      start:0x821FFD80 end:0x821FFE80
 	.text       start:0x82853298 end:0x828568F0
 	.data       start:0x83256660 end:0x8325672C
 	.data       start:0x832AB480 end:0x832AB8C4 rename:.bss
 
-nui.cpp:
+xdk/d3d9i/nui.cpp:
 	.text       start:0x8285D220 end:0x8285D238
 
-movie.cpp:
+xdk/d3d9i/movie.cpp:
 	.rdata      start:0x820BC518 end:0x820BE16F
 	.pdata      start:0x821FFEF0 end:0x821FFF50
 	.text       start:0x82858628 end:0x8285A504
@@ -7451,70 +7451,70 @@ movie.cpp:
 	.XBMOVIE    start:0x83336200 end:0x83336204 rename:.XBMOVIE$A
 	.XBMOVIE    start:0x83336208 end:0x8333620C rename:.XBMOVIE$ZZZZZZZZ
 
-microcode.cpp:
+xdk/d3d9i/microcode.cpp:
 	.rdata      start:0x820BE170 end:0x820C09F0
 
-memory.cpp:
+xdk/d3d9i/memory.cpp:
 	.text       start:0x82850770 end:0x82850818
 
-lazy.cpp:
+xdk/d3d9i/lazy.cpp:
 	.rdata      start:0x820C0C88 end:0x820C0CD8
 	.pdata      start:0x821FFF58 end:0x821FFFD0
 	.text       start:0x8285A5F0 end:0x8285C768
 	.data       start:0x832AB9D0 end:0x832AB9DC rename:.bss
 
-initialize.cpp:
+xdk/d3d9i/initialize.cpp:
 	.pdata      start:0x821FFBC0 end:0x821FFC28
 	.text       start:0x8284EB70 end:0x8284F8F0
 	.data       start:0x83256638 end:0x83256658
 
-hsio.cpp:
+xdk/d3d9i/hsio.cpp:
 	.rdata      start:0x820C09F0 end:0x820C0C88
 	.pdata      start:0x821FFF50 end:0x821FFF58
 	.text       start:0x8285A508 end:0x8285A5EC
 	.data       start:0x83256810 end:0x832577A0
 
-gamma.cpp:
+xdk/d3d9i/gamma.cpp:
 	.rdata      start:0x820BB4FC end:0x820BB580
 	.pdata      start:0x821FFC68 end:0x821FFCA0
 	.text       start:0x82850088 end:0x8285076C
 	.data       start:0x83256658 end:0x83256660
 	.data       start:0x832AA460 end:0x832AB468 rename:.bss
 
-draw.cpp:
+xdk/d3d9i/draw.cpp:
 	.pdata      start:0x82223018 end:0x82223040
 	.text       start:0x82F88E90 end:0x82F8A0D4
 
-disassemble.cpp:
+xdk/d3d9i/disassemble.cpp:
 	.rdata      start:0x821B12A4 end:0x821B1708
 	.pdata      start:0x822288C0 end:0x82228998
 	.text       start:0x831027F8 end:0x83105C14
 	.data       start:0x83288908 end:0x83288CC8
 
-device.cpp:
+xdk/d3d9i/device.cpp:
 	.rdata      start:0x820B9CD8 end:0x820B9D38
 	.pdata      start:0x821FF5F8 end:0x821FF670
 	.text       start:0x8283AD48 end:0x8283B704
 
-debug.cpp:
+xdk/d3d9i/debug.cpp:
 	.rdata      start:0x820BA23C end:0x820BB4ED
 	.pdata      start:0x821FFB98 end:0x821FFBC0
 	.text       start:0x8284E268 end:0x8284EB70
 	.data       start:0x83256478 end:0x83256638
 	.data       start:0x832AA458 end:0x832AA45C rename:.bss
 
-commands.cpp:
+xdk/d3d9i/commands.cpp:
 	.rdata      start:0x820BB4F0 end:0x820BB4FA
 	.pdata      start:0x821FFC28 end:0x821FFC50
 	.text       start:0x8284F8F0 end:0x8284FCB0
 
-clear.cpp:
+xdk/d3d9i/clear.cpp:
 	.rdata      start:0x820C0DC0 end:0x820C0E90
 	.pdata      start:0x82200020 end:0x82200050
 	.text       start:0x8285ED60 end:0x8286008C
 	.data       start:0x832577A0 end:0x832577A4
 
-allocate.cpp:
+xdk/d3d9i/allocate.cpp:
 	.pdata      start:0x821FFC50 end:0x821FFC68
 	.text       start:0x8284FCB0 end:0x82850088
 	.data       start:0x832AA45C end:0x832AA460 rename:.bss

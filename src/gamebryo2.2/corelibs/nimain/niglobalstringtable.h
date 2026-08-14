@@ -1,6 +1,6 @@
 #pragma once
 
-#include "nimain/nitarray.h"
+#include "nimain/NiTArray.h"
 class NiGlobalStringTable {
   public:
 	static char* const NULL_STRING;

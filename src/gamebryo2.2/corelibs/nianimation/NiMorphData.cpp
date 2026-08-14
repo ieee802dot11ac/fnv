@@ -4,9 +4,9 @@
 #include "nimain/NiFixedString.h"
 #include "nimain/NiObject.h"
 #include "nimain/NiPoint3.h"
+#include "nimain/NiTArray.h"
 #include "nimain/NiViewerStrings.h"
 #include "nimain/nistream.h"
-#include "nimain/nitarray.h"
 
 NiMorphData::MorphTarget::MorphTarget() : m_spLegacyInterpolator(nullptr) {}
 

@@ -1,5 +1,5 @@
 #include "bsmain/Setting.h"
-#include "nimain/nitarray.h"
+#include "nimain/NiTArray.h"
 
 SETTING_VALUE Setting::stdef;
 

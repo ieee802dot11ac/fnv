@@ -2,7 +2,7 @@
 
 #include "bscore/memorymanager.h"
 #include "bsmain/BSTCaseInsensitiveStringMap.h"
-#include "nimain/nitarray.h"
+#include "nimain/NiTArray.h"
 #include <types.h>
 
 #define SETTING(type, name, value) SettingT<type> name(#name, value);

@@ -1,6 +1,6 @@
 #include "NiObject.h"
+#include "gamebryo2.2/corelibs/nimain/NiTArray.h"
 #include "gamebryo2.2/corelibs/nimain/NiViewerStrings.h"
-#include "gamebryo2.2/corelibs/nimain/nitarray.h"
 #include "macros.h"
 #include "nicloningprocess.h"
 #include "nistream.h"

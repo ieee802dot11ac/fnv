@@ -10,7 +10,7 @@
 #include "fallout_shared/tesfullname.h"
 #include "fallout_shared/tesmodel.h"
 #include "fallout_shared/testexture.h"
-#include "nimain/nitarray.h"
+#include "nimain/NiTArray.h"
 
 struct RACE_DATA {				/* Size=0x24 */
 	SKILL_BONUS eSkillBonus[7]; // 0x00
@@ -26,10 +26,10 @@ class TESRace : public TESForm,
 				public TESDescription,
 				public TESSpellList,
 				public TESReactionForm { /* Size=0x4ec */
-	/* 0x0000: fields for TESForm */
-	/* 0x0028: fields for TESFullName */
-	/* 0x0034: fields for TESDescription */
-	/* 0x003c: fields for TESSpellList */
+										 /* 0x0000: fields for TESForm */
+										 /* 0x0028: fields for TESFullName */
+										 /* 0x0034: fields for TESDescription */
+										 /* 0x003c: fields for TESSpellList */
 	/* 0x0050: fields for TESReactionForm */
 
   public:

@@ -3,9 +3,9 @@
 #include "NiObjectGroup.h"
 #include "NiRTTI.h"
 #include "NiRefObject.h"
+#include "NiTArray.h"
 #include "nimain/BSNiBound.h"
 #include "nismartpointer.h"
-#include "nitarray.h"
 
 class NiStream;
 class NiCloningProcess;

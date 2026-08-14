@@ -2,7 +2,7 @@
 
 #include "nimain/NiFixedString.h"
 #include "nimain/NiRTTI.h"
-#include "nimain/nitarray.h"
+#include "nimain/NiTArray.h"
 #include <types.h>
 
 char* NiGetViewerString(const char* pcRttiName);

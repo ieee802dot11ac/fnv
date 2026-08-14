@@ -18,9 +18,9 @@ class BSSherlockCommand { /* Size=0x4 */
 	virtual uint FillResponceBuffer(void*);
 	virtual void* GetResponceBuffer();
 	virtual uint GetResponceBufferSize();
-	virtual SHERLOCK_COMMAND GetResponceType();
-	virtual bool IsMultiPart();
-	virtual bool IsMultiPartComplete();
+	virtual SHERLOCK_COMMAND GetResponceType() { return SC_SEND_COMMAND; }
+	virtual bool IsMultiPart() { return false; }
+	virtual bool IsMultiPartComplete() { return true; }
 
 	BS_MEM_OVERLOADS
 };

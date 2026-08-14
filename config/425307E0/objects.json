@@ -1087,7 +1087,7 @@
 			"fallout_shared/BGSAutoWater.cpp": "NonMatching",
 			"fallout_shared/Animation.cpp": "NonMatching",
 			"fallout_shared/TESWeightForm.cpp": "NonMatching",
-			"fallout_shared/TESValueForm.cpp": "NonMatching",
+			"fallout_shared/TESValueForm.cpp": "Matching",
 			"fallout_shared/TESUsesForm.cpp": "NonMatching",
 			"fallout_shared/TESTexture.cpp": "NonMatching",
 			"fallout_shared/TESSpellList.cpp": "NonMatching",
@@ -1197,7 +1197,7 @@
 			"bsdiag/BSSendContextCommand.cpp": "NonMatching",
 			"bsdiag/BSSendGenericDataCommand.cpp": "NonMatching",
 			"bsdiag/BSSendSceneGraphCommand.cpp": "NonMatching",
-			"bsdiag/BSSherlockCommand.cpp": "NonMatching",
+			"bsdiag/BSSherlockCommand.cpp": "Matching",
 			"bsdiag/BSSherlockCommandManager.cpp": "NonMatching",
 			"bsdiag/BSSherlockCommandManager_Xenon.cpp": "NonMatching",
 			"bsdiag/DebugContexts.cpp": "NonMatching",
@@ -1446,14 +1446,14 @@
 		"mw_version": "X360/16.00.10224.00",
 		"cflags": "speedtree",
 		"objects": {
-			"lib/zlib/adler32.c": "NonMatching",
-			"lib/zlib/crc32.c": "NonMatching",
-			"lib/zlib/deflate.c": "NonMatching",
-			"lib/zlib/trees.c": "NonMatching",
-			"lib/zlib/inffast.c": "NonMatching",
+			"lib/zlib/adler32.c": "Matching",
+			"lib/zlib/crc32.c": "Matching",
+			"lib/zlib/deflate.c": "Matching",
+			"lib/zlib/trees.c": "Matching",
+			"lib/zlib/inffast.c": "Matching",
 			"lib/zlib/inflate.c": "NonMatching",
-			"lib/zlib/inftrees.c": "NonMatching",
-			"lib/zlib/zutil.c": "NonMatching"
+			"lib/zlib/inftrees.c": "Matching",
+			"lib/zlib/zutil.c": "Matching"
 		}
 	},
 	"bink": {

@@ -1,9 +1,10 @@
 #include "TESValueForm.h"
 #include "fallout/misc/saveload/BGSLoadFormBuffer.h"
+#include "fallout/misc/saveload/TESSaveLoadGame.h"
 #include "fallout/misc/saveload/bgssaveformbuffer.h"
 #include "fallout_shared/TESForm.h"
 #include "fallout_shared/magic/AlchemyItem.h"
-#include "fallout_shared/magic/magicitem.h"
+#include "fallout_shared/magic/MagicItem.h"
 
 bool TESValueForm::CompareComponent(BaseFormComponent* apCompareFC) {
 	TESValueForm* apCompareVF = dynamic_cast<TESValueForm*>(apCompareFC);
@@ -46,9 +47,17 @@ u16 TESValueForm::GetSaveSize(uint aiFlags) {
 	return siz;
 }
 
-void TESValueForm::SaveGame(unsigned int) {}
+void TESValueForm::SaveGame(uint aiFlags) {
+	if (aiFlags & 2) {
+		pSaveLoadGameOLD->SaveGameDataOLDEndian(&iValue, 4, 4);
+	}
+}
 
-void TESValueForm::LoadGame(unsigned int, unsigned int) {}
+void TESValueForm::LoadGame(uint aiFlags, uint aiCurrentFlags) {
+	if (aiFlags & 2) {
+		pSaveLoadGameOLD->LoadGameDataOLDEndian(&iValue, 4, 4);
+	}
+}
 
 void TESValueForm::SaveGame(BGSSaveFormBuffer* apSaveGameBuffer) {
 	if (apSaveGameBuffer->GetChangeFlags().CheckFlags(2)) {

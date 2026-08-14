@@ -1,6 +1,6 @@
 #pragma once
 
-#include "nimain/nitarray.h"
+#include "nimain/NiTArray.h"
 #include "nimain/nitdefaultallocator.h"
 
 template <typename T>

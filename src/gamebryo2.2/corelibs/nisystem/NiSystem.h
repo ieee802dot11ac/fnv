@@ -2,4 +2,4 @@
 
 #include "types.h"
 
-int NiSprintf(char *out, uint maxlen, const char *fmt, ...);
+int NiSprintf(char* out, uint maxlen, const char* fmt, ...);

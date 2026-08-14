@@ -3,4 +3,6 @@
 
 SETTING_VALUE Setting::stdef;
 
-void Setting::GetViewerStrings(NiTPrimitiveArray<char *> *pStrings) {}
+void Setting::GetViewerStrings(NiTPrimitiveArray<char*>* pStrings) {
+	const wchar_t* c = L"invalid null pointer\0";
+}

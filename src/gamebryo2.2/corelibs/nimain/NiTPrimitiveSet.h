@@ -5,8 +5,8 @@
 
 template <typename T>
 class NiTPrimitiveSet : public NiTSet<T, NiTMallocInterface<T> > {
-public:
-    NiTPrimitiveSet(const NiTPrimitiveSet &);
-    NiTPrimitiveSet(uint);
-    ~NiTPrimitiveSet();
+  public:
+	NiTPrimitiveSet(const NiTPrimitiveSet&);
+	NiTPrimitiveSet(uint);
+	~NiTPrimitiveSet();
 };

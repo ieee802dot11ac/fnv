@@ -1,44 +1,43 @@
 #pragma once
 
 #include "bscore/memorymanager.h"
-template <typename T>
-class BSSimpleList {
-public:
-    BSSimpleList(T &);
-    BSSimpleList() {
-        m_item = nullptr;
-        m_pkNext = nullptr;
-    }
-    ~BSSimpleList() { RemoveAll(); }
-    void SetItem(T &);
-    T &GetItem() { return m_item; }
-    T &GetItem() const;
-    void SetNext(BSSimpleList<T> *pkNext) { m_pkNext = pkNext; }
-    BSSimpleList<T> *GetNext() const { return m_pkNext; }
-    bool IsEmpty() const { return (m_pkNext == nullptr && m_item == 0); }
-    bool IsInList(T &) const;
-    uint ItemsInList() const;
-    void AddHead(T &);
-    void Remove(T &);
-    void RemoveHead();
-    void RemoveAll();
-    void AddTail(const T &obj) {
-        // currently only works for BS_MEM_OVERLOADS. lawl
-        new ("", 221, __FUNCTION__) BSSimpleList<T>();
-    }
-    void Sort(int (*)(T *, T *));
-    void Insert(T *, int (*)(T *, T *));
-    void Traverse(bool (*)(T *, unsigned int), unsigned int);
+template <typename T> class BSSimpleList {
+  public:
+	BSSimpleList(T&);
+	BSSimpleList() {
+		m_item = nullptr;
+		m_pkNext = nullptr;
+	}
+	~BSSimpleList() { RemoveAll(); }
+	void SetItem(T&);
+	T& GetItem() { return m_item; }
+	T& GetItem() const;
+	void SetNext(BSSimpleList<T>* pkNext) { m_pkNext = pkNext; }
+	BSSimpleList<T>* GetNext() const { return m_pkNext; }
+	bool IsEmpty() const { return (m_pkNext == nullptr && m_item == 0); }
+	bool IsInList(T&) const;
+	uint ItemsInList() const;
+	void AddHead(T&);
+	void Remove(T&);
+	void RemoveHead();
+	void RemoveAll();
+	void AddTail(const T& obj) {
+		// currently only works for BS_MEM_OVERLOADS. lawl
+		new ("", 221, __FUNCTION__) BSSimpleList<T>();
+	}
+	void Sort(int (*)(T*, T*));
+	void Insert(T*, int (*)(T*, T*));
+	void Traverse(bool (*)(T*, unsigned int), unsigned int);
 
-    BS_MEM_OVERLOADS
+	BS_MEM_OVERLOADS
 
-protected:
-    T m_item;
-    BSSimpleList<T> *m_pkNext; // 0x4
+  protected:
+	T m_item;
+	BSSimpleList<T>* m_pkNext; // 0x4
 
-private:
-    void BubbleSort(int (*)(T, T));
-    void ShellSort(T *, int (*)(T, T), int);
-    void QuickSort(T *, int (*)(T, T), int, int);
-    int Partition(T *, int (*)(T, T), int, int);
+  private:
+	void BubbleSort(int (*)(T, T));
+	void ShellSort(T*, int (*)(T, T), int);
+	void QuickSort(T*, int (*)(T, T), int, int);
+	int Partition(T*, int (*)(T, T), int, int);
 };

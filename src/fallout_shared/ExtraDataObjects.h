@@ -4,236 +4,236 @@
 #include "types.h"
 
 enum EXTRA_DATA_TYPE {
-    EXTRA_NONE = 0x0000,
-    EXTRA_HAVOK = 0x0001,
-    EXTRA_CELL3D = 0x0002,
-    EXTRA_WATERTYPE = 0x0003,
-    EXTRA_REGIONLIST = 0x0004,
-    EXTRA_SEENDATA = 0x0005,
-    EXTRA_EDITOR_ID = 0x0006,
-    EXTRA_CELLMUSICTYPE = 0x0007,
-    EXTRA_CLIMATE = 0x0008,
-    EXTRA_CELL_MID_LOW_PROCESS = 0x0009,
-    EXTRA_CELL_CANOPYSHADOW_MASK = 0x000a,
-    EXTRA_CELLDETACHTIME = 0x000b,
-    EXTRA_PERSISTENT_CELL = 0x000c,
-    EXTRA_SCRIPT = 0x000d,
-    EXTRA_ACTION = 0x000e,
-    EXTRA_STARTINGPOSITION = 0x000f,
-    EXTRA_ANIM = 0x0010,
-    EXTRA_BIPED = 0x0011,
-    EXTRA_USEDMARKERS = 0x0012,
-    EXTRA_DISTANTDATA = 0x0013,
-    EXTRA_RAGDOLLDATA = 0x0014,
-    EXTRA_CONTAINER_CHANGES = 0x0015,
-    EXTRA_WORN = 0x0016,
-    EXTRA_WORN_LEFT = 0x0017,
-    EXTRA_PACKAGESTARTLOC = 0x0018,
-    EXTRA_PACKAGE = 0x0019,
-    EXTRA_TRESPASS_PACKAGE = 0x001a,
-    EXTRA_RUN_ONCE_PACKAGES = 0x001b,
-    EXTRA_REFERENCE_POINTER = 0x001c,
-    EXTRA_FOLLOWER = 0x001d,
-    EXTRA_LEVCREA_MOD = 0x001e,
-    EXTRA_GHOST = 0x001f,
-    EXTRA_ORIGINAL_REFERENCE = 0x0020,
-    EXTRA_OWNERSHIP = 0x0021,
-    EXTRA_GLOBAL = 0x0022,
-    EXTRA_RANK = 0x0023,
-    EXTRA_COUNT = 0x0024,
-    EXTRA_HEALTH = 0x0025,
-    EXTRA_USES = 0x0026,
-    EXTRA_TIMELEFT = 0x0027,
-    EXTRA_CHARGE = 0x0028,
-    EXTRA_LIGHT = 0x0029,
-    EXTRA_LOCK = 0x002a,
-    EXTRA_TELEPORT = 0x002b,
-    EXTRA_MAPMARKER = 0x002c,
-    EXTRA_ANIM_SAVE = 0x002d,
-    EXTRA_LEVELEDCREATURE = 0x002e,
-    EXTRA_LEVELITEM = 0x002f,
-    EXTRA_SCALE = 0x0030,
-    EXTRA_SEED = 0x0031,
-    EXTRA_MAGICCASTER = 0x0032,
-    EXTRA_MAGICTARGET = 0x0033,
-    EXTRA_MASTERFILECELL = 0x0034,
-    EXTRA_PLAYERCRIMELIST = 0x0035,
-    EXTRA_UNUSED = 0x0036,
-    EXTRA_ENABLESTATEPARENT = 0x0037,
-    EXTRA_ENABLESTATECHILDREN = 0x0038,
-    EXTRA_ITEMDROPPER = 0x0039,
-    EXTRA_DROPPEDITEMLIST = 0x003a,
-    EXTRA_TELEPORTMARKER = 0x003b,
-    EXTRA_MERCHANTCONTAINER = 0x003c,
-    EXTRA_SAVED_HAVOK_DATA = 0x003d,
-    EXTRA_CANNOTWEAR = 0x003e,
-    EXTRA_POISON = 0x003f,
-    EXTRA_MAGIC_LIGHT = 0x0040,
-    EXTRA_LASTFINISHEDSEQUENCE = 0x0041,
-    EXTRA_SAVED_ANIMATION = 0x0042,
-    EXTRA_NORTHROTATION = 0x0043,
-    EXTRA_XTARGET = 0x0044,
-    EXTRA_FRIEND_HITS = 0x0045,
-    EXTRA_HEAD_TRACK_TARGET = 0x0046,
-    EXTRA_BOUND_ARMOR = 0x0047,
-    EXTRA_REFRACTION_PROPERTY = 0x0048,
-    EXTRA_STARTINGWORLDORCELL = 0x0049,
-    EXTRA_HOT_KEY = 0x004a,
-    EXTRA_EDITOR_REF3D_DATA = 0x004b,
-    EXTRA_EDITOR_REFMOVE_DATA = 0x004c,
-    EXTRA_INFO_GENERAL_TOPIC = 0x004d,
-    EXTRA_NO_RUMORS = 0x004e,
-    EXTRA_SOUND = 0x004f,
-    EXTRA_TERMINALSTATE = 0x0050,
-    EXTRA_LINKED_REF = 0x0051,
-    EXTRA_LINKED_REF_CHILDREN = 0x0052,
-    EXTRA_ACTIVATE_REF = 0x0053,
-    EXTRA_ACTIVATE_REF_CHILDREN = 0x0054,
-    EXTRA_TALKING_ACTOR = 0x0055,
-    EXTRA_OBJECT_HEALTH = 0x0056,
-    EXTRA_DECAL_REFS = 0x0057,
-    EXTRA_DECAL_TARGETS = 0x0058,
-    EXTRA_IMAGESPACE = 0x0059,
-    EXTRA_NAVMESH_PORTAL = 0x005a,
-    EXTRA_MODEL_SWAP = 0x005b,
-    EXTRA_RADIUS = 0x005c,
-    EXTRA_RADIATION = 0x005d,
-    EXTRA_FACTION_CHANGES = 0x005e,
-    EXTRA_DISMEMBERED_LIMBS = 0x005f,
-    EXTRA_ACTOR_CAUSE = 0x0060,
-    EXTRA_MULTIBOUND = 0x0061,
-    EXTRA_MULTIBOUND_DATA = 0x0062,
-    EXTRA_MULTIBOUND_REF = 0x0063,
-    EXTRA_CELLENVIRONMENT_TYPE = 0x0064,
-    EXTRA_REFLECTED_REFS = 0x0065,
-    EXTRA_REFLECTOR_REFS = 0x0066,
-    EXTRA_EMITTANCE_SOURCE = 0x0067,
-    EXTRA_RADIO_DATA = 0x0068,
-    EXTRA_COMBAT_STYLE = 0x0069,
-    EXTRA_LINK_COLOR_PAIR = 0x006a,
-    EXTRA_PRIMITIVE = 0x006b,
-    EXTRA_OPENCLOSEACTIVATE_REF = 0x006c,
-    EXTRA_ANIMNOTE_RECEIVER = 0x006d,
-    EXTRA_AMMO = 0x006e,
-    EXTRA_PATROL_REF_DATA = 0x006f,
-    EXTRA_PACKAGE_DATA = 0x0070,
-    EXTRA_OCCLUSION_PLANE = 0x0071,
-    EXTRA_COLLISION_DATA = 0x0072,
-    EXTRA_SAY_ONCE_A_DAY_TOPIC_INFO = 0x0073,
-    EXTRA_ENCOUNTERZONE = 0x0074,
-    EXTRA_SAY_TO_TOPIC_INFO = 0x0075,
-    EXTRA_OCCLUSION_PLANE_REF_DATA = 0x0076,
-    EXTRA_PORTAL_REF_DATA = 0x0077,
-    EXTRA_PORTAL = 0x0078,
-    EXTRA_ROOM = 0x0079,
-    EXTRA_HEALTH_PERC = 0x007a,
-    EXTRA_ROOM_REF_DATA = 0x007b,
-    EXTRA_GUARDED_REF_DATA = 0x007c,
-    EXTRA_CREATURE_AWAKE_SOUND = 0x007d,
-    EXTRA_WATER_ZONE_MAP = 0x007e,
-    EXTRA_UNUSED2 = 0x007f,
-    EXTRA_IGNORED_BY_SANDBOX = 0x0080,
-    EXTRA_CELL_ACOUSTIC_SPACE = 0x0081,
-    EXTRA_RESERVEDMARKERS = 0x0082,
-    EXTRA_WEAPON_IDLE_SOUND = 0x0083,
-    EXTRA_WATER_LIGHT_REFS = 0x0084,
-    EXTRA_LIT_WATER_REFS = 0x0085,
-    EXTRA_WEAPON_ATTACK_SOUND = 0x0086,
-    EXTRA_ACTIVATE_LOOP_SOUND = 0x0087,
-    EXTRA_PATROL_REF_IN_USE_DATA = 0x0088,
-    EXTRA_ASHPILE_REF = 0x0089,
-    EXTRA_CREATURE_MOVEMENT_SOUND = 0x008a,
-    EXTRA_FOLLOWER_SWIM_BREADCRUMBS = 0x008b,
-    EXTRA_IMPACTSWAP = 0x008c,
-    EXTRA_WEAPON_MOD_SLOTS = 0x008d,
-    EXTRA_WEAPON_IS_MODDING = 0x008e,
-    EXTRA_SECURITRON_FACE = 0x008f,
-    EXTRA_AUDIOMARKER = 0x0090,
-    EXTRA_AUDIOBUOYMARKER = 0x0091,
-    EXTRA_SPECIAL_RENDER_FLAGS = 0x0092,
-    EXTRA_DATATYPECOUNT = 0x0093,
+	EXTRA_NONE = 0x0000,
+	EXTRA_HAVOK = 0x0001,
+	EXTRA_CELL3D = 0x0002,
+	EXTRA_WATERTYPE = 0x0003,
+	EXTRA_REGIONLIST = 0x0004,
+	EXTRA_SEENDATA = 0x0005,
+	EXTRA_EDITOR_ID = 0x0006,
+	EXTRA_CELLMUSICTYPE = 0x0007,
+	EXTRA_CLIMATE = 0x0008,
+	EXTRA_CELL_MID_LOW_PROCESS = 0x0009,
+	EXTRA_CELL_CANOPYSHADOW_MASK = 0x000a,
+	EXTRA_CELLDETACHTIME = 0x000b,
+	EXTRA_PERSISTENT_CELL = 0x000c,
+	EXTRA_SCRIPT = 0x000d,
+	EXTRA_ACTION = 0x000e,
+	EXTRA_STARTINGPOSITION = 0x000f,
+	EXTRA_ANIM = 0x0010,
+	EXTRA_BIPED = 0x0011,
+	EXTRA_USEDMARKERS = 0x0012,
+	EXTRA_DISTANTDATA = 0x0013,
+	EXTRA_RAGDOLLDATA = 0x0014,
+	EXTRA_CONTAINER_CHANGES = 0x0015,
+	EXTRA_WORN = 0x0016,
+	EXTRA_WORN_LEFT = 0x0017,
+	EXTRA_PACKAGESTARTLOC = 0x0018,
+	EXTRA_PACKAGE = 0x0019,
+	EXTRA_TRESPASS_PACKAGE = 0x001a,
+	EXTRA_RUN_ONCE_PACKAGES = 0x001b,
+	EXTRA_REFERENCE_POINTER = 0x001c,
+	EXTRA_FOLLOWER = 0x001d,
+	EXTRA_LEVCREA_MOD = 0x001e,
+	EXTRA_GHOST = 0x001f,
+	EXTRA_ORIGINAL_REFERENCE = 0x0020,
+	EXTRA_OWNERSHIP = 0x0021,
+	EXTRA_GLOBAL = 0x0022,
+	EXTRA_RANK = 0x0023,
+	EXTRA_COUNT = 0x0024,
+	EXTRA_HEALTH = 0x0025,
+	EXTRA_USES = 0x0026,
+	EXTRA_TIMELEFT = 0x0027,
+	EXTRA_CHARGE = 0x0028,
+	EXTRA_LIGHT = 0x0029,
+	EXTRA_LOCK = 0x002a,
+	EXTRA_TELEPORT = 0x002b,
+	EXTRA_MAPMARKER = 0x002c,
+	EXTRA_ANIM_SAVE = 0x002d,
+	EXTRA_LEVELEDCREATURE = 0x002e,
+	EXTRA_LEVELITEM = 0x002f,
+	EXTRA_SCALE = 0x0030,
+	EXTRA_SEED = 0x0031,
+	EXTRA_MAGICCASTER = 0x0032,
+	EXTRA_MAGICTARGET = 0x0033,
+	EXTRA_MASTERFILECELL = 0x0034,
+	EXTRA_PLAYERCRIMELIST = 0x0035,
+	EXTRA_UNUSED = 0x0036,
+	EXTRA_ENABLESTATEPARENT = 0x0037,
+	EXTRA_ENABLESTATECHILDREN = 0x0038,
+	EXTRA_ITEMDROPPER = 0x0039,
+	EXTRA_DROPPEDITEMLIST = 0x003a,
+	EXTRA_TELEPORTMARKER = 0x003b,
+	EXTRA_MERCHANTCONTAINER = 0x003c,
+	EXTRA_SAVED_HAVOK_DATA = 0x003d,
+	EXTRA_CANNOTWEAR = 0x003e,
+	EXTRA_POISON = 0x003f,
+	EXTRA_MAGIC_LIGHT = 0x0040,
+	EXTRA_LASTFINISHEDSEQUENCE = 0x0041,
+	EXTRA_SAVED_ANIMATION = 0x0042,
+	EXTRA_NORTHROTATION = 0x0043,
+	EXTRA_XTARGET = 0x0044,
+	EXTRA_FRIEND_HITS = 0x0045,
+	EXTRA_HEAD_TRACK_TARGET = 0x0046,
+	EXTRA_BOUND_ARMOR = 0x0047,
+	EXTRA_REFRACTION_PROPERTY = 0x0048,
+	EXTRA_STARTINGWORLDORCELL = 0x0049,
+	EXTRA_HOT_KEY = 0x004a,
+	EXTRA_EDITOR_REF3D_DATA = 0x004b,
+	EXTRA_EDITOR_REFMOVE_DATA = 0x004c,
+	EXTRA_INFO_GENERAL_TOPIC = 0x004d,
+	EXTRA_NO_RUMORS = 0x004e,
+	EXTRA_SOUND = 0x004f,
+	EXTRA_TERMINALSTATE = 0x0050,
+	EXTRA_LINKED_REF = 0x0051,
+	EXTRA_LINKED_REF_CHILDREN = 0x0052,
+	EXTRA_ACTIVATE_REF = 0x0053,
+	EXTRA_ACTIVATE_REF_CHILDREN = 0x0054,
+	EXTRA_TALKING_ACTOR = 0x0055,
+	EXTRA_OBJECT_HEALTH = 0x0056,
+	EXTRA_DECAL_REFS = 0x0057,
+	EXTRA_DECAL_TARGETS = 0x0058,
+	EXTRA_IMAGESPACE = 0x0059,
+	EXTRA_NAVMESH_PORTAL = 0x005a,
+	EXTRA_MODEL_SWAP = 0x005b,
+	EXTRA_RADIUS = 0x005c,
+	EXTRA_RADIATION = 0x005d,
+	EXTRA_FACTION_CHANGES = 0x005e,
+	EXTRA_DISMEMBERED_LIMBS = 0x005f,
+	EXTRA_ACTOR_CAUSE = 0x0060,
+	EXTRA_MULTIBOUND = 0x0061,
+	EXTRA_MULTIBOUND_DATA = 0x0062,
+	EXTRA_MULTIBOUND_REF = 0x0063,
+	EXTRA_CELLENVIRONMENT_TYPE = 0x0064,
+	EXTRA_REFLECTED_REFS = 0x0065,
+	EXTRA_REFLECTOR_REFS = 0x0066,
+	EXTRA_EMITTANCE_SOURCE = 0x0067,
+	EXTRA_RADIO_DATA = 0x0068,
+	EXTRA_COMBAT_STYLE = 0x0069,
+	EXTRA_LINK_COLOR_PAIR = 0x006a,
+	EXTRA_PRIMITIVE = 0x006b,
+	EXTRA_OPENCLOSEACTIVATE_REF = 0x006c,
+	EXTRA_ANIMNOTE_RECEIVER = 0x006d,
+	EXTRA_AMMO = 0x006e,
+	EXTRA_PATROL_REF_DATA = 0x006f,
+	EXTRA_PACKAGE_DATA = 0x0070,
+	EXTRA_OCCLUSION_PLANE = 0x0071,
+	EXTRA_COLLISION_DATA = 0x0072,
+	EXTRA_SAY_ONCE_A_DAY_TOPIC_INFO = 0x0073,
+	EXTRA_ENCOUNTERZONE = 0x0074,
+	EXTRA_SAY_TO_TOPIC_INFO = 0x0075,
+	EXTRA_OCCLUSION_PLANE_REF_DATA = 0x0076,
+	EXTRA_PORTAL_REF_DATA = 0x0077,
+	EXTRA_PORTAL = 0x0078,
+	EXTRA_ROOM = 0x0079,
+	EXTRA_HEALTH_PERC = 0x007a,
+	EXTRA_ROOM_REF_DATA = 0x007b,
+	EXTRA_GUARDED_REF_DATA = 0x007c,
+	EXTRA_CREATURE_AWAKE_SOUND = 0x007d,
+	EXTRA_WATER_ZONE_MAP = 0x007e,
+	EXTRA_UNUSED2 = 0x007f,
+	EXTRA_IGNORED_BY_SANDBOX = 0x0080,
+	EXTRA_CELL_ACOUSTIC_SPACE = 0x0081,
+	EXTRA_RESERVEDMARKERS = 0x0082,
+	EXTRA_WEAPON_IDLE_SOUND = 0x0083,
+	EXTRA_WATER_LIGHT_REFS = 0x0084,
+	EXTRA_LIT_WATER_REFS = 0x0085,
+	EXTRA_WEAPON_ATTACK_SOUND = 0x0086,
+	EXTRA_ACTIVATE_LOOP_SOUND = 0x0087,
+	EXTRA_PATROL_REF_IN_USE_DATA = 0x0088,
+	EXTRA_ASHPILE_REF = 0x0089,
+	EXTRA_CREATURE_MOVEMENT_SOUND = 0x008a,
+	EXTRA_FOLLOWER_SWIM_BREADCRUMBS = 0x008b,
+	EXTRA_IMPACTSWAP = 0x008c,
+	EXTRA_WEAPON_MOD_SLOTS = 0x008d,
+	EXTRA_WEAPON_IS_MODDING = 0x008e,
+	EXTRA_SECURITRON_FACE = 0x008f,
+	EXTRA_AUDIOMARKER = 0x0090,
+	EXTRA_AUDIOBUOYMARKER = 0x0091,
+	EXTRA_SPECIAL_RENDER_FLAGS = 0x0092,
+	EXTRA_DATATYPECOUNT = 0x0093,
 };
 
 class BSExtraData {
-public:
-    BSExtraData(const BSExtraData &);
-    BSExtraData(unsigned char);
-    BSExtraData();
-    virtual ~BSExtraData();
-    void SetExtraType(unsigned char);
-    u8 GetExtraType();
-    virtual bool Compare(BSExtraData *);
+  public:
+	BSExtraData(const BSExtraData&);
+	BSExtraData(unsigned char);
+	BSExtraData();
+	virtual ~BSExtraData();
+	void SetExtraType(unsigned char);
+	u8 GetExtraType();
+	virtual bool Compare(BSExtraData*);
 
-protected:
-    void SetNext(BSExtraData *);
-    BSExtraData *GetNext();
-    u8 cEtype; // 0x4
-    BSExtraData *pNext; // 0x8
+  protected:
+	void SetNext(BSExtraData*);
+	BSExtraData* GetNext();
+	u8 cEtype;			// 0x4
+	BSExtraData* pNext; // 0x8
 };
 
 class BaseExtraList {
-public:
-    BaseExtraList(const BaseExtraList &);
-    BaseExtraList();
-    virtual ~BaseExtraList();
-    bool IsExtraListEmpty();
-    BSExtraData *GetHead();
-    void RemoveAll(bool);
-    void RemoveAllDefault(bool);
-    BSExtraData *AddExtra(BSExtraData *);
-    void RemoveExtra(u8);
-    void RemoveExtra(BSExtraData *, bool);
-    void MoveExtraToList(BSExtraData *, BaseExtraList *);
-    BSExtraData *GetExtraData(u8);
-    BSExtraData *GetPrevExtraData(u8);
-    uint ItemsInList();
+  public:
+	BaseExtraList(const BaseExtraList&);
+	BaseExtraList();
+	virtual ~BaseExtraList();
+	bool IsExtraListEmpty();
+	BSExtraData* GetHead();
+	void RemoveAll(bool);
+	void RemoveAllDefault(bool);
+	BSExtraData* AddExtra(BSExtraData*);
+	void RemoveExtra(u8);
+	void RemoveExtra(BSExtraData*, bool);
+	void MoveExtraToList(BSExtraData*, BaseExtraList*);
+	BSExtraData* GetExtraData(u8);
+	BSExtraData* GetPrevExtraData(u8);
+	uint ItemsInList();
 
-protected:
-    static BSExtraData *GetLastExtra(BaseExtraList *, EXTRA_DATA_TYPE);
-    static void SetLastExtra(BaseExtraList *, BSExtraData *);
-    static void ClearLastExtra(BaseExtraList *, EXTRA_DATA_TYPE);
-    static void ClearLastExtraAll(BaseExtraList *);
-    static void CheckDirty();
-    static bool IsHighUseExtra(EXTRA_DATA_TYPE);
+  protected:
+	static BSExtraData* GetLastExtra(BaseExtraList*, EXTRA_DATA_TYPE);
+	static void SetLastExtra(BaseExtraList*, BSExtraData*);
+	static void ClearLastExtra(BaseExtraList*, EXTRA_DATA_TYPE);
+	static void ClearLastExtraAll(BaseExtraList*);
+	static void CheckDirty();
+	static bool IsHighUseExtra(EXTRA_DATA_TYPE);
 
-    BSExtraData *pHead; // 0x4
-    u8 iFlags[21]; // 0x8
+	BSExtraData* pHead; // 0x4
+	u8 iFlags[21];		// 0x8
 
-    //   static BSSpinLock ExtraCritSection;
-    static BaseExtraList *pLastExtraList;
-    static BSExtraData *ppLastExtraData[147];
-    static uint iThreadDirty;
-    static uint iDirty;
+	//   static BSSpinLock ExtraCritSection;
+	static BaseExtraList* pLastExtraList;
+	static BSExtraData* ppLastExtraData[147];
+	static uint iThreadDirty;
+	static uint iDirty;
 
-    bool HasExtra(unsigned char) const;
-    void SetHasExtra(unsigned char, bool);
+	bool HasExtra(unsigned char) const;
+	void SetHasExtra(unsigned char, bool);
 };
 
 class ExtraAction : public BSExtraData {
-public:
-    u8 eAction; // 0x0c
-    TESObjectREFR *pActionRef; // 0x10
+  public:
+	u8 eAction;				   // 0x0c
+	TESObjectREFR* pActionRef; // 0x10
 
-    ExtraAction(const ExtraAction &);
-    ExtraAction();
-    virtual bool Compare(BSExtraData *);
-    virtual ~ExtraAction();
+	ExtraAction(const ExtraAction&);
+	ExtraAction();
+	virtual bool Compare(BSExtraData*);
+	virtual ~ExtraAction();
 };
 
 class ExtraBiped : public BSExtraData {
-public:
-    BipedAnim *pBiped; // 0xc
+  public:
+	BipedAnim* pBiped; // 0xc
 
-    ExtraBiped(const ExtraBiped &);
-    ExtraBiped(BipedAnim *);
-    virtual ~ExtraBiped();
+	ExtraBiped(const ExtraBiped&);
+	ExtraBiped(BipedAnim*);
+	virtual ~ExtraBiped();
 };
 
 class ExtraStartingPosition : public BSExtraData {
-public:
-    FILE_POS_ROT startPosition; // 0xc
+  public:
+	FILE_POS_ROT startPosition; // 0xc
 
-    ExtraStartingPosition(const ExtraStartingPosition &);
-    ExtraStartingPosition(TESObjectREFR *);
-    virtual bool Compare(BSExtraData *);
+	ExtraStartingPosition(const ExtraStartingPosition&);
+	ExtraStartingPosition(TESObjectREFR*);
+	virtual bool Compare(BSExtraData*);
 };

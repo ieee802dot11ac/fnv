@@ -2,83 +2,80 @@
 
 #include "nimain/NiObject.h"
 class NiShaderDeclaration : public NiObject {
-public:
-    enum ShaderParameter {
-        SHADERPARAM_INVALID = 0xff,
-        SHADERPARAM_NI_POSITION = 0x0000,
-        SHADERPARAM_NI_BLENDWEIGHT = 0x0001,
-        SHADERPARAM_NI_BLENDINDICES = 0x0002,
-        SHADERPARAM_NI_NORMAL = 0x0003,
-        SHADERPARAM_NI_COLOR = 0x0004,
-        SHADERPARAM_NI_TEXCOORD0 = 0x0005,
-        SHADERPARAM_NI_TEXCOORD1 = 0x0006,
-        SHADERPARAM_NI_TEXCOORD2 = 0x0007,
-        SHADERPARAM_NI_TEXCOORD3 = 0x0008,
-        SHADERPARAM_NI_TEXCOORD4 = 0x0009,
-        SHADERPARAM_NI_TEXCOORD5 = 0x000a,
-        SHADERPARAM_NI_TEXCOORD6 = 0x000b,
-        SHADERPARAM_NI_TEXCOORD7 = 0x000c,
-        SHADERPARAM_NI_TANGENT = 0x000d,
-        SHADERPARAM_NI_BINORMAL = 0x000e,
-        SHADERPARAM_DATA_ZERO = 0x000f,
-        SHADERPARAM_DATA_ONE = 0x0010,
-        SHADERPARAM_NI_COLOR1 = 0x0011,
-        SHADERPARAM_SKIP_COUNT_MASK = 0x40000000,
-        SHADERPARAM_EXTRA_DATA_MASK = -2147483648,
-    };
-    enum ShaderParameterType {
-        SPTYPE_FLOAT1 = 0x0000,
-        SPTYPE_FLOAT2 = 0x0001,
-        SPTYPE_FLOAT3 = 0x0002,
-        SPTYPE_FLOAT4 = 0x0003,
-        SPTYPE_UBYTECOLOR = 0x0004,
-        SPTYPE_UBYTE4 = 0x0005,
-        SPTYPE_SHORT2 = 0x0006,
-        SPTYPE_SHORT4 = 0x0007,
-        SPTYPE_NORMUBYTE4 = 0x0008,
-        SPTYPE_NORMSHORT2 = 0x0009,
-        SPTYPE_NORMSHORT4 = 0x000a,
-        SPTYPE_NORMUSHORT2 = 0x000b,
-        SPTYPE_NORMUSHORT4 = 0x000c,
-        SPTYPE_UDEC3 = 0x000d,
-        SPTYPE_NORMDEC3 = 0x000e,
-        SPTYPE_FLOAT16_2 = 0x000f,
-        SPTYPE_FLOAT16_4 = 0x0010,
-        SPTYPE_NONE = 0x0011,
-        SPTYPE_COUNT = 0x0012,
-    };
-    enum ShaderParameterUsage {
-        SPUSAGE_POSITION = 0x0000,
-        SPUSAGE_BLENDWEIGHT = 0x0001,
-        SPUSAGE_BLENDINDICES = 0x0002,
-        SPUSAGE_NORMAL = 0x0003,
-        SPUSAGE_PSIZE = 0x0004,
-        SPUSAGE_TEXCOORD = 0x0005,
-        SPUSAGE_TANGENT = 0x0006,
-        SPUSAGE_BINORMAL = 0x0007,
-        SPUSAGE_TESSFACTOR = 0x0008,
-        SPUSAGE_POSITIONT = 0x0009,
-        SPUSAGE_COLOR = 0x000a,
-        SPUSAGE_FOG = 0x000b,
-        SPUSAGE_DEPTH = 0x000c,
-        SPUSAGE_SAMPLE = 0x000d,
-        SPUSAGE_COUNT = 0x000e,
-    };
+  public:
+	enum ShaderParameter {
+		SHADERPARAM_INVALID = 0xff,
+		SHADERPARAM_NI_POSITION = 0x0000,
+		SHADERPARAM_NI_BLENDWEIGHT = 0x0001,
+		SHADERPARAM_NI_BLENDINDICES = 0x0002,
+		SHADERPARAM_NI_NORMAL = 0x0003,
+		SHADERPARAM_NI_COLOR = 0x0004,
+		SHADERPARAM_NI_TEXCOORD0 = 0x0005,
+		SHADERPARAM_NI_TEXCOORD1 = 0x0006,
+		SHADERPARAM_NI_TEXCOORD2 = 0x0007,
+		SHADERPARAM_NI_TEXCOORD3 = 0x0008,
+		SHADERPARAM_NI_TEXCOORD4 = 0x0009,
+		SHADERPARAM_NI_TEXCOORD5 = 0x000a,
+		SHADERPARAM_NI_TEXCOORD6 = 0x000b,
+		SHADERPARAM_NI_TEXCOORD7 = 0x000c,
+		SHADERPARAM_NI_TANGENT = 0x000d,
+		SHADERPARAM_NI_BINORMAL = 0x000e,
+		SHADERPARAM_DATA_ZERO = 0x000f,
+		SHADERPARAM_DATA_ONE = 0x0010,
+		SHADERPARAM_NI_COLOR1 = 0x0011,
+		SHADERPARAM_SKIP_COUNT_MASK = 0x40000000,
+		SHADERPARAM_EXTRA_DATA_MASK = -2147483648,
+	};
+	enum ShaderParameterType {
+		SPTYPE_FLOAT1 = 0x0000,
+		SPTYPE_FLOAT2 = 0x0001,
+		SPTYPE_FLOAT3 = 0x0002,
+		SPTYPE_FLOAT4 = 0x0003,
+		SPTYPE_UBYTECOLOR = 0x0004,
+		SPTYPE_UBYTE4 = 0x0005,
+		SPTYPE_SHORT2 = 0x0006,
+		SPTYPE_SHORT4 = 0x0007,
+		SPTYPE_NORMUBYTE4 = 0x0008,
+		SPTYPE_NORMSHORT2 = 0x0009,
+		SPTYPE_NORMSHORT4 = 0x000a,
+		SPTYPE_NORMUSHORT2 = 0x000b,
+		SPTYPE_NORMUSHORT4 = 0x000c,
+		SPTYPE_UDEC3 = 0x000d,
+		SPTYPE_NORMDEC3 = 0x000e,
+		SPTYPE_FLOAT16_2 = 0x000f,
+		SPTYPE_FLOAT16_4 = 0x0010,
+		SPTYPE_NONE = 0x0011,
+		SPTYPE_COUNT = 0x0012,
+	};
+	enum ShaderParameterUsage {
+		SPUSAGE_POSITION = 0x0000,
+		SPUSAGE_BLENDWEIGHT = 0x0001,
+		SPUSAGE_BLENDINDICES = 0x0002,
+		SPUSAGE_NORMAL = 0x0003,
+		SPUSAGE_PSIZE = 0x0004,
+		SPUSAGE_TEXCOORD = 0x0005,
+		SPUSAGE_TANGENT = 0x0006,
+		SPUSAGE_BINORMAL = 0x0007,
+		SPUSAGE_TESSFACTOR = 0x0008,
+		SPUSAGE_POSITIONT = 0x0009,
+		SPUSAGE_COLOR = 0x000a,
+		SPUSAGE_FOG = 0x000b,
+		SPUSAGE_DEPTH = 0x000c,
+		SPUSAGE_SAMPLE = 0x000d,
+		SPUSAGE_COUNT = 0x000e,
+	};
 
-    static const NiRTTI ms_RTTI;
+	static const NiRTTI ms_RTTI;
 
-    virtual const NiRTTI *GetRTTI() const;
-    virtual bool SetEntry(
-        unsigned int,
-        unsigned int,
-        NiShaderDeclaration::ShaderParameter,
-        NiShaderDeclaration::ShaderParameterType,
-        unsigned int
-    );
-    virtual bool RemoveEntry(unsigned int, unsigned int);
-    virtual ~NiShaderDeclaration();
-    NiShaderDeclaration(const NiShaderDeclaration &);
+	virtual const NiRTTI* GetRTTI() const;
+	virtual bool SetEntry(unsigned int, unsigned int,
+						  NiShaderDeclaration::ShaderParameter,
+						  NiShaderDeclaration::ShaderParameterType,
+						  unsigned int);
+	virtual bool RemoveEntry(unsigned int, unsigned int);
+	virtual ~NiShaderDeclaration();
+	NiShaderDeclaration(const NiShaderDeclaration&);
 
-protected:
-    NiShaderDeclaration();
+  protected:
+	NiShaderDeclaration();
 };

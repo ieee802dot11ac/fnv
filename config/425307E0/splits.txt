@@ -22674,46 +22674,46 @@ xdk/xapilibi/closehandle.cpp:
 	.pdata      start:0x82220720 end:0x82220728
 	.text       start:0x82ECB308 end:0x82ECB350
 
-verify.cpp:
+xdk/xapilibi/verify.cpp:
 	.pdata      start:0x82220B20 end:0x82220B28
 	.text       start:0x82ED39E8 end:0x82ED3A5C
 
-rtldbg.cpp:
+xdk/xapilibi/rtldbg.cpp:
 	.text       start:0x82ED34E0 end:0x82ED34EC
 
-rtlfile.cpp:
+xdk/xapilibi/rtlfile.cpp:
 	.pdata      start:0x82220AD8 end:0x82220AF0
 	.text       start:0x82ED3180 end:0x82ED33F8
 
-rtlerror.cpp:
+xdk/xapilibi/rtlerror.cpp:
 	.pdata      start:0x82220AD0 end:0x82220AD8
 	.text       start:0x82ED3110 end:0x82ED3180
 
-rtlheap.cpp:
+xdk/xapilibi/rtlheap.cpp:
 	.rdata      start:0x821E1FE0 end:0x821E205C rename:.xdata
 	.pdata      start:0x82220A08 end:0x82220AA8
 	.text       start:0x82ECFB10 end:0x82ED2DB4
 	.data       start:0x8326BBF8 end:0x8326BC08
 
-raiseexception.cpp:
+xdk/xapilibi/raiseexception.cpp:
 	.pdata      start:0x822209D0 end:0x822209D8
 	.text       start:0x82ECF7B8 end:0x82ECF838
 
-fileiohooks.cpp:
+xdk/xapilibi/fileiohooks.cpp:
 	.data       start:0x8326BC2C end:0x8326BC60
 
-writecombinedstreaming.cpp:
+xdk/xapilibi/writecombinedstreaming.cpp:
 	.pdata      start:0x82220DF8 end:0x82220E00
 	.text       start:0x82EDA850 end:0x82EDB040
 
-copycachelines.cpp:
+xdk/xapilibi/copycachelines.cpp:
 	.text       start:0x82EDB8F0 end:0x82EDB9B0
 
-cachedstreaming.cpp:
+xdk/xapilibi/cachedstreaming.cpp:
 	.pdata      start:0x82220E00 end:0x82220E10
 	.text       start:0x82EDB040 end:0x82EDB8F0
 
-rtldbghelp.cpp:
+xdk/xapilibi/rtldbghelp.cpp:
 	.text       start:0x82EDBFF0 end:0x82EDBFF8
 
 bldnum.cpp:

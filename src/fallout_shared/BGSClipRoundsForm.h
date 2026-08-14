@@ -5,19 +5,19 @@
 #include "types.h"
 
 class BGSClipRoundsForm : public BaseFormComponent {
-public:
-    BGSClipRoundsForm();
-    ~BGSClipRoundsForm();
-    virtual void InitializeDataComponent();
-    virtual void ClearDataComponent();
-    void Save();
-    virtual void CopyComponent(BaseFormComponent *);
-    virtual bool CompareComponent(BaseFormComponent *);
-    int GetFormClipRounds();
-    void SetFormClipRounds(int);
+  public:
+	BGSClipRoundsForm();
+	~BGSClipRoundsForm();
+	virtual void InitializeDataComponent();
+	virtual void ClearDataComponent();
+	void Save();
+	virtual void CopyComponent(BaseFormComponent*);
+	virtual bool CompareComponent(BaseFormComponent*);
+	int GetFormClipRounds();
+	void SetFormClipRounds(int);
 
-    static int GetFormClipRounds(TESForm *);
+	static int GetFormClipRounds(TESForm*);
 
-private:
-    u8 cClipRounds; // 0x4
+  private:
+	u8 cClipRounds; // 0x4
 };

@@ -22,7 +22,8 @@
 
 //   public: hkpCachingShapePhantom(const hkpCachingShapePhantom&);
 //   public: hkpCachingShapePhantom(hkFinishLoadedObjectFlag);
-//   public: hkpCachingShapePhantom(const hkpShape*, const hkTransform&, uint32_t);
+//   public: hkpCachingShapePhantom(const hkpShape*, const hkTransform&,
+//   uint32_t);
 
 //   public: virtual ~hkpCachingShapePhantom();
 //   public: virtual hkpPhantomType getType() const;
@@ -40,10 +41,11 @@
 //   public: virtual void getPenetrations(hkpCdBodyPairCollector&, const
 //   hkpCollisionInput*);
 
-//   public: virtual void calcContentStatistics(hkStatisticsCollector*, const hkClass*)
-//   const;
+//   public: virtual void calcContentStatistics(hkStatisticsCollector*, const
+//   hkClass*) const;
 
-//   public: hkArray<hkpCachingShapePhantom::hkpCollisionDetail>& getCollisionDetails();
+//   public: hkArray<hkpCachingShapePhantom::hkpCollisionDetail>&
+//   getCollisionDetails();
 
 //   public: virtual void addOverlappingCollidable(hkpCollidable*);
 //   public: virtual void removeOverlappingCollidable(hkpCollidable*);

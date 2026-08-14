@@ -3,25 +3,25 @@
 class TESForm;
 
 class BGSChangeFlags {
-public:
-    BGSChangeFlags(int);
-    BGSChangeFlags() { iFlags = 0; }
-    bool CheckFlags(int i) { return iFlags & i; }
-    bool CheckFlagsExact(int);
-    bool CheckFlagsExclusive(int);
-    void SetFlags(int);
-    void AddFlags(int);
-    void RemoveFlags(int);
-    BGSChangeFlags GetDifference(int);
-    operator int();
-    bool ReduceToForcedChanges(TESForm *);
+  public:
+	BGSChangeFlags(int);
+	BGSChangeFlags() { iFlags = 0; }
+	bool CheckFlags(int i) { return iFlags & i; }
+	bool CheckFlagsExact(int);
+	bool CheckFlagsExclusive(int);
+	void SetFlags(int);
+	void AddFlags(int);
+	void RemoveFlags(int);
+	BGSChangeFlags GetDifference(int);
+	operator int();
+	bool ReduceToForcedChanges(TESForm*);
 
-    static const char *GetFlagName(int, unsigned int, bool);
-    static const char *GetShortFlagName(int, unsigned int);
-    static bool IsForcedChange(int, unsigned int, unsigned int);
-    static BGSChangeFlags
-    GetUnrevertibleChanges(BGSChangeFlags, BGSChangeFlags, unsigned int, bool);
+	static const char* GetFlagName(int, unsigned int, bool);
+	static const char* GetShortFlagName(int, unsigned int);
+	static bool IsForcedChange(int, unsigned int, unsigned int);
+	static BGSChangeFlags GetUnrevertibleChanges(BGSChangeFlags, BGSChangeFlags,
+												 unsigned int, bool);
 
-protected:
-    int iFlags; // 0x0
+  protected:
+	int iFlags; // 0x0
 };

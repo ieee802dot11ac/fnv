@@ -41,9 +41,9 @@
 #define null 0
 
 #define RELEASE(x) (delete x, x = null)
-#define RELEASEARRAY(x) (delete[] (ubyte *)x, x = null)
+#define RELEASEARRAY(x) (delete[] (ubyte*)x, x = null)
 
-#define ADDSTACK(x)                                                                      \
-    do {                                                                                 \
-        u8 _stackpad[x];                                                                 \
-    } while (0);
+#define ADDSTACK(x)                                                            \
+	do {                                                                       \
+		u8 _stackpad[x];                                                       \
+	} while (0);

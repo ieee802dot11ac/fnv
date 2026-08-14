@@ -7,25 +7,25 @@
 #include "fallout_shared/TESForm.h"
 
 class BGSSaveFormBuffer : public BGSSaveGameBuffer {
-public:
-    BGSSaveFormBuffer(const BGSSaveFormBuffer &);
-    BGSSaveFormBuffer();
-    void Save(BGSSaveLoadFile *);
-    void SetHeader(unsigned int, BGSChangeFlags, ENUM_FORM_ID, unsigned char);
-    BGSChangeFlags GetChangeFlags() { return Header.iChangeFlags; }
-    void SetChangeFlags(BGSChangeFlags);
-    void AddChange(int);
-    void RemoveChange(int);
-    ENUM_FORM_ID GetFormType();
-    unsigned char GetVersion();
-    void SetForm(TESForm *);
-    virtual TESForm *GetForm();
-    virtual TESObjectREFR *GetReference();
-    virtual Actor *GetActor();
-    unsigned int GetOverhead();
-    ~BGSSaveFormBuffer();
+  public:
+	BGSSaveFormBuffer(const BGSSaveFormBuffer&);
+	BGSSaveFormBuffer();
+	void Save(BGSSaveLoadFile*);
+	void SetHeader(unsigned int, BGSChangeFlags, ENUM_FORM_ID, unsigned char);
+	BGSChangeFlags GetChangeFlags() { return Header.iChangeFlags; }
+	void SetChangeFlags(BGSChangeFlags);
+	void AddChange(int);
+	void RemoveChange(int);
+	ENUM_FORM_ID GetFormType();
+	unsigned char GetVersion();
+	void SetForm(TESForm*);
+	virtual TESForm* GetForm();
+	virtual TESObjectREFR* GetReference();
+	virtual Actor* GetActor();
+	unsigned int GetOverhead();
+	~BGSSaveFormBuffer();
 
-protected:
-    BGSSaveLoadFormHeader Header; // 0x14
-    TESForm *pForm; // 0x20
+  protected:
+	BGSSaveLoadFormHeader Header; // 0x14
+	TESForm* pForm;				  // 0x20
 };

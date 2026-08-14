@@ -12,8 +12,6 @@ static SETTING(GameSettingCollection, iSkillJourneymanMin, 50);
 static SETTING(GameSettingCollection, iSkillExpertMin, 75);
 static SETTING(GameSettingCollection, iSkillMasterMin, 100);
 
-SettingT<GameSettingCollection> *SkillLevel::pGameSettings[5] = { &sSkillLevelNovice,
-                                                                  &sSkillLevelApprentice,
-                                                                  &sSkillLevelJourneyman,
-                                                                  &sSkillLevelExpert,
-                                                                  &sSkillLevelMaster };
+SettingT<GameSettingCollection>* SkillLevel::pGameSettings[5] = {
+	&sSkillLevelNovice, &sSkillLevelApprentice, &sSkillLevelJourneyman,
+	&sSkillLevelExpert, &sSkillLevelMaster};

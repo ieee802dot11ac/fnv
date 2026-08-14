@@ -6,40 +6,39 @@
 
 BGSSaveFormBuffer::BGSSaveFormBuffer() { pForm = nullptr; }
 
-void BGSSaveFormBuffer::Save(BGSSaveLoadFile *apFile) {
-    uint size = iBufferPosition;
-    SIZE_TYPE siztyp = GetSizeTypeForSize(size);
-    apFile->Write(&Header, sizeof(Header));
-    SaveGameSizeToFile(apFile, size, siztyp);
-    BGSSaveGameBuffer::Save(apFile, size);
+void BGSSaveFormBuffer::Save(BGSSaveLoadFile* apFile) {
+	uint size = iBufferPosition;
+	SIZE_TYPE siztyp = GetSizeTypeForSize(size);
+	apFile->Write(&Header, sizeof(Header));
+	SaveGameSizeToFile(apFile, size, siztyp);
+	BGSSaveGameBuffer::Save(apFile, size);
 }
 
-void BGSSaveFormBuffer::SetHeader(
-    uint aiFormID, BGSChangeFlags aiChangeFlags, ENUM_FORM_ID aeFormType, u8 acVersion
-) {
-    Header.FormIDIndex.SetNumericID(aiFormID);
-    Header.iChangeFlags = aiChangeFlags;
-    Header.FormInfo.SetFormType(aeFormType);
-    Header.cVersion = acVersion;
+void BGSSaveFormBuffer::SetHeader(uint aiFormID, BGSChangeFlags aiChangeFlags,
+								  ENUM_FORM_ID aeFormType, u8 acVersion) {
+	Header.FormIDIndex.SetNumericID(aiFormID);
+	Header.iChangeFlags = aiChangeFlags;
+	Header.FormInfo.SetFormType(aeFormType);
+	Header.cVersion = acVersion;
 }
 
 uint BGSSaveFormBuffer::GetOverhead() {
-    return GetSizeTypeSize(GetSizeTypeForSize(iBufferPosition)) + 9;
+	return GetSizeTypeSize(GetSizeTypeForSize(iBufferPosition)) + 9;
 }
 
-TESObjectREFR *BGSSaveFormBuffer::GetReference() {
-    TESForm *form = GetForm();
-    if (form != nullptr) {
-        if (form->IsReference()) {
-            return (TESObjectREFR *)form;
-        }
-    }
-    return nullptr;
+TESObjectREFR* BGSSaveFormBuffer::GetReference() {
+	TESForm* form = GetForm();
+	if (form != nullptr) {
+		if (form->IsReference()) {
+			return (TESObjectREFR*)form;
+		}
+	}
+	return nullptr;
 }
 
-Actor *BGSSaveFormBuffer::GetActor() {
-    TESObjectREFR *reference = GetReference();
-    if (reference != nullptr) {
-    }
-    return nullptr;
+Actor* BGSSaveFormBuffer::GetActor() {
+	TESObjectREFR* reference = GetReference();
+	if (reference != nullptr) {
+	}
+	return nullptr;
 }

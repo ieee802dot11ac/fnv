@@ -1,57 +1,60 @@
 #pragma once
 
-template <typename T>
-class NiPointer {
-public:
-    NiPointer(NiPointer<T> const &);
+template <typename T> class NiPointer {
+  public:
+	NiPointer(NiPointer<T> const&);
 
-    NiPointer() : m_pObject(nullptr) {}
+	NiPointer() : m_pObject(nullptr) {}
 
-    NiPointer(T *pObject) : m_pObject(pObject) {
-        if (pObject) {
-            pObject->IncRefCount();
-        }
-    }
+	NiPointer(T* pObject) : m_pObject(pObject) {
+		if (pObject) {
+			pObject->IncRefCount();
+		}
+	}
 
-    ~NiPointer() {
-        // if (m_pObject) {
-        //     m_pObject->DecRefCount();
-        // }
-    }
+	~NiPointer() {
+		// if (m_pObject) {
+		//     m_pObject->DecRefCount();
+		// }
+	}
 
-    operator T *() const { return m_pObject; }
+	operator T*() const { return m_pObject; }
 
-    T &operator*() const { return *m_pObject; }
+	T& operator*() const { return *m_pObject; }
 
-    T *operator->() const { return m_pObject; }
+	T* operator->() const { return m_pObject; }
 
-    NiPointer<T> &operator=(T *pObject); /* {
-        if (m_pObject) {
-            m_pObject->DecRefCount();
-        }
-        m_pObject = pObject;
-        if (pObject) {
-            pObject->IncRefCount();
-        }
-    }*/
+	NiPointer<T>& operator=(T* pObject); /* {
+		if (m_pObject) {
+			m_pObject->DecRefCount();
+		}
+		m_pObject = pObject;
+		if (pObject) {
+			pObject->IncRefCount();
+		}
+	}*/
 
-    NiPointer<T> &operator=(NiPointer<T> const &rhs); /* {
-         if (m_pObject) {
-             m_pObject->DecRefCount();
-         }
-         m_pObject = rhs.m_pObject;
-         if (m_pObject) {
-             m_pObject->IncRefCount();
-         }
-     }*/
+	NiPointer<T>& operator=(NiPointer<T> const& rhs); /* {
+		 if (m_pObject) {
+			 m_pObject->DecRefCount();
+		 }
+		 m_pObject = rhs.m_pObject;
+		 if (m_pObject) {
+			 m_pObject->IncRefCount();
+		 }
+	 }*/
 
-    bool operator==(NiPointer<T> const &rhs) const { return m_pObject == rhs.m_pObject; }
+	bool operator==(NiPointer<T> const& rhs) const {
+		return m_pObject == rhs.m_pObject;
+	}
 
-    bool operator==(T *pPointer) const { return m_pObject == pPointer; }
+	bool operator==(T* pPointer) const { return m_pObject == pPointer; }
 
-    bool operator!=(NiPointer<T> const &rhs) const { return !(m_pObject == rhs); }
+	bool operator!=(NiPointer<T> const& rhs) const {
+		return !(m_pObject == rhs);
+	}
 
-    bool operator!=(T *pObject) const { return m_pObject != pObject; }
+	bool operator!=(T* pObject) const { return m_pObject != pObject; }
 
-    T *m_pObject; // 0x0
+	T* m_pObject; // 0x0
 };
